@@ -14,7 +14,7 @@ jobs:
         # 你要操作的目标仓库 github的吗
         TARGET_REPO: triggergun/triggergun
         # 构建结果存储的分支
-        TARGET_BRANCH: master
+        TARGET_BRANCH: pages
         # 要使用的构建命令
         BUILD_SCRIPT: npm run dev && npm run build
         # 构建结果存储目录
