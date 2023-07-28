@@ -1,6 +1,5 @@
-// docs/.vuepress/config.js
+﻿// docs/.vuepress/config.js
 module.exports = {
-
   //前缀
   base: '/triggergun/',
 

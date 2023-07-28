@@ -11,6 +11,7 @@ export default {
   "v-07adac94": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day14-IO.md"),
   "v-1488315e": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO01流.md"),
   "v-2d58845e": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO02转换流.md"),
+  "v-20d60fe0": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO03对象操作流.md"),
   "v-28c21038": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO04Properties集合.md"),
   "v-6c85b54c": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\java.md"),
   "v-40d90282": () => import("D:\\hongblog\\docs\\network\\network01.md"),
@@ -18,6 +19,5 @@ export default {
   "v-8ba33ae4": () => import("D:\\hongblog\\docs\\软件资源\\vuepress怎么玩\\SetTitle.md"),
   "v-021585d8": () => import("D:\\hongblog\\docs\\软件资源\\vuepress怎么玩\\Writing_rules.md"),
   "v-04d9f279": () => import("D:\\hongblog\\docs\\软件资源\\软件资源.md"),
-  "v-34a4cb9c": () => import("D:\\hongblog\\docs\\运维\\windows\\cmd.md"),
-  "v-20d60fe0": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO03对象操作流.md") 
+  "v-34a4cb9c": () => import("D:\\hongblog\\docs\\运维\\windows\\cmd.md") 
 }

@@ -109,6 +109,22 @@ export const routes = [
     redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
   },
   {
+    name: "v-20d60fe0",
+    path: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-20d60fe0").then(next)
+    },
+  },
+  {
+    path: "/java/javaSEBase/day15-IO03对象操作流.html",
+    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
+  },
+  {
+    path: "/java/javaSEBase/day15-IO03对象操作流.html",
+    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
+  },
+  {
     name: "v-28c21038",
     path: "/java/javaSEBase/day15-IO04Properties%E9%9B%86%E5%90%88.html",
     component: GlobalLayout,
@@ -219,22 +235,6 @@ export const routes = [
   {
     path: "/运维/windows/cmd.html",
     redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
-  },
-  {
-    name: "v-20d60fe0",
-    path: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-20d60fe0").then(next)
-    },
-  },
-  {
-    path: "/java/javaSEBase/day15-IO03对象操作流.html",
-    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
-  },
-  {
-    path: "/java/javaSEBase/day15-IO03对象操作流.html",
-    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
   },
   {
     path: '*',
