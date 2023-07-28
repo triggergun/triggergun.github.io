@@ -25,6 +25,7 @@ jobs:
 
       - name: Commit Build Results to Pages Branch
         run: |
+	  git config --global advice.addIgnoredFile false
           git config user.name "triggergun"
           git config user.email "930572358@qq.com"
           git checkout pages  # 切换到 pages 分支
