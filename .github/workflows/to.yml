@@ -32,7 +32,7 @@ jobs:
           git commit -m "Build docs dir"
           git add node_modules  # 添加到工作树中
           git commit -m "Build commit node_modules"
-          git push origin pages  # 推送构建结果到 pages 分支，这里提交的是源码的目录
+          git push -f origin pages  # 推送构建结果到 pages 分支，这里提交的是源码的目录
           cp  -r docs/.vuepress/dist ../build  # 将构建的源码copy到上一级目录
 
       - name: Pull branch
