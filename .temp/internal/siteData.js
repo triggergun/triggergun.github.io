@@ -674,6 +674,41 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "英语语法",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "relativePath": "软件资源/English_syntax.md",
+      "key": "v-63361320",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01）When/While引到时间状语从句",
+          "slug": "_01-when-while引到时间状语从句"
+        },
+        {
+          "level": 3,
+          "title": "用while情况",
+          "slug": "用while情况"
+        },
+        {
+          "level": 3,
+          "title": "即可用when/while情况",
+          "slug": "即可用when-while情况"
+        },
+        {
+          "level": 3,
+          "title": "用when情况",
+          "slug": "用when情况"
+        },
+        {
+          "level": 3,
+          "title": "练习",
+          "slug": "练习"
+        }
+      ]
+    },
+    {
       "title": "vuepress标体设置规则",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
@@ -712,13 +747,23 @@ export const siteData = {
           "level": 2,
           "title": "01）提示块",
           "slug": "_01-提示块"
+        },
+        {
+          "level": 2,
+          "title": "02）提示块自定义标题",
+          "slug": "_02-提示块自定义标题"
+        },
+        {
+          "level": 2,
+          "title": "03)字标粗&字标颜色",
+          "slug": "_03-字标粗-字标颜色"
         }
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
     },
     {
-      "title": "查看资源",
+      "title": "30岁以后，一定要懂的《滕王阁序》",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
       "relativePath": "软件资源/软件资源.md",
@@ -727,13 +772,8 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "ddddddd",
-          "slug": "ddddddd"
-        },
-        {
-          "level": 3,
-          "title": "sdddddd",
-          "slug": "sdddddd"
+          "title": "懂诗词歌赋",
+          "slug": "懂诗词歌赋"
         }
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
@@ -833,7 +873,8 @@ export const siteData = {
           "title": "软件资源",
           "collapsable": false,
           "children": [
-            "/软件资源/软件资源"
+            "/软件资源/软件资源",
+            "/软件资源/English_syntax"
           ]
         },
         {

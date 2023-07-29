@@ -173,6 +173,22 @@ export const routes = [
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/01docsify.html"
   },
   {
+    name: "v-63361320",
+    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-63361320").then(next)
+    },
+  },
+  {
+    path: "/软件资源/English_syntax.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html"
+  },
+  {
+    path: "/软件资源/English_syntax.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html"
+  },
+  {
     name: "v-8ba33ae4",
     path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
     component: GlobalLayout,
