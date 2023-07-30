@@ -18,6 +18,8 @@
 
   手机、电脑......
 
+![image-20230730130905143](./English_syntax.assets/image-20230730130905143.png)
+
 ### 不可数名词
 
 - 不可数名词有哪些呢？
@@ -26,17 +28,19 @@
 
 ## 定语&状语
 
-<font color="grenn">猴子</font>  <font color="blue">在狗窝</font>  <font color='red'>打[^谓语]</font>  狗子<sup><a href="#footnote1">[宾语]</a></sup>
+<font color="grenn">猴子</font>  <font color="blue">在狗窝</font>  <font color='red'>打<sup>[谓语]</sup></font>  狗子<sup>[宾语]</sup>
 
-[^谓语]: 打是宾语，表示动作“打"。
-[^定语]: 打笨狗子，这个笨，就是定语了。
-[^状语]: 在狗窝，表示：地点。也叫地点状语。
+<font color='red'>谓语：</font>打是宾语，表示动作“打"。
 
-<p id="footnote1">   [宾语] 打狗子，狗子：是宾语。 </p>
+宾语 :  打狗子，狗子：是宾语。
 
 - 打什么样的狗子呢？
 
-<font color="grenn">猴子[^主语]</font>  <font color="blue">在狗窝[^状语]</font>  <font color='red'>打[^谓语]</font>  <font color='deeppink'>笨[^定语]</font>  狗子[^宾语]
+<font color="grenn">猴子</font>  <font color="blue">在狗窝<sup>[状语]</sup></font>  <font color='red'>打[^谓语]</font>  <font color='deeppink'>笨<sup>[定语]</sup></font>  狗子[^宾语]
+
+<font color='deeppink'>定语：</font>打笨狗子，这个笨，就是定语了。
+
+<font color="blue">状语：</font>在狗窝，表示：地点。也叫地点状语。
 
 - 什么是定语？
 
