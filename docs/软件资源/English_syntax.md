@@ -26,12 +26,13 @@
 
 ## 定语&状语
 
-<font color="grenn">猴子[^主语]</font>  <font color="blue">在狗窝</font>  <font color='red'>打[^谓语]</font>  狗子[^宾语]
+<font color="grenn">猴子</font>  <font color="blue">在狗窝</font>  <font color='red'>打[^谓语]</font>  狗子<sup><a href="#footnote1">[宾语]</a></sup>
 
 [^谓语]: 打是宾语，表示动作“打"。
-[^宾语]: 打狗子，狗子：是宾语。
 [^定语]: 打笨狗子，这个笨，就是定语了。
 [^状语]: 在狗窝，表示：地点。也叫地点状语。
+
+<p id="footnote1">   [宾语] 打狗子，狗子：是宾语。 </p>
 
 - 打什么样的狗子呢？
 
@@ -72,6 +73,8 @@
 - 上面的案例：定语修饰了名词dog。
 
 :::
+
+
 
 ## 01）When/While引导时间状语从句
 
