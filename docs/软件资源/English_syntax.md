@@ -1,5 +1,33 @@
 # 英语语法
 
+英语语法是什么呢？
+
+是帮助你快速fast的掌握英语的一个工具。注意了哦！是“工具”，也不要太依赖于语法。
+
+
+
+## 名词
+
+- 什么是名词？
+
+  天地混沌之初，到处都是一片......额.........叫不上名来，我们就叫混沌吧。也可以叫其它任一。这就是名词。
+
+  **无名万物之始，有名万物之母**
+
+  世间万物没有名字的时候就是万物开始的时候。......当我们创建名字。就有了创造的能力。
+
+  手机、电脑......
+
+### 不可数数名词
+
+- 不可数名词有哪些呢？
+
+  我随便来些吧！
+
+  
+
+
+
 ## 01）When/While引导时间状语从句
 
 口诀：
@@ -104,9 +132,71 @@ read用现在分词
 
 :::
 
+## 02）a little/a bit
 
+| 单词     | 解释                 |
+| -------- | -------------------- |
+| a little | 一点                 |
+| a bit    | 有一点、一会儿，片刻 |
 
+那个后面可接名词呢？
 
+一个口诀：bit不出名，of经纪人。
 
+::: details 口诀解释
 
+\- 解释：
+
+1. a bit后面不能直接加名词，所以叫bit后面不出名。
+2. 要加名词要找经纪人of【a bit + of + 名词】。
+
+:::
+
+### 案例
+
+- 案例一：后面接的名称必须是不可数名词。
+
+  He needs  <font color='red'>a bit of</font> water.
+
+  He needs  <font color='red'>a little</font> water.
+
+  他需要  一点   水。
+
+- 案例二：它两可以修饰动词、副词、形容词。如下句子：【用法一致】
+
+  - 修饰动词：talked 
+
+    He talked <font color='red'>a little/a bit</font>.它交谈 一会。
+
+  - 修饰副词：carelessly，粗心地;不用心地
+
+    He did his homework <font color='red'>a little/a bit</font> carelessly. 他做 他的 作业，有一点粗心。
+
+    do的过去式：did
+
+  - 修饰形容词：tired，厌倦 ; 疲倦的 ; 疲劳的 ; 
+
+    I am <font color='red'>a little/a bit</font> tired.我有点累。
+
+### 练习
+
+| A、a little | B、a bit | C、a bit of |
+| ----------- | -------- | ----------- |
+
+1. I' ve got 【A、C】 money.我有一点钱。
+
+   表示完成时态。
+
+   I' ve是I have的缩写，表示现在完成时，例如：I've finished the task.我已经完成了任务.
+
+2. She's 【A、B】afraid of me.她有点害怕我。
+
+   afraid of  害怕 ; 怕
+
+::: tip 小结：
+
+1. 只有在修饰动、形、副时。它两用法一致。
+2. 只有在名词的时候需要找经济人(of)帮忙。
+
+:::
 
