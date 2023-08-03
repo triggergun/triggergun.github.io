@@ -525,6 +525,61 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "网关入门快速搭建",
+      "frontmatter": {},
+      "regularPath": "/java/springcloudgateway/01gateway.html",
+      "relativePath": "java/springcloudgateway/01gateway.md",
+      "key": "v-3bb47468",
+      "path": "/java/springcloudgateway/01gateway.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：创建父工程",
+          "slug": "第一步-创建父工程"
+        },
+        {
+          "level": 2,
+          "title": "第二步：创建网关子项目",
+          "slug": "第二步-创建网关子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件"
+        },
+        {
+          "level": 2,
+          "title": "第三步：创建user子项目",
+          "slug": "第三步-创建user子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖-2"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件-2"
+        },
+        {
+          "level": 3,
+          "title": "编写Controller",
+          "slug": "编写controller"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ]
+    },
+    {
       "title": "ip地址是怎么划分的呢",
       "frontmatter": {},
       "regularPath": "/network/network01.html",
@@ -674,41 +729,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
-      "title": "英语语法",
-      "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
-      "relativePath": "软件资源/English_syntax.md",
-      "key": "v-63361320",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "01）When/While引到时间状语从句",
-          "slug": "_01-when-while引到时间状语从句"
-        },
-        {
-          "level": 3,
-          "title": "用while情况",
-          "slug": "用while情况"
-        },
-        {
-          "level": 3,
-          "title": "即可用when/while情况",
-          "slug": "即可用when-while情况"
-        },
-        {
-          "level": 3,
-          "title": "用when情况",
-          "slug": "用when情况"
-        },
-        {
-          "level": 3,
-          "title": "练习",
-          "slug": "练习"
-        }
-      ]
-    },
-    {
       "title": "vuepress标体设置规则",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
@@ -736,6 +756,73 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "英语语法",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "relativePath": "软件资源/English_syntax.md",
+      "key": "v-63361320",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "名词",
+          "slug": "名词"
+        },
+        {
+          "level": 3,
+          "title": "不可数名词",
+          "slug": "不可数名词"
+        },
+        {
+          "level": 2,
+          "title": "定语&状语",
+          "slug": "定语-状语"
+        },
+        {
+          "level": 2,
+          "title": "01）When/While引导时间状语从句",
+          "slug": "_01-when-while引导时间状语从句"
+        },
+        {
+          "level": 3,
+          "title": "用while情况",
+          "slug": "用while情况"
+        },
+        {
+          "level": 3,
+          "title": "即可用when/while情况",
+          "slug": "即可用when-while情况"
+        },
+        {
+          "level": 3,
+          "title": "用when情况",
+          "slug": "用when情况"
+        },
+        {
+          "level": 3,
+          "title": "练习",
+          "slug": "练习"
+        },
+        {
+          "level": 2,
+          "title": "02）a little/a bit",
+          "slug": "_02-a-little-a-bit"
+        },
+        {
+          "level": 3,
+          "title": "案例",
+          "slug": "案例"
+        },
+        {
+          "level": 3,
+          "title": "练习",
+          "slug": "练习-2"
+        }
+      ],
+      "lastUpdated": "7/30/2023, 6:24:40 AM",
+      "lastUpdatedTimestamp": 1690727080000
+    },
+    {
       "title": "vuepress常用语法",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/Writing_rules.html",
@@ -759,8 +846,8 @@ export const siteData = {
           "slug": "_03-字标粗-字标颜色"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "7/29/2023, 7:51:28 AM",
+      "lastUpdatedTimestamp": 1690645888000
     },
     {
       "title": "30岁以后，一定要懂的《滕王阁序》",
@@ -776,8 +863,8 @@ export const siteData = {
           "slug": "懂诗词歌赋"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "7/29/2023, 7:51:28 AM",
+      "lastUpdatedTimestamp": 1690645888000
     },
     {
       "title": "强制关闭端口号",
@@ -863,6 +950,10 @@ export const siteData = {
           {
             "text": "java基础",
             "link": "/java/javaSEBase/java"
+          },
+          {
+            "text": "springCloud",
+            "link": "/java/springcloudgateway/01gateway"
           }
         ]
       }
@@ -953,38 +1044,23 @@ export const siteData = {
           ]
         },
         {
-          "title": "java字节流案例",
+          "title": "java-IO",
           "collapsable": false,
           "children": [
-            "/java/javaSEBase/day14-IO"
-          ]
-        },
-        {
-          "title": "java字符流",
-          "collapsable": false,
-          "children": [
-            "/java/javaSEBase/day15-IO01流"
-          ]
-        },
-        {
-          "title": "java转换流",
-          "collapsable": false,
-          "children": [
-            "/java/javaSEBase/day15-IO02转换流"
-          ]
-        },
-        {
-          "title": "java对象操作流",
-          "collapsable": false,
-          "children": [
-            "/java/javaSEBase/day15-IO03对象操作流"
-          ]
-        },
-        {
-          "title": "javaProperties集合",
-          "collapsable": false,
-          "children": [
+            "/java/javaSEBase/day14-IO",
+            "/java/javaSEBase/day15-IO01流",
+            "/java/javaSEBase/day15-IO02转换流",
+            "/java/javaSEBase/day15-IO03对象操作流",
             "/java/javaSEBase/day15-IO04Properties集合"
+          ]
+        }
+      ],
+      "/java/springcloudgateway/": [
+        {
+          "title": "springCloud-Gateway",
+          "collapsable": false,
+          "children": [
+            "/java/springcloudgateway/01gateway"
           ]
         }
       ]

@@ -62,6 +62,7 @@ module.exports = {
         items: [
           { text: 'mybatis', link: '/java/Mybatis/mybatis' },
           { text: 'java基础', link: '/java/javaSEBase/java' },
+          { text: 'springCloud', link: '/java/springcloudgateway/01gateway' },
 
         ]
       }
@@ -168,37 +169,31 @@ module.exports = {
         },
 
         {
-          title: 'java字节流案例',
+          title: 'java-IO',
           collapsable: false,
-          children: ['/java/javaSEBase/day14-IO'],
+          children: ['/java/javaSEBase/day14-IO','/java/javaSEBase/day15-IO01流','/java/javaSEBase/day15-IO02转换流','/java/javaSEBase/day15-IO03对象操作流','/java/javaSEBase/day15-IO04Properties集合'],
 
         },
+     
+
+      ],
+      //---------------------------表示springcloudgateway侧边栏目录
+      '/java/springcloudgateway/': [
+
+
         {
-          title: 'java字符流',
+          title: 'springCloud-Gateway',
           collapsable: false,
-          children: ['/java/javaSEBase/day15-IO01流'],
+          children: ['/java/springcloudgateway/01gateway']
 
         },
-        {
-          title: 'java转换流',
-          collapsable: false,
-          children: ['/java/javaSEBase/day15-IO02转换流'],
 
-        },
-        {
-          title: 'java对象操作流',
-          collapsable: false,
-          children: ['/java/javaSEBase/day15-IO03对象操作流'],
-
-        },
-        {
-          title: 'javaProperties集合',
-          collapsable: false,
-          children: ['/java/javaSEBase/day15-IO04Properties集合'],
-
-        },
+     
 
       ]
+
+ 
+
 
     },
 
