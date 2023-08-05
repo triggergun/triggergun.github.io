@@ -114,13 +114,13 @@ public class ConsructorTest {
 
 核心设计模式思想就在这个测试用例：
 
-![image-20230805161417710](./组装者设计模式.assets/image-20230805161417710.png)
+![image-20230805161417710](./AssemblerDesignPattern.assets/image-20230805161417710.png)
 
 ## UML类图
 
 
 
-![image-20230805164208250](./组装者设计模式.assets/image-20230805164208250.png)
+![image-20230805164208250](./AssemblerDesignPattern.assets/image-20230805164208250.png)
 
 
 
