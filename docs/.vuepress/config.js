@@ -18,9 +18,9 @@ module.exports = {
     lineNumbers: true,
 
     //  解决：图片中文路径  与 前面 要加 ./ 才能解析。
-    // extendMarkdown: md => {
-    //   md.use(require("markdown-it-disable-url-encode"));
-    // }
+    extendMarkdown: md => {
+      md.use(require("markdown-it-disable-url-encode"));
+    }
 
   },
 

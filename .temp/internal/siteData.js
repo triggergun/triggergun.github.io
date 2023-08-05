@@ -238,6 +238,23 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "代理（proxy）",
+      "frontmatter": {},
+      "regularPath": "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html",
+      "relativePath": "java/designModel/02动态代理模式.md",
+      "key": "v-7350a031",
+      "path": "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "静态代理（static proxy）",
+          "slug": "静态代理-static-proxy"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 5:15:18 AM",
+      "lastUpdatedTimestamp": 1691241318000
+    },
+    {
       "title": "组装者设计模式",
       "frontmatter": {},
       "regularPath": "/java/designModel/AssemblerDesignPattern.html",
@@ -270,7 +287,9 @@ export const siteData = {
           "title": "UML类图",
           "slug": "uml类图"
         }
-      ]
+      ],
+      "lastUpdated": "8/5/2023, 1:34:13 AM",
+      "lastUpdatedTimestamp": 1691228053000
     },
     {
       "title": "1.字节流",
@@ -442,6 +461,33 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "2.转换流",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
+      "key": "v-2d58845e",
+      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
+          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
+        },
+        {
+          "level": 2,
+          "title": "2.2转换流读写数据【应用】",
+          "slug": "_2-2转换流读写数据【应用】"
+        },
+        {
+          "level": 2,
+          "title": "需求假设",
+          "slug": "需求假设"
+        }
+      ],
+      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdatedTimestamp": 1690562997000
+    },
+    {
       "title": "3.对象操作流",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
@@ -468,33 +514,6 @@ export const siteData = {
           "level": 2,
           "title": "3.4对象操作流练习【应用】",
           "slug": "_3-4对象操作流练习【应用】"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
-      "title": "2.转换流",
-      "frontmatter": {},
-      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
-      "key": "v-2d58845e",
-      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
-          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
-        },
-        {
-          "level": 2,
-          "title": "2.2转换流读写数据【应用】",
-          "slug": "_2-2转换流读写数据【应用】"
-        },
-        {
-          "level": 2,
-          "title": "需求假设",
-          "slug": "需求假设"
         }
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
@@ -558,63 +577,6 @@ export const siteData = {
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
-    },
-    {
-      "title": "网关入门快速搭建",
-      "frontmatter": {},
-      "regularPath": "/java/springcloudgateway/01gateway.html",
-      "relativePath": "java/springcloudgateway/01gateway.md",
-      "key": "v-3bb47468",
-      "path": "/java/springcloudgateway/01gateway.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "第一步：创建父工程",
-          "slug": "第一步-创建父工程"
-        },
-        {
-          "level": 2,
-          "title": "第二步：创建网关子项目",
-          "slug": "第二步-创建网关子项目"
-        },
-        {
-          "level": 3,
-          "title": "导入依赖",
-          "slug": "导入依赖"
-        },
-        {
-          "level": 3,
-          "title": "书写配置文件",
-          "slug": "书写配置文件"
-        },
-        {
-          "level": 2,
-          "title": "第三步：创建user子项目",
-          "slug": "第三步-创建user子项目"
-        },
-        {
-          "level": 3,
-          "title": "导入依赖",
-          "slug": "导入依赖-2"
-        },
-        {
-          "level": 3,
-          "title": "书写配置文件",
-          "slug": "书写配置文件-2"
-        },
-        {
-          "level": 3,
-          "title": "编写Controller",
-          "slug": "编写controller"
-        },
-        {
-          "level": 2,
-          "title": "测试",
-          "slug": "测试"
-        }
-      ],
-      "lastUpdated": "8/3/2023, 6:03:02 AM",
-      "lastUpdatedTimestamp": 1691071382000
     },
     {
       "title": "ip地址是怎么划分的呢",
@@ -887,23 +849,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690645888000
     },
     {
-      "title": "30岁以后，一定要懂的《滕王阁序》",
-      "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
-      "relativePath": "软件资源/软件资源.md",
-      "key": "v-04d9f279",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "懂诗词歌赋",
-          "slug": "懂诗词歌赋"
-        }
-      ],
-      "lastUpdated": "7/29/2023, 7:51:28 AM",
-      "lastUpdatedTimestamp": 1690645888000
-    },
-    {
       "title": "强制关闭端口号",
       "frontmatter": {},
       "regularPath": "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
@@ -939,6 +884,80 @@ export const siteData = {
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "网关入门快速搭建",
+      "frontmatter": {},
+      "regularPath": "/java/springcloudgateway/01gateway.html",
+      "relativePath": "java/springcloudgateway/01gateway.md",
+      "key": "v-3bb47468",
+      "path": "/java/springcloudgateway/01gateway.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：创建父工程",
+          "slug": "第一步-创建父工程"
+        },
+        {
+          "level": 2,
+          "title": "第二步：创建网关子项目",
+          "slug": "第二步-创建网关子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件"
+        },
+        {
+          "level": 2,
+          "title": "第三步：创建user子项目",
+          "slug": "第三步-创建user子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖-2"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件-2"
+        },
+        {
+          "level": 3,
+          "title": "编写Controller",
+          "slug": "编写controller"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ],
+      "lastUpdated": "8/3/2023, 6:03:02 AM",
+      "lastUpdatedTimestamp": 1691071382000
+    },
+    {
+      "title": "30岁以后，一定要懂的《滕王阁序》",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
+      "relativePath": "软件资源/软件资源.md",
+      "key": "v-04d9f279",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "懂诗词歌赋",
+          "slug": "懂诗词歌赋"
+        }
+      ],
+      "lastUpdated": "7/29/2023, 7:51:28 AM",
+      "lastUpdatedTimestamp": 1690645888000
     }
   ],
   "themeConfig": {
@@ -1110,7 +1129,8 @@ export const siteData = {
           "title": "design",
           "collapsable": false,
           "children": [
-            "/java/designModel/AssemblerDesignPattern"
+            "/java/designModel/AssemblerDesignPattern",
+            "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"
           ]
         }
       ]

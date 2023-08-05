@@ -69,6 +69,22 @@ export const routes = [
     },
   },
   {
+    name: "v-7350a031",
+    path: "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7350a031").then(next)
+    },
+  },
+  {
+    path: "/java/designModel/02动态代理模式.html",
+    redirect: "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html"
+  },
+  {
+    path: "/java/designModel/02动态代理模式.html",
+    redirect: "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html"
+  },
+  {
     name: "v-7b719b06",
     path: "/java/designModel/AssemblerDesignPattern.html",
     component: GlobalLayout,
@@ -101,22 +117,6 @@ export const routes = [
     redirect: "/java/javaSEBase/day15-IO01%E6%B5%81.html"
   },
   {
-    name: "v-20d60fe0",
-    path: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-20d60fe0").then(next)
-    },
-  },
-  {
-    path: "/java/javaSEBase/day15-IO03对象操作流.html",
-    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
-  },
-  {
-    path: "/java/javaSEBase/day15-IO03对象操作流.html",
-    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
-  },
-  {
     name: "v-2d58845e",
     path: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
     component: GlobalLayout,
@@ -131,6 +131,22 @@ export const routes = [
   {
     path: "/java/javaSEBase/day15-IO02转换流.html",
     redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
+  },
+  {
+    name: "v-20d60fe0",
+    path: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-20d60fe0").then(next)
+    },
+  },
+  {
+    path: "/java/javaSEBase/day15-IO03对象操作流.html",
+    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
+  },
+  {
+    path: "/java/javaSEBase/day15-IO03对象操作流.html",
+    redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
   },
   {
     name: "v-28c21038",
@@ -154,14 +170,6 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-6c85b54c").then(next)
-    },
-  },
-  {
-    name: "v-3bb47468",
-    path: "/java/springcloudgateway/01gateway.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3bb47468").then(next)
     },
   },
   {
@@ -237,22 +245,6 @@ export const routes = [
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/Writing_rules.html"
   },
   {
-    name: "v-04d9f279",
-    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-04d9f279").then(next)
-    },
-  },
-  {
-    path: "/软件资源/软件资源.html",
-    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html"
-  },
-  {
-    path: "/软件资源/软件资源.html",
-    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html"
-  },
-  {
     name: "v-34a4cb9c",
     path: "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
     component: GlobalLayout,
@@ -267,6 +259,30 @@ export const routes = [
   {
     path: "/运维/windows/cmd.html",
     redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
+  },
+  {
+    name: "v-3bb47468",
+    path: "/java/springcloudgateway/01gateway.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3bb47468").then(next)
+    },
+  },
+  {
+    name: "v-04d9f279",
+    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-04d9f279").then(next)
+    },
+  },
+  {
+    path: "/软件资源/软件资源.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html"
+  },
+  {
+    path: "/软件资源/软件资源.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html"
   },
   {
     path: '*',
