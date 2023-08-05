@@ -69,6 +69,14 @@ export const routes = [
     },
   },
   {
+    name: "v-7b719b06",
+    path: "/java/designModel/AssemblerDesignPattern.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7b719b06").then(next)
+    },
+  },
+  {
     name: "v-07adac94",
     path: "/java/javaSEBase/day14-IO.html",
     component: GlobalLayout,
@@ -93,22 +101,6 @@ export const routes = [
     redirect: "/java/javaSEBase/day15-IO01%E6%B5%81.html"
   },
   {
-    name: "v-2d58845e",
-    path: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2d58845e").then(next)
-    },
-  },
-  {
-    path: "/java/javaSEBase/day15-IO02转换流.html",
-    redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
-  },
-  {
-    path: "/java/javaSEBase/day15-IO02转换流.html",
-    redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
-  },
-  {
     name: "v-20d60fe0",
     path: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
     component: GlobalLayout,
@@ -123,6 +115,22 @@ export const routes = [
   {
     path: "/java/javaSEBase/day15-IO03对象操作流.html",
     redirect: "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html"
+  },
+  {
+    name: "v-2d58845e",
+    path: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2d58845e").then(next)
+    },
+  },
+  {
+    path: "/java/javaSEBase/day15-IO02转换流.html",
+    redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
+  },
+  {
+    path: "/java/javaSEBase/day15-IO02转换流.html",
+    redirect: "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html"
   },
   {
     name: "v-28c21038",
@@ -181,22 +189,6 @@ export const routes = [
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/01docsify.html"
   },
   {
-    name: "v-8ba33ae4",
-    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-8ba33ae4").then(next)
-    },
-  },
-  {
-    path: "/软件资源/vuepress怎么玩/SetTitle.html",
-    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html"
-  },
-  {
-    path: "/软件资源/vuepress怎么玩/SetTitle.html",
-    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html"
-  },
-  {
     name: "v-63361320",
     path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
     component: GlobalLayout,
@@ -211,6 +203,22 @@ export const routes = [
   {
     path: "/软件资源/English_syntax.html",
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html"
+  },
+  {
+    name: "v-8ba33ae4",
+    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-8ba33ae4").then(next)
+    },
+  },
+  {
+    path: "/软件资源/vuepress怎么玩/SetTitle.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html"
+  },
+  {
+    path: "/软件资源/vuepress怎么玩/SetTitle.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html"
   },
   {
     name: "v-021585d8",

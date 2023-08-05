@@ -238,6 +238,41 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
+      "title": "组装者设计模式",
+      "frontmatter": {},
+      "regularPath": "/java/designModel/AssemblerDesignPattern.html",
+      "relativePath": "java/designModel/AssemblerDesignPattern.md",
+      "key": "v-7b719b06",
+      "path": "/java/designModel/AssemblerDesignPattern.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求：组装电脑",
+          "slug": "需求-组装电脑"
+        },
+        {
+          "level": 2,
+          "title": "第一步：创建电脑类",
+          "slug": "第一步-创建电脑类"
+        },
+        {
+          "level": 2,
+          "title": "第二步：创建组装者类",
+          "slug": "第二步-创建组装者类"
+        },
+        {
+          "level": 2,
+          "title": "第三步：编写测试实例",
+          "slug": "第三步-编写测试实例"
+        },
+        {
+          "level": 2,
+          "title": "UML类图",
+          "slug": "uml类图"
+        }
+      ]
+    },
+    {
       "title": "1.字节流",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day14-IO.html",
@@ -407,33 +442,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
-      "title": "2.转换流",
-      "frontmatter": {},
-      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
-      "key": "v-2d58845e",
-      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
-          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
-        },
-        {
-          "level": 2,
-          "title": "2.2转换流读写数据【应用】",
-          "slug": "_2-2转换流读写数据【应用】"
-        },
-        {
-          "level": 2,
-          "title": "需求假设",
-          "slug": "需求假设"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
       "title": "3.对象操作流",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
@@ -460,6 +468,33 @@ export const siteData = {
           "level": 2,
           "title": "3.4对象操作流练习【应用】",
           "slug": "_3-4对象操作流练习【应用】"
+        }
+      ],
+      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "2.转换流",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
+      "key": "v-2d58845e",
+      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
+          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
+        },
+        {
+          "level": 2,
+          "title": "2.2转换流读写数据【应用】",
+          "slug": "_2-2转换流读写数据【应用】"
+        },
+        {
+          "level": 2,
+          "title": "需求假设",
+          "slug": "需求假设"
         }
       ],
       "lastUpdated": "7/28/2023, 8:49:57 AM",
@@ -577,7 +612,9 @@ export const siteData = {
           "title": "测试",
           "slug": "测试"
         }
-      ]
+      ],
+      "lastUpdated": "8/3/2023, 6:03:02 AM",
+      "lastUpdatedTimestamp": 1691071382000
     },
     {
       "title": "ip地址是怎么划分的呢",
@@ -729,33 +766,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1690562997000
     },
     {
-      "title": "vuepress标体设置规则",
-      "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
-      "relativePath": "软件资源/vuepress怎么玩/SetTitle.md",
-      "key": "v-8ba33ae4",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "01）标题级别怎么搞！",
-          "slug": "_01-标题级别怎么搞"
-        },
-        {
-          "level": 2,
-          "title": "02）怎么搞如下效果呢？",
-          "slug": "_02-怎么搞如下效果呢"
-        },
-        {
-          "level": 2,
-          "title": "03）编写代码",
-          "slug": "_03-编写代码"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
       "title": "英语语法",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
@@ -821,6 +831,33 @@ export const siteData = {
       ],
       "lastUpdated": "7/30/2023, 6:24:40 AM",
       "lastUpdatedTimestamp": 1690727080000
+    },
+    {
+      "title": "vuepress标体设置规则",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
+      "relativePath": "软件资源/vuepress怎么玩/SetTitle.md",
+      "key": "v-8ba33ae4",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01）标题级别怎么搞！",
+          "slug": "_01-标题级别怎么搞"
+        },
+        {
+          "level": 2,
+          "title": "02）怎么搞如下效果呢？",
+          "slug": "_02-怎么搞如下效果呢"
+        },
+        {
+          "level": 2,
+          "title": "03）编写代码",
+          "slug": "_03-编写代码"
+        }
+      ],
+      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdatedTimestamp": 1690562997000
     },
     {
       "title": "vuepress常用语法",
@@ -954,6 +991,10 @@ export const siteData = {
           {
             "text": "springCloud",
             "link": "/java/springcloudgateway/01gateway"
+          },
+          {
+            "text": "设计模式",
+            "link": "/java/designModel/AssemblerDesignPattern"
           }
         ]
       }
@@ -1061,6 +1102,15 @@ export const siteData = {
           "collapsable": false,
           "children": [
             "/java/springcloudgateway/01gateway"
+          ]
+        }
+      ],
+      "/java/designModel/": [
+        {
+          "title": "design",
+          "collapsable": false,
+          "children": [
+            "/java/designModel/AssemblerDesignPattern"
           ]
         }
       ]

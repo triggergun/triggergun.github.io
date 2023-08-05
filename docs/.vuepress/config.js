@@ -63,7 +63,7 @@ module.exports = {
           { text: 'mybatis', link: '/java/Mybatis/mybatis' },
           { text: 'java基础', link: '/java/javaSEBase/java' },
           { text: 'springCloud', link: '/java/springcloudgateway/01gateway' },
-          { text: '设计模式', link: '/java/design_model/01组装者设计模式' }
+          { text: '设计模式', link: '/java/designModel/AssemblerDesignPattern' }
 
         ]
       }
@@ -193,12 +193,12 @@ module.exports = {
       ],
 
       // ===================== 点击设计模式 ===========
-      '/java/design_model/': [
+      '/java/designModel/': [
 
         {
           title: 'design',
           collapsable: false,
-          children: ['/java/design_model/01组装者设计模式']
+          children: ['/java/designModel/AssemblerDesignPattern']
 
         },
 
