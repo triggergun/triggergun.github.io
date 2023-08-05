@@ -4,7 +4,7 @@
 
 这个叫：自定义容器。
 
-![image-20230716190717622](./Writing_rules.assets/image-20230716190717622.png)
+![image-20230716190717622](Writing_rules.assets/image-20230716190717622.png)
 
 语法：
 

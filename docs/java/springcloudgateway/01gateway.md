@@ -366,7 +366,7 @@ json解析：
 
 
 
-![image-20230803182838009](./01gateway.assets/image-20230803182838009.png)
+![image-20230803182838009](01gateway.assets/image-20230803182838009.png)
 
 
 

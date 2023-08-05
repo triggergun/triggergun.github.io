@@ -4,7 +4,7 @@
 
 初始化的工程目录结构。
 
-![image-20230421172509616](./mybatis.assets/image-20230421172509616.png)
+![image-20230421172509616](mybatis.assets/image-20230421172509616.png)
 
 ### **第1步：导入maven坐标**
 
@@ -265,15 +265,15 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 点击database =》Data source =》选择你要连接的数据库mysql
 
-![image-20230420200551499](./mybatis.assets/image-20230420200551499.png)
+![image-20230420200551499](mybatis.assets/image-20230420200551499.png)
 
 添加连接数据库的jar包驱动。
 
-![image-20230420201232565](./mybatis.assets/image-20230420201232565.png)
+![image-20230420201232565](mybatis.assets/image-20230420201232565.png)
 
 填写连接的参数：
 
-![image-20230420203148089](./mybatis.assets/image-20230420203148089.png)
+![image-20230420203148089](mybatis.assets/image-20230420203148089.png)
 
 ```xquery
 jdbc:mysql://localhost:3306/school?seUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
@@ -281,7 +281,7 @@ jdbc:mysql://localhost:3306/school?seUnicode=true&characterEncoding=UTF-8&server
 
 连接成功！
 
-![image-20230420203249415](./mybatis.assets/image-20230420203249415.png)
+![image-20230420203249415](mybatis.assets/image-20230420203249415.png)
 
 
 
@@ -289,17 +289,17 @@ jdbc:mysql://localhost:3306/school?seUnicode=true&characterEncoding=UTF-8&server
 
 使用：Mybatis Generator 生成代码。
 
-![image-20230420210329184](./mybatis.assets/image-20230420210329184.png)
+![image-20230420210329184](mybatis.assets/image-20230420210329184.png)
 
 https://github.com/kmaster/better-mybatis-generator/blob/master/README.md
 
 1. 创建dao包和pojo包
 
-![image-20230420203444903](./mybatis.assets/image-20230420203444903.png)
+![image-20230420203444903](mybatis.assets/image-20230420203444903.png)
 
 2. 选中这些数据表，然后点击右键，选择mybatis-generator
 
-![image-20230420210415417](./mybatis.assets/image-20230420210415417.png)
+![image-20230420210415417](mybatis.assets/image-20230420210415417.png)
 
 
 
@@ -307,13 +307,13 @@ https://github.com/kmaster/better-mybatis-generator/blob/master/README.md
 
 配置窗口！
 
-![image-20230420212824030](./mybatis.assets/image-20230420212824030.png)
+![image-20230420212824030](mybatis.assets/image-20230420212824030.png)
 
 
 
 生成文件的目录。
 
-![image-20230420213034089](./mybatis.assets/image-20230420213034089.png)
+![image-20230420213034089](mybatis.assets/image-20230420213034089.png)
 
 
 
@@ -349,7 +349,7 @@ class DemoApplicationTests {
 
 结果：
 
-![image-20230421174555758](./mybatis.assets/image-20230421174555758.png)
+![image-20230421174555758](mybatis.assets/image-20230421174555758.png)
 
 
 

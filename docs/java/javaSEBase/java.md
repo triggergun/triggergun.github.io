@@ -2,28 +2,28 @@
 
 **案例一：**客户端创建一个运算的对象，并且调用获取运算结果的doGet()方法。传递参数！第一个参数：指定做什么运算，第二个参数表示：对二个数进行xxxx运算的程序设
 
-![image-20230422152737854](./java.assets/image-20230422152737854.png)
+![image-20230422152737854](java.assets/image-20230422152737854.png)
 
 - 参数一：指定要进行什么运算！
 - 参数二：指定对那二个数进行运算！
 
 **运行效果**
 
-![image-20230422153254302](./java.assets/image-20230422153254302.png)
+![image-20230422153254302](java.assets/image-20230422153254302.png)
 
 当传递的参数为sub时。
 
-![image-20230422155940418](./java.assets/image-20230422155940418.png)
+![image-20230422155940418](java.assets/image-20230422155940418.png)
 
 **运行效果**
 
-![image-20230422155914012](./java.assets/image-20230422155914012.png)
+![image-20230422155914012](java.assets/image-20230422155914012.png)
 
 ## 四则运算案例
 
 **实现的UML图如下：**
 
-![test01](./java.assets/test01.png)
+![test01](java.assets/test01.png)
 
 - ImplServlet类
   - doGet()方法：
@@ -131,5 +131,5 @@ public class Client {
 
 ### 代码执行时序图
 
-![Client_main](./java.assets/Client_main.png)
+![Client_main](java.assets/Client_main.png)
 

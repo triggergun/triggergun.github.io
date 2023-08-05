@@ -8,8 +8,8 @@
  npm run build
 ```
 
-![](./image/Snipaste_2023-03-13_11-03-33.png)
+![](image/Snipaste_2023-03-13_11-03-33.png)
 
 `注意:`github中的目录要一样：
 
-![](./image/Snipaste_2023-03-13_11-03-41.png)
+![](image/Snipaste_2023-03-13_11-03-41.png)

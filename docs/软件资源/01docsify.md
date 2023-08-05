@@ -18,7 +18,6 @@ If you want to write the documentation in the `./docs` subdirectory, you can use
 
 > - 初始化后
 >
-> ![](image/Snipaste_2023-03-10_14-22-32.png)
 >
 > 
 
@@ -225,7 +224,6 @@ docs/zh-cn/guide.md   => http://domain.com/#/zh-cn/guide
 
 ### Sidebar(侧边栏,工具条)
 
-![](image/Snipaste_2023-03-10_15-35-43.png)
 
 In order to have a sidebar, you can create your own `_sidebar.md` (see [this documentation's sidebar](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md) for an example):
 
@@ -461,7 +459,7 @@ You can create sub-lists by indenting items that are under a certain parent.
 
 renders as渲染后。
 
-![](image/Snipaste_2023-03-10_15-52-30.png)
+
 
 ## Combining custom navbars with the emoji plugin(将自定义导航栏与表情符号插件相结合)
 
@@ -533,7 +531,7 @@ Set `coverpage` to **true**, and create a `_coverpage.md`:
 >
 >
 
-![](image/Snipaste_2023-03-10_17-22-40.png)
+
 
 ## Custom background(自定义背景)
 

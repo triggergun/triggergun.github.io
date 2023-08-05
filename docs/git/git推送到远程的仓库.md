@@ -16,19 +16,19 @@
 
 本地构建自己的项目，项目构建完成后会自动生成在dist目录下。
 
-![image-20230323113700468](./assets/image-20230323113700468.png)
+![image-20230323113700468](assets/image-20230323113700468.png)
 
 执行构建命令：`npm run build`就会生成如上面的dist目录。接下来就是开始上传了。
 
-![image-20230323115752836](./assets/image-20230323115752836.png)
+![image-20230323115752836](assets/image-20230323115752836.png)
 
 ### **步骤二：**上传到git上。
 
-![image-20230323120144015](./assets/image-20230323120144015.png)
+![image-20230323120144015](assets/image-20230323120144015.png)
 
 在dist目录下执行git init命令初始化目录，然后add . 临时空间。在提交到本地仓库中去；
 
-![image-20230323120218731](./assets/image-20230323120218731.png)
+![image-20230323120218731](assets/image-20230323120218731.png)
 
 
 
@@ -48,7 +48,7 @@ git init
 git add
 ```
 
-![image-20230323120749661](./assets/image-20230323120749661.png)
+![image-20230323120749661](assets/image-20230323120749661.png)
 
 ⑤、提交当前目录文件
 
@@ -80,17 +80,17 @@ git remote add origin url
 - remote：远程，远。
 - origin：表示：给远程仓库起的别名。【别名的作用：方便关联与记忆。】
 
-![image-20230323121810096](./assets/image-20230323121810096.png)
+![image-20230323121810096](assets/image-20230323121810096.png)
 
 **方式二：**修改配置文件关联：
 
-![image-20230323122008588](./assets/image-20230323122008588.png)
+![image-20230323122008588](assets/image-20230323122008588.png)
 
 总之：怎么方便怎么来，凭自己的个人习惯选择。
 
 ### **步骤四：**强制推送到git。
 
-![image-20230323122150808](./assets/image-20230323122150808.png)
+![image-20230323122150808](assets/image-20230323122150808.png)
 
 问题：我是提交到github上去，之后我就报了：     `$ git push --force origin master                                                                            fatal: unable to access 'https://github.com/triggergun/triggergun.git/': OpenSSL SSL_read: SSL_ERRO  R_SYSCALL, errno 10054                                                                                     `    
 

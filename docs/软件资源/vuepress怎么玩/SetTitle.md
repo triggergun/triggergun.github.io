@@ -9,11 +9,11 @@
 
 ## 02）怎么搞如下效果呢？
 
-![image-20230716185849599](./SetTitle.assets/image-20230716185849599.png)
+![image-20230716185849599](SetTitle.assets/image-20230716185849599.png)
 
 - 第一步：配置cofig.js文件
 
-![image-20230716190036148](./SetTitle.assets/image-20230716190036148.png)
+![image-20230716190036148](SetTitle.assets/image-20230716190036148.png)
 
 
 
@@ -40,13 +40,13 @@
 
 效果就是：侧边栏显示的效果
 
-![image-20230716190237746](./SetTitle.assets/image-20230716190237746.png)
+![image-20230716190237746](SetTitle.assets/image-20230716190237746.png)
 
 ## 03）编写代码
 
 文件命名用英文。不要用中文，中文不太支持！
 
-![image-20230716194255779](./SetTitle.assets/image-20230716194255779.png)
+![image-20230716194255779](SetTitle.assets/image-20230716194255779.png)
 
 
 

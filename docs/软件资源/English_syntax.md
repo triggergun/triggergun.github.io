@@ -18,7 +18,7 @@
 
   手机、电脑......
 
-![image-20230730130905143](./English_syntax.assets/image-20230730130905143.png)
+![image-20230730130905143](English_syntax.assets/image-20230730130905143.png)
 
 ### 不可数名词
 
@@ -115,7 +115,7 @@
 
 - <b>考察一：</b>延续性动词，通常以进行时的形式来考察。【用while】
 
-  ![image-20230729230657296](./English_syntax.assets/image-20230729230657296.png)
+  ![image-20230729230657296](English_syntax.assets/image-20230729230657296.png)
 
   I <font color="red">was watching</font> TV 【while】 my brother <font color="red">was writing</font> an E-mail.
   
