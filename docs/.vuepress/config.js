@@ -198,7 +198,7 @@ module.exports = {
         {
           title: 'design',
           collapsable: false,
-          children: ['/java/designModel/AssemblerDesignPattern']
+          children: ['/java/designModel/AssemblerDesignPattern','/java/designModel/02动态代理模式']
 
         },
 
