@@ -55,7 +55,7 @@ module.exports = {
 
 
 
-      // 选项5
+      // top  选项5
       {
         text: 'java',
         // 子选项
@@ -63,12 +63,13 @@ module.exports = {
           { text: 'mybatis', link: '/java/Mybatis/mybatis' },
           { text: 'java基础', link: '/java/javaSEBase/java' },
           { text: 'springCloud', link: '/java/springcloudgateway/01gateway' },
+          { text: '设计模式', link: '/java/design_model/01组装者设计模式' }
 
         ]
       }
     ],
 
-    // ===================================================侧边栏
+    // ===================================================侧边栏====================================
     sidebar: {
 
       // ==================================   首页
@@ -76,7 +77,7 @@ module.exports = {
         {
           title: '软件资源',
           collapsable: false,
-          children: ['/软件资源/软件资源','/软件资源/English_syntax'],
+          children: ['/软件资源/软件资源', '/软件资源/English_syntax'],
 
         }
         ,
@@ -139,7 +140,7 @@ module.exports = {
 
 
       ],
-      // 表示：点击导航栏后，侧边栏显示的标题有：java
+      // 表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
       '/java/Mybatis/': [
         {
           title: 'mybatis整合springboot',
@@ -171,10 +172,10 @@ module.exports = {
         {
           title: 'java-IO',
           collapsable: false,
-          children: ['/java/javaSEBase/day14-IO','/java/javaSEBase/day15-IO01流','/java/javaSEBase/day15-IO02转换流','/java/javaSEBase/day15-IO03对象操作流','/java/javaSEBase/day15-IO04Properties集合'],
+          children: ['/java/javaSEBase/day14-IO', '/java/javaSEBase/day15-IO01流', '/java/javaSEBase/day15-IO02转换流', '/java/javaSEBase/day15-IO03对象操作流', '/java/javaSEBase/day15-IO04Properties集合'],
 
         },
-     
+
 
       ],
       //---------------------------表示springcloudgateway侧边栏目录
@@ -188,11 +189,21 @@ module.exports = {
 
         },
 
-     
+
+      ],
+
+      // ===================== 点击设计模式 ===========
+      '/java/design_model/': [
+
+        {
+          title: 'design',
+          collapsable: false,
+          children: ['/java/design_model/01组装者设计模式']
+
+        },
 
       ]
 
- 
 
 
     },
