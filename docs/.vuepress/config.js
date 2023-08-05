@@ -193,12 +193,13 @@ module.exports = {
       ],
 
       // ===================== 点击设计模式 ===========
+	//encodeURI('/electron/设置透明窗口时的兼容性问题')
       '/java/designModel/': [
 
         {
           title: 'design',
           collapsable: false,
-          children: ['/java/designModel/AssemblerDesignPattern','/java/designModel/02&#x52A8&#x6001&#x4EE3&#x7406&#x6A21&#x5F0F']
+          children: ['/java/designModel/AssemblerDesignPattern',encodeURI('/java/designModel/02动态代理模式')]
 
         },
 
