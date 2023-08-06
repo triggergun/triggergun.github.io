@@ -71,7 +71,8 @@ module.exports = {
           { text: 'mybatis', link: '/java/Mybatis/mybatis' },
           { text: 'java基础', link: '/java/javaSEBase/java' },
           { text: 'springCloud', link: '/java/springcloudgateway/01gateway' },
-          { text: '设计模式', link: '/java/designModel/AssemblerDesignPattern' }
+          { text: '设计模式', link: '/java/designModel/AssemblerDesignPattern' },
+          { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
 
         ]
       }
@@ -201,17 +202,27 @@ module.exports = {
       ],
 
       // ===================== 点击设计模式 ===========
-	//encodeURI('/electron/设置透明窗口时的兼容性问题')
+      //encodeURI('/electron/设置透明窗口时的兼容性问题')
       '/java/designModel/': [
 
         {
           title: 'design',
           collapsable: false,
-          children: ['/java/designModel/AssemblerDesignPattern',encodeURI('/java/designModel/02动态代理模式')]
+          children: ['/java/designModel/AssemblerDesignPattern', encodeURI('/java/designModel/02动态代理模式')]
 
         },
 
-      ]
+      ],
+      // ===================== 点击设 java 工具 ===========
+      '/java/java工具/': [
+        {
+          title: 'java常用工具库',
+          collapsable: false,
+          children: [encodeURI('/java/java工具/xpath解析doc')]
+
+        },
+
+      ],
 
 
 
