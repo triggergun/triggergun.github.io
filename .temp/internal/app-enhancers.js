@@ -1,6 +1,6 @@
 import m0 from "D:\\hongblog\\.temp\\app-enhancers\\0.js"
 import m1 from "D:\\hongblog\\.temp\\app-enhancers\\data-block.js"
-import m2 from "D:\\hongblog\\.temp\\app-enhancers\\global-components-11.js"
+import m2 from "D:\\hongblog\\.temp\\app-enhancers\\global-components-19.js"
 import m3 from "D:\\hongblog\\.temp\\app-enhancers\\1.js"
 
 export default [

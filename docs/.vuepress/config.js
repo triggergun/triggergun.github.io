@@ -4,7 +4,7 @@ module.exports = {
   base: '/triggergun/',
 
   // 标题,同时，默认主题下，它将显示在导航栏（navbar）上
-  title: "科技趣玩",
+  title: "匆匆趣玩",
   // 描述
   description: "分享各类资源、教程、黑科技软件、工具等等",
 
@@ -115,7 +115,7 @@ module.exports = {
         {
           title: 'vuepress语法',
           collapsable: false,
-          children: ['/软件资源/vuepress怎么玩/SetTitle', '/软件资源/vuepress怎么玩/Writing_rules'],
+          children: ['/软件资源/vuepress怎么玩/SetTitle', '/软件资源/vuepress怎么玩/Writing_rules','/软件资源/vuepress怎么玩/02top导航栏的设置'],
 
         }
 

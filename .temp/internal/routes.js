@@ -9,6 +9,14 @@ import GlobalLayout from "D:\\hongblog\\node_modules\\@vuepress\\core\\lib\\clie
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
+    name: "v-01366f9f",
+    path: "/git/git.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-01366f9f").then(next)
+    },
+  },
+  {
     name: "v-3cb4c92f",
     path: "/",
     component: GlobalLayout,
@@ -19,14 +27,6 @@ export const routes = [
   {
     path: "/index.html",
     redirect: "/"
-  },
-  {
-    name: "v-01366f9f",
-    path: "/git/git.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-01366f9f").then(next)
-    },
   },
   {
     name: "v-5c299c85",
@@ -251,6 +251,22 @@ export const routes = [
   {
     path: "/软件资源/English_syntax.html",
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html"
+  },
+  {
+    name: "v-4dbdaeb8",
+    path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/02top%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%AE%BE%E7%BD%AE.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4dbdaeb8").then(next)
+    },
+  },
+  {
+    path: "/软件资源/vuepress怎么玩/02top导航栏的设置.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/02top%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%AE%BE%E7%BD%AE.html"
+  },
+  {
+    path: "/软件资源/vuepress怎么玩/02top导航栏的设置.html",
+    redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/02top%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%AE%BE%E7%BD%AE.html"
   },
   {
     name: "v-8ba33ae4",
