@@ -16,12 +16,14 @@ export default {
   "v-20d60fe0": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO03对象操作流.md"),
   "v-28c21038": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\day15-IO04Properties集合.md"),
   "v-6c85b54c": () => import("D:\\hongblog\\docs\\java\\javaSEBase\\java.md"),
+  "v-194bb9b2": () => import("D:\\hongblog\\docs\\java\\java工具\\xpath解析doc.md"),
+  "v-fde39bb2": () => import("D:\\hongblog\\docs\\java\\mybatis_plus\\03多数据库源的编写.md"),
+  "v-3bb47468": () => import("D:\\hongblog\\docs\\java\\springcloudgateway\\01gateway.md"),
   "v-40d90282": () => import("D:\\hongblog\\docs\\network\\network01.md"),
   "v-557ebcd4": () => import("D:\\hongblog\\docs\\软件资源\\01docsify.md"),
   "v-63361320": () => import("D:\\hongblog\\docs\\软件资源\\English_syntax.md"),
   "v-8ba33ae4": () => import("D:\\hongblog\\docs\\软件资源\\vuepress怎么玩\\SetTitle.md"),
   "v-021585d8": () => import("D:\\hongblog\\docs\\软件资源\\vuepress怎么玩\\Writing_rules.md"),
-  "v-34a4cb9c": () => import("D:\\hongblog\\docs\\运维\\windows\\cmd.md"),
-  "v-3bb47468": () => import("D:\\hongblog\\docs\\java\\springcloudgateway\\01gateway.md"),
-  "v-04d9f279": () => import("D:\\hongblog\\docs\\软件资源\\软件资源.md") 
+  "v-04d9f279": () => import("D:\\hongblog\\docs\\软件资源\\软件资源.md"),
+  "v-34a4cb9c": () => import("D:\\hongblog\\docs\\运维\\windows\\cmd.md") 
 }

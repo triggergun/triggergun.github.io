@@ -61,8 +61,8 @@ export const siteData = {
           "slug": "第一步-打包"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "git推送到远程的仓库",
@@ -103,8 +103,8 @@ export const siteData = {
           "slug": "步骤四-强制推送到git。"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "Mybaits配置",
@@ -170,8 +170,8 @@ export const siteData = {
           "slug": "总结"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "案例一：查询列表数据",
@@ -249,10 +249,75 @@ export const siteData = {
           "level": 2,
           "title": "静态代理（static proxy）",
           "slug": "静态代理-static-proxy"
+        },
+        {
+          "level": 2,
+          "title": "JDk动态代理",
+          "slug": "jdk动态代理"
+        },
+        {
+          "level": 3,
+          "title": "1）创建代理人接口",
+          "slug": "_1-创建代理人接口"
+        },
+        {
+          "level": 3,
+          "title": "2）创建实现代理人接口的类",
+          "slug": "_2-创建实现代理人接口的类"
+        },
+        {
+          "level": 3,
+          "title": "3）创建代理类",
+          "slug": "_3-创建代理类"
+        },
+        {
+          "level": 3,
+          "title": "4）实现InvocationHandler接口",
+          "slug": "_4-实现invocationhandler接口"
+        },
+        {
+          "level": 3,
+          "title": "编写测试类",
+          "slug": "编写测试类"
+        },
+        {
+          "level": 2,
+          "title": "cglib与jdk动态代理工厂",
+          "slug": "cglib与jdk动态代理工厂"
+        },
+        {
+          "level": 3,
+          "title": "第一步：创建找房子代理的接口",
+          "slug": "第一步-创建找房子代理的接口"
+        },
+        {
+          "level": 3,
+          "title": "第二步：创建代理实现类",
+          "slug": "第二步-创建代理实现类"
+        },
+        {
+          "level": 3,
+          "title": "第三步：创建代理工厂类",
+          "slug": "第三步-创建代理工厂类"
+        },
+        {
+          "level": 3,
+          "title": "jdk动态代理的测试用例",
+          "slug": "jdk动态代理的测试用例"
+        },
+        {
+          "level": 3,
+          "title": "cglib动态代理的测试用例",
+          "slug": "cglib动态代理的测试用例"
+        },
+        {
+          "level": 2,
+          "title": "JDK动态代理的UML图",
+          "slug": "jdk动态代理的uml图"
         }
       ],
-      "lastUpdated": "8/5/2023, 5:15:18 AM",
-      "lastUpdatedTimestamp": 1691241318000
+      "lastUpdated": "8/5/2023, 10:41:09 PM",
+      "lastUpdatedTimestamp": 1691304069000
     },
     {
       "title": "组装者设计模式",
@@ -575,8 +640,192 @@ export const siteData = {
           "slug": "代码执行时序图"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "xpath解析xml文档",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+      "relativePath": "java/java工具/xpath解析doc.md",
+      "key": "v-194bb9b2",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "step1)导入maven坐标",
+          "slug": "step1-导入maven坐标"
+        },
+        {
+          "level": 2,
+          "title": "step2)编写xml文件",
+          "slug": "step2-编写xml文件"
+        },
+        {
+          "level": 2,
+          "title": "step3)编写解析文档方法",
+          "slug": "step3-编写解析文档方法"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 10:41:09 PM",
+      "lastUpdatedTimestamp": 1691304069000
+    },
+    {
+      "title": "mybatis-pius使用多数据源",
+      "frontmatter": {},
+      "regularPath": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html",
+      "relativePath": "java/mybatis_plus/03多数据库源的编写.md",
+      "key": "v-fde39bb2",
+      "path": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "数据准备",
+          "slug": "数据准备"
+        },
+        {
+          "level": 3,
+          "title": "数据库sql",
+          "slug": "数据库sql"
+        },
+        {
+          "level": 2,
+          "title": "ex1)mybatis-plus简单查询",
+          "slug": "ex1-mybatis-plus简单查询"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖"
+        },
+        {
+          "level": 3,
+          "title": "01)书写配置文件：",
+          "slug": "_01-书写配置文件"
+        },
+        {
+          "level": 3,
+          "title": "02)创建pojo对象",
+          "slug": "_02-创建pojo对象"
+        },
+        {
+          "level": 3,
+          "title": "03)创建Mapper接口",
+          "slug": "_03-创建mapper接口"
+        },
+        {
+          "level": 3,
+          "title": "04)编写测试类",
+          "slug": "_04-编写测试类"
+        },
+        {
+          "level": 3,
+          "title": "05)编写controller类",
+          "slug": "_05-编写controller类"
+        },
+        {
+          "level": 2,
+          "title": "ex2)mybatis-plus多数据源",
+          "slug": "ex2-mybatis-plus多数据源"
+        },
+        {
+          "level": 3,
+          "title": "01)导入依赖",
+          "slug": "_01-导入依赖"
+        },
+        {
+          "level": 3,
+          "title": "02)修改配置文件",
+          "slug": "_02-修改配置文件"
+        },
+        {
+          "level": 3,
+          "title": "03)编写controller",
+          "slug": "_03-编写controller"
+        },
+        {
+          "level": 3,
+          "title": "04)指定数据源",
+          "slug": "_04-指定数据源"
+        },
+        {
+          "level": 3,
+          "title": "05)多数据源验证",
+          "slug": "_05-多数据源验证"
+        },
+        {
+          "level": 3,
+          "title": "06)@DS怎么使用",
+          "slug": "_06-ds怎么使用"
+        },
+        {
+          "level": 2,
+          "title": "业务需求一：",
+          "slug": "业务需求一"
+        },
+        {
+          "level": 3,
+          "title": "问题一：",
+          "slug": "问题一"
+        }
+      ]
+    },
+    {
+      "title": "网关入门快速搭建",
+      "frontmatter": {},
+      "regularPath": "/java/springcloudgateway/01gateway.html",
+      "relativePath": "java/springcloudgateway/01gateway.md",
+      "key": "v-3bb47468",
+      "path": "/java/springcloudgateway/01gateway.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：创建父工程",
+          "slug": "第一步-创建父工程"
+        },
+        {
+          "level": 2,
+          "title": "第二步：创建网关子项目",
+          "slug": "第二步-创建网关子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件"
+        },
+        {
+          "level": 2,
+          "title": "第三步：创建user子项目",
+          "slug": "第三步-创建user子项目"
+        },
+        {
+          "level": 3,
+          "title": "导入依赖",
+          "slug": "导入依赖-2"
+        },
+        {
+          "level": 3,
+          "title": "书写配置文件",
+          "slug": "书写配置文件-2"
+        },
+        {
+          "level": 3,
+          "title": "编写Controller",
+          "slug": "编写controller"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "ip地址是怎么划分的呢",
@@ -724,8 +973,8 @@ export const siteData = {
           "slug": "multiple-covers-多个封面"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "英语语法",
@@ -791,8 +1040,8 @@ export const siteData = {
           "slug": "练习-2"
         }
       ],
-      "lastUpdated": "7/30/2023, 6:24:40 AM",
-      "lastUpdatedTimestamp": 1690727080000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "vuepress标体设置规则",
@@ -818,8 +1067,8 @@ export const siteData = {
           "slug": "_03-编写代码"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     },
     {
       "title": "vuepress常用语法",
@@ -843,6 +1092,23 @@ export const siteData = {
           "level": 2,
           "title": "03)字标粗&字标颜色",
           "slug": "_03-字标粗-字标颜色"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "30岁以后，一定要懂的《滕王阁序》",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
+      "relativePath": "软件资源/软件资源.md",
+      "key": "v-04d9f279",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "懂诗词歌赋",
+          "slug": "懂诗词歌赋"
         }
       ],
       "lastUpdated": "7/29/2023, 7:51:28 AM",
@@ -882,85 +1148,12 @@ export const siteData = {
           "slug": "都是什么单词缩写"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
-      "title": "网关入门快速搭建",
-      "frontmatter": {},
-      "regularPath": "/java/springcloudgateway/01gateway.html",
-      "relativePath": "java/springcloudgateway/01gateway.md",
-      "key": "v-3bb47468",
-      "path": "/java/springcloudgateway/01gateway.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "第一步：创建父工程",
-          "slug": "第一步-创建父工程"
-        },
-        {
-          "level": 2,
-          "title": "第二步：创建网关子项目",
-          "slug": "第二步-创建网关子项目"
-        },
-        {
-          "level": 3,
-          "title": "导入依赖",
-          "slug": "导入依赖"
-        },
-        {
-          "level": 3,
-          "title": "书写配置文件",
-          "slug": "书写配置文件"
-        },
-        {
-          "level": 2,
-          "title": "第三步：创建user子项目",
-          "slug": "第三步-创建user子项目"
-        },
-        {
-          "level": 3,
-          "title": "导入依赖",
-          "slug": "导入依赖-2"
-        },
-        {
-          "level": 3,
-          "title": "书写配置文件",
-          "slug": "书写配置文件-2"
-        },
-        {
-          "level": 3,
-          "title": "编写Controller",
-          "slug": "编写controller"
-        },
-        {
-          "level": 2,
-          "title": "测试",
-          "slug": "测试"
-        }
-      ],
-      "lastUpdated": "8/3/2023, 6:03:02 AM",
-      "lastUpdatedTimestamp": 1691071382000
-    },
-    {
-      "title": "30岁以后，一定要懂的《滕王阁序》",
-      "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
-      "relativePath": "软件资源/软件资源.md",
-      "key": "v-04d9f279",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "懂诗词歌赋",
-          "slug": "懂诗词歌赋"
-        }
-      ],
-      "lastUpdated": "7/29/2023, 7:51:28 AM",
-      "lastUpdatedTimestamp": 1690645888000
+      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdatedTimestamp": 1691249955000
     }
   ],
   "themeConfig": {
+    "logo": "logo.svg",
     "nav": [
       {
         "text": "首页",
@@ -1000,20 +1193,38 @@ export const siteData = {
         "text": "java",
         "items": [
           {
-            "text": "mybatis",
-            "link": "/java/Mybatis/mybatis"
-          },
-          {
             "text": "java基础",
             "link": "/java/javaSEBase/java"
           },
           {
+            "text": "dao层框架",
+            "items": [
+              {
+                "text": "mybatis",
+                "link": "/java/Mybatis/mybatis"
+              },
+              {
+                "text": "mybatis-plus",
+                "link": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99"
+              }
+            ]
+          },
+          {
             "text": "springCloud",
-            "link": "/java/springcloudgateway/01gateway"
+            "items": [
+              {
+                "text": "gateway",
+                "link": "/java/springcloudgateway/01gateway"
+              }
+            ]
           },
           {
             "text": "设计模式",
             "link": "/java/designModel/AssemblerDesignPattern"
+          },
+          {
+            "text": "java工具",
+            "link": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc"
           }
         ]
       }
@@ -1095,6 +1306,15 @@ export const siteData = {
           ]
         }
       ],
+      "/java/mybatis_plus/": [
+        {
+          "title": "mybatis-pius使用多数据源",
+          "collapsable": true,
+          "children": [
+            "/java/mybatis_plus/03多数据库源的编写"
+          ]
+        }
+      ],
       "/java/javaSEBase/": [
         {
           "title": "java基础案例",
@@ -1131,6 +1351,15 @@ export const siteData = {
           "children": [
             "/java/designModel/AssemblerDesignPattern",
             "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"
+          ]
+        }
+      ],
+      "/java/java工具/": [
+        {
+          "title": "java常用工具库",
+          "collapsable": false,
+          "children": [
+            "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc"
           ]
         }
       ]

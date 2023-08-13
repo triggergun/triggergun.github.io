@@ -10,7 +10,7 @@ module.exports = {
 
   head: [
     ['link', { rel: 'icon', href: 'favicon.svg' }],
-
+  //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
 
@@ -29,7 +29,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
 
-
+    logo: 'logo.svg',
     // ====================顶上的导航栏
     nav: [
 
@@ -68,9 +68,24 @@ module.exports = {
         text: 'java',
         // 子选项
         items: [
-          { text: 'mybatis', link: '/java/Mybatis/mybatis' },
           { text: 'java基础', link: '/java/javaSEBase/java' },
-          { text: 'springCloud', link: '/java/springcloudgateway/01gateway' },
+          //------------- dao层区
+          {
+            text: 'dao层框架',
+            items: [
+              { text: "mybatis", link: '/java/Mybatis/mybatis' },
+              { text: "mybatis-plus", link: encodeURI('/java/mybatis_plus/03多数据库源的编写') },
+            ]
+          },
+
+          //---------------springCloud
+          {
+            text: 'springCloud',
+            items: [
+              { text: "gateway", link: '/java/springcloudgateway/01gateway' },
+
+            ]
+          },
           { text: '设计模式', link: '/java/designModel/AssemblerDesignPattern' },
           { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
 
@@ -149,7 +164,7 @@ module.exports = {
 
 
       ],
-      // 表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
+      // dao层区的侧边目录========表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
       '/java/Mybatis/': [
         {
           title: 'mybatis整合springboot',
@@ -163,6 +178,15 @@ module.exports = {
           children: ['/java/Mybatis/select01', '/java/Mybatis/select02'],
 
         }
+
+      ],
+      '/java/mybatis_plus/': [
+        {
+          title: 'mybatis-pius使用多数据源',
+          collapsable: true,
+          children: ['/java/mybatis_plus/03多数据库源的编写'],
+
+        },
 
       ],
 

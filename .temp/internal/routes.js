@@ -173,6 +173,46 @@ export const routes = [
     },
   },
   {
+    name: "v-194bb9b2",
+    path: "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-194bb9b2").then(next)
+    },
+  },
+  {
+    path: "/java/java工具/xpath解析doc.html",
+    redirect: "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html"
+  },
+  {
+    path: "/java/java工具/xpath解析doc.html",
+    redirect: "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html"
+  },
+  {
+    name: "v-fde39bb2",
+    path: "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-fde39bb2").then(next)
+    },
+  },
+  {
+    path: "/java/mybatis_plus/03多数据库源的编写.html",
+    redirect: "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html"
+  },
+  {
+    path: "/java/mybatis_plus/03多数据库源的编写.html",
+    redirect: "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html"
+  },
+  {
+    name: "v-3bb47468",
+    path: "/java/springcloudgateway/01gateway.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3bb47468").then(next)
+    },
+  },
+  {
     name: "v-40d90282",
     path: "/network/network01.html",
     component: GlobalLayout,
@@ -245,30 +285,6 @@ export const routes = [
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/Writing_rules.html"
   },
   {
-    name: "v-34a4cb9c",
-    path: "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-34a4cb9c").then(next)
-    },
-  },
-  {
-    path: "/运维/windows/cmd.html",
-    redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
-  },
-  {
-    path: "/运维/windows/cmd.html",
-    redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
-  },
-  {
-    name: "v-3bb47468",
-    path: "/java/springcloudgateway/01gateway.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3bb47468").then(next)
-    },
-  },
-  {
     name: "v-04d9f279",
     path: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
     component: GlobalLayout,
@@ -283,6 +299,22 @@ export const routes = [
   {
     path: "/软件资源/软件资源.html",
     redirect: "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html"
+  },
+  {
+    name: "v-34a4cb9c",
+    path: "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-34a4cb9c").then(next)
+    },
+  },
+  {
+    path: "/运维/windows/cmd.html",
+    redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
+  },
+  {
+    path: "/运维/windows/cmd.html",
+    redirect: "/%E8%BF%90%E7%BB%B4/windows/cmd.html"
   },
   {
     path: '*',
