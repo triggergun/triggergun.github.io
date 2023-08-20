@@ -50,7 +50,7 @@ jobs:
           git add .
           git commit -m "Update master with latest build results"
           git remote add origin_with_token_with_branch https://github.com/triggergun/triggergun.git
-          git push --force origin_with_token_with_branch master  # 推送构建结果到 master 分支
+          git push --force origin_with_token_with_branch master  # 推送构建结果到 master 分支,master 是可以直接部署的网页源码。
 
   sync-to-gitee:
     name: Sync to Gitee
@@ -93,7 +93,7 @@ jobs:
         run: |
           git config --global user.name "triggergun"
           git config --global user.email "930572358@qq.com"
-          git remote add gitee git@gitee.com:ground-gun/triggergun.git
+          git remote add gitee git@gitee.com:ground-gun/ground-gun.git    #  gitee的shh 地址  git@gitee.com:ground-gun/ground-gun.git
           git push -f gitee master  # 推送构建结果到 Gitee 仓库的 master 分支
 
   deploy_and_refresh_pages:
@@ -105,7 +105,7 @@ jobs:
         with:
           # 注意替换为你的 Gitee 用户名
           gitee-username: ground-gun
-          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          # 注意在 github的仓库中的Settings->Secrets 配置 GITEE_PASSWORD
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           # 注意替换为你的 Gitee 仓库
-          gitee-repo: ground-gun/triggergun
+          gitee-repo: ground-gun/ground-gun   # gitee仓库的名字
