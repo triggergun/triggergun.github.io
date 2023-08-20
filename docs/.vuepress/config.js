@@ -1,7 +1,7 @@
 ﻿// docs/.vuepress/config.js
 module.exports = {
   //前缀
-  base: '/triggergun/',
+//  base: '/triggergun/',
 
   // 标题,同时，默认主题下，它将显示在导航栏（navbar）上
   title: "匆匆趣玩",
