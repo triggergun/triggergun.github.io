@@ -63,9 +63,6 @@ module.exports = {
 
       },
 
-
-
-
       // top  选项5
       {
         text: 'java',
@@ -128,9 +125,9 @@ module.exports = {
 
         // 教你怎么在我的博客上进行编写加添内容
         {
-          title: '拉取博客仓库',
+          title: '参与博客编写规则',
           collapsable: false,
-          children: [encodeURI('/软件资源/博客编写/01github拉取博客仓库') ],
+          children: [encodeURI('/软件资源/博客编写/01github拉取博客仓库'), encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
 
         },
 
