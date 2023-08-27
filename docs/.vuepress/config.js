@@ -47,7 +47,7 @@ module.exports = {
         text: '图南的博客',
         // 子选项
         items: [
-          { text: 'Gitee', link: ' https://gitee.com/ground-gun' },
+          { text: 'Gitee', link: 'https://gitee.com/ground-gun' },
           { text: 'Github', link: 'https://github.com/triggergun' },
           { text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts' }
         ]
