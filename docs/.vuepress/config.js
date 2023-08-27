@@ -13,8 +13,6 @@ module.exports = {
   //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
-
-  
   markdown: {
     lineNumbers: true,
 
@@ -25,6 +23,11 @@ module.exports = {
 
   },
 
+  /**
+   * 下面是主题的配置，主要配置那些呢？
+   * 
+   * 
+   */
 
   // 主题配置
   themeConfig: {
@@ -44,6 +47,7 @@ module.exports = {
         text: '图南的博客',
         // 子选项
         items: [
+          { text: 'Gitee', link: ' https://gitee.com/ground-gun' },
           { text: 'Github', link: 'https://github.com/triggergun' },
           { text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts' }
         ]
@@ -105,7 +109,7 @@ module.exports = {
         {
           title: '软件资源',
           collapsable: false,
-          children: ['/软件资源/软件资源', '/软件资源/English_syntax'],
+          children: ['/软件资源/软件资源', '/软件资源/English_syntax','/软件资源/02英语的时态'],
 
         }
         ,
