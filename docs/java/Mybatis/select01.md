@@ -1,12 +1,10 @@
 # 案例一：查询列表数据
 
-在更多的业务场景下，写sql是最重要的。业务逻辑代码书写是在Mybatis框架中写xml的查询sql·
-
 
 ```xml
     
 
-    <resultMap id="baseMap01" type="cn.dasyun.dasbusinesslib.vo.wallet.TimeWalletVo">
+    <resultMap id="baseMap01" type="TimeWalletVo">
         <id column="id" property="id"/>
         <result column="mch_id" property="mchId"/>
         <result column="avail_time" property="availTime"/>
@@ -82,7 +80,7 @@
 ## 第一步：查询结果映射
 
 ```xml
-    <resultMap id="baseMap01" 			type="cn.dasyun.dasbusinesslib.vo.wallet.TimeWalletVo">
+    <resultMap id="baseMap01" 			type="wallet.TimeWalletVo">
         <id column="id" property="id"/>
         <result column="mch_id" property="mchId"/>
         <result column="avail_time" property="availTime"/>

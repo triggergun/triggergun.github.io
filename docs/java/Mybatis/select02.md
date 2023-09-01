@@ -6,7 +6,7 @@
 
 ```xml
         <!--  时间钱包通过   商家名字收索 、 列表查询   -->
-    <resultMap id="baseMap01" type="cn.dasyun.dasbusinesslib.vo.wallet.TimeWalletVo">
+    <resultMap id="baseMap01" type="TimeWalletVo">
         <id column="id" property="id"/>
         <result column="mch_id" property="mchId"/>
         <result column="avail_time" property="availTime"/>
@@ -42,7 +42,9 @@
 
 ```
 
-## 门户查询条件
+## 查询条件
+
+- 通过公司的id去查询。
 
 ```xml
         <if test="companyId != null">
@@ -54,7 +56,7 @@
 
 ## 条件查询列表
 
-通过商户名字查询。
+- 通过商户名字进行了**模糊匹配**查询。
 
 ```xml
             <if test="mchName != null">
