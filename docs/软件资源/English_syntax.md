@@ -45,6 +45,16 @@
   - cake：蛋糕，为什么呢，你取一点可能不是蛋糕，可能有水果、奶油、....
   - fish：鱼。鱼有、鱼头、鱼尾、鱼身体、....
 
+
+
+## 冠词a/an/the
+
+- 怎么使用呢？
+
+
+
+
+
 ## 定语&状语
 
 <font color="grenn">猴子</font>  <font color="blue">在狗窝</font>  <font color='red'>打<sup>[谓语]</sup></font>  狗子<sup>[宾语]</sup>
@@ -96,6 +106,48 @@
 - 上面的案例：定语修饰了名词dog。
 
 :::
+
+## 01)by+xxx用法总结
+
+![image-20230901220724694](English_syntax.assets/image-20230901220724694.png)
+
+
+
+作为一名程序员的我，基本英语素养是要有的，多问几个为什么？多想多说，语言就是用来进行交流的。
+
+
+
+## 02)用with还是to?
+
+::: tip 口诀
+
+双向with，单向to。
+
+:::
+
+![image-20230902095314654](English_syntax.assets/image-20230902095314654.png)
+
+- 他 正在 对 我说话。【他对我说是单向的】
+
+He is talking  <font color='red'>to</font>  me.
+
+![image-20230902095335004](English_syntax.assets/image-20230902095335004.png)
+
+- 他和我  已经聊了很长时间。
+
+He  talked <font color='red'>with</font>  me  for  a  long  time.
+
+for  a  long  time 长久的。
+
+时态：一般过去时。talked为动词（过去式）。
+
+语态：主动语态。
+
+类型：陈述句。
+
+
+
+
 
 
 
