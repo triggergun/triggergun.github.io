@@ -109,7 +109,7 @@ module.exports = {
         {
           title: '软件资源',
           collapsable: false,
-          children: ['/软件资源/软件资源', '/软件资源/English_syntax','/软件资源/02英语的时态'],
+          children: ['/软件资源/软件资源', '/软件资源/English_syntax','/软件资源/02英语的时态', '/软件资源/03英语的发音规则', '/软件资源/04词根词缀合集'],
 
         }
         ,
