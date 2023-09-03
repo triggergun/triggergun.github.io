@@ -1,7 +1,7 @@
 ﻿// docs/.vuepress/config.js
 module.exports = {
   //前缀
-//  base: '/triggergun/',
+  //  base: '/triggergun/',
 
   // 标题,同时，默认主题下，它将显示在导航栏（navbar）上
   title: "匆匆趣玩",
@@ -10,7 +10,7 @@ module.exports = {
 
   head: [
     ['link', { rel: 'icon', href: 'favicon.svg' }],
-  //  ['link', { rel: 'stylesheet', href: 'index.css' }],
+    //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
   markdown: {
@@ -53,11 +53,11 @@ module.exports = {
         ]
       },
 
-      //选项三
+      //========================选项三
       { text: 'git', link: '/git/git' },
 
 
-      //选项4    link 
+      //========================选项4    link 
       {
         text: '运维',
         items: [
@@ -67,7 +67,7 @@ module.exports = {
 
       },
 
-      // top  选项5
+      //============================= top  选项5
       {
         text: 'java',
         // 子选项
@@ -94,10 +94,32 @@ module.exports = {
           { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
 
         ]
+      },
+      //===========================================top 选项6  ==================
+
+      {
+        text: 'lyp',
+        // 子选项
+        items: [
+
+          {
+            text: 'javascript',
+            items: [
+              { text: "基础概念", link: encodeURI('/lyp/javascript/01什么是事件') },
+
+            ],
+          },
+
+          { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
+
+
+        ]
       }
+
+
     ],
 
-     //========================================top导航栏   end============================================
+    //========================================top导航栏 数组 ]  end============================================
 
 
 
@@ -109,7 +131,11 @@ module.exports = {
         {
           title: '软件资源',
           collapsable: false,
-          children: ['/软件资源/软件资源', '/软件资源/English_syntax','/软件资源/02英语的时态', '/软件资源/03英语的发音规则', '/软件资源/04词根词缀合集'],
+          children: ['/软件资源/软件资源',
+            '/软件资源/English_syntax',
+            '/软件资源/02英语的时态',
+            '/软件资源/03英语的发音规则',
+            '/软件资源/04词根词缀合集'],
 
         }
         ,
@@ -123,7 +149,9 @@ module.exports = {
         {
           title: 'vuepress语法',
           collapsable: false,
-          children: ['/软件资源/vuepress怎么玩/SetTitle', '/软件资源/vuepress怎么玩/Writing_rules','/软件资源/vuepress怎么玩/02top导航栏的设置'],
+          children: ['/软件资源/vuepress怎么玩/SetTitle',
+            '/软件资源/vuepress怎么玩/Writing_rules',
+            '/软件资源/vuepress怎么玩/02top导航栏的设置'],
 
         },
 
@@ -131,7 +159,8 @@ module.exports = {
         {
           title: '参与博客编写规则',
           collapsable: false,
-          children: [encodeURI('/软件资源/博客编写/01github拉取博客仓库'), encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
+          children: [encodeURI('/软件资源/博客编写/01github拉取博客仓库'),
+          encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
 
         },
 
@@ -192,7 +221,8 @@ module.exports = {
         {
           title: '查询',
           collapsable: false,
-          children: ['/java/Mybatis/select01', '/java/Mybatis/select02'],
+          children: ['/java/Mybatis/select01',
+            '/java/Mybatis/select02'],
 
         }
 
@@ -222,7 +252,11 @@ module.exports = {
         {
           title: 'java-IO',
           collapsable: false,
-          children: ['/java/javaSEBase/day14-IO', '/java/javaSEBase/day15-IO01流', '/java/javaSEBase/day15-IO02转换流', '/java/javaSEBase/day15-IO03对象操作流', '/java/javaSEBase/day15-IO04Properties集合'],
+          children: ['/java/javaSEBase/day14-IO',
+            '/java/javaSEBase/day15-IO01流',
+            '/java/javaSEBase/day15-IO02转换流',
+            '/java/javaSEBase/day15-IO03对象操作流',
+            '/java/javaSEBase/day15-IO04Properties集合'],
 
         },
 
@@ -249,7 +283,8 @@ module.exports = {
         {
           title: 'design',
           collapsable: false,
-          children: ['/java/designModel/AssemblerDesignPattern', encodeURI('/java/designModel/02动态代理模式')]
+          children: ['/java/designModel/AssemblerDesignPattern',
+            encodeURI('/java/designModel/02动态代理模式')]
 
         },
 
@@ -265,6 +300,17 @@ module.exports = {
 
       ],
 
+
+      // ===================== lyp    点击设 javascript的  基础概念 ===========
+      '/lyp/javascript/': [
+        {
+          title: 'javascript基础概念',
+          collapsable: false,
+          children: [encodeURI('/lyp/javascript/01什么是事件')]
+
+        },
+
+      ],
 
 
     },
