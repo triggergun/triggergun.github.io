@@ -183,7 +183,6 @@ module.exports = {
           title: '必知必会的git操作',// 注意：给文章起个别名。别名下面是文章搜标题。
           collapsable: false,
           children: ['/git/01怎么删除远程标签',
-            '/git/01怎么删除远程标签',
             '/git/02怎么打tag推送到远程',
             '/git/03快熟创建git仓库与本地Idea关联',
             '/git/04修改远程分支名称',
