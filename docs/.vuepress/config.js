@@ -110,8 +110,6 @@ module.exports = {
             ],
           },
 
-          { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
-
 
         ]
       }
@@ -179,6 +177,21 @@ module.exports = {
           title: '本地仓库提交到git',// 注意：给文章起个别名。别名下面是文章搜标题。
           collapsable: false,
           children: ['/git/git推送到远程的仓库'],
+
+        },
+        {
+          title: '必知必会的git操作',// 注意：给文章起个别名。别名下面是文章搜标题。
+          collapsable: false,
+          children: ['/git/01怎么删除远程标签',
+            '/git/01怎么删除远程标签',
+            '/git/02怎么打tag推送到远程',
+            '/git/03快熟创建git仓库与本地Idea关联',
+            '/git/04修改远程分支名称',
+            '/git/05合并开发分支',
+            '/git/06怎么删除远程分支',
+            '/git/07删除本地分支',
+            '/git/08本地切换远程分支',
+          ],
 
         },
 
