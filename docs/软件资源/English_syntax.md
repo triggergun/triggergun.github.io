@@ -322,3 +322,30 @@ read用现在分词
 2. 只有在名词的时候需要找经济人(of)帮忙。
 
 :::
+
+
+
+## 03)4个过
+
+- across：/əˈkrɒs/
+- through：/θruː/
+- past：/pɑːst/
+- over：/ˈəʊvə(r)/
+
+![image-20230910112308247](English_syntax.assets/image-20230910112308247.png)
+
+列如：
+
+- across：表示从表面穿过。
+
+run across the street. 跑着过街道。
+
+- through：是从内部穿过。
+
+run through the tunnel. 跑着过 隧道。
+
+- past：是从旁边经过。
+
+run past my school. 跑着 经过 我的学校。
+
+![image-20230910112517435](English_syntax.assets/image-20230910112517435.png)
