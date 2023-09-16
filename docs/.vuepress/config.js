@@ -109,6 +109,13 @@ module.exports = {
 
             ],
           },
+          {
+            text: '微信小程序',
+            items: [
+              { text: "微信小程序", link: encodeURI('/lyp/小程序/微信小程序/01什么是小程序') },
+
+            ],
+          },
 
 
         ]
@@ -271,12 +278,12 @@ module.exports = {
             '/java/javaSEBase/day15-IO04Properties集合'],
 
         },
-        
+
         {
           title: 'java线程基础与案例',
           collapsable: false,
           children: ['/java/javaSEBase/day16-线程案例01',
-        ],
+          ],
 
         },
 
@@ -327,6 +334,19 @@ module.exports = {
           title: 'javascript基础概念',
           collapsable: false,
           children: [encodeURI('/lyp/javascript/01什么是事件')]
+
+        },
+
+      ],
+
+      // ===================== lyp  模块  点击设 微信小程序 ,微信小程序的侧边栏  设置 ===========
+      '/lyp/小程序/微信小程序': [
+        {
+          title: '微信小程序开发',
+          collapsable: false,
+          children: [encodeURI('/lyp/小程序/微信小程序/01什么是小程序'),
+          encodeURI('/lyp/小程序/微信小程序/02Appid怎么使用'),
+          encodeURI('/lyp/小程序/微信小程序/03WXapplet文件的作用'),]
 
         },
 
