@@ -349,3 +349,52 @@ run through the tunnel. 跑着过 隧道。
 run past my school. 跑着 经过 我的学校。
 
 ![image-20230910112517435](English_syntax.assets/image-20230910112517435.png)
+
+
+
+
+
+
+
+## 4)作文常用技巧(中学常用)
+
+let 让 sb . do sth.  让某人 做某事
+
+help帮 sb. do sth. 帮某人 做某事
+
+make使 sb. do sth. 让（使、命令）某人 做某事
+
+作文要你写：
+
+你做一件事情，你的感受、你的收获、它给你带来的好处，写这样的句子的时候，你都可以使用上面的搭配。
+
+如：让我们写读书活动主题作文。要写读书活动给我们带来了哪些收获呢？
+
+注意：
+
+- 不要一个主语用到底。如：we can .... 使用异常可以，用多了文章就特备重复。
+
+解决：
+
+- 千方百计变主语。
+
+**例子1：**
+
+we can know the world. 我可以了解世界 改写如下。</br>
+
+思维：上面东西**让**我们了解世界呢？
+
+Reading makes me know the world.读书使我们了解世界。</br>
+
+主语Reading：读书。是三单。</br>
+
+**例子2：**
+
+Self-discipline makes me know myself. </br> 
+
+自律让我了解世界。
+
+
+
+
+
