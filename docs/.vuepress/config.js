@@ -352,25 +352,40 @@ module.exports = {
 
       ],
 
+      //  ====================     在top 上没有提供点击按钮   直接地址访问  =============================
+
       '/lyp/刷脸项目/': [
         {
           title: '刷脸项目',
           collapsable: false,
           children: [
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/01mybatis插件安装'),
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/02安装小程序开发工具'),
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/03安装HBuilderX软件'),
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/04安装VirtualBox虚拟机'),
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/05VirtualBox创虚拟机实例'),
-          encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统'),
-          encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目'),
-         ]
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/01mybatis插件安装'),
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/02安装小程序开发工具'),
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/03安装HBuilderX软件'),
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/04安装VirtualBox虚拟机'),
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/05VirtualBox创虚拟机实例'),
+            encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/02配置mybatis'),
+          ]
 
         },
 
       ],
 
+      //  ==================== desc:linux常用命令    在top 上没有提供点击按钮   直接地址访问  =============================
 
+      '/lyp/linux/': [
+        {
+          title: 'linux常用命令',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/linux/01常用命令linux'),
+          ]
+
+        },
+
+      ],
 
     },
 
