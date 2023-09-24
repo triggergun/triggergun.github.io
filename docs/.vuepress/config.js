@@ -321,7 +321,10 @@ module.exports = {
         {
           title: 'java常用工具库',
           collapsable: false,
-          children: [encodeURI('/java/java工具/xpath解析doc')]
+          children: [encodeURI('/java/java工具/xpath解析doc'),
+          encodeURI('/java/java工具/02阿里云短信服务'),
+          encodeURI('/java/java工具/03阿里云短信'),
+        ]
 
         },
 
