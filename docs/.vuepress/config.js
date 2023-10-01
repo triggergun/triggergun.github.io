@@ -370,6 +370,12 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/02配置mybatis'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/03创建自定义异常类_2-3'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/04分装web返回的对象2-4'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/05利用Swagger搭建REST_API2-5'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/06配置后端验证功能2-6'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/07抵御即跨站脚本XSS攻击2-7'),
+            encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/08总结'),
           ]
 
         },
