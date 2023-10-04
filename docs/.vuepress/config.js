@@ -324,6 +324,7 @@ module.exports = {
           children: [encodeURI('/java/java工具/xpath解析doc'),
           encodeURI('/java/java工具/02阿里云短信服务'),
           encodeURI('/java/java工具/03阿里云短信'),
+          encodeURI('/java/java工具/04阿里云oss'),
         ]
 
         },
