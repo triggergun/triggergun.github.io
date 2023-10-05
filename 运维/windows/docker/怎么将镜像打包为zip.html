@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker这么将镜像打包到本地？ | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.svg">
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.b34576fe.js" as="script"><link rel="preload" href="/assets/js/2.c84c4f6e.js" as="script"><link rel="preload" href="/assets/js/58.7d6b8959.js" as="script"><link rel="prefetch" href="/assets/js/10.60d106fb.js"><link rel="prefetch" href="/assets/js/11.beee130e.js"><link rel="prefetch" href="/assets/js/12.db5714cd.js"><link rel="prefetch" href="/assets/js/13.2fd13177.js"><link rel="prefetch" href="/assets/js/14.18daf002.js"><link rel="prefetch" href="/assets/js/15.edc63d90.js"><link rel="prefetch" href="/assets/js/16.6f65422b.js"><link rel="prefetch" href="/assets/js/17.3dfe5b1e.js"><link rel="prefetch" href="/assets/js/18.5b3a712a.js"><link rel="prefetch" href="/assets/js/19.1a763665.js"><link rel="prefetch" href="/assets/js/20.1c03bdcb.js"><link rel="prefetch" href="/assets/js/21.1c35993d.js"><link rel="prefetch" href="/assets/js/22.a78b76e2.js"><link rel="prefetch" href="/assets/js/23.2843aa37.js"><link rel="prefetch" href="/assets/js/24.0584d9d1.js"><link rel="prefetch" href="/assets/js/25.4a51a37d.js"><link rel="prefetch" href="/assets/js/26.f9b718cc.js"><link rel="prefetch" href="/assets/js/27.d016cf7d.js"><link rel="prefetch" href="/assets/js/28.9a595b14.js"><link rel="prefetch" href="/assets/js/29.e94b6ef8.js"><link rel="prefetch" href="/assets/js/3.06fb42a4.js"><link rel="prefetch" href="/assets/js/30.8691e699.js"><link rel="prefetch" href="/assets/js/31.cfa8d26a.js"><link rel="prefetch" href="/assets/js/32.417992a0.js"><link rel="prefetch" href="/assets/js/33.ce71171c.js"><link rel="prefetch" href="/assets/js/34.63b99ec2.js"><link rel="prefetch" href="/assets/js/35.3dc60da4.js"><link rel="prefetch" href="/assets/js/36.bb30bdb9.js"><link rel="prefetch" href="/assets/js/37.06566c41.js"><link rel="prefetch" href="/assets/js/38.92ec9f2f.js"><link rel="prefetch" href="/assets/js/39.b34c8059.js"><link rel="prefetch" href="/assets/js/4.826dfde8.js"><link rel="prefetch" href="/assets/js/40.30569c7c.js"><link rel="prefetch" href="/assets/js/41.44c3a17e.js"><link rel="prefetch" href="/assets/js/42.2272b572.js"><link rel="prefetch" href="/assets/js/43.54b74574.js"><link rel="prefetch" href="/assets/js/44.5f78bdea.js"><link rel="prefetch" href="/assets/js/45.9cd71202.js"><link rel="prefetch" href="/assets/js/46.8f8cc65d.js"><link rel="prefetch" href="/assets/js/47.7a419bb2.js"><link rel="prefetch" href="/assets/js/48.4fabc425.js"><link rel="prefetch" href="/assets/js/49.766feeb9.js"><link rel="prefetch" href="/assets/js/5.d465d369.js"><link rel="prefetch" href="/assets/js/50.29e89ef9.js"><link rel="prefetch" href="/assets/js/51.5db69b1c.js"><link rel="prefetch" href="/assets/js/52.e7d6011e.js"><link rel="prefetch" href="/assets/js/53.0f5d3330.js"><link rel="prefetch" href="/assets/js/54.d124ad80.js"><link rel="prefetch" href="/assets/js/55.fff516ea.js"><link rel="prefetch" href="/assets/js/56.a66b4a97.js"><link rel="prefetch" href="/assets/js/57.a6c8019f.js"><link rel="prefetch" href="/assets/js/59.99ea09b4.js"><link rel="prefetch" href="/assets/js/6.420f6645.js"><link rel="prefetch" href="/assets/js/60.df8e77fd.js"><link rel="prefetch" href="/assets/js/61.279f2315.js"><link rel="prefetch" href="/assets/js/62.661e8656.js"><link rel="prefetch" href="/assets/js/63.efa857ed.js"><link rel="prefetch" href="/assets/js/64.94a5b229.js"><link rel="prefetch" href="/assets/js/65.e330333e.js"><link rel="prefetch" href="/assets/js/66.71c8812d.js"><link rel="prefetch" href="/assets/js/67.4d69cb9e.js"><link rel="prefetch" href="/assets/js/68.e7f6d6b3.js"><link rel="prefetch" href="/assets/js/69.3146458c.js"><link rel="prefetch" href="/assets/js/7.f051ff0f.js"><link rel="prefetch" href="/assets/js/70.2877613d.js"><link rel="prefetch" href="/assets/js/71.3d630aab.js"><link rel="prefetch" href="/assets/js/72.793043fb.js"><link rel="prefetch" href="/assets/js/73.6276e941.js"><link rel="prefetch" href="/assets/js/74.72839577.js"><link rel="prefetch" href="/assets/js/75.396bffa4.js"><link rel="prefetch" href="/assets/js/76.67d55c57.js"><link rel="prefetch" href="/assets/js/77.d21bbe64.js"><link rel="prefetch" href="/assets/js/78.fe5f1f66.js"><link rel="prefetch" href="/assets/js/79.92ad4670.js"><link rel="prefetch" href="/assets/js/8.972497fa.js"><link rel="prefetch" href="/assets/js/80.2be11015.js"><link rel="prefetch" href="/assets/js/9.aa640778.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="logo.svg" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>windows运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/windows/cmd.html" class="sidebar-link">强制关闭端口号</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>docker运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/windows/docker/01docker实验一构建自己的镜像.html" class="sidebar-link">构建自己的镜像</a></li><li><a href="/运维/windows/docker/docker-compose命令常用.html" class="sidebar-link">怎么用docker-compose.yml启动容器？</a></li><li><a href="/运维/windows/docker/怎么将镜像打包为zip.html" class="active sidebar-link">docker这么将镜像打包到本地？</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/运维/windows/docker/怎么将镜像打包为zip.html#docker这么将镜像打包到本地" class="sidebar-link">docker这么将镜像打包到本地？</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="docker这么将镜像打包到本地"><a href="#docker这么将镜像打包到本地" class="header-anchor">#</a> docker这么将镜像打包到本地？</h2> <p>要将Docker镜像打包出来并再次加载和启动，可以按照以下步骤进行操作：</p> <h3 id="步骤一-打包镜像"><a href="#步骤一-打包镜像" class="header-anchor">#</a> <strong>步骤一：打包镜像</strong></h3> <ol><li><p>确保你已经在构建好的镜像上进行了修改或者有需要导出的镜像。</p></li> <li><p>使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>命令将镜像打包成一个tar归档文件：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker save -o image.tar IMAGE_NAME:TAG
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如下：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code> <span class="token function">docker</span> save <span class="token parameter variable">-o</span> elasticsearch.tar docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20230727171030757.a2f27838.png" alt="image-20230727171030757"></p> <p>其中，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>IMAGE_NAME
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>是要导出的镜像的名称，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>TAG
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>是对应的标签。</p></li></ol> <h3 id="扩展"><a href="#扩展" class="header-anchor">#</a> 扩展</h3> <p><strong>步骤二：加载镜像</strong></p> <ol><li><p>将打包的镜像加载回Docker中，使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker load
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>命令：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker load -i image.tar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <p><strong>步骤三：启动容器</strong></p> <ol><li><p>确保你已经加载了所需的镜像。</p></li> <li><p>使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>命令启动容器：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker run [OPTIONS] IMAGE_NAME:TAG
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>其中，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>IMAGE_NAME
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>是要运行的镜像的名称，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>TAG
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>是对应的标签。</p></li></ol> <p>请注意，打包的镜像文件可以通过各种方式进行传输和共享，比如拷贝到另一台机器上、上传到容器注册表（Container Registry）等。加载镜像后，你可以像往常一样使用<code>docker run</code>来启动容器。</p> <p>记得替换命令中的<code>IMAGE_NAME</code>和<code>TAG</code>为实际的镜像名称和标签。希望这些步骤能帮助你成功打包、加载和启动Docker镜像。</p> <p><strong>步骤二：使用zip工具打包tar文件</strong> 你可以使用系统上已安装的zip工具或者第三方压缩软件来将tar文件打包成zip格式。以下是使用常见的Linux命令行zip工具的示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>bashCopy code
+zip image.zip image.tar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这将生成一个名为<code>image.zip</code>的zip文件，其中包含之前生成的<code>image.tar</code>文件。</p> <p>现在，你就得到了一个包含Docker镜像的zip文件<code>image.zip</code>。你可以将此文件传输到其他机器上，并在其他机器上使用zip工具解压缩和加载镜像。</p> <p>请注意，解压缩的zip文件中将包含之前生成的<code>image.tar</code>文件，你需要在目标机器上使用<code>docker load</code>命令来加载镜像：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>bashCopy code
+docker load -i image.tar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>希望这样能帮助你将Docker镜像打包成zip文件，并在其他机器上加载。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/5/2023, 9:59:34 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/运维/windows/docker/docker-compose命令常用.html" class="prev">
+        怎么用docker-compose.yml启动容器？
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b34576fe.js" defer></script><script src="/assets/js/2.c84c4f6e.js" defer></script><script src="/assets/js/58.7d6b8959.js" defer></script>
+  </body>
+</html>
