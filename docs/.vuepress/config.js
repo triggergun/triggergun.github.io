@@ -213,7 +213,17 @@ module.exports = {
           collapsable: false,
           children: ['/运维/windows/cmd'],
 
+        },        {
+          title: 'docker运维',
+          collapsable: false,
+          children: ['/运维/windows/docker/01docker实验一构建自己的镜像',
+          '/运维/windows/docker/docker-compose命令常用',
+          '/运维/windows/docker/怎么将镜像打包为zip',
+          ],
+
         },
+
+
 
 
       ],
