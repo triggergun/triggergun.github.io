@@ -140,7 +140,9 @@ module.exports = {
             '/软件资源/English_syntax',
             '/软件资源/02英语的时态',
             '/软件资源/03英语的发音规则',
-            '/软件资源/04词根词缀合集'],
+            '/软件资源/04词根词缀合集',
+            '/软件资源/数学/多项式',
+            '/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法'],
 
         }
         ,
@@ -205,7 +207,6 @@ module.exports = {
 
       ],
 
-
       // 表示：点击导航栏后，侧边栏显示的标题有：git选
       '/运维/windows/': [
         {
@@ -213,18 +214,16 @@ module.exports = {
           collapsable: false,
           children: ['/运维/windows/cmd'],
 
-        },        {
+        },
+        {
           title: 'docker运维',
           collapsable: false,
           children: ['/运维/windows/docker/01docker实验一构建自己的镜像',
-          '/运维/windows/docker/docker-compose命令常用',
-          '/运维/windows/docker/怎么将镜像打包为zip',
+            '/运维/windows/docker/docker-compose命令常用',
+            '/运维/windows/docker/怎么将镜像打包为zip',
           ],
 
         },
-
-
-
 
       ],
 
@@ -335,7 +334,7 @@ module.exports = {
           encodeURI('/java/java工具/02阿里云短信服务'),
           encodeURI('/java/java工具/03阿里云短信'),
           encodeURI('/java/java工具/04阿里云oss'),
-        ]
+          ]
 
         },
 
