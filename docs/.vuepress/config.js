@@ -171,6 +171,14 @@ module.exports = {
 
         },
 
+        // 黑客资料集
+        {
+          title: '黑客学',
+          collapsable: false,
+          children: [encodeURI('/软件资源/黑客资料/黑客目录'),],
+
+        },
+
 
       ],
 
