@@ -119,6 +119,37 @@ module.exports = {
 
 
         ]
+      },
+      //=================================大数据=========================
+      {
+        text: '大数据',
+        // 子选项
+        items: [
+
+          {
+            text: 'spark',
+            items: [
+              { text: "spark集群", link: encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署') },
+
+            ],
+          },
+          {
+            text: 'zookeepre',
+            items: [
+              { text: "zookeepre集群", link: encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署') },
+
+            ],
+          },
+          {
+            text: 'kafka',
+            items: [
+              { text: "kafka集群", link: encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试') },
+
+            ],
+          },
+
+
+        ]
       }
 
 
@@ -372,6 +403,48 @@ module.exports = {
         },
 
       ],
+
+      //================= top上 有按钮
+
+      '/lyp/大数据/02spark': [
+        {
+          title: 'spark集',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署'),
+            encodeURI('/lyp/大数据/02spark/02SparkHA集群部署'),
+        ]
+
+        },
+
+      ],
+
+      '/lyp/大数据/kafka': [
+        {
+          title: 'kafka集',
+          collapsable: false,
+          children: [encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试'),
+        ]
+
+        },
+
+      ],
+
+      '/lyp/大数据/zookeeper': [
+        {
+          title: 'zookeeper集',
+          collapsable: false,
+          children: [encodeURI('/lyp/大数据/kafka/01Zookeeper分布式集群部署'),
+        ]
+
+        },
+
+      ],
+
+
+
+
+
 
       //  ====================     在top 上没有提供点击按钮   直接地址访问  =============================
 
