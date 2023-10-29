@@ -404,7 +404,7 @@ module.exports = {
 
       ],
 
-      //================= top上 有按钮
+      //================= top上 有按钮  大数据的  ===========================
 
       '/lyp/大数据/02spark': [
         {
@@ -434,14 +434,14 @@ module.exports = {
         {
           title: 'zookeeper集',
           collapsable: false,
-          children: [encodeURI('/lyp/大数据/kafka/01Zookeeper分布式集群部署'),
+          children: [encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署'),
         ]
 
         },
 
       ],
 
-
+      //***************************   top上 有按钮  大数据  end *****************************************
 
 
 
