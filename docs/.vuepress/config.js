@@ -413,6 +413,7 @@ module.exports = {
           children: [
             encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署'),
             encodeURI('/lyp/大数据/02spark/02SparkHA集群部署'),
+            encodeURI('/lyp/大数据/02spark/03体验第一个Spark程序'),
         ]
 
         },
