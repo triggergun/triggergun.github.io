@@ -414,7 +414,7 @@ module.exports = {
             encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署'),
             encodeURI('/lyp/大数据/02spark/02SparkHA集群部署'),
             encodeURI('/lyp/大数据/02spark/03体验第一个Spark程序'),
-        ]
+          ]
 
         },
 
@@ -425,7 +425,7 @@ module.exports = {
           title: 'kafka集',
           collapsable: false,
           children: [encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试'),
-        ]
+          ]
 
         },
 
@@ -436,7 +436,7 @@ module.exports = {
           title: 'zookeeper集',
           collapsable: false,
           children: [encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署'),
-        ]
+          ]
 
         },
 
@@ -460,6 +460,16 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/04安装VirtualBox虚拟机'),
             encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/05VirtualBox创虚拟机实例'),
             encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统'),
+
+
+          ]
+
+        },
+        //   2阶段
+        {
+          title: '刷脸项目第二阶段',
+          collapsable: false,
+          children: [
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/02配置mybatis'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/03创建自定义异常类_2-3'),
@@ -467,6 +477,14 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/05利用Swagger搭建REST_API2-5'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/06配置后端验证功能2-6'),
             encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/07抵御即跨站脚本XSS攻击2-7'),
+          ]
+
+        },
+        //   3阶段
+        {
+          title: '刷脸项目第三阶段',
+          collapsable: false,
+          children: [
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/01本章介绍'),
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/02Shiro和JWT技术3-1'),
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/03创建JwtUtil工具类3-2'),
@@ -474,7 +492,6 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/05创建存储令牌的媒介类3-4'),
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/06精简返回给客户端的异常内容3-5'),
             encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/07要点回顾'),
-
           ]
 
         },
