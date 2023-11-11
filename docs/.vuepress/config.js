@@ -8,8 +8,16 @@ module.exports = {
   // 描述
   description: "分享各类资源、教程、黑科技软件、工具等等",
 
+  /**
+   * 
+   * google adsence 广告接入
+   * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2034953504252138" crossorigin="anonymous"></script>
+   */
+
   head: [
     ['link', { rel: 'icon', href: 'favicon.svg' }],
+    ['link', { rel: 'icon', href: 'favicon.svg' }],
+    ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2034953504252138', crossorigin: 'anonymous' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
