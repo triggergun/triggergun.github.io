@@ -12,14 +12,20 @@ module.exports = {
    * 
    * google adsence 广告接入
    * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2034953504252138" crossorigin="anonymous"></script>
-   * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885"
-     crossorigin="anonymous"></script>
+   * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
    */
 
+
+  /**
+   * 
+   * 百度爬取
+   * <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG" />
+   */
   head: [
     ['link', { rel: 'icon', href: 'favicon.svg' }],
     ['link', { rel: 'icon', href: 'favicon.svg' }],
     ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885', crossorigin: 'anonymous' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-7KiW1mSNFG' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
