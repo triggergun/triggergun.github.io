@@ -335,7 +335,9 @@ module.exports = {
         {
           title: 'java-IO',
           collapsable: false,
-          children: ['/java/javaSEBase/day14-IO',
+          children: [
+            '/java/javaSEBase/day01-java带有包名进行编译class',
+            '/java/javaSEBase/day14-IO',
             '/java/javaSEBase/day15-IO01流',
             '/java/javaSEBase/day15-IO02转换流',
             '/java/javaSEBase/day15-IO03对象操作流',
@@ -385,10 +387,12 @@ module.exports = {
         {
           title: 'java常用工具库',
           collapsable: false,
-          children: [encodeURI('/java/java工具/xpath解析doc'),
+          children: [
+          encodeURI('/java/java工具/xpath解析doc'),
           encodeURI('/java/java工具/02阿里云短信服务'),
           encodeURI('/java/java工具/03阿里云短信'),
           encodeURI('/java/java工具/04阿里云oss'),
+          encodeURI('/java/java工具/05IDEA常用工具'),
           ]
 
         },
