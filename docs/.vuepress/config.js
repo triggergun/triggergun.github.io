@@ -193,6 +193,19 @@ module.exports = {
 
         }
         ,
+
+        // 英语 单词集
+        {
+          title: '看单词讲故事',
+          collapsable: false,
+          children: [
+            '/软件资源/04词根词缀合集',
+            '/软件资源/英语词根词缀集合/ang-',
+          ],
+
+        }
+        ,
+
         {
           title: 'docsify',
           collapsable: false,
