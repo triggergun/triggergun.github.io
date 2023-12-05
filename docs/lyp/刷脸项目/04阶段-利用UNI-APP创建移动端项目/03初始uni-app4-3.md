@@ -17,7 +17,11 @@ uni-app，项目创建出来之后，目录结构如下：
 | 6    | pages.json文件    | 页面注册文件，配置页面路径、窗口样式、标题文字等             |
 | 7    | uni.scss文件      | 全局样式文件                                                 |
 
+::: danger  最重要的文件
 
+- main.js文件
+
+:::
 
 
 
@@ -27,15 +31,18 @@ uni-app，项目创建出来之后，目录结构如下：
 
 ![image-20231003122156471](03初始uni-app4-3.assets/image-20231003122156471.png)
 
+
+
+## 03)设置第一页
+
 2. 在pages.json文件中，把demo页面设置为第一个页面
 
 小程序一启动就显示demo.vue也页面。
 
 ```json
 {
-	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
 			"path": "pages/demo/demo",
 			"style": {
@@ -43,12 +50,20 @@ uni-app，项目创建出来之后，目录结构如下：
 				"enablePullDownRefresh": false
 			}
 		},
-	
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+    
+    ...//其他配置对象
 }
 
 ```
 
-3. 编写demo.vue文件
+## 04)编写demo.vue文件
 
 ```html
 <template>
@@ -92,7 +107,9 @@ uni-app，项目创建出来之后，目录结构如下：
 					title:"点击了报名按钮"
 				})
 			}
-		}
+		},
+        
+        
 	}
 </script>
 
@@ -102,7 +119,7 @@ uni-app，项目创建出来之后，目录结构如下：
 
 ```
 
-**循环遍历数组**
+## 05)循环遍历数组
 
 ![image-20231003162700132](03初始uni-app4-3.assets/image-20231003162700132.png)
 
@@ -110,11 +127,72 @@ uni-app，项目创建出来之后，目录结构如下：
 
 
 
-**点击事件**
+## 06)点击事件
+
+- 视图层代码
+
+```html
+		<view v-if="age>=18">
+               <!-- 捕获点击事件  -->
+			<button @tap="signUp()">我要报名</button>
+		</view>
+```
+
+
+
+- vue代码
+
+```js
+		methods: {
+            // 点击事件函数
+			signUp:function(){
+                // 点击按钮：中间显示面包屑通知
+				uni.showToast({
+					title:"点击了报名按钮"
+				})
+			}
+		},
+```
+
+::: warning 运行的效果说明
+
+1. 点击是，获取age的值，进行比较。
+2. 是true，在屏幕上显示，点击了报名按钮。则：不显示。
+
+:::
+
+
+
+
 
 ![image-20231003163051104](03初始uni-app4-3.assets/image-20231003163051104.png)
 
-**数据变量的双向绑定**
+## 07)数据变量的双向绑定
+
+- 视图层
+
+```html
+            <!--  双向绑定 -->
+		<view>
+                        <!--  双向绑定的输入 -->
+			<input type="text" v-model="address" placeholder="输入地址"/>
+		</view>
+		<view>{{address}}</view>
+```
+
+- vue代码层
+
+```js
+<script>
+	export default {
+		data() {
+			return {
+				address:""
+			}
+		},
+	}
+</script>
+```
 
 ![image-20231003163317901](03初始uni-app4-3.assets/image-20231003163317901.png)
 
@@ -124,12 +202,14 @@ uni-app，项目创建出来之后，目录结构如下：
 
 
 
-新建页面
+## 08)怎么新建页面？
+
+1. 选中pages这个目录。
 
 
 
 ![image-20231003162243491](03初始uni-app4-3.assets/image-20231003162243491.png)
 
-页面的名字
+2.给页面的名字，选择默认模板。
 
 ![image-20231003162312513](03初始uni-app4-3.assets/image-20231003162312513.png)
