@@ -540,7 +540,24 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/04创建登陆页面4-4'),
             encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/05创建注册页面4-5'),
             encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/06注册新用户的业务要点说明4-6'),
-            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/07获取临时授权和微信基本信息4-7')
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/07获取临时授权和微信基本信息4-7'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/08章节总结4-8'),
+          ]
+
+        },
+        // 5 阶段
+        {
+          title: '刷脸项目第五阶段',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/01实现注册超级管理员功能(持久层)'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/02实现注册超级管理员功能(业务层)'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/03掌握RABC权限模型'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/04实现注册超级管理员功能(Web层)'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/05定义全局路径和封装Aiax(移动端)'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/06注册新用户的业务要点说明4-6'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/07获取临时授权和微信基本信息4-7'),
+            encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/08章节总结4-8'),
           ]
 
         },
