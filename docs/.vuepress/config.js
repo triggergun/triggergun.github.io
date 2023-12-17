@@ -401,11 +401,11 @@ module.exports = {
           title: 'java常用工具库',
           collapsable: false,
           children: [
-          encodeURI('/java/java工具/xpath解析doc'),
-          encodeURI('/java/java工具/02阿里云短信服务'),
-          encodeURI('/java/java工具/03阿里云短信'),
-          encodeURI('/java/java工具/04阿里云oss'),
-          encodeURI('/java/java工具/05IDEA常用工具'),
+            encodeURI('/java/java工具/xpath解析doc'),
+            encodeURI('/java/java工具/02阿里云短信服务'),
+            encodeURI('/java/java工具/03阿里云短信'),
+            encodeURI('/java/java工具/04阿里云oss'),
+            encodeURI('/java/java工具/05IDEA常用工具'),
           ]
 
         },
@@ -557,10 +557,23 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/05定义全局路径和封装Aiax[移动端]'),
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/06完成注册超级管理员功能[移动端]'),
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/07实现用户登陆功能[持久层&业务层]'),
-            encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/07实现用户登陆功能[持久层&业务层]'),
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/08实现用户登陆功能[Web层]'),
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/09实现用户登陆功能[移动端]'),
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/10观察后端项目运行细节'),
+          ]
+
+        },
+        // 6 阶段 06阶段-人脸考勤签到基础篇
+        {
+          title: '刷脸项目第六阶段',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/01章节介绍'),
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/02创建小程序Tab导航'),
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/03开通腾讯云对象存储服务'),
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/04设计首页的英雄区和栏目导航'),
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/05设计人脸签到页面'),
+            encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/06实现签到自拍功能'),
           ]
 
         },
