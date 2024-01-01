@@ -286,9 +286,15 @@ module.exports = {
         {
           title: 'docker运维',
           collapsable: false,
-          children: ['/运维/windows/docker/01docker实验一构建自己的镜像',
+          children: [
+            '/运维/windows/docker/01docker实验一构建自己的镜像',
             '/运维/windows/docker/docker-compose命令常用',
             '/运维/windows/docker/怎么将镜像打包为zip',
+            '/运维/windows/docker/02contos安装docker',
+            '/运维/windows/docker/03centos安装docker_compose',
+            '/运维/windows/docker/04docker_compose安装mysql',
+            '/运维/windows/docker/05idea连接远程docker构建镜像',
+
           ],
 
         },
