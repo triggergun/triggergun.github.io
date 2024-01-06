@@ -10,4 +10,4 @@ read -p "请输入提交信息: " commit_message
 git commit -m "$commit_message"
 
 # 强制推送到远程分支
-git push -f origin pages
+git push  origin pages

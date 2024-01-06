@@ -29,8 +29,8 @@ module.exports = {
    * https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png
    */
   head: [
-    ['link', { rel: 'icon', href: 'https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png' }],
-    ['link', { rel: 'icon', href: 'https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png' }],
+    // 重装基本图片
+    ['link', { rel: 'icon', href: 'favicon.svg' }],
     ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885', crossorigin: 'anonymous' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-7KiW1mSNFG' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
@@ -55,7 +55,7 @@ module.exports = {
   // 主题配置
   themeConfig: {
 
-    logo: 'logo.svg',
+    logo: 'https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png',
     // ====================顶上的导航栏
 
 
