@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuepress的流水线部署 | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.svg">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.13a1aab0.js" as="script"><link rel="preload" href="/assets/js/2.41ebb905.js" as="script"><link rel="preload" href="/assets/js/133.a90672b4.js" as="script"><link rel="prefetch" href="/assets/js/10.94a1c6ee.js"><link rel="prefetch" href="/assets/js/100.39c12e6b.js"><link rel="prefetch" href="/assets/js/101.aa54d908.js"><link rel="prefetch" href="/assets/js/102.2dba606f.js"><link rel="prefetch" href="/assets/js/103.9c48bc35.js"><link rel="prefetch" href="/assets/js/104.055052f3.js"><link rel="prefetch" href="/assets/js/105.4e8f3908.js"><link rel="prefetch" href="/assets/js/106.dbfdfa05.js"><link rel="prefetch" href="/assets/js/107.36d3e775.js"><link rel="prefetch" href="/assets/js/108.db790f53.js"><link rel="prefetch" href="/assets/js/109.3b1c20e3.js"><link rel="prefetch" href="/assets/js/11.f0fd2ef0.js"><link rel="prefetch" href="/assets/js/110.4249c856.js"><link rel="prefetch" href="/assets/js/111.1c7b3209.js"><link rel="prefetch" href="/assets/js/112.3fbdb245.js"><link rel="prefetch" href="/assets/js/113.75f6458d.js"><link rel="prefetch" href="/assets/js/114.f3505626.js"><link rel="prefetch" href="/assets/js/115.01fba0cb.js"><link rel="prefetch" href="/assets/js/116.2ea31c5a.js"><link rel="prefetch" href="/assets/js/117.6629c65a.js"><link rel="prefetch" href="/assets/js/118.84dca511.js"><link rel="prefetch" href="/assets/js/119.6476a0a1.js"><link rel="prefetch" href="/assets/js/12.6a51604a.js"><link rel="prefetch" href="/assets/js/120.d97a5785.js"><link rel="prefetch" href="/assets/js/121.9339608b.js"><link rel="prefetch" href="/assets/js/122.6ad7b0bb.js"><link rel="prefetch" href="/assets/js/123.525ac034.js"><link rel="prefetch" href="/assets/js/124.c2a29a12.js"><link rel="prefetch" href="/assets/js/125.8dd4bfd2.js"><link rel="prefetch" href="/assets/js/126.667c7a0e.js"><link rel="prefetch" href="/assets/js/127.9499c31d.js"><link rel="prefetch" href="/assets/js/128.a82e8502.js"><link rel="prefetch" href="/assets/js/129.dba87c0a.js"><link rel="prefetch" href="/assets/js/13.444c0ec1.js"><link rel="prefetch" href="/assets/js/130.0565daf9.js"><link rel="prefetch" href="/assets/js/131.145d3529.js"><link rel="prefetch" href="/assets/js/132.7fae6ea2.js"><link rel="prefetch" href="/assets/js/134.bff027c2.js"><link rel="prefetch" href="/assets/js/135.01adac36.js"><link rel="prefetch" href="/assets/js/136.b15f450f.js"><link rel="prefetch" href="/assets/js/137.85cbcfa5.js"><link rel="prefetch" href="/assets/js/138.1d8d7b5a.js"><link rel="prefetch" href="/assets/js/14.b920d8d9.js"><link rel="prefetch" href="/assets/js/15.bf975ae5.js"><link rel="prefetch" href="/assets/js/16.19e0aa74.js"><link rel="prefetch" href="/assets/js/17.61357ee1.js"><link rel="prefetch" href="/assets/js/18.c5b70b5b.js"><link rel="prefetch" href="/assets/js/19.3b2a5f87.js"><link rel="prefetch" href="/assets/js/20.5e63a95d.js"><link rel="prefetch" href="/assets/js/21.507796b8.js"><link rel="prefetch" href="/assets/js/22.9bc22be7.js"><link rel="prefetch" href="/assets/js/23.9e326433.js"><link rel="prefetch" href="/assets/js/24.bb21410d.js"><link rel="prefetch" href="/assets/js/25.2f475187.js"><link rel="prefetch" href="/assets/js/26.a8170123.js"><link rel="prefetch" href="/assets/js/27.6c90c2f7.js"><link rel="prefetch" href="/assets/js/28.151c0765.js"><link rel="prefetch" href="/assets/js/29.41d8decf.js"><link rel="prefetch" href="/assets/js/3.86f60920.js"><link rel="prefetch" href="/assets/js/30.f57b3071.js"><link rel="prefetch" href="/assets/js/31.93d9cb79.js"><link rel="prefetch" href="/assets/js/32.cf20a6a0.js"><link rel="prefetch" href="/assets/js/33.5bc13755.js"><link rel="prefetch" href="/assets/js/34.e9854d3a.js"><link rel="prefetch" href="/assets/js/35.05acfa0d.js"><link rel="prefetch" href="/assets/js/36.06c7d798.js"><link rel="prefetch" href="/assets/js/37.b51c880e.js"><link rel="prefetch" href="/assets/js/38.b98d91af.js"><link rel="prefetch" href="/assets/js/39.276d5035.js"><link rel="prefetch" href="/assets/js/4.9f051fe8.js"><link rel="prefetch" href="/assets/js/40.718b5661.js"><link rel="prefetch" href="/assets/js/41.c6a1a90f.js"><link rel="prefetch" href="/assets/js/42.6c83b1bc.js"><link rel="prefetch" href="/assets/js/43.0d38ae85.js"><link rel="prefetch" href="/assets/js/44.6e36d2f9.js"><link rel="prefetch" href="/assets/js/45.a2ce4150.js"><link rel="prefetch" href="/assets/js/46.e6a3215c.js"><link rel="prefetch" href="/assets/js/47.5d7f6e9e.js"><link rel="prefetch" href="/assets/js/48.8311316a.js"><link rel="prefetch" href="/assets/js/49.aa44e9b6.js"><link rel="prefetch" href="/assets/js/5.410b6b6e.js"><link rel="prefetch" href="/assets/js/50.5b78dd2c.js"><link rel="prefetch" href="/assets/js/51.2663fa8d.js"><link rel="prefetch" href="/assets/js/52.760f7bbc.js"><link rel="prefetch" href="/assets/js/53.971d34d5.js"><link rel="prefetch" href="/assets/js/54.ffb7cd59.js"><link rel="prefetch" href="/assets/js/55.aa47993c.js"><link rel="prefetch" href="/assets/js/56.cff17917.js"><link rel="prefetch" href="/assets/js/57.5d7aadde.js"><link rel="prefetch" href="/assets/js/58.b1a7e7d6.js"><link rel="prefetch" href="/assets/js/59.3f5129a2.js"><link rel="prefetch" href="/assets/js/6.481a0836.js"><link rel="prefetch" href="/assets/js/60.0006b079.js"><link rel="prefetch" href="/assets/js/61.0ba2146a.js"><link rel="prefetch" href="/assets/js/62.b55bd262.js"><link rel="prefetch" href="/assets/js/63.854901b9.js"><link rel="prefetch" href="/assets/js/64.e0c8aa9c.js"><link rel="prefetch" href="/assets/js/65.bcc30522.js"><link rel="prefetch" href="/assets/js/66.b2ae0dcf.js"><link rel="prefetch" href="/assets/js/67.01d6f917.js"><link rel="prefetch" href="/assets/js/68.5cee2a5b.js"><link rel="prefetch" href="/assets/js/69.b28c7a98.js"><link rel="prefetch" href="/assets/js/7.16ced445.js"><link rel="prefetch" href="/assets/js/70.f2d08398.js"><link rel="prefetch" href="/assets/js/71.6c245866.js"><link rel="prefetch" href="/assets/js/72.d43eca40.js"><link rel="prefetch" href="/assets/js/73.932b1c88.js"><link rel="prefetch" href="/assets/js/74.1d8f0383.js"><link rel="prefetch" href="/assets/js/75.cf87c376.js"><link rel="prefetch" href="/assets/js/76.b5ac1370.js"><link rel="prefetch" href="/assets/js/77.93c026af.js"><link rel="prefetch" href="/assets/js/78.29ce11bb.js"><link rel="prefetch" href="/assets/js/79.1a5b2114.js"><link rel="prefetch" href="/assets/js/8.c99cc610.js"><link rel="prefetch" href="/assets/js/80.7e2d0c3a.js"><link rel="prefetch" href="/assets/js/81.a42ef5d0.js"><link rel="prefetch" href="/assets/js/82.4d31d4f0.js"><link rel="prefetch" href="/assets/js/83.8b1f3a61.js"><link rel="prefetch" href="/assets/js/84.d462178c.js"><link rel="prefetch" href="/assets/js/85.19b00909.js"><link rel="prefetch" href="/assets/js/86.f138d404.js"><link rel="prefetch" href="/assets/js/87.f23d0959.js"><link rel="prefetch" href="/assets/js/88.18842a6f.js"><link rel="prefetch" href="/assets/js/89.dce57775.js"><link rel="prefetch" href="/assets/js/9.2766de05.js"><link rel="prefetch" href="/assets/js/90.0fbfc6a0.js"><link rel="prefetch" href="/assets/js/91.22338e94.js"><link rel="prefetch" href="/assets/js/92.19e4eec5.js"><link rel="prefetch" href="/assets/js/93.2274b839.js"><link rel="prefetch" href="/assets/js/94.0db1a794.js"><link rel="prefetch" href="/assets/js/95.90b00cef.js"><link rel="prefetch" href="/assets/js/96.2db19c87.js"><link rel="prefetch" href="/assets/js/97.d926063c.js"><link rel="prefetch" href="/assets/js/98.c8707274.js"><link rel="prefetch" href="/assets/js/99.cfe3c0ff.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>软件资源</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/软件资源.html" class="sidebar-link">30岁以后，一定要懂的《滕王阁序》</a></li><li><a href="/软件资源/English_syntax.html" class="sidebar-link">英语语法</a></li><li><a href="/软件资源/02英语的时态.html" class="sidebar-link">常见时态</a></li><li><a href="/软件资源/03英语的发音规则.html" class="sidebar-link">自然拼读</a></li><li><a href="/软件资源/04词根词缀合集.html" class="sidebar-link">单词怎么记</a></li><li><a href="/软件资源/数学/多项式.html" class="sidebar-link">高中数学版本二</a></li><li><a href="/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法.html" class="sidebar-link">1.公式输入</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>看单词讲故事</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/04词根词缀合集.html" class="sidebar-link">单词怎么记</a></li><li><a href="/软件资源/英语词根词缀集合/ang-.html" class="sidebar-link">ang-</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docsify</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/01docsify.html" class="sidebar-link">开始掌握docsify</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>vuepress语法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/vuepress怎么玩/SetTitle.html" class="sidebar-link">vuepress标体设置规则</a></li><li><a href="/软件资源/vuepress怎么玩/Writing_rules.html" class="sidebar-link">vuepress常用语法</a></li><li><a href="/软件资源/vuepress怎么玩/02top导航栏的设置.html" class="sidebar-link">导航栏设置</a></li><li><a href="/软件资源/vuepress怎么玩/03vuepress的流水线部署.html" class="active sidebar-link">vuepress的流水线部署</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>参与博客编写规则</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/博客编写/01github拉取博客仓库.html" class="sidebar-link">github拉取博客仓库</a></li><li><a href="/软件资源/博客编写/02拉取下来的代码怎么运行.html" class="sidebar-link">代码怎么运行</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>黑客学</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/软件资源/黑客资料/黑客目录.html" class="sidebar-link">黑客目录</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress的流水线部署"><a href="#vuepress的流水线部署" class="header-anchor">#</a> vuepress的流水线部署</h1> <p>效果：</p> <ol><li>推送vuepress文档到pages分支上进行构建。</li> <li>将构建的源html的源码推送的master分支上。</li> <li>将github的master分支推送到gitee上。</li></ol> <p>如下脚本存在的问题。</p> <ol><li>都是强制推送。没有记录。不知道怎么优化。</li></ol> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">name</span><span class="token punctuation">:</span> VuePress CI/CD
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> pages  <span class="token comment"># 监听 pages 分支的 push 事件</span>
+
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">build_and_deploy</span><span class="token punctuation">:</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Checkout Code
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Node.js
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v2
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'14.17.0'</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Dependencies
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build VuePress
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Commit Build Results to Pages Branch
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          git config user.name &quot;triggergun&quot;
+          git config user.email &quot;930572358@qq.com&quot;
+          git checkout pages  # 切换到 pages 分支
+          git add docs/
+          git commit -m &quot;Build docs dir&quot;
+          git add node_modules  # 添加到工作树中
+          git commit -m &quot;Build commit node_modules&quot;
+          git push origin pages  # 推送构建结果到 pages 分支，这里提交的是源码的目录
+          cp  -r docs/.vuepress/dist ../build  # 将构建的源码copy到上一级目录</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Pull branch
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          git fetch
+          git branch -a</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Copy Build Results to Master Branch
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          git config user.name &quot;triggergun&quot;
+          git config user.email &quot;930572358@qq.com&quot;
+          git checkout master  # 切换到 master 分支
+          git pull  # 拉取最新代码
+          cp -r ../build/* .  # 复制构建源码结果到工作目录到当前的master下
+          git add .
+          git commit -m &quot;Update master with latest build results&quot;
+          git remote add origin_with_token_with_branch https://github.com/triggergun/triggergun.git
+          git push --force origin_with_token_with_branch master  # 推送构建结果到 master 分支</span>
+  <span class="token key atrule">sync-to-gitee</span><span class="token punctuation">:</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> Sync to Gitee
+    <span class="token key atrule">needs</span><span class="token punctuation">:</span> build_and_deploy
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Checkout Code
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2  <span class="token comment"># 检出代码到工作流程的执行环境中</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install Git
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> sudo apt<span class="token punctuation">-</span>get <span class="token punctuation">-</span>y install git  <span class="token comment"># 安装 Git</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set Up SSH Key for Gitee
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          mkdir -p ~/.ssh
+          echo &quot;${{ secrets.GITEE_RSA_PRIVATE_KEY }}&quot; &gt; ~/.ssh/id_rsa</span>
+        <span class="token key atrule">env</span><span class="token punctuation">:</span>
+          <span class="token key atrule">GITEE_SSH_PRIVATE_KEY</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_RSA_PRIVATE_KEY <span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set Permissions for SSH Key
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> chmod 600 ~/.ssh/id_rsa
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Add Gitee SSH Host to Known Hosts
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> ssh<span class="token punctuation">-</span>keyscan gitee.com <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> ~/.ssh/known_hosts
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Pull branch
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          git fetch
+          git checkout master
+          git branch -a</span>
+      <span class="token comment"># - name: copy file</span>
+      <span class="token comment">#   run: |</span><span class="token scalar string">
+      #     mkdir ../build01
+      #     cp -r docs/.vuepress/dist/* build01
+      #     git branch -a     </span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Push to Gitee Repository
+        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+          git config --global user.name &quot;triggergun&quot;
+          git config --global user.email &quot;930572358@qq.com&quot;
+          git remote add gitee git@gitee.com:ground-gun/triggergun.git
+          git push -f gitee master  # 推送构建结果到 Gitee 仓库的 master 分支</span>
+  <span class="token key atrule">deploy_and_refresh_pages</span><span class="token punctuation">:</span>
+    <span class="token key atrule">needs</span><span class="token punctuation">:</span> sync<span class="token punctuation">-</span>to<span class="token punctuation">-</span>gitee
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Build Gitee Pages
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> yanglbme/gitee<span class="token punctuation">-</span>pages<span class="token punctuation">-</span>action@master
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token comment"># 注意替换为你的 Gitee 用户名</span>
+          <span class="token key atrule">gitee-username</span><span class="token punctuation">:</span> ground<span class="token punctuation">-</span>gun
+          <span class="token comment"># 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD</span>
+          <span class="token key atrule">gitee-password</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITEE_PASSWORD <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token comment"># 注意替换为你的 Gitee 仓库</span>
+          <span class="token key atrule">gitee-repo</span><span class="token punctuation">:</span> ground<span class="token punctuation">-</span>gun/triggergun
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/13/2024, 2:24:20 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/软件资源/vuepress怎么玩/02top导航栏的设置.html" class="prev">
+        导航栏设置
+      </a></span> <span class="next"><a href="/软件资源/博客编写/01github拉取博客仓库.html">
+        github拉取博客仓库
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.13a1aab0.js" defer></script><script src="/assets/js/2.41ebb905.js" defer></script><script src="/assets/js/133.a90672b4.js" defer></script>
+  </body>
+</html>
