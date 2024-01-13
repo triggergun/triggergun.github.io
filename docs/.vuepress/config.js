@@ -71,6 +71,7 @@ module.exports = {
         // 子选项
         items: [
           { text: 'Gitee', link: 'https://gitee.com/ground-gun' },
+          { text: 'Blog-first', link: 'https://ground-gun.gitee.io/' },
           { text: 'Github', link: 'https://github.com/triggergun' },
           { text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts' }
         ]
@@ -139,6 +140,16 @@ module.exports = {
 
             ],
           },
+
+          // 子选项 c语言
+          {
+            text: 'c语言',
+            items: [
+              { text: "c语言", link: encodeURI('/lyp/c语言/安装devc++.md') },
+
+            ],
+          },
+
 
 
         ]
@@ -445,6 +456,22 @@ module.exports = {
           children: [encodeURI('/lyp/小程序/微信小程序/01什么是小程序'),
           encodeURI('/lyp/小程序/微信小程序/02Appid怎么使用'),
           encodeURI('/lyp/小程序/微信小程序/03WXapplet文件的作用'),]
+
+        },
+
+      ],
+
+      // ===================== lyp  模块  点击设 c语言 ,c语言侧边栏 目录    设置 ===========
+      // 2024年-1-13
+      '/lyp/c语言': [
+        {
+          title: 'c语言',
+          collapsable: false,
+          children: [
+          //  c 语言的 侧边栏 目录
+
+          encodeURI('/lyp/c语言/安装devc++'),
+          encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
 
         },
 
