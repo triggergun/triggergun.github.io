@@ -145,7 +145,15 @@ module.exports = {
           {
             text: 'c语言',
             items: [
-              { text: "c语言", link: encodeURI('/lyp/c语言/安装devc++.md') },
+              { text: "c语言", link: encodeURI('/lyp/c语言/安装devc++') },
+
+            ],
+          },
+          // 子选项 c++
+          {
+            text: 'C++',
+            items: [
+              { text: "C++", link: encodeURI('/lyp/C++语言/01我的第一个C++程序/01如何创建工程') },
 
             ],
           },
@@ -468,15 +476,34 @@ module.exports = {
           title: 'c语言',
           collapsable: false,
           children: [
-          //  c 语言的 侧边栏 目录
+            //  c 语言的 侧边栏 目录
 
-          encodeURI('/lyp/c语言/安装devc++'),
-          encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
+            encodeURI('/lyp/c语言/安装devc++'),
+            encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
 
           ]
         },
 
       ],
+
+
+            // ===================== lyp  模块  点击设 C++ ,c语言侧边栏 目录    设置 ===========
+      // 2024年-1-13
+      '/lyp/C++语言': [
+        {
+          title: 'C++',
+          collapsable: false,
+          children: [
+            //  c 语言的 侧边栏 目录
+
+            encodeURI('/lyp/C++语言/01我的第一个C++程序/01如何创建工程'),
+            encodeURI('/lyp/C++语言/01我的第一个C++程序/01我的第一个c程序/02c++第一个程序'),
+
+          ]
+        },
+
+      ],
+
 
       //================= top上 有按钮  大数据的  ===========================
 
@@ -603,7 +630,7 @@ module.exports = {
             encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/10观察后端项目运行细节'),
           ]
 
-          
+
         },
         // 6 阶段 06阶段-人脸考勤签到基础篇
         {
