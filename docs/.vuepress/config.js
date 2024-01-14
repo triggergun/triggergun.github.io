@@ -347,10 +347,13 @@ module.exports = {
 
         },
         {
-          title: '查询',
+          title: 'crud',
           collapsable: false,
-          children: ['/java/Mybatis/select01',
-            '/java/Mybatis/select02'],
+          children: [
+            '/java/Mybatis/select01',
+            '/java/Mybatis/select02',
+            '/java/Mybatis/sesion3电视剧crud'
+          ],
 
         }
 
