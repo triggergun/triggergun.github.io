@@ -724,6 +724,15 @@ module.exports = {
           ]
 
         },
+        // 美术的阶段
+        {
+          title: '发票的UI设计',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/发票项目2024-3-1/ui设计/01团队logo设计'),
+          ]
+
+        },
 
       ],
 
