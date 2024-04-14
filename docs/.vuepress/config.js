@@ -105,7 +105,13 @@ module.exports = {
               { text: "mybatis-plus", link: encodeURI('/java/mybatis_plus/03多数据库源的编写') },
             ]
           },
-
+          //------------- 源码分析
+          {
+            text: '源码分析区',
+            items: [
+              { text: "spring源码分析", link: encodeURI('/java/spring源码分析/01Spring源码下载') },
+            ]
+          },
           //---------------springCloud
           {
             text: 'springCloud',

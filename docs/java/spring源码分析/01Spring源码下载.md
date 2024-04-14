@@ -130,6 +130,17 @@ Could not GET ‘https://repo.spring.io/plugins-release/org/springframework/buil
 
 
 
+## 常见问题2
+
+
+
+![image-20240414213606959](01Spring源码下载.assets/image-20240414213606959.png)
+
+
+
+```
+distributionUrl=file:///D:/worktools/gradle/gradle-4.3.1-bin.zip
+```
 
 
 
@@ -137,6 +148,13 @@ Could not GET ‘https://repo.spring.io/plugins-release/org/springframework/buil
 
 
 
+
+
+
+
+
+
+![image-20240414213553477](01Spring源码下载.assets/image-20240414213553477-17131017856021.png)
 
 
 
