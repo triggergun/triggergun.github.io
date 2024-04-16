@@ -121,7 +121,8 @@ module.exports = {
             ]
           },
           { text: '设计模式', link: '/java/designModel/AssemblerDesignPattern' },
-          { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') }
+          { text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc') },
+          { text: 'java基础服务', link: encodeURI('/java/java基础服务/nexus/01nexus3的docker安装') },
 
         ]
       },
