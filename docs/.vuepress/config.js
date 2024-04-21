@@ -344,18 +344,13 @@ module.exports = {
 
 
       ],
-      // 表示：点击导航栏后，侧边栏显示的标题有：git选
+      // 表示：运维选  =============================
       '/运维/windows/': [
         {
           title: 'windows运维',
           collapsable: false,
           children: ['/运维/windows/cmd'],
 
-        },
-        {
-          title: 'centos运维',
-          collapsable: false,
-          children: ['/运维/centos/01防火墙命令'],
         },
         {
           title: 'docker运维',
@@ -371,8 +366,12 @@ module.exports = {
 
           ],
 
-        }
-        ,
+        },
+        {
+          title: 'centos运维',
+          collapsable: false,
+          children: ['/运维/centos/01防火墙命令'],
+        },
         {
           title: '系统架构',
           collapsable: false,
@@ -390,8 +389,8 @@ module.exports = {
           title: 'ip地址说起',
           collapsable: false,
           children: ['/network/network01',
-          '/network/network02'
-        ],
+            '/network/network02'
+          ],
 
         },
         {
@@ -400,7 +399,7 @@ module.exports = {
           children: [
             '/network/华为/HCIA认证/01华为认证体系介绍',
             '/network/华为/HCIA认证/02eNSP的安装'
-        ],
+          ],
 
         }
 
