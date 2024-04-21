@@ -328,7 +328,8 @@ module.exports = {
         {
           title: '必知必会的git操作',// 注意：给文章起个别名。别名下面是文章搜标题。
           collapsable: false,
-          children: ['/git/01怎么删除远程标签',
+          children: [
+            '/git/01怎么删除远程标签',
             '/git/02怎么打tag推送到远程',
             '/git/03快熟创建git仓库与本地Idea关联',
             '/git/04修改远程分支名称',
@@ -345,7 +346,7 @@ module.exports = {
 
       ],
       // 表示：运维选  =============================
-      '/运维/windows/': [
+      '/运维/': [
         {
           title: 'windows运维',
           collapsable: false,
@@ -382,7 +383,6 @@ module.exports = {
         }
 
       ],
-
       //  网络基础知识
       '/network/': [
         {
@@ -433,19 +433,14 @@ module.exports = {
         },
 
       ],
-
-
       // 表示：点击导航栏后，侧边栏显示的标题有：java
       '/java/javaSEBase/': [
-
-
         {
           title: 'java基础案例',
           collapsable: false,
           children: ['/java/javaSEBase/java'],
 
         },
-
         {
           title: 'java-IO',
           collapsable: false,
