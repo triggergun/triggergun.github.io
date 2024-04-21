@@ -377,6 +377,7 @@ module.exports = {
           title: 'ip地址说起',
           collapsable: false,
           children: ['/network/network01'],
+          children: ['/network/network02'],
 
         },
 
