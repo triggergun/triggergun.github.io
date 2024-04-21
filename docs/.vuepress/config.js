@@ -371,16 +371,25 @@ module.exports = {
 
       ],
 
-      // 
+      //  网络基础知识
       '/network/': [
         {
           title: 'ip地址说起',
           collapsable: false,
-          children: ['/network/network01'],
-          children: ['/network/network02'],
+          children: ['/network/network01',
+          '/network/network02'
+        ],
 
         },
+        {
+          title: '华为HCIA',
+          collapsable: false,
+          children: [
+            '/network/华为/HCIA认证/01华为认证体系介绍',
+            '/network/华为/HCIA认证/02eNSP的安装'
+        ],
 
+        }
 
       ],
       // dao层区的侧边目录========表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
