@@ -344,7 +344,6 @@ module.exports = {
 
 
       ],
-
       // 表示：点击导航栏后，侧边栏显示的标题有：git选
       '/运维/windows/': [
         {
@@ -352,6 +351,11 @@ module.exports = {
           collapsable: false,
           children: ['/运维/windows/cmd'],
 
+        },
+        {
+          title: 'centos运维',
+          collapsable: false,
+          children: ['/运维/centos/01防火墙命令'],
         },
         {
           title: 'docker运维',
@@ -367,7 +371,16 @@ module.exports = {
 
           ],
 
-        },
+        }
+        ,
+        {
+          title: '系统架构',
+          collapsable: false,
+          children: [
+            '/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统'
+          ],
+
+        }
 
       ],
 
