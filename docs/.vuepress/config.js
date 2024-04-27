@@ -70,8 +70,8 @@ module.exports = {
         text: '图南的博客',
         // 子选项
         items: [
-          { text: 'Gitee', link: 'https://gitee.com/ground-gun' },
           { text: 'Blog-first', link: 'https://ground-gun.gitee.io/' },
+          { text: 'Gitee', link: 'https://gitee.com/ground-gun' },
           { text: 'Github', link: 'https://github.com/triggergun' },
           { text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts' }
         ]
@@ -98,7 +98,7 @@ module.exports = {
         items: [
           { text: 'java基础', link: '/java/javaSEBase/java' },
           //  gradle  的使用   ----------------------
-          { text: 'gradle', link: '/java/gradle/01安装gradle' },
+          { text: 'gradle', link: encodeURI('/java/gradle/01安装gradle') },
           //------------- dao层区
           {
             text: 'dao层框架',
@@ -245,7 +245,8 @@ module.exports = {
     //========================================top导航栏 数组 ]  end============================================
 
 
-
+    
+    // ===================================================文章的侧边栏    start  ====================================
     // ===================================================文章的侧边栏    start  ====================================
     sidebar: {
 
