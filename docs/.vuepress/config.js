@@ -97,6 +97,8 @@ module.exports = {
         // 子选项
         items: [
           { text: 'java基础', link: '/java/javaSEBase/java' },
+          //  gradle  的使用   ----------------------
+          { text: 'gradle', link: '/java/gradle/01安装gradle' },
           //------------- dao层区
           {
             text: 'dao层框架',
@@ -508,6 +510,36 @@ module.exports = {
         },
 
       ],
+      // ===================== 点击设 spring源码分析 ===========
+      '/java/spring源码分析/': [
+        {
+          title: 'spring源码分析',
+          collapsable: false,
+          children: [
+            encodeURI('/java/spring源码分析/01Spring源码下载'),
+            encodeURI('/java/spring源码分析/02srping源码编译'),
+
+          ]
+
+        },
+
+      ],
+      // ===================== 点击设 gradle ===========
+      '/java/spring源码分析/': [
+        {
+          title: 'spring源码分析',
+          collapsable: false,
+          children: [
+            encodeURI('/java/gradle/01安装gradle'),
+            encodeURI('/java/gradle/02Gradle项目目录结构'),
+            encodeURI('/java/gradle/03Gradle创建第一个项目'),
+
+          ]
+
+        },
+
+      ],
+
 
 
       // ===================== lyp    点击设 javascript的  基础概念 ===========
