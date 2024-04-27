@@ -187,7 +187,7 @@ module.exports = {
           {
             text: 'hadoop基础理论',
             items: [
-              { text: "MapReduce", link: encodeURI('/lyp/大数据/hadoop基本概念/01MapReduce是什么') },
+              { text: "MapReduce理论", link: encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么') },
 
             ],
           },
@@ -617,7 +617,7 @@ module.exports = {
           title: '阶段一',
           collapsable: false,
           children: [
-            encodeURI('/lyp/大数据/hadoop基本概念/01MapReduce是什么'),
+            encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么'),
           ]
 
         },
