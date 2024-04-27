@@ -173,7 +173,7 @@ org.gradle.process.internal.ExecException: Process 'command 'git'' finished with
 
 
 ::: tip 我这个之前编译过
-本地就有之前编译的依赖。需要的可以联系vx：19970694323获取依赖。
+本地就有之前编译的依赖。
 :::
 
 
