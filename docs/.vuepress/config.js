@@ -184,7 +184,13 @@ module.exports = {
         text: '大数据',
         // 子选项
         items: [
+          {
+            text: 'hadoop基础理论',
+            items: [
+              { text: "MapReduce", link: encodeURI('/lyp/大数据/hadoop基本概念/01MapReduce是什么') },
 
+            ],
+          },
           {
             text: 'spark',
             items: [
@@ -341,6 +347,7 @@ module.exports = {
             '/git/07删除本地分支',
             '/git/08本地切换远程分支',
             '/git/本地仓库修改远程仓库的url',
+            '/git/将本地项目上传至gitee',
           ],
 
         },
@@ -604,6 +611,20 @@ module.exports = {
 
 
       //================= top上 有按钮  大数据的  ===========================
+
+      '/lyp/大数据/hadoop基本概念': [
+        {
+          title: '阶段一',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/大数据/hadoop基本概念/01MapReduce是什么'),
+          ]
+
+        },
+
+      ],
+
+
 
       '/lyp/大数据/02spark': [
         {
