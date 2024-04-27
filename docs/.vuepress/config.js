@@ -513,7 +513,7 @@ module.exports = {
       // ===================== 点击设 spring源码分析 ===========
       '/java/spring源码分析/': [
         {
-          title: 'spring源码编译',
+          title: 'spring源码分析',
           collapsable: false,
           children: [
             encodeURI('/java/spring源码分析/01Spring源码下载'),
