@@ -348,6 +348,7 @@ module.exports = {
             '/git/08本地切换远程分支',
             '/git/本地仓库修改远程仓库的url',
             '/git/将本地项目上传至gitee',
+            '/git/github常见问题',
           ],
 
         },
