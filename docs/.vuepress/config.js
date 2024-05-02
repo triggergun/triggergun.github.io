@@ -525,7 +525,7 @@ module.exports = {
           title: 'nexus服务',
           collapsable: false,
           children: [
-            encodeURI('/java/java基础服务/nexus/01nexus3的docker安装/'),
+            encodeURI('/java/java基础服务/nexus/01nexus3的docker安装'),
           ]
 
         },
