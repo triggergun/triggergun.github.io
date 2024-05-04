@@ -32,6 +32,21 @@ fatal: unable to access 'https://github.com/triggergun/nacos_code_gun.git/': Fai
 
 未知..
 
+
+
+网上看法：
+
+这个问题应该是由于本机系统代理端口和git端口不一致导致的（大概率是科学上网的问题，代理出现了变化），可以尝试以下方法
+第一步检查一下本机代理设置---网络和Internet---代理---地址:端口，找到你的IP地址和端口号
+第二步修改git配置
+
+```
+git config --global http.proxy http://127.0.0.1（你的地址）:10809（你的端口号）
+git config --global https.proxy http://127.0.0.1（你的地址）:10809（你的端口号）
+```
+
+
+
 ### 问题解决
 
 你第一步可以采取的方法就是通过以下Git命令取消proxy代理，然后再回到你前面要执行的步骤

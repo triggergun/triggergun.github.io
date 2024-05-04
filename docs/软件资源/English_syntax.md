@@ -233,6 +233,12 @@ for  a  long  time 长久的。
   
   :::
 
+### 总结when和while
+
+![image-20240504131020760](English_syntax.assets/image-20240504131020760.png)
+
+
+
 ### 练习
 
 When I saw Jimmy, he was wearing a green shirt.

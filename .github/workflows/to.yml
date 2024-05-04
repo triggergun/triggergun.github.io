@@ -8,20 +8,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 步骤1：检出代码到工作目录
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      # 步骤2：安装 Node.js
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14.17.0'
-
+      # 步骤3：安装项目依赖
       - name: Install Dependencies
         run: npm install
-
+       # 步骤4：构建 VuePress 文档
       - name: Build VuePress
         run: npm run build
-
+      # 步骤5：提交构建结果到 pages 分支，并将构建的源码复制到 build 目录下
       - name: Commit Build Results to Pages Branch
         run: |
           git config user.name "triggergun"
@@ -40,6 +42,7 @@ jobs:
           git fetch
           git branch -a
 
+      # 将构建的结果复制到master分支上
       - name: Copy Build Results to Master Branch
         run: |
           git config user.name "triggergun"
