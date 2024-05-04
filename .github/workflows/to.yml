@@ -32,8 +32,8 @@ jobs:
           git config user.email "930572358@qq.com"
           git checkout pages  # 切换到 pages 分支
           # git config advice.addIgnoredFile false
-          # git add -f docs/
-          # git commit -m "Build docs dir"
+          git add -f docs/      # 添加：指定目录
+          git commit -m "Build docs dir"
           # git add node_modules  # 添加到工作树中
           # git commit -m "Build commit node_modules"
           git push -f origin pages  # 推送构建结果到 pages 分支，这里提交的是源码的目录
