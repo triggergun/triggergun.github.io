@@ -4,6 +4,8 @@ on:
     branches:
       - pages  # 监听 pages 分支的 push 事件
 jobs:
+
+  # 任务1 ： 构建项目到pages分支，并且部署pages服务。
   build_and_deploy:
     runs-on: ubuntu-latest
 
@@ -29,11 +31,11 @@ jobs:
           git config user.name "triggergun"
           git config user.email "930572358@qq.com"
           git checkout pages  # 切换到 pages 分支
-          git config advice.addIgnoredFile false
-          git add -f docs/
-          git commit -m "Build docs dir"
-          git add node_modules  # 添加到工作树中
-          git commit -m "Build commit node_modules"
+          # git config advice.addIgnoredFile false
+          # git add -f docs/
+          # git commit -m "Build docs dir"
+          # git add node_modules  # 添加到工作树中
+          # git commit -m "Build commit node_modules"
           git push -f origin pages  # 推送构建结果到 pages 分支，这里提交的是源码的目录
           cp  -r docs/.vuepress/dist ../build  # 将构建的源码copy到上一级目录
 
@@ -55,6 +57,7 @@ jobs:
           git remote add origin_with_token_with_branch https://github.com/triggergun/triggergun.git
           git push --force origin_with_token_with_branch master  # 推送构建结果到 master 分支,master 是可以直接部署的网页源码。
 
+  # 任务2：
   sync-to-gitee:
     name: Sync to Gitee
     needs: build_and_deploy
