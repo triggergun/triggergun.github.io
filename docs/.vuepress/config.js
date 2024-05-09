@@ -650,6 +650,14 @@ module.exports = {
           ]
 
         },
+        {
+          title: 'hadoop官方',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/01hadoop首页'),
+          ]
+
+        },
 
       ],
 
