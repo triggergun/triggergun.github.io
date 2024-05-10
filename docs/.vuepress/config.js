@@ -86,7 +86,13 @@ module.exports = {
         text: '运维',
         items: [
           { text: '命令', link: '/运维/windows/cmd' },
-          { text: '网络', link: '/network/network01' }
+          { text: '网络', link: '/network/network01' },
+          {
+            text: 'https原理实战',
+            items: [
+              { text: "02)密码学", link: '/network/https/深入浅出https原理/02密码学' },
+            ]
+          },
         ]
 
       },
