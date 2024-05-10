@@ -78,51 +78,6 @@ The Apache Hadoop software library is a framework that allows for the distribute
 
 :::
 
-## Latest news【最新消息】
-
-### 2024 Mar 17【2024年3月17日】
-
-- [Release 3.4.0 available](https://hadoop.apache.org/release/3.4.0.html)
-
-This is the first release of Apache Hadoop 3.4 line. It contains 2888 bug fixes, improvements and enhancements since 3.3.
-
-Users are encouraged to read the [overview of major changes](https://hadoop.apache.org/docs/r3.4.0/index.html). For details of please check [release notes](http://hadoop.apache.org/docs/r3.4.0/hadoop-project-dist/hadoop-common/release/3.4.0/RELEASENOTES.3.4.0.html) and [changelog](http://hadoop.apache.org/docs/r3.4.0/hadoop-project-dist/hadoop-common/release/3.4.0/CHANGELOG.3.4.0.html).
-
-::: details 翻译
-
-- 第1句话：这是Apache Hadoop 3.4系列的第一个版本。
-- 第2句话：它包含自3.3以来的2888个错误修复、改进和增强。
-- 第3句话：鼓励用户阅读主要变化的概述。
-- 第4句话：有关的详细信息，请查看发布说明和更改日志。
-
-:::
-
-::: details 重点词汇
-
-- 第3句
-
-| English    | Chinese                                                      |
-| ---------- | ------------------------------------------------------------ |
-| Users      | 用户 / 用户信息 / 用户数 / 用户文件 / 受限用户               |
-| Encouraged | 鼓励 / 支持 / 促进 / 激励 / 刺激 / 助长 / 怂恿 / 鼓动 / 劝告 (encourage的过去分词和过去式) |
-| Overview   | 概述 / 概况 / 纵览 / 概论                                    |
-| Major      | 专业 / 少校 / 大联盟 / 专业课 / 主修课程 / 主修学生 / 主要的 / 重要的 / 大的 / 严重 / 主修的 / 大调的 / 主修 / 专攻 |
-| Changes    | 变化 / 改变 / 使不同 / 变换，改换，变成 / 变更 / 变革 / 更换 / 替代 / 替代物 (change的第三人称单数和复数) |
-
-- 第4句
-
-| English | Chinese                                                      |
-| ------- | ------------------------------------------------------------ |
-| Details | 详情 / 资料 / 消息 / 具体情况 / 全部细节 / 琐事 / 细微之处 / 枝节 / 详细说明 / 详述 / 派遣 / 详细列举 / 选派 / 彻底清洗 / 分遣 (detail的第三人称单数和复数) |
-| Please  | 请 / 请问 / 请千万 / 请务必 / 的确 / 太感谢了 / 太好了 / 得了吧 / 算了吧 / 别闹了 / 收敛点儿 (常用在as或what、where等词后) / 想，选择，喜欢 / 使满意 / 使愉快 |
-| Check   | 检查 / 控制 / 查看 / 检验 / 核查 / 核实 / 审查 / 托运 / 阻止 / 查明 / 抑制 / 克制，抑制 / 存放 / 弄确实 / 检查，查看 / 规定，条令，约束 / 调查 / 方格图案，方格，格子 / 寄存处，存放处 / 被将军的局面 / 存物牌，存放证 / 阻碍进程的事物 / 阻止恶化的事物 / 行已经办好 |
-| Release | 释放 / 松开 / 免除，解除 / 公开 / 放出 / 开放 / 放开 / 发泄 / 放走 / 宣泄 / 使自由移动 / 使不紧张 / 发布 / 发行 / 排放 / 获释 / 解脱 / 新激光唱片，新电影 / 新发行的东西 |
-| Notes   | 注释 / 记录 / 笔记 / 便条 / 批注 / 短笺 / 按语 / 注意 / 指出 / 留意 / 特别提到 (note的第三人称单数和复数) |
-
-:::
-
-
-
 ## Modules【模块】
 
 The project includes these modules:
@@ -133,6 +88,57 @@ The project includes these modules:
 - **Hadoop Distributed File System (HDFS™)**: A distributed file system that provides high-throughput access to application data.
 - **Hadoop YARN**: A framework for job scheduling and cluster resource management.
 - **Hadoop MapReduce**: A YARN-based system for parallel processing of large data sets.
+
+::: details 翻译
+
+- 第1句话：支持其他Hadoop模块的通用实用程序。
+- 第2句话：一种分布式文件系统，提供对应用程序数据的高吞吐量访问。
+- 第3句话：作业调度和集群资源管理的框架。
+- 第4句话：一种基于YARN的大型数据集并行处理系统。
+
+:::
+
+::: details  重点词汇
+
+- 第1句
+
+| English   | Phonetic        | Chinese                                                      |
+| --------- | --------------- | ------------------------------------------------------------ |
+| common    | /ˈkɒmən/        | 常见的，共同的，普通的，普遍的，通常的，共享的，共有的，平常的，寻常的，平凡的，粗俗的，公共用地，公地，学生，公共食堂 |
+| utilities | /juːˌtɪlɪˈtiːz/ | 实用，实用程序，效用，公用事业，公用程序，有用               |
+| support   | /səˈpɔːt/       | 支持，支撑，帮助，援助，鼓励，资助，赞助，证实，拥护，养活，当助演，担任演出嘉宾，支承，技术支持，支座，支柱，证据，支持器，托支撑物，救助，助演嘉宾 |
+| Hadoop    | /ˈhæduːp/       | 安装，云计算，分布式计算，大数据分析，分布式系统             |
+| modules   | /ˈmɒdjuːlz/     | 模块，单元，组件，配件，功能块，程序块                       |
+
+- 第2句
+
+| English                 | Phonetic                     | Chinese        |
+| ----------------------- | ---------------------------- | -------------- |
+| Distributed File System | /dɪˈstrɪbjʊtɪd faɪl ˈsɪstəm/ | 分布式文件系统 |
+| Provides                | /prəˈvaɪdz/                  | 提供           |
+| High-throughput         | /haɪ θruːˈpʊt/               | 高通量         |
+| Access to               | /ˈæksɛs tuː/                 | 访问           |
+| Application             | /ˌæplɪˈkeɪʃən/               | 应用           |
+| Data                    | /ˈdeɪtə/                     | 数据           |
+
+- 第3句
+
+| English             | Chinese                                                     |
+| ------------------- | ----------------------------------------------------------- |
+| Framework           | 框架 / 结构 / 机制 / 构架 / 准则 / 观点 / 信仰              |
+| Job Scheduling      | 作业调度 / 任务调度 / 工作排程                              |
+| Cluster             | 簇 / 团 / 束 / 串 / 群 / 组 / 辅音连缀 / 辅音丛 / 聚 / 聚集 |
+| Resource Management | 资源管理 / 管理资源 / 资源管理类                            |
+
+- 第4句
+
+| English             | Chinese                                                    |
+| ------------------- | ---------------------------------------------------------- |
+| System              | 系统 / 制度，体系，集团 / 体系 / 制度 / 方法 / 体制 / 身体 |
+| Parallel processing | 并行处理                                                   |
+| Large data sets     | 大型数据集 / 大数据集                                      |
+
+:::
 
 ## Who Uses Hadoop?
 
@@ -165,3 +171,227 @@ A wide variety of companies and organizations use Hadoop for both research and p
 
 ## Related projects【相关项目】
 
+Other Hadoop-related projects at Apache include:
+
+Apache的其他Hadoop相关项目包括：
+
+- [**Ambari™**](https://ambari.apache.org/): A web-based tool for provisioning, managing, and monitoring Apache Hadoop clusters which includes support for Hadoop HDFS, Hadoop MapReduce, Hive, HCatalog, HBase, ZooKeeper, Oozie, Pig and Sqoop. Ambari also provides a dashboard for viewing cluster health such as heatmaps and ability to view MapReduce, Pig and Hive applications visually alongwith features to diagnose their performance characteristics in a user-friendly manner.
+
+::: details 翻译
+
+- 第1句话：一个基于web的工具，用于提供、管理和监控Apache Hadoop集群，包括对Hadoop HDFS、Hadoop MapReduce、Hive、HCatalog、HBase、ZooKeeper、Oozie、Pig和Sqoop的支持。
+- 第2句话：Ambari还提供了一个用于查看集群运行状况的仪表板，如热图，以及可视化查看MapReduce、Pig和Hive应用程序的能力，以及以用户友好的方式诊断其性能特征的功能。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+| English        | Phonetic      | Chinese                                                      |
+| -------------- | ------------- | ------------------------------------------------------------ |
+| provisioning   | /prəˈvɪʒənɪŋ/ | 供应配置，供给，指配置备                                     |
+| Apache         | /əˈpætʃi/     | 阿帕切人                                                     |
+| Hadoop         | /ˈhæduːp/     | 安装，云计算，分布式计算，大数据分析，分布式系统             |
+| clusters       | /ˈklʌstəz/    | 簇，团，束，串，群，组，辅音连缀，辅音丛，群聚，聚集         |
+| which includes |               | 其中包括，包括                                               |
+| support for    |               | 对……的支持                                                   |
+| Hive           | /haɪv/        | 蜂巢，蜂箱，蜂房                                             |
+| ZooKeeper      | /zuːˈkiːpər/  | 动物园管理员                                                 |
+| Pig            | /pɪɡ/         | 猪，令人不快的人，贪婪的人，对警察的蔑称，吃得过量，大吃特吃 |
+
+- 第2句话
+
+| English                     | Phonetic            | Chinese                                                      |
+| --------------------------- | ------------------- | ------------------------------------------------------------ |
+| Ambari                      | /ˈæmbɑːri/          | 洋麻                                                         |
+| dashboard                   | /ˈdæʃbɔːrd/         | 仪表板                                                       |
+| cluster                     | /ˈklʌstər/          | 簇，团，束，串，群，组，辅音连缀，辅音丛，群聚，聚集         |
+| such as                     |                     | 例如……等像像……这样，像……那种诸如……之类                       |
+| Pig                         | /pɪɡ/               | 猪，令人不快的人，贪婪的人，对警察的蔑称，吃得过量，大吃特吃 |
+| Hive                        | /haɪv/              | 蜂巢，蜂箱，蜂房                                             |
+| visually                    | /ˈvɪʒuəli/          | 视觉上形象化地；外表上；看得见地                             |
+| diagnose                    | /ˈdaɪəɡnəʊz/        | 诊断，判断                                                   |
+| performance characteristics |                     | 性能特征，性能特性，性能特点，工作特性                       |
+| user-friendly               | /ˈjuːzə(r)ˌfrɛndli/ | 便于使用的，用户友好型，易于掌握的，方便非专业用户的         |
+
+:::
+
+- [**Avro™**](https://avro.apache.org/): A data serialization system.一种数据序列化系统。
+- [**Cassandra™**](https://cassandra.apache.org/): A scalable multi-master database with no single points of failure.
+
+::: details 翻译
+
+- 第1句话：一个可扩展的多主机数据库，没有单点故障。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+| English  | Phonetic     | Chinese                                                      |
+| -------- | ------------ | ------------------------------------------------------------ |
+| scalable | /ˈskeɪləbl/  | 可伸缩的，可攀登的，可去鳞的，可称量的                       |
+| database | /ˈdeɪtəbeɪs/ | 数据库                                                       |
+| single   | /ˈsɪŋɡəl/    | 单个的，单一的，单身的，单人的，单程的，未婚的，仅有一个的，无伴侣的，特指某人或事物 |
+| points   | /pɔɪnts/     | 观点，要点，重点，目的，理由，论点，意图，见解，核心问题，指，指向，朝向，瞄准 |
+| failure  | /ˈfeɪljər/   | 失败，故障，倒闭，未做，未履行，歉收，失败的人               |
+
+:::
+
+- [**Chukwa™**](https://chukwa.apache.org/): A data collection system for managing large distributed systems.
+- [**HBase™**](https://hbase.apache.org/): A scalable, distributed database that supports structured data storage for large tables.
+
+::: details 翻译
+
+- 第1句话：提供数据摘要和即席查询的数据仓库基础设施。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+:::
+
+- 
+
+- [**Hive™**](https://hive.apache.org/): A data warehouse infrastructure that provides data summarization and ad hoc querying.
+
+::: details 翻译
+
+- 第1句话：提供数据摘要和即席查询的数据仓库基础设施。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+:::
+
+- [**Mahout™**](https://mahout.apache.org/): A Scalable machine learning and data mining library.
+
+一个可扩展的机器学习和数据挖掘库。
+
+::: details 重点词汇
+
+- 第1句话
+
+| English          | Phonetic           | Chinese                                            |
+| ---------------- | ------------------ | -------------------------------------------------- |
+| Scalable         | /ˈskeɪləbl/        | 可扩展性，可扩展，可伸缩的，可伸缩，可伸缩性       |
+| machine learning | /məˈʃiːn ˈlɜːrnɪŋ/ | 机器学习；机器改进能力                             |
+| data mining      | /ˈdeɪtə ˈmaɪnɪŋ/   | 数据采掘                                           |
+| library          | /ˈlaɪbrəri/        | 图书馆，图书室，资料室，藏书楼，个人收藏，系列丛书 |
+
+:::
+
+- [**Ozone™**](https://ozone.apache.org/): A scalable, redundant, and distributed object store for Hadoop.
+
+::: details 翻译
+
+- 第1句话：Hadoop的可扩展、冗余和分布式对象存储。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+| English            | Phonetic                  | Chinese                                                      |
+| ------------------ | ------------------------- | ------------------------------------------------------------ |
+| scalable           | /ˈskeɪləbl/               | 可伸缩的，可攀登的，可去鳞的，可称量的                       |
+| redundant          | /rɪˈdʌndənt/              | 冗余的，多余的，不需要的，被裁减的                           |
+| distributed object | /dɪˈstrɪbjuːtɪd ˈɒbdʒɪkt/ | 分布式对象，分布对象                                         |
+| store              | /stɔːr/                   | 百货商店，储存，储备，商店，仓库，栈房，储藏所，大量，丰富，存储器，储存品，备用品，补给品，储备金，待肥育猪，存入仓库，贮存，供应，记忆，容纳，装满，储存的，制成品的，现成的，待肥育的，商店里买得到的，用作储藏所的 |
+| Hadoop             | /ˈhæduːp/                 | 安装，云计算，分布式计算，大数据分析，分布式系统             |
+
+:::
+
+- [**Pig™**](https://pig.apache.org/): A high-level data-flow language and execution framework for parallel computation.
+
+::: details 翻译
+
+- 第1句话：一种用于并行计算的高级数据流语言和执行框架。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+| English              | Phonetic                  | Chinese                                              |
+| -------------------- | ------------------------- | ---------------------------------------------------- |
+| high-level           | /haɪ levəl/               | 高级的，高层的，高等的，在高处的，级别高的，位置高的 |
+| data-flow language   | /ˈdeɪtə fləʊ ˈlæŋɡwɪdʒ/   | 数据流语言                                           |
+| execution            | /ˌɛksɪˈkjuːʃən/           | 执行，实施，处决，实行，制作，表演，演奏             |
+| framework            | /ˈfreɪmwɜːrk/             | 框架，结构，机制，构架，准则，观点，信仰             |
+| parallel computation | /ˈpærəlel ˌkɒmpjuˈteɪʃən/ | 并行计算，平行计算；并行运算                         |
+
+:::
+
+- [**Spark™**](https://spark.apache.org/): A fast and general compute engine for Hadoop data. Spark provides a simple and expressive programming model that supports a wide range of applications, including ETL, machine learning, stream processing, and graph computation.
+
+::: details 翻译
+
+- 第1句话：Hadoop数据的快速通用计算引擎。
+- 第2句话：Spark提供了一个简单而富有表现力的编程模型，支持广泛的应用程序，包括ETL、机器学习、流处理和图形计算。
+
+:::
+
+::: details 重点词汇
+
+- 第2句话
+
+| English           | Phonetic            | Chinese                                                      |
+| ----------------- | ------------------- | ------------------------------------------------------------ |
+| Spark             | /spɑːrk/            | 火花，电火花，火星，生气，诱因，一星，丝毫，一丁点，愤怒的情感，引发，触发，产生电火花，冒火花，飞火星 |
+| expressive        | /ɪkˈsprɛsɪv/        | 有表现力的，表示，表现，表达，富于表情的，意味深长的         |
+| programming model | /ˈprəʊɡræmɪŋ ˈmɒdl/ | 编程模型，编程模式，程序设计模型                             |
+| supports          | /səˈpɔːrts/         | 支持，帮助，援助，鼓励，资助，赞助，拥护，支持，支承结构，忍受，[法]赡养（support 的复数） |
+| wide range        | /waɪd reɪndʒ/       | 数量繁多                                                     |
+| ETL               | /ˌiːtiːˈɛl/         | 最早发射时间(Earliest Time to Launch)，电子技术实验室(Electronic Technology Laboratory)，应急时限(Emergency Time Limit) |
+| machine learning  | /məˈʃiːn ˈlɜːrnɪŋ/  | 机器学习；机器改进能力                                       |
+| stream            | /striːm/            | 流，流动，流出，用流式传输，流播，飘动，飘扬，按能力分班，一个接一个地移动，鱼贯而行，班，组，溪，小河，一连串，接二连三，源源不断 |
+| graph             | /ɡræf/              | 图，曲线图，图表，用图表表示，用胶版印刷                     |
+| computation       | /ˌkɒmpjuːˈteɪʃən/   | 计算，计算过程                                               |
+
+:::
+
+- [**Submarine**](https://submarine.apache.org/): A unified AI platform which allows engineers and data scientists to run Machine Learning and Deep Learning workload in distributed cluster.
+
+::: details 翻译
+
+- 第1句话：一个统一的人工智能平台，允许工程师和数据科学家在分布式集群中运行机器学习和深度学习工作负载。
+
+:::
+
+::: details 重点词汇
+
+- 第1句话
+
+| English          | Phonetic           | Chinese                                                      |
+| ---------------- | ------------------ | ------------------------------------------------------------ |
+| unified          | /ˈjuːnɪfaɪd/       | 统一的，一致的；联合的，一体的                               |
+| platform         | /ˈplætfɔːm/        | 平台，站台，纲领，政纲，宣言，机会，阵地，讲坛，月台，计算机平台，舞台，讲台，上下车出入口，入口平台，厚鞋底，演讲，把…放在台上，为…设台 |
+| allows           | /əˈlaʊzɪz/         | 允许，给予，准许，允许进入                                   |
+| engineers        | /ˌendʒɪˈnɪəz/      | 工程师，设计师，技师，技工，机械师，机修工，轮机手，密谋，策划，设计，制造，改变…的基因结构 |
+| scientists       | /ˈsaɪəntɪsts/      | 科学家                                                       |
+| Machine Learning | /məˈʃiːn ˈlɜːrnɪŋ/ | 机器学习，机械学习，自动学习，机器学                         |
+| Learning         | /ˈlɜːrnɪŋ/         | 学习，知识，学问，学识，学，学会，学到，得知，获悉，记住，听到，熟记，背熟 |
+| workload         | /ˈwɜːkˌləʊd/       | 工作量，工作负担                                             |
+| distributed      | /dɪˈstrɪbjuːtɪd/   | 分布的，分散的，使分布，分配，分发，分销，分散，使散开       |
+| cluster          | /ˈklʌstər/         | 簇，团，束，串，群，组，辅音连缀，辅音丛，群聚，聚集         |
+
+:::
+
+- [**Tez™**](https://tez.apache.org/): A generalized data-flow programming framework, built on Hadoop YARN, which provides a powerful and flexible engine to execute an arbitrary DAG of tasks to process data for both batch and interactive use-cases. Tez is being adopted by Hive™, Pig™ and other frameworks in the Hadoop ecosystem, and also by other commercial software (e.g. ETL tools), to replace Hadoop™ MapReduce as the underlying execution engine.
+- [**ZooKeeper™**](https://zookeeper.apache.org/): A high-performance coordination service for distributed applications.
+
+::: details 翻译
+
+- 第1句话：用于分布式应用程序的高性能协调服务。
+
+:::
