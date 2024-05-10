@@ -661,6 +661,7 @@ module.exports = {
           collapsable: false,
           children: [
             encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/01hadoop首页'),
+            encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/02最新消息'),
           ]
 
         },
