@@ -22,6 +22,18 @@ fatal: unable to access 'https://github.com/triggergun/nacos_code_gun.git/': Fai
 
 ```
 
+
+
+```
+19:30	Push failed
+			unable to access 'https://github.com/triggergun/nacos_code_gun.git/': Failed to connect to github.com port 443 after 21092 ms: Couldn't connect to server
+			Show details in console
+```
+
+图片描述问题
+
+![image-20240504193448988](github常见问题.assets/image-20240504193448988.png)
+
 ### 问题分析
 
 ```

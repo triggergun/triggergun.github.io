@@ -86,7 +86,13 @@ module.exports = {
         text: '运维',
         items: [
           { text: '命令', link: '/运维/windows/cmd' },
-          { text: '网络', link: '/network/network01' }
+          { text: '网络', link: '/network/network01' },
+          {
+            text: 'https原理实战',
+            items: [
+              { text: "02)密码学", link: '/network/https/深入浅出https原理/02密码学' },
+            ]
+          },
         ]
 
       },
@@ -346,8 +352,14 @@ module.exports = {
             '/git/06怎么删除远程分支',
             '/git/07删除本地分支',
             '/git/08本地切换远程分支',
-            '/git/本地仓库修改远程仓库的url',
-            '/git/将本地项目上传至gitee',
+            '/git/09idea中强制迁出和智能迁出',
+            // '/git/10tag太多怎么过滤',
+            // '/git/11怎么将本地仓库上传github',
+            // '/git/12gitee怎么同步github仓库',
+            // '/git/13idea中使用git回退单个文件的版本',
+            // '/git/14重置某个提交的文件',
+            // '/git/15在master分支一键合并开发分支代码',
+            // '/git/16远程与本地【冲突】',
             '/git/github常见问题',
           ],
 
@@ -641,6 +653,15 @@ module.exports = {
           collapsable: false,
           children: [
             encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么'),
+          ]
+
+        },
+        {
+          title: 'hadoop官方',
+          collapsable: false,
+          children: [
+            encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/01hadoop首页'),
+            encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/02最新消息'),
           ]
 
         },
