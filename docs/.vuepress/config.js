@@ -201,6 +201,7 @@ module.exports = {
             text: 'spark',
             items: [
               { text: "spark集群", link: encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署') },
+              { text: "scala语言基础", link: encodeURI('/lyp/大数据/scala语言基础/01scala简介') },
 
             ],
           },
