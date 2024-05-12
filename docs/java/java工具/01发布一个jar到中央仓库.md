@@ -97,6 +97,51 @@ https://central.sonatype.org/register/namespace/
 
 
 
+使用自己的域名
+
+```
+Verify Namespace
+To prove the ownership of this Namespace, a DNS TXT Record is required with the same value that matches its Verification Key(rewy5b19lc).
+﻿
+For the Namespace top.wutunan.www you will need to create TXT Record:
+﻿
+rewy5b19lc
+﻿
+Domain Registrars services have different procedures for adding a TXT Record, please check your registers documentation to find out how to add a TXT Record.
+```
+
+::: details 翻译
+
+验证命名空间
+为了证明此命名空间的所有权，需要具有与其验证密钥（rewy5b19lc）匹配的相同值的DNS TXT记录。
+对于命名空间top.wutunan.ww，您需要创建TXT记录：
+rewy5b19lc
+域注册服务有不同的添加TXT记录的程序，请查看您的注册文档以了解如何添加TXT纪录。
+
+:::
+
+![image-20240512165517304](01发布一个jar到中央仓库.assets/image-20240512165517304.png)
+
+
+
+
+
+![image-20240512165715446](01发布一个jar到中央仓库.assets/image-20240512165715446.png)
+
+
+
+
+
+![image-20240512165923088](01发布一个jar到中央仓库.assets/image-20240512165923088.png)
+
+
+
+
+
+
+
+
+
 
 
 ## 下载安装好gpg创建和私钥
