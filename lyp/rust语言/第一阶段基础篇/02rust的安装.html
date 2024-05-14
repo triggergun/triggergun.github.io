@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 Rust | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.svg">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.c38bee49.js" as="script"><link rel="preload" href="/assets/js/2.68b23b92.js" as="script"><link rel="preload" href="/assets/js/123.c9fa22cd.js" as="script"><link rel="prefetch" href="/assets/js/10.e97a5d59.js"><link rel="prefetch" href="/assets/js/100.fa89a109.js"><link rel="prefetch" href="/assets/js/101.bce80f68.js"><link rel="prefetch" href="/assets/js/102.83cb04b2.js"><link rel="prefetch" href="/assets/js/103.2c08675e.js"><link rel="prefetch" href="/assets/js/104.482cc54d.js"><link rel="prefetch" href="/assets/js/105.0f1c8efe.js"><link rel="prefetch" href="/assets/js/106.7c25be61.js"><link rel="prefetch" href="/assets/js/107.e07855e0.js"><link rel="prefetch" href="/assets/js/108.ff0c910b.js"><link rel="prefetch" href="/assets/js/109.794ec252.js"><link rel="prefetch" href="/assets/js/11.c8ce45e9.js"><link rel="prefetch" href="/assets/js/110.108f3511.js"><link rel="prefetch" href="/assets/js/111.5ee425ea.js"><link rel="prefetch" href="/assets/js/112.b7d4eb48.js"><link rel="prefetch" href="/assets/js/113.248b4ca0.js"><link rel="prefetch" href="/assets/js/114.e8761d06.js"><link rel="prefetch" href="/assets/js/115.59a4281e.js"><link rel="prefetch" href="/assets/js/116.41d65803.js"><link rel="prefetch" href="/assets/js/117.f0062912.js"><link rel="prefetch" href="/assets/js/118.6006f06c.js"><link rel="prefetch" href="/assets/js/119.4f41cc99.js"><link rel="prefetch" href="/assets/js/12.553d9109.js"><link rel="prefetch" href="/assets/js/120.e7d64c95.js"><link rel="prefetch" href="/assets/js/121.bf7fb15e.js"><link rel="prefetch" href="/assets/js/122.e527772f.js"><link rel="prefetch" href="/assets/js/124.164b6666.js"><link rel="prefetch" href="/assets/js/125.daac2f13.js"><link rel="prefetch" href="/assets/js/126.a4ff8885.js"><link rel="prefetch" href="/assets/js/127.a4cffca8.js"><link rel="prefetch" href="/assets/js/128.a1405c02.js"><link rel="prefetch" href="/assets/js/129.69434c36.js"><link rel="prefetch" href="/assets/js/13.104fb6f7.js"><link rel="prefetch" href="/assets/js/130.a70b3195.js"><link rel="prefetch" href="/assets/js/131.7b6b9c1c.js"><link rel="prefetch" href="/assets/js/132.6c470f4c.js"><link rel="prefetch" href="/assets/js/133.6bd002e0.js"><link rel="prefetch" href="/assets/js/134.2754f1d8.js"><link rel="prefetch" href="/assets/js/135.56ebe39c.js"><link rel="prefetch" href="/assets/js/136.9d655e6d.js"><link rel="prefetch" href="/assets/js/137.482945a4.js"><link rel="prefetch" href="/assets/js/138.2a8f0e57.js"><link rel="prefetch" href="/assets/js/139.81940ae8.js"><link rel="prefetch" href="/assets/js/14.afd01b3e.js"><link rel="prefetch" href="/assets/js/140.22319f54.js"><link rel="prefetch" href="/assets/js/141.cfb3b355.js"><link rel="prefetch" href="/assets/js/142.46cbb3df.js"><link rel="prefetch" href="/assets/js/143.5589a77b.js"><link rel="prefetch" href="/assets/js/144.1cd95cab.js"><link rel="prefetch" href="/assets/js/145.2fced8b6.js"><link rel="prefetch" href="/assets/js/146.edcc56a6.js"><link rel="prefetch" href="/assets/js/147.5d678f0a.js"><link rel="prefetch" href="/assets/js/148.9ddae5b8.js"><link rel="prefetch" href="/assets/js/149.f38c217d.js"><link rel="prefetch" href="/assets/js/15.c2badf6d.js"><link rel="prefetch" href="/assets/js/150.00255927.js"><link rel="prefetch" href="/assets/js/151.9fd7dcbd.js"><link rel="prefetch" href="/assets/js/152.0b45cd61.js"><link rel="prefetch" href="/assets/js/153.5b448351.js"><link rel="prefetch" href="/assets/js/154.e91f13a5.js"><link rel="prefetch" href="/assets/js/155.fbe7a49d.js"><link rel="prefetch" href="/assets/js/156.df08edfd.js"><link rel="prefetch" href="/assets/js/157.3a3a7bcf.js"><link rel="prefetch" href="/assets/js/158.35712161.js"><link rel="prefetch" href="/assets/js/159.fe1b4e52.js"><link rel="prefetch" href="/assets/js/16.17f4006f.js"><link rel="prefetch" href="/assets/js/160.700f88ef.js"><link rel="prefetch" href="/assets/js/161.a7098e36.js"><link rel="prefetch" href="/assets/js/162.eee29f7c.js"><link rel="prefetch" href="/assets/js/163.b1f92cf5.js"><link rel="prefetch" href="/assets/js/164.068da9f7.js"><link rel="prefetch" href="/assets/js/165.cc8035c5.js"><link rel="prefetch" href="/assets/js/166.42603da9.js"><link rel="prefetch" href="/assets/js/167.3d747aa8.js"><link rel="prefetch" href="/assets/js/168.592d598f.js"><link rel="prefetch" href="/assets/js/169.626c3e9b.js"><link rel="prefetch" href="/assets/js/17.b9576a6c.js"><link rel="prefetch" href="/assets/js/170.5c90cfc9.js"><link rel="prefetch" href="/assets/js/171.f9694934.js"><link rel="prefetch" href="/assets/js/172.5d64e3e3.js"><link rel="prefetch" href="/assets/js/173.61327978.js"><link rel="prefetch" href="/assets/js/174.1685ae06.js"><link rel="prefetch" href="/assets/js/175.e66be338.js"><link rel="prefetch" href="/assets/js/176.c66b974f.js"><link rel="prefetch" href="/assets/js/177.586c4dba.js"><link rel="prefetch" href="/assets/js/178.b03fe1b9.js"><link rel="prefetch" href="/assets/js/179.19b73aa8.js"><link rel="prefetch" href="/assets/js/18.bb754274.js"><link rel="prefetch" href="/assets/js/180.713a544a.js"><link rel="prefetch" href="/assets/js/181.3f8c3f90.js"><link rel="prefetch" href="/assets/js/182.10a282c6.js"><link rel="prefetch" href="/assets/js/183.755c7ebe.js"><link rel="prefetch" href="/assets/js/184.3acc9221.js"><link rel="prefetch" href="/assets/js/185.092c7ea4.js"><link rel="prefetch" href="/assets/js/186.ab2060bc.js"><link rel="prefetch" href="/assets/js/187.c2a58f5f.js"><link rel="prefetch" href="/assets/js/188.0106242c.js"><link rel="prefetch" href="/assets/js/189.20f72a29.js"><link rel="prefetch" href="/assets/js/19.a04dda55.js"><link rel="prefetch" href="/assets/js/190.a4206ed8.js"><link rel="prefetch" href="/assets/js/191.7627172d.js"><link rel="prefetch" href="/assets/js/192.35bb1814.js"><link rel="prefetch" href="/assets/js/20.3a98a48b.js"><link rel="prefetch" href="/assets/js/21.268a2023.js"><link rel="prefetch" href="/assets/js/22.12fd40ba.js"><link rel="prefetch" href="/assets/js/23.e7c8c951.js"><link rel="prefetch" href="/assets/js/24.1cd394a0.js"><link rel="prefetch" href="/assets/js/25.2d9ba2e1.js"><link rel="prefetch" href="/assets/js/26.086d7457.js"><link rel="prefetch" href="/assets/js/27.5bd75e11.js"><link rel="prefetch" href="/assets/js/28.ad30086b.js"><link rel="prefetch" href="/assets/js/29.9c1c3362.js"><link rel="prefetch" href="/assets/js/3.485d0ee4.js"><link rel="prefetch" href="/assets/js/30.8935c3cb.js"><link rel="prefetch" href="/assets/js/31.5c3356b0.js"><link rel="prefetch" href="/assets/js/32.a2dba0c8.js"><link rel="prefetch" href="/assets/js/33.23611d06.js"><link rel="prefetch" href="/assets/js/34.3d26858e.js"><link rel="prefetch" href="/assets/js/35.15e4e70f.js"><link rel="prefetch" href="/assets/js/36.4bf78de3.js"><link rel="prefetch" href="/assets/js/37.5adc0d65.js"><link rel="prefetch" href="/assets/js/38.65d8ce77.js"><link rel="prefetch" href="/assets/js/39.6dfda459.js"><link rel="prefetch" href="/assets/js/4.d5e1a417.js"><link rel="prefetch" href="/assets/js/40.6878d898.js"><link rel="prefetch" href="/assets/js/41.0326ee74.js"><link rel="prefetch" href="/assets/js/42.4e2d0fba.js"><link rel="prefetch" href="/assets/js/43.4ce2de59.js"><link rel="prefetch" href="/assets/js/44.aa8096ec.js"><link rel="prefetch" href="/assets/js/45.95d1d1e6.js"><link rel="prefetch" href="/assets/js/46.53c028b7.js"><link rel="prefetch" href="/assets/js/47.15a367e9.js"><link rel="prefetch" href="/assets/js/48.908237b6.js"><link rel="prefetch" href="/assets/js/49.5ed9942e.js"><link rel="prefetch" href="/assets/js/5.074ded45.js"><link rel="prefetch" href="/assets/js/50.644f3be8.js"><link rel="prefetch" href="/assets/js/51.5b7223bd.js"><link rel="prefetch" href="/assets/js/52.56ef32d6.js"><link rel="prefetch" href="/assets/js/53.7f452938.js"><link rel="prefetch" href="/assets/js/54.056c8c87.js"><link rel="prefetch" href="/assets/js/55.3f761a8d.js"><link rel="prefetch" href="/assets/js/56.7429f123.js"><link rel="prefetch" href="/assets/js/57.e43e6d0a.js"><link rel="prefetch" href="/assets/js/58.fbdb81ec.js"><link rel="prefetch" href="/assets/js/59.6a907a52.js"><link rel="prefetch" href="/assets/js/6.e6b6fe5c.js"><link rel="prefetch" href="/assets/js/60.2644d352.js"><link rel="prefetch" href="/assets/js/61.44b15f2f.js"><link rel="prefetch" href="/assets/js/62.1b684f9f.js"><link rel="prefetch" href="/assets/js/63.fa7f7807.js"><link rel="prefetch" href="/assets/js/64.cd0aeb4a.js"><link rel="prefetch" href="/assets/js/65.eb1c4b1d.js"><link rel="prefetch" href="/assets/js/66.96313305.js"><link rel="prefetch" href="/assets/js/67.b623a82a.js"><link rel="prefetch" href="/assets/js/68.50344c67.js"><link rel="prefetch" href="/assets/js/69.65bc9069.js"><link rel="prefetch" href="/assets/js/7.7305f68d.js"><link rel="prefetch" href="/assets/js/70.511bf6e3.js"><link rel="prefetch" href="/assets/js/71.b5855ba1.js"><link rel="prefetch" href="/assets/js/72.314d5165.js"><link rel="prefetch" href="/assets/js/73.f26cc43e.js"><link rel="prefetch" href="/assets/js/74.f5b94e0a.js"><link rel="prefetch" href="/assets/js/75.1d672039.js"><link rel="prefetch" href="/assets/js/76.e229f633.js"><link rel="prefetch" href="/assets/js/77.998d330c.js"><link rel="prefetch" href="/assets/js/78.eedd6f3e.js"><link rel="prefetch" href="/assets/js/79.f3a7cec4.js"><link rel="prefetch" href="/assets/js/8.5e07341c.js"><link rel="prefetch" href="/assets/js/80.84175a31.js"><link rel="prefetch" href="/assets/js/81.95e8ba42.js"><link rel="prefetch" href="/assets/js/82.2aae1594.js"><link rel="prefetch" href="/assets/js/83.8672343e.js"><link rel="prefetch" href="/assets/js/84.e378a01d.js"><link rel="prefetch" href="/assets/js/85.6ffbc9dd.js"><link rel="prefetch" href="/assets/js/86.55b51749.js"><link rel="prefetch" href="/assets/js/87.537b5461.js"><link rel="prefetch" href="/assets/js/88.5fc73e3f.js"><link rel="prefetch" href="/assets/js/89.3f98333d.js"><link rel="prefetch" href="/assets/js/9.4ffd72ba.js"><link rel="prefetch" href="/assets/js/90.4d21cfc5.js"><link rel="prefetch" href="/assets/js/91.a70a048c.js"><link rel="prefetch" href="/assets/js/92.ff11631e.js"><link rel="prefetch" href="/assets/js/93.922c2f04.js"><link rel="prefetch" href="/assets/js/94.7cadd14e.js"><link rel="prefetch" href="/assets/js/95.5e81c896.js"><link rel="prefetch" href="/assets/js/96.f728e97c.js"><link rel="prefetch" href="/assets/js/97.324e23e6.js"><link rel="prefetch" href="/assets/js/98.90e468fe.js"><link rel="prefetch" href="/assets/js/99.544fbc12.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>第一阶段基础篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="sidebar-link">rust是什么</a></li><li><a href="/lyp/rust语言/第一阶段基础篇/02rust的安装.html" class="active sidebar-link">安装 Rust</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lyp/rust语言/第一阶段基础篇/02rust的安装.html#安装的注意事项" class="sidebar-link">安装的注意事项</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装-rust"><a href="#安装-rust" class="header-anchor">#</a> 安装 Rust</h1> <p>看起来您正在运行 Windows。要开始使用 Rust，请下载安装程序，然后运行程序并按照屏幕上的说明进行操作。当系统提示您安装 <a href="https://visualstudio.microsoft.com/visual-cpp-build-tools/" target="_blank" rel="noopener noreferrer">Visual Studio C++ 生成工具<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>时，可能需要安装此工具。如果您使用的不是 Windows<a href="https://forge.rust-lang.org/infra/other-installation-methods.html" target="_blank" rel="noopener noreferrer">，请参阅“其他安装方法”<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <ul><li>安装：<a href="https://www.rust-lang.org/tools/install" target="_blank" rel="noopener noreferrer">安装 Rust - Rust 编程语言 (rust-lang.org)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p><img src="/assets/img/image-20240514201558354.1694ec24.png" alt="image-20240514201558354"></p> <h2 id="安装的注意事项"><a href="#安装的注意事项" class="header-anchor">#</a> 安装的注意事项</h2> <h3 id="开始"><a href="#开始" class="header-anchor">#</a> 开始</h3> <p>如果您刚刚开始使用 Rust 并希望获得更详细的演练，请参阅我们的<a href="https://www.rust-lang.org/learn/get-started" target="_blank" rel="noopener noreferrer">入门<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>页面</p> <h3 id="工具链管理rustup"><a href="#工具链管理rustup" class="header-anchor">#</a> 工具链管理<code>rustup</code></h3> <p>Rust 由 <a href="https://rust-lang.github.io/rustup/" target="_blank" rel="noopener noreferrer"><code>rustup</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 工具安装和管理。Rust 有一个 6 周的<a href="https://github.com/rust-lang/rfcs/blob/master/text/0507-release-channels.md" target="_blank" rel="noopener noreferrer">快速发布过程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，并支持<a href="https://forge.rust-lang.org/release/platform-support.html" target="_blank" rel="noopener noreferrer">一个伟大的 平台的数量<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，因此有许多 Rust 版本可用 任何时候。 以一致的方式管理这些生成 在 Rust 支持的每个平台上，支持安装 Rust 来自测试版和夜间发布频道，以及对 其他交叉编译目标。<code>rustup</code></p> <p>如果您过去安装过，则可以更新 通过运行 .<code>rustup``rustup update</code></p> <p>有关详细信息，请参阅 <a href="https://rust-lang.github.io/rustup/" target="_blank" rel="noopener noreferrer"><code>rustup</code> 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="配置环境变量path"><a href="#配置环境变量path" class="header-anchor">#</a> 配置环境变量PATH</h3> <p>In the Rust development environment, all tools are installed to the <code>~/.cargo/bin</code> directory, and this is where you will find the Rust toolchain, including , , and . <code>rustc``cargo``rustup</code></p> <p>Accordingly, it is customary for Rust developers to include this directory in their <a href="https://en.wikipedia.org/wiki/PATH_(variable)" target="_blank" rel="noopener noreferrer"><code>PATH</code> environment variable<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. During installation will attempt to configure the . Because of differences between platforms, command shells, and bugs in , the modifications to may not take effect until the console is restarted, or the user is logged out, or it may not succeed at all. <code>rustup``PATH``rustup``PATH</code></p> <p>If, after installation, running in the console fails, this is the most likely reason. <code>rustc --version</code></p> <h3 id="uninstall-rust"><a href="#uninstall-rust" class="header-anchor">#</a> Uninstall Rust</h3> <p>If at any point you would like to uninstall Rust, you can run . We'll miss you though!</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> rustup self uninstall
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/14/2024, 12:30:24 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="prev">
+        rust是什么
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c38bee49.js" defer></script><script src="/assets/js/2.68b23b92.js" defer></script><script src="/assets/js/123.c9fa22cd.js" defer></script>
+  </body>
+</html>
