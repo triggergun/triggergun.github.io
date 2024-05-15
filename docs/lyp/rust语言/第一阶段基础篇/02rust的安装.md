@@ -4,10 +4,6 @@
 
 - 安装：[安装 Rust - Rust 编程语言 (rust-lang.org)](https://www.rust-lang.org/tools/install)
 
-![image-20240514201558354](02rust的安装.assets/image-20240514201558354.png)
-
-
-
 ## 安装的注意事项
 
 ### 开始
