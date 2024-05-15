@@ -46,3 +46,36 @@ If at any point you would like to uninstall Rust, you can run . We'll miss you t
 
 
 
+## windows安装
+
+- 下载：安装启动器
+
+![image-20240515082801136](02rust的安装.assets/image-20240515082801136.png)
+
+
+
+
+
+- 验证安装是否成功
+
+```shell
+C:\Users\liyp>rustup --version
+rustup 1.27.1 (54dd3d00f 2024-04-24)
+info: This is the version for the rustup toolchain manager, not the rustc compiler.
+info: The currently active `rustc` version is `rustc 1.78.0 (9b00956e5 2024-04-29)`
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
