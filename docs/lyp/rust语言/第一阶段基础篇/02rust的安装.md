@@ -42,19 +42,11 @@ If at any point you would like to uninstall Rust, you can run . We'll miss you t
 
 
 
-
-
-
-
 ## windows安装
 
-- 下载：安装启动器
+- 下载：安装启动器，点击运行安装就ok。
 
-![image-20240515082801136](02rust的安装.assets/image-20240515082801136.png)
-
-
-
-
+![image-20240515213043403](02rust的安装.assets/image-20240515213043403.png)
 
 - 验证安装是否成功
 
