@@ -665,7 +665,9 @@ module.exports = {
             // 第一阶段基础篇
             encodeURI('/lyp/rust语言/第一阶段基础篇/01rust是什么'),
             encodeURI('/lyp/rust语言/第一阶段基础篇/02rust的安装'),
-
+            encodeURI('/lyp/rust语言/第一阶段基础篇/03rust工具概念'),
+            encodeURI('/lyp/rust语言/第一阶段基础篇/04helloworld'),
+            encodeURI('/lyp/rust语言/第一阶段基础篇/05Hello_Cargo'),
           ]
         },
 
