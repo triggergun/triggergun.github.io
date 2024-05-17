@@ -49,11 +49,121 @@
 
 ## 需求二
 
-### 描述
+**描述：**
 
 将json的字符串格式化。有格式的字符串。
 
 
+
+## 需求三：创建一个用户
+
+```java
+    /**
+     * 创建默认对象
+     */
+    @GetMapping("/fastjson01")
+    public void test01() {
+        User user = new User();
+        log.info("====>user:{}",user);
+    }
+```
+
+## 需求四：创建一个组
+
+```java
+    /**
+     * 创建默认对象
+     */
+    @GetMapping("/fastjson02")
+    public void test02() {
+        UserGroup userGroup = new UserGroup();
+        log.info("====>userGroup:{}",userGroup);
+    }
+```
+
+
+
+## 需求五：对象转json
+
+- 打印：创建多个用户放到一个组。打印组对象信息。
+- 将对象转化为json字符串并且控制台打印显示。
+
+```java
+    @GetMapping("/fastjson03")
+    public void test03() {
+        // 构建用户geust
+        User guestUser = new User();
+        guestUser.setName("guest");
+        guestUser.setAge(28);
+
+        // 构建用户root
+        User rootUser = new User();
+        rootUser.setName("root");
+        guestUser.setAge(35);
+
+        // 构建用户组对象
+        UserGroup group = new UserGroup();
+        group.setName("admin");
+        group.getUsers().add(guestUser);
+        group.getUsers().add(rootUser);
+        System.out.println("group:" + group);
+        // 用户组对象转JSON串
+        String jsonString = JSON.toJSONString(group);
+        System.out.println("jsonString:" + jsonString);
+
+
+    }
+```
+
+- 执行效果
+
+![image-20240516162019135](07java实例json格式化.assets/image-20240516162019135.png)
+
+
+
+
+
+
+
+## 需求六：json串转对象
+
+```java
+        // JSON串转用户组对象
+        UserGroup group2 = JSON.parseObject(jsonString, UserGroup.class);
+        System.out.println("JSON串转用户组对象:" + group2);
+```
+
+
+
+
+
+
+
+## 需求七：数组转json串
+
+```java
+        // 构建用户对象数组
+        User[] users = new User[2];
+        users[0] = guestUser;
+        users[1] = rootUser;
+        // 用户对象数组转JSON串
+        String jsonString2 = JSON.toJSONString(users);
+        System.out.println("数组转json串:" + jsonString2);
+```
+
+
+
+## 需求八：json串转数组
+
+```java
+        // JSON串转用户对象列表
+        List<User> users2 = JSON.parseArray(jsonString2, User.class);
+        System.out.println("json串转对象:" + users2);
+```
+
+
+
+![image-20240516174538098](07java实例json格式化.assets/image-20240516174538098.png)
 
 
 
