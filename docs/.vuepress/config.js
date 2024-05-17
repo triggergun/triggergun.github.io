@@ -668,6 +668,8 @@ module.exports = {
             encodeURI('/lyp/rust语言/第一阶段基础篇/03rust工具概念'),
             encodeURI('/lyp/rust语言/第一阶段基础篇/04helloworld'),
             encodeURI('/lyp/rust语言/第一阶段基础篇/05Hello_Cargo'),
+            encodeURI('/lyp/rust语言/第一阶段基础篇/06rust命令总结'),
+            encodeURI('/lyp/rust语言/第一阶段基础篇/07rust编写猜数字游戏'),
           ]
         },
 
