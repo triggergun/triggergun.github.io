@@ -697,6 +697,7 @@ module.exports = {
             encodeURI('/lyp/rust语言/第一阶段基础篇/07rust编写猜数字游戏'),
             encodeURI('/lyp/rust语言/第一阶段基础篇/08生成一个随机数'),
             encodeURI('/lyp/rust语言/第一阶段基础篇/09比较猜测的数字和秘密数字'),
+            encodeURI('/lyp/rust语言/第一阶段基础篇/10通用编程概念'),
           ]
         },
 
