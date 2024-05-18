@@ -7,4 +7,4 @@ node_modules/
 .idea/
 
 # 不上传里面的变更
-docs/.vueprss/dist/
+docs/.vuepress/dist/
