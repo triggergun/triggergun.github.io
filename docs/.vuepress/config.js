@@ -82,6 +82,7 @@ module.exports = {
         // 子选项
         items: [
           { text: 'Blog-first', link: 'https://ground-gun.gitee.io/' },
+          { text: 'Blog-second', link: 'https://wutunan.vercel.app/' },
           { text: 'Gitee', link: 'https://gitee.com/ground-gun' },
           { text: 'Github', link: 'https://github.com/triggergun' },
           { text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts' }
