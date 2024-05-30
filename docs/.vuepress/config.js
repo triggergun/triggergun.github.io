@@ -556,11 +556,13 @@ module.exports = {
           collapsable: false,
           children: [
             encodeURI('/java/java工具/xpath解析doc'),
+            encodeURI('/java/java工具/01发布一个jar到中央仓库'),
             encodeURI('/java/java工具/02阿里云短信服务'),
             encodeURI('/java/java工具/03阿里云短信'),
             encodeURI('/java/java工具/04阿里云oss'),
             encodeURI('/java/java工具/05IDEA常用工具'),
             encodeURI('/java/java工具/06mybatis代码生成器'),
+            encodeURI('/java/java工具/07java实例json格式化'),
           ]
 
         },
