@@ -4,7 +4,7 @@
 export const siteData = {
   "title": "匆匆趣玩",
   "description": "分享各类资源、教程、黑科技软件、工具等等",
-  "base": "/triggergun/",
+  "base": "/",
   "headTags": [
     [
       "link",
@@ -12,26 +12,24 @@ export const siteData = {
         "rel": "icon",
         "href": "favicon.svg"
       }
+    ],
+    [
+      "script",
+      {
+        "async": true,
+        "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885",
+        "crossorigin": "anonymous"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "baidu-site-verification",
+        "content": "codeva-7KiW1mSNFG"
+      }
     ]
   ],
   "pages": [
-    {
-      "title": "vuepress部署到github上",
-      "frontmatter": {},
-      "regularPath": "/git/git.html",
-      "relativePath": "git/git.md",
-      "key": "v-01366f9f",
-      "path": "/git/git.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "第一步：打包",
-          "slug": "第一步-打包"
-        }
-      ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
-      "lastUpdatedTimestamp": 1691249955000
-    },
     {
       "title": "Home",
       "frontmatter": {
@@ -44,7 +42,7 @@ export const siteData = {
         "features": [
           {
             "title": "人生苦短",
-            "details": "洗手的时候，日子从水盆里过去；吃饭的时候，日子从碗里过去。八千的日子已经从我手中溜去"
+            "details": "洗手的时候，日子从水盆里过去；吃饭的时候，日子从碗里过去。八千的日子已经从我手中溜去,我不禁头涔涔而泪潸潸了！"
           },
           {
             "title": "黑科技软件",
@@ -59,17 +57,422 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-3cb4c92f",
+      "key": "v-530d45d6",
       "path": "/",
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "8/13/2023, 11:21:18 PM",
+      "lastUpdatedTimestamp": 1691940078000
+    },
+    {
+      "title": "03快熟创建git仓库与本地Idea关联",
+      "frontmatter": {},
+      "regularPath": "/git/03%E5%BF%AB%E7%86%9F%E5%88%9B%E5%BB%BAgit%E4%BB%93%E5%BA%93%E4%B8%8E%E6%9C%AC%E5%9C%B0Idea%E5%85%B3%E8%81%94.html",
+      "relativePath": "git/03快熟创建git仓库与本地Idea关联.md",
+      "key": "v-7eb77246",
+      "path": "/git/03%E5%BF%AB%E7%86%9F%E5%88%9B%E5%BB%BAgit%E4%BB%93%E5%BA%93%E4%B8%8E%E6%9C%AC%E5%9C%B0Idea%E5%85%B3%E8%81%94.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：创建git仓库",
+          "slug": "第一步-创建git仓库"
+        }
+      ],
+      "lastUpdated": "9/3/2023, 6:20:52 PM",
+      "lastUpdatedTimestamp": 1693736452000
+    },
+    {
+      "title": "01怎么删除远程标签",
+      "frontmatter": {},
+      "regularPath": "/git/01%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE.html",
+      "relativePath": "git/01怎么删除远程标签.md",
+      "key": "v-e9c0f9a4",
+      "path": "/git/01%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1. 列出所有远程标签&本地标签",
+          "slug": "_1-列出所有远程标签-本地标签"
+        },
+        {
+          "level": 2,
+          "title": "2. 删除远程标签步骤",
+          "slug": "_2-删除远程标签步骤"
+        },
+        {
+          "level": 3,
+          "title": "2.1 删除本地标签",
+          "slug": "_2-1-删除本地标签"
+        },
+        {
+          "level": 3,
+          "title": "2.2删除远程标签",
+          "slug": "_2-2删除远程标签"
+        }
+      ],
+      "lastUpdated": "9/13/2023, 11:29:08 PM",
+      "lastUpdatedTimestamp": 1694618948000
+    },
+    {
+      "title": "02怎么打tag推送到远程",
+      "frontmatter": {},
+      "regularPath": "/git/02%E6%80%8E%E4%B9%88%E6%89%93tag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B.html",
+      "relativePath": "git/02怎么打tag推送到远程.md",
+      "key": "v-871654f4",
+      "path": "/git/02%E6%80%8E%E4%B9%88%E6%89%93tag%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "git创建标签并推送到远程",
+          "slug": "git创建标签并推送到远程"
+        },
+        {
+          "level": 2,
+          "title": "打标签推送远程",
+          "slug": "打标签推送远程"
+        },
+        {
+          "level": 3,
+          "title": "02)标签重置",
+          "slug": "_02-标签重置"
+        }
+      ],
+      "lastUpdated": "9/3/2023, 6:20:52 PM",
+      "lastUpdatedTimestamp": 1693736452000
+    },
+    {
+      "title": "05合并开发分支",
+      "frontmatter": {},
+      "regularPath": "/git/05%E5%90%88%E5%B9%B6%E5%BC%80%E5%8F%91%E5%88%86%E6%94%AF.html",
+      "relativePath": "git/05合并开发分支.md",
+      "key": "v-2a1420c5",
+      "path": "/git/05%E5%90%88%E5%B9%B6%E5%BC%80%E5%8F%91%E5%88%86%E6%94%AF.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "合并开发分支代码",
+          "slug": "合并开发分支代码"
+        }
+      ],
+      "lastUpdated": "9/13/2023, 11:29:08 PM",
+      "lastUpdatedTimestamp": 1694618948000
+    },
+    {
+      "title": "04修改远程分支名称",
+      "frontmatter": {},
+      "regularPath": "/git/04%E4%BF%AE%E6%94%B9%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0.html",
+      "relativePath": "git/04修改远程分支名称.md",
+      "key": "v-180cc0c1",
+      "path": "/git/04%E4%BF%AE%E6%94%B9%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01）查看本地分支",
+          "slug": "_01-查看本地分支"
+        },
+        {
+          "level": 2,
+          "title": "02）修改本地分支",
+          "slug": "_02-修改本地分支"
+        },
+        {
+          "level": 2,
+          "title": "03）删除远程分支",
+          "slug": "_03-删除远程分支"
+        },
+        {
+          "level": 2,
+          "title": "04）将新分支名推上去",
+          "slug": "_04-将新分支名推上去"
+        },
+        {
+          "level": 2,
+          "title": "05）将新本地分支和远程相连",
+          "slug": "_05-将新本地分支和远程相连"
+        }
+      ],
+      "lastUpdated": "9/13/2023, 11:29:08 PM",
+      "lastUpdatedTimestamp": 1694618948000
+    },
+    {
+      "title": "06怎么删除远程分支",
+      "frontmatter": {},
+      "regularPath": "/git/06%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF.html",
+      "relativePath": "git/06怎么删除远程分支.md",
+      "key": "v-0a4daf36",
+      "path": "/git/06%E6%80%8E%E4%B9%88%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF.html",
+      "lastUpdated": "9/3/2023, 6:20:52 PM",
+      "lastUpdatedTimestamp": 1693736452000
+    },
+    {
+      "title": "07删除本地分支",
+      "frontmatter": {},
+      "regularPath": "/git/07%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF.html",
+      "relativePath": "git/07删除本地分支.md",
+      "key": "v-0d1b05a8",
+      "path": "/git/07%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF.html",
+      "lastUpdated": "9/3/2023, 6:20:52 PM",
+      "lastUpdatedTimestamp": 1693736452000
+    },
+    {
+      "title": "tag太多怎么过滤",
+      "frontmatter": {},
+      "regularPath": "/git/10tag%E5%A4%AA%E5%A4%9A%E6%80%8E%E4%B9%88%E8%BF%87%E6%BB%A4.html",
+      "relativePath": "git/10tag太多怎么过滤.md",
+      "key": "v-619a6f50",
+      "path": "/git/10tag%E5%A4%AA%E5%A4%9A%E6%80%8E%E4%B9%88%E8%BF%87%E6%BB%A4.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "通配符过滤",
+          "slug": "通配符过滤"
+        },
+        {
+          "level": 2,
+          "title": "按照名称排序",
+          "slug": "按照名称排序"
+        },
+        {
+          "level": 2,
+          "title": "使用通配符过滤",
+          "slug": "使用通配符过滤"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "IDEA Smart Checkout和Force Checkout区别",
+      "frontmatter": {},
+      "regularPath": "/git/09idea%E4%B8%AD%E5%BC%BA%E5%88%B6%E8%BF%81%E5%87%BA%E5%92%8C%E6%99%BA%E8%83%BD%E8%BF%81%E5%87%BA.html",
+      "relativePath": "git/09idea中强制迁出和智能迁出.md",
+      "key": "v-d143b7aa",
+      "path": "/git/09idea%E4%B8%AD%E5%BC%BA%E5%88%B6%E8%BF%81%E5%87%BA%E5%92%8C%E6%99%BA%E8%83%BD%E8%BF%81%E5%87%BA.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "场景",
+          "slug": "场景"
+        },
+        {
+          "level": 2,
+          "title": "选择Smart Checkout:",
+          "slug": "选择smart-checkout"
+        },
+        {
+          "level": 2,
+          "title": "选择Force Checkout：",
+          "slug": "选择force-checkout"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "08本地切换远程分支",
+      "frontmatter": {},
+      "regularPath": "/git/08%E6%9C%AC%E5%9C%B0%E5%88%87%E6%8D%A2%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF.html",
+      "relativePath": "git/08本地切换远程分支.md",
+      "key": "v-5eadd199",
+      "path": "/git/08%E6%9C%AC%E5%9C%B0%E5%88%87%E6%8D%A2%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF.html",
+      "lastUpdated": "9/3/2023, 6:20:52 PM",
+      "lastUpdatedTimestamp": 1693736452000
+    },
+    {
+      "title": "gitee怎么同步github仓库",
+      "frontmatter": {},
+      "regularPath": "/git/12gitee%E6%80%8E%E4%B9%88%E5%90%8C%E6%AD%A5github%E4%BB%93%E5%BA%93.html",
+      "relativePath": "git/12gitee怎么同步github仓库.md",
+      "key": "v-410da73a",
+      "path": "/git/12gitee%E6%80%8E%E4%B9%88%E5%90%8C%E6%AD%A5github%E4%BB%93%E5%BA%93.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建仓库从其他平台导入",
+          "slug": "创建仓库从其他平台导入"
+        },
+        {
+          "level": 2,
+          "title": "填写github仓库url",
+          "slug": "填写github仓库url"
+        },
+        {
+          "level": 2,
+          "title": "验证导入成功",
+          "slug": "验证导入成功"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "本地提交与远程提交冲突",
+      "frontmatter": {},
+      "regularPath": "/git/16%E8%BF%9C%E7%A8%8B%E4%B8%8E%E6%9C%AC%E5%9C%B0%E3%80%90%E5%86%B2%E7%AA%81%E3%80%91.html",
+      "relativePath": "git/16远程与本地【冲突】.md",
+      "key": "v-675a1ee8",
+      "path": "/git/16%E8%BF%9C%E7%A8%8B%E4%B8%8E%E6%9C%AC%E5%9C%B0%E3%80%90%E5%86%B2%E7%AA%81%E3%80%91.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)点击应用",
+          "slug": "_01-点击应用"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "在master合并开发分支",
+      "frontmatter": {},
+      "regularPath": "/git/15%E5%9C%A8master%E5%88%86%E6%94%AF%E4%B8%80%E9%94%AE%E5%90%88%E5%B9%B6%E5%BC%80%E5%8F%91%E5%88%86%E6%94%AF%E4%BB%A3%E7%A0%81.html",
+      "relativePath": "git/15在master分支一键合并开发分支代码.md",
+      "key": "v-f2897d58",
+      "path": "/git/15%E5%9C%A8master%E5%88%86%E6%94%AF%E4%B8%80%E9%94%AE%E5%90%88%E5%B9%B6%E5%BC%80%E5%8F%91%E5%88%86%E6%94%AF%E4%BB%A3%E7%A0%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)在本地master分支上",
+          "slug": "_01-在本地master分支上"
+        },
+        {
+          "level": 2,
+          "title": "02)选中你要合并的分支",
+          "slug": "_02-选中你要合并的分支"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "怎么切换到指定标签",
+      "frontmatter": {},
+      "regularPath": "/git/17git%E6%80%8E%E4%B9%88%E5%88%87%E6%8D%A2%E5%88%B0%E6%8C%87%E5%AE%9A%E6%A0%87%E7%AD%BE.html",
+      "relativePath": "git/17git怎么切换到指定标签.md",
+      "key": "v-060986d4",
+      "path": "/git/17git%E6%80%8E%E4%B9%88%E5%88%87%E6%8D%A2%E5%88%B0%E6%8C%87%E5%AE%9A%E6%A0%87%E7%AD%BE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建并切换到新的Git标签",
+          "slug": "创建并切换到新的git标签"
+        }
+      ],
+      "lastUpdated": "5/14/2024, 8:44:09 AM",
+      "lastUpdatedTimestamp": 1715647449000
+    },
+    {
+      "title": "idea中使用git回退单个文件的版本",
+      "frontmatter": {},
+      "regularPath": "/git/13idea%E4%B8%AD%E4%BD%BF%E7%94%A8git%E5%9B%9E%E9%80%80%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E7%89%88%E6%9C%AC.html",
+      "relativePath": "git/13idea中使用git回退单个文件的版本.md",
+      "key": "v-15d770cc",
+      "path": "/git/13idea%E4%B8%AD%E4%BD%BF%E7%94%A8git%E5%9B%9E%E9%80%80%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E7%89%88%E6%9C%AC.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：",
+          "slug": "第一步"
+        },
+        {
+          "level": 2,
+          "title": "第二步:",
+          "slug": "第二步"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "vuepress部署到github上",
+      "frontmatter": {},
+      "regularPath": "/git/git.html",
+      "relativePath": "git/git.md",
+      "key": "v-a4083d0e",
+      "path": "/git/git.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "第一步：打包",
+          "slug": "第一步-打包"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
+      "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "github常见问题",
+      "frontmatter": {},
+      "regularPath": "/git/github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html",
+      "relativePath": "git/github常见问题.md",
+      "key": "v-89295038",
+      "path": "/git/github%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "pull失败问题",
+          "slug": "pull失败问题"
+        },
+        {
+          "level": 3,
+          "title": "问题描述",
+          "slug": "问题描述"
+        },
+        {
+          "level": 3,
+          "title": "问题分析",
+          "slug": "问题分析"
+        },
+        {
+          "level": 3,
+          "title": "问题原因",
+          "slug": "问题原因"
+        },
+        {
+          "level": 3,
+          "title": "问题解决",
+          "slug": "问题解决"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 9:02:04 PM",
+      "lastUpdatedTimestamp": 1715259724000
+    },
+    {
+      "title": "本地仓库与远程仓库关联",
+      "frontmatter": {},
+      "regularPath": "/git/11%E6%80%8E%E4%B9%88%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8A%E4%BC%A0github.html",
+      "relativePath": "git/11怎么将本地仓库上传github.md",
+      "key": "v-38d4ace4",
+      "path": "/git/11%E6%80%8E%E4%B9%88%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%B8%8A%E4%BC%A0github.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)在本地创建一个新的Git仓库",
+          "slug": "_01-在本地创建一个新的git仓库"
+        },
+        {
+          "level": 2,
+          "title": "02)将本地仓库的文件添加到Git中",
+          "slug": "_02-将本地仓库的文件添加到git中"
+        },
+        {
+          "level": 2,
+          "title": "03)提交本地仓库的更改",
+          "slug": "_03-提交本地仓库的更改"
+        },
+        {
+          "level": 2,
+          "title": "04)将本地仓库的更改推送到远程仓库",
+          "slug": "_04-将本地仓库的更改推送到远程仓库"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
     },
     {
       "title": "git推送到远程的仓库",
       "frontmatter": {},
       "regularPath": "/git/git%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E7%9A%84%E4%BB%93%E5%BA%93.html",
       "relativePath": "git/git推送到远程的仓库.md",
-      "key": "v-5c299c85",
+      "key": "v-258f6b42",
       "path": "/git/git%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E7%9A%84%E4%BB%93%E5%BA%93.html",
       "headers": [
         {
@@ -103,15 +506,285 @@ export const siteData = {
           "slug": "步骤四-强制推送到git。"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "将本地项目上传至gitee",
+      "frontmatter": {},
+      "regularPath": "/git/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E8%87%B3gitee.html",
+      "relativePath": "git/将本地项目上传至gitee.md",
+      "key": "v-4a207a88",
+      "path": "/git/%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E4%B8%8A%E4%BC%A0%E8%87%B3gitee.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建远程的仓库",
+          "slug": "_01-创建远程的仓库"
+        },
+        {
+          "level": 2,
+          "title": "02)初始化仓库",
+          "slug": "_02-初始化仓库"
+        },
+        {
+          "level": 2,
+          "title": "03)关联远程仓库",
+          "slug": "_03-关联远程仓库"
+        },
+        {
+          "level": 2,
+          "title": "04)提交全部文件",
+          "slug": "_04-提交全部文件"
+        }
+      ],
+      "lastUpdated": "4/27/2024, 5:57:59 PM",
+      "lastUpdatedTimestamp": 1714211879000
+    },
+    {
+      "title": "本地仓库修改远程仓库的url",
+      "frontmatter": {},
+      "regularPath": "/git/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84url.html",
+      "relativePath": "git/本地仓库修改远程仓库的url.md",
+      "key": "v-2bed06a5",
+      "path": "/git/%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E4%BF%AE%E6%94%B9%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84url.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)查看远程仓库的源",
+          "slug": "_01-查看远程仓库的源"
+        },
+        {
+          "level": 2,
+          "title": "02)查看源的url地址",
+          "slug": "_02-查看源的url地址"
+        },
+        {
+          "level": 2,
+          "title": "03)设置远程仓库的url",
+          "slug": "_03-设置远程仓库的url"
+        },
+        {
+          "level": 2,
+          "title": "04)直接使用命令push",
+          "slug": "_04-直接使用命令push"
+        }
+      ],
+      "lastUpdated": "1/28/2024, 2:27:34 PM",
+      "lastUpdatedTimestamp": 1706423254000
+    },
+    {
+      "title": "github搜索怎么用",
+      "frontmatter": {},
+      "regularPath": "/git/github%E6%93%8D%E4%BD%9C/01%E6%80%8E%E4%B9%88%E7%94%A8%E5%A5%BD%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E.html",
+      "relativePath": "git/github操作/01怎么用好搜索引擎.md",
+      "key": "v-740628f1",
+      "path": "/git/github%E6%93%8D%E4%BD%9C/01%E6%80%8E%E4%B9%88%E7%94%A8%E5%A5%BD%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "仓库分几种？",
+          "slug": "仓库分几种"
+        },
+        {
+          "level": 2,
+          "title": "GitHub的高级搜索",
+          "slug": "github的高级搜索"
+        },
+        {
+          "level": 3,
+          "title": "01)in关键词限制搜索范围",
+          "slug": "_01-in关键词限制搜索范围"
+        },
+        {
+          "level": 3,
+          "title": "02)stars或fork数量去查找",
+          "slug": "_02-stars或fork数量去查找"
+        },
+        {
+          "level": 3,
+          "title": "03)按照地区和语言进行搜索",
+          "slug": "_03-按照地区和语言进行搜索"
+        },
+        {
+          "level": 3,
+          "title": "04)联合搜索",
+          "slug": "_04-联合搜索"
+        },
+        {
+          "level": 2,
+          "title": "01)查询关键字在about的仓库",
+          "slug": "_01-查询关键字在about的仓库"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "案例一：查询列表数据",
+      "frontmatter": {},
+      "regularPath": "/java/Mybatis/select01.html",
+      "relativePath": "java/Mybatis/select01.md",
+      "key": "v-68b2fcc0",
+      "path": "/java/Mybatis/select01.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "业务场景描述",
+          "slug": "业务场景描述"
+        },
+        {
+          "level": 2,
+          "title": "关系分析",
+          "slug": "关系分析"
+        },
+        {
+          "level": 2,
+          "title": "第一步：查询结果映射",
+          "slug": "第一步-查询结果映射"
+        },
+        {
+          "level": 2,
+          "title": "第二步：编写查询语句",
+          "slug": "第二步-编写查询语句"
+        },
+        {
+          "level": 2,
+          "title": "第三步：查询条件",
+          "slug": "第三步-查询条件"
+        }
+      ],
+      "lastUpdated": "9/1/2023, 6:30:23 PM",
+      "lastUpdatedTimestamp": 1693564223000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/git/14%E9%87%8D%E7%BD%AE%E6%9F%90%E4%B8%AA%E6%8F%90%E4%BA%A4%E7%9A%84%E6%96%87%E4%BB%B6.html",
+      "relativePath": "git/14重置某个提交的文件.md",
+      "key": "v-37b324fc",
+      "path": "/git/14%E9%87%8D%E7%BD%AE%E6%9F%90%E4%B8%AA%E6%8F%90%E4%BA%A4%E7%9A%84%E6%96%87%E4%BB%B6.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "本地没有改变",
+          "slug": "本地没有改变"
+        },
+        {
+          "level": 2,
+          "title": "重置方法",
+          "slug": "重置方法"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
+    },
+    {
+      "title": "案例三：电视剧crud",
+      "frontmatter": {},
+      "regularPath": "/java/Mybatis/sesion3%E7%94%B5%E8%A7%86%E5%89%A7crud.html",
+      "relativePath": "java/Mybatis/sesion3电视剧crud.md",
+      "key": "v-5d556c3d",
+      "path": "/java/Mybatis/sesion3%E7%94%B5%E8%A7%86%E5%89%A7crud.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)LIST查询",
+          "slug": "_01-list查询"
+        },
+        {
+          "level": 2,
+          "title": "02)DAO层测试",
+          "slug": "_02-dao层测试"
+        },
+        {
+          "level": 2,
+          "title": "03)编写Controller层",
+          "slug": "_03-编写controller层"
+        }
+      ],
+      "lastUpdated": "1/14/2024, 12:52:37 PM",
+      "lastUpdatedTimestamp": 1705207957000
+    },
+    {
+      "title": "安装gradle",
+      "frontmatter": {},
+      "regularPath": "/java/gradle/01%E5%AE%89%E8%A3%85gradle.html",
+      "relativePath": "java/gradle/01安装gradle.md",
+      "key": "v-8603dac2",
+      "path": "/java/gradle/01%E5%AE%89%E8%A3%85gradle.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)配置gradle系统变量",
+          "slug": "_01-配置gradle系统变量"
+        },
+        {
+          "level": 2,
+          "title": "02)配置本地仓库路径",
+          "slug": "_02-配置本地仓库路径"
+        },
+        {
+          "level": 2,
+          "title": "03)检验是否配置成功",
+          "slug": "_03-检验是否配置成功"
+        },
+        {
+          "level": 2,
+          "title": "04)配置Gradle仓库源",
+          "slug": "_04-配置gradle仓库源"
+        },
+        {
+          "level": 2,
+          "title": "05)安装4.3.1版gradle",
+          "slug": "_05-安装4-3-1版gradle"
+        }
+      ],
+      "lastUpdated": "4/14/2024, 8:59:11 PM",
+      "lastUpdatedTimestamp": 1713099551000
+    },
+    {
+      "title": "组装者设计模式",
+      "frontmatter": {},
+      "regularPath": "/java/designModel/AssemblerDesignPattern.html",
+      "relativePath": "java/designModel/AssemblerDesignPattern.md",
+      "key": "v-393b3ce0",
+      "path": "/java/designModel/AssemblerDesignPattern.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求：组装电脑",
+          "slug": "需求-组装电脑"
+        },
+        {
+          "level": 2,
+          "title": "第一步：创建电脑类",
+          "slug": "第一步-创建电脑类"
+        },
+        {
+          "level": 2,
+          "title": "第二步：创建组装者类",
+          "slug": "第二步-创建组装者类"
+        },
+        {
+          "level": 2,
+          "title": "第三步：编写测试实例",
+          "slug": "第三步-编写测试实例"
+        },
+        {
+          "level": 2,
+          "title": "UML类图",
+          "slug": "uml类图"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 5:34:13 PM",
+      "lastUpdatedTimestamp": 1691228053000
     },
     {
       "title": "Mybaits配置",
       "frontmatter": {},
       "regularPath": "/java/Mybatis/mybatis.html",
       "relativePath": "java/Mybatis/mybatis.md",
-      "key": "v-42b08104",
+      "key": "v-069a34d8",
       "path": "/java/Mybatis/mybatis.html",
       "headers": [
         {
@@ -170,52 +843,15 @@ export const siteData = {
           "slug": "总结"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
-    },
-    {
-      "title": "案例一：查询列表数据",
-      "frontmatter": {},
-      "regularPath": "/java/Mybatis/select01.html",
-      "relativePath": "java/Mybatis/select01.md",
-      "key": "v-738875e6",
-      "path": "/java/Mybatis/select01.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "业务场景描述",
-          "slug": "业务场景描述"
-        },
-        {
-          "level": 2,
-          "title": "关系分析",
-          "slug": "关系分析"
-        },
-        {
-          "level": 2,
-          "title": "第一步：查询结果映射",
-          "slug": "第一步-查询结果映射"
-        },
-        {
-          "level": 2,
-          "title": "第二步：编写查询语句",
-          "slug": "第二步-编写查询语句"
-        },
-        {
-          "level": 2,
-          "title": "第三步：查询条件",
-          "slug": "第三步-查询条件"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
     },
     {
       "title": "案例二：企业门户查询",
       "frontmatter": {},
       "regularPath": "/java/Mybatis/select02.html",
       "relativePath": "java/Mybatis/select02.md",
-      "key": "v-ebb3d274",
+      "key": "v-7f509da0",
       "path": "/java/Mybatis/select02.html",
       "headers": [
         {
@@ -225,8 +861,8 @@ export const siteData = {
         },
         {
           "level": 2,
-          "title": "门户查询条件",
-          "slug": "门户查询条件"
+          "title": "查询条件",
+          "slug": "查询条件"
         },
         {
           "level": 2,
@@ -234,15 +870,35 @@ export const siteData = {
           "slug": "条件查询列表"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
+      "lastUpdated": "9/1/2023, 6:30:23 PM",
+      "lastUpdatedTimestamp": 1693564223000
+    },
+    {
+      "title": "Gradle项目目录结构",
+      "frontmatter": {},
+      "regularPath": "/java/gradle/02Gradle%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.html",
+      "relativePath": "java/gradle/02Gradle项目目录结构.md",
+      "key": "v-ee6e138e",
+      "path": "/java/gradle/02Gradle%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.html",
+      "lastUpdated": "4/14/2024, 8:59:11 PM",
+      "lastUpdatedTimestamp": 1713099551000
+    },
+    {
+      "title": "Gradle创建第一个项目",
+      "frontmatter": {},
+      "regularPath": "/java/gradle/03Gradle%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html",
+      "relativePath": "java/gradle/03Gradle创建第一个项目.md",
+      "key": "v-0f7e4012",
+      "path": "/java/gradle/03Gradle%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html",
+      "lastUpdated": "4/14/2024, 8:59:11 PM",
+      "lastUpdatedTimestamp": 1713099551000
     },
     {
       "title": "代理（proxy）",
       "frontmatter": {},
       "regularPath": "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html",
       "relativePath": "java/designModel/02动态代理模式.md",
-      "key": "v-7350a031",
+      "key": "v-5f40d10b",
       "path": "/java/designModel/02%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.html",
       "headers": [
         {
@@ -314,54 +970,64 @@ export const siteData = {
           "level": 2,
           "title": "JDK动态代理的UML图",
           "slug": "jdk动态代理的uml图"
+        },
+        {
+          "level": 2,
+          "title": "手撸动态代理",
+          "slug": "手撸动态代理"
+        },
+        {
+          "level": 3,
+          "title": "分析",
+          "slug": "分析"
+        },
+        {
+          "level": 3,
+          "title": "字节码进行简化",
+          "slug": "字节码进行简化"
         }
       ],
-      "lastUpdated": "8/5/2023, 10:41:09 PM",
-      "lastUpdatedTimestamp": 1691304069000
+      "lastUpdated": "5/9/2024, 9:02:04 PM",
+      "lastUpdatedTimestamp": 1715259724000
     },
     {
-      "title": "组装者设计模式",
+      "title": "java编译梦开始的地方",
       "frontmatter": {},
-      "regularPath": "/java/designModel/AssemblerDesignPattern.html",
-      "relativePath": "java/designModel/AssemblerDesignPattern.md",
-      "key": "v-7b719b06",
-      "path": "/java/designModel/AssemblerDesignPattern.html",
+      "regularPath": "/java/javaSEBase/day01-java%E5%B8%A6%E6%9C%89%E5%8C%85%E5%90%8D%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%AF%91class.html",
+      "relativePath": "java/javaSEBase/day01-java带有包名进行编译class.md",
+      "key": "v-6c6c5279",
+      "path": "/java/javaSEBase/day01-java%E5%B8%A6%E6%9C%89%E5%8C%85%E5%90%8D%E8%BF%9B%E8%A1%8C%E7%BC%96%E8%AF%91class.html",
       "headers": [
         {
           "level": 2,
-          "title": "需求：组装电脑",
-          "slug": "需求-组装电脑"
+          "title": "javac，使用\"-d .\"与省略-d的区别",
+          "slug": "javac-使用-d-与省略-d的区别"
         },
         {
           "level": 2,
-          "title": "第一步：创建电脑类",
-          "slug": "第一步-创建电脑类"
+          "title": "按照方法一",
+          "slug": "按照方法一"
         },
         {
           "level": 2,
-          "title": "第二步：创建组装者类",
-          "slug": "第二步-创建组装者类"
+          "title": "按照方法二",
+          "slug": "按照方法二"
         },
         {
           "level": 2,
-          "title": "第三步：编写测试实例",
-          "slug": "第三步-编写测试实例"
-        },
-        {
-          "level": 2,
-          "title": "UML类图",
-          "slug": "uml类图"
+          "title": "总结",
+          "slug": "总结"
         }
       ],
-      "lastUpdated": "8/5/2023, 1:34:13 AM",
-      "lastUpdatedTimestamp": 1691228053000
+      "lastUpdated": "11/12/2023, 6:58:24 PM",
+      "lastUpdatedTimestamp": 1699786704000
     },
     {
       "title": "1.字节流",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day14-IO.html",
       "relativePath": "java/javaSEBase/day14-IO.md",
-      "key": "v-07adac94",
+      "key": "v-78e5a510",
       "path": "/java/javaSEBase/day14-IO.html",
       "headers": [
         {
@@ -455,15 +1121,79 @@ export const siteData = {
           "slug": ""
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "2.转换流",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
+      "key": "v-712cad90",
+      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
+          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
+        },
+        {
+          "level": 2,
+          "title": "2.2转换流读写数据【应用】",
+          "slug": "_2-2转换流读写数据【应用】"
+        },
+        {
+          "level": 2,
+          "title": "需求假设",
+          "slug": "需求假设"
+        }
+      ],
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
+      "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "线程案例01",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day16-%E7%BA%BF%E7%A8%8B%E6%A1%88%E4%BE%8B01.html",
+      "relativePath": "java/javaSEBase/day16-线程案例01.md",
+      "key": "v-f4352668",
+      "path": "/java/javaSEBase/day16-%E7%BA%BF%E7%A8%8B%E6%A1%88%E4%BE%8B01.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求描述",
+          "slug": "需求描述"
+        },
+        {
+          "level": 2,
+          "title": "分析执行逻辑图",
+          "slug": "分析执行逻辑图"
+        },
+        {
+          "level": 2,
+          "title": "代码实现",
+          "slug": "代码实现"
+        },
+        {
+          "level": 2,
+          "title": "测试效果",
+          "slug": "测试效果"
+        },
+        {
+          "level": 2,
+          "title": "读txt文件工具类",
+          "slug": "读txt文件工具类"
+        }
+      ],
+      "lastUpdated": "9/16/2023, 11:28:36 AM",
+      "lastUpdatedTimestamp": 1694834916000
     },
     {
       "title": "1.字符流",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day15-IO01%E6%B5%81.html",
       "relativePath": "java/javaSEBase/day15-IO01流.md",
-      "key": "v-1488315e",
+      "key": "v-7ca87d2b",
       "path": "/java/javaSEBase/day15-IO01%E6%B5%81.html",
       "headers": [
         {
@@ -522,66 +1252,7 @@ export const siteData = {
           "slug": "_1-10io流小结【理解】"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
-      "title": "2.转换流",
-      "frontmatter": {},
-      "regularPath": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "relativePath": "java/javaSEBase/day15-IO02转换流.md",
-      "key": "v-2d58845e",
-      "path": "/java/javaSEBase/day15-IO02%E8%BD%AC%E6%8D%A2%E6%B5%81.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "2.1字符流中和编码解码问题相关的两个类【理解】",
-          "slug": "_2-1字符流中和编码解码问题相关的两个类【理解】"
-        },
-        {
-          "level": 2,
-          "title": "2.2转换流读写数据【应用】",
-          "slug": "_2-2转换流读写数据【应用】"
-        },
-        {
-          "level": 2,
-          "title": "需求假设",
-          "slug": "需求假设"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
-      "lastUpdatedTimestamp": 1690562997000
-    },
-    {
-      "title": "3.对象操作流",
-      "frontmatter": {},
-      "regularPath": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
-      "relativePath": "java/javaSEBase/day15-IO03对象操作流.md",
-      "key": "v-20d60fe0",
-      "path": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "3.1对象序列化流【应用】",
-          "slug": "_3-1对象序列化流【应用】"
-        },
-        {
-          "level": 2,
-          "title": "3.2对象反序列化流【应用】",
-          "slug": "_3-2对象反序列化流【应用】"
-        },
-        {
-          "level": 2,
-          "title": "3.3serialVersionUID&transient【应用】",
-          "slug": "_3-3serialversionuid-transient【应用】"
-        },
-        {
-          "level": 2,
-          "title": "3.4对象操作流练习【应用】",
-          "slug": "_3-4对象操作流练习【应用】"
-        }
-      ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
     },
     {
@@ -589,7 +1260,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/day15-IO04Properties%E9%9B%86%E5%90%88.html",
       "relativePath": "java/javaSEBase/day15-IO04Properties集合.md",
-      "key": "v-28c21038",
+      "key": "v-15766c92",
       "path": "/java/javaSEBase/day15-IO04Properties%E9%9B%86%E5%90%88.html",
       "headers": [
         {
@@ -613,15 +1284,64 @@ export const siteData = {
           "slug": "_4-4properties集合练习【应用】"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "3.对象操作流",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
+      "relativePath": "java/javaSEBase/day15-IO03对象操作流.md",
+      "key": "v-452e43ba",
+      "path": "/java/javaSEBase/day15-IO03%E5%AF%B9%E8%B1%A1%E6%93%8D%E4%BD%9C%E6%B5%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "3.1对象序列化流【应用】",
+          "slug": "_3-1对象序列化流【应用】"
+        },
+        {
+          "level": 2,
+          "title": "3.2对象反序列化流【应用】",
+          "slug": "_3-2对象反序列化流【应用】"
+        },
+        {
+          "level": 2,
+          "title": "3.3serialVersionUID&transient【应用】",
+          "slug": "_3-3serialversionuid-transient【应用】"
+        },
+        {
+          "level": 2,
+          "title": "3.4对象操作流练习【应用】",
+          "slug": "_3-4对象操作流练习【应用】"
+        }
+      ],
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
+      "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "java异常提问",
+      "frontmatter": {},
+      "regularPath": "/java/javaSEBase/day17java%E5%BC%82%E5%B8%B8%E6%8F%90%E9%97%AE.html",
+      "relativePath": "java/javaSEBase/day17java异常提问.md",
+      "key": "v-0e9360da",
+      "path": "/java/javaSEBase/day17java%E5%BC%82%E5%B8%B8%E6%8F%90%E9%97%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "问题一",
+          "slug": "问题一"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 3:14:51 PM",
+      "lastUpdatedTimestamp": 1715238891000
     },
     {
       "title": "反射(reflect)",
       "frontmatter": {},
       "regularPath": "/java/javaSEBase/java.html",
       "relativePath": "java/javaSEBase/java.md",
-      "key": "v-6c85b54c",
+      "key": "v-1ca0ca98",
       "path": "/java/javaSEBase/java.html",
       "headers": [
         {
@@ -640,42 +1360,522 @@ export const siteData = {
           "slug": "代码执行时序图"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
     },
     {
-      "title": "xpath解析xml文档",
+      "title": "服务注册到nacos",
       "frontmatter": {},
-      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
-      "relativePath": "java/java工具/xpath解析doc.md",
-      "key": "v-194bb9b2",
-      "path": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+      "regularPath": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/01%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%88%B0nacos.html",
+      "relativePath": "java/java基础服务/nacos/01服务注册到nacos.md",
+      "key": "v-350a26a8",
+      "path": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/01%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%88%B0nacos.html",
       "headers": [
         {
           "level": 2,
-          "title": "step1)导入maven坐标",
-          "slug": "step1-导入maven坐标"
+          "title": "数据准备",
+          "slug": "数据准备"
         },
         {
           "level": 2,
-          "title": "step2)编写xml文件",
-          "slug": "step2-编写xml文件"
+          "title": "服务注册配置",
+          "slug": "服务注册配置"
         },
         {
           "level": 2,
-          "title": "step3)编写解析文档方法",
-          "slug": "step3-编写解析文档方法"
+          "title": "启动测试",
+          "slug": "启动测试"
         }
       ],
-      "lastUpdated": "8/5/2023, 10:41:09 PM",
-      "lastUpdatedTimestamp": 1691304069000
+      "lastUpdated": "5/9/2024, 9:02:04 PM",
+      "lastUpdatedTimestamp": 1715259724000
+    },
+    {
+      "title": "nexus3的docker安装",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nexus/01nexus3%E7%9A%84docker%E5%AE%89%E8%A3%85.html",
+      "relativePath": "java/java基础服务/nexus/01nexus3的docker安装.md",
+      "key": "v-7c70b54a",
+      "path": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nexus/01nexus3%E7%9A%84docker%E5%AE%89%E8%A3%85.html",
+      "lastUpdated": "4/16/2024, 10:08:12 PM",
+      "lastUpdatedTimestamp": 1713276492000
+    },
+    {
+      "title": "发送短信",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/02%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1%E6%9C%8D%E5%8A%A1.html",
+      "relativePath": "java/java工具/02阿里云短信服务.md",
+      "key": "v-10ce754e",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/02%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1%E6%9C%8D%E5%8A%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)第三放服务有哪些呢？",
+          "slug": "_01-第三放服务有哪些呢"
+        }
+      ],
+      "lastUpdated": "9/24/2023, 7:16:48 PM",
+      "lastUpdatedTimestamp": 1695554208000
+    },
+    {
+      "title": "Nacos配置管理",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/02Nacos%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86.html",
+      "relativePath": "java/java基础服务/nacos/02Nacos配置管理.md",
+      "key": "v-344700de",
+      "path": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/02Nacos%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1)统一配置管理",
+          "slug": "_1-统一配置管理"
+        },
+        {
+          "level": 3,
+          "title": "1.1)在nacos中添加配置文件",
+          "slug": "_1-1-在nacos中添加配置文件"
+        },
+        {
+          "level": 3,
+          "title": "1.2)从微服务拉取配置",
+          "slug": "_1-2-从微服务拉取配置"
+        },
+        {
+          "level": 3,
+          "title": "1.3)配置热更新",
+          "slug": "_1-3-配置热更新"
+        }
+      ],
+      "lastUpdated": "5/9/2024, 9:02:04 PM",
+      "lastUpdatedTimestamp": 1715259724000
+    },
+    {
+      "title": "阿里云短信服务",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/03%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1.html",
+      "relativePath": "java/java工具/03阿里云短信.md",
+      "key": "v-eedc4004",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/03%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)注册阿里云账号",
+          "slug": "_01-注册阿里云账号"
+        },
+        {
+          "level": 2,
+          "title": "02)申请签名",
+          "slug": "_02-申请签名"
+        },
+        {
+          "level": 2,
+          "title": "03)配置模板",
+          "slug": "_03-配置模板"
+        },
+        {
+          "level": 2,
+          "title": "AccessKey管理",
+          "slug": "accesskey管理"
+        },
+        {
+          "level": 2,
+          "title": "java发送验证码短信",
+          "slug": "java发送验证码短信"
+        },
+        {
+          "level": 2,
+          "title": "java发送短信的测试用例",
+          "slug": "java发送短信的测试用例"
+        },
+        {
+          "level": 2,
+          "title": "阿里云短信-组件抽取",
+          "slug": "阿里云短信-组件抽取"
+        },
+        {
+          "level": 3,
+          "title": "01)自动装配配置",
+          "slug": "_01-自动装配配置"
+        },
+        {
+          "level": 3,
+          "title": "02)抽取公共配置",
+          "slug": "_02-抽取公共配置"
+        },
+        {
+          "level": 3,
+          "title": "03)创建配置类",
+          "slug": "_03-创建配置类"
+        },
+        {
+          "level": 3,
+          "title": "04)发送短信模板对象",
+          "slug": "_04-发送短信模板对象"
+        },
+        {
+          "level": 3,
+          "title": "05)写自动装配类",
+          "slug": "_05-写自动装配类"
+        },
+        {
+          "level": 3,
+          "title": "06)编写单元测试类",
+          "slug": "_06-编写单元测试类"
+        }
+      ],
+      "lastUpdated": "9/24/2023, 7:16:48 PM",
+      "lastUpdatedTimestamp": 1695554208000
+    },
+    {
+      "title": "发布jar到中央仓库",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/01%E5%8F%91%E5%B8%83%E4%B8%80%E4%B8%AAjar%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93.html",
+      "relativePath": "java/java工具/01发布一个jar到中央仓库.md",
+      "key": "v-6091e5f7",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/01%E5%8F%91%E5%B8%83%E4%B8%80%E4%B8%AAjar%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)新账号注册(必选)",
+          "slug": "_01-新账号注册-必选"
+        },
+        {
+          "level": 2,
+          "title": "02)添加命名空间",
+          "slug": "_02-添加命名空间"
+        },
+        {
+          "level": 2,
+          "title": "03)设置dns(可选)",
+          "slug": "_03-设置dns-可选"
+        },
+        {
+          "level": 2,
+          "title": "04)namespace的校验(必选)",
+          "slug": "_04-namespace的校验-必选"
+        },
+        {
+          "level": 2,
+          "title": "05)namespace使用自己的域名",
+          "slug": "_05-namespace使用自己的域名"
+        },
+        {
+          "level": 2,
+          "title": "05)下载安装好gpg创建和私钥",
+          "slug": "_05-下载安装好gpg创建和私钥"
+        },
+        {
+          "level": 2,
+          "title": "06)idea中maven的setting.xml文件配置",
+          "slug": "_06-idea中maven的setting-xml文件配置"
+        },
+        {
+          "level": 2,
+          "title": "08)项目中配置pom",
+          "slug": "_08-项目中配置pom"
+        },
+        {
+          "level": 2,
+          "title": "09)idea中点击deploy发布",
+          "slug": "_09-idea中点击deploy发布"
+        },
+        {
+          "level": 2,
+          "title": "10)新账号登录后点击发布",
+          "slug": "_10-新账号登录后点击发布"
+        },
+        {
+          "level": 2,
+          "title": "11)搜索发布的依赖",
+          "slug": "_11-搜索发布的依赖"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
+        },
+        {
+          "level": 2,
+          "title": "问题",
+          "slug": "问题"
+        }
+      ],
+      "lastUpdated": "5/30/2024, 9:05:11 PM",
+      "lastUpdatedTimestamp": 1717074311000
+    },
+    {
+      "title": "nacos常见问题",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/nacos%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html",
+      "relativePath": "java/java基础服务/nacos/nacos常见问题.md",
+      "key": "v-10ff0bdc",
+      "path": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/nacos%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1)nacos启动报错问题【docker】",
+          "slug": "_1-nacos启动报错问题【docker】"
+        },
+        {
+          "level": 3,
+          "title": "1.1)问题描述",
+          "slug": "_1-1-问题描述"
+        },
+        {
+          "level": 3,
+          "title": "1.2)问题排查",
+          "slug": "_1-2-问题排查"
+        },
+        {
+          "level": 3,
+          "title": "1.3)问题原因",
+          "slug": "_1-3-问题原因"
+        },
+        {
+          "level": 3,
+          "title": "1.4)解决",
+          "slug": "_1-4-解决"
+        },
+        {
+          "level": 2,
+          "title": "2)2.0.3版本问题",
+          "slug": "_2-2-0-3版本问题"
+        },
+        {
+          "level": 3,
+          "title": "2.1)问题描述",
+          "slug": "_2-1-问题描述"
+        },
+        {
+          "level": 3,
+          "title": "2.2)解决",
+          "slug": "_2-2-解决"
+        },
+        {
+          "level": 2,
+          "title": "nacos常用启动命令【docker】",
+          "slug": "nacos常用启动命令【docker】"
+        }
+      ],
+      "lastUpdated": "5/11/2024, 10:06:47 AM",
+      "lastUpdatedTimestamp": 1715393207000
+    },
+    {
+      "title": "阿里云oss",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/04%E9%98%BF%E9%87%8C%E4%BA%91oss.html",
+      "relativePath": "java/java工具/04阿里云oss.md",
+      "key": "v-7bcf7fbe",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/04%E9%98%BF%E9%87%8C%E4%BA%91oss.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "如何实现用户头像上传与存储？",
+          "slug": "如何实现用户头像上传与存储"
+        },
+        {
+          "level": 2,
+          "title": "01)概述",
+          "slug": "_01-概述"
+        },
+        {
+          "level": 2,
+          "title": "02)账号申请",
+          "slug": "_02-账号申请"
+        },
+        {
+          "level": 3,
+          "title": "2.1)开通对象存储OSS功能",
+          "slug": "_2-1-开通对象存储oss功能"
+        },
+        {
+          "level": 3,
+          "title": "2.2)创建Bucket",
+          "slug": "_2-2-创建bucket"
+        },
+        {
+          "level": 3,
+          "title": "2.3)代码测试",
+          "slug": "_2-3-代码测试"
+        },
+        {
+          "level": 2,
+          "title": "抽取模板工具",
+          "slug": "抽取模板工具"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ],
+      "lastUpdated": "10/4/2023, 5:24:23 PM",
+      "lastUpdatedTimestamp": 1696411463000
+    },
+    {
+      "title": "java开发IDEA常用工具",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/05IDEA%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7.html",
+      "relativePath": "java/java工具/05IDEA常用工具.md",
+      "key": "v-19c1b42c",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/05IDEA%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "GenerateAllsetter",
+          "slug": "generateallsetter"
+        },
+        {
+          "level": 2,
+          "title": "Java Bean to Json",
+          "slug": "java-bean-to-json"
+        },
+        {
+          "level": 2,
+          "title": "GsonFormatPlus",
+          "slug": "gsonformatplus"
+        },
+        {
+          "level": 2,
+          "title": "时序图sequenceDiagram",
+          "slug": "时序图sequencediagram"
+        }
+      ],
+      "lastUpdated": "11/12/2023, 6:58:24 PM",
+      "lastUpdatedTimestamp": 1699786704000
+    },
+    {
+      "title": "mybatis代码生成器",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/06mybatis%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.html",
+      "relativePath": "java/java工具/06mybatis代码生成器.md",
+      "key": "v-7860a2b1",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/06mybatis%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Free MyBatis Tool",
+          "slug": "free-mybatis-tool"
+        },
+        {
+          "level": 2,
+          "title": "01)idea连接数据库",
+          "slug": "_01-idea连接数据库"
+        },
+        {
+          "level": 2,
+          "title": "02)选中你的表",
+          "slug": "_02-选中你的表"
+        },
+        {
+          "level": 2,
+          "title": "03)验证效果",
+          "slug": "_03-验证效果"
+        }
+      ],
+      "lastUpdated": "3/30/2024, 8:35:16 PM",
+      "lastUpdatedTimestamp": 1711802116000
+    },
+    {
+      "title": "java实例json格式化-fastjson",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/07java%E5%AE%9E%E4%BE%8Bjson%E6%A0%BC%E5%BC%8F%E5%8C%96.html",
+      "relativePath": "java/java工具/07java实例json格式化.md",
+      "key": "v-62659be6",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/07java%E5%AE%9E%E4%BE%8Bjson%E6%A0%BC%E5%BC%8F%E5%8C%96.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求一",
+          "slug": "需求一"
+        },
+        {
+          "level": 2,
+          "title": "需求二",
+          "slug": "需求二"
+        },
+        {
+          "level": 2,
+          "title": "需求三：创建一个用户",
+          "slug": "需求三-创建一个用户"
+        },
+        {
+          "level": 2,
+          "title": "需求四：创建一个组",
+          "slug": "需求四-创建一个组"
+        },
+        {
+          "level": 2,
+          "title": "需求五：对象转json",
+          "slug": "需求五-对象转json"
+        },
+        {
+          "level": 2,
+          "title": "需求六：json串转对象",
+          "slug": "需求六-json串转对象"
+        },
+        {
+          "level": 2,
+          "title": "需求七：数组转json串",
+          "slug": "需求七-数组转json串"
+        },
+        {
+          "level": 2,
+          "title": "需求八：json串转数组",
+          "slug": "需求八-json串转数组"
+        },
+        {
+          "level": 2,
+          "title": "01)常见问题",
+          "slug": "_01-常见问题"
+        },
+        {
+          "level": 3,
+          "title": "问题描述",
+          "slug": "问题描述"
+        }
+      ],
+      "lastUpdated": "5/17/2024, 8:30:25 AM",
+      "lastUpdatedTimestamp": 1715905825000
+    },
+    {
+      "title": "开通对象存储COS服务",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/%E8%85%BE%E8%AE%AF%E4%BA%91/01%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1.html",
+      "relativePath": "java/java工具/腾讯云/01对象存储服务.md",
+      "key": "v-3f9a679f",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/%E8%85%BE%E8%AE%AF%E4%BA%91/01%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "计费与到期时间",
+          "slug": "计费与到期时间"
+        },
+        {
+          "level": 2,
+          "title": "开通访问权限",
+          "slug": "开通访问权限"
+        },
+        {
+          "level": 2,
+          "title": "第三步确认配置",
+          "slug": "第三步确认配置"
+        },
+        {
+          "level": 2,
+          "title": "查看自己创建的桶",
+          "slug": "查看自己创建的桶"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
     },
     {
       "title": "mybatis-pius使用多数据源",
       "frontmatter": {},
       "regularPath": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html",
       "relativePath": "java/mybatis_plus/03多数据库源的编写.md",
-      "key": "v-fde39bb2",
+      "key": "v-53f6e381",
       "path": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99.html",
       "headers": [
         {
@@ -769,7 +1969,7 @@ export const siteData = {
           "slug": "问题一"
         }
       ],
-      "lastUpdated": "8/13/2023, 5:04:48 AM",
+      "lastUpdated": "8/13/2023, 9:04:48 PM",
       "lastUpdatedTimestamp": 1691931888000
     },
     {
@@ -777,7 +1977,7 @@ export const siteData = {
       "frontmatter": {},
       "regularPath": "/java/springcloudgateway/01gateway.html",
       "relativePath": "java/springcloudgateway/01gateway.md",
-      "key": "v-3bb47468",
+      "key": "v-52bfdea6",
       "path": "/java/springcloudgateway/01gateway.html",
       "headers": [
         {
@@ -826,15 +2026,3369 @@ export const siteData = {
           "slug": "测试"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "Spring源码下载",
+      "frontmatter": {},
+      "regularPath": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/01Spring%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD.html",
+      "relativePath": "java/spring源码分析/01Spring源码下载.md",
+      "key": "v-526d7502",
+      "path": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/01Spring%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "下载方式一：git clone",
+          "slug": "下载方式一-git-clone"
+        },
+        {
+          "level": 2,
+          "title": "下载方式二：直接下载压缩包",
+          "slug": "下载方式二-直接下载压缩包"
+        },
+        {
+          "level": 2,
+          "title": "编译中遇到问题1",
+          "slug": "编译中遇到问题1"
+        },
+        {
+          "level": 2,
+          "title": "常见问题2",
+          "slug": "常见问题2"
+        }
+      ],
+      "lastUpdated": "4/16/2024, 10:08:12 PM",
+      "lastUpdatedTimestamp": 1713276492000
+    },
+    {
+      "title": "bean的加载",
+      "frontmatter": {},
+      "regularPath": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/07bean%E7%9A%84%E5%8A%A0%E8%BD%BD.html",
+      "relativePath": "java/spring源码分析/07bean的加载.md",
+      "key": "v-3c708139",
+      "path": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/07bean%E7%9A%84%E5%8A%A0%E8%BD%BD.html",
+      "lastUpdated": "5/11/2024, 10:06:47 AM",
+      "lastUpdatedTimestamp": 1715393207000
+    },
+    {
+      "title": "xpath解析xml文档",
+      "frontmatter": {},
+      "regularPath": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+      "relativePath": "java/java工具/xpath解析doc.md",
+      "key": "v-26f67381",
+      "path": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "step1)导入maven坐标",
+          "slug": "step1-导入maven坐标"
+        },
+        {
+          "level": 2,
+          "title": "step2)编写xml文件",
+          "slug": "step2-编写xml文件"
+        },
+        {
+          "level": 2,
+          "title": "step3)编写解析文档方法",
+          "slug": "step3-编写解析文档方法"
+        }
+      ],
+      "lastUpdated": "8/6/2023, 2:41:09 PM",
+      "lastUpdatedTimestamp": 1691304069000
+    },
+    {
+      "title": "srping源码编译",
+      "frontmatter": {},
+      "regularPath": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/02srping%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91.html",
+      "relativePath": "java/spring源码分析/02srping源码编译.md",
+      "key": "v-651f9ce7",
+      "path": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/02srping%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)安装gradle",
+          "slug": "_01-安装gradle"
+        },
+        {
+          "level": 2,
+          "title": "02)idea打开",
+          "slug": "_02-idea打开"
+        },
+        {
+          "level": 2,
+          "title": "03)修改下载依赖地址",
+          "slug": "_03-修改下载依赖地址"
+        },
+        {
+          "level": 2,
+          "title": "04)构建完成",
+          "slug": "_04-构建完成"
+        },
+        {
+          "level": 2,
+          "title": "05)创建一个模块",
+          "slug": "_05-创建一个模块"
+        },
+        {
+          "level": 2,
+          "title": "06)编译响应的模块",
+          "slug": "_06-编译响应的模块"
+        },
+        {
+          "level": 2,
+          "title": "常见报错",
+          "slug": "常见报错"
+        },
+        {
+          "level": 3,
+          "title": "问题一：",
+          "slug": "问题一"
+        },
+        {
+          "level": 3,
+          "title": "问题二：",
+          "slug": "问题二"
+        },
+        {
+          "level": 3,
+          "title": "问题三：",
+          "slug": "问题三"
+        }
+      ],
+      "lastUpdated": "5/2/2024, 2:49:48 PM",
+      "lastUpdatedTimestamp": 1714632588000
+    },
+    {
+      "title": "带你彻底搞懂Redis分布式锁",
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/01redis_article.html",
+      "relativePath": "java/数据库/redis/01redis_article.md",
+      "key": "v-59508618",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/01redis_article.html",
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "快速使用redis",
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/02Spring_Data_Redis.html",
+      "relativePath": "java/数据库/redis/02Spring_Data_Redis.md",
+      "key": "v-2dfe77ce",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/02Spring_Data_Redis.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "springboot使用redis",
+          "slug": "springboot使用redis"
+        },
+        {
+          "level": 3,
+          "title": "第一步：",
+          "slug": "第一步"
+        }
+      ],
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "自定义序列化器",
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E8%87%AA%E5%B7%B1%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8.html",
+      "relativePath": "java/数据库/redis/自己定义序列化器.md",
+      "key": "v-6e478dfa",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/%E8%87%AA%E5%B7%B1%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "自定义序列化器",
+          "slug": "自定义序列化器"
+        },
+        {
+          "level": 2,
+          "title": "怎么序列化hash的value？",
+          "slug": "怎么序列化hash的value"
+        }
+      ],
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch/01%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
+      "relativePath": "java/数据库/ElasticSearch/01基础数据类型.md",
+      "key": "v-4386086d",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch/01%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html",
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch/%E5%AE%89%E8%A3%85%E6%93%8D%E4%BD%9C.html",
+      "relativePath": "java/数据库/ElasticSearch/安装操作.md",
+      "key": "v-62f70530",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/ElasticSearch/%E5%AE%89%E8%A3%85%E6%93%8D%E4%BD%9C.html",
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "如何创建工程",
+      "frontmatter": {},
+      "regularPath": "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/01%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B.html",
+      "relativePath": "lyp/C++语言/01我的第一个C++程序/01如何创建工程.md",
+      "key": "v-48dbf338",
+      "path": "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/01%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "02)怎么新建类",
+          "slug": "_02-怎么新建类"
+        }
+      ],
+      "lastUpdated": "1/13/2024, 7:51:31 PM",
+      "lastUpdatedTimestamp": 1705146691000
+    },
+    {
+      "title": "redis在springboot的使用",
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/java%E6%A1%88%E4%BE%8B/01%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8.html",
+      "relativePath": "java/数据库/redis/java案例/01字符串类型的应用.md",
+      "key": "v-32edee56",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/java%E6%A1%88%E4%BE%8B/01%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "string类型必须掌握",
+          "slug": "string类型必须掌握"
+        },
+        {
+          "level": 2,
+          "title": "01)导入相关的依赖",
+          "slug": "_01-导入相关的依赖"
+        },
+        {
+          "level": 2,
+          "title": "02)springboot配置文件",
+          "slug": "_02-springboot配置文件"
+        },
+        {
+          "level": 2,
+          "title": "03)springboot自动装配",
+          "slug": "_03-springboot自动装配"
+        },
+        {
+          "level": 2,
+          "title": "03)一行代码解读",
+          "slug": "_03-一行代码解读"
+        },
+        {
+          "level": 2,
+          "title": "04)删除redis命令",
+          "slug": "_04-删除redis命令"
+        }
+      ],
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "安装devc++",
+      "frontmatter": {},
+      "regularPath": "/lyp/c%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85devc++.html",
+      "relativePath": "lyp/c语言/安装devc++.md",
+      "key": "v-a35a9096",
+      "path": "/lyp/c%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85devc++.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01解压安装",
+          "slug": "_01解压安装"
+        },
+        {
+          "level": 2,
+          "title": "02)默认启动",
+          "slug": "_02-默认启动"
+        },
+        {
+          "level": 2,
+          "title": "03)成功效果",
+          "slug": "_03-成功效果"
+        }
+      ],
+      "lastUpdated": "1/13/2024, 1:02:35 PM",
+      "lastUpdatedTimestamp": 1705122155000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/tamplate.html",
+      "relativePath": "java/数据库/redis/tamplate.md",
+      "key": "v-291abec2",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/tamplate.html",
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "C++ hello world！",
+      "frontmatter": {},
+      "regularPath": "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/02c++%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F.html",
+      "relativePath": "lyp/C++语言/01我的第一个C++程序/02c++第一个程序.md",
+      "key": "v-21e618be",
+      "path": "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/02c++%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么要学c++？!image-20240113194334097",
+          "slug": "为什么要学c"
+        },
+        {
+          "level": 2,
+          "title": "C++ 能做什么？",
+          "slug": "c-能做什么"
+        },
+        {
+          "level": 2,
+          "title": "如何学好 C++？",
+          "slug": "如何学好-c"
+        },
+        {
+          "level": 2,
+          "title": "C++ 需要不断地练习。——vczh",
+          "slug": "c-需要不断地练习。-vczh"
+        },
+        {
+          "level": 2,
+          "title": "除了编程语言，还要学什么？",
+          "slug": "除了编程语言-还要学什么"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
+        },
+        {
+          "level": 2,
+          "title": "01)c++第一个程序",
+          "slug": "_01-c-第一个程序"
+        },
+        {
+          "level": 2,
+          "title": "02)看看编译后文件目录",
+          "slug": "_02-看看编译后文件目录"
+        }
+      ],
+      "lastUpdated": "1/13/2024, 7:51:31 PM",
+      "lastUpdatedTimestamp": 1705146691000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/03.html",
+      "relativePath": "java/数据库/redis/03.md",
+      "key": "v-274cf4a2",
+      "path": "/java/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/03.html",
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "你好啊，世界！",
+      "frontmatter": {},
+      "regularPath": "/lyp/c%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAc%E7%A8%8B%E5%BA%8F.html",
+      "relativePath": "lyp/c语言/01我的第一个程序/01我的第一个c程序.md",
+      "key": "v-d9adb59a",
+      "path": "/lyp/c%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAc%E7%A8%8B%E5%BA%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建第一个c项目",
+          "slug": "_01-创建第一个c项目"
+        },
+        {
+          "level": 2,
+          "title": "02)编写第一个c程序",
+          "slug": "_02-编写第一个c程序"
+        },
+        {
+          "level": 2,
+          "title": "03)运行程序",
+          "slug": "_03-运行程序"
+        },
+        {
+          "level": 2,
+          "title": "04)截图F1无法使用",
+          "slug": "_04-截图f1无法使用"
+        },
+        {
+          "level": 2,
+          "title": "05)为什么编译出exe文件呢？",
+          "slug": "_05-为什么编译出exe文件呢"
+        }
+      ],
+      "lastUpdated": "1/13/2024, 1:02:35 PM",
+      "lastUpdatedTimestamp": 1705122155000
+    },
+    {
+      "title": "唯一索引在添加相同数据",
+      "frontmatter": {},
+      "regularPath": "/lyp/db/mysql/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E6%80%BB%E7%BB%93/01%E6%B7%BB%E5%8A%A0%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95%E7%A8%8B%E5%BA%8F%E5%9C%A8%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE.html",
+      "relativePath": "lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.md",
+      "key": "v-2efaa8d7",
+      "path": "/lyp/db/mysql/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E6%80%BB%E7%BB%93/01%E6%B7%BB%E5%8A%A0%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95%E7%A8%8B%E5%BA%8F%E5%9C%A8%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "问题",
+          "slug": "问题"
+        },
+        {
+          "level": 2,
+          "title": "表结构",
+          "slug": "表结构"
+        },
+        {
+          "level": 2,
+          "title": "再次添加",
+          "slug": "再次添加"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
+        }
+      ],
+      "lastUpdated": "3/31/2024, 11:35:41 AM",
+      "lastUpdatedTimestamp": 1711856141000
+    },
+    {
+      "title": "事件",
+      "frontmatter": {},
+      "regularPath": "/lyp/javascript/01%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6.html",
+      "relativePath": "lyp/javascript/01什么是事件.md",
+      "key": "v-e7af384c",
+      "path": "/lyp/javascript/01%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Java中的Listener(监听器)",
+          "slug": "java中的listener-监听器"
+        }
+      ],
+      "lastUpdated": "9/3/2023, 6:11:27 PM",
+      "lastUpdatedTimestamp": 1693735887000
+    },
+    {
+      "title": "python的安装",
+      "frontmatter": {},
+      "regularPath": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/01python%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "relativePath": "lyp/python/第一阶段基础/01python的安装.md",
+      "key": "v-e08bbef0",
+      "path": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/01python%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "window安装python",
+          "slug": "window安装python"
+        },
+        {
+          "level": 2,
+          "title": "安装python编辑器",
+          "slug": "安装python编辑器"
+        }
+      ],
+      "lastUpdated": "5/12/2024, 6:21:46 PM",
+      "lastUpdatedTimestamp": 1715509306000
+    },
+    {
+      "title": "01ldap基础",
+      "frontmatter": {},
+      "regularPath": "/lyp/ldap/01ldap%E5%9F%BA%E7%A1%80.html",
+      "relativePath": "lyp/ldap/01ldap基础.md",
+      "key": "v-79500cf4",
+      "path": "/lyp/ldap/01ldap%E5%9F%BA%E7%A1%80.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "常用命令",
+          "slug": "常用命令"
+        },
+        {
+          "level": 2,
+          "title": "openldap基础知识",
+          "slug": "openldap基础知识"
+        }
+      ],
+      "lastUpdated": "9/13/2023, 11:29:08 PM",
+      "lastUpdatedTimestamp": 1694618948000
+    },
+    {
+      "title": "vim命令",
+      "frontmatter": {},
+      "regularPath": "/lyp/linux/01%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4linux.html",
+      "relativePath": "lyp/linux/01常用命令linux.md",
+      "key": "v-4255b68a",
+      "path": "/lyp/linux/01%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4linux.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "复制粘贴多行语句方法(一)",
+          "slug": "复制粘贴多行语句方法-一"
+        },
+        {
+          "level": 2,
+          "title": "复制粘贴多行语句方法(二)【快】",
+          "slug": "复制粘贴多行语句方法-二-【快】"
+        },
+        {
+          "level": 2,
+          "title": "同时注释多行",
+          "slug": "同时注释多行"
+        },
+        {
+          "level": 2,
+          "title": "删除多行注释",
+          "slug": "删除多行注释"
+        },
+        {
+          "level": 2,
+          "title": "删除一行数据",
+          "slug": "删除一行数据"
+        },
+        {
+          "level": 2,
+          "title": "撤销",
+          "slug": "撤销"
+        }
+      ],
+      "lastUpdated": "9/18/2023, 10:20:32 PM",
+      "lastUpdatedTimestamp": 1695046832000
+    },
+    {
+      "title": "Python打包用户指南",
+      "frontmatter": {},
+      "regularPath": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/02PythonPackagingUserGuide%E3%80%90Python%E6%89%93%E5%8C%85%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97%E3%80%91.html",
+      "relativePath": "lyp/python/第一阶段基础/02PythonPackagingUserGuide【Python打包用户指南】.md",
+      "key": "v-729b8218",
+      "path": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/02PythonPackagingUserGuide%E3%80%90Python%E6%89%93%E5%8C%85%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97%E3%80%91.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "概述和流程",
+          "slug": "概述和流程"
+        }
+      ],
+      "lastUpdated": "5/30/2024, 9:05:11 PM",
+      "lastUpdatedTimestamp": 1717074311000
+    },
+    {
+      "title": "打包python项目",
+      "frontmatter": {},
+      "regularPath": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/03%E6%89%93%E5%8C%85python%E9%A1%B9%E7%9B%AE.html",
+      "relativePath": "lyp/python/第一阶段基础/03打包python项目.md",
+      "key": "v-a4db5266",
+      "path": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/03%E6%89%93%E5%8C%85python%E9%A1%B9%E7%9B%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建包文件",
+          "slug": "创建包文件"
+        },
+        {
+          "level": 2,
+          "title": "构建",
+          "slug": "构建"
+        },
+        {
+          "level": 2,
+          "title": "配置元数据",
+          "slug": "配置元数据"
+        },
+        {
+          "level": 2,
+          "title": "创建README.md",
+          "slug": "创建readme-md"
+        },
+        {
+          "level": 2,
+          "title": "生成分发存档",
+          "slug": "生成分发存档"
+        },
+        {
+          "level": 2,
+          "title": "上传分发存档到【testPyPI】",
+          "slug": "上传分发存档到【testpypi】"
+        },
+        {
+          "level": 2,
+          "title": "上传包到pypi",
+          "slug": "上传包到pypi"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ]
+    },
+    {
+      "title": "PyCharm创建一个项目",
+      "frontmatter": {},
+      "regularPath": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/04PyCharm%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html",
+      "relativePath": "lyp/python/第一阶段基础/04PyCharm创建一个项目.md",
+      "key": "v-cfcb3ddc",
+      "path": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/04PyCharm%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE.html"
+    },
+    {
+      "title": "rust是什么",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/01rust%E6%98%AF%E4%BB%80%E4%B9%88.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/01rust是什么.md",
+      "key": "v-02b43acc",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/01rust%E6%98%AF%E4%BB%80%E4%B9%88.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么选择 Rust？",
+          "slug": "为什么选择-rust"
+        },
+        {
+          "level": 2,
+          "title": "在 Rust 中构建它",
+          "slug": "在-rust-中构建它"
+        },
+        {
+          "level": 2,
+          "title": "相关文档",
+          "slug": "相关文档"
+        }
+      ],
+      "lastUpdated": "5/14/2024, 8:30:24 PM",
+      "lastUpdatedTimestamp": 1715689824000
+    },
+    {
+      "title": "安装 Rust",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/02rust%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/02rust的安装.md",
+      "key": "v-a16a2e38",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/02rust%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "安装的注意事项",
+          "slug": "安装的注意事项"
+        },
+        {
+          "level": 3,
+          "title": "开始",
+          "slug": "开始"
+        },
+        {
+          "level": 3,
+          "title": "工具链管理rustup",
+          "slug": "工具链管理rustup"
+        },
+        {
+          "level": 3,
+          "title": "配置环境变量PATH",
+          "slug": "配置环境变量path"
+        },
+        {
+          "level": 3,
+          "title": "Uninstall Rust",
+          "slug": "uninstall-rust"
+        },
+        {
+          "level": 2,
+          "title": "windows安装",
+          "slug": "windows安装"
+        }
+      ],
+      "lastUpdated": "5/15/2024, 10:38:13 PM",
+      "lastUpdatedTimestamp": 1715783893000
+    },
+    {
+      "title": "常用的python命令",
+      "frontmatter": {},
+      "regularPath": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/%E5%B8%B8%E7%94%A8%E7%9A%84python%E5%91%BD%E4%BB%A4.html",
+      "relativePath": "lyp/python/第一阶段基础/常用的python命令.md",
+      "key": "v-8ba2c7ec",
+      "path": "/lyp/python/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80/%E5%B8%B8%E7%94%A8%E7%9A%84python%E5%91%BD%E4%BB%A4.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "更新pip",
+          "slug": "更新pip"
+        }
+      ]
+    },
+    {
+      "title": "hello world",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/04helloworld.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/04helloworld.md",
+      "key": "v-809b1510",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/04helloworld.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建项目目录",
+          "slug": "创建项目目录"
+        },
+        {
+          "level": 2,
+          "title": "编写和运行Rust程序",
+          "slug": "编写和运行rust程序"
+        },
+        {
+          "level": 2,
+          "title": "Rust程序剖析",
+          "slug": "rust程序剖析"
+        },
+        {
+          "level": 2,
+          "title": "编译和运行是独立的步骤",
+          "slug": "编译和运行是独立的步骤"
+        }
+      ],
+      "lastUpdated": "5/16/2024, 9:00:39 PM",
+      "lastUpdatedTimestamp": 1715864439000
+    },
+    {
+      "title": "rust工具概念",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/03rust%E5%B7%A5%E5%85%B7%E6%A6%82%E5%BF%B5.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/03rust工具概念.md",
+      "key": "v-4582349b",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/03rust%E5%B7%A5%E5%85%B7%E6%A6%82%E5%BF%B5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "重要的工具",
+          "slug": "重要的工具"
+        }
+      ],
+      "lastUpdated": "5/16/2024, 9:00:39 PM",
+      "lastUpdatedTimestamp": 1715864439000
+    },
+    {
+      "title": "rust命令总结",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/06rust%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/06rust命令总结.md",
+      "key": "v-965aaa88",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/06rust%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "构建命令",
+          "slug": "构建命令"
+        },
+        {
+          "level": 2,
+          "title": "目录说明",
+          "slug": "目录说明"
+        }
+      ],
+      "lastUpdated": "5/17/2024, 10:50:34 PM",
+      "lastUpdatedTimestamp": 1715957434000
+    },
+    {
+      "title": "Hello Cargo",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/05Hello_Cargo.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/05Hello_Cargo.md",
+      "key": "v-94de0fc0",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/05Hello_Cargo.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "学习目标",
+          "slug": "学习目标"
+        },
+        {
+          "level": 2,
+          "title": "依赖dependency",
+          "slug": "依赖dependency"
+        },
+        {
+          "level": 2,
+          "title": "使用Cargo创建项目",
+          "slug": "使用cargo创建项目"
+        },
+        {
+          "level": 2,
+          "title": "构建并运行Cargo项目",
+          "slug": "构建并运行cargo项目"
+        },
+        {
+          "level": 2,
+          "title": "运行与编译",
+          "slug": "运行与编译"
+        },
+        {
+          "level": 2,
+          "title": "检察代码命令",
+          "slug": "检察代码命令"
+        },
+        {
+          "level": 2,
+          "title": "发布构建",
+          "slug": "发布构建"
+        },
+        {
+          "level": 2,
+          "title": "把使用Cargo当作习惯",
+          "slug": "把使用cargo当作习惯"
+        }
+      ],
+      "lastUpdated": "5/17/2024, 10:50:34 PM",
+      "lastUpdatedTimestamp": 1715957434000
+    },
+    {
+      "title": "生成一个随机数",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/08%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%95%B0.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/08生成一个随机数.md",
+      "key": "v-fa34e42c",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/08%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%95%B0.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "完整代码",
+          "slug": "完整代码"
+        },
+        {
+          "level": 2,
+          "title": "运行代码",
+          "slug": "运行代码"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 11:17:13 AM",
+      "lastUpdatedTimestamp": 1716002233000
+    },
+    {
+      "title": "rust编写猜数字游戏",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/07rust%E7%BC%96%E5%86%99%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/07rust编写猜数字游戏.md",
+      "key": "v-5ae358cb",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/07rust%E7%BC%96%E5%86%99%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求描述",
+          "slug": "需求描述"
+        },
+        {
+          "level": 2,
+          "title": "需求设计",
+          "slug": "需求设计"
+        },
+        {
+          "level": 2,
+          "title": "01)打印输出提示信息",
+          "slug": "_01-打印输出提示信息"
+        },
+        {
+          "level": 2,
+          "title": "02)使用变量存储值",
+          "slug": "_02-使用变量存储值"
+        },
+        {
+          "level": 2,
+          "title": "03)接受用户的输入",
+          "slug": "_03-接受用户的输入"
+        },
+        {
+          "level": 2,
+          "title": "04)占位符打印",
+          "slug": "_04-占位符打印"
+        },
+        {
+          "level": 2,
+          "title": "完整的代码",
+          "slug": "完整的代码"
+        },
+        {
+          "level": 2,
+          "title": "运行代码",
+          "slug": "运行代码"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 10:40:52 AM",
+      "lastUpdatedTimestamp": 1716000052000
+    },
+    {
+      "title": "系统所有权",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/11%E7%B3%BB%E7%BB%9F%E6%89%80%E6%9C%89%E6%9D%83.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/11系统所有权.md",
+      "key": "v-36ce91b6",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/11%E7%B3%BB%E7%BB%9F%E6%89%80%E6%9C%89%E6%9D%83.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "所有权",
+          "slug": "所有权"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 8:15:52 PM",
+      "lastUpdatedTimestamp": 1716034552000
+    },
+    {
+      "title": "free mybatis plugins",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/01mybatis%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/01mybatis插件安装.md",
+      "key": "v-37e65b44",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/01mybatis%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85.html",
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "通用编程概念",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/10%E9%80%9A%E7%94%A8%E7%BC%96%E7%A8%8B%E6%A6%82%E5%BF%B5.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/10通用编程概念.md",
+      "key": "v-81907578",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/10%E9%80%9A%E7%94%A8%E7%BC%96%E7%A8%8B%E6%A6%82%E5%BF%B5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "关键字keywords",
+          "slug": "关键字keywords"
+        },
+        {
+          "level": 2,
+          "title": "变量&可变性",
+          "slug": "变量-可变性"
+        },
+        {
+          "level": 2,
+          "title": "常量count",
+          "slug": "常量count"
+        },
+        {
+          "level": 2,
+          "title": "遮蔽shadow",
+          "slug": "遮蔽shadow"
+        },
+        {
+          "level": 2,
+          "title": "数据类型",
+          "slug": "数据类型"
+        },
+        {
+          "level": 2,
+          "title": "函数",
+          "slug": "函数"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 9:52:45 PM",
+      "lastUpdatedTimestamp": 1716040365000
+    },
+    {
+      "title": "比较猜测的数字和秘密数字",
+      "frontmatter": {},
+      "regularPath": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/09%E6%AF%94%E8%BE%83%E7%8C%9C%E6%B5%8B%E7%9A%84%E6%95%B0%E5%AD%97%E5%92%8C%E7%A7%98%E5%AF%86%E6%95%B0%E5%AD%97.html",
+      "relativePath": "lyp/rust语言/第一阶段基础篇/09比较猜测的数字和秘密数字.md",
+      "key": "v-69226527",
+      "path": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/09%E6%AF%94%E8%BE%83%E7%8C%9C%E6%B5%8B%E7%9A%84%E6%95%B0%E5%AD%97%E5%92%8C%E7%A7%98%E5%AF%86%E6%95%B0%E5%AD%97.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "完整代码",
+          "slug": "完整代码"
+        },
+        {
+          "level": 2,
+          "title": "执行效果",
+          "slug": "执行效果"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 11:27:15 AM",
+      "lastUpdatedTimestamp": 1716002835000
+    },
+    {
+      "title": "安装HBuilderX软件",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/03%E5%AE%89%E8%A3%85HBuilderX%E8%BD%AF%E4%BB%B6.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/03安装HBuilderX软件.md",
+      "key": "v-2d9998f6",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/03%E5%AE%89%E8%A3%85HBuilderX%E8%BD%AF%E4%BB%B6.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么要安装HBuilderx？",
+          "slug": "为什么要安装hbuilderx"
+        },
+        {
+          "level": 2,
+          "title": "安装",
+          "slug": "安装"
+        },
+        {
+          "level": 2,
+          "title": "设置小程序开发工具的安装目录",
+          "slug": "设置小程序开发工具的安装目录"
+        }
+      ],
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "安装VirtualBox虚拟机",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/04%E5%AE%89%E8%A3%85VirtualBox%E8%99%9A%E6%8B%9F%E6%9C%BA.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/04安装VirtualBox虚拟机.md",
+      "key": "v-792c80ce",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/04%E5%AE%89%E8%A3%85VirtualBox%E8%99%9A%E6%8B%9F%E6%9C%BA.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "为什么选择VirtualBox？",
+          "slug": "为什么选择virtualbox"
+        },
+        {
+          "level": 2,
+          "title": "安装的前提条件",
+          "slug": "安装的前提条件"
+        }
+      ],
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "VirtualBox创建虚拟机实例",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/05VirtualBox%E5%88%9B%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%9E%E4%BE%8B.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/05VirtualBox创虚拟机实例.md",
+      "key": "v-83916d4a",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/05VirtualBox%E5%88%9B%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%9E%E4%BE%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建虚拟机实例",
+          "slug": "创建虚拟机实例"
+        },
+        {
+          "level": 2,
+          "title": "设置连接网络方式",
+          "slug": "设置连接网络方式"
+        }
+      ],
+      "lastUpdated": "9/18/2023, 10:20:32 PM",
+      "lastUpdatedTimestamp": 1695046832000
+    },
+    {
+      "title": "安装小程序开发工具",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/02%E5%AE%89%E8%A3%85%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/02安装小程序开发工具.md",
+      "key": "v-39d5a534",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/02%E5%AE%89%E8%A3%85%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "怎么打开服务端口？",
+          "slug": "怎么打开服务端口"
+        }
+      ],
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "安装Centos系统",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/06%E5%AE%89%E8%A3%85Centos%E7%B3%BB%E7%BB%9F.html",
+      "relativePath": "lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统.md",
+      "key": "v-1507968b",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/06%E5%AE%89%E8%A3%85Centos%E7%B3%BB%E7%BB%9F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "添加CentoS镜像",
+          "slug": "添加centos镜像"
+        },
+        {
+          "level": 2,
+          "title": "启动Centos系统",
+          "slug": "启动centos系统"
+        }
+      ],
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "配置mybatis",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/02%E9%85%8D%E7%BD%AEmybatis.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/02配置mybatis.md",
+      "key": "v-5e287ebc",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/02%E9%85%8D%E7%BD%AEmybatis.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建IDEA数据库连接",
+          "slug": "创建idea数据库连接"
+        },
+        {
+          "level": 2,
+          "title": "生成MyBatis各种文件",
+          "slug": "生成mybatis各种文件"
+        },
+        {
+          "level": 2,
+          "title": "配置MyBatis",
+          "slug": "配置mybatis-2"
+        },
+        {
+          "level": 2,
+          "title": "配置日志输出",
+          "slug": "配置日志输出"
+        }
+      ],
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "创建springboot项目",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/01%E5%88%9B%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目.md",
+      "key": "v-4de0c518",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/01%E5%88%9B%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建项目",
+          "slug": "创建项目"
+        },
+        {
+          "level": 2,
+          "title": "勾选若干依赖库",
+          "slug": "勾选若干依赖库"
+        },
+        {
+          "level": 2,
+          "title": "配置Tomcat",
+          "slug": "配置tomcat"
+        },
+        {
+          "level": 2,
+          "title": "配置MySQL数据源",
+          "slug": "配置mysql数据源"
+        },
+        {
+          "level": 2,
+          "title": "配置Redis数据源",
+          "slug": "配置redis数据源"
+        },
+        {
+          "level": 2,
+          "title": "配置MongoDB数据源",
+          "slug": "配置mongodb数据源"
+        },
+        {
+          "level": 2,
+          "title": "配置后主类运行",
+          "slug": "配置后主类运行"
+        }
+      ],
+      "lastUpdated": "9/17/2023, 6:09:02 PM",
+      "lastUpdatedTimestamp": 1694945342000
+    },
+    {
+      "title": "自定义异常[2-3]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E7%B1%BB_2-3.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/03创建自定义异常类_2-3.md",
+      "key": "v-143517d8",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E7%B1%BB_2-3.html",
+      "lastUpdated": "10/1/2023, 7:00:48 PM",
+      "lastUpdatedTimestamp": 1696158048000
+    },
+    {
+      "title": "分装web返回的对象[2-4]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/04%E5%88%86%E8%A3%85web%E8%BF%94%E5%9B%9E%E7%9A%84%E5%AF%B9%E8%B1%A12-4.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/04分装web返回的对象2-4.md",
+      "key": "v-7b9779ef",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/04%E5%88%86%E8%A3%85web%E8%BF%94%E5%9B%9E%E7%9A%84%E5%AF%B9%E8%B1%A12-4.html",
+      "lastUpdated": "10/4/2023, 5:24:23 PM",
+      "lastUpdatedTimestamp": 1696411463000
+    },
+    {
+      "title": "配置后端验证功能[2-6]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/06%E9%85%8D%E7%BD%AE%E5%90%8E%E7%AB%AF%E9%AA%8C%E8%AF%81%E5%8A%9F%E8%83%BD2-6.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/06配置后端验证功能2-6.md",
+      "key": "v-001dba66",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/06%E9%85%8D%E7%BD%AE%E5%90%8E%E7%AB%AF%E9%AA%8C%E8%AF%81%E5%8A%9F%E8%83%BD2-6.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01添加依赖",
+          "slug": "_01添加依赖"
+        },
+        {
+          "level": 2,
+          "title": "02创建Form类",
+          "slug": "_02创建form类"
+        },
+        {
+          "level": 2,
+          "title": "04验证测试",
+          "slug": "_04验证测试"
+        }
+      ],
+      "lastUpdated": "10/1/2023, 7:00:48 PM",
+      "lastUpdatedTimestamp": 1696158048000
+    },
+    {
+      "title": "利用Swagger搭建REST_API[2-5]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/05%E5%88%A9%E7%94%A8Swagger%E6%90%AD%E5%BB%BAREST_API2-5.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/05利用Swagger搭建REST_API2-5.md",
+      "key": "v-72cb581e",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/05%E5%88%A9%E7%94%A8Swagger%E6%90%AD%E5%BB%BAREST_API2-5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01添加依赖库",
+          "slug": "_01添加依赖库"
+        },
+        {
+          "level": 2,
+          "title": "02创建Swagger配置类",
+          "slug": "_02创建swagger配置类"
+        },
+        {
+          "level": 2,
+          "title": "03编写测试Web接口",
+          "slug": "_03编写测试web接口"
+        },
+        {
+          "level": 2,
+          "title": "04测试Web接口",
+          "slug": "_04测试web接口"
+        }
+      ],
+      "lastUpdated": "10/1/2023, 7:00:48 PM",
+      "lastUpdatedTimestamp": 1696158048000
+    },
+    {
+      "title": "要点回顾",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/08%E6%80%BB%E7%BB%93.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/08总结.md",
+      "key": "v-124195d5",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/08%E6%80%BB%E7%BB%93.html",
+      "lastUpdated": "10/1/2023, 7:00:48 PM",
+      "lastUpdatedTimestamp": 1696158048000
+    },
+    {
+      "title": "抵御即跨站脚本XSS攻击[2-7]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/07%E6%8A%B5%E5%BE%A1%E5%8D%B3%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%ACXSS%E6%94%BB%E5%87%BB2-7.html",
+      "relativePath": "lyp/刷脸项目/02阶段-从零构建后端项目基础篇/07抵御即跨站脚本XSS攻击2-7.md",
+      "key": "v-d721e19a",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/07%E6%8A%B5%E5%BE%A1%E5%8D%B3%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%ACXSS%E6%94%BB%E5%87%BB2-7.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01XSS攻击的危害",
+          "slug": "_01xss攻击的危害"
+        },
+        {
+          "level": 2,
+          "title": "02导入依赖库",
+          "slug": "_02导入依赖库"
+        },
+        {
+          "level": 2,
+          "title": "03定义请求包装类",
+          "slug": "_03定义请求包装类"
+        },
+        {
+          "level": 2,
+          "title": "04实现",
+          "slug": "_04实现"
+        },
+        {
+          "level": 2,
+          "title": "05创建拦截请求类",
+          "slug": "_05创建拦截请求类"
+        },
+        {
+          "level": 2,
+          "title": "06测试",
+          "slug": "_06测试"
+        }
+      ],
+      "lastUpdated": "10/1/2023, 7:00:48 PM",
+      "lastUpdatedTimestamp": 1696158048000
+    },
+    {
+      "title": "Shiro和JWT技术[3-1]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/02Shiro%E5%92%8CJWT%E6%8A%80%E6%9C%AF3-1.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/02Shiro和JWT技术3-1.md",
+      "key": "v-5710846a",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/02Shiro%E5%92%8CJWT%E6%8A%80%E6%9C%AF3-1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)什么是Shiro？",
+          "slug": "_01-什么是shiro"
+        },
+        {
+          "level": 2,
+          "title": "什么是认证？",
+          "slug": "什么是认证"
+        },
+        {
+          "level": 2,
+          "title": "什么是授权？",
+          "slug": "什么是授权"
+        },
+        {
+          "level": 2,
+          "title": "Shiro靠什么做认证与授权的？",
+          "slug": "shiro靠什么做认证与授权的"
+        },
+        {
+          "level": 2,
+          "title": "02)JWT简介",
+          "slug": "_02-jwt简介"
+        },
+        {
+          "level": 2,
+          "title": "JWT可以用在单点登录的系统中",
+          "slug": "jwt可以用在单点登录的系统中"
+        },
+        {
+          "level": 2,
+          "title": "JWT兼容更多的客户端",
+          "slug": "jwt兼容更多的客户端"
+        }
+      ],
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "创建JwtUtil工具类[3-2]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/03%E5%88%9B%E5%BB%BAJwtUtil%E5%B7%A5%E5%85%B7%E7%B1%BB3-2.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/03创建JwtUtil工具类3-2.md",
+      "key": "v-7db6044d",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/03%E5%88%9B%E5%BB%BAJwtUtil%E5%B7%A5%E5%85%B7%E7%B1%BB3-2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)导入依赖库",
+          "slug": "_01-导入依赖库"
+        },
+        {
+          "level": 2,
+          "title": "02)定义密钥和过期时间",
+          "slug": "_02-定义密钥和过期时间"
+        },
+        {
+          "level": 2,
+          "title": "03)创建JWT工具类",
+          "slug": "_03-创建jwt工具类"
+        }
+      ],
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "本章介绍3",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/01%E6%9C%AC%E7%AB%A0%E4%BB%8B%E7%BB%8D.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/01本章介绍.md",
+      "key": "v-085aecd0",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/01%E6%9C%AC%E7%AB%A0%E4%BB%8B%E7%BB%8D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "shiro是什么？",
+          "slug": "shiro是什么"
+        },
+        {
+          "level": 2,
+          "title": "单体架构",
+          "slug": "单体架构"
+        },
+        {
+          "level": 2,
+          "title": "负载均衡单体架构",
+          "slug": "负载均衡单体架构"
+        },
+        {
+          "level": 2,
+          "title": "JWT是什么？",
+          "slug": "jwt是什么"
+        },
+        {
+          "level": 2,
+          "title": "JWT好处",
+          "slug": "jwt好处"
+        }
+      ],
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "把令牌封装成认证对象[3-3]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/04%E6%8A%8A%E4%BB%A4%E7%89%8C%E5%B0%81%E8%A3%85%E6%88%90%E8%AE%A4%E8%AF%81%E5%AF%B9%E8%B1%A13-3.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/04把令牌封装成认证对象3-3.md",
+      "key": "v-1ab2673c",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/04%E6%8A%8A%E4%BB%A4%E7%89%8C%E5%B0%81%E8%A3%85%E6%88%90%E8%AE%A4%E8%AF%81%E5%AF%B9%E8%B1%A13-3.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)把Token封装成认证对象",
+          "slug": "_01-把token封装成认证对象"
+        },
+        {
+          "level": 2,
+          "title": "02)实现认证与授权",
+          "slug": "_02-实现认证与授权"
+        },
+        {
+          "level": 2,
+          "title": "03)如何设计令牌的刷新机制？",
+          "slug": "_03-如何设计令牌的刷新机制"
+        }
+      ],
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "精简返回给客户端的异常内容[3-5]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/06%E7%B2%BE%E7%AE%80%E8%BF%94%E5%9B%9E%E7%BB%99%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%BC%82%E5%B8%B8%E5%86%85%E5%AE%B93-5.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/06精简返回给客户端的异常内容3-5.md",
+      "key": "v-65b52c84",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/06%E7%B2%BE%E7%AE%80%E8%BF%94%E5%9B%9E%E7%BB%99%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%BC%82%E5%B8%B8%E5%86%85%E5%AE%B93-5.html",
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "要点回顾[3]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/07%E8%A6%81%E7%82%B9%E5%9B%9E%E9%A1%BE.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/07要点回顾.md",
+      "key": "v-2a63d51c",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/07%E8%A6%81%E7%82%B9%E5%9B%9E%E9%A1%BE.html",
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "创建存储令牌的媒介类[3-4]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/05%E5%88%9B%E5%BB%BA%E5%AD%98%E5%82%A8%E4%BB%A4%E7%89%8C%E7%9A%84%E5%AA%92%E4%BB%8B%E7%B1%BB3-4.html",
+      "relativePath": "lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/05创建存储令牌的媒介类3-4.md",
+      "key": "v-3d8da379",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/05%E5%88%9B%E5%BB%BA%E5%AD%98%E5%82%A8%E4%BB%A4%E7%89%8C%E7%9A%84%E5%AA%92%E4%BB%8B%E7%B1%BB3-4.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建 ThreadLocalToken类",
+          "slug": "_01-创建-threadlocaltoken类"
+        },
+        {
+          "level": 2,
+          "title": "02)创建OAuth2Filter类",
+          "slug": "_02-创建oauth2filter类"
+        },
+        {
+          "level": 2,
+          "title": "03)创建ShiroConfig类",
+          "slug": "_03-创建shiroconfig类"
+        },
+        {
+          "level": 2,
+          "title": "04)利用切面类向客户端返回新令牌",
+          "slug": "_04-利用切面类向客户端返回新令牌"
+        }
+      ],
+      "lastUpdated": "10/3/2023, 11:28:05 AM",
+      "lastUpdatedTimestamp": 1696303685000
+    },
+    {
+      "title": "申请微信开发者账号[4-1]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/01%E7%94%B3%E8%AF%B7%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E8%B4%A6%E5%8F%B74-1.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/01申请微信开发者账号4-1.md",
+      "key": "v-7576449b",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/01%E7%94%B3%E8%AF%B7%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E8%B4%A6%E5%8F%B74-1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)特殊声明",
+          "slug": "_01-特殊声明"
+        },
+        {
+          "level": 2,
+          "title": "02)申请微信开发者账号",
+          "slug": "_02-申请微信开发者账号"
+        },
+        {
+          "level": 2,
+          "title": "03)获取AppID和密钥",
+          "slug": "_03-获取appid和密钥"
+        }
+      ],
+      "lastUpdated": "10/25/2023, 9:41:05 PM",
+      "lastUpdatedTimestamp": 1698241265000
+    },
+    {
+      "title": "初始uni-app[4-3]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/03%E5%88%9D%E5%A7%8Buni-app4-3.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/03初始uni-app4-3.md",
+      "key": "v-0b2b19c8",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/03%E5%88%9D%E5%A7%8Buni-app4-3.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)uni-app工程目录结构",
+          "slug": "_01-uni-app工程目录结构"
+        },
+        {
+          "level": 2,
+          "title": "02)创建练习页面",
+          "slug": "_02-创建练习页面"
+        },
+        {
+          "level": 2,
+          "title": "03)设置第一页",
+          "slug": "_03-设置第一页"
+        },
+        {
+          "level": 2,
+          "title": "04)编写demo.vue文件",
+          "slug": "_04-编写demo-vue文件"
+        },
+        {
+          "level": 2,
+          "title": "05)循环遍历数组",
+          "slug": "_05-循环遍历数组"
+        },
+        {
+          "level": 2,
+          "title": "06)点击事件",
+          "slug": "_06-点击事件"
+        },
+        {
+          "level": 2,
+          "title": "07)数据变量的双向绑定",
+          "slug": "_07-数据变量的双向绑定"
+        },
+        {
+          "level": 2,
+          "title": "08)怎么新建页面？",
+          "slug": "_08-怎么新建页面"
+        }
+      ],
+      "lastUpdated": "12/5/2023, 11:07:30 PM",
+      "lastUpdatedTimestamp": 1701788850000
+    },
+    {
+      "title": "注册新用户的业务要点说明[4-6]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/06%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%A6%81%E7%82%B9%E8%AF%B4%E6%98%8E4-6.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/06注册新用户的业务要点说明4-6.md",
+      "key": "v-3190c240",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/06%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%A6%81%E7%82%B9%E8%AF%B4%E6%98%8E4-6.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)激活码有什么用途？",
+          "slug": "_01-激活码有什么用途"
+        },
+        {
+          "level": 2,
+          "title": "02)激活码的过期时间",
+          "slug": "_02-激活码的过期时间"
+        },
+        {
+          "level": 2,
+          "title": "03)新员工帐户与微信绑定",
+          "slug": "_03-新员工帐户与微信绑定"
+        },
+        {
+          "level": 2,
+          "title": "04)如何获取微信账号的Openld字符串？[后端获取]",
+          "slug": "_04-如何获取微信账号的openld字符串-后端获取"
+        },
+        {
+          "level": 2,
+          "title": "什么是openId呢？",
+          "slug": "什么是openid呢"
+        }
+      ],
+      "lastUpdated": "12/5/2023, 11:07:30 PM",
+      "lastUpdatedTimestamp": 1701788850000
+    },
+    {
+      "title": "创建登陆页面[4-4]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/04%E5%88%9B%E5%BB%BA%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A24-4.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/04创建登陆页面4-4.md",
+      "key": "v-2ea59062",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/04%E5%88%9B%E5%BB%BA%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A24-4.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)拷贝所有素材文件",
+          "slug": "_01-拷贝所有素材文件"
+        },
+        {
+          "level": 2,
+          "title": "02)创建登陆页面",
+          "slug": "_02-创建登陆页面"
+        },
+        {
+          "level": 2,
+          "title": "03)创建公共全局样式",
+          "slug": "_03-创建公共全局样式"
+        },
+        {
+          "level": 2,
+          "title": "4)编写login.vue文件",
+          "slug": "_4-编写login-vue文件"
+        },
+        {
+          "level": 2,
+          "title": "05)设置页面第一位",
+          "slug": "_05-设置页面第一位"
+        },
+        {
+          "level": 2,
+          "title": "06)登入按钮注意点",
+          "slug": "_06-登入按钮注意点"
+        },
+        {
+          "level": 2,
+          "title": "07)放上超链接文字",
+          "slug": "_07-放上超链接文字"
+        },
+        {
+          "level": 2,
+          "title": "08)登入页面跳转注册页面",
+          "slug": "_08-登入页面跳转注册页面"
+        },
+        {
+          "level": 2,
+          "title": "09)效果展示",
+          "slug": "_09-效果展示"
+        }
+      ],
+      "lastUpdated": "12/5/2023, 11:07:30 PM",
+      "lastUpdatedTimestamp": 1701788850000
+    },
+    {
+      "title": "创建注册页面[4-5]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/05%E5%88%9B%E5%BB%BA%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A24-5.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/05创建注册页面4-5.md",
+      "key": "v-530594ae",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/05%E5%88%9B%E5%BB%BA%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A24-5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建注册页面",
+          "slug": "_01-创建注册页面"
+        },
+        {
+          "level": 2,
+          "title": "02)文本输入框的编写",
+          "slug": "_02-文本输入框的编写"
+        },
+        {
+          "level": 2,
+          "title": "03)测试页面转跳",
+          "slug": "_03-测试页面转跳"
+        }
+      ],
+      "lastUpdated": "12/5/2023, 11:07:30 PM",
+      "lastUpdatedTimestamp": 1701788850000
+    },
+    {
+      "title": "获取临时授权和微信基本信息[4-7]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/07%E8%8E%B7%E5%8F%96%E4%B8%B4%E6%97%B6%E6%8E%88%E6%9D%83%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF4-7.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/07获取临时授权和微信基本信息4-7.md",
+      "key": "v-293e5986",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/07%E8%8E%B7%E5%8F%96%E4%B8%B4%E6%97%B6%E6%8E%88%E6%9D%83%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF4-7.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)获取临时授权字符串",
+          "slug": "_01-获取临时授权字符串"
+        },
+        {
+          "level": 2,
+          "title": "1.1)点击注册打印临时授权码",
+          "slug": "_1-1-点击注册打印临时授权码"
+        },
+        {
+          "level": 2,
+          "title": "02)获取微信基本信息",
+          "slug": "_02-获取微信基本信息"
+        }
+      ],
+      "lastUpdated": "12/5/2023, 11:07:30 PM",
+      "lastUpdatedTimestamp": 1701788850000
+    },
+    {
+      "title": "创建小程序项目[4-2]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B9%E7%9B%AE4-2.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/02创建小程序项目4-2.md",
+      "key": "v-bcb79576",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B9%E7%9B%AE4-2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)引言",
+          "slug": "_01-引言"
+        },
+        {
+          "level": 2,
+          "title": "02)创建小程序工程",
+          "slug": "_02-创建小程序工程"
+        },
+        {
+          "level": 2,
+          "title": "03)启动的运行效果",
+          "slug": "_03-启动的运行效果"
+        },
+        {
+          "level": 2,
+          "title": "04)uni-app目录结构",
+          "slug": "_04-uni-app目录结构"
+        },
+        {
+          "level": 2,
+          "title": "05)怎么在手机上看效果",
+          "slug": "_05-怎么在手机上看效果"
+        },
+        {
+          "level": 2,
+          "title": "06)uni-app框架简介",
+          "slug": "_06-uni-app框架简介"
+        }
+      ],
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
+    },
+    {
+      "title": "实现注册超级管理员功能(持久层)[5-1]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/01%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/01实现注册超级管理员功能[持久层].md",
+      "key": "v-5ba451aa",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/01%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)判定系统是否已经绑定超级管理员",
+          "slug": "_01-判定系统是否已经绑定超级管理员"
+        },
+        {
+          "level": 2,
+          "title": "02)编写保存用户记录的代码",
+          "slug": "_02-编写保存用户记录的代码"
+        },
+        {
+          "level": 2,
+          "title": "03)编写查询用户ID的代码",
+          "slug": "_03-编写查询用户id的代码"
+        },
+        {
+          "level": 2,
+          "title": "04)工具生成pojo对象",
+          "slug": "_04-工具生成pojo对象"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 5:57:24 PM",
+      "lastUpdatedTimestamp": 1702115844000
+    },
+    {
+      "title": "掌握RABC权限模型[5-3]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/03%E6%8E%8C%E6%8F%A1RABC%E6%9D%83%E9%99%90%E6%A8%A1%E5%9E%8B.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/03掌握RABC权限模型.md",
+      "key": "v-7e2c316c",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/03%E6%8E%8C%E6%8F%A1RABC%E6%9D%83%E9%99%90%E6%A8%A1%E5%9E%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)RBAC权限模型",
+          "slug": "_01-rbac权限模型"
+        },
+        {
+          "level": 2,
+          "title": "02)前后端权限验证",
+          "slug": "_02-前后端权限验证"
+        },
+        {
+          "level": 2,
+          "title": "03)如何查询用户的权限列表",
+          "slug": "_03-如何查询用户的权限列表"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 5:35:55 PM",
+      "lastUpdatedTimestamp": 1702114555000
+    },
+    {
+      "title": "实现注册超级管理员功能(Web层)[5-4]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/04%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/04实现注册超级管理员功能[Web层].md",
+      "key": "v-69777e1c",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/04%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建表单类",
+          "slug": "_01-创建表单类"
+        },
+        {
+          "level": 2,
+          "title": "02)创建Controller类",
+          "slug": "_02-创建controller类"
+        },
+        {
+          "level": 2,
+          "title": "03)test",
+          "slug": "_03-test"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 5:56:03 PM",
+      "lastUpdatedTimestamp": 1702115763000
+    },
+    {
+      "title": "定义全局路径和封装Aiax(移动端)[5-5]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/05%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%80%E8%B7%AF%E5%BE%84%E5%92%8C%E5%B0%81%E8%A3%85Aiax%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/05定义全局路径和封装Aiax[移动端].md",
+      "key": "v-11860885",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/05%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%80%E8%B7%AF%E5%BE%84%E5%92%8C%E5%B0%81%E8%A3%85Aiax%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)封装全局路径",
+          "slug": "_01-封装全局路径"
+        },
+        {
+          "level": 2,
+          "title": "02)封装Ajax",
+          "slug": "_02-封装ajax"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 10:47:05 PM",
+      "lastUpdatedTimestamp": 1702133225000
+    },
+    {
+      "title": "章节总结[4-8]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/08%E7%AB%A0%E8%8A%82%E6%80%BB%E7%BB%934-8.html",
+      "relativePath": "lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/08章节总结4-8.md",
+      "key": "v-eb9ec060",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/08%E7%AB%A0%E8%8A%82%E6%80%BB%E7%BB%934-8.html",
+      "lastUpdated": "12/9/2023, 5:35:55 PM",
+      "lastUpdatedTimestamp": 1702114555000
+    },
+    {
+      "title": "实现注册超级管理员功能(业务层)[5-2]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/02%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E4%B8%9A%E5%8A%A1%E5%B1%82%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/02实现注册超级管理员功能[业务层].md",
+      "key": "v-46beb5c5",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/02%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E4%B8%9A%E5%8A%A1%E5%B1%82%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)获取openId",
+          "slug": "_01-获取openid"
+        },
+        {
+          "level": 2,
+          "title": "02)编写注册新用户的业务代码",
+          "slug": "_02-编写注册新用户的业务代码"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 5:56:03 PM",
+      "lastUpdatedTimestamp": 1702115763000
+    },
+    {
+      "title": "完成注册超级管理员功能[5-6]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/06%E5%AE%8C%E6%88%90%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/06完成注册超级管理员功能[移动端].md",
+      "key": "v-a4aa51aa",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/06%E5%AE%8C%E6%88%90%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)前端验证功能",
+          "slug": "_01-前端验证功能"
+        },
+        {
+          "level": 2,
+          "title": "02)提交Ajax请求",
+          "slug": "_02-提交ajax请求"
+        },
+        {
+          "level": 2,
+          "title": "03)测试注册超级用户",
+          "slug": "_03-测试注册超级用户"
+        }
+      ],
+      "lastUpdated": "12/9/2023, 10:47:05 PM",
+      "lastUpdatedTimestamp": 1702133225000
+    },
+    {
+      "title": "实现用户登陆功能[Web层]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/08%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/08实现用户登陆功能[Web层].md",
+      "key": "v-5881129a",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/08%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)创建表单类",
+          "slug": "_01-创建表单类"
+        },
+        {
+          "level": 2,
+          "title": "02)创建登陆Web方法",
+          "slug": "_02-创建登陆web方法"
+        }
+      ],
+      "lastUpdated": "12/10/2023, 8:58:20 PM",
+      "lastUpdatedTimestamp": 1702213100000
+    },
+    {
+      "title": "实现用户登陆功能[5-7]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/07%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82&%E4%B8%9A%E5%8A%A1%E5%B1%82%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/07实现用户登陆功能[持久层&业务层].md",
+      "key": "v-1a5df9fa",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/07%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82&%E4%B8%9A%E5%8A%A1%E5%B1%82%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)如何判定登陆",
+          "slug": "_01-如何判定登陆"
+        },
+        {
+          "level": 2,
+          "title": "02)编写持久层代码",
+          "slug": "_02-编写持久层代码"
+        },
+        {
+          "level": 2,
+          "title": "03)编写业务层代码",
+          "slug": "_03-编写业务层代码"
+        }
+      ],
+      "lastUpdated": "12/10/2023, 8:58:20 PM",
+      "lastUpdatedTimestamp": 1702213100000
+    },
+    {
+      "title": "实现用户登陆功能[移动端]",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/09%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/09实现用户登陆功能[移动端].md",
+      "key": "v-6a9412b6",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/09%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)封装登陆地址",
+          "slug": "_01-封装登陆地址"
+        },
+        {
+          "level": 2,
+          "title": "02)编写登陆方法",
+          "slug": "_02-编写登陆方法"
+        },
+        {
+          "level": 2,
+          "title": "03)测试",
+          "slug": "_03-测试"
+        },
+        {
+          "level": 2,
+          "title": "04)设置页面标题",
+          "slug": "_04-设置页面标题"
+        }
+      ],
+      "lastUpdated": "12/10/2023, 8:58:20 PM",
+      "lastUpdatedTimestamp": 1702213100000
+    },
+    {
+      "title": "观察后端项目运行细节",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/10%E8%A7%82%E5%AF%9F%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%A1%8C%E7%BB%86%E8%8A%82.html",
+      "relativePath": "lyp/刷脸项目/05阶段-实现注册与登陆/10观察后端项目运行细节.md",
+      "key": "v-4f7ff388",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/10%E8%A7%82%E5%AF%9F%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%A1%8C%E7%BB%86%E8%8A%82.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)为什么XSSFilter最先执行?",
+          "slug": "_01-为什么xssfilter最先执行"
+        },
+        {
+          "level": 2,
+          "title": "02)OAuth2Filter的执行",
+          "slug": "_02-oauth2filter的执行"
+        },
+        {
+          "level": 2,
+          "title": "03)TokenAspect的作用",
+          "slug": "_03-tokenaspect的作用"
+        },
+        {
+          "level": 2,
+          "title": "04)加断点执行调试",
+          "slug": "_04-加断点执行调试"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "01章节介绍",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/01%E7%AB%A0%E8%8A%82%E4%BB%8B%E7%BB%8D.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/01章节介绍.md",
+      "key": "v-7f9f9112",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/01%E7%AB%A0%E8%8A%82%E4%BB%8B%E7%BB%8D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01创建小程序Tab导航",
+          "slug": "_01创建小程序tab导航"
+        },
+        {
+          "level": 2,
+          "title": "02开通腾讯云对象存储服务",
+          "slug": "_02开通腾讯云对象存储服务"
+        },
+        {
+          "level": 2,
+          "title": "03设计英雄区和栏目导航",
+          "slug": "_03设计英雄区和栏目导航"
+        },
+        {
+          "level": 2,
+          "title": "04设计人脸签到页面",
+          "slug": "_04设计人脸签到页面"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "设计首页的英雄区和栏目导航",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/04%E8%AE%BE%E8%AE%A1%E9%A6%96%E9%A1%B5%E7%9A%84%E8%8B%B1%E9%9B%84%E5%8C%BA%E5%92%8C%E6%A0%8F%E7%9B%AE%E5%AF%BC%E8%88%AA.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/04设计首页的英雄区和栏目导航.md",
+      "key": "v-509137a9",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/04%E8%AE%BE%E8%AE%A1%E9%A6%96%E9%A1%B5%E7%9A%84%E8%8B%B1%E9%9B%84%E5%8C%BA%E5%92%8C%E6%A0%8F%E7%9B%AE%E5%AF%BC%E8%88%AA.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)设计英雄区的焦点图",
+          "slug": "_01-设计英雄区的焦点图"
+        },
+        {
+          "level": 2,
+          "title": "02)设计通知栏",
+          "slug": "_02-设计通知栏"
+        },
+        {
+          "level": 2,
+          "title": "03)创建栏目导航",
+          "slug": "_03-创建栏目导航"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "开通腾讯云对象存储服务",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%BC%80%E9%80%9A%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/03开通腾讯云对象存储服务.md",
+      "key": "v-39f43c6f",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%BC%80%E9%80%9A%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)开通腾讯云对象存储服务",
+          "slug": "_01-开通腾讯云对象存储服务"
+        },
+        {
+          "level": 2,
+          "title": "02)存储静态资源",
+          "slug": "_02-存储静态资源"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "设计人脸签到页面",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/05%E8%AE%BE%E8%AE%A1%E4%BA%BA%E8%84%B8%E7%AD%BE%E5%88%B0%E9%A1%B5%E9%9D%A2.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/05设计人脸签到页面.md",
+      "key": "v-319181bd",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/05%E8%AE%BE%E8%AE%A1%E4%BA%BA%E8%84%B8%E7%AD%BE%E5%88%B0%E9%A1%B5%E9%9D%A2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)如何调用系统相机?",
+          "slug": "_01-如何调用系统相机"
+        },
+        {
+          "level": 2,
+          "title": "02)设计人脸签到页面",
+          "slug": "_02-设计人脸签到页面"
+        },
+        {
+          "level": 2,
+          "title": "03)运行",
+          "slug": "_03-运行"
+        },
+        {
+          "level": 2,
+          "title": "04)wx预览",
+          "slug": "_04-wx预览"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "创建小程序Tab导航",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8FTab%E5%AF%BC%E8%88%AA.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/02创建小程序Tab导航.md",
+      "key": "v-e870afaa",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8FTab%E5%AF%BC%E8%88%AA.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01底部导航",
+          "slug": "_01底部导航"
+        },
+        {
+          "level": 2,
+          "title": "02创建页面",
+          "slug": "_02创建页面"
+        },
+        {
+          "level": 2,
+          "title": "03设置分页导航tabBar属性",
+          "slug": "_03设置分页导航tabbar属性"
+        },
+        {
+          "level": 2,
+          "title": "04登入成功跳转首页",
+          "slug": "_04登入成功跳转首页"
+        }
+      ],
+      "lastUpdated": "12/17/2023, 7:26:29 PM",
+      "lastUpdatedTimestamp": 1702812389000
+    },
+    {
+      "title": "Flex布局",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%89%8D%E7%AB%AF/%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/Flex%E5%B8%83%E5%B1%80.html",
+      "relativePath": "lyp/前端/布局技巧总结/Flex布局.md",
+      "key": "v-58c3be3e",
+      "path": "/lyp/%E5%89%8D%E7%AB%AF/%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/Flex%E5%B8%83%E5%B1%80.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)设置弹性布局容器",
+          "slug": "_01-设置弹性布局容器"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "01小程序登入",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/01%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%85%A5.html",
+      "relativePath": "lyp/发票项目2024-3-1/01微信小程序用户登入/01小程序登入.md",
+      "key": "v-07774ece",
+      "path": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/01%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%85%A5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "用户表结构",
+          "slug": "用户表结构"
+        },
+        {
+          "level": 2,
+          "title": "前端登入方法",
+          "slug": "前端登入方法"
+        }
+      ],
+      "lastUpdated": "3/30/2024, 8:35:16 PM",
+      "lastUpdatedTimestamp": 1711802116000
+    },
+    {
+      "title": "小程序授权设计与实现",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/02%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8E%88%E6%9D%83%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html",
+      "relativePath": "lyp/发票项目2024-3-1/01微信小程序用户登入/02小程序授权设计与实现.md",
+      "key": "v-7d1543cf",
+      "path": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/02%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8E%88%E6%9D%83%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "权限模型",
+          "slug": "权限模型"
+        },
+        {
+          "level": 2,
+          "title": "查询用户权限sql的思路",
+          "slug": "查询用户权限sql的思路"
+        },
+        {
+          "level": 2,
+          "title": "角色对应的权限",
+          "slug": "角色对应的权限"
+        },
+        {
+          "level": 2,
+          "title": "表结构",
+          "slug": "表结构"
+        },
+        {
+          "level": 2,
+          "title": "表数据",
+          "slug": "表数据"
+        }
+      ],
+      "lastUpdated": "4/2/2024, 8:10:43 PM",
+      "lastUpdatedTimestamp": 1712059843000
+    },
+    {
+      "title": "06)实现签到自拍功能",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/06%E5%AE%9E%E7%8E%B0%E7%AD%BE%E5%88%B0%E8%87%AA%E6%8B%8D%E5%8A%9F%E8%83%BD.html",
+      "relativePath": "lyp/刷脸项目/06阶段-人脸考勤签到基础篇/06实现签到自拍功能.md",
+      "key": "v-05ce7b04",
+      "path": "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/06%E5%AE%9E%E7%8E%B0%E7%AD%BE%E5%88%B0%E8%87%AA%E6%8B%8D%E5%8A%9F%E8%83%BD.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)拍照流程",
+          "slug": "_01-拍照流程"
+        },
+        {
+          "level": 2,
+          "title": "02)跳转到签到页面",
+          "slug": "_02-跳转到签到页面"
+        },
+        {
+          "level": 2,
+          "title": "03)实现拍照和重拍功能",
+          "slug": "_03-实现拍照和重拍功能"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:55:56 PM",
+      "lastUpdatedTimestamp": 1704099356000
+    },
+    {
+      "title": "02发票扫描检验",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/02%E5%8F%91%E7%A5%A8%E6%89%AB%E7%A0%81/02%E5%8F%91%E7%A5%A8%E6%89%AB%E6%8F%8F%E6%A3%80%E9%AA%8C.html",
+      "relativePath": "lyp/发票项目2024-3-1/02发票扫码/02发票扫描检验.md",
+      "key": "v-49dcd929",
+      "path": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/02%E5%8F%91%E7%A5%A8%E6%89%AB%E7%A0%81/02%E5%8F%91%E7%A5%A8%E6%89%AB%E6%8F%8F%E6%A3%80%E9%AA%8C.html",
+      "lastUpdated": "4/5/2024, 5:00:16 PM",
+      "lastUpdatedTimestamp": 1712307616000
+    },
+    {
+      "title": "01团队logo设计",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/ui%E8%AE%BE%E8%AE%A1/01%E5%9B%A2%E9%98%9Flogo%E8%AE%BE%E8%AE%A1.html",
+      "relativePath": "lyp/发票项目2024-3-1/ui设计/01团队logo设计.md",
+      "key": "v-7b1cb969",
+      "path": "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/ui%E8%AE%BE%E8%AE%A1/01%E5%9B%A2%E9%98%9Flogo%E8%AE%BE%E8%AE%A1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "参考图片",
+          "slug": "参考图片"
+        },
+        {
+          "level": 2,
+          "title": "自己设计",
+          "slug": "自己设计"
+        },
+        {
+          "level": 2,
+          "title": "导出自己ui",
+          "slug": "导出自己ui"
+        },
+        {
+          "level": 2,
+          "title": "项目中应用",
+          "slug": "项目中应用"
+        },
+        {
+          "level": 2,
+          "title": "使用效果、",
+          "slug": "使用效果、"
+        }
+      ],
+      "lastUpdated": "4/5/2024, 5:00:16 PM",
+      "lastUpdatedTimestamp": 1712307616000
+    },
+    {
+      "title": "SparkHA集群部署",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/02SparkHA%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.html",
+      "relativePath": "lyp/大数据/02spark/02SparkHA集群部署.md",
+      "key": "v-544aa5f6",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/02SparkHA%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)配置zoo.cfg文件",
+          "slug": "_01-配置zoo-cfg文件"
+        },
+        {
+          "level": 2,
+          "title": "02修改spark的spark-env.sh文件",
+          "slug": "_02修改spark的spark-env-sh文件"
+        },
+        {
+          "level": 2,
+          "title": "03)分发文件",
+          "slug": "_03-分发文件"
+        },
+        {
+          "level": 2,
+          "title": "04)启动高可用集群",
+          "slug": "_04-启动高可用集群"
+        },
+        {
+          "level": 3,
+          "title": "启动Zookeeper服务",
+          "slug": "启动zookeeper服务"
+        },
+        {
+          "level": 3,
+          "title": "启动Spark集群",
+          "slug": "启动spark集群"
+        },
+        {
+          "level": 3,
+          "title": "单独启动Master节点",
+          "slug": "单独启动master节点"
+        },
+        {
+          "level": 2,
+          "title": "05)测试Spark HA集群",
+          "slug": "_05-测试spark-ha集群"
+        },
+        {
+          "level": 2,
+          "title": "写脚本群起zookeeper集群",
+          "slug": "写脚本群起zookeeper集群"
+        },
+        {
+          "level": 2,
+          "title": "扩展实验",
+          "slug": "扩展实验"
+        },
+        {
+          "level": 3,
+          "title": "实验一",
+          "slug": "实验一"
+        },
+        {
+          "level": 2,
+          "title": "报错",
+          "slug": "报错"
+        },
+        {
+          "level": 3,
+          "title": "问题一",
+          "slug": "问题一"
+        }
+      ],
+      "lastUpdated": "10/28/2023, 9:59:54 PM",
+      "lastUpdatedTimestamp": 1698501594000
+    },
+    {
+      "title": "Spark集群安装与部署",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/01Spark%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2.html",
+      "relativePath": "lyp/大数据/02spark/01Spark集群安装与部署.md",
+      "key": "v-1810928e",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/01Spark%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1)下载spark安装包",
+          "slug": "_1-下载spark安装包"
+        },
+        {
+          "level": 2,
+          "title": "2)解压Spark安装包",
+          "slug": "_2-解压spark安装包"
+        },
+        {
+          "level": 2,
+          "title": "03)修改Spark配置文件",
+          "slug": "_03-修改spark配置文件"
+        },
+        {
+          "level": 3,
+          "title": "第一步",
+          "slug": "第一步"
+        },
+        {
+          "level": 3,
+          "title": "第二步:配置爸爸",
+          "slug": "第二步-配置爸爸"
+        },
+        {
+          "level": 2,
+          "title": "04)配置奴隶slaves文件",
+          "slug": "_04-配置奴隶slaves文件"
+        },
+        {
+          "level": 2,
+          "title": "5)分发文件",
+          "slug": "_5-分发文件"
+        },
+        {
+          "level": 3,
+          "title": "第一步:分发奴隶配置文件",
+          "slug": "第一步-分发奴隶配置文件"
+        },
+        {
+          "level": 3,
+          "title": "第二步:分发spark的配置文件",
+          "slug": "第二步-分发spark的配置文件"
+        },
+        {
+          "level": 2,
+          "title": "6)启动spark集群",
+          "slug": "_6-启动spark集群"
+        },
+        {
+          "level": 3,
+          "title": "验证",
+          "slug": "验证"
+        },
+        {
+          "level": 2,
+          "title": "7)spark管理页面访问",
+          "slug": "_7-spark管理页面访问"
+        }
+      ],
+      "lastUpdated": "10/28/2023, 9:59:54 PM",
+      "lastUpdatedTimestamp": 1698501594000
+    },
+    {
+      "title": "体验第一个Spark程序",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/03%E4%BD%93%E9%AA%8C%E7%AC%AC%E4%B8%80%E4%B8%AASpark%E7%A8%8B%E5%BA%8F.html",
+      "relativePath": "lyp/大数据/02spark/03体验第一个Spark程序.md",
+      "key": "v-f7f3ed14",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/03%E4%BD%93%E9%AA%8C%E7%AC%AC%E4%B8%80%E4%B8%AASpark%E7%A8%8B%E5%BA%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "进入spark目录",
+          "slug": "进入spark目录"
+        },
+        {
+          "level": 2,
+          "title": "输出结果",
+          "slug": "输出结果"
+        },
+        {
+          "level": 2,
+          "title": "管理界面",
+          "slug": "管理界面"
+        }
+      ],
+      "lastUpdated": "10/29/2023, 10:39:51 PM",
+      "lastUpdatedTimestamp": 1698590391000
+    },
+    {
+      "title": "apache hadoop【官方】",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/01hadoop%E9%A6%96%E9%A1%B5.html",
+      "relativePath": "lyp/大数据/hadoop基本概念/hadoop官网资料/01hadoop首页.md",
+      "key": "v-70198e66",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/01hadoop%E9%A6%96%E9%A1%B5.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "what is hadoop ？【简介】",
+          "slug": "what-is-hadoop-【简介】"
+        },
+        {
+          "level": 2,
+          "title": "Modules【模块】",
+          "slug": "modules【模块】"
+        },
+        {
+          "level": 2,
+          "title": "Who Uses Hadoop?",
+          "slug": "who-uses-hadoop"
+        },
+        {
+          "level": 2,
+          "title": "Related projects【相关项目】",
+          "slug": "related-projects【相关项目】"
+        }
+      ],
+      "lastUpdated": "5/10/2024, 9:21:43 PM",
+      "lastUpdatedTimestamp": 1715347303000
+    },
+    {
+      "title": "Latest news【最新消息】",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/02%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF.html",
+      "relativePath": "lyp/大数据/hadoop基本概念/hadoop官网资料/02最新消息.md",
+      "key": "v-c052c256",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/02%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2024 Mar 17【2024年3月17日】",
+          "slug": "_2024-mar-17【2024年3月17日】"
+        },
+        {
+          "level": 2,
+          "title": "2023 Jun 23【2023年6月23日】",
+          "slug": "_2023-jun-23【2023年6月23日】"
+        },
+        {
+          "level": 3,
+          "title": "SBOM artifacts",
+          "slug": "sbom-artifacts"
+        },
+        {
+          "level": 3,
+          "title": "HDFS RBF: RDBMS based token storage support",
+          "slug": "hdfs-rbf-rdbms-based-token-storage-support"
+        },
+        {
+          "level": 3,
+          "title": "New File System APIs",
+          "slug": "new-file-system-apis"
+        },
+        {
+          "level": 2,
+          "title": "2023 Mar 22【2023年3月22日】",
+          "slug": "_2023-mar-22【2023年3月22日】"
+        },
+        {
+          "level": 3,
+          "title": "Azure ABFS: Critical Stream Prefetch Fix",
+          "slug": "azure-abfs-critical-stream-prefetch-fix"
+        },
+        {
+          "level": 2,
+          "title": "2022 Aug 8【2022年8月8日】",
+          "slug": "_2022-aug-8【2022年8月8日】"
+        },
+        {
+          "level": 2,
+          "title": "2022 Jul 22【2022年7月22日】",
+          "slug": "_2022-jul-22【2022年7月22日】"
+        }
+      ],
+      "lastUpdated": "5/10/2024, 9:21:43 PM",
+      "lastUpdatedTimestamp": 1715347303000
+    },
+    {
+      "title": "MapReduce是什么",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/01MapReduce%E6%98%AF%E4%BB%80%E4%B9%88.html",
+      "relativePath": "lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.md",
+      "key": "v-72f37bc0",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/01MapReduce%E6%98%AF%E4%BB%80%E4%B9%88.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)提出问题",
+          "slug": "_01-提出问题"
+        },
+        {
+          "level": 2,
+          "title": "02)MapReduce简单概述",
+          "slug": "_02-mapreduce简单概述"
+        },
+        {
+          "level": 2,
+          "title": "03)MapReduce运算过程",
+          "slug": "_03-mapreduce运算过程"
+        },
+        {
+          "level": 2,
+          "title": "04)MapReduce运算原理",
+          "slug": "_04-mapreduce运算原理"
+        },
+        {
+          "level": 2,
+          "title": "05)编程业务思路",
+          "slug": "_05-编程业务思路"
+        }
+      ],
+      "lastUpdated": "4/27/2024, 8:43:41 PM",
+      "lastUpdatedTimestamp": 1714221821000
+    },
+    {
+      "title": "WordCount经典案例",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/02WorldCount%E6%A1%88%E4%BE%8B.html",
+      "relativePath": "lyp/大数据/hadoop基本概念/阶段一/02WorldCount案例.md",
+      "key": "v-543125e4",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/02WorldCount%E6%A1%88%E4%BE%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Step1)数据的准备工作",
+          "slug": "step1-数据的准备工作"
+        },
+        {
+          "level": 2,
+          "title": "Step2)Mapper",
+          "slug": "step2-mapper"
+        }
+      ],
+      "lastUpdated": "5/2/2024, 2:49:48 PM",
+      "lastUpdatedTimestamp": 1714632588000
+    },
+    {
+      "title": "scala简介",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/01scala%E7%AE%80%E4%BB%8B.html",
+      "relativePath": "lyp/大数据/scala语言基础/01scala简介.md",
+      "key": "v-685352fc",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/01scala%E7%AE%80%E4%BB%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)基本数据类型",
+          "slug": "_01-基本数据类型"
+        }
+      ],
+      "lastUpdated": "5/12/2024, 8:15:44 PM",
+      "lastUpdatedTimestamp": 1715516144000
+    },
+    {
+      "title": "Appid怎么使用",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/02Appid%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8.html",
+      "relativePath": "lyp/小程序/微信小程序/02Appid怎么使用.md",
+      "key": "v-96644d5c",
+      "path": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/02Appid%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)不使用Appid去开发",
+          "slug": "_01-不使用appid去开发"
+        },
+        {
+          "level": 2,
+          "title": "02)使用Appid去开发",
+          "slug": "_02-使用appid去开发"
+        }
+      ],
+      "lastUpdated": "9/16/2023, 9:23:22 PM",
+      "lastUpdatedTimestamp": 1694870602000
+    },
+    {
+      "title": "01什么是小程序",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/01%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%A8%8B%E5%BA%8F.html",
+      "relativePath": "lyp/小程序/微信小程序/01什么是小程序.md",
+      "key": "v-11c2e4e8",
+      "path": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/01%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%A8%8B%E5%BA%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)小程序后台",
+          "slug": "_01-小程序后台"
+        },
+        {
+          "level": 2,
+          "title": "02)小程序的基本信息准备",
+          "slug": "_02-小程序的基本信息准备"
+        },
+        {
+          "level": 2,
+          "title": "03)Appid信息",
+          "slug": "_03-appid信息"
+        },
+        {
+          "level": 2,
+          "title": "04)添加开发者",
+          "slug": "_04-添加开发者"
+        },
+        {
+          "level": 2,
+          "title": "05)新建项目",
+          "slug": "_05-新建项目"
+        },
+        {
+          "level": 2,
+          "title": "06)上传小程序代码",
+          "slug": "_06-上传小程序代码"
+        },
+        {
+          "level": 2,
+          "title": "07)查看上传的版本",
+          "slug": "_07-查看上传的版本"
+        },
+        {
+          "level": 2,
+          "title": "08)提交审核",
+          "slug": "_08-提交审核"
+        },
+        {
+          "level": 2,
+          "title": "09)审核通过与发布",
+          "slug": "_09-审核通过与发布"
+        }
+      ],
+      "lastUpdated": "9/16/2023, 9:23:22 PM",
+      "lastUpdatedTimestamp": 1694870602000
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/kafka/01Kafka%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%B5%8B%E8%AF%95.html",
+      "relativePath": "lyp/大数据/kafka/01Kafka集群部署与测试.md",
+      "key": "v-eb4feb88",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/kafka/01Kafka%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%B5%8B%E8%AF%95.html",
+      "lastUpdated": "10/28/2023, 9:59:54 PM",
+      "lastUpdatedTimestamp": 1698501594000
+    },
+    {
+      "title": "Zookeeper分布式hadoop集群部署",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/zookeeper/01Zookeeper%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.html",
+      "relativePath": "lyp/大数据/zookeeper/01Zookeeper分布式集群部署.md",
+      "key": "v-48fb02ec",
+      "path": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/zookeeper/01Zookeeper%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1)下载安装包",
+          "slug": "_1-下载安装包"
+        },
+        {
+          "level": 2,
+          "title": "2)配置环境变量",
+          "slug": "_2-配置环境变量"
+        },
+        {
+          "level": 2,
+          "title": "3)解压Zookeeper安装包",
+          "slug": "_3-解压zookeeper安装包"
+        },
+        {
+          "level": 2,
+          "title": "4)Zookeeper相关配置",
+          "slug": "_4-zookeeper相关配置"
+        },
+        {
+          "level": 3,
+          "title": "第一步：",
+          "slug": "第一步"
+        },
+        {
+          "level": 3,
+          "title": "第二步：",
+          "slug": "第二步"
+        },
+        {
+          "level": 3,
+          "title": "第三步：",
+          "slug": "第三步"
+        },
+        {
+          "level": 2,
+          "title": "5)分发Zookeeper相关配置文件到其他服务器",
+          "slug": "_5-分发zookeeper相关配置文件到其他服务器"
+        },
+        {
+          "level": 3,
+          "title": "第一步：",
+          "slug": "第一步-2"
+        },
+        {
+          "level": 3,
+          "title": "第二步：",
+          "slug": "第二步-2"
+        },
+        {
+          "level": 3,
+          "title": "第三步：",
+          "slug": "第三步-2"
+        },
+        {
+          "level": 2,
+          "title": "6)Zookeeper服务的启动",
+          "slug": "_6-zookeeper服务的启动"
+        },
+        {
+          "level": 3,
+          "title": "查看状态",
+          "slug": "查看状态"
+        },
+        {
+          "level": 2,
+          "title": "7)关闭zookeeper服务",
+          "slug": "_7-关闭zookeeper服务"
+        }
+      ],
+      "lastUpdated": "10/28/2023, 9:59:54 PM",
+      "lastUpdatedTimestamp": 1698501594000
+    },
+    {
+      "title": "创建java项目",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/01%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE.html",
+      "relativePath": "lyp/影视项目/01创建工程/01创建java项目.md",
+      "key": "v-fe59c9b8",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/01%E5%88%9B%E5%BB%BAjava%E9%A1%B9%E7%9B%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建父工程",
+          "slug": "创建父工程"
+        },
+        {
+          "level": 2,
+          "title": "创建子工程",
+          "slug": "创建子工程"
+        },
+        {
+          "level": 2,
+          "title": "验证",
+          "slug": "验证"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "编写查询的分页接口",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/04%E7%BC%96%E5%86%99%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%88%86%E9%A1%B5%E6%8E%A5%E5%8F%A3.html",
+      "relativePath": "lyp/影视项目/01创建工程/04编写查询的分页接口.md",
+      "key": "v-91489a78",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/04%E7%BC%96%E5%86%99%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%88%86%E9%A1%B5%E6%8E%A5%E5%8F%A3.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "引入依赖",
+          "slug": "引入依赖"
+        },
+        {
+          "level": 2,
+          "title": "编写dao层",
+          "slug": "编写dao层"
+        },
+        {
+          "level": 2,
+          "title": "编写service层",
+          "slug": "编写service层"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "WXapplet文件的作用",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/03WXapplet%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%9C%E7%94%A8.html",
+      "relativePath": "lyp/小程序/微信小程序/03WXapplet文件的作用.md",
+      "key": "v-1c022aad",
+      "path": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/03WXapplet%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%9C%E7%94%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "初始化项目文件",
+          "slug": "初始化项目文件"
+        },
+        {
+          "level": 2,
+          "title": "新建目录规则",
+          "slug": "新建目录规则"
+        },
+        {
+          "level": 2,
+          "title": "怎么新建page",
+          "slug": "怎么新建page"
+        },
+        {
+          "level": 2,
+          "title": "*app.js文件",
+          "slug": "app-js文件"
+        },
+        {
+          "level": 2,
+          "title": "app.js的pages路径配置",
+          "slug": "app-js的pages路径配置"
+        },
+        {
+          "level": 2,
+          "title": "app.js的window配置",
+          "slug": "app-js的window配置"
+        },
+        {
+          "level": 2,
+          "title": "page的json文件单独配置样式",
+          "slug": "page的json文件单独配置样式"
+        }
+      ],
+      "lastUpdated": "9/16/2023, 9:23:22 PM",
+      "lastUpdatedTimestamp": 1694870602000
+    },
+    {
+      "title": "mybatis工具使用",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/02%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8mybatis%E7%BC%96%E5%86%99%E6%8E%A5%E5%8F%A3.html",
+      "relativePath": "lyp/影视项目/01创建工程/02工具使用mybatis编写接口.md",
+      "key": "v-3e92e798",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/02%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8mybatis%E7%BC%96%E5%86%99%E6%8E%A5%E5%8F%A3.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "连接数据库",
+          "slug": "连接数据库"
+        },
+        {
+          "level": 2,
+          "title": "Free MyBatis Tool",
+          "slug": "free-mybatis-tool"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "编写查询电视剧信息列表",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/03%E7%BC%96%E5%86%99%E6%9F%A5%E8%AF%A2%E7%94%B5%E8%A7%86%E5%89%A7%E4%BF%A1%E6%81%AF%E5%88%97%E8%A1%A8.html",
+      "relativePath": "lyp/影视项目/01创建工程/03编写查询电视剧信息列表.md",
+      "key": "v-37ad9b9e",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/03%E7%BC%96%E5%86%99%E6%9F%A5%E8%AF%A2%E7%94%B5%E8%A7%86%E5%89%A7%E4%BF%A1%E6%81%AF%E5%88%97%E8%A1%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)编写controller层",
+          "slug": "_01-编写controller层"
+        },
+        {
+          "level": 2,
+          "title": "02)编写service层",
+          "slug": "_02-编写service层"
+        },
+        {
+          "level": 2,
+          "title": "03)编写dao层",
+          "slug": "_03-编写dao层"
+        },
+        {
+          "level": 2,
+          "title": "测试结果",
+          "slug": "测试结果"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "将电影列表展示",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/06%E5%B0%86%E7%94%B5%E5%BD%B1%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.html",
+      "relativePath": "lyp/影视项目/01创建工程/06将电影列表展示.md",
+      "key": "v-54eda96a",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/06%E5%B0%86%E7%94%B5%E5%BD%B1%E5%88%97%E8%A1%A8%E5%B1%95%E7%A4%BA.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "无法获取实时数据",
+          "slug": "无法获取实时数据"
+        },
+        {
+          "level": 2,
+          "title": "渲染到视图上",
+          "slug": "渲染到视图上"
+        },
+        {
+          "level": 2,
+          "title": "获取当前位子",
+          "slug": "获取当前位子"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "前端对接接口",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/05%E5%89%8D%E7%AB%AF%E5%AF%B9%E6%8E%A5%E6%8E%A5%E5%8F%A3.html",
+      "relativePath": "lyp/影视项目/01创建工程/05前端对接接口.md",
+      "key": "v-41f089a3",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/01%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B/05%E5%89%8D%E7%AB%AF%E5%AF%B9%E6%8E%A5%E6%8E%A5%E5%8F%A3.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建Store目录",
+          "slug": "创建store目录"
+        },
+        {
+          "level": 2,
+          "title": "挂载外部文件变量",
+          "slug": "挂载外部文件变量"
+        },
+        {
+          "level": 2,
+          "title": "创建system目录",
+          "slug": "创建system目录"
+        },
+        {
+          "level": 2,
+          "title": "做平台的判断",
+          "slug": "做平台的判断"
+        },
+        {
+          "level": 2,
+          "title": "修改main.vue代码",
+          "slug": "修改main-vue代码"
+        },
+        {
+          "level": 2,
+          "title": "测试是否为iphoneX",
+          "slug": "测试是否为iphonex"
+        },
+        {
+          "level": 2,
+          "title": "设置请求地址",
+          "slug": "设置请求地址"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "时间格式的处理",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/bug%E9%9B%86%E5%90%88/02%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%A4%84%E7%90%86.html",
+      "relativePath": "lyp/影视项目/bug集合/02时间格式的处理.md",
+      "key": "v-a6d094a4",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/bug%E9%9B%86%E5%90%88/02%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%A4%84%E7%90%86.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "问题描述",
+          "slug": "问题描述"
+        },
+        {
+          "level": 2,
+          "title": "后端代码改写",
+          "slug": "后端代码改写"
+        }
+      ],
+      "lastUpdated": "1/28/2024, 2:27:34 PM",
+      "lastUpdatedTimestamp": 1706423254000
+    },
+    {
+      "title": "最近搜索的实现",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/02%E5%89%8D%E7%AB%AF%E6%90%9C%E7%B4%A2%E7%BB%84%E4%BB%B6/01%E6%9C%80%E8%BF%91%E6%90%9C%E7%B4%A2%E7%9A%84%E5%AE%9E%E7%8E%B0.html",
+      "relativePath": "lyp/影视项目/02前端搜索组件/01最近搜索的实现.md",
+      "key": "v-72d1192c",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/02%E5%89%8D%E7%AB%AF%E6%90%9C%E7%B4%A2%E7%BB%84%E4%BB%B6/01%E6%9C%80%E8%BF%91%E6%90%9C%E7%B4%A2%E7%9A%84%E5%AE%9E%E7%8E%B0.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)封装组件",
+          "slug": "_01-封装组件"
+        },
+        {
+          "level": 2,
+          "title": "03)phonex的兼容性问题",
+          "slug": "_03-phonex的兼容性问题"
+        },
+        {
+          "level": 2,
+          "title": "04)点击搜索条时显示",
+          "slug": "_04-点击搜索条时显示"
+        },
+        {
+          "level": 2,
+          "title": "05)点击是否显示测试组件",
+          "slug": "_05-点击是否显示测试组件"
+        },
+        {
+          "level": 2,
+          "title": "06)点击关闭搜索组件",
+          "slug": "_06-点击关闭搜索组件"
+        },
+        {
+          "level": 2,
+          "title": "07)自动获取焦点",
+          "slug": "_07-自动获取焦点"
+        },
+        {
+          "level": 2,
+          "title": "08)实现点击收受按钮功能",
+          "slug": "_08-实现点击收受按钮功能"
+        },
+        {
+          "level": 2,
+          "title": "09)实现点击搜索按钮",
+          "slug": "_09-实现点击搜索按钮"
+        },
+        {
+          "level": 2,
+          "title": "10)搜索数组渲染到视图上",
+          "slug": "_10-搜索数组渲染到视图上"
+        },
+        {
+          "level": 2,
+          "title": "11)设置本地保存数组字符串",
+          "slug": "_11-设置本地保存数组字符串"
+        },
+        {
+          "level": 2,
+          "title": "12)点击垃圾图标清楚历史搜索",
+          "slug": "_12-点击垃圾图标清楚历史搜索"
+        },
+        {
+          "level": 2,
+          "title": "重点总结点",
+          "slug": "重点总结点"
+        },
+        {
+          "level": 2,
+          "title": "创建错误",
+          "slug": "创建错误"
+        },
+        {
+          "level": 2,
+          "title": "bug问题",
+          "slug": "bug问题"
+        }
+      ],
+      "lastUpdated": "1/13/2024, 10:24:20 AM",
+      "lastUpdatedTimestamp": 1705112660000
+    },
+    {
+      "title": "影视搜索的页面",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/02%E5%89%8D%E7%AB%AF%E6%90%9C%E7%B4%A2%E7%BB%84%E4%BB%B6/02%E6%90%9C%E7%B4%A2%E7%9A%84%E9%A1%B5%E9%9D%A2.html",
+      "relativePath": "lyp/影视项目/02前端搜索组件/02搜索的页面.md",
+      "key": "v-59b7a2a6",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/02%E5%89%8D%E7%AB%AF%E6%90%9C%E7%B4%A2%E7%BB%84%E4%BB%B6/02%E6%90%9C%E7%B4%A2%E7%9A%84%E9%A1%B5%E9%9D%A2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)配置页面的路径",
+          "slug": "_01-配置页面的路径"
+        },
+        {
+          "level": 2,
+          "title": "02)创建pages页面",
+          "slug": "_02-创建pages页面"
+        },
+        {
+          "level": 2,
+          "title": "03)实现点击按钮跳转",
+          "slug": "_03-实现点击按钮跳转"
+        },
+        {
+          "level": 2,
+          "title": "04)最近关键值字搜索",
+          "slug": "_04-最近关键值字搜索"
+        },
+        {
+          "level": 2,
+          "title": "05)搜索结果页面接受参数",
+          "slug": "_05-搜索结果页面接受参数"
+        },
+        {
+          "level": 2,
+          "title": "06)搜索页面的搜索组件",
+          "slug": "_06-搜索页面的搜索组件"
+        },
+        {
+          "level": 2,
+          "title": "07)首页被多次覆盖问题",
+          "slug": "_07-首页被多次覆盖问题"
+        },
+        {
+          "level": 2,
+          "title": "08)渲染搜索影视信息展示",
+          "slug": "_08-渲染搜索影视信息展示"
+        },
+        {
+          "level": 2,
+          "title": "wx开发工具技巧",
+          "slug": "wx开发工具技巧"
+        }
+      ],
+      "lastUpdated": "1/28/2024, 2:27:34 PM",
+      "lastUpdatedTimestamp": 1706423254000
+    },
+    {
+      "title": "mybatis的xml有错",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/bug%E9%9B%86%E5%90%88/01mybatis%E7%9A%84xml%E6%9C%89%E9%94%99.html",
+      "relativePath": "lyp/影视项目/bug集合/01mybatis的xml有错.md",
+      "key": "v-72f72a6b",
+      "path": "/lyp/%E5%BD%B1%E8%A7%86%E9%A1%B9%E7%9B%AE/bug%E9%9B%86%E5%90%88/01mybatis%E7%9A%84xml%E6%9C%89%E9%94%99.html",
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "Redis未授权访问漏洞",
+      "frontmatter": {},
+      "regularPath": "/lyp/%E9%BB%91%E5%AE%A2%E4%B9%8B%E8%B7%AF/%E6%BC%8F%E6%B4%9E%E5%AE%9E%E9%AA%8C/01Redis%E6%9C%AA%E6%8E%88%E6%9D%83%E8%AE%BF%E9%97%AE%E6%BC%8F%E6%B4%9E.html",
+      "relativePath": "lyp/黑客之路/漏洞实验/01Redis未授权访问漏洞.md",
+      "key": "v-344159ea",
+      "path": "/lyp/%E9%BB%91%E5%AE%A2%E4%B9%8B%E8%B7%AF/%E6%BC%8F%E6%B4%9E%E5%AE%9E%E9%AA%8C/01Redis%E6%9C%AA%E6%8E%88%E6%9D%83%E8%AE%BF%E9%97%AE%E6%BC%8F%E6%B4%9E.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)实验环境准备",
+          "slug": "_01-实验环境准备"
+        },
+        {
+          "level": 2,
+          "title": "02)编译&安装redis",
+          "slug": "_02-编译-安装redis"
+        },
+        {
+          "level": 2,
+          "title": "02)编译结果",
+          "slug": "_02-编译结果"
+        },
+        {
+          "level": 2,
+          "title": "03)redis开启远程连接",
+          "slug": "_03-redis开启远程连接"
+        },
+        {
+          "level": 2,
+          "title": "04另外一台机子连接redis",
+          "slug": "_04另外一台机子连接redis"
+        },
+        {
+          "level": 2,
+          "title": "05)漏洞利用",
+          "slug": "_05-漏洞利用"
+        },
+        {
+          "level": 2,
+          "title": "06)远程登入目标主机",
+          "slug": "_06-远程登入目标主机"
+        }
+      ],
+      "lastUpdated": "1/28/2024, 2:27:34 PM",
+      "lastUpdatedTimestamp": 1706423254000
+    },
+    {
+      "title": "ip地址案例",
+      "frontmatter": {},
+      "regularPath": "/network/network02.html",
+      "relativePath": "network/network02.md",
+      "key": "v-1d052e0e",
+      "path": "/network/network02.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "案例1：",
+          "slug": "案例1"
+        },
+        {
+          "level": 2,
+          "title": "案例2：",
+          "slug": "案例2"
+        }
+      ],
+      "lastUpdated": "4/21/2024, 3:13:14 PM",
+      "lastUpdatedTimestamp": 1713683594000
+    },
+    {
+      "title": "密码学",
+      "frontmatter": {},
+      "regularPath": "/network/https/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAhttps%E5%8E%9F%E7%90%86/02%E5%AF%86%E7%A0%81%E5%AD%A6.html",
+      "relativePath": "network/https/深入浅出https原理/02密码学.md",
+      "key": "v-2534f108",
+      "path": "/network/https/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAhttps%E5%8E%9F%E7%90%86/02%E5%AF%86%E7%A0%81%E5%AD%A6.html",
+      "lastUpdated": "5/10/2024, 8:25:48 PM",
+      "lastUpdatedTimestamp": 1715343948000
+    },
+    {
+      "title": "eNSP的安装",
+      "frontmatter": {},
+      "regularPath": "/network/%E5%8D%8E%E4%B8%BA/HCIA%E8%AE%A4%E8%AF%81/02eNSP%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "relativePath": "network/华为/HCIA认证/02eNSP的安装.md",
+      "key": "v-0d0466e0",
+      "path": "/network/%E5%8D%8E%E4%B8%BA/HCIA%E8%AE%A4%E8%AF%81/02eNSP%E7%9A%84%E5%AE%89%E8%A3%85.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "环境",
+          "slug": "环境"
+        },
+        {
+          "level": 2,
+          "title": "开始安装",
+          "slug": "开始安装"
+        },
+        {
+          "level": 2,
+          "title": "win11安装的警告",
+          "slug": "win11安装的警告"
+        }
+      ],
+      "lastUpdated": "4/21/2024, 7:25:22 PM",
+      "lastUpdatedTimestamp": 1713698722000
     },
     {
       "title": "ip地址是怎么划分的呢",
       "frontmatter": {},
       "regularPath": "/network/network01.html",
       "relativePath": "network/network01.md",
-      "key": "v-40d90282",
+      "key": "v-931100ce",
       "path": "/network/network01.html",
       "headers": [
         {
@@ -863,15 +5417,319 @@ export const siteData = {
           "slug": "_05-私有地址怎么分"
         }
       ],
-      "lastUpdated": "7/28/2023, 8:49:57 AM",
+      "lastUpdated": "7/29/2023, 12:49:57 AM",
       "lastUpdatedTimestamp": 1690562997000
+    },
+    {
+      "title": "华为认证体系介绍",
+      "frontmatter": {},
+      "regularPath": "/network/%E5%8D%8E%E4%B8%BA/HCIA%E8%AE%A4%E8%AF%81/01%E5%8D%8E%E4%B8%BA%E8%AE%A4%E8%AF%81%E4%BD%93%E7%B3%BB%E4%BB%8B%E7%BB%8D.html",
+      "relativePath": "network/华为/HCIA认证/01华为认证体系介绍.md",
+      "key": "v-fb516190",
+      "path": "/network/%E5%8D%8E%E4%B8%BA/HCIA%E8%AE%A4%E8%AF%81/01%E5%8D%8E%E4%B8%BA%E8%AE%A4%E8%AF%81%E4%BD%93%E7%B3%BB%E4%BB%8B%E7%BB%8D.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "信息技术IT",
+          "slug": "信息技术it"
+        },
+        {
+          "level": 2,
+          "title": "通信技术CT",
+          "slug": "通信技术ct"
+        }
+      ],
+      "lastUpdated": "4/21/2024, 3:13:14 PM",
+      "lastUpdatedTimestamp": 1713683594000
+    },
+    {
+      "title": "微积分的启蒙",
+      "frontmatter": {},
+      "regularPath": "/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/02%E4%B8%AD%E7%AD%89%E6%95%B0%E5%AD%A6%E6%80%9D%E6%83%B3/%E5%BE%AE%E7%A7%AF%E5%88%86%E7%9A%84%E5%90%AF%E8%92%99.html",
+      "relativePath": "基础科学/数学基础/02中等数学思想/微积分的启蒙.md",
+      "key": "v-26790094",
+      "path": "/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/02%E4%B8%AD%E7%AD%89%E6%95%B0%E5%AD%A6%E6%80%9D%E6%83%B3/%E5%BE%AE%E7%A7%AF%E5%88%86%E7%9A%84%E5%90%AF%E8%92%99.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "微分与积分是什么？",
+          "slug": "微分与积分是什么"
+        },
+        {
+          "level": 2,
+          "title": "什么是函数？",
+          "slug": "什么是函数"
+        },
+        {
+          "level": 2,
+          "title": "我家的电表",
+          "slug": "我家的电表"
+        },
+        {
+          "level": 2,
+          "title": "莱布尼茨的楼梯",
+          "slug": "莱布尼茨的楼梯"
+        }
+      ],
+      "lastUpdated": "5/19/2024, 12:08:35 PM",
+      "lastUpdatedTimestamp": 1716091715000
+    },
+    {
+      "title": "巧记ps快捷键",
+      "frontmatter": {},
+      "regularPath": "/%E7%BE%8E%E5%B7%A5/ps/01ps%E5%9F%BA%E7%A1%80/01%E5%B7%A7%E8%AE%B0ps%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+      "relativePath": "美工/ps/01ps基础/01巧记ps快捷键.md",
+      "key": "v-10b939d9",
+      "path": "/%E7%BE%8E%E5%B7%A5/ps/01ps%E5%9F%BA%E7%A1%80/01%E5%B7%A7%E8%AE%B0ps%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "常用快捷键",
+          "slug": "常用快捷键"
+        },
+        {
+          "level": 2,
+          "title": "工具快捷键",
+          "slug": "工具快捷键"
+        },
+        {
+          "level": 2,
+          "title": "移动工具【V】",
+          "slug": "移动工具【v】"
+        },
+        {
+          "level": 2,
+          "title": "套索工具【L】",
+          "slug": "套索工具【l】"
+        },
+        {
+          "level": 2,
+          "title": "快速选择工具【W】",
+          "slug": "快速选择工具【w】"
+        },
+        {
+          "level": 2,
+          "title": "裁剪工具【C】",
+          "slug": "裁剪工具【c】"
+        },
+        {
+          "level": 2,
+          "title": "吸管工具【i】",
+          "slug": "吸管工具【i】"
+        },
+        {
+          "level": 2,
+          "title": "修补工具【J】",
+          "slug": "修补工具【j】"
+        },
+        {
+          "level": 2,
+          "title": "画笔工具【B】",
+          "slug": "画笔工具【b】"
+        },
+        {
+          "level": 2,
+          "title": "橡皮擦工具【E】",
+          "slug": "橡皮擦工具【e】"
+        },
+        {
+          "level": 2,
+          "title": "渐变工具【G】",
+          "slug": "渐变工具【g】"
+        },
+        {
+          "level": 2,
+          "title": "钢笔工具【P】",
+          "slug": "钢笔工具【p】"
+        },
+        {
+          "level": 2,
+          "title": "文字工具【T】",
+          "slug": "文字工具【t】"
+        },
+        {
+          "level": 2,
+          "title": "形状工具【U】",
+          "slug": "形状工具【u】"
+        },
+        {
+          "level": 2,
+          "title": "总结",
+          "slug": "总结"
+        }
+      ],
+      "lastUpdated": "4/2/2024, 8:10:43 PM",
+      "lastUpdatedTimestamp": 1712059843000
+    },
+    {
+      "title": "Home",
+      "frontmatter": {
+        "home": true,
+        "heroImage": "logo.svg",
+        "heroText": "一个分享各类资源的地方",
+        "tagline": "无",
+        "actionText": "查看资源 →",
+        "actionLink": "/软件资源/软件资源",
+        "features": [
+          {
+            "title": "人生苦短",
+            "details": "洗手的时候，日子从水盆里过去；吃饭的时候，日子从碗里过去。八千的日子已经从我手中溜去,我不禁头涔涔而泪潸潸了！"
+          },
+          {
+            "title": "黑科技软件",
+            "details": "主要分享一些实用性的工具类、影视类、音乐类等等各种软件，均由互联网大佬提供。"
+          },
+          {
+            "title": "教程资源",
+            "details": "分享各类教程，包括编程、各类证书考试资源等等，本网站所有教程资源均来自互联网，若涉及侵权立马删除！"
+          }
+        ],
+        "footer": "匆匆趣玩 | 资料分享大师"
+      },
+      "regularPath": "/private/",
+      "relativePath": "private/README.md",
+      "key": "v-0de535cc",
+      "path": "/private/",
+      "lastUpdated": "9/16/2023, 10:18:56 AM",
+      "lastUpdatedTimestamp": 1694830736000
+    },
+    {
+      "title": "球体体积公式推过程",
+      "frontmatter": {},
+      "regularPath": "/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/02%E4%B8%AD%E7%AD%89%E6%95%B0%E5%AD%A6%E6%80%9D%E6%83%B3/%E7%90%83%E4%BD%93%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E8%BF%87%E7%A8%8B.html",
+      "relativePath": "基础科学/数学基础/02中等数学思想/球体体积公式推过程.md",
+      "key": "v-78ce2c68",
+      "path": "/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/02%E4%B8%AD%E7%AD%89%E6%95%B0%E5%AD%A6%E6%80%9D%E6%83%B3/%E7%90%83%E4%BD%93%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E8%BF%87%E7%A8%8B.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "祖暅原理推导",
+          "slug": "祖暅原理推导"
+        }
+      ],
+      "lastUpdated": "5/18/2024, 8:15:52 PM",
+      "lastUpdatedTimestamp": 1716034552000
+    },
+    {
+      "title": "常见时态",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/02%E8%8B%B1%E8%AF%AD%E7%9A%84%E6%97%B6%E6%80%81.html",
+      "relativePath": "软件资源/02英语的时态.md",
+      "key": "v-17d0af38",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/02%E8%8B%B1%E8%AF%AD%E7%9A%84%E6%97%B6%E6%80%81.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01)现在完成时",
+          "slug": "_01-现在完成时"
+        }
+      ],
+      "lastUpdated": "8/27/2023, 6:14:42 PM",
+      "lastUpdatedTimestamp": 1693131282000
+    },
+    {
+      "title": "英语语法",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "relativePath": "软件资源/English_syntax.md",
+      "key": "v-55042efa",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "名词",
+          "slug": "名词"
+        },
+        {
+          "level": 3,
+          "title": "不可数名词",
+          "slug": "不可数名词"
+        },
+        {
+          "level": 2,
+          "title": "冠词a/an/the",
+          "slug": "冠词a-an-the"
+        },
+        {
+          "level": 2,
+          "title": "定语&状语",
+          "slug": "定语-状语"
+        },
+        {
+          "level": 2,
+          "title": "01)by+xxx用法总结",
+          "slug": "_01-by-xxx用法总结"
+        },
+        {
+          "level": 2,
+          "title": "02)用with还是to?",
+          "slug": "_02-用with还是to"
+        },
+        {
+          "level": 2,
+          "title": "01）When/While引导时间状语从句",
+          "slug": "_01-when-while引导时间状语从句"
+        },
+        {
+          "level": 3,
+          "title": "用while情况",
+          "slug": "用while情况"
+        },
+        {
+          "level": 3,
+          "title": "即可用when/while情况",
+          "slug": "即可用when-while情况"
+        },
+        {
+          "level": 3,
+          "title": "用when情况",
+          "slug": "用when情况"
+        },
+        {
+          "level": 3,
+          "title": "总结when和while",
+          "slug": "总结when和while"
+        },
+        {
+          "level": 3,
+          "title": "练习",
+          "slug": "练习"
+        },
+        {
+          "level": 2,
+          "title": "02）a little/a bit",
+          "slug": "_02-a-little-a-bit"
+        },
+        {
+          "level": 3,
+          "title": "案例",
+          "slug": "案例"
+        },
+        {
+          "level": 3,
+          "title": "练习",
+          "slug": "练习-2"
+        },
+        {
+          "level": 2,
+          "title": "03)4个过",
+          "slug": "_03-4个过"
+        },
+        {
+          "level": 2,
+          "title": "4)作文常用技巧(中学常用)",
+          "slug": "_4-作文常用技巧-中学常用"
+        }
+      ],
+      "lastUpdated": "5/4/2024, 1:37:57 PM",
+      "lastUpdatedTimestamp": 1714801077000
     },
     {
       "title": "开始掌握docsify",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/01docsify.html",
       "relativePath": "软件资源/01docsify.md",
-      "key": "v-557ebcd4",
+      "key": "v-33a63420",
       "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/01docsify.html",
       "headers": [
         {
@@ -975,82 +5833,32 @@ export const siteData = {
           "slug": "multiple-covers-多个封面"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
     },
     {
-      "title": "英语语法",
+      "title": "单词怎么记",
       "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
-      "relativePath": "软件资源/English_syntax.md",
-      "key": "v-63361320",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/English_syntax.html",
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/04%E8%AF%8D%E6%A0%B9%E8%AF%8D%E7%BC%80%E5%90%88%E9%9B%86.html",
+      "relativePath": "软件资源/04词根词缀合集.md",
+      "key": "v-e453794e",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/04%E8%AF%8D%E6%A0%B9%E8%AF%8D%E7%BC%80%E5%90%88%E9%9B%86.html",
       "headers": [
         {
           "level": 2,
-          "title": "名词",
-          "slug": "名词"
-        },
-        {
-          "level": 3,
-          "title": "不可数名词",
-          "slug": "不可数名词"
-        },
-        {
-          "level": 2,
-          "title": "定语&状语",
-          "slug": "定语-状语"
-        },
-        {
-          "level": 2,
-          "title": "01）When/While引导时间状语从句",
-          "slug": "_01-when-while引导时间状语从句"
-        },
-        {
-          "level": 3,
-          "title": "用while情况",
-          "slug": "用while情况"
-        },
-        {
-          "level": 3,
-          "title": "即可用when/while情况",
-          "slug": "即可用when-while情况"
-        },
-        {
-          "level": 3,
-          "title": "用when情况",
-          "slug": "用when情况"
-        },
-        {
-          "level": 3,
-          "title": "练习",
-          "slug": "练习"
-        },
-        {
-          "level": 2,
-          "title": "02）a little/a bit",
-          "slug": "_02-a-little-a-bit"
-        },
-        {
-          "level": 3,
-          "title": "案例",
-          "slug": "案例"
-        },
-        {
-          "level": 3,
-          "title": "练习",
-          "slug": "练习-2"
+          "title": "inspect",
+          "slug": "inspect"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
-      "lastUpdatedTimestamp": 1691249955000
+      "lastUpdated": "12/3/2023, 7:08:04 PM",
+      "lastUpdatedTimestamp": 1701601684000
     },
     {
       "title": "导航栏设置",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/02top%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%AE%BE%E7%BD%AE.html",
       "relativePath": "软件资源/vuepress怎么玩/02top导航栏的设置.md",
-      "key": "v-4dbdaeb8",
+      "key": "v-5bd81004",
       "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/02top%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E8%AE%BE%E7%BD%AE.html",
       "headers": [
         {
@@ -1063,41 +5871,26 @@ export const siteData = {
           "title": "配置样式案例：",
           "slug": "配置样式案例"
         }
-      ]
+      ],
+      "lastUpdated": "8/13/2023, 11:13:57 PM",
+      "lastUpdatedTimestamp": 1691939637000
     },
     {
-      "title": "vuepress标体设置规则",
+      "title": "vuepress的流水线部署",
       "frontmatter": {},
-      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
-      "relativePath": "软件资源/vuepress怎么玩/SetTitle.md",
-      "key": "v-8ba33ae4",
-      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "01）标题级别怎么搞！",
-          "slug": "_01-标题级别怎么搞"
-        },
-        {
-          "level": 2,
-          "title": "02）怎么搞如下效果呢？",
-          "slug": "_02-怎么搞如下效果呢"
-        },
-        {
-          "level": 2,
-          "title": "03）编写代码",
-          "slug": "_03-编写代码"
-        }
-      ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
-      "lastUpdatedTimestamp": 1691249955000
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/03vuepress%E7%9A%84%E6%B5%81%E6%B0%B4%E7%BA%BF%E9%83%A8%E7%BD%B2.html",
+      "relativePath": "软件资源/vuepress怎么玩/03vuepress的流水线部署.md",
+      "key": "v-3caf2777",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/03vuepress%E7%9A%84%E6%B5%81%E6%B0%B4%E7%BA%BF%E9%83%A8%E7%BD%B2.html",
+      "lastUpdated": "1/13/2024, 10:24:20 AM",
+      "lastUpdatedTimestamp": 1705112660000
     },
     {
       "title": "vuepress常用语法",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/Writing_rules.html",
       "relativePath": "软件资源/vuepress怎么玩/Writing_rules.md",
-      "key": "v-021585d8",
+      "key": "v-375ea924",
       "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/Writing_rules.html",
       "headers": [
         {
@@ -1116,15 +5909,391 @@ export const siteData = {
           "slug": "_03-字标粗-字标颜色"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "vuepress标体设置规则",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
+      "relativePath": "软件资源/vuepress怎么玩/SetTitle.md",
+      "key": "v-6595cd30",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/vuepress%E6%80%8E%E4%B9%88%E7%8E%A9/SetTitle.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "01）标题级别怎么搞！",
+          "slug": "_01-标题级别怎么搞"
+        },
+        {
+          "level": 2,
+          "title": "02）怎么搞如下效果呢？",
+          "slug": "_02-怎么搞如下效果呢"
+        },
+        {
+          "level": 2,
+          "title": "03）编写代码",
+          "slug": "_03-编写代码"
+        }
+      ],
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
+      "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "github拉取博客仓库",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/01github%E6%8B%89%E5%8F%96%E5%8D%9A%E5%AE%A2%E4%BB%93%E5%BA%93.html",
+      "relativePath": "软件资源/博客编写/01github拉取博客仓库.md",
+      "key": "v-28530a84",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/01github%E6%8B%89%E5%8F%96%E5%8D%9A%E5%AE%A2%E4%BB%93%E5%BA%93.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1）初始化git",
+          "slug": "_1-初始化git"
+        },
+        {
+          "level": 2,
+          "title": "2）电脑&github配置shh",
+          "slug": "_2-电脑-github配置shh"
+        },
+        {
+          "level": 3,
+          "title": "打开github",
+          "slug": "打开github"
+        },
+        {
+          "level": 3,
+          "title": "clone代码仓库到本地",
+          "slug": "clone代码仓库到本地"
+        },
+        {
+          "level": 2,
+          "title": "3)切换分支",
+          "slug": "_3-切换分支"
+        },
+        {
+          "level": 3,
+          "title": "查看本地分支",
+          "slug": "查看本地分支"
+        },
+        {
+          "level": 3,
+          "title": "远程分支的切换",
+          "slug": "远程分支的切换"
+        },
+        {
+          "level": 2,
+          "title": "总结：",
+          "slug": "总结"
+        }
+      ],
+      "lastUpdated": "8/20/2023, 5:47:55 PM",
+      "lastUpdatedTimestamp": 1692524875000
+    },
+    {
+      "title": "代码怎么运行",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/02%E6%8B%89%E5%8F%96%E4%B8%8B%E6%9D%A5%E7%9A%84%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C.html",
+      "relativePath": "软件资源/博客编写/02拉取下来的代码怎么运行.md",
+      "key": "v-30079b42",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/02%E6%8B%89%E5%8F%96%E4%B8%8B%E6%9D%A5%E7%9A%84%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "打开package文件",
+          "slug": "打开package文件"
+        }
+      ],
+      "lastUpdated": "8/20/2023, 7:46:54 PM",
+      "lastUpdatedTimestamp": 1692532014000
+    },
+    {
+      "title": "自然拼读",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/03%E8%8B%B1%E8%AF%AD%E7%9A%84%E5%8F%91%E9%9F%B3%E8%A7%84%E5%88%99.html",
+      "relativePath": "软件资源/03英语的发音规则.md",
+      "key": "v-42820950",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/03%E8%8B%B1%E8%AF%AD%E7%9A%84%E5%8F%91%E9%9F%B3%E8%A7%84%E5%88%99.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "国际音标",
+          "slug": "国际音标"
+        },
+        {
+          "level": 2,
+          "title": "5个重要的长元音",
+          "slug": "_5个重要的长元音"
+        },
+        {
+          "level": 2,
+          "title": "短元音7个发音",
+          "slug": "短元音7个发音"
+        },
+        {
+          "level": 2,
+          "title": "组合单词的发音",
+          "slug": "组合单词的发音"
+        },
+        {
+          "level": 2,
+          "title": "鼻音3个",
+          "slug": "鼻音3个"
+        },
+        {
+          "level": 2,
+          "title": "半元音2个",
+          "slug": "半元音2个"
+        },
+        {
+          "level": 2,
+          "title": "爆破音6个",
+          "slug": "爆破音6个"
+        },
+        {
+          "level": 2,
+          "title": "y字母发音",
+          "slug": "y字母发音"
+        },
+        {
+          "level": 2,
+          "title": "ch组合发音",
+          "slug": "ch组合发音"
+        }
+      ],
+      "lastUpdated": "9/2/2023, 11:38:23 AM",
+      "lastUpdatedTimestamp": 1693625903000
+    },
+    {
+      "title": "高中数学版本二",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E6%95%B0%E5%AD%A6/%E5%A4%9A%E9%A1%B9%E5%BC%8F.html",
+      "relativePath": "软件资源/数学/多项式.md",
+      "key": "v-456d7bb0",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E6%95%B0%E5%AD%A6/%E5%A4%9A%E9%A1%B9%E5%BC%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "二项式定理",
+          "slug": "二项式定理"
+        }
+      ],
+      "lastUpdated": "10/15/2023, 4:39:41 PM",
+      "lastUpdatedTimestamp": 1697359181000
+    },
+    {
+      "title": "01防火墙命令",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/centos/01%E9%98%B2%E7%81%AB%E5%A2%99%E5%91%BD%E4%BB%A4.html",
+      "relativePath": "运维/centos/01防火墙命令.md",
+      "key": "v-4e78a460",
+      "path": "/%E8%BF%90%E7%BB%B4/centos/01%E9%98%B2%E7%81%AB%E5%A2%99%E5%91%BD%E4%BB%A4.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "开放端口",
+          "slug": "开放端口"
+        },
+        {
+          "level": 2,
+          "title": "重新加载防火墙",
+          "slug": "重新加载防火墙"
+        }
+      ],
+      "lastUpdated": "4/21/2024, 7:43:52 PM",
+      "lastUpdatedTimestamp": 1713699832000
+    },
+    {
+      "title": "1.公式输入",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E6%95%B0%E5%AD%A6/Typora%E6%95%B0%E5%AD%A6%E8%AF%AD%E6%B3%95/%E5%85%A8%E9%9D%A2%E6%95%B4%E7%90%86Typora%E7%9A%84Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95.html",
+      "relativePath": "软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法.md",
+      "key": "v-2a1b6606",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E6%95%B0%E5%AD%A6/Typora%E6%95%B0%E5%AD%A6%E8%AF%AD%E6%B3%95/%E5%85%A8%E9%9D%A2%E6%95%B4%E7%90%86Typora%E7%9A%84Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "行间公式",
+          "slug": "行间公式"
+        },
+        {
+          "level": 2,
+          "title": "行内公式",
+          "slug": "行内公式"
+        },
+        {
+          "level": 2,
+          "title": "常用公式",
+          "slug": "常用公式"
+        },
+        {
+          "level": 3,
+          "title": "上/下标",
+          "slug": "上-下标"
+        }
+      ],
+      "lastUpdated": "10/15/2023, 4:39:41 PM",
+      "lastUpdatedTimestamp": 1697359181000
+    },
+    {
+      "title": "黑客目录",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E9%BB%91%E5%AE%A2%E8%B5%84%E6%96%99/%E9%BB%91%E5%AE%A2%E7%9B%AE%E5%BD%95.html",
+      "relativePath": "软件资源/黑客资料/黑客目录.md",
+      "key": "v-eb64d9e4",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E9%BB%91%E5%AE%A2%E8%B5%84%E6%96%99/%E9%BB%91%E5%AE%A2%E7%9B%AE%E5%BD%95.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.渗透测试",
+          "slug": "_1-渗透测试"
+        },
+        {
+          "level": 2,
+          "title": "2.黑盒测试",
+          "slug": "_2-黑盒测试"
+        },
+        {
+          "level": 2,
+          "title": "3.白盒测试",
+          "slug": "_3-白盒测试"
+        },
+        {
+          "level": 2,
+          "title": "4.社会工程学",
+          "slug": "_4-社会工程学"
+        },
+        {
+          "level": 2,
+          "title": "5.缓冲区溢出",
+          "slug": "_5-缓冲区溢出"
+        },
+        {
+          "level": 2,
+          "title": "6.拒绝服务攻击",
+          "slug": "_6-拒绝服务攻击"
+        },
+        {
+          "level": 2,
+          "title": "7.DDoS攻击",
+          "slug": "_7-ddos攻击"
+        },
+        {
+          "level": 2,
+          "title": "8.XSS攻击",
+          "slug": "_8-xss攻击"
+        },
+        {
+          "level": 2,
+          "title": "9.CSRF攻击",
+          "slug": "_9-csrf攻击"
+        },
+        {
+          "level": 2,
+          "title": "10.SQL注入",
+          "slug": "_10-sql注入"
+        },
+        {
+          "level": 2,
+          "title": "11.漏洞扫描",
+          "slug": "_11-漏洞扫描"
+        },
+        {
+          "level": 2,
+          "title": "12.攻击向量",
+          "slug": "_12-攻击向量"
+        },
+        {
+          "level": 2,
+          "title": "13.弱口令",
+          "slug": "_13-弱口令"
+        },
+        {
+          "level": 2,
+          "title": "14.暴力破解",
+          "slug": "_14-暴力破解"
+        },
+        {
+          "level": 2,
+          "title": "15.防火墙",
+          "slug": "_15-防火墙"
+        },
+        {
+          "level": 2,
+          "title": "16.恶意软件",
+          "slug": "_16-恶意软件"
+        },
+        {
+          "level": 2,
+          "title": "17.漏洞",
+          "slug": "_17-漏洞"
+        },
+        {
+          "level": 2,
+          "title": "18.反向工程",
+          "slug": "_18-反向工程"
+        },
+        {
+          "level": 2,
+          "title": "20.存储型XSS",
+          "slug": "_20-存储型xss"
+        },
+        {
+          "level": 2,
+          "title": "21.蓝队",
+          "slug": "_21-蓝队"
+        },
+        {
+          "level": 2,
+          "title": "22.红队",
+          "slug": "_22-红队"
+        },
+        {
+          "level": 2,
+          "title": "23.木马",
+          "slug": "_23-木马"
+        },
+        {
+          "level": 2,
+          "title": "24.反向Shell",
+          "slug": "_24-反向shell"
+        },
+        {
+          "level": 2,
+          "title": "25.Webshell",
+          "slug": "_25-webshell"
+        },
+        {
+          "level": 2,
+          "title": "26.嗅探",
+          "slug": "_26-嗅探"
+        },
+        {
+          "level": 2,
+          "title": "27.前渗透测试",
+          "slug": "_27-前渗透测试"
+        },
+        {
+          "level": 2,
+          "title": "28.后渗透测试",
+          "slug": "_28-后渗透测试"
+        },
+        {
+          "level": 2,
+          "title": "29.社会工程测试",
+          "slug": "_29-社会工程测试"
+        }
+      ],
+      "lastUpdated": "10/22/2023, 10:54:39 AM",
+      "lastUpdatedTimestamp": 1697943279000
     },
     {
       "title": "30岁以后，一定要懂的《滕王阁序》",
       "frontmatter": {},
       "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
       "relativePath": "软件资源/软件资源.md",
-      "key": "v-04d9f279",
+      "key": "v-c229d15a",
       "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90.html",
       "headers": [
         {
@@ -1133,15 +6302,114 @@ export const siteData = {
           "slug": "懂诗词歌赋"
         }
       ],
-      "lastUpdated": "7/29/2023, 7:51:28 AM",
+      "lastUpdated": "7/29/2023, 11:51:28 PM",
       "lastUpdatedTimestamp": 1690645888000
+    },
+    {
+      "title": "构建自己的镜像",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/01docker%E5%AE%9E%E9%AA%8C%E4%B8%80%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%95%9C%E5%83%8F.html",
+      "relativePath": "运维/windows/docker/01docker实验一构建自己的镜像.md",
+      "key": "v-95c3d91c",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/01docker%E5%AE%9E%E9%AA%8C%E4%B8%80%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E9%95%9C%E5%83%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "springboot程序打包",
+          "slug": "springboot程序打包"
+        },
+        {
+          "level": 2,
+          "title": "启动jar程序",
+          "slug": "启动jar程序"
+        },
+        {
+          "level": 2,
+          "title": "测试",
+          "slug": "测试"
+        },
+        {
+          "level": 2,
+          "title": "将jar打包为镜像",
+          "slug": "将jar打包为镜像"
+        },
+        {
+          "level": 2,
+          "title": "查看构建的镜像",
+          "slug": "查看构建的镜像"
+        },
+        {
+          "level": 2,
+          "title": "运行构建的容器",
+          "slug": "运行构建的容器"
+        },
+        {
+          "level": 2,
+          "title": "浏览器访问是否成功",
+          "slug": "浏览器访问是否成功"
+        },
+        {
+          "level": 2,
+          "title": "停止运行的容器",
+          "slug": "停止运行的容器"
+        },
+        {
+          "level": 2,
+          "title": "将自己的镜像打包",
+          "slug": "将自己的镜像打包"
+        },
+        {
+          "level": 2,
+          "title": "加载本地镜像",
+          "slug": "加载本地镜像"
+        }
+      ],
+      "lastUpdated": "10/5/2023, 5:59:34 PM",
+      "lastUpdatedTimestamp": 1696499974000
+    },
+    {
+      "title": "ang-",
+      "frontmatter": {},
+      "regularPath": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%A0%B9%E8%AF%8D%E7%BC%80%E9%9B%86%E5%90%88/ang-.html",
+      "relativePath": "软件资源/英语词根词缀集合/ang-.md",
+      "key": "v-49812413",
+      "path": "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E6%A0%B9%E8%AF%8D%E7%BC%80%E9%9B%86%E5%90%88/ang-.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "arc[n]",
+          "slug": "arc-n"
+        },
+        {
+          "level": 2,
+          "title": "arch[n]",
+          "slug": "arch-n"
+        },
+        {
+          "level": 2,
+          "title": "architect[n]",
+          "slug": "architect-n"
+        },
+        {
+          "level": 2,
+          "title": "architecture[n]",
+          "slug": "architecture-n"
+        },
+        {
+          "level": 2,
+          "title": "architectural[adj]",
+          "slug": "architectural-adj"
+        }
+      ],
+      "lastUpdated": "11/18/2023, 4:01:04 PM",
+      "lastUpdatedTimestamp": 1700294464000
     },
     {
       "title": "强制关闭端口号",
       "frontmatter": {},
       "regularPath": "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
       "relativePath": "运维/windows/cmd.md",
-      "key": "v-34a4cb9c",
+      "key": "v-3a51d28c",
       "path": "/%E8%BF%90%E7%BB%B4/windows/cmd.html",
       "headers": [
         {
@@ -1170,12 +6438,256 @@ export const siteData = {
           "slug": "都是什么单词缩写"
         }
       ],
-      "lastUpdated": "8/5/2023, 7:39:15 AM",
+      "lastUpdated": "8/5/2023, 11:39:15 PM",
       "lastUpdatedTimestamp": 1691249955000
+    },
+    {
+      "title": "02)centOS安装docker",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/02contos%E5%AE%89%E8%A3%85docker.html",
+      "relativePath": "运维/windows/docker/02contos安装docker.md",
+      "key": "v-4a832ed8",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/02contos%E5%AE%89%E8%A3%85docker.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "卸载（可选）",
+          "slug": "卸载-可选"
+        },
+        {
+          "level": 2,
+          "title": "安装docker准备",
+          "slug": "安装docker准备"
+        },
+        {
+          "level": 2,
+          "title": "更新本地镜像源",
+          "slug": "更新本地镜像源"
+        },
+        {
+          "level": 2,
+          "title": "安装docker",
+          "slug": "安装docker"
+        },
+        {
+          "level": 2,
+          "title": "验证安装",
+          "slug": "验证安装"
+        },
+        {
+          "level": 2,
+          "title": "检查docker状态",
+          "slug": "检查docker状态"
+        },
+        {
+          "level": 2,
+          "title": "启动docker",
+          "slug": "启动docker"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "怎么用docker-compose.yml启动容器？",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/docker-compose%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8.html",
+      "relativePath": "运维/windows/docker/docker-compose命令常用.md",
+      "key": "v-54e427a4",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/docker-compose%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "怎么用docker-compose.yml启动容器？",
+          "slug": "怎么用docker-compose-yml启动容器"
+        },
+        {
+          "level": 3,
+          "title": "后台启动",
+          "slug": "后台启动"
+        },
+        {
+          "level": 3,
+          "title": "停止容器",
+          "slug": "停止容器"
+        }
+      ],
+      "lastUpdated": "10/5/2023, 5:59:34 PM",
+      "lastUpdatedTimestamp": 1696499974000
+    },
+    {
+      "title": "04)dockerCompose安装mysql",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/04docker_compose%E5%AE%89%E8%A3%85mysql.html",
+      "relativePath": "运维/windows/docker/04docker_compose安装mysql.md",
+      "key": "v-5f3c0562",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/04docker_compose%E5%AE%89%E8%A3%85mysql.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "解压",
+          "slug": "解压"
+        },
+        {
+          "level": 2,
+          "title": "修改下密码",
+          "slug": "修改下密码"
+        },
+        {
+          "level": 2,
+          "title": "启动拉取镜像",
+          "slug": "启动拉取镜像"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "05)idea连接远程docker构建镜像",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/05idea%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8Bdocker%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F.html",
+      "relativePath": "运维/windows/docker/05idea连接远程docker构建镜像.md",
+      "key": "v-79970846",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/05idea%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8Bdocker%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "启动远程镜像服务",
+          "slug": "启动远程镜像服务"
+        },
+        {
+          "level": 2,
+          "title": "重新加载配置文件",
+          "slug": "重新加载配置文件"
+        },
+        {
+          "level": 2,
+          "title": "重新启动docker",
+          "slug": "重新启动docker"
+        },
+        {
+          "level": 2,
+          "title": "启动远程镜像无法启动docker问题",
+          "slug": "启动远程镜像无法启动docker问题"
+        },
+        {
+          "level": 3,
+          "title": "解决",
+          "slug": "解决"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
+    },
+    {
+      "title": "docker这么将镜像打包到本地？",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/%E6%80%8E%E4%B9%88%E5%B0%86%E9%95%9C%E5%83%8F%E6%89%93%E5%8C%85%E4%B8%BAzip.html",
+      "relativePath": "运维/windows/docker/怎么将镜像打包为zip.md",
+      "key": "v-35fa70b5",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/%E6%80%8E%E4%B9%88%E5%B0%86%E9%95%9C%E5%83%8F%E6%89%93%E5%8C%85%E4%B8%BAzip.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "docker这么将镜像打包到本地？",
+          "slug": "docker这么将镜像打包到本地"
+        },
+        {
+          "level": 3,
+          "title": "步骤一：打包镜像",
+          "slug": "步骤一-打包镜像"
+        },
+        {
+          "level": 3,
+          "title": "扩展",
+          "slug": "扩展"
+        }
+      ],
+      "lastUpdated": "10/5/2023, 5:59:34 PM",
+      "lastUpdatedTimestamp": 1696499974000
+    },
+    {
+      "title": "01如何利用Docker快速构建基于Prometheus的MySQL监控系统",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/%E6%9E%B6%E6%9E%84%E7%AC%94%E8%AE%B0/01%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Docker%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E5%9F%BA%E4%BA%8EPrometheus%E7%9A%84MySQL%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F.html",
+      "relativePath": "运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统.md",
+      "key": "v-2c587fae",
+      "path": "/%E8%BF%90%E7%BB%B4/%E6%9E%B6%E6%9E%84%E7%AC%94%E8%AE%B0/01%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8Docker%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E5%9F%BA%E4%BA%8EPrometheus%E7%9A%84MySQL%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "创建一个网桥",
+          "slug": "创建一个网桥"
+        },
+        {
+          "level": 2,
+          "title": "docker安装mysql",
+          "slug": "docker安装mysql"
+        },
+        {
+          "level": 3,
+          "title": "创建数据库",
+          "slug": "创建数据库"
+        },
+        {
+          "level": 3,
+          "title": "运行mysql容器",
+          "slug": "运行mysql容器"
+        },
+        {
+          "level": 2,
+          "title": "创建",
+          "slug": "创建"
+        },
+        {
+          "level": 2,
+          "title": "放行端口",
+          "slug": "放行端口"
+        },
+        {
+          "level": 2,
+          "title": "配置prometheus",
+          "slug": "配置prometheus"
+        }
+      ],
+      "lastUpdated": "4/21/2024, 7:43:52 PM",
+      "lastUpdatedTimestamp": 1713699832000
+    },
+    {
+      "title": "03)centos安装dockerCompose",
+      "frontmatter": {},
+      "regularPath": "/%E8%BF%90%E7%BB%B4/windows/docker/03centos%E5%AE%89%E8%A3%85docker_compose.html",
+      "relativePath": "运维/windows/docker/03centos安装docker_compose.md",
+      "key": "v-3092ca78",
+      "path": "/%E8%BF%90%E7%BB%B4/windows/docker/03centos%E5%AE%89%E8%A3%85docker_compose.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "03)centos安装dockerCompose",
+          "slug": "_03-centos安装dockercompose"
+        },
+        {
+          "level": 2,
+          "title": "通过上传包安装",
+          "slug": "通过上传包安装"
+        },
+        {
+          "level": 2,
+          "title": "修改文件权限",
+          "slug": "修改文件权限"
+        },
+        {
+          "level": 2,
+          "title": "验证安装",
+          "slug": "验证安装"
+        }
+      ],
+      "lastUpdated": "1/1/2024, 4:35:47 PM",
+      "lastUpdatedTimestamp": 1704098147000
     }
   ],
   "themeConfig": {
-    "logo": "logo.svg",
+    "logo": "https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png",
     "nav": [
       {
         "text": "首页",
@@ -1184,6 +6696,18 @@ export const siteData = {
       {
         "text": "图南的博客",
         "items": [
+          {
+            "text": "Blog-first",
+            "link": "https://ground-gun.gitee.io/"
+          },
+          {
+            "text": "Blog-second",
+            "link": "https://wutunan.vercel.app/"
+          },
+          {
+            "text": "Gitee",
+            "link": "https://gitee.com/ground-gun"
+          },
           {
             "text": "Github",
             "link": "https://github.com/triggergun"
@@ -1208,6 +6732,15 @@ export const siteData = {
           {
             "text": "网络",
             "link": "/network/network01"
+          },
+          {
+            "text": "https原理实战",
+            "items": [
+              {
+                "text": "02)密码学",
+                "link": "/network/https/深入浅出https原理/02密码学"
+              }
+            ]
           }
         ]
       },
@@ -1215,8 +6748,17 @@ export const siteData = {
         "text": "java",
         "items": [
           {
-            "text": "java基础",
-            "link": "/java/javaSEBase/java"
+            "text": "java技术栈",
+            "items": [
+              {
+                "text": "java基础",
+                "link": "/java/javaSEBase/java"
+              },
+              {
+                "text": "gradle",
+                "link": "/java/gradle/01%E5%AE%89%E8%A3%85gradle"
+              }
+            ]
           },
           {
             "text": "dao层框架",
@@ -1228,6 +6770,15 @@ export const siteData = {
               {
                 "text": "mybatis-plus",
                 "link": "/java/mybatis_plus/03%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%BA%90%E7%9A%84%E7%BC%96%E5%86%99"
+              }
+            ]
+          },
+          {
+            "text": "源码分析区",
+            "items": [
+              {
+                "text": "spring源码分析",
+                "link": "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/01Spring%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD"
               }
             ]
           },
@@ -1247,6 +6798,142 @@ export const siteData = {
           {
             "text": "java工具",
             "link": "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc"
+          },
+          {
+            "text": "java基础服务",
+            "link": "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nexus/01nexus3%E7%9A%84docker%E5%AE%89%E8%A3%85"
+          }
+        ]
+      },
+      {
+        "text": "lyp",
+        "items": [
+          {
+            "text": "javascript",
+            "items": [
+              {
+                "text": "基础概念",
+                "link": "/lyp/javascript/01%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6"
+              }
+            ]
+          },
+          {
+            "text": "微信小程序",
+            "items": [
+              {
+                "text": "微信小程序",
+                "link": "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/01%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%A8%8B%E5%BA%8F"
+              }
+            ]
+          },
+          {
+            "text": "c语言",
+            "items": [
+              {
+                "text": "c语言",
+                "link": "/lyp/c%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85devc++"
+              }
+            ]
+          },
+          {
+            "text": "C++",
+            "items": [
+              {
+                "text": "C++",
+                "link": "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/01%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"
+              }
+            ]
+          },
+          {
+            "text": "db",
+            "items": [
+              {
+                "text": "mysql实验总结",
+                "link": "/lyp/db/mysql/mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E6%80%BB%E7%BB%93/01%E6%B7%BB%E5%8A%A0%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95%E7%A8%8B%E5%BA%8F%E5%9C%A8%E6%B7%BB%E5%8A%A0%E6%95%B0%E6%8D%AE"
+              }
+            ]
+          },
+          {
+            "text": "rust语言",
+            "items": [
+              {
+                "text": "第一阶段基础",
+                "link": "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/01rust%E6%98%AF%E4%BB%80%E4%B9%88"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "大数据",
+        "items": [
+          {
+            "text": "hadoop基础理论",
+            "items": [
+              {
+                "text": "MapReduce理论",
+                "link": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/01MapReduce%E6%98%AF%E4%BB%80%E4%B9%88"
+              }
+            ]
+          },
+          {
+            "text": "spark",
+            "items": [
+              {
+                "text": "spark集群",
+                "link": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/01Spark%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2"
+              },
+              {
+                "text": "scala语言基础",
+                "link": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/scala%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/01scala%E7%AE%80%E4%BB%8B"
+              }
+            ]
+          },
+          {
+            "text": "zookeepre",
+            "items": [
+              {
+                "text": "zookeepre集群",
+                "link": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/zookeeper/01Zookeeper%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2"
+              }
+            ]
+          },
+          {
+            "text": "kafka",
+            "items": [
+              {
+                "text": "kafka集群",
+                "link": "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/kafka/01Kafka%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%B5%8B%E8%AF%95"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "美工",
+        "items": [
+          {
+            "text": "ps",
+            "items": [
+              {
+                "text": "pa基础",
+                "link": "/%E7%BE%8E%E5%B7%A5/ps/01ps%E5%9F%BA%E7%A1%80/01%E5%B7%A7%E8%AE%B0ps%E5%BF%AB%E6%8D%B7%E9%94%AE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "基础科学",
+        "items": [
+          {
+            "text": "数学之美",
+            "items": [
+              {
+                "text": "中等数学思想",
+                "link": "/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/02%E4%B8%AD%E7%AD%89%E6%95%B0%E5%AD%A6%E6%80%9D%E6%83%B3/%E7%90%83%E4%BD%93%E4%BD%93%E7%A7%AF%E5%85%AC%E5%BC%8F%E6%8E%A8%E8%BF%87%E7%A8%8B"
+              }
+            ]
           }
         ]
       }
@@ -1258,7 +6945,20 @@ export const siteData = {
           "collapsable": false,
           "children": [
             "/软件资源/软件资源",
-            "/软件资源/English_syntax"
+            "/软件资源/English_syntax",
+            "/软件资源/02英语的时态",
+            "/软件资源/03英语的发音规则",
+            "/软件资源/04词根词缀合集",
+            "/软件资源/数学/多项式",
+            "/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法"
+          ]
+        },
+        {
+          "title": "看单词讲故事",
+          "collapsable": false,
+          "children": [
+            "/软件资源/04词根词缀合集",
+            "/软件资源/英语词根词缀集合/ang-"
           ]
         },
         {
@@ -1274,7 +6974,23 @@ export const siteData = {
           "children": [
             "/软件资源/vuepress怎么玩/SetTitle",
             "/软件资源/vuepress怎么玩/Writing_rules",
-            "/软件资源/vuepress怎么玩/02top导航栏的设置"
+            "/软件资源/vuepress怎么玩/02top导航栏的设置",
+            "/软件资源/vuepress怎么玩/03vuepress的流水线部署"
+          ]
+        },
+        {
+          "title": "参与博客编写规则",
+          "collapsable": false,
+          "children": [
+            "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/01github%E6%8B%89%E5%8F%96%E5%8D%9A%E5%AE%A2%E4%BB%93%E5%BA%93",
+            "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E5%8D%9A%E5%AE%A2%E7%BC%96%E5%86%99/02%E6%8B%89%E5%8F%96%E4%B8%8B%E6%9D%A5%E7%9A%84%E4%BB%A3%E7%A0%81%E6%80%8E%E4%B9%88%E8%BF%90%E8%A1%8C"
+          ]
+        },
+        {
+          "title": "黑客学",
+          "collapsable": false,
+          "children": [
+            "/%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90/%E9%BB%91%E5%AE%A2%E8%B5%84%E6%96%99/%E9%BB%91%E5%AE%A2%E7%9B%AE%E5%BD%95"
           ]
         }
       ],
@@ -1292,14 +7008,57 @@ export const siteData = {
           "children": [
             "/git/git推送到远程的仓库"
           ]
+        },
+        {
+          "title": "必知必会的git操作",
+          "collapsable": false,
+          "children": [
+            "/git/01怎么删除远程标签",
+            "/git/02怎么打tag推送到远程",
+            "/git/03快熟创建git仓库与本地Idea关联",
+            "/git/04修改远程分支名称",
+            "/git/05合并开发分支",
+            "/git/06怎么删除远程分支",
+            "/git/07删除本地分支",
+            "/git/08本地切换远程分支",
+            "/git/09idea中强制迁出和智能迁出",
+            "/git/github常见问题"
+          ]
         }
       ],
-      "/运维/windows/": [
+      "/运维/": [
         {
           "title": "windows运维",
           "collapsable": false,
           "children": [
             "/运维/windows/cmd"
+          ]
+        },
+        {
+          "title": "docker运维",
+          "collapsable": false,
+          "children": [
+            "/运维/windows/docker/01docker实验一构建自己的镜像",
+            "/运维/windows/docker/docker-compose命令常用",
+            "/运维/windows/docker/怎么将镜像打包为zip",
+            "/运维/windows/docker/02contos安装docker",
+            "/运维/windows/docker/03centos安装docker_compose",
+            "/运维/windows/docker/04docker_compose安装mysql",
+            "/运维/windows/docker/05idea连接远程docker构建镜像"
+          ]
+        },
+        {
+          "title": "centos运维",
+          "collapsable": false,
+          "children": [
+            "/运维/centos/01防火墙命令"
+          ]
+        },
+        {
+          "title": "系统架构",
+          "collapsable": false,
+          "children": [
+            "/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统"
           ]
         }
       ],
@@ -1308,7 +7067,16 @@ export const siteData = {
           "title": "ip地址说起",
           "collapsable": false,
           "children": [
-            "/network/network01"
+            "/network/network01",
+            "/network/network02"
+          ]
+        },
+        {
+          "title": "华为HCIA",
+          "collapsable": false,
+          "children": [
+            "/network/华为/HCIA认证/01华为认证体系介绍",
+            "/network/华为/HCIA认证/02eNSP的安装"
           ]
         }
       ],
@@ -1321,11 +7089,12 @@ export const siteData = {
           ]
         },
         {
-          "title": "查询",
+          "title": "crud",
           "collapsable": false,
           "children": [
             "/java/Mybatis/select01",
-            "/java/Mybatis/select02"
+            "/java/Mybatis/select02",
+            "/java/Mybatis/sesion3电视剧crud"
           ]
         }
       ],
@@ -1350,11 +7119,19 @@ export const siteData = {
           "title": "java-IO",
           "collapsable": false,
           "children": [
+            "/java/javaSEBase/day01-java带有包名进行编译class",
             "/java/javaSEBase/day14-IO",
             "/java/javaSEBase/day15-IO01流",
             "/java/javaSEBase/day15-IO02转换流",
             "/java/javaSEBase/day15-IO03对象操作流",
             "/java/javaSEBase/day15-IO04Properties集合"
+          ]
+        },
+        {
+          "title": "java线程基础与案例",
+          "collapsable": false,
+          "children": [
+            "/java/javaSEBase/day16-线程案例01"
           ]
         }
       ],
@@ -1382,7 +7159,268 @@ export const siteData = {
           "title": "java常用工具库",
           "collapsable": false,
           "children": [
-            "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc"
+            "/java/java%E5%B7%A5%E5%85%B7/xpath%E8%A7%A3%E6%9E%90doc",
+            "/java/java%E5%B7%A5%E5%85%B7/01%E5%8F%91%E5%B8%83%E4%B8%80%E4%B8%AAjar%E5%88%B0%E4%B8%AD%E5%A4%AE%E4%BB%93%E5%BA%93",
+            "/java/java%E5%B7%A5%E5%85%B7/02%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1%E6%9C%8D%E5%8A%A1",
+            "/java/java%E5%B7%A5%E5%85%B7/03%E9%98%BF%E9%87%8C%E4%BA%91%E7%9F%AD%E4%BF%A1",
+            "/java/java%E5%B7%A5%E5%85%B7/04%E9%98%BF%E9%87%8C%E4%BA%91oss",
+            "/java/java%E5%B7%A5%E5%85%B7/05IDEA%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7",
+            "/java/java%E5%B7%A5%E5%85%B7/06mybatis%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8",
+            "/java/java%E5%B7%A5%E5%85%B7/07java%E5%AE%9E%E4%BE%8Bjson%E6%A0%BC%E5%BC%8F%E5%8C%96"
+          ]
+        }
+      ],
+      "/java/java基础服务/": [
+        {
+          "title": "nexus服务",
+          "collapsable": false,
+          "children": [
+            "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nexus/01nexus3%E7%9A%84docker%E5%AE%89%E8%A3%85"
+          ]
+        },
+        {
+          "title": "nacos服务",
+          "collapsable": false,
+          "children": [
+            "/java/java%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1/nacos/nacos%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"
+          ]
+        }
+      ],
+      "/java/spring源码分析/": [
+        {
+          "title": "spring源码分析",
+          "collapsable": false,
+          "children": [
+            "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/01Spring%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD",
+            "/java/spring%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/02srping%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91"
+          ]
+        }
+      ],
+      "/java/gradle/": [
+        {
+          "title": "gradle入门",
+          "collapsable": false,
+          "children": [
+            "/java/gradle/01%E5%AE%89%E8%A3%85gradle",
+            "/java/gradle/02Gradle%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84",
+            "/java/gradle/03Gradle%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE"
+          ]
+        }
+      ],
+      "/lyp/javascript/": [
+        {
+          "title": "javascript基础概念",
+          "collapsable": false,
+          "children": [
+            "/lyp/javascript/01%E4%BB%80%E4%B9%88%E6%98%AF%E4%BA%8B%E4%BB%B6"
+          ]
+        }
+      ],
+      "/lyp/小程序/微信小程序": [
+        {
+          "title": "微信小程序开发",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/01%E4%BB%80%E4%B9%88%E6%98%AF%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+            "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/02Appid%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8",
+            "/lyp/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/03WXapplet%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%9C%E7%94%A8"
+          ]
+        }
+      ],
+      "/lyp/c语言": [
+        {
+          "title": "c语言",
+          "collapsable": false,
+          "children": [
+            "/lyp/c%E8%AF%AD%E8%A8%80/%E5%AE%89%E8%A3%85devc++",
+            "/lyp/c%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAc%E7%A8%8B%E5%BA%8F"
+          ]
+        }
+      ],
+      "/lyp/C++语言": [
+        {
+          "title": "C++",
+          "collapsable": false,
+          "children": [
+            "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/01%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B",
+            "/lyp/C++%E8%AF%AD%E8%A8%80/01%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AAC++%E7%A8%8B%E5%BA%8F/02c++%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F"
+          ]
+        }
+      ],
+      "/lyp/rust语言": [
+        {
+          "title": "第一阶段基础篇",
+          "collapsable": false,
+          "children": [
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/01rust%E6%98%AF%E4%BB%80%E4%B9%88",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/02rust%E7%9A%84%E5%AE%89%E8%A3%85",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/03rust%E5%B7%A5%E5%85%B7%E6%A6%82%E5%BF%B5",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/04helloworld",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/05Hello_Cargo",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/06rust%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/07rust%E7%BC%96%E5%86%99%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/08%E7%94%9F%E6%88%90%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%95%B0",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/09%E6%AF%94%E8%BE%83%E7%8C%9C%E6%B5%8B%E7%9A%84%E6%95%B0%E5%AD%97%E5%92%8C%E7%A7%98%E5%AF%86%E6%95%B0%E5%AD%97",
+            "/lyp/rust%E8%AF%AD%E8%A8%80/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E5%9F%BA%E7%A1%80%E7%AF%87/10%E9%80%9A%E7%94%A8%E7%BC%96%E7%A8%8B%E6%A6%82%E5%BF%B5"
+          ]
+        }
+      ],
+      "/lyp/大数据/hadoop基本概念": [
+        {
+          "title": "阶段一",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/%E9%98%B6%E6%AE%B5%E4%B8%80/01MapReduce%E6%98%AF%E4%BB%80%E4%B9%88"
+          ]
+        },
+        {
+          "title": "hadoop官方",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/01hadoop%E9%A6%96%E9%A1%B5",
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/hadoop%E5%AE%98%E7%BD%91%E8%B5%84%E6%96%99/02%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF"
+          ]
+        }
+      ],
+      "/lyp/大数据/02spark": [
+        {
+          "title": "spark集",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/01Spark%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2",
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/02SparkHA%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2",
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/02spark/03%E4%BD%93%E9%AA%8C%E7%AC%AC%E4%B8%80%E4%B8%AASpark%E7%A8%8B%E5%BA%8F"
+          ]
+        }
+      ],
+      "/lyp/大数据/kafka": [
+        {
+          "title": "kafka集",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/kafka/01Kafka%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%B5%8B%E8%AF%95"
+          ]
+        }
+      ],
+      "/lyp/大数据/zookeeper": [
+        {
+          "title": "zookeeper集",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%A4%A7%E6%95%B0%E6%8D%AE/zookeeper/01Zookeeper%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2"
+          ]
+        }
+      ],
+      "/lyp/刷脸项目/": [
+        {
+          "title": "刷脸项目",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/01mybatis%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/02%E5%AE%89%E8%A3%85%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/03%E5%AE%89%E8%A3%85HBuilderX%E8%BD%AF%E4%BB%B6",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/04%E5%AE%89%E8%A3%85VirtualBox%E8%99%9A%E6%8B%9F%E6%9C%BA",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/05VirtualBox%E5%88%9B%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%9E%E4%BE%8B",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/01%E9%98%B6%E6%AE%B5-%E7%A3%A8%E5%88%80%E4%B8%8D%E8%B4%B9%E7%A0%8D%E6%9F%B4%E5%B7%A5/06%E5%AE%89%E8%A3%85Centos%E7%B3%BB%E7%BB%9F"
+          ]
+        },
+        {
+          "title": "刷脸项目第二阶段",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/01%E5%88%9B%E5%BB%BAspringboot%E9%A1%B9%E7%9B%AE",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/02%E9%85%8D%E7%BD%AEmybatis",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E7%B1%BB_2-3",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/04%E5%88%86%E8%A3%85web%E8%BF%94%E5%9B%9E%E7%9A%84%E5%AF%B9%E8%B1%A12-4",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/05%E5%88%A9%E7%94%A8Swagger%E6%90%AD%E5%BB%BAREST_API2-5",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/06%E9%85%8D%E7%BD%AE%E5%90%8E%E7%AB%AF%E9%AA%8C%E8%AF%81%E5%8A%9F%E8%83%BD2-6",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/02%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E5%9F%BA%E7%A1%80%E7%AF%87/07%E6%8A%B5%E5%BE%A1%E5%8D%B3%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%ACXSS%E6%94%BB%E5%87%BB2-7"
+          ]
+        },
+        {
+          "title": "刷脸项目第三阶段",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/01%E6%9C%AC%E7%AB%A0%E4%BB%8B%E7%BB%8D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/02Shiro%E5%92%8CJWT%E6%8A%80%E6%9C%AF3-1",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/03%E5%88%9B%E5%BB%BAJwtUtil%E5%B7%A5%E5%85%B7%E7%B1%BB3-2",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/04%E6%8A%8A%E4%BB%A4%E7%89%8C%E5%B0%81%E8%A3%85%E6%88%90%E8%AE%A4%E8%AF%81%E5%AF%B9%E8%B1%A13-3",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/05%E5%88%9B%E5%BB%BA%E5%AD%98%E5%82%A8%E4%BB%A4%E7%89%8C%E7%9A%84%E5%AA%92%E4%BB%8B%E7%B1%BB3-4",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/06%E7%B2%BE%E7%AE%80%E8%BF%94%E5%9B%9E%E7%BB%99%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%BC%82%E5%B8%B8%E5%86%85%E5%AE%B93-5",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/03%E9%98%B6%E6%AE%B5-%E4%BB%8E%E9%9B%B6%E6%9E%84%E5%BB%BA%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%9B%E9%98%B6%E7%AF%87/07%E8%A6%81%E7%82%B9%E5%9B%9E%E9%A1%BE"
+          ]
+        },
+        {
+          "title": "刷脸项目第四阶段",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/01%E7%94%B3%E8%AF%B7%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E8%80%85%E8%B4%A6%E5%8F%B74-1",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B9%E7%9B%AE4-2",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/03%E5%88%9D%E5%A7%8Buni-app4-3",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/04%E5%88%9B%E5%BB%BA%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A24-4",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/05%E5%88%9B%E5%BB%BA%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A24-5",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/06%E6%B3%A8%E5%86%8C%E6%96%B0%E7%94%A8%E6%88%B7%E7%9A%84%E4%B8%9A%E5%8A%A1%E8%A6%81%E7%82%B9%E8%AF%B4%E6%98%8E4-6",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/07%E8%8E%B7%E5%8F%96%E4%B8%B4%E6%97%B6%E6%8E%88%E6%9D%83%E5%92%8C%E5%BE%AE%E4%BF%A1%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF4-7",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/04%E9%98%B6%E6%AE%B5-%E5%88%A9%E7%94%A8UNI-APP%E5%88%9B%E5%BB%BA%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/08%E7%AB%A0%E8%8A%82%E6%80%BB%E7%BB%934-8"
+          ]
+        },
+        {
+          "title": "刷脸项目第五阶段",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/01%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/02%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E4%B8%9A%E5%8A%A1%E5%B1%82%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/03%E6%8E%8C%E6%8F%A1RABC%E6%9D%83%E9%99%90%E6%A8%A1%E5%9E%8B",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/04%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/05%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%80%E8%B7%AF%E5%BE%84%E5%92%8C%E5%B0%81%E8%A3%85Aiax%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/06%E5%AE%8C%E6%88%90%E6%B3%A8%E5%86%8C%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/07%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E6%8C%81%E4%B9%85%E5%B1%82&%E4%B8%9A%E5%8A%A1%E5%B1%82%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/08%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5BWeb%E5%B1%82%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/09%E5%AE%9E%E7%8E%B0%E7%94%A8%E6%88%B7%E7%99%BB%E9%99%86%E5%8A%9F%E8%83%BD%5B%E7%A7%BB%E5%8A%A8%E7%AB%AF%5D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/05%E9%98%B6%E6%AE%B5-%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E4%B8%8E%E7%99%BB%E9%99%86/10%E8%A7%82%E5%AF%9F%E5%90%8E%E7%AB%AF%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%A1%8C%E7%BB%86%E8%8A%82"
+          ]
+        },
+        {
+          "title": "刷脸项目第六阶段",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/01%E7%AB%A0%E8%8A%82%E4%BB%8B%E7%BB%8D",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/02%E5%88%9B%E5%BB%BA%E5%B0%8F%E7%A8%8B%E5%BA%8FTab%E5%AF%BC%E8%88%AA",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/03%E5%BC%80%E9%80%9A%E8%85%BE%E8%AE%AF%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/04%E8%AE%BE%E8%AE%A1%E9%A6%96%E9%A1%B5%E7%9A%84%E8%8B%B1%E9%9B%84%E5%8C%BA%E5%92%8C%E6%A0%8F%E7%9B%AE%E5%AF%BC%E8%88%AA",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/05%E8%AE%BE%E8%AE%A1%E4%BA%BA%E8%84%B8%E7%AD%BE%E5%88%B0%E9%A1%B5%E9%9D%A2",
+            "/lyp/%E5%88%B7%E8%84%B8%E9%A1%B9%E7%9B%AE/06%E9%98%B6%E6%AE%B5-%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%AD%BE%E5%88%B0%E5%9F%BA%E7%A1%80%E7%AF%87/06%E5%AE%9E%E7%8E%B0%E7%AD%BE%E5%88%B0%E8%87%AA%E6%8B%8D%E5%8A%9F%E8%83%BD"
+          ]
+        }
+      ],
+      "/lyp/linux/": [
+        {
+          "title": "linux常用命令",
+          "collapsable": false,
+          "children": [
+            "/lyp/linux/01%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4linux"
+          ]
+        }
+      ],
+      "/lyp/发票项目2024-3-1/": [
+        {
+          "title": "01)微信小程序用户登入",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/01%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%99%BB%E5%85%A5",
+            "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/01%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%94%A8%E6%88%B7%E7%99%BB%E5%85%A5/02%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%8E%88%E6%9D%83%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0"
+          ]
+        },
+        {
+          "title": "02)发票扫码",
+          "collapsable": false,
+          "children": []
+        },
+        {
+          "title": "发票的UI设计",
+          "collapsable": false,
+          "children": [
+            "/lyp/%E5%8F%91%E7%A5%A8%E9%A1%B9%E7%9B%AE2024-3-1/ui%E8%AE%BE%E8%AE%A1/01%E5%9B%A2%E9%98%9Flogo%E8%AE%BE%E8%AE%A1"
           ]
         }
       ]

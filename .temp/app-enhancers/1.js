@@ -1,2 +1,2 @@
-import "D:\\hongblog\\node_modules\\@vuepress\\plugin-nprogress\\enhanceAppFile.js"
+import "D:\\triggergun\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
 export default {}

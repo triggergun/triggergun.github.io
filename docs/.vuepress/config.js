@@ -714,6 +714,9 @@ module.exports = {
           collapsable: false,
           children: [
             encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么'),
+            encodeURI('/lyp/大数据/hadoop基本概念/阶段一/WordCount经典案例'),
+            encodeURI('/lyp/大数据/hadoop基本概念/阶段一/hadoop集群搭建'),
+
           ]
 
         },
