@@ -1,5 +1,4 @@
 # 开始掌握docsify
-
 ## Quick start快速掌握
 
 It is recommended to install `docsify-cli` globally, which helps initializing and previewing the website locally.

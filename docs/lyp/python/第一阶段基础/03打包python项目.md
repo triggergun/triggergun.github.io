@@ -1,8 +1,16 @@
 # 打包python项目
 
+## 案例需求描述
+
+- 创建一个自己的项目工程结构。
+- 打包项目，上传到pypi上。
+- 通过pip进行本地安装测试是否发布成功。
 
 
-## 创建包文件
+
+## 01)创建包文件
+
+也就是一个工程目录文件结果
 
 ```
 packaging_tutorial/
@@ -16,11 +24,22 @@ packaging_tutorial/
 └── tests/
 ```
 
+| 目录与文件名       | 描述           |
+| ------------------ | -------------- |
+| packaging_tutorial | 工程的根目录   |
+| LICENSE            | 开源的协议文件 |
+| pyproject.toml     |                |
+| README.md          | 介绍项目的文件 |
+| src                | 项目的源码目录 |
+| tests              | 测试代码目录   |
+
 
 
 ## 构建
 
-pyproject.toml
+pyproject.toml文件
+
+下面是一个简单无用的案例：配置元数据可以参看。
 
 ```
 [build-system]
@@ -30,7 +49,7 @@ build-backend = "hatchling.build"
 
 
 
-## 配置元数据
+## 02)配置元数据
 
 ```toml
 [project]
@@ -67,7 +86,7 @@ to write your content.
 
 
 
-## 生成分发存档
+## 03)生成分发存档
 
 - 第一步：确保pip是否是最新。
 
@@ -79,8 +98,6 @@ to write your content.
 py -m pip install --upgrade build
 ```
 
-
-
 - 第二步构建
 
 现在，从所在的同一目录运行此命令：pyproject.toml
@@ -88,6 +105,8 @@ py -m pip install --upgrade build
 ```
 py -m build
 ```
+
+![image-20240609120535480](03打包python项目.assets/image-20240609120535480.png)
 
 此命令应输出大量文本，完成后应生成两个 目录中的文件：`dist`
 
@@ -97,7 +116,7 @@ dist/
 └── example_package_YOUR_USERNAME_HERE-0.0.1.tar.gz
 ```
 
-
+**开始构建的过程日志**
 
 ```shell
 ## 开始构建
@@ -200,7 +219,11 @@ Successfully built tunan_ground-0.0.1.tar.gz and tunan_ground-0.0.1-py3-none-any
 
 ## 上传分发存档到【testPyPI】
 
+::: tip 测试用的
 
+- testPyPI是测试使用的环境，注意：包发布后是不可以进行修改的。谨慎操作！
+
+:::
 
 - 注册TestPyPI 帐户
 
@@ -262,13 +285,29 @@ py -m twine upload --repository testpypi dist/*
 
 
 
-## 上传包到pypi
+## 04)上传包到pypi
 
-- 进行上传。
+- 进行上传。注意：testpypi改为：pypi。【与上传testpypi环境同理】
+
+```shell
+py -m twine upload --repository pypi dist/*
+```
 
 ![image-20240601161635603](03打包python项目.assets/image-20240601161635603.png)
 
 
+
+- 输入账号密码
+
+![image-20240609121814278](03打包python项目.assets/image-20240609121814278.png)
+
+
+
+![image-20240609122124834](03打包python项目.assets/image-20240609122124834.png)
+
+- 怎么去使用这个token。
+
+![image-20240609122715018](03打包python项目.assets/image-20240609122715018.png)
 
 - 上传自己写的包到pypi上。登入账号去管理后台查看。
 
@@ -276,7 +315,7 @@ py -m twine upload --repository testpypi dist/*
 
 
 
-## 测试
+## 05)测试
 
 - 用例代码
 
@@ -288,6 +327,21 @@ if __name__ == '__main__':
 ```
 
 ![image-20240601163024068](03打包python项目.assets/image-20240601163024068.png)
+
+
+
+## 06项目源码编写注释
+
+- 在自己创建的helloword工程目录中；源码方法编写注释发布到pypi上。
+- 在通过pip安装自己的项目模块。
+
+![image-20240609120049498](03打包python项目.assets/image-20240609120049498.png)
+
+
+
+- 测试效果
+
+![image-20240609123948796](03打包python项目.assets/image-20240609123948796.png)
 
 
 

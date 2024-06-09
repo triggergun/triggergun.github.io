@@ -207,10 +207,14 @@ module.exports = {
               { text: "第一阶段基础", link: encodeURI('/lyp/rust语言/第一阶段基础篇/01rust是什么') },
 
             ],
+          }, {
+            //  top栏
+            text: 'python之路',
+            items: [
+              { text: "第一阶段基础", link: encodeURI('/lyp/python/第一阶段基础/01python的安装') },
+
+            ],
           },
-
-
-
         ]
       },
       //=================================大数据  选项7 =========================
@@ -706,6 +710,29 @@ module.exports = {
       ],
       // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
 
+
+      // ===================== lyp模块点击设python语言 ,python语言的侧边栏目录    设置  start ===========
+      // 2024年-5-14
+      // 第一阶段 基础
+      '/lyp/python': [
+        {
+          title: '第一阶段基础篇',
+          collapsable: false,
+          children: [
+            // 第一阶段基础篇
+            encodeURI('/lyp/python/第一阶段基础/01python的安装'),
+            encodeURI('/lyp/python/第一阶段基础/02PythonPackagingUserGuide【Python打包用户指南】'),
+            encodeURI('/lyp/python/第一阶段基础/03打包python项目'),
+            encodeURI('/lyp/python/第一阶段基础/04PyCharm创建一个项目'),
+            encodeURI('/lyp/python/第一阶段基础/常用的python命令'),
+
+          ]
+        },
+
+      ],
+      // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
+
+
       //================= top上 有按钮  大数据的  start ===========================
 
       '/lyp/大数据/hadoop基本概念': [
@@ -965,9 +992,17 @@ module.exports = {
           scrollOffset: 0,
         },
       }
-    ]
-
-
+    ],
+    // 只要把这个放进 config的plugins中就可以了
+    // ["sakura", {
+    //   num: 20,  // 默认数量
+    //   show: true, //  是否显示
+    //   zIndex: -100,   // 层级
+    //   img: {
+    //     replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
+    //     httpUrl: '...'     // 绝对路径
+    //   }
+    // }]
 
 
   ]

@@ -13,7 +13,8 @@
   "devDependencies": {
     "vue-particles": "^1.0.9",
     "vuepress": "^1.9.9",
-    "vuepress-plugin-medium-zoom": "^1.1.9"
+    "vuepress-plugin-medium-zoom": "^1.1.9",
+    "vuepress-plugin-sakura": "^1.2.1"
   },
   "dependencies": {
     "markdown-it-disable-url-encode": "^1.0.1"
