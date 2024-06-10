@@ -14,7 +14,7 @@ module.exports = {
    * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2034953504252138" crossorigin="anonymous"></script>
    * <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
    */
-  
+
 
 
   /**
@@ -33,7 +33,9 @@ module.exports = {
     // 重装基本图片
     ['link', { rel: 'icon', href: 'favicon.svg' }],
     // 谷歌广告位
-    ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'}],
+    // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885', crossorigin: "anonymous" }],
+    ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-7KiW1mSNFG' }],
     ['meta', { name: 'google-adsense-account', content: 'ca-pub-6542685716937885' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
