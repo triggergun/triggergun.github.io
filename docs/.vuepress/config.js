@@ -1,7 +1,7 @@
 ﻿// docs/.vuepress/config.js
 module.exports = {
-  //前缀
-  //  base: '/triggergun/',
+  //前缀 一般不要
+  //  base: '/blog/',
 
   // 标题,同时，默认主题下，它将显示在导航栏（navbar）上
   title: "匆匆趣玩",
@@ -33,6 +33,7 @@ module.exports = {
     ['link', { rel: 'icon', href: 'favicon.svg' }],
     ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885', crossorigin: 'anonymous' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-7KiW1mSNFG' }],
+    ['meta', { name: 'google-adsense-account', content: 'ca-pub-6542685716937885' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
   ],
 
