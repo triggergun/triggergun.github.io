@@ -673,6 +673,7 @@ module.exports = {
 
             encodeURI('/lyp/c语言/安装devc++'),
             encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
+            encodeURI('/lyp/c语言/数据结构与算法/01c语言数据结构与算法'),
 
           ]
         },
