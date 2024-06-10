@@ -17,3 +17,7 @@ features:
   details: 分享各类教程，包括编程、各类证书考试资源等等，本网站所有教程资源均来自互联网，若涉及侵权立马删除！
 footer: 匆匆趣玩 | 资料分享大师 | 赣ICP备2023014431号
 ---
+<InArticleAdsense
+     data-ad-client="ca-pub-6542685716937885"
+     data-ad-slot="4724243179">
+</InArticleAdsense>

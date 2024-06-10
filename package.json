@@ -17,6 +17,8 @@
     "vuepress-plugin-sakura": "^1.2.1"
   },
   "dependencies": {
-    "markdown-it-disable-url-encode": "^1.0.1"
+    "markdown-it-disable-url-encode": "^1.0.1",
+    "vue-google-adsense": "^1.10.1",
+    "vue-script2": "^2.1.0"
   }
 }
