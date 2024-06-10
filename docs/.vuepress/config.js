@@ -666,13 +666,19 @@ module.exports = {
       // 2024年-1-13
       '/lyp/c语言': [
         {
-          title: 'c语言',
+          title: 'c语言基础',
           collapsable: false,
           children: [
             //  c 语言的 侧边栏 目录
-
             encodeURI('/lyp/c语言/安装devc++'),
             encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
+          ]
+        },
+        {
+          title: 'c数据结构与算法',
+          collapsable: false,
+          children: [
+            //  c 语言的 侧边栏 目录
             encodeURI('/lyp/c语言/数据结构与算法/01c语言数据结构与算法'),
 
           ]
@@ -688,8 +694,7 @@ module.exports = {
           title: 'C++',
           collapsable: false,
           children: [
-            //  c 语言的 侧边栏 目录
-
+            //  c++语言的 侧边栏 目录
             encodeURI('/lyp/C++语言/01我的第一个C++程序/01如何创建工程'),
             encodeURI('/lyp/C++语言/01我的第一个C++程序/02c++第一个程序'),
 
