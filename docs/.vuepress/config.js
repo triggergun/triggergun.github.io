@@ -36,6 +36,13 @@ module.exports = {
     // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
     ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885', crossorigin: "anonymous" }],
     ['script', { async: true, src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' }],
+
+    // https
+    // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    // http
+    //<meta http-equiv="Content-Security-Policy"> 
+
+    ['meta', { http_equiv: 'Content-Security-Policy', content: 'upgrade-insecure-requests' }],
     ['meta', { name: 'baidu-site-verification', content: 'codeva-7KiW1mSNFG' }],
     ['meta', { name: 'google-adsense-account', content: 'ca-pub-6542685716937885' }],
     //  ['link', { rel: 'stylesheet', href: 'index.css' }],
