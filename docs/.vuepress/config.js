@@ -507,6 +507,7 @@ module.exports = {
         },
 
       ],
+      // java基础学习阶段
       // 表示：点击导航栏后，侧边栏显示的标题有：java
       '/java/javaSEBase/': [
         {
@@ -516,7 +517,13 @@ module.exports = {
 
         },
         {
-          title: 'java-IO',
+          title: 'java值传递',
+          collapsable: false,
+          children: ['/java/javaSEBase/day02'],
+
+        },
+        {
+          title: 'IO流',
           collapsable: false,
           children: [
             '/java/javaSEBase/day01-java带有包名进行编译class',
