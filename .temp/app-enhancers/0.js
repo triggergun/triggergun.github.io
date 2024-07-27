@@ -1,2 +1,2 @@
-import "D:\\triggergun\\node_modules\\@vuepress\\core\\lib\\node\\internal-plugins\\style\\client.js"
+import "D:\\triggergun\\docs\\.vuepress\\enhanceApp.js"
 export default {}

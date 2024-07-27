@@ -366,7 +366,8 @@ module.exports = {
         {
           title: 'vuepress语法',
           collapsable: false,
-          children: ['/软件资源/vuepress怎么玩/SetTitle',
+          children: [
+            '/软件资源/vuepress怎么玩/SetTitle',
             '/软件资源/vuepress怎么玩/Writing_rules',
             '/软件资源/vuepress怎么玩/02top导航栏的设置',
             '/软件资源/vuepress怎么玩/03vuepress的流水线部署'],
@@ -376,8 +377,21 @@ module.exports = {
         {
           title: '参与博客编写规则',
           collapsable: false,
-          children: [encodeURI('/软件资源/博客编写/01github拉取博客仓库'),
-          encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
+          children: [
+            encodeURI('/软件资源/博客编写/01github拉取博客仓库'),
+            encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
+
+        },
+        // 学车
+        {
+          title: '学车',
+          collapsable: false,
+          children: [
+            encodeURI('/软件资源/study_car/科目一技巧总结'),
+            encodeURI('/软件资源/study_car/练习科目二的日子'),
+            encodeURI('/软件资源/study_car/科目三上路'),
+            encodeURI('/软件资源/study_car/科目二考试要点')
+          ],
 
         },
 
