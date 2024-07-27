@@ -388,7 +388,10 @@ module.exports = {
           collapsable: false,
           children: [
             encodeURI('/软件资源/study_car/科目一技巧总结'),
-            encodeURI('/软件资源/study_car/练习科目二的日子'),
+            encodeURI('/软件资源/study_car/练习科目二day01'),
+            encodeURI('/软件资源/study_car/练习科目二day02'),
+            encodeURI('/软件资源/study_car/练习科目二day03'),
+            encodeURI('/软件资源/study_car/练习科目二day04'),
             encodeURI('/软件资源/study_car/科目三上路'),
             encodeURI('/软件资源/study_car/科目二考试要点')
           ],
