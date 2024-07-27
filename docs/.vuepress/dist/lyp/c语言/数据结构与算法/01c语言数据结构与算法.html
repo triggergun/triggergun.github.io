@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>c语言数据结构与算法 | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.svg">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta http_equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    <meta name="google-adsense-account" content="ca-pub-6542685716937885">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.47201228.js" as="script"><link rel="preload" href="/assets/js/2.9c1d7e52.js" as="script"><link rel="preload" href="/assets/js/91.a67165ac.js" as="script"><link rel="prefetch" href="/assets/js/10.e8ce029a.js"><link rel="prefetch" href="/assets/js/100.8a919a54.js"><link rel="prefetch" href="/assets/js/101.416eb8a9.js"><link rel="prefetch" href="/assets/js/102.65193c99.js"><link rel="prefetch" href="/assets/js/103.d3147954.js"><link rel="prefetch" href="/assets/js/104.ad98a435.js"><link rel="prefetch" href="/assets/js/105.d4dfef5d.js"><link rel="prefetch" href="/assets/js/106.890ce46f.js"><link rel="prefetch" href="/assets/js/107.0135b203.js"><link rel="prefetch" href="/assets/js/108.3117f1d6.js"><link rel="prefetch" href="/assets/js/109.857cd5b9.js"><link rel="prefetch" href="/assets/js/11.f08e770a.js"><link rel="prefetch" href="/assets/js/110.48ad99bc.js"><link rel="prefetch" href="/assets/js/111.40260272.js"><link rel="prefetch" href="/assets/js/112.e7bfce21.js"><link rel="prefetch" href="/assets/js/113.a2edefe2.js"><link rel="prefetch" href="/assets/js/114.1b2ef0c7.js"><link rel="prefetch" href="/assets/js/115.8ef39a4e.js"><link rel="prefetch" href="/assets/js/116.08d3b459.js"><link rel="prefetch" href="/assets/js/117.6cb8d7c4.js"><link rel="prefetch" href="/assets/js/118.586fb31c.js"><link rel="prefetch" href="/assets/js/119.9e630c1d.js"><link rel="prefetch" href="/assets/js/12.53c0ca3d.js"><link rel="prefetch" href="/assets/js/120.2d56d008.js"><link rel="prefetch" href="/assets/js/121.c84acc6c.js"><link rel="prefetch" href="/assets/js/122.dfa9838e.js"><link rel="prefetch" href="/assets/js/123.fd4b3d12.js"><link rel="prefetch" href="/assets/js/124.028b33e2.js"><link rel="prefetch" href="/assets/js/125.9b81f41b.js"><link rel="prefetch" href="/assets/js/126.8d03c42e.js"><link rel="prefetch" href="/assets/js/127.50b5a194.js"><link rel="prefetch" href="/assets/js/128.8e4696f1.js"><link rel="prefetch" href="/assets/js/129.59cd4ec2.js"><link rel="prefetch" href="/assets/js/13.91ba77d3.js"><link rel="prefetch" href="/assets/js/130.f2f99eca.js"><link rel="prefetch" href="/assets/js/131.6b96405b.js"><link rel="prefetch" href="/assets/js/132.a344e45e.js"><link rel="prefetch" href="/assets/js/133.532627d7.js"><link rel="prefetch" href="/assets/js/134.d6b7c957.js"><link rel="prefetch" href="/assets/js/135.f7e00fa0.js"><link rel="prefetch" href="/assets/js/136.ab62fa0e.js"><link rel="prefetch" href="/assets/js/137.33494ed1.js"><link rel="prefetch" href="/assets/js/138.88d8a957.js"><link rel="prefetch" href="/assets/js/139.b45a33da.js"><link rel="prefetch" href="/assets/js/14.d947d19c.js"><link rel="prefetch" href="/assets/js/140.faacb237.js"><link rel="prefetch" href="/assets/js/141.ceb919fa.js"><link rel="prefetch" href="/assets/js/142.1d5a7320.js"><link rel="prefetch" href="/assets/js/143.cb74bb22.js"><link rel="prefetch" href="/assets/js/144.a7fda343.js"><link rel="prefetch" href="/assets/js/145.0d52a5c0.js"><link rel="prefetch" href="/assets/js/146.6887d8d0.js"><link rel="prefetch" href="/assets/js/147.252e02a0.js"><link rel="prefetch" href="/assets/js/148.d009b0ab.js"><link rel="prefetch" href="/assets/js/149.2772a0bd.js"><link rel="prefetch" href="/assets/js/15.7758fa70.js"><link rel="prefetch" href="/assets/js/150.17267b95.js"><link rel="prefetch" href="/assets/js/151.5bbd688e.js"><link rel="prefetch" href="/assets/js/152.b2bee3b4.js"><link rel="prefetch" href="/assets/js/153.9e99f957.js"><link rel="prefetch" href="/assets/js/154.55156281.js"><link rel="prefetch" href="/assets/js/155.175d74f8.js"><link rel="prefetch" href="/assets/js/156.0d8f148d.js"><link rel="prefetch" href="/assets/js/157.2ba9a652.js"><link rel="prefetch" href="/assets/js/158.8703807e.js"><link rel="prefetch" href="/assets/js/159.05a9692b.js"><link rel="prefetch" href="/assets/js/16.25b0c945.js"><link rel="prefetch" href="/assets/js/160.8c570874.js"><link rel="prefetch" href="/assets/js/161.7721909d.js"><link rel="prefetch" href="/assets/js/162.2c94095f.js"><link rel="prefetch" href="/assets/js/163.696da357.js"><link rel="prefetch" href="/assets/js/164.5a8640e9.js"><link rel="prefetch" href="/assets/js/165.aa417781.js"><link rel="prefetch" href="/assets/js/166.90345876.js"><link rel="prefetch" href="/assets/js/167.e78d9e9e.js"><link rel="prefetch" href="/assets/js/168.0394dc93.js"><link rel="prefetch" href="/assets/js/169.482f266c.js"><link rel="prefetch" href="/assets/js/17.0b069f6a.js"><link rel="prefetch" href="/assets/js/170.8fbba4e6.js"><link rel="prefetch" href="/assets/js/171.fce03ec3.js"><link rel="prefetch" href="/assets/js/172.bb287273.js"><link rel="prefetch" href="/assets/js/173.94b8448d.js"><link rel="prefetch" href="/assets/js/174.8510f8d7.js"><link rel="prefetch" href="/assets/js/175.ed42ab62.js"><link rel="prefetch" href="/assets/js/176.16de71fc.js"><link rel="prefetch" href="/assets/js/177.3e1fa7f7.js"><link rel="prefetch" href="/assets/js/178.e81f3e13.js"><link rel="prefetch" href="/assets/js/179.e7db592d.js"><link rel="prefetch" href="/assets/js/18.6a56345c.js"><link rel="prefetch" href="/assets/js/180.7fa57a83.js"><link rel="prefetch" href="/assets/js/181.6a2ce19b.js"><link rel="prefetch" href="/assets/js/182.9a0b1e3e.js"><link rel="prefetch" href="/assets/js/183.6891cfba.js"><link rel="prefetch" href="/assets/js/184.4b847f56.js"><link rel="prefetch" href="/assets/js/185.f8ac89a3.js"><link rel="prefetch" href="/assets/js/186.927664e0.js"><link rel="prefetch" href="/assets/js/187.45cd285c.js"><link rel="prefetch" href="/assets/js/188.fae51b66.js"><link rel="prefetch" href="/assets/js/189.10274742.js"><link rel="prefetch" href="/assets/js/19.74d7c9d2.js"><link rel="prefetch" href="/assets/js/190.2de78eb7.js"><link rel="prefetch" href="/assets/js/191.31e5b32c.js"><link rel="prefetch" href="/assets/js/192.6875ce44.js"><link rel="prefetch" href="/assets/js/193.54452676.js"><link rel="prefetch" href="/assets/js/194.07485711.js"><link rel="prefetch" href="/assets/js/195.53ddaf95.js"><link rel="prefetch" href="/assets/js/196.4dc28973.js"><link rel="prefetch" href="/assets/js/197.04ec5085.js"><link rel="prefetch" href="/assets/js/198.795c4fa3.js"><link rel="prefetch" href="/assets/js/199.c212d91a.js"><link rel="prefetch" href="/assets/js/20.00ef0d7f.js"><link rel="prefetch" href="/assets/js/200.17f2ffed.js"><link rel="prefetch" href="/assets/js/201.f5ea37d4.js"><link rel="prefetch" href="/assets/js/202.d3a83603.js"><link rel="prefetch" href="/assets/js/203.313a7bfb.js"><link rel="prefetch" href="/assets/js/204.a8dfc234.js"><link rel="prefetch" href="/assets/js/205.a8a62107.js"><link rel="prefetch" href="/assets/js/206.a7c6c854.js"><link rel="prefetch" href="/assets/js/207.28c72844.js"><link rel="prefetch" href="/assets/js/208.3bbf7861.js"><link rel="prefetch" href="/assets/js/209.9d178f0b.js"><link rel="prefetch" href="/assets/js/21.5edbf746.js"><link rel="prefetch" href="/assets/js/210.eef0eb8e.js"><link rel="prefetch" href="/assets/js/211.d76fa0a4.js"><link rel="prefetch" href="/assets/js/212.a5de4fb1.js"><link rel="prefetch" href="/assets/js/213.ffad1446.js"><link rel="prefetch" href="/assets/js/214.f1d6e557.js"><link rel="prefetch" href="/assets/js/215.40206ddc.js"><link rel="prefetch" href="/assets/js/216.24e9c05a.js"><link rel="prefetch" href="/assets/js/217.2e2f725a.js"><link rel="prefetch" href="/assets/js/218.0a9c7066.js"><link rel="prefetch" href="/assets/js/219.d1d7e129.js"><link rel="prefetch" href="/assets/js/22.c00191d0.js"><link rel="prefetch" href="/assets/js/23.f0043dee.js"><link rel="prefetch" href="/assets/js/24.e23015d9.js"><link rel="prefetch" href="/assets/js/25.edf075ee.js"><link rel="prefetch" href="/assets/js/26.cf9b1c8f.js"><link rel="prefetch" href="/assets/js/27.3ea3e7fb.js"><link rel="prefetch" href="/assets/js/28.bfb91512.js"><link rel="prefetch" href="/assets/js/29.07201a94.js"><link rel="prefetch" href="/assets/js/3.fb9aa814.js"><link rel="prefetch" href="/assets/js/30.978d9411.js"><link rel="prefetch" href="/assets/js/31.aa706512.js"><link rel="prefetch" href="/assets/js/32.8a42ba09.js"><link rel="prefetch" href="/assets/js/33.a7c59f62.js"><link rel="prefetch" href="/assets/js/34.53f3f339.js"><link rel="prefetch" href="/assets/js/35.6a122834.js"><link rel="prefetch" href="/assets/js/36.b746dca2.js"><link rel="prefetch" href="/assets/js/37.ee72d75a.js"><link rel="prefetch" href="/assets/js/38.0a6cbff1.js"><link rel="prefetch" href="/assets/js/39.430c5920.js"><link rel="prefetch" href="/assets/js/4.87a759f5.js"><link rel="prefetch" href="/assets/js/40.de457a1a.js"><link rel="prefetch" href="/assets/js/41.0395ba95.js"><link rel="prefetch" href="/assets/js/42.0ac3165c.js"><link rel="prefetch" href="/assets/js/43.90c6008f.js"><link rel="prefetch" href="/assets/js/44.bd561e4c.js"><link rel="prefetch" href="/assets/js/45.84d40999.js"><link rel="prefetch" href="/assets/js/46.0cd5a0af.js"><link rel="prefetch" href="/assets/js/47.56d54f2a.js"><link rel="prefetch" href="/assets/js/48.f0507eb9.js"><link rel="prefetch" href="/assets/js/49.74cae3ca.js"><link rel="prefetch" href="/assets/js/5.3134f10b.js"><link rel="prefetch" href="/assets/js/50.703903bb.js"><link rel="prefetch" href="/assets/js/51.bf9380bc.js"><link rel="prefetch" href="/assets/js/52.2a9e0b6f.js"><link rel="prefetch" href="/assets/js/53.def5c8a2.js"><link rel="prefetch" href="/assets/js/54.66db1b5c.js"><link rel="prefetch" href="/assets/js/55.00336f76.js"><link rel="prefetch" href="/assets/js/56.29be42e9.js"><link rel="prefetch" href="/assets/js/57.04fd8da0.js"><link rel="prefetch" href="/assets/js/58.ad1b5583.js"><link rel="prefetch" href="/assets/js/59.3975fac1.js"><link rel="prefetch" href="/assets/js/6.8ebed429.js"><link rel="prefetch" href="/assets/js/60.6d36e155.js"><link rel="prefetch" href="/assets/js/61.eaf9b6cd.js"><link rel="prefetch" href="/assets/js/62.442a7542.js"><link rel="prefetch" href="/assets/js/63.8ccb990e.js"><link rel="prefetch" href="/assets/js/64.2f95690b.js"><link rel="prefetch" href="/assets/js/65.121f8078.js"><link rel="prefetch" href="/assets/js/66.ad7c67d0.js"><link rel="prefetch" href="/assets/js/67.41b876f5.js"><link rel="prefetch" href="/assets/js/68.3618c387.js"><link rel="prefetch" href="/assets/js/69.5f6f6145.js"><link rel="prefetch" href="/assets/js/7.24583bb2.js"><link rel="prefetch" href="/assets/js/70.b8260b88.js"><link rel="prefetch" href="/assets/js/71.9d782b2a.js"><link rel="prefetch" href="/assets/js/72.749dcbbd.js"><link rel="prefetch" href="/assets/js/73.86e480bf.js"><link rel="prefetch" href="/assets/js/74.8e13fabe.js"><link rel="prefetch" href="/assets/js/75.18010efb.js"><link rel="prefetch" href="/assets/js/76.f6001786.js"><link rel="prefetch" href="/assets/js/77.6da68087.js"><link rel="prefetch" href="/assets/js/78.2cc1095b.js"><link rel="prefetch" href="/assets/js/79.39e8d178.js"><link rel="prefetch" href="/assets/js/8.ce7f1096.js"><link rel="prefetch" href="/assets/js/80.216e47b6.js"><link rel="prefetch" href="/assets/js/81.64686592.js"><link rel="prefetch" href="/assets/js/82.bba0c63a.js"><link rel="prefetch" href="/assets/js/83.bf83334e.js"><link rel="prefetch" href="/assets/js/84.729e6a88.js"><link rel="prefetch" href="/assets/js/85.77ea0fd1.js"><link rel="prefetch" href="/assets/js/86.b860e1c1.js"><link rel="prefetch" href="/assets/js/87.609c212a.js"><link rel="prefetch" href="/assets/js/88.adfc1aef.js"><link rel="prefetch" href="/assets/js/89.de884f46.js"><link rel="prefetch" href="/assets/js/9.3bd6296e.js"><link rel="prefetch" href="/assets/js/90.18cd8679.js"><link rel="prefetch" href="/assets/js/92.2dd176ef.js"><link rel="prefetch" href="/assets/js/93.84f3bb7b.js"><link rel="prefetch" href="/assets/js/94.68fe449c.js"><link rel="prefetch" href="/assets/js/95.b9e1711f.js"><link rel="prefetch" href="/assets/js/96.979ec22d.js"><link rel="prefetch" href="/assets/js/97.1b4a324c.js"><link rel="prefetch" href="/assets/js/98.265c6251.js"><link rel="prefetch" href="/assets/js/99.5edcc37a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>c语言基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lyp/c语言/安装devc++.html" class="sidebar-link">安装devc++</a></li><li><a href="/lyp/c语言/01我的第一个程序/01我的第一个c程序.html" class="sidebar-link">你好啊，世界！</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>c数据结构与算法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html" class="active sidebar-link">c语言数据结构与算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#java-c的对比" class="sidebar-link">Java&amp;C的对比</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#指针" class="sidebar-link">指针</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#指针基本代码理解" class="sidebar-link">指针基本代码理解</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#内存的基本概念" class="sidebar-link">内存的基本概念</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#软件运行于内存关系-垃圾数据" class="sidebar-link">软件运行于内存关系(垃圾数据)</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#格式输出类型总结" class="sidebar-link">格式输出类型总结</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#数组的元素地址" class="sidebar-link">数组的元素地址</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#结构体的概述" class="sidebar-link">结构体的概述</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#函数修改结构体属性" class="sidebar-link">函数修改结构体属性</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#动态的内存与释放" class="sidebar-link">动态的内存与释放</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#c函数与java的区别" class="sidebar-link">c函数与java的区别</a></li><li class="sidebar-sub-header"><a href="/lyp/c语言/数据结构与算法/01c语言数据结构与算法.html#跨函数使用内存问题" class="sidebar-link">跨函数使用内存问题</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="c语言数据结构与算法"><a href="#c语言数据结构与算法" class="header-anchor">#</a> c语言数据结构与算法</h1> <div class="custom-block tip"><p class="custom-block-title">写在基石之前</p> <ul><li>难点、重点。</li> <li>数据结构与算法要多花时间去学。</li></ul></div> <p><strong>学习目标</strong></p> <ul><li>学习指针的目的是什么？</li></ul> <p>答：为了把java对象引用搞清楚。</p> <p><strong>指针课纲</strong></p> <ol><li>基本类型的指针【基础】</li> <li>指针与数组的关系【基础】</li> <li>指针和函数</li> <li>指针与宏W</li> <li>指针与多维数组</li></ol> <h2 id="java-c的对比"><a href="#java-c的对比" class="header-anchor">#</a> Java&amp;C的对比</h2> <p><strong>java语言中</strong></p> <ul><li>java中引用类型的概念</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">Student</span> student <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>student：的本质是：一个指针;</p> <p>student 保存了 new Student() 对象在堆空间的地址。</p> <ul><li>如下代码的理解;是地址的赋值。</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">Student</span> student1 <span class="token operator">=</span> student<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>如下代码注意；student不在是指针地址了。而是指向该对应的对象了！</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>student.eat();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">看是非常简单的java代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Student student = new Student();
+Student student1 = student;
+student.eat();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>为什么要理解上面的代码？java对象来回调用就非常容易不理解！</p> <p>上面的java代码太难理解了！一定要去深入理解c的指针！</p></div> <div class="custom-block danger"><p class="custom-block-title">c的预备基础知识</p> <ul><li>指针</li> <li>结构体【c++就不用学，使用类就可以实现。】</li> <li>动态内存的分配和释放</li></ul></div> <h2 id="指针"><a href="#指针" class="header-anchor">#</a> 指针</h2> <ul><li>指针的重要性：</li></ul> <p>指针是c语言的灵魂。</p> <ul><li>什么是指针？、</li></ul> <p>定义：</p> <p>​	地址：<font color="red">就是内存单元的编号</font>。从0开始的非负数整数。0 -- FFFFFFFF【8位】【范围：0 ~ 4G-1】</p> <table><thead><tr><th>名词术语解释</th> <th>描述</th></tr></thead> <tbody><tr><td>指针</td> <td>指针是：地址，地址就是指针！</td></tr> <tr><td>指针变量</td> <td>指针变量是：<font color="red">存放</font>内存单元地址的变量。</td></tr> <tr><td></td> <td></td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">变量是什么？</p> <p>请看c语言基础篇；</p></div> <ul><li>所以；指针的本质是什么？</li></ul> <p>答：指针的本质是一个操作受限的非负整数。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int * p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>p 是个指针变量。</li> <li>int * 表示：该p变量只能存储int类型变量的地址。</li></ul> <h2 id="指针基本代码理解"><a href="#指针基本代码理解" class="header-anchor">#</a> 指针基本代码理解</h2> <div class="language-c line-numbers-mode"><pre class="language-c"><code> <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+ 
+ <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+ <span class="token punctuation">{</span>
+ 	<span class="token keyword">int</span> <span class="token operator">*</span> p<span class="token punctuation">;</span>
+ 	<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+ 	<span class="token keyword">int</span> j<span class="token punctuation">;</span>
+ 	p <span class="token operator">=</span> <span class="token operator">&amp;</span>i<span class="token punctuation">;</span>
+ 	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;打印i变量: %d&quot;</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n打印*p变量: %d&quot;</span><span class="token punctuation">,</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	
+ 	<span class="token comment">// 修改 i变量的值。</span>
+	 i <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n打印i变量: %d&quot;</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\n打印*p变量: %d&quot;</span><span class="token punctuation">,</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+ 	
+ <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p><img src="/assets/img/image-20240611205840860.1919e510.png" alt="image-20240611205840860"></p> <p>运行结果：</p> <p><img src="/assets/img/image-20240611211057000.6e41ffd6.png" alt="image-20240611211057000"></p> <div class="custom-block tip"><p class="custom-block-title">p与i是什么关系呢？</p> <p>答：如果p指向i，则：*p就代表了i(变量)。不能直接说 * p 是i的地址、i的值。</p> <p>结论：</p> <ol><li>i能代表什么，*p它也就能代表什么。</li> <li>i 与 *p 能在任何的地方进行互换。</li> <li><em>p 就等价于 i， i的值改了，则：</em>  * p的值也改变了</li></ol></div> <div class="custom-block tip"><p class="custom-block-title">*p的错误写法</p> <ul><li>错误写法一</li></ul> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token operator">*</span>p
+<span class="token keyword">int</span> j<span class="token punctuation">;</span>
+j <span class="token operator">=</span> <span class="token operator">*</span>p<span class="token punctuation">;</span> <span class="token comment">// *p 没初始化过。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>原因：*p是一个不确定的值。不能将一个保存这不确认值赋值给一个变量。</p> <ul><li>错误写法二</li></ul> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token operator">*</span>p
+<span class="token keyword">int</span> i<span class="token punctuation">;</span>
+<span class="token operator">*</span>p <span class="token operator">=</span> i<span class="token punctuation">;</span> <span class="token comment">// *p 相当于 i 不报错，无意义。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <p>p的内存被释放了，p原来的空间的数据是不会被销毁的。</p> <ul><li>什么叫释放？</li></ul> <p>指：</p> <ol><li><p>操作系统回收了对p的<strong>控制权限</strong>。其他程序都不能在使用这个p空间，如果要使用，必须向操作系统请求。</p></li> <li><p>p内存空间保存这原来的垃圾数据。</p></li></ol> <h2 id="内存的基本概念"><a href="#内存的基本概念" class="header-anchor">#</a> 内存的基本概念</h2> <ul><li><p>内存是用来存储数据的<font color="red">设备</font>。它的存储速度介于<font color="red">寄存器和硬盘</font>之间。</p></li> <li><p>内存是CPU唯一可以访问的大容量的存储设备!所有硬盘中的程序和数据必须调入内存之后方可被CPU执行！<strong>切记</strong>:CPU不能直接处理硬盘中的数据!</p></li> <li><p>内存的问题是软件开发中最核心的问题之一!如:内存的分配，内存的释放，内存什么时候分配，内存什么时候释放，由谁来分配，由谁来释放，分配在是什么地方访问权限如何!</p></li> <li><p>内存是多字节组成的<font color="red">线性一维存储空间</font></p></li> <li><p>内存的基本划分单位是<font color="red">字节</font>。</p></li> <li><p>每个字节含有8位。每一位存放1个0或1个1。</p></li> <li><p>字节和编号是一一对应的。<font color="red">每个字节都有一个唯一确定的编号</font>，一个编号对应一个字节!这个编号也叫地址。</p></li> <li><p>一个系统所能管理的内存空间的大小取决于<font color="red">参与编号的二进制位数</font>!。</p></li></ul> <p><strong>如:</strong></p> <p>DOS系统20位寻址方案可控制2 20B   1MB的内存。</p> <p>386/486系统采用三字节编制，可寻址224M即16M的内存。</p> <p>奔腾寻址空间32位，其有效寻址空间为2 32 M，即 4GB。</p> <h2 id="软件运行于内存关系-垃圾数据"><a href="#软件运行于内存关系-垃圾数据" class="header-anchor">#</a> 软件运行于内存关系(垃圾数据)</h2> <ol><li>软件在运行前需要向操作系统申请存储空间，在内存空闲空间足够时,操作系统将分配一段内存空间并将外存中软件拷贝一份存入该内存空间中，并启动该软件的运行!</li> <li>在软件运行期间，该软件所占内存空间不再分配给其他软件。</li> <li>当软件运行完毕后，操作系统将回收该内存空间(注意:<font color="red">操作系统并不清空该内存空间中遗留下来的数据</font>)，以便再次分配给其他软件使用。</li></ol> <div class="custom-block tip"><p class="custom-block-title">知识连接 第三条</p> <p>因为：<font color="red">操作系统并不清空该内存空间中遗留下来的数据</font>。</p> <p>所以：java中规定，局部变量一定要进行初始化，否则就不能进行使用。【语法规则】</p> <ul><li>java中对象的属性不用进行初始化就能进行使用。为什么？</li></ul> <p>答：默认程序帮我们初始化。</p></div> <p>综上所述，一个软件所分配到的空间中极可能存在着以前其他软件使用过后的残留数据，这些数据被称之为垃圾数据。所以通常情况下我们为一个变量，为一个数组:</p> <h2 id="格式输出类型总结"><a href="#格式输出类型总结" class="header-anchor">#</a> 格式输出类型总结</h2> <table><thead><tr><th>输出类型占位符</th> <th>描述</th></tr></thead> <tbody><tr><td>%p</td> <td>十六进制输出</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h2 id="数组的元素地址"><a href="#数组的元素地址" class="header-anchor">#</a> 数组的元素地址</h2> <p>x占8个字节，1个字节是8位。</p> <p>1个字节一个地址</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token punctuation">{</span>
+	<span class="token keyword">double</span> <span class="token operator">*</span> p<span class="token punctuation">;</span>
+	<span class="token keyword">double</span> x <span class="token operator">=</span> <span class="token number">66.6</span><span class="token punctuation">;</span>
+	p <span class="token operator">=</span> <span class="token operator">&amp;</span>x<span class="token punctuation">;</span>
+	
+	<span class="token comment">// 定义一个数组</span>
+	<span class="token keyword">double</span> arr<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1.1</span><span class="token punctuation">,</span> <span class="token number">2.2</span><span class="token punctuation">,</span> <span class="token number">3.3</span><span class="token punctuation">,</span> <span class="token number">4.4</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token keyword">double</span> <span class="token operator">*</span> q<span class="token punctuation">;</span>
+
+	q <span class="token operator">=</span> <span class="token operator">&amp;</span>arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;第1个元素的地址：%p\n&quot;</span><span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	q <span class="token operator">=</span> <span class="token operator">&amp;</span>arr<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;第2个元素的地址：%p&quot;</span><span class="token punctuation">,</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ul><li>运行结果</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>第1个元素的地址：000000000062FDE0
+第2个元素的地址：000000000062FDE8
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>地址相差8。</p> <h2 id="结构体的概述"><a href="#结构体的概述" class="header-anchor">#</a> 结构体的概述</h2> <p><strong>学习目标</strong></p> <ul><li>为什么会出现结构体？</li></ul> <p>表示一个学生的个属性，要单独的去声明一个变量去保存。学生多了。变量的名字可读性差。所以：一个学生对应一个结构体表示更为可读性。</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">Student</span><span class="token punctuation">{</span>
+	<span class="token comment">// 结构体伪代码</span>
+	<span class="token keyword">int</span> sid<span class="token punctuation">;</span>
+	String name<span class="token punctuation">;</span>
+	<span class="token keyword">void</span> sage<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>在java中我们使用一个学生类来表示一个对象。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token class-name">Class</span> <span class="token class-name">Student</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> sid<span class="token punctuation">;</span>
+	<span class="token class-name">String</span> name<span class="token punctuation">;</span>
+	<span class="token keyword">void</span> sage<span class="token punctuation">;</span>
+    <span class="token keyword">void</span> <span class="token function">inputStudenInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">// 输出学生对象的信息。</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">c与java的总结</p> <p>在c的结构体表现事物是有缺陷的，Java的类中能更好的表现具体的事物。</p> <p>区别：c的结构体只能表示属性，不能表示行为。【大白话，结构体只有属性、没有方法。】</p> <p>结构体是类的一个过度。【了解，不用研究太深！目的为了学习c的数据结构与算法。】</p></div> <ul><li>什么叫结构体?</li></ul> <p>结构体：是用户根据实际需求，要自己定义的<font color="red">复合数据类</font></p> <p>知识连接：</p> <p>java中类也是用户根据实际需求，自己定义的数据类。</p> <ul><li>如何使用结构体？</li></ul> <p>有二中方式</p> <ol><li>方式一：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>结构体变量名.属性名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>方式二：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>结构体指针变量名-&gt;属性名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>案例：</strong></p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+<span class="token comment">// 定义模型 </span>
+<span class="token keyword">struct</span> <span class="token class-name">Student</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">// 添加 </span>
+	<span class="token keyword">int</span> sid<span class="token punctuation">;</span>
+	<span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment">// 分号不能省略 </span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;没有修改的值%d\n&quot;</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">// 结构体初始化 </span>
+    
+    <span class="token comment">// 方式一：</span>
+	<span class="token comment">// struct 自己定义的类型名字  结构体变量名; </span>
+	<span class="token keyword">struct</span> <span class="token class-name">Student</span> st <span class="token operator">=</span>  <span class="token punctuation">{</span><span class="token number">1000</span><span class="token punctuation">,</span><span class="token string">&quot;zhansan&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %s %d\n&quot;</span><span class="token punctuation">,</span>st<span class="token punctuation">.</span>sid<span class="token punctuation">,</span> st<span class="token punctuation">.</span>name<span class="token punctuation">,</span> st<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">struct</span> <span class="token class-name">Student</span> st1 <span class="token operator">=</span>  <span class="token punctuation">{</span><span class="token number">1000</span><span class="token punctuation">,</span><span class="token string">&quot;zhansan&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	st1<span class="token punctuation">.</span>sid <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+	<span class="token function">strcpy</span><span class="token punctuation">(</span>st1<span class="token punctuation">.</span>name<span class="token punctuation">,</span><span class="token string">&quot;liyu&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	st1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%d %s %d\n&quot;</span><span class="token punctuation">,</span>st1<span class="token punctuation">.</span>sid<span class="token punctuation">,</span> st1<span class="token punctuation">.</span>name<span class="token punctuation">,</span> st1<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">// 方式二：</span>
+	<span class="token comment">// 定义结构体指针</span>
+	 <span class="token keyword">struct</span> <span class="token class-name">Student</span> <span class="token operator">*</span> pst<span class="token punctuation">;</span>
+	 pst <span class="token operator">=</span> <span class="token operator">&amp;</span>st1<span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;结构体指针变量访问：%d %s %d\n&quot;</span><span class="token punctuation">,</span>pst<span class="token operator">-&gt;</span>sid<span class="token punctuation">,</span> pst<span class="token operator">-&gt;</span>name<span class="token punctuation">,</span> pst<span class="token operator">-&gt;</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>	 
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>什么是：pst-&gt;sid是声明？</p> <p>答：pst所指向的结构体变量中的sid这个成员</p> <ul><li>注意什么事项？</li></ul> <ol><li>结构体不能加减乘除，但是可以相互赋值。</li> <li>结构体变量和结构体指针变量作为函数传参的问题。</li></ol> <h2 id="函数修改结构体属性"><a href="#函数修改结构体属性" class="header-anchor">#</a> 函数修改结构体属性</h2> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+<span class="token comment">// 定义学生结构体模型。 </span>
+<span class="token keyword">struct</span> <span class="token class-name">Student</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">// 添加 </span>
+	<span class="token keyword">int</span> sid<span class="token punctuation">;</span>
+	<span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment">// 分号不能省略 </span>
+
+<span class="token comment">// 传指针变脸进行打印 </span>
+<span class="token keyword">void</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Student</span> <span class="token operator">*</span> pst <span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">// 赋值打印。 </span>
+<span class="token keyword">void</span> <span class="token function">print_struct</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Student</span> st<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">// 结构体初始化 </span>
+	<span class="token comment">// struct 自己定义的类型名字  结构体变量名; </span>
+	<span class="token keyword">struct</span> <span class="token class-name">Student</span> st <span class="token operator">=</span>  <span class="token punctuation">{</span><span class="token number">1000</span><span class="token punctuation">,</span><span class="token string">&quot;zhansan&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;没有修改之前的：%d %s %d\n&quot;</span><span class="token punctuation">,</span>st<span class="token punctuation">.</span>sid<span class="token punctuation">,</span> st<span class="token punctuation">.</span>name<span class="token punctuation">,</span> st<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">change</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>st<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">print_struct</span><span class="token punctuation">(</span>st<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 建议：传指针。内存占用小； </span>
+<span class="token keyword">void</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Student</span> <span class="token operator">*</span> pst<span class="token punctuation">)</span> 
+<span class="token punctuation">{</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;修改...了学生sid\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	pst<span class="token operator">-&gt;</span>sid <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 缺点:传参消耗内存 </span>
+<span class="token keyword">void</span> <span class="token function">print_struct</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Student</span> st<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;打印修改后的学生结构体：%d %s %d\n&quot;</span><span class="token punctuation">,</span>st<span class="token punctuation">.</span>sid<span class="token punctuation">,</span> st<span class="token punctuation">.</span>name<span class="token punctuation">,</span> st<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><ul><li>运行结果</li></ul> <p><img src="/assets/img/image-20240615160740467.0de4de1f.png" alt="image-20240615160740467"></p> <h2 id="动态的内存与释放"><a href="#动态的内存与释放" class="header-anchor">#</a> 动态的内存与释放</h2> <p>静态数组的概念：</p> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">静态分配数组内存大小</p> <ul><li>大小是在内存里面写死的，程序跑起来后不能进行修改，要关闭程序后，修改源码进行分配数组的大小。缺点：无法进行动态的配置内存。【后面有动态的进行分配内存大小的解决方法。】</li></ul></div> <p>病毒就是靠访问正在运行的那些程序所占用的内存。Java中规定局部 变量必须初始化，因为这些变量一开始都是垃圾值，但是属性不是必须初始化的，因为已经默认初始化为0 动态内存分配和释放（动态分配的内存一定要手动释放，否则造成内存泄露。</p> <ul><li>动态的分配</li></ul> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token comment">// java中</span>
+A aa <span class="token operator">=</span> new <span class="token function">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 其实就是</span>
+A <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token punctuation">(</span>A <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span>）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>手动释放！</li></ul> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token function">free</span><span class="token punctuation">(</span>首地址指针变量<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 动态分配的内存权限归还给操作系统。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">动态分配的优点</p> <ul><li></li></ul></div> <h2 id="c函数与java的区别"><a href="#c函数与java的区别" class="header-anchor">#</a> c函数与java的区别</h2> <div class="language-c line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdlib.h&gt;</span></span>
+<span class="token comment">// 声明函数；  注意：与java中的抽象方法一样的写法。 </span>
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;没有修改的值%d\n&quot;</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	<span class="token comment">// 修改 i的值。怎么做？</span>
+	<span class="token function">f</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">// 修改后的值 </span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;修改后的值:%d&quot;</span><span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义函数与java不一样的。区别在于要添加一个前置说明 </span>
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token operator">*</span>a <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="跨函数使用内存问题"><a href="#跨函数使用内存问题" class="header-anchor">#</a> 跨函数使用内存问题</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/27/2024, 12:13:15 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lyp/c语言/01我的第一个程序/01我的第一个c程序.html" class="prev">
+        你好啊，世界！
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.47201228.js" defer></script><script src="/assets/js/2.9c1d7e52.js" defer></script><script src="/assets/js/91.a67165ac.js" defer></script>
+  </body>
+</html>
