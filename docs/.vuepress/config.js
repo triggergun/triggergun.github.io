@@ -263,7 +263,13 @@ module.exports = {
 
             ],
           },
+          {
+            text: '大话flume',
+            items: [
+              { text: "flume", link: encodeURI('/lyp/大数据/flume/base01/版本管理') },
 
+            ],
+          },
 
         ]
       },
