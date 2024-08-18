@@ -624,6 +624,7 @@ module.exports = {
             encodeURI('/java/java工具/05IDEA常用工具'),
             encodeURI('/java/java工具/06mybatis代码生成器'),
             encodeURI('/java/java工具/07java实例json格式化'),
+            encodeURI('/java/java工具/08java项目打包exe文件'),
           ]
 
         },
