@@ -770,6 +770,14 @@ module.exports = {
             encodeURI('/lyp/rust语言/第一阶段基础篇/10通用编程概念'),
           ]
         },
+        {
+          title: 'rust demo',
+          collapsable: false,
+          children: [
+            // rust的项目集合readme的翻译
+            encodeURI('/lyp/rust语言/rust_demo_set/ocrs_readme'),
+          ]
+        },
 
       ],
       // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
@@ -792,9 +800,18 @@ module.exports = {
 
           ]
         },
+        {
+          title: '爬虫',
+          collapsable: false,
+          children: [
+            // 第一阶段基础篇
+            encodeURI('/lyp/python/crawl/day01'),
+
+          ]
+        },
 
       ],
-      // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
+      // ===================== lyp模块点击设python语言 ,python语言的侧边栏目录    设置 end ===========
 
 
       //================= top上 有按钮  大数据的  start ===========================
