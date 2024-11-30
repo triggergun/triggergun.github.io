@@ -1060,7 +1060,7 @@ module.exports = {
                     title: '第一阶段ps基础',
                     collapsable: false,
                     children: [
-                        encodeURI('/美工/ps/01巧记ps快捷键'),
+                        encodeURI('/美工/ps/01ps基础/01巧记ps快捷键'),
                     ]
 
                 },
