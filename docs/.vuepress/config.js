@@ -610,6 +610,12 @@ module.exports = {
 
                 },
                 {
+                    title: 'java面向对象',
+                    collapsable: false,
+                    children: ['/java/javaSEBase/day03'],
+
+                },
+                {
                     title: 'IO流',
                     collapsable: false,
                     children: [
