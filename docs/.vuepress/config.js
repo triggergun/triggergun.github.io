@@ -523,7 +523,9 @@ module.exports = {
                 {
                     title: 'centos运维',
                     collapsable: false,
-                    children: ['/运维/centos/01防火墙命令'],
+                    children: [
+                        '/运维/centos/01防火墙命令',
+                        '/运维/centos/02linux找文件夹'],
                 },
                 {
                     title: '系统架构',
