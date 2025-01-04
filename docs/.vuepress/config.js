@@ -827,6 +827,14 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'rust第二阶段问答篇',
+                    collapsable: false,
+                    children: [
+                        // rust的项目集合readme的翻译
+                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250104_demo01'),
+                    ]
+                },
+                {
                     title: 'rust demo',
                     collapsable: false,
                     children: [
