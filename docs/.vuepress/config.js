@@ -164,13 +164,15 @@ module.exports = {
                             {text: "mybatis-plus", link: encodeURI('/java/mybatis_plus/03多数据库源的编写')},
                         ]
                     },
-                    //------------- 源码分析
+                    //-------------java的  源码分析 start
                     {
                         text: '源码分析区',
                         items: [
                             {text: "spring源码分析", link: encodeURI('/java/spring源码分析/01Spring源码下载')},
+                            {text: "spring-boot源码分析", link: encodeURI('/java/springboot_source_code/20250105_demo01')},
                         ]
                     },
+                    //-------------java的  源码分析 end
                     //---------------springCloud
                     {
                         text: 'springCloud',
@@ -723,6 +725,21 @@ module.exports = {
                 },
 
             ],
+
+            // ===================== 点击设 springboot源码分析 ===========
+            '/java/springboot_source_code/': [
+                {
+                    title: 'spring-boot自动装配',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/springboot_source_code/20250105_demo01'),
+
+                    ]
+
+                },
+
+            ],
+
             // ===================== 点击设 gradle ===========
             '/java/gradle/': [
                 {
