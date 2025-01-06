@@ -849,6 +849,7 @@ module.exports = {
                     children: [
                         // rust的项目集合readme的翻译
                         encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250104_demo01'),
+                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250106_demo02'),
                     ]
                 },
                 {
