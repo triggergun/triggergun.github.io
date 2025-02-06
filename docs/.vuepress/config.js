@@ -851,6 +851,9 @@ module.exports = {
                         encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250104_demo01'),
                         encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250106_demo02'),
                         encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250110_demo03'),
+                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250124_demo04'),
+                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250125_demo05'),
+                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250206_demo06'),
                     ]
                 },
                 {
