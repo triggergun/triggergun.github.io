@@ -554,7 +554,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/network/华为/HCIA认证/01华为认证体系介绍',
-                        '/network/华为/HCIA认证/02eNSP的安装'
+                        '/network/华为/HCIA认证/02eNSP的安装',
+                        '/network/华为/HCIA认证/03配置ssh协议'
                     ],
 
                 },
