@@ -506,7 +506,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                     '/运维/windows/cmd',
-                    "/运维/windows/cmd01"
+                    "/运维/windows/cmd01",
+                    "/运维/windows/cmd02"
                     ],
 
                 },
