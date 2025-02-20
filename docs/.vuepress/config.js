@@ -504,7 +504,10 @@ module.exports = {
                 {
                     title: 'windows运维',
                     collapsable: false,
-                    children: ['/运维/windows/cmd'],
+                    children: [
+                    '/运维/windows/cmd',
+                    "/运维/windows/cmd01"
+                    ],
 
                 },
                 {
