@@ -555,8 +555,10 @@ module.exports = {
                 {
                     title: 'ip地址说起',
                     collapsable: false,
-                    children: ['/network/network01',
-                        '/network/network02'
+                    children: [
+                        '/network/network01',
+                        '/network/network02',
+                        '/network/network03'
                     ],
 
                 },
