@@ -534,6 +534,13 @@ module.exports = {
                         '/运维/centos/02linux找文件夹'],
                 },
                 {
+                    title: 'ubuntu运维',
+                    collapsable: false,
+                    children: [
+                        '/运维/ubuntu/demo01_2025_02_21',
+                        '/运维/ubuntu/demo01_2025_02_22'],
+                },
+                {
                     title: '系统架构',
                     collapsable: false,
                     children: [
