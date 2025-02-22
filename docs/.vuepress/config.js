@@ -538,7 +538,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/运维/ubuntu/demo01_2025_02_21',
-                        '/运维/ubuntu/demo01_2025_02_22'],
+                        '/运维/ubuntu/demo02_2025_02_22'],
                 },
                 {
                     title: '系统架构',
