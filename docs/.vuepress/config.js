@@ -522,6 +522,8 @@ module.exports = {
                         '/运维/windows/docker/03centos安装docker_compose',
                         '/运维/windows/docker/04docker_compose安装mysql',
                         '/运维/windows/docker/05idea连接远程docker构建镜像',
+                        '/运维/windows/docker/demo01_2025_01_26',
+                        '/运维/windows/docker/demo02_2025_01_26',
 
                     ],
 
@@ -531,7 +533,11 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/运维/centos/01防火墙命令',
-                        '/运维/centos/02linux找文件夹'],
+                        '/运维/centos/02linux找文件夹',
+                        '/运维/centos/demo01_2025_02_26',
+                        '/运维/centos/demo02_2025_02_27',
+                        '/运维/centos/demo03_2025_02_27',
+                    ],
                 },
                 {
                     title: 'ubuntu运维',
