@@ -37,3 +37,20 @@ chmod +x /usr/local/bin/docker-compose
 ```
 
 ![image-20240101115111649](03centos安装docker_compose.assets/image-20240101115111649.png)
+
+
+
+
+
+2025年2月17日我使用的docker-compose文件的版本如下：
+
+```shell
+[root@c3iot bin]# docker-compose -v
+docker-compose version 1.29.1, build c34c88b2
+[root@c3iot bin]# 
+```
+
+
+
+
+
