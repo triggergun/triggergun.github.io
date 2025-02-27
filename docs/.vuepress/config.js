@@ -538,6 +538,8 @@ module.exports = {
                         '/运维/centos/demo02_2025_02_27',
                         '/运维/centos/demo03_2025_02_27',
                         '/运维/centos/demo04_2025_02_28',
+                        '/运维/centos/demo05_2025_02_28',
+                        '/运维/centos/demo06_2025_02_28',
                     ],
                 },
                 {
