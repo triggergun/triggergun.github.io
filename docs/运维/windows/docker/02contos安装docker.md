@@ -72,6 +72,18 @@ docker-ce为社区免费版本。稍等片刻，docker即可安装成功。
 
 ![image-20240101114306512](02contos安装docker.assets/image-20240101114306512.png)
 
+
+
+2025年的2月27日再次执行：`yum install -y docker-ce`命令默认安装的是最新版docker。
+
+![image-20250227104854651](02contos安装docker.assets/image-20250227104854651.png)
+
+::: tip 扩展下
+
+怎么在安装时指定要安装的版本呢？（问AI）
+
+:::
+
 ## 检查docker状态
 
 ```shell

@@ -12,7 +12,15 @@
 cd  /usr/local/bin/
 ```
 
+::: tip  题问题
 
+- 问：docker-compose文件哪里下载呢？
+
+  答：通过网盘分享的文件：docker-compose
+  链接: https://pan.baidu.com/s/1dlQtlM6SG5v3ioEb3mq_oQ?pwd=p5wp 提取码: p5wp 
+  --来自百度网盘超级会员v4的分享
+
+:::
 
 ## 修改文件权限
 
