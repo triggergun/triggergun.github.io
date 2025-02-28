@@ -546,6 +546,9 @@ module.exports = {
                         '/运维/centos/demo10_2025_02_28',
                         '/运维/centos/demo11_2025_02_28',
                         '/运维/centos/demo12_2025_02_28',
+                        '/运维/centos/demo13_2025_02_28',
+                        '/运维/centos/demo14_2025_02_28',
+                        '/运维/centos/demo15_2025_02_28',
                     ],
                 },
                 {
