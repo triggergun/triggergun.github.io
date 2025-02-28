@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装harbor | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="favicon.ico">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta http_equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    <meta name="google-adsense-account" content="ca-pub-6542685716937885">
+    
+    <link rel="preload" href="/assets/css/0.styles.7e5dbb62.css" as="style"><link rel="preload" href="/assets/js/app.00b982b6.js" as="script"><link rel="preload" href="/assets/js/5.432cde98.js" as="script"><link rel="preload" href="/assets/js/66.d5e96ab7.js" as="script"><link rel="prefetch" href="/assets/js/10.730aff26.js"><link rel="prefetch" href="/assets/js/100.6712d7ba.js"><link rel="prefetch" href="/assets/js/101.84452561.js"><link rel="prefetch" href="/assets/js/102.4f3f6a29.js"><link rel="prefetch" href="/assets/js/103.51b6fe51.js"><link rel="prefetch" href="/assets/js/104.44dc276d.js"><link rel="prefetch" href="/assets/js/105.aa0a96e1.js"><link rel="prefetch" href="/assets/js/106.7b8dcb03.js"><link rel="prefetch" href="/assets/js/107.bffe4122.js"><link rel="prefetch" href="/assets/js/108.1095b22f.js"><link rel="prefetch" href="/assets/js/109.a8c3646d.js"><link rel="prefetch" href="/assets/js/11.0dffeca3.js"><link rel="prefetch" href="/assets/js/110.bf849216.js"><link rel="prefetch" href="/assets/js/111.ec4cbbdd.js"><link rel="prefetch" href="/assets/js/112.aa8daf64.js"><link rel="prefetch" href="/assets/js/113.14680efb.js"><link rel="prefetch" href="/assets/js/114.920da7d1.js"><link rel="prefetch" href="/assets/js/115.b49c1b82.js"><link rel="prefetch" href="/assets/js/116.4974bd0f.js"><link rel="prefetch" href="/assets/js/117.8a454818.js"><link rel="prefetch" href="/assets/js/118.0da2837a.js"><link rel="prefetch" href="/assets/js/119.44d2ccd8.js"><link rel="prefetch" href="/assets/js/12.a1b4f815.js"><link rel="prefetch" href="/assets/js/120.50dede9f.js"><link rel="prefetch" href="/assets/js/121.f1f4519f.js"><link rel="prefetch" href="/assets/js/122.4324c3f1.js"><link rel="prefetch" href="/assets/js/123.78f9e8fe.js"><link rel="prefetch" href="/assets/js/124.974d95da.js"><link rel="prefetch" href="/assets/js/125.b9486d8f.js"><link rel="prefetch" href="/assets/js/126.3a4c9ce8.js"><link rel="prefetch" href="/assets/js/127.b9081d25.js"><link rel="prefetch" href="/assets/js/128.37a36397.js"><link rel="prefetch" href="/assets/js/129.0834124a.js"><link rel="prefetch" href="/assets/js/13.8a29a740.js"><link rel="prefetch" href="/assets/js/130.66904b8d.js"><link rel="prefetch" href="/assets/js/131.c684a0ab.js"><link rel="prefetch" href="/assets/js/132.7211f4fe.js"><link rel="prefetch" href="/assets/js/133.a2ea1a6d.js"><link rel="prefetch" href="/assets/js/134.7132c9e5.js"><link rel="prefetch" href="/assets/js/135.4ff6f7e6.js"><link rel="prefetch" href="/assets/js/136.b84c9c24.js"><link rel="prefetch" href="/assets/js/137.5b24b910.js"><link rel="prefetch" href="/assets/js/138.12496535.js"><link rel="prefetch" href="/assets/js/139.9458efc3.js"><link rel="prefetch" href="/assets/js/14.795636c2.js"><link rel="prefetch" href="/assets/js/140.fea6a161.js"><link rel="prefetch" href="/assets/js/141.e1368220.js"><link rel="prefetch" href="/assets/js/142.0a4b9cd5.js"><link rel="prefetch" href="/assets/js/143.8642caae.js"><link rel="prefetch" href="/assets/js/144.2fb2b4b7.js"><link rel="prefetch" href="/assets/js/145.a322e2ca.js"><link rel="prefetch" href="/assets/js/146.3439b14f.js"><link rel="prefetch" href="/assets/js/147.5cb10067.js"><link rel="prefetch" href="/assets/js/148.a3ed6027.js"><link rel="prefetch" href="/assets/js/149.6d585db5.js"><link rel="prefetch" href="/assets/js/15.7aeb7e00.js"><link rel="prefetch" href="/assets/js/150.c1bccd22.js"><link rel="prefetch" href="/assets/js/151.f0a50f0f.js"><link rel="prefetch" href="/assets/js/152.b5ff54ef.js"><link rel="prefetch" href="/assets/js/153.f43399b2.js"><link rel="prefetch" href="/assets/js/154.c530a382.js"><link rel="prefetch" href="/assets/js/155.1cae635c.js"><link rel="prefetch" href="/assets/js/156.d0adcde8.js"><link rel="prefetch" href="/assets/js/157.e8a8ef57.js"><link rel="prefetch" href="/assets/js/158.2b614a2a.js"><link rel="prefetch" href="/assets/js/159.7676ccc2.js"><link rel="prefetch" href="/assets/js/16.0e4311a0.js"><link rel="prefetch" href="/assets/js/160.2c2a9682.js"><link rel="prefetch" href="/assets/js/161.650eb473.js"><link rel="prefetch" href="/assets/js/162.5f531951.js"><link rel="prefetch" href="/assets/js/163.ad673621.js"><link rel="prefetch" href="/assets/js/164.13faa3b9.js"><link rel="prefetch" href="/assets/js/165.c8b2e433.js"><link rel="prefetch" href="/assets/js/166.12801508.js"><link rel="prefetch" href="/assets/js/167.5d8225e1.js"><link rel="prefetch" href="/assets/js/168.fcee99e4.js"><link rel="prefetch" href="/assets/js/169.f6ad19c8.js"><link rel="prefetch" href="/assets/js/17.d13fb142.js"><link rel="prefetch" href="/assets/js/170.a5b4d003.js"><link rel="prefetch" href="/assets/js/171.65792e24.js"><link rel="prefetch" href="/assets/js/172.bc90c1c0.js"><link rel="prefetch" href="/assets/js/173.4b0af29d.js"><link rel="prefetch" href="/assets/js/174.aa600de2.js"><link rel="prefetch" href="/assets/js/175.ef511528.js"><link rel="prefetch" href="/assets/js/176.09499eea.js"><link rel="prefetch" href="/assets/js/177.c564956f.js"><link rel="prefetch" href="/assets/js/178.5b1c657f.js"><link rel="prefetch" href="/assets/js/179.5bf06559.js"><link rel="prefetch" href="/assets/js/18.b3890880.js"><link rel="prefetch" href="/assets/js/180.1fa4b1a3.js"><link rel="prefetch" href="/assets/js/181.9e092f9f.js"><link rel="prefetch" href="/assets/js/182.51a7a03b.js"><link rel="prefetch" href="/assets/js/183.4991b49d.js"><link rel="prefetch" href="/assets/js/184.2c059c05.js"><link rel="prefetch" href="/assets/js/185.bbd1427d.js"><link rel="prefetch" href="/assets/js/186.79a40fc3.js"><link rel="prefetch" href="/assets/js/187.e352245c.js"><link rel="prefetch" href="/assets/js/188.b5099c96.js"><link rel="prefetch" href="/assets/js/189.c80f334a.js"><link rel="prefetch" href="/assets/js/19.4bc2e78e.js"><link rel="prefetch" href="/assets/js/190.b7d71c5f.js"><link rel="prefetch" href="/assets/js/191.6f78440c.js"><link rel="prefetch" href="/assets/js/192.79c8be76.js"><link rel="prefetch" href="/assets/js/193.031ccc67.js"><link rel="prefetch" href="/assets/js/194.67b1be2d.js"><link rel="prefetch" href="/assets/js/195.e17ece45.js"><link rel="prefetch" href="/assets/js/196.c7a5987d.js"><link rel="prefetch" href="/assets/js/197.aefc1757.js"><link rel="prefetch" href="/assets/js/198.db1d603f.js"><link rel="prefetch" href="/assets/js/199.3e834d3c.js"><link rel="prefetch" href="/assets/js/2.d0e96e27.js"><link rel="prefetch" href="/assets/js/20.eb434833.js"><link rel="prefetch" href="/assets/js/200.6f37dd54.js"><link rel="prefetch" href="/assets/js/201.df51a06c.js"><link rel="prefetch" href="/assets/js/202.bd748073.js"><link rel="prefetch" href="/assets/js/203.c2868a59.js"><link rel="prefetch" href="/assets/js/204.af2bea2c.js"><link rel="prefetch" href="/assets/js/205.bc6e116f.js"><link rel="prefetch" href="/assets/js/206.dc00cbfa.js"><link rel="prefetch" href="/assets/js/207.96e70a9b.js"><link rel="prefetch" href="/assets/js/208.05974559.js"><link rel="prefetch" href="/assets/js/209.f9b3d4cb.js"><link rel="prefetch" href="/assets/js/21.c5ac2f48.js"><link rel="prefetch" href="/assets/js/210.0f21ab09.js"><link rel="prefetch" href="/assets/js/211.0d076f73.js"><link rel="prefetch" href="/assets/js/212.23d11592.js"><link rel="prefetch" href="/assets/js/213.e5da4bea.js"><link rel="prefetch" href="/assets/js/214.cc4520e6.js"><link rel="prefetch" href="/assets/js/215.f2a87bdb.js"><link rel="prefetch" href="/assets/js/216.6a465215.js"><link rel="prefetch" href="/assets/js/217.fb6773ca.js"><link rel="prefetch" href="/assets/js/218.aab2b970.js"><link rel="prefetch" href="/assets/js/219.9e371d8c.js"><link rel="prefetch" href="/assets/js/22.c20dffa4.js"><link rel="prefetch" href="/assets/js/220.9389b5d6.js"><link rel="prefetch" href="/assets/js/221.751395a9.js"><link rel="prefetch" href="/assets/js/222.aa7ae4ac.js"><link rel="prefetch" href="/assets/js/223.a1a52785.js"><link rel="prefetch" href="/assets/js/224.7c66e75b.js"><link rel="prefetch" href="/assets/js/225.e0642d34.js"><link rel="prefetch" href="/assets/js/226.5486a6f4.js"><link rel="prefetch" href="/assets/js/227.42f1893d.js"><link rel="prefetch" href="/assets/js/228.a9401cab.js"><link rel="prefetch" href="/assets/js/229.43549530.js"><link rel="prefetch" href="/assets/js/23.8c105167.js"><link rel="prefetch" href="/assets/js/230.65aecda7.js"><link rel="prefetch" href="/assets/js/231.faa14112.js"><link rel="prefetch" href="/assets/js/232.d9883ef8.js"><link rel="prefetch" href="/assets/js/233.c3e9efe6.js"><link rel="prefetch" href="/assets/js/234.a4c19558.js"><link rel="prefetch" href="/assets/js/235.bb6e9688.js"><link rel="prefetch" href="/assets/js/236.5b550483.js"><link rel="prefetch" href="/assets/js/237.b85db2d0.js"><link rel="prefetch" href="/assets/js/238.12b3eb3c.js"><link rel="prefetch" href="/assets/js/239.cabb82a7.js"><link rel="prefetch" href="/assets/js/24.dd292bac.js"><link rel="prefetch" href="/assets/js/240.9b560592.js"><link rel="prefetch" href="/assets/js/241.140d9b4b.js"><link rel="prefetch" href="/assets/js/242.3e7762ea.js"><link rel="prefetch" href="/assets/js/243.0b1d628d.js"><link rel="prefetch" href="/assets/js/244.255c814c.js"><link rel="prefetch" href="/assets/js/245.9db7706d.js"><link rel="prefetch" href="/assets/js/246.eceb0849.js"><link rel="prefetch" href="/assets/js/247.b4599d4e.js"><link rel="prefetch" href="/assets/js/248.5b865491.js"><link rel="prefetch" href="/assets/js/249.fa89c047.js"><link rel="prefetch" href="/assets/js/25.00ada080.js"><link rel="prefetch" href="/assets/js/250.2f3bd315.js"><link rel="prefetch" href="/assets/js/251.8bb1ff2a.js"><link rel="prefetch" href="/assets/js/252.72f12376.js"><link rel="prefetch" href="/assets/js/253.cebf26f9.js"><link rel="prefetch" href="/assets/js/254.241e3bd4.js"><link rel="prefetch" href="/assets/js/255.40094887.js"><link rel="prefetch" href="/assets/js/256.1f9045a3.js"><link rel="prefetch" href="/assets/js/257.c849ac64.js"><link rel="prefetch" href="/assets/js/258.799f0818.js"><link rel="prefetch" href="/assets/js/259.b222cd40.js"><link rel="prefetch" href="/assets/js/26.093d5a24.js"><link rel="prefetch" href="/assets/js/260.393b86ac.js"><link rel="prefetch" href="/assets/js/261.b9d03950.js"><link rel="prefetch" href="/assets/js/262.05efa03e.js"><link rel="prefetch" href="/assets/js/263.5de1d721.js"><link rel="prefetch" href="/assets/js/264.4785fc25.js"><link rel="prefetch" href="/assets/js/265.ba673b06.js"><link rel="prefetch" href="/assets/js/266.0cc51880.js"><link rel="prefetch" href="/assets/js/267.d070b4b1.js"><link rel="prefetch" href="/assets/js/268.3f3dde8d.js"><link rel="prefetch" href="/assets/js/27.60aa09b3.js"><link rel="prefetch" href="/assets/js/28.1c8d3312.js"><link rel="prefetch" href="/assets/js/29.29913c72.js"><link rel="prefetch" href="/assets/js/3.fc9de2eb.js"><link rel="prefetch" href="/assets/js/30.ebf44afa.js"><link rel="prefetch" href="/assets/js/31.b9a8d816.js"><link rel="prefetch" href="/assets/js/32.17d90d67.js"><link rel="prefetch" href="/assets/js/33.fe6f83db.js"><link rel="prefetch" href="/assets/js/34.5676dbbb.js"><link rel="prefetch" href="/assets/js/35.caa5a312.js"><link rel="prefetch" href="/assets/js/36.e91f2e69.js"><link rel="prefetch" href="/assets/js/37.4118b2cd.js"><link rel="prefetch" href="/assets/js/38.8268b3e8.js"><link rel="prefetch" href="/assets/js/39.450eae0b.js"><link rel="prefetch" href="/assets/js/4.b027034a.js"><link rel="prefetch" href="/assets/js/40.8169eda6.js"><link rel="prefetch" href="/assets/js/41.977e4c49.js"><link rel="prefetch" href="/assets/js/42.542923a7.js"><link rel="prefetch" href="/assets/js/43.9fffac93.js"><link rel="prefetch" href="/assets/js/44.975a7685.js"><link rel="prefetch" href="/assets/js/45.2db3c068.js"><link rel="prefetch" href="/assets/js/46.67276e96.js"><link rel="prefetch" href="/assets/js/47.e69ef943.js"><link rel="prefetch" href="/assets/js/48.45de39c7.js"><link rel="prefetch" href="/assets/js/49.5447c84b.js"><link rel="prefetch" href="/assets/js/50.00e6f67e.js"><link rel="prefetch" href="/assets/js/51.98b8825a.js"><link rel="prefetch" href="/assets/js/52.20d7ecc1.js"><link rel="prefetch" href="/assets/js/53.b53521c2.js"><link rel="prefetch" href="/assets/js/54.befb1e30.js"><link rel="prefetch" href="/assets/js/55.916fbba9.js"><link rel="prefetch" href="/assets/js/56.c541412b.js"><link rel="prefetch" href="/assets/js/57.a945c8c9.js"><link rel="prefetch" href="/assets/js/58.096fcfe6.js"><link rel="prefetch" href="/assets/js/59.ecf3e50b.js"><link rel="prefetch" href="/assets/js/6.fb648175.js"><link rel="prefetch" href="/assets/js/60.13be64b2.js"><link rel="prefetch" href="/assets/js/61.480d3e25.js"><link rel="prefetch" href="/assets/js/62.40af2f52.js"><link rel="prefetch" href="/assets/js/63.399d1c15.js"><link rel="prefetch" href="/assets/js/64.b7886bf2.js"><link rel="prefetch" href="/assets/js/65.eaea5774.js"><link rel="prefetch" href="/assets/js/67.679898c4.js"><link rel="prefetch" href="/assets/js/68.35a06367.js"><link rel="prefetch" href="/assets/js/69.93a05fbc.js"><link rel="prefetch" href="/assets/js/7.46aa68fb.js"><link rel="prefetch" href="/assets/js/70.925b65b9.js"><link rel="prefetch" href="/assets/js/71.e3365b4e.js"><link rel="prefetch" href="/assets/js/72.c3dab429.js"><link rel="prefetch" href="/assets/js/73.f1622703.js"><link rel="prefetch" href="/assets/js/74.51e0a0da.js"><link rel="prefetch" href="/assets/js/75.1f29a446.js"><link rel="prefetch" href="/assets/js/76.8906c17f.js"><link rel="prefetch" href="/assets/js/77.1348a00a.js"><link rel="prefetch" href="/assets/js/78.9a43aa3f.js"><link rel="prefetch" href="/assets/js/79.496f2104.js"><link rel="prefetch" href="/assets/js/8.e2cf5f25.js"><link rel="prefetch" href="/assets/js/80.cbefe7fb.js"><link rel="prefetch" href="/assets/js/81.2dedaee6.js"><link rel="prefetch" href="/assets/js/82.bc39b609.js"><link rel="prefetch" href="/assets/js/83.04d45737.js"><link rel="prefetch" href="/assets/js/84.4267be80.js"><link rel="prefetch" href="/assets/js/85.2e71c12e.js"><link rel="prefetch" href="/assets/js/86.6efec450.js"><link rel="prefetch" href="/assets/js/87.574824e2.js"><link rel="prefetch" href="/assets/js/88.6ae7f1f4.js"><link rel="prefetch" href="/assets/js/89.97d78540.js"><link rel="prefetch" href="/assets/js/9.bb971520.js"><link rel="prefetch" href="/assets/js/90.6383b637.js"><link rel="prefetch" href="/assets/js/91.8d805369.js"><link rel="prefetch" href="/assets/js/92.df733f06.js"><link rel="prefetch" href="/assets/js/93.9ca5f569.js"><link rel="prefetch" href="/assets/js/94.9d209c68.js"><link rel="prefetch" href="/assets/js/95.18099bbd.js"><link rel="prefetch" href="/assets/js/96.b3a29486.js"><link rel="prefetch" href="/assets/js/97.f07d77bf.js"><link rel="prefetch" href="/assets/js/98.d876c5fd.js"><link rel="prefetch" href="/assets/js/99.d80881ee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7e5dbb62.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南的博客" class="dropdown-title"><span class="title">图南的博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南的博客" class="mobile-dropdown-title"><span class="title">图南的博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust语言
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          ps
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>windows运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/windows/cmd.html" class="sidebar-link">强制关闭端口号</a></li><li><a href="/运维/windows/cmd01.html" class="sidebar-link">查看路由表</a></li><li><a href="/运维/windows/cmd02.html" class="sidebar-link">查看ARP表</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/windows/docker/01docker实验一构建自己的镜像.html" class="sidebar-link">构建自己的镜像</a></li><li><a href="/运维/windows/docker/docker-compose命令常用.html" class="sidebar-link">怎么用docker-compose.yml启动容器？</a></li><li><a href="/运维/windows/docker/怎么将镜像打包为zip.html" class="sidebar-link">docker这么将镜像打包到本地？</a></li><li><a href="/运维/windows/docker/02contos安装docker.html" class="sidebar-link">02)centOS安装docker</a></li><li><a href="/运维/windows/docker/03centos安装docker_compose.html" class="sidebar-link">03)centos安装dockerCompose</a></li><li><a href="/运维/windows/docker/04docker_compose安装mysql.html" class="sidebar-link">04)dockerCompose安装mysql</a></li><li><a href="/运维/windows/docker/05idea连接远程docker构建镜像.html" class="sidebar-link">05)idea连接远程docker构建镜像</a></li><li><a href="/运维/windows/docker/demo01_2025_01_26.html" class="sidebar-link">docker的Macvlan网络模式</a></li><li><a href="/运维/windows/docker/demo02_2025_01_26.html" class="sidebar-link">docker拉取不到镜像问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>centos运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/centos/01防火墙命令.html" class="sidebar-link">01防火墙命令</a></li><li><a href="/运维/centos/02linux找文件夹.html" class="sidebar-link">linux找文件夹</a></li><li><a href="/运维/centos/demo01_2025_02_26.html" class="sidebar-link">yum源修改</a></li><li><a href="/运维/centos/demo02_2025_02_27.html" class="sidebar-link">centos7安装docker</a></li><li><a href="/运维/centos/demo03_2025_02_27.html" class="sidebar-link">安装并初始化Gitlab</a></li><li><a href="/运维/centos/demo04_2025_02_28.html" class="sidebar-link">安装初始化Jenkins</a></li><li><a href="/运维/centos/demo05_2025_02_28.html" class="sidebar-link">网卡有多个ip地址问题</a></li><li><a href="/运维/centos/demo06_2025_02_28.html" class="sidebar-link">centos关机命令</a></li><li><a href="/运维/centos/demo07_2025_02_28.html" class="sidebar-link">Jenkins自动拉取构建代码</a></li><li><a href="/运维/centos/demo08_2025_02_28.html" class="sidebar-link">花生壳内网穿透</a></li><li><a href="/运维/centos/demo09_2025_02_28.html" class="sidebar-link">安装openJDK8+</a></li><li><a href="/运维/centos/demo10_2025_02_28.html" class="sidebar-link">centos安装lsof</a></li><li><a href="/运维/centos/demo11_2025_02_28.html" class="sidebar-link">centos安装netstat</a></li><li><a href="/运维/centos/demo12_2025_02_28.html" class="sidebar-link">jenkins自动构建docker镜像</a></li><li><a href="/运维/centos/demo13_2025_02_28.html" class="active sidebar-link">安装harbor</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#初始化系统" class="sidebar-link">初始化系统</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#安装docker-dockercompose" class="sidebar-link">安装docker&amp;dockerCompose</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#下载离线harbor安装包" class="sidebar-link">下载离线harbor安装包</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#修改harbor的配置文件" class="sidebar-link">修改harbor的配置文件</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#启动harbor" class="sidebar-link">启动harbor</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#关闭barbor容器" class="sidebar-link">关闭barbor容器</a></li><li class="sidebar-sub-header"><a href="/运维/centos/demo13_2025_02_28.html#验证是否安装成功" class="sidebar-link">验证是否安装成功</a></li></ul></li><li><a href="/运维/centos/demo14_2025_02_28.html" class="sidebar-link">向Harbor上传自定义镜像</a></li><li><a href="/运维/centos/demo15_2025_02_28.html" class="sidebar-link">harbor服务器进行构建镜像</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>ubuntu运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/ubuntu/demo01_2025_02_21.html" class="sidebar-link">ubuntu镜像下载</a></li><li><a href="/运维/ubuntu/demo02_2025_02_22.html" class="sidebar-link">ubuntu的安装</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>系统架构</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统.html" class="sidebar-link">01如何利用Docker快速构建基于Prometheus的MySQL监控系统</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装harbor"><a href="#安装harbor" class="header-anchor">#</a> 安装harbor</h1> <h2 id="初始化系统"><a href="#初始化系统" class="header-anchor">#</a> 初始化系统</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>cat &gt; /etc/sysctl.conf &lt;&lt;-'EOF'
+net.ipv4.ip_forward=1
+vm.max_map_count=655360
+EOF
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>配置文件生效。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sysctl -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>关闭防火墙。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>systemctl stop firewalld
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="安装docker-dockercompose"><a href="#安装docker-dockercompose" class="header-anchor">#</a> 安装docker&amp;dockerCompose</h2> <p>安装docker</p> <p><a href="https://wutunan.top/%E8%BF%90%E7%BB%B4/centos/demo02_2025_02_27.html#_1-%E5%AE%89%E8%A3%85%E5%BA%95%E5%B1%82%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener noreferrer">centos7安装docker | 匆匆趣玩<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://wutunan.top/%E8%BF%90%E7%BB%B4/windows/docker/02contos%E5%AE%89%E8%A3%85docker.html" target="_blank" rel="noopener noreferrer">02)centOS安装docker | 匆匆趣玩<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <hr> <p>安装docker-compose：</p> <p><a href="https://wutunan.top/%E8%BF%90%E7%BB%B4/windows/docker/03centos%E5%AE%89%E8%A3%85docker_compose.html" target="_blank" rel="noopener noreferrer">03)centos安装dockerCompose | 匆匆趣玩<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="下载离线harbor安装包"><a href="#下载离线harbor安装包" class="header-anchor">#</a> 下载离线harbor安装包</h2> <p>进入到harbor安装的目录。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd /usr/local
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>wget --no-check-certificate https://github.com/goharbor/harbor/releases/download/v1.10.14/harbor-offline-installer-v1.10.14.tgz
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>文件有点大。我们使用windows的魔法上网将其下载下来。</p> <p><img src="/assets/img/image-20250228155659191.4735eb2f.png" alt="image-20250228155659191"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code> tar xzvf harbor-offline-installer-v1.10.14.tgz
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/image-20250228155736195.0e786a68.png" alt="image-20250228155736195"></p> <p>解压后，我们要去修改配置文件。</p> <h2 id="修改harbor的配置文件"><a href="#修改harbor的配置文件" class="header-anchor">#</a> 修改harbor的配置文件</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd harbor
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code># Configuration file of Harbor
+
+# The IP address or hostname to access admin UI and registry service.
+# DO NOT use localhost or 127.0.0.1, because Harbor needs to be accessed by external clients.
+hostname: reg.mydomain.com
+
+# http related config
+http:
+  # port for http, default is 80. If https enabled, this port will redirect to https port
+  port: 80
+
+# https related config
+https:
+  # https port for harbor, default is 443
+  port: 443
+  # The path of cert and key files for nginx
+  certificate: /your/certificate/path
+  private_key: /your/private/key/path
+
+# Uncomment external_url if you want to enable external proxy
+# And when it enabled the hostname will no longer used
+# external_url: https://reg.mydomain.com:8433
+
+# The initial password of Harbor admin
+# It only works in first time to install harbor
+# Remember Change the admin password from UI after launching Harbor.
+harbor_admin_password: Harbor12345
+
+# Harbor DB configuration
+database:
+  # The password for the root user of Harbor DB. Change this before any production use.
+  password: root123
+  # The maximum number of connections in the idle connection pool. If it &lt;=0, no idle connections are retained.
+  max_idle_conns: 50
+  # The maximum number of open connections to the database. If it &lt;= 0, then there is no limit on the number of open connections.
+  # Note: the default number of connections is 100 for postgres.
+  max_open_conns: 100
+
+# The default data volume
+data_volume: /data
+
+# Harbor Storage settings by default is using /data dir on local filesystem
+# Uncomment storage_service setting If you want to using external storage
+# storage_service:
+#   # ca_bundle is the path to the custom root ca certificate, which will be injected into the truststore
+#   # of registry's and chart repository's containers.  This is usually needed when the user hosts a internal storage with self signed certificate.
+#   ca_bundle:
+
+#   # storage backend, default is filesystem, options include filesystem, azure, gcs, s3, swift and oss
+#   # for more info about this configuration please refer https://docs.docker.com/registry/configuration/
+#   filesystem:
+#     maxthreads: 100
+#   # set disable to true when you want to disable registry redirect
+#   redirect:
+#     disabled: false
+
+# Clair configuration
+clair:
+  # The interval of clair updaters, the unit is hour, set to 0 to disable the updaters.
+  updaters_interval: 12
+
+jobservice:
+  # Maximum number of job workers in job service
+  max_job_workers: 10
+
+notification:
+  # Maximum retry count for webhook job
+  webhook_job_max_retry: 10
+
+chart:
+  # Change the value of absolute_url to enabled can enable absolute url in chart
+  absolute_url: disabled
+
+# Log configurations
+log:
+  # options are debug, info, warning, error, fatal
+  level: info
+  # configs for logs in local storage
+  local:
+    # Log files are rotated log_rotate_count times before being removed. If count is 0, old versions are removed rather than rotated.
+    rotate_count: 50
+    # Log files are rotated only if they grow bigger than log_rotate_size bytes. If size is followed by k, the size is assumed to be in kilobytes.
+    # If the M is used, the size is in megabytes, and if G is used, the size is in gigabytes. So size 100, size 100k, size 100M and size 100G
+    # are all valid.
+    rotate_size: 200M
+    # The directory on your host that store log
+    location: /var/log/harbor
+
+  # Uncomment following lines to enable external syslog endpoint.
+  # external_endpoint:
+  #   # protocol used to transmit log to external endpoint, options is tcp or udp
+  #   protocol: tcp
+  #   # The host of external endpoint
+  #   host: localhost
+  #   # Port of external endpoint
+  #   port: 5140
+
+#This attribute is for migrator to detect the version of the .cfg file, DO NOT MODIFY!
+_version: 1.10.0
+
+# Uncomment external_database if using external database.
+# external_database:
+#   harbor:
+#     host: harbor_db_host
+#     port: harbor_db_port
+#     db_name: harbor_db_name
+#     username: harbor_db_username
+#     password: harbor_db_password
+#     ssl_mode: disable
+#     max_idle_conns: 2
+#     max_open_conns: 0
+#   clair:
+#     host: clair_db_host
+#     port: clair_db_port
+#     db_name: clair_db_name
+#     username: clair_db_username
+#     password: clair_db_password
+#     ssl_mode: disable
+#   notary_signer:
+#     host: notary_signer_db_host
+#     port: notary_signer_db_port
+#     db_name: notary_signer_db_name
+#     username: notary_signer_db_username
+#     password: notary_signer_db_password
+#     ssl_mode: disable
+#   notary_server:
+#     host: notary_server_db_host
+#     port: notary_server_db_port
+#     db_name: notary_server_db_name
+#     username: notary_server_db_username
+#     password: notary_server_db_password
+#     ssl_mode: disable
+
+# Uncomment external_redis if using external Redis server
+# external_redis:
+#   host: redis
+#   port: 6379
+#   password:
+#   # db_index 0 is for core, it's unchangeable
+#   registry_db_index: 1
+#   jobservice_db_index: 2
+#   chartmuseum_db_index: 3
+#   clair_db_index: 4
+
+# Uncomment uaa for trusting the certificate of uaa instance that is hosted via self-signed cert.
+# uaa:
+#   ca_file: /path/to/ca
+
+# Global proxy
+# Config http proxy for components, e.g. http://my.proxy.com:3128
+# Components doesn't need to connect to each others via http proxy.
+# Remove component from `components` array if want disable proxy
+# for it. If you want use proxy for replication, MUST enable proxy
+# for core and jobservice, and set `http_proxy` and `https_proxy`.
+# Add domain to the `no_proxy` field, when you want disable proxy
+# for some special registry.
+proxy:
+  http_proxy:
+  https_proxy:
+  # no_proxy endpoints will appended to 127.0.0.1,localhost,.local,.internal,log,db,redis,nginx,core,portal,postgresql,jobservice,registry,registryctl,clair,chartmuseum,notary-server
+  no_proxy:
+  components:
+    - core
+    - jobservice
+    - clair
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br></div></div><p><img src="/assets/img/image-20250228160629729.44aa9ce2.png" alt="image-20250228160629729"></p> <p><img src="/assets/img/image-20250228160701723.3dd8ceee.png" alt="image-20250228160701723"></p> <h2 id="启动harbor"><a href="#启动harbor" class="header-anchor">#</a> 启动harbor</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>./install.sh 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>启动的日志</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@harbor harbor]# ./install.sh 
+
+[Step 0]: checking if docker is installed ...
+
+Note: docker version: 26.1.4
+
+[Step 1]: checking docker-compose is installed ...
+
+Note: docker-compose version: 2.6.1
+
+[Step 2]: loading Harbor images ...
+e200d3f97e2e: Loading layer [==================================================&gt;]  34.66MB/34.66MB
+44eb15348b09: Loading layer [==================================================&gt;]  9.549MB/9.549MB
+826c5cc00332: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+de76082ef3d4: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+2c413d9fd3dd: Loading layer [==================================================&gt;]  17.32MB/17.32MB
+31edb1789798: Loading layer [==================================================&gt;]  18.14MB/18.14MB
+Loaded image: goharbor/registry-photon:v1.10.14
+f8344c689281: Loading layer [==================================================&gt;]  9.544MB/9.544MB
+d36daed8f1ac: Loading layer [==================================================&gt;]  5.683MB/5.683MB
+1cdcddcaf4e9: Loading layer [==================================================&gt;]  13.33MB/13.33MB
+78ed3f0ddf0c: Loading layer [==================================================&gt;]  26.35MB/26.35MB
+a0cee296b3c5: Loading layer [==================================================&gt;]  22.02kB/22.02kB
+8e332dd60b37: Loading layer [==================================================&gt;]  13.33MB/13.33MB
+Loaded image: goharbor/notary-signer-photon:v1.10.14
+a46c6514d011: Loading layer [==================================================&gt;]  9.549MB/9.549MB
+8c4d0916c122: Loading layer [==================================================&gt;]  59.94MB/59.94MB
+5bdb65cef867: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+fdf14abc5da6: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+b29cdf20152a: Loading layer [==================================================&gt;]  60.77MB/60.77MB
+Loaded image: goharbor/chartmuseum-photon:v1.10.14
+a57727bb8cad: Loading layer [==================================================&gt;]  13.31MB/13.31MB
+2c8b8f237c46: Loading layer [==================================================&gt;]  33.88MB/33.88MB
+4dbd90795b69: Loading layer [==================================================&gt;]  5.632kB/5.632kB
+14ffb588e5ea: Loading layer [==================================================&gt;]  40.45kB/40.45kB
+0f168c0d8fba: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+Loaded image: goharbor/harbor-core:v1.10.14
+0cd68db36052: Loading layer [==================================================&gt;]  9.549MB/9.549MB
+6b5b40a98bdf: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+d11edd3c3338: Loading layer [==================================================&gt;]  17.32MB/17.32MB
+eb8fdd9a975b: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+a4022d8b9738: Loading layer [==================================================&gt;]   7.41MB/7.41MB
+bf92edc378a9: Loading layer [==================================================&gt;]  25.55MB/25.55MB
+Loaded image: goharbor/harbor-registryctl:v1.10.14
+43e0f6c30ee0: Loading layer [==================================================&gt;]  124.4MB/124.4MB
+741c1219cada: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+0be9093e8b11: Loading layer [==================================================&gt;]   59.9kB/59.9kB
+ecffd8a35c17: Loading layer [==================================================&gt;]  61.95kB/61.95kB
+Loaded image: goharbor/redis-photon:v1.10.14
+bc76e9ae8711: Loading layer [==================================================&gt;]  5.683MB/5.683MB
+86c93ad94fd0: Loading layer [==================================================&gt;]  14.86MB/14.86MB
+ea5f73952c7a: Loading layer [==================================================&gt;]  26.35MB/26.35MB
+b5ffc33e694d: Loading layer [==================================================&gt;]  22.02kB/22.02kB
+1645f60d076b: Loading layer [==================================================&gt;]  14.86MB/14.86MB
+Loaded image: goharbor/notary-server-photon:v1.10.14
+8f60de414560: Loading layer [==================================================&gt;]    129MB/129MB
+dbec5baa87ad: Loading layer [==================================================&gt;]  53.28MB/53.28MB
+d0843e526392: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+3da62befb62d: Loading layer [==================================================&gt;]  1.536kB/1.536kB
+2f3db3f6744b: Loading layer [==================================================&gt;]  155.6kB/155.6kB
+5701b3b2e0fc: Loading layer [==================================================&gt;]   1.78MB/1.78MB
+Loaded image: goharbor/prepare:v1.10.14
+8c817c2d8447: Loading layer [==================================================&gt;]  65.09MB/65.09MB
+7ee6b0aa6d04: Loading layer [==================================================&gt;]  100.3MB/100.3MB
+96f6971258b6: Loading layer [==================================================&gt;]  5.632kB/5.632kB
+4f98806e7849: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+3c78ceb2dee2: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+e75025179c29: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+9e8414ebd453: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+c91925c6ba99: Loading layer [==================================================&gt;]  10.75kB/10.75kB
+Loaded image: goharbor/harbor-db:v1.10.14
+3a7a393741ad: Loading layer [==================================================&gt;]   11.4MB/11.4MB
+Loaded image: goharbor/nginx-photon:v1.10.14
+abd402223c05: Loading layer [==================================================&gt;]  123.1MB/123.1MB
+ae0cd89fa4ee: Loading layer [==================================================&gt;]  11.97MB/11.97MB
+e3ab64ba2ed0: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+9fb89f582b34: Loading layer [==================================================&gt;]  49.15kB/49.15kB
+31f15c926966: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+8a881bb13354: Loading layer [==================================================&gt;]  12.84MB/12.84MB
+Loaded image: goharbor/clair-photon:v1.10.14
+10ac0893e786: Loading layer [==================================================&gt;]   11.4MB/11.4MB
+672079c830ad: Loading layer [==================================================&gt;]  7.697MB/7.697MB
+e929442ae505: Loading layer [==================================================&gt;]  223.2kB/223.2kB
+ab2342b334c6: Loading layer [==================================================&gt;]  195.1kB/195.1kB
+4f55de5f5406: Loading layer [==================================================&gt;]  15.36kB/15.36kB
+1ae5ea4ecb99: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+Loaded image: goharbor/harbor-portal:v1.10.14
+904d0e940b56: Loading layer [==================================================&gt;]  75.92MB/75.92MB
+5e4332f602d3: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+a00b94541398: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+6d2c1c6e6a52: Loading layer [==================================================&gt;]   2.56kB/2.56kB
+fee37f45b9ac: Loading layer [==================================================&gt;]  3.072kB/3.072kB
+941af6804d0a: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+e15b3a740d7b: Loading layer [==================================================&gt;]  12.29kB/12.29kB
+3b2e09c6ee4a: Loading layer [==================================================&gt;]  3.584kB/3.584kB
+Loaded image: goharbor/harbor-log:v1.10.14
+c1d31d783dfd: Loading layer [==================================================&gt;]  13.31MB/13.31MB
+3c4e77d73ea3: Loading layer [==================================================&gt;]  39.06MB/39.06MB
+Loaded image: goharbor/harbor-jobservice:v1.10.14
+6cbad90fe384: Loading layer [==================================================&gt;]  9.549MB/9.549MB
+0cdb9761b80c: Loading layer [==================================================&gt;]  11.49MB/11.49MB
+1aedd63de9ff: Loading layer [==================================================&gt;]  11.49MB/11.49MB
+Loaded image: goharbor/clair-adapter-photon:v1.10.14
+
+
+[Step 3]: preparing environment ...
+
+[Step 4]: preparing harbor configs ...
+prepare base dir is set to /usr/local/harbor
+/usr/src/app/utils/configs.py:100: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  configs = yaml.load(f)
+WARNING:root:WARNING: HTTP protocol is insecure. Harbor will deprecate http protocol in the future. Please make sure to upgrade to https
+/usr/src/app/utils/configs.py:90: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  versions = yaml.load(f)
+Generated configuration file: /config/log/logrotate.conf
+Generated configuration file: /config/log/rsyslog_docker.conf
+Generated configuration file: /config/nginx/nginx.conf
+Generated configuration file: /config/core/env
+Generated configuration file: /config/core/app.conf
+Generated configuration file: /config/registry/config.yml
+Generated configuration file: /config/registryctl/env
+Generated configuration file: /config/db/env
+Generated configuration file: /config/jobservice/env
+Generated configuration file: /config/jobservice/config.yml
+Generated and saved secret to file: /secret/keys/secretkey
+Generated certificate, key file: /secret/core/private_key.pem, cert file: /secret/registry/root.crt
+Generated configuration file: /compose_location/docker-compose.yml
+Clean up the input dir
+
+
+
+[Step 5]: starting Harbor ...
+[+] Running 10/10
+ ⠿ Network harbor_harbor        Created                                                                                                                                                       0.1s
+ ⠿ Container harbor-log         Started                                                                                                                                                       0.4s
+ ⠿ Container harbor-db          Started                                                                                                                                                       0.8s
+ ⠿ Container harbor-portal      Started                                                                                                                                                       0.9s
+ ⠿ Container registry           Started                                                                                                                                                       0.8s
+ ⠿ Container redis              Started                                                                                                                                                       0.9s
+ ⠿ Container registryctl        Started                                                                                                                                                       0.9s
+ ⠿ Container harbor-core        Started                                                                                                                                                       1.1s
+ ⠿ Container harbor-jobservice  Started                                                                                                                                                       1.4s
+ ⠿ Container nginx              Started                                                                                                                                                       1.5s
+✔ ----Harbor has been installed and started successfully.----
+[root@harbor harbor]# 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br></div></div><h2 id="关闭barbor容器"><a href="#关闭barbor容器" class="header-anchor">#</a> 关闭barbor容器</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker compose down
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="header-anchor">#</a> 验证是否安装成功</h2> <p><img src="/assets/img/image-20250228161542077.b651ab68.png" alt="image-20250228161542077"></p> <p>默认的密码是。</p> <p>admin</p> <p>Harbor12345</p> <p><img src="/assets/img/image-20250228161619424.eac647a6.png" alt="image-20250228161619424"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/28/2025, 10:13:13 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/运维/centos/demo12_2025_02_28.html" class="prev">
+        jenkins自动构建docker镜像
+      </a></span> <span class="next"><a href="/运维/centos/demo14_2025_02_28.html">
+        向Harbor上传自定义镜像
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.00b982b6.js" defer></script><script src="/assets/js/5.432cde98.js" defer></script><script src="/assets/js/66.d5e96ab7.js" defer></script>
+  </body>
+</html>
