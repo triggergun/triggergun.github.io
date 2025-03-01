@@ -1229,14 +1229,7 @@ module.exports = {
                     background: '#BADA55',
                     scrollOffset: 0,
                 },
-            },
-            'vuepress-plugin-mathjax',
-            {
-                target: 'svg', // 使用 SVG 渲染公式
-                macros: {
-                    '*': '\\times', // 自定义宏
-                },
-            },
+            }
         ],
         // 只要把这个放进 config的plugins中就可以了
         // ["sakura", {
