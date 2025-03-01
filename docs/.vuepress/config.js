@@ -37,8 +37,6 @@ module.exports = {
     head: [
         // 重装基本图片
         ['link', {rel: 'icon', href: 'favicon.ico'}],
-        // 引入 KaTeX 的 CSS 文件
-        ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css' }],
         // 谷歌广告位
         // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
         ['script', {
@@ -65,7 +63,6 @@ module.exports = {
         //  解决：图片中文路径  与 前面 要加 ./ 才能解析。
         extendMarkdown: md => {
             md.use(require("markdown-it-disable-url-encode"));
-            md.use(require('markdown-it-katex'));
         }
 
     },
@@ -1232,7 +1229,14 @@ module.exports = {
                     background: '#BADA55',
                     scrollOffset: 0,
                 },
-            }
+            },
+            'vuepress-plugin-mathjax',
+            {
+                target: 'svg', // 使用 SVG 渲染公式
+                macros: {
+                    '*': '\\times', // 自定义宏
+                },
+            },
         ],
         // 只要把这个放进 config的plugins中就可以了
         // ["sakura", {

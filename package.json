@@ -17,10 +17,9 @@
     "vuepress-plugin-sakura": "^1.2.1"
   },
   "dependencies": {
-    "katex": "^0.16.21",
     "markdown-it-disable-url-encode": "^1.0.1",
-    "markdown-it-katex": "^2.0.3",
     "vue-google-adsense": "^1.10.1",
-    "vue-script2": "^2.1.0"
+    "vue-script2": "^2.1.0",
+    "vuepress-plugin-mathjax": "^1.2.8"
   }
 }
