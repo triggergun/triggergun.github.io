@@ -37,6 +37,7 @@ module.exports = {
     head: [
         // 重装基本图片
         ['link', {rel: 'icon', href: 'favicon.ico'}],
+        ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
         // 谷歌广告位
         // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
         ['script', {
@@ -63,6 +64,7 @@ module.exports = {
         //  解决：图片中文路径  与 前面 要加 ./ 才能解析。
         extendMarkdown: md => {
             md.use(require("markdown-it-disable-url-encode"));
+            md.use(require('markdown-it-katex'));
         }
 
     },
@@ -560,6 +562,13 @@ module.exports = {
                         '/运维/centos/demo13_2025_02_28',
                         '/运维/centos/demo14_2025_02_28',
                         '/运维/centos/demo15_2025_02_28',
+                    ],
+                },
+                {
+                    title: 'centos常用命令',
+                    collapsable: false,
+                    children: [
+                        '/运维/centos_cmd/demo01_2025_03_03',
                     ],
                 },
                 {
