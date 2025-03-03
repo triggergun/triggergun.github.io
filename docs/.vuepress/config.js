@@ -255,6 +255,14 @@ module.exports = {
 
                         ],
                     },
+                    {
+                        //  top栏
+                        text: 'android之路',
+                        items: [
+                            {text: "kotlin&android", link: encodeURI('/lyp/android/kotlin/demo01_2025_02_21')},
+
+                        ],
+                    },
                 ]
             },
 
