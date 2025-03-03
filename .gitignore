@@ -5,8 +5,8 @@ hadoop基本概念目录/
 # 依赖都不上传
 node_modules/
 .idea/
-# 这个目录下的全部不提交
 .temp/
-
+.temp/internal
+.temp/app-enhancers
 # 不上传里面的变更
 docs/.vuepress/dist/
