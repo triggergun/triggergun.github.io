@@ -1198,6 +1198,22 @@ module.exports = {
             ],
             //  ps  ================================  end  ==========
 
+            //  安卓的侧边栏的配置  ================================  start  ==========
+            '/lyp/android/': [
+                // /lyp/android/ 是父亲目录。
+                // kotlin 是父亲的子目录。
+                // android与kotlin
+                {
+                    title: 'android与kotlin',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/lyp/android/kotlin/demo01_2025_02_21'),
+                    ]
+
+                },
+            ],
+            //  安卓的侧边栏的配置  ================================  end  ==========
+
 
             // ======  外层的括号  ==========
         },
