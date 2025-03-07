@@ -10,3 +10,4 @@ node_modules/
 .temp/app-enhancers
 # 不上传里面的变更
 docs/.vuepress/dist/
+package-lock.json

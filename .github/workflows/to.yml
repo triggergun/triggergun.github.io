@@ -50,8 +50,7 @@ jobs:
           git config user.name "triggergun"
           git config user.email "930572358@qq.com"
           git status
-          git stash
-          git add .
+          git stash -u
           git checkout master  # 切换到 master 分支
           git pull  # 拉取最新代码
           cp -r ../build/* .  # 复制构建源码结果到工作目录到当前的master下
