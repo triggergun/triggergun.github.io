@@ -550,11 +550,9 @@ module.exports = {
 
                 },
                 {
-                    title: 'centos运维',
+                    title: 'centos运维ci_cd',
                     collapsable: false,
                     children: [
-                        '/运维/centos/01防火墙命令',
-                        '/运维/centos/02linux找文件夹',
                         '/运维/centos/demo01_2025_02_26',
                         '/运维/centos/demo02_2025_02_27',
                         '/运维/centos/demo03_2025_02_27',
@@ -576,6 +574,8 @@ module.exports = {
                     title: 'centos常用命令',
                     collapsable: false,
                     children: [
+                        '/运维/centos/01防火墙命令',
+                        '/运维/centos/02linux找文件夹',
                         '/运维/centos_cmd/demo01_2025_03_03',
                     ],
                 },
