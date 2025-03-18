@@ -1209,6 +1209,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/lyp/android/kotlin/demo01_2025_02_21'),
+                        encodeURI('/lyp/android/kotlin/demo06_2025_03_18_01'),
                     ]
 
                 },
