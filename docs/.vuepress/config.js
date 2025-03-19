@@ -548,6 +548,7 @@ module.exports = {
 
             ],
             // 表示：运维选  =============================
+            // 注意 不能再搞 /运维/xxx/的 侧边栏了。
             '/运维/': [
                 {
                     title: 'windows运维',
@@ -614,22 +615,18 @@ module.exports = {
                         '/运维/ubuntu/demo02_2025_02_22'],
                 },
                 {
-                    title: '系统架构',
-                    collapsable: false,
-                    children: [
-                        '/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统'
-                    ],
-
-                }
-
-            ],
-
-            '/运维/shell/': [
-                {
                     title: 'shell实战',
                     collapsable: false,
                     children: [
                         '/运维/shell/demo01_2025_03_19_01',
+                    ],
+
+                },
+                {
+                    title: '系统架构',
+                    collapsable: false,
+                    children: [
+                        '/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统'
                     ],
 
                 }
