@@ -252,7 +252,7 @@ module.exports = {
                         text: 'python之路',
                         items: [
                             {text: "第一阶段基础", link: encodeURI('/lyp/python/第一阶段基础/01python的安装')},
-
+                            {text: "第二阶段基础", link: encodeURI('/lyp/python/jupyter/demo01_2025_03_19_01')},
                         ],
                     },
                     {
@@ -955,6 +955,16 @@ module.exports = {
 
                     ]
                 },
+                {
+                    title: 'jupyter',
+                    collapsable: false,
+                    children: [
+                        // 第2阶段基础篇
+                        encodeURI('/lyp/python/jupyter/demo01_2025_03_19_01'),
+
+                    ]
+                },
+
 
             ],
             // ===================== lyp模块点击设python语言 ,python语言的侧边栏目录    设置 end ===========
