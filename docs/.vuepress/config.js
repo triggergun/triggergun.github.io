@@ -235,7 +235,7 @@ module.exports = {
 
                         ],
                     },
-                    // 子选项 db top导航栏
+                    // 子选项 db top导航栏   start  =====
                     {
                         text: 'db',
                         items: [
@@ -246,6 +246,7 @@ module.exports = {
 
                         ],
                     },
+                    // 子选项 db top导航栏   end  =====
                     {
 
                         //  top栏
@@ -1052,6 +1053,7 @@ module.exports = {
 
             ],
 
+
             '/lyp/大数据/kafka': [
                 {
                     title: 'kafka集',
@@ -1076,6 +1078,20 @@ module.exports = {
 
             //***************************   top上 有按钮  大数据  end *****************************************
 
+
+            // 数据库的侧边栏  start  =========
+            '/lyp/db/': [
+                {
+                    title: 'mysql数据库总结',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
+                    ]
+
+                },
+
+            ],
+            // 数据库的侧边栏  end  =========
 
             //  ====================     在top 上没有提供点击按钮   直接地址访问  =============================
 
