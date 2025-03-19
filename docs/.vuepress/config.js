@@ -136,6 +136,13 @@ module.exports = {
                             // windows安全 top栏的选项
                             {text: "windows安全", link: '/network/security/windows/win10绕过密码'},
                         ]
+                    },
+                    {
+                        // top的红色 标题
+                        text: 'shell运维',
+                        items: [
+                            {text: "shell实战", link: '/运维/shell/demo01_2025_03_19_01'},
+                        ]
                     }
                 ]
 
@@ -615,6 +622,19 @@ module.exports = {
                 }
 
             ],
+
+            '/运维/shell/': [
+                {
+                    title: 'shell实战',
+                    collapsable: false,
+                    children: [
+                        '/运维/shell/demo01_2025_03_19_01',
+                    ],
+
+                }
+
+            ],
+
             //  网络基础知识     侧边栏 start  ===============
             '/network/': [
                 {
