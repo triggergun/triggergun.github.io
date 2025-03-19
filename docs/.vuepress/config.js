@@ -961,6 +961,7 @@ module.exports = {
                     children: [
                         // 第2阶段基础篇
                         encodeURI('/lyp/python/jupyter/demo01_2025_03_19_01'),
+                        encodeURI('/lyp/python/jupyter/demo01_2025_03_19_02'),
 
                     ]
                 },
