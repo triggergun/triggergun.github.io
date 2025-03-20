@@ -837,7 +837,7 @@ module.exports = {
 
             ],
 
-            // ===================== 点击设 gradle ===========
+            // ===================== 侧边栏 配置  点击设 gradle  start ===========
             '/java/gradle/': [
                 {
                     title: 'gradle入门',
@@ -850,9 +850,17 @@ module.exports = {
                     ]
 
                 },
+                {
+                    title: 'gradle FAQ',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/gradle/demo01_2025_03_06'),
+                    ]
+
+                },
 
             ],
-
+            // ===================== 侧边栏 配置  点击设 gradle  end ===========
 
             // ===================== lyp    点击设 javascript的  基础概念 ===========
             '/lyp/javascript/': [
