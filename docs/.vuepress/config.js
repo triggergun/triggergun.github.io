@@ -278,6 +278,14 @@ module.exports = {
 
                         ],
                     },
+                    {
+                        //  top栏
+                        text: '初见go',
+                        items: [
+                            {text: "华山论剑", link: encodeURI('/lyp/go/demo01_2025_03_22_01')},
+
+                        ],
+                    },
                 ]
             },
 
@@ -1057,6 +1065,20 @@ module.exports = {
 
             ],
             //================= top上 有按钮  大数据的  end ===========================
+
+
+            //================= top上 有按钮  go  start ===========================
+            '/lyp/go/': [
+                {
+                    title: 'go华山论剑',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/lyp/go/demo01_2025_03_22_01'),
+                    ]
+                },
+
+            ],
+            //================= top上 有按钮  go  end ===========================
 
 
             '/lyp/大数据/02spark': [
