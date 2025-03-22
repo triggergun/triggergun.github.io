@@ -143,6 +143,13 @@ module.exports = {
                         items: [
                             {text: "shell实战", link: '/运维/shell/demo01_2025_03_19_01'},
                         ]
+                    },
+                    {
+                        // linux的基础
+                        text: 'linux基础理论',
+                        items: [
+                            {text: "linux基础概念", link: '/运维/linux_base/demo01_2025_03_22_01'},
+                        ]
                     }
                 ]
 
@@ -619,6 +626,14 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/运维/shell/demo01_2025_03_19_01',
+                    ],
+
+                },
+                {
+                    title: 'linux基础概念',
+                    collapsable: false,
+                    children: [
+                        '/运维/linux_base/demo01_2025_03_22_01',
                     ],
 
                 },
