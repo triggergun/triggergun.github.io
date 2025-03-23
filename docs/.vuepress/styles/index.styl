@@ -1,0 +1,56 @@
+// 回到顶部按钮的样式
+.back-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 72px;
+  height: 40px;
+  background-color: #42b983;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  opacity: 0; // 默认隐藏
+  visibility: hidden; // 默认不可见
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// 微信公众号按钮的样式
+.wechat-button {
+  position: fixed;
+  right: 40px; // 距离右侧 40px
+  bottom: 90px; // 距离底部 40px
+  width: 40px;
+  padding: 8px 16px;
+  background-color: #42b983; // 绿色背景
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// 微信二维码图片的样式
+.wechat-qrcode {
+  position: fixed;
+  right: 100px; // 与按钮对齐
+  bottom: 80px; // 显示在按钮上方
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  display: none; // 默认隐藏
+}
