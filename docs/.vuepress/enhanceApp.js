@@ -4,7 +4,13 @@ export default ({ Vue }) => {
         mounted() {
             const backToTopButton = document.createElement('div');
             backToTopButton.className = 'back-to-top';
-            backToTopButton.innerHTML = '^';
+            // backToTopButton.innerHTML = '^';
+
+            // 创建图片元素
+            const iconImage = document.createElement('img');
+            iconImage.src = '/back-to-top-icon.png'; // 图片路径
+            backToTopButton.appendChild(iconImage); // 按钮的孩子
+
             backToTopButton.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
