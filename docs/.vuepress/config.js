@@ -1372,7 +1372,6 @@ module.exports = {
 
 
     plugins: [
-
         [
             'vuepress-plugin-medium-zoom',
             {

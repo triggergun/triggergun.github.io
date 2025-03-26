@@ -1,4 +1,9 @@
+
+import LockContent from './components/LockContent.vue';
+
 export default ({ Vue }) => {
+
+
     // 回到顶部按钮的逻辑
     Vue.mixin({
         mounted() {
@@ -54,7 +59,31 @@ export default ({ Vue }) => {
                 qrcodeImage.style.display = 'none';
             });
 
+        //     console.log('this.$page:', this.$page); // 打印当前页面对象
+        //     console.log('this.$page.content:', this.$page.content); // 打印当前页面对象
+        //     if (this.$page && this.$page.content) {
+        //         console.log('进入 if 语句块'); // 调试信息
+        //         const ratio = 0.2; // 截取前 20%
+        //         const content = this.$page.content;
+        //         const length = Math.floor(content.length * ratio);
+        //         const partialContent = content.slice(0, length);
+        //
+        //         // 替换页面内容为部分内容
+        //         const contentElement = document.querySelector('.theme-default-content');
+        //         if (contentElement) {
+        //             contentElement.innerHTML = partialContent;
+        //
+        //             // 插入解锁按钮
+        //             const lockContainer = document.createElement('div');
+        //             lockContainer.innerHTML = `
+        //     <lock-content :content="\`${content.replace(/`/g, '\\`')}\`" :unlock-ratio="${ratio}" />
+        //   `;
+        //             contentElement.appendChild(lockContainer);
+        //         }
+        //     } else {
+        //         console.log('未进入 if 语句块'); // 调试信息
+        //     }
+        },
 
-        }
     });
 };
