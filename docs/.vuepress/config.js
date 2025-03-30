@@ -611,6 +611,9 @@ module.exports = {
                         '/运维/centos/demo13_2025_02_28',
                         '/运维/centos/demo14_2025_02_28',
                         '/运维/centos/demo15_2025_02_28',
+                        '/运维/centos/demo16_2025_03_01',
+                        '/运维/centos/demo17_2025_03_01',
+                        '/运维/centos/demo18_2025_03_01',
                     ],
                 },
                 {
@@ -620,6 +623,8 @@ module.exports = {
                         '/运维/centos/01防火墙命令',
                         '/运维/centos/02linux找文件夹',
                         '/运维/centos_cmd/demo01_2025_03_03',
+                        '/运维/centos_cmd/demo01_2025_03_30',
+                        '/运维/centos_cmd/demo02_2025_03_30',
                     ],
                 },
                 {
