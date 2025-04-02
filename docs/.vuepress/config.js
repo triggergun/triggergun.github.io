@@ -623,8 +623,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/运维/centos/demo20_2025_04_01',
-                        '/运维/centos/demo20_2025_04_01',
-                        '/运维/centos/demo20_2025_03_01',
+                        '/运维/centos/demo21_2025_04_01',
+                        '/运维/centos/demo22_2025_04_01',
                     ],
                 },
                 {
