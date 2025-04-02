@@ -619,6 +619,15 @@ module.exports = {
                     ],
                 },
                 {
+                    title: 'python运维ci_cd',
+                    collapsable: false,
+                    children: [
+                        '/运维/centos/demo20_2025_04_01',
+                        '/运维/centos/demo20_2025_04_01',
+                        '/运维/centos/demo20_2025_03_01',
+                    ],
+                },
+                {
                     title: 'centos常用命令',
                     collapsable: false,
                     children: [
@@ -627,6 +636,9 @@ module.exports = {
                         '/运维/centos_cmd/demo01_2025_03_03',
                         '/运维/centos_cmd/demo01_2025_03_30',
                         '/运维/centos_cmd/demo02_2025_03_30',
+                        '/运维/centos_cmd/demo02_2025_03_31',
+                        '/运维/centos_cmd/demo03_2025_03_31',
+                        '/运维/centos_cmd/demo04_2025_04_01',
                     ],
                 },
                 {
