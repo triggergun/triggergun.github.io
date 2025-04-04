@@ -912,6 +912,12 @@ module.exports = {
                     children: [encodeURI('/lyp/javascript/01什么是事件')]
 
                 },
+                {
+                    title: '前端FAQ',
+                    collapsable: false,
+                    children: [encodeURI('/lyp/javascript/faq_demo01_2025_04_04_01')]
+
+                },
 
             ],
 
