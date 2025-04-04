@@ -1016,6 +1016,13 @@ module.exports = {
                         // rust的项目集合readme的翻译
                         encodeURI('/lyp/rust语言/rust_demo_set/ocrs_readme'),
                     ]
+                },                {
+                    title: 'rust框架入门',
+                    collapsable: false,
+                    children: [
+                        // rust的项目集合readme的翻译
+                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_01'),
+                    ]
                 },
 
             ],
