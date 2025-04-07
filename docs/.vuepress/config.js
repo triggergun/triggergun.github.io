@@ -1071,6 +1071,21 @@ module.exports = {
             // ===================== lyp模块点击设python语言 ,python语言的侧边栏目录    设置 end ===========
 
 
+            //    ==========    不同语言的语法比较    start   ===========
+            '/lyp/compare': [
+                {
+                    title: '语法比较',
+                    collapsable: false,
+                    children: [
+                        // 结构体
+                        encodeURI('/lyp/compare/demo01_2025_04_07_01'),
+
+                    ]
+                }
+
+            ],
+            //    ==========    不同语言的语法比较    end   ===========
+
             //================= top上 有按钮  大数据的  start ===========================
 
             '/lyp/大数据/hadoop基本概念': [
