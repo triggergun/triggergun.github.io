@@ -37,7 +37,7 @@ module.exports = {
     head: [
         // 重装基本图片
         ['link', {rel: 'icon', href: 'favicon.ico'}],
-        ['link', { rel: 'stylesheet', href: '/css/katex.min.css' }],
+        ['link', {rel: 'stylesheet', href: '/css/katex.min.css'}],
         // 谷歌广告位
         // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
         ['script', {
@@ -185,7 +185,10 @@ module.exports = {
                         text: '源码分析区',
                         items: [
                             {text: "spring源码分析", link: encodeURI('/java/spring源码分析/01Spring源码下载')},
-                            {text: "spring-boot源码分析", link: encodeURI('/java/springboot_source_code/20250105_demo01')},
+                            {
+                                text: "spring-boot源码分析",
+                                link: encodeURI('/java/springboot_source_code/20250105_demo01')
+                            },
                         ]
                     },
                     //-------------java的  源码分析 end
@@ -569,9 +572,9 @@ module.exports = {
                     title: 'windows运维',
                     collapsable: false,
                     children: [
-                    '/运维/windows/cmd',
-                    "/运维/windows/cmd01",
-                    "/运维/windows/cmd02"
+                        '/运维/windows/cmd',
+                        "/运维/windows/cmd01",
+                        "/运维/windows/cmd02"
                     ],
 
                 },
@@ -646,7 +649,12 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '/运维/ubuntu/demo01_2025_02_21',
-                        '/运维/ubuntu/demo02_2025_02_22'],
+                        '/运维/ubuntu/demo02_2025_02_22',
+                        '/运维/ubuntu/demo03_2025_03_01',
+                        '/运维/ubuntu/demo04_2025_03_02',
+                        '/运维/ubuntu/demo05_2025_03_03',
+                        '/运维/ubuntu/demo06_2025_03_04',
+                    ],
                 },
                 {
                     title: 'shell实战',
@@ -1016,12 +1024,14 @@ module.exports = {
                         // rust的项目集合readme的翻译
                         encodeURI('/lyp/rust语言/rust_demo_set/ocrs_readme'),
                     ]
-                },                {
+                }, {
                     title: 'rust框架入门',
                     collapsable: false,
                     children: [
                         // rust的项目集合readme的翻译
                         encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_01'),
+                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_02'),
+                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_03'),
                     ]
                 },
 
@@ -1043,6 +1053,8 @@ module.exports = {
                         encodeURI('/lyp/python/第一阶段基础/03打包python项目'),
                         encodeURI('/lyp/python/第一阶段基础/04PyCharm创建一个项目'),
                         encodeURI('/lyp/python/第一阶段基础/常用的python命令'),
+                        encodeURI('/lyp/python/第一阶段基础/demo01_2025_04_08_01'),
+                        encodeURI('/lyp/python/第一阶段基础/demo01_2025_04_08_02'),
 
                     ]
                 },
