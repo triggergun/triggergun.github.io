@@ -1002,6 +1002,7 @@ module.exports = {
                         encodeURI('/lyp/rust语言/第一阶段基础篇/08生成一个随机数'),
                         encodeURI('/lyp/rust语言/第一阶段基础篇/09比较猜测的数字和秘密数字'),
                         encodeURI('/lyp/rust语言/第一阶段基础篇/10通用编程概念'),
+                        encodeURI('/lyp/rust语言/第一阶段基础篇/demo01_2025_03_01_01'),
                     ]
                 },
                 {
@@ -1091,6 +1092,7 @@ module.exports = {
                     children: [
                         // 结构体
                         encodeURI('/lyp/compare/demo01_2025_04_07_01'),
+                        encodeURI('/lyp/compare/demo02_2025_04_07_02'),
 
                     ]
                 }
