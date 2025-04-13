@@ -399,6 +399,15 @@ module.exports = {
                                 link: encodeURI('/framework/cloud/demo01_2025_03_19_01')
                             },
                         ],
+                    },
+                    {
+                        text: 'web架构',
+                        items: [
+                            {
+                                text: "web认证流程",
+                                link: encodeURI('/framework/web/demo01_2025_04_01_01')
+                            },
+                        ],
                     }
                 ]
             }
@@ -1402,11 +1411,24 @@ module.exports = {
                     title: '云原生',
                     collapsable: false,
                     children: [
-                        encodeURI('/framework/cloud/demo01_2025_03_19_01.md'),
+                        encodeURI('/framework/cloud/demo01_2025_03_19_01'),
                     ]
                 },
             ],
 
+            // web架构
+            '/framework/web/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: 'web架构',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/web/demo01_2025_04_01_01'),
+                        encodeURI('/framework/web/demo01_2025_04_01_02'),
+                    ]
+                },
+            ],
             //  谈架构  ================================  end  ==========
 
 
