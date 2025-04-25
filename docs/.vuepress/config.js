@@ -795,7 +795,24 @@ module.exports = {
                         '/java/javaSEBase/day15-IO04Properties集合'],
 
                 },
+                {
+                    title: 'java泛型',
+                    collapsable: false,
+                    children: [
+                        '/java/javaSEBase/day18_2025_04_25_01',
+                        '/java/javaSEBase/day18_2025_04_25_02',
+                        '/java/javaSEBase/day18_2025_04_25_03',
+                    ],
 
+                },
+                {
+                    title: 'java沉思',
+                    collapsable: false,
+                    children: [
+                        '/java/javaSEBase/java01',
+                    ]
+
+                },
                 {
                     title: 'java线程基础与案例',
                     collapsable: false,
