@@ -293,8 +293,8 @@ module.exports = {
                         //  top栏 前端
                         text: '再探前端，万籁生云。',
                         items: [
-                            {text: "vue转乾坤", link: encodeURI('/lyp/vue/demo01-20250430-01')},
-                            {text: "风云涌动", link: encodeURI('/lyp/layout/demo01_2025_04_23_01')},
+                            {text: "vue转乾坤", link: encodeURI('/lyp/前端/vue/demo01-20250430-01')},
+                            {text: "风云涌动", link: encodeURI('/lyp/前端/layout/demo01_2025_04_23_01')},
                         ],
                     },
                 ]
