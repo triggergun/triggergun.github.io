@@ -283,10 +283,18 @@ module.exports = {
                     },
                     {
                         //  top栏
-                        text: '初见go',
+                        text: '初见Go，星河初转。',
                         items: [
-                            {text: "华山论剑", link: encodeURI('/lyp/go/demo01_2025_03_22_01')},
+                            {text: "web华山论剑", link: encodeURI('/lyp/go/demo01_2025_03_22_01')},
 
+                        ],
+                    },
+                    {
+                        //  top栏 前端
+                        text: '再探前端，万籁生云。',
+                        items: [
+                            {text: "vue转乾坤", link: encodeURI('/lyp/vue/demo01-20250430-01')},
+                            {text: "风云涌动", link: encodeURI('/lyp/layout/demo01_2025_04_23_01')},
                         ],
                     },
                 ]
@@ -1072,6 +1080,30 @@ module.exports = {
 
             ],
             // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
+
+            // ===================== lyp模块点击设  vue     设置  start ===========
+            // 2024年-5-14
+            // 前端 基础
+            '/lyp/前端': [
+                {
+                    title: 'vue',
+                    collapsable: false,
+                    children: [
+                        // 第一阶段基础篇
+                        encodeURI('/lyp/前端/vue/demo01-20250430-01'),
+                    ]
+                },
+                {
+                    title: '布局',
+                    collapsable: false,
+                    children: [
+                        // rust的项目集合readme的翻译
+                        encodeURI('/lyp/前端/layout/demo01_2025_04_23_01'),
+                    ]
+                }
+
+            ],
+            // =====================  lyp模块点击设  vue        设置 end ===========
 
 
             // ===================== lyp模块点击设python语言 ,python语言的侧边栏目录    设置  start ===========
