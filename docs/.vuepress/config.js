@@ -959,7 +959,11 @@ module.exports = {
                 {
                     title: 'javascript基础概念',
                     collapsable: false,
-                    children: [encodeURI('/lyp/javascript/01什么是事件')]
+                    children: [
+                        encodeURI('/lyp/javascript/01什么是事件'),
+                        encodeURI('/lyp/javascript/demo01_20250430_01'),
+
+                    ]
 
                 },
                 {
