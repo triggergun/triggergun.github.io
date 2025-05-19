@@ -758,7 +758,16 @@ module.exports = {
                         '/java/Mybatis/sesion3电视剧crud'
                     ],
 
+                },
+                {
+                    title: 'mybatis的FQA',
+                    collapsable: false,
+                    children: [
+                        '/java/Mybatis/demo01_20250519_01',
+                    ],
+
                 }
+
 
             ],
             '/java/mybatis_plus/': [
