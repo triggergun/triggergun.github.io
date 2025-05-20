@@ -979,6 +979,7 @@ module.exports = {
                     children: [
                         encodeURI('/lyp/javascript/01什么是事件'),
                         encodeURI('/lyp/javascript/demo01_20250430_01'),
+                        encodeURI('/lyp/javascript/demo01_20250430_02'),
 
                     ]
 
