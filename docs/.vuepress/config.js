@@ -295,6 +295,7 @@ module.exports = {
                         items: [
                             {text: "vue转乾坤", link: encodeURI('/lyp/前端/vue/demo01-20250430-01')},
                             {text: "风云涌动", link: encodeURI('/lyp/前端/layout/demo01_2025_04_23_01')},
+                            {text: "前端基础", link: encodeURI('/lyp/前端/base/demo01_20250527_01')},
                         ],
                     },
                 ]
@@ -1123,7 +1124,25 @@ module.exports = {
                         // rust的项目集合readme的翻译
                         encodeURI('/lyp/前端/layout/demo01_2025_04_23_01'),
                     ]
-                }
+                },
+                {
+                    title: '前端基础常识',
+                    collapsable: false,
+                    children: [
+                        // 第一阶段基础篇
+                        encodeURI('/lyp/前端/base/demo01_20250527_01'),
+                    ]
+                },
+                {
+                    title: '前端基础FAQ',
+                    collapsable: false,
+                    children: [
+                        // 第一阶段基础篇
+                        encodeURI('/lyp/前端/base/demo01_faq_20250527_01'),
+                        encodeURI('/lyp/前端/base/demo01_faq_20250527_02'),
+                        encodeURI('/lyp/前端/base/demo01_faq_20250527_03'),
+                    ]
+                },
 
             ],
             // =====================  lyp模块点击设  vue        设置 end ===========
