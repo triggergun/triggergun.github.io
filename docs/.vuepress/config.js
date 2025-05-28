@@ -1519,6 +1519,7 @@ module.exports = {
                         encodeURI('/framework/web/demo01_2025_04_01_02'),
                         encodeURI('/framework/web/demo02_2025_04_30_01'),
                         encodeURI('/framework/web/demo02_2025_04_30_02'),
+                        encodeURI('/framework/web/demo02_2025_04_30_03'),
                     ]
                 },
             ],
