@@ -251,7 +251,8 @@ module.exports = {
                         items: [
                             {
                                 text: "mysql实验总结",
-                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据')
+                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
+                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
                             },
 
                         ],
