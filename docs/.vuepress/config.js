@@ -251,8 +251,7 @@ module.exports = {
                         items: [
                             {
                                 text: "mysql实验总结",
-                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
-                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
+                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据')
                             },
 
                         ],
@@ -1298,6 +1297,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
+                        encodeURI('/lyp/db/mysql/mysql数据库总结/demo01_2025_05_30_01'),
                     ]
 
                 },
@@ -1521,6 +1521,8 @@ module.exports = {
                         encodeURI('/framework/web/demo02_2025_04_30_01'),
                         encodeURI('/framework/web/demo02_2025_04_30_02'),
                         encodeURI('/framework/web/demo02_2025_04_30_03'),
+                        // 接口幂等性问题
+                        encodeURI('/framework/web/demo03_2025_04_30_01'),
                     ]
                 },
             ],
