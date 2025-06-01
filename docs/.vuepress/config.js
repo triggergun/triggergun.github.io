@@ -417,6 +417,24 @@ module.exports = {
                                 link: encodeURI('/framework/web/demo01_2025_04_01_01')
                             },
                         ],
+                    },
+                    {
+                        text: '人工智能',
+                        items: [
+                            {
+                                text: "深度学习入门",
+                                link: encodeURI('/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01')
+                            },
+                        ],
+                    },
+                    {
+                        text: '计算机组成原理',
+                        items: [
+                            {
+                                text: "深入理解计算机操作系统",
+                                link: encodeURI('/framework/system_book01/chapter_01_20250601_01')
+                            },
+                        ],
                     }
                 ]
             }
@@ -1523,6 +1541,30 @@ module.exports = {
                         encodeURI('/framework/web/demo02_2025_04_30_03'),
                         // 接口幂等性问题
                         encodeURI('/framework/web/demo03_2025_04_30_01'),
+                    ]
+                },
+            ],
+            // 深度学习
+            '/framework/Introduction_to_Deep_Learning_4/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '深度学习入门',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01'),
+                    ]
+                },
+            ],
+            // 深度学习
+            '/framework/system_book01/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '深入理解计算机系统',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/system_book01/chapter_01_20250601_01'),
                     ]
                 },
             ],
