@@ -1478,6 +1478,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/美工/ps/01ps基础/01巧记ps快捷键'),
+                        encodeURI('/美工/ps/01ps基础/demo03_2025_02_27'),
+                        encodeURI('/美工/ps/01ps基础/demo03_2025_03_01'),
                     ]
 
                 },
