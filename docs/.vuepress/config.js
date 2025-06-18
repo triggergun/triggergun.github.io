@@ -1152,6 +1152,14 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'uni-app基础',
+                    collapsable: true,
+                    children: [
+                        // 第一阶段基础篇
+                        encodeURI('/lyp/前端/uniapp/demo01_2025_06_17_01'),
+                    ]
+                },
+                {
                     title: '前端基础FAQ',
                     collapsable: false,
                     children: [
