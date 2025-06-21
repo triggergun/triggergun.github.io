@@ -1133,6 +1133,7 @@ module.exports = {
                         // 第一阶段基础篇
                         encodeURI('/lyp/前端/vue/demo01-20250430-01'),
                         encodeURI('/lyp/前端/vue/demo01-20250430-02'),
+                        encodeURI('/lyp/前端/vue/demo02-20250601-01'),
                     ]
                 },
                 {
