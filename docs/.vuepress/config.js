@@ -1552,7 +1552,9 @@ module.exports = {
                         // 接口幂等性问题
                         encodeURI('/framework/web/demo03_2025_04_30_01'),
                         // web设计
-                        encodeURI('/framework/web/demo04_2025_05_01_01')
+                        encodeURI('/framework/web/demo04_2025_05_01_01'),
+                        // web登入逻辑设计
+                        encodeURI('/framework/web/demo05_2025_06_01_01')
                     ]
                 },
             ],
