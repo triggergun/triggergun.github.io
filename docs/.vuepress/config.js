@@ -1496,16 +1496,19 @@ module.exports = {
                     title: '第二阶段ps实战',
                     collapsable: false,
                     children: [
-                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_01'),
-                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_02')
+                        encodeURI('/美工/ps/01ps基础/demo01_2025_02_22'),
+                        encodeURI('/美工/ps/01ps基础/demo02_2025_02_25'),
+                        encodeURI('/美工/ps/01ps基础/demo03_2025_02_26'),
+
                     ]
 
                 },
                 {
-                    title: '第三阶段颜认知',
+                    title: '第三阶段颜色认知',
                     collapsable: false,
                     children: [
-                        encodeURI('/美工/ps/01ps基础/demo01_2025_02_22'),
+                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_01'),
+                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_02'),
                     ]
 
                 },
