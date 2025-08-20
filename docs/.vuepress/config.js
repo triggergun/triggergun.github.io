@@ -757,6 +757,22 @@ module.exports = {
                         encodeURI('/network/security/windows/win10绕过密码'),
                     ]
                 },
+                // 第一阶段  tcp
+                {
+                    title: 'tcp',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/network/tcp/01tcp.md'),
+                    ]
+                },
+                // 第一阶段  jwt
+                {
+                    title: 'jwt',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/network/jwt/01什么是jwt.md'),
+                    ]
+                },
 
             ],
             //  网络基础知识     侧边栏 end  ===============
