@@ -450,7 +450,7 @@ module.exports = {
                         items: [
                             {
                                 text: "启蒙之书",
-                                link: encodeURI('/game/unity/unity_book01/demo01_2025_08_23_01')
+                                link: encodeURI('/game/unity_book01/demo01_2025_08_23_01')
                             },
                         ],
                     }
