@@ -471,6 +471,15 @@ module.exports = {
                                 link: encodeURI('/front_end/html/demo01_2025_10_01_01')
                             },
                         ],
+                    },
+                    {
+                        text: '外部装饰',
+                        items: [
+                            {
+                                text: "css初级之入路",
+                                link: encodeURI('/front_end/css_basic/demo01_2025_10_01_01')
+                            },
+                        ],
                     }
                 ]
             }
@@ -1669,6 +1678,13 @@ module.exports = {
                     children: [
                         encodeURI('/front_end/html/demo01_2025_10_01_01'),
                         encodeURI('/front_end/html/demo01_2025_10_01_02'),
+                    ]
+                },
+                {
+                    title: 'css初级之路',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/css_basic/demo01_2025_10_01_01'),
                     ]
                 },
             ],
