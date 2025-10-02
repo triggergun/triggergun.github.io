@@ -464,6 +464,15 @@ module.exports = {
                 // 子选项
                 items: [
                     {
+                        text: '前端学习',
+                        items: [
+                            {
+                                text: "学习路线",
+                                link: encodeURI('/front_end/roadmap/demo01_2025_10_02_01')
+                            },
+                        ],
+                    },
+                    {
                         text: '搭建骨架',
                         items: [
                             {
@@ -1673,6 +1682,14 @@ module.exports = {
 
             //  谈前端   ================================  start  ==========
             '/front_end/': [
+
+                {
+                    title: '前端学习路线',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/roadmap/demo01_2025_10_02_01'),
+                    ]
+                },
                 {
                     title: 'html初级之路',
                     collapsable: false,
