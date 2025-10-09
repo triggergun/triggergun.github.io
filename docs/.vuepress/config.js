@@ -1704,6 +1704,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/front_end/css_basic/demo01_2025_10_01_01'),
+                        encodeURI('/front_end/css_basic/demo02_2025_10_08_01'),
                     ]
                 },
             ],
