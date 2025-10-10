@@ -216,14 +216,14 @@ module.exports = {
                 items: [
 
                     {
-                        text: 'javascript',
+                        text: 'javascript之路',
                         items: [
                             {text: "基础概念", link: encodeURI('/lyp/javascript/01什么是事件')},
 
                         ],
                     },
                     {
-                        text: '微信小程序',
+                        text: '微信小程序之路',
                         items: [
                             {text: "微信小程序", link: encodeURI('/lyp/小程序/微信小程序/01什么是小程序')},
 
@@ -231,7 +231,7 @@ module.exports = {
                     },
                     // 子选项 c语言
                     {
-                        text: 'c语言',
+                        text: 'c之路',
                         items: [
                             {text: "c语言", link: encodeURI('/lyp/c语言/安装devc++')},
 
@@ -239,7 +239,7 @@ module.exports = {
                     },
                     // 子选项 c++
                     {
-                        text: 'C++',
+                        text: 'C++之路',
                         items: [
                             {text: "C++", link: encodeURI('/lyp/C++语言/01我的第一个C++程序/01如何创建工程')},
 
@@ -247,7 +247,7 @@ module.exports = {
                     },
                     // 子选项 db top导航栏   start  =====
                     {
-                        text: 'db',
+                        text: 'db之路',
                         items: [
                             {
                                 text: "mysql实验总结",
@@ -260,7 +260,7 @@ module.exports = {
                     {
 
                         //  top栏
-                        text: 'rust语言',
+                        text: 'rust之路',
                         items: [
                             {text: "第一阶段基础", link: encodeURI('/lyp/rust语言/第一阶段基础篇/01rust是什么')},
 
@@ -499,7 +499,7 @@ module.exports = {
                 // 子选项
                 items: [
                     {
-                        text: '缓存',
+                        text: '缓存数据库',
                         items: [
                             {
                                 text: "redis",
@@ -512,6 +512,9 @@ module.exports = {
                         items: [
                             {
                                 text: "postgre初级",
+                                link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
+                            }, {
+                                text: "postgre初级实战",
                                 link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
                             },
                         ],
@@ -1752,6 +1755,13 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01'),
+                    ]
+                },
+                {
+                    title: 'postgre实战',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_01'),
                     ]
                 }
             ],
