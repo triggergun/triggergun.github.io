@@ -506,6 +506,15 @@ module.exports = {
                                 link: encodeURI('/db/redis/demo01_2025_10_09_01')
                             },
                         ],
+                    },
+                    {
+                        text: 'postgre数据库',
+                        items: [
+                            {
+                                text: "postgre初级",
+                                link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
+                            },
+                        ],
                     }
                 ]
             }
@@ -1736,6 +1745,13 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/db/redis/demo01_2025_10_09_01'),
+                    ]
+                },
+                {
+                    title: 'postgre入门书籍',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01'),
                     ]
                 }
             ],
