@@ -433,7 +433,7 @@ module.exports = {
                         items: [
                             {
                                 text: "深入理解计算机操作系统",
-                                link: encodeURI('/framework/system_book01/chapter_01_20250601_01')
+                                link: encodeURI('/framework/system_book01/chapter_01_20250601_0101')
                             },
                         ],
                     }
@@ -1691,6 +1691,7 @@ module.exports = {
                     title: '深入理解计算机系统',
                     collapsable: false,
                     children: [
+                        encodeURI('/framework/system_book01/chapter_01_20251010_01'),
                         encodeURI('/framework/system_book01/chapter_01_20250601_0101'),
                         encodeURI('/framework/system_book01/chapter_01_20250601_0102'),
                     ]
