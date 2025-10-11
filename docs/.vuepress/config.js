@@ -1755,7 +1755,7 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'postgre入门书籍',
+                    title: 'postgreSQL入门书籍',
                     collapsable: false,
                     children: [
                         encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01'),
