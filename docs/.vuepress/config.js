@@ -783,6 +783,8 @@ module.exports = {
                         '/运维/ubuntu/demo04_2025_03_02',
                         '/运维/ubuntu/demo05_2025_03_03',
                         '/运维/ubuntu/demo06_2025_03_04',
+                        '/运维/ubuntu/demo06_2025_10_09',
+                        '/运维/ubuntu/demo06_2025_10_10',
                     ],
                 },
                 {
@@ -1764,6 +1766,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/db/postgre_base_db/demo01_2025_10_10_01'),
+                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_02'),
+                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_03'),
                     ]
                 }
             ],
