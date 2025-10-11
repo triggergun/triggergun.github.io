@@ -516,7 +516,7 @@ module.exports = {
                                 link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
                             }, {
                                 text: "postgre初级实战",
-                                link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
+                                link: encodeURI('/db/postgre_base_db/demo01_2025_10_10_01')
                             },
                         ],
                     }
