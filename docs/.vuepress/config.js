@@ -783,8 +783,8 @@ module.exports = {
                         '/运维/ubuntu/demo04_2025_03_02',
                         '/运维/ubuntu/demo05_2025_03_03',
                         '/运维/ubuntu/demo06_2025_03_04',
-                        '/运维/ubuntu/demo06_2025_10_09',
-                        '/运维/ubuntu/demo06_2025_10_10',
+                        '/运维/ubuntu/demo07_2025_10_09',
+                        '/运维/ubuntu/demo08_2025_10_10',
                     ],
                 },
                 {
