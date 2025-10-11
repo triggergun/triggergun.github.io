@@ -101,7 +101,7 @@ module.exports = {
 
             // ========================  选项二
             {
-                text: '图南的博客',
+                text: '图南博客',
                 // 子选项
                 items: [
                     {text: 'Blog-first', link: 'https://ground-gun.gitee.io/'},
