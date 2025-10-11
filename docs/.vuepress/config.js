@@ -1759,10 +1759,11 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01'),
+                        encodeURI('/db/postgre_sql_book/demo01_2025_10_10_02'),
                     ]
                 },
                 {
-                    title: 'postgre实战',
+                    title: 'postgreSQL实战',
                     collapsable: false,
                     children: [
                         encodeURI('/db/postgre_base_db/demo01_2025_10_10_01'),
