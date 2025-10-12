@@ -362,6 +362,12 @@ module.exports = {
                         items: [
                             {text: "pa基础", link: encodeURI('/美工/ps/01ps基础/01巧记ps快捷键')},
                         ],
+                    },
+                    {
+                        text: 'office',
+                        items: [
+                            {text: "word实用", link: encodeURI('/美工/word/practical/demo01_2025_10_10_01')},
+                        ],
                     }
                 ]
             },
@@ -1618,6 +1624,20 @@ module.exports = {
                 },
             ],
             //  ps  ================================  end  ==========
+
+            //  word  ================================  start  ==========
+
+            '/美工/word/': [
+                // 实用技巧
+                {
+                    title: 'word使用技巧',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/美工/word/practical/demo01_2025_10_10_01'),
+                    ]
+                }
+            ],
+            //  word  ================================  end  ==========
 
 
             //  安卓的侧边栏的配置  ================================  start  ==========
