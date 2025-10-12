@@ -442,6 +442,15 @@ module.exports = {
                                 link: encodeURI('/framework/system_book01/chapter_01_20250601_0101')
                             },
                         ],
+                    },
+                    {
+                        text: 'Aiot',
+                        items: [
+                            {
+                                text: "emqx",
+                                link: encodeURI('/framework/iot/emqx/demo01_2015_10_10_01')
+                            },
+                        ],
                     }
                 ]
             },
