@@ -36,7 +36,7 @@ module.exports = {
      */
     head: [
         // 重装基本图片
-        ['link', {rel: 'icon', href: 'favicon.ico'}],
+        ['link', {rel: 'icon', href: '/favicon.ico'}],
         ['link', {rel: 'stylesheet', href: '/css/katex.min.css'}],
         // 谷歌广告位
         // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
