@@ -1714,7 +1714,8 @@ module.exports = {
                     ]
                 },
             ],
-            // 深度学习
+            // 深度学习 end
+            // 书籍阅读观后感 start
             '/framework/system_book01/': [
                 // /framework/cloud/ 是父亲目录。
                 // cloud 下面都是文件。
@@ -1728,6 +1729,23 @@ module.exports = {
                     ]
                 },
             ],
+            // 书籍阅读观后感 end
+
+            // 物联网 iot start
+            '/framework/iot/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: 'emqx',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/iot/emqx/demo01_2015_10_10_01'),
+                    ]
+                },
+            ],
+            // 物联网 iot end
+
+
             //  谈架构  ================================  end  ==========
 
             //  谈游戏   ================================  start  ==========
