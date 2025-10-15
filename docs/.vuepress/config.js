@@ -1786,6 +1786,7 @@ module.exports = {
                         encodeURI('/front_end/css_basic/demo01_2025_10_01_01'),
                         encodeURI('/front_end/css_basic/demo02_2025_10_08_01'),
                         encodeURI('/front_end/css_basic/demo02_2025_10_08_02'),
+                        encodeURI('/front_end/css_basic/demo03_2025_10_15_01'),
                     ]
                 },
             ],
