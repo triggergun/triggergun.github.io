@@ -1,6 +1,30 @@
 ﻿// import blog from './contents/nav/blog.js'
+
+// 顶部导航栏
 const blogArray = require('./contents/nav/blog.js');
 const operationsArray = require('./contents/nav/operations.js');
+const javaArray = require('./contents/nav/java.js');
+const lypArray = require('./contents/nav/lyp.js');
+const bigDataArray = require('./contents/nav/bigData.js');
+const mei_gongArray = require('./contents/nav/mei_gong.js');
+const dbArray = require('./contents/nav/db.js');
+const tan_jia_gouArray = require('./contents/nav/tan_jia_gou.js');
+const tan_qian_duanArray = require('./contents/nav/tan_qian_duan.js');
+
+// 侧边栏
+const operationsSidebarArray = require('./contents/sidebar/operations.js');
+const faceObjectSidebarArray = require('./contents/sidebar/faceObject.js');
+const lypDbSidebarArray = require('./contents/sidebar/lypDb.js');
+const gitSidebarArray = require('./contents/sidebar/git.js');
+const mei_gongPsSidebarArray = require('./contents/sidebar/mei_gongPs.js');
+const javaMybatisPlusSidebarArray = require('./contents/sidebar/javaMybatisPlus.js');
+const javaGradleSidebarArray = require('./contents/sidebar/javaGradle.js');
+const dbSidebarArray = require('./contents/sidebar/db.js');
+const lypRustSidebarArray = require('./contents/sidebar/lypRust.js');
+const lypLinuxSidebarArray = require('./contents/sidebar/lypLinux.js');
+const javaMybatisSidebarArray = require('./contents/sidebar/javaMybatis.js');
+const lypBigDataScalaBaseSidebarArray = require('./contents/sidebar/lypBigDataScalaBase.js');
+const lypBigDataFlumeBase01SidebarArray = require('./contents/sidebar/lypBigDataFlumeBase01.js');
 // docs/.vuepress/config.js
 module.exports = {
 
@@ -120,215 +144,30 @@ module.exports = {
             {
                 text: 'java',
                 // 子选项
-                items: [
-                    //------------- java技术栈
-                    {
-                        text: 'java技术栈',
-                        items: [
-                            {text: 'java基础', link: '/java/javaSEBase/java'},
-
-                            {text: 'gradle', link: encodeURI('/java/gradle/01安装gradle')},
-                        ]
-                    },
-                    //------------- dao层区
-                    {
-                        text: 'dao层框架',
-                        items: [
-                            {text: "mybatis", link: '/java/Mybatis/mybatis'},
-                            {text: "mybatis-plus", link: encodeURI('/java/mybatis_plus/03多数据库源的编写')},
-                        ]
-                    },
-                    //-------------java的  源码分析 start
-                    {
-                        text: '源码分析区',
-                        items: [
-                            {text: "spring源码分析", link: encodeURI('/java/spring源码分析/01Spring源码下载')},
-                            {
-                                text: "spring-boot源码分析",
-                                link: encodeURI('/java/springboot_source_code/20250105_demo01')
-                            },
-                        ]
-                    },
-                    //-------------java的  源码分析 end
-                    //---------------springCloud
-                    {
-                        text: 'springCloud',
-                        items: [
-                            {text: "gateway", link: '/java/springcloudgateway/01gateway'},
-
-                        ]
-                    },
-                    {text: '设计模式', link: '/java/designModel/AssemblerDesignPattern'},
-                    {text: 'java工具', link: encodeURI('/java/java工具/xpath解析doc')},
-                    {text: 'java基础服务', link: encodeURI('/java/java基础服务/nexus/01nexus3的docker安装')},
-
-                ]
+                items: javaArray,
             },
             //============================= top  选项5  java  end ==============
             //=========================================== top 选项6  start  ==================
             {
                 text: 'lyp',
                 // 子选项
-                items: [
-
-                    {
-                        text: 'javascript之路',
-                        items: [
-                            {text: "基础概念", link: encodeURI('/lyp/javascript/01什么是事件')},
-
-                        ],
-                    },
-                    {
-                        text: '微信小程序之路',
-                        items: [
-                            {text: "微信小程序", link: encodeURI('/lyp/小程序/微信小程序/01什么是小程序')},
-
-                        ],
-                    },
-                    // 子选项 c语言
-                    {
-                        text: 'c之路',
-                        items: [
-                            {text: "c语言", link: encodeURI('/lyp/c语言/安装devc++')},
-
-                        ],
-                    },
-                    // 子选项 c++
-                    {
-                        text: 'C++之路',
-                        items: [
-                            {text: "C++", link: encodeURI('/lyp/C++语言/01我的第一个C++程序/01如何创建工程')},
-
-                        ],
-                    },
-                    // 子选项 db top导航栏   start  =====
-                    {
-                        text: 'db之路',
-                        items: [
-                            {
-                                text: "mysql实验总结",
-                                link: encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据')
-                            },
-
-                        ],
-                    },
-                    // 子选项 db top导航栏   end  =====
-                    {
-
-                        //  top栏
-                        text: 'rust之路',
-                        items: [
-                            {text: "第一阶段基础", link: encodeURI('/lyp/rust语言/第一阶段基础篇/01rust是什么')},
-
-                        ],
-                    }, {
-                        //  top栏
-                        text: 'python之路',
-                        items: [
-                            {text: "第一阶段基础", link: encodeURI('/lyp/python/第一阶段基础/01python的安装')},
-                            {text: "第二阶段基础", link: encodeURI('/lyp/python/jupyter/demo01_2025_03_19_01')},
-                        ],
-                    },
-                    {
-                        //  top栏
-                        text: 'android之路',
-                        items: [
-                            {text: "kotlin&android", link: encodeURI('/lyp/android/kotlin/demo01_2025_02_21')},
-
-                        ],
-                    },
-                    {
-                        //  top栏
-                        text: '初见Go，星河初转。',
-                        items: [
-                            {text: "web华山论剑", link: encodeURI('/lyp/go/demo01_2025_03_22_01')},
-
-                        ],
-                    },
-                    {
-                        //  top栏 前端
-                        text: '再探前端，万籁生云。',
-                        items: [
-                            {text: "vue转乾坤", link: encodeURI('/lyp/前端/vue/demo01-20250430-01')},
-                            {text: "风云涌动", link: encodeURI('/lyp/前端/layout/demo01_2025_04_23_01')},
-                            {text: "前端基础", link: encodeURI('/lyp/前端/base/demo01_20250527_01')},
-                        ],
-                    },
-                ]
+                items: lypArray,
             },
-
             //===========================================top 选项6   end  ==================
             //=================================大数据  选项7 =========================
             {
                 text: '大数据',
                 // 子选项
-                items: [
-                    {
-                        text: 'hadoop基础理论',
-                        items: [
-                            {
-                                text: "MapReduce理论",
-                                link: encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么')
-                            },
-
-                        ],
-                    },
-                    {
-                        text: 'spark',
-                        items: [
-                            {text: "spark集群", link: encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署')},
-                            {text: "scala语言基础", link: encodeURI('/lyp/大数据/scala语言基础/01scala简介')},
-
-                        ],
-                    },
-                    {
-                        text: 'zookeepre',
-                        items: [
-                            {text: "zookeepre集群", link: encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署')},
-
-                        ],
-                    },
-                    {
-                        text: 'kafka',
-                        items: [
-                            {text: "kafka集群", link: encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试')},
-
-                        ],
-                    },
-                    {
-                        text: '大话flume',
-                        items: [
-                            {text: "flume", link: encodeURI('/lyp/大数据/flume/base01/版本管理')},
-
-                        ],
-                    },
-
-                ]
+                items: bigDataArray,
             },
             //=================================大数据  选项7  top end =========================
-
             //  ============   top 的 选项 8   ============================================
             {
                 text: '美工',
                 // 子选项
-                items: [
-                    {
-                        text: 'ps',
-                        items: [
-                            {text: "pa基础", link: encodeURI('/美工/ps/01ps基础/01巧记ps快捷键')},
-                        ],
-                    },
-                    {
-                        text: 'office',
-                        items: [
-                            {text: "word实用", link: encodeURI('/美工/word/practical/demo01_2025_10_10_01')},
-                        ],
-                    }
-                ]
+                items: mei_gongArray,
             },
-
             //  ============   top 的 选项 8   end ============================================
-
             // //  ============   top 的 选项 9   ============================================
             {
                 text: '基础科学',
@@ -355,62 +194,13 @@ module.exports = {
                 ]
             },
             // //  ============   top 的 选项 9   end  ============================================
-
-
             // //  ============ 谈架构   top 的 选项 10  start  ============================================
             {
                 text: '谈架构',
                 // 子选项
-                items: [
-                    {
-                        text: '云计算',
-                        items: [
-                            {
-                                text: "云原生",
-                                link: encodeURI('/framework/cloud/demo01_2025_03_19_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: 'web架构',
-                        items: [
-                            {
-                                text: "web认证流程",
-                                link: encodeURI('/framework/web/demo01_2025_04_01_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: '人工智能',
-                        items: [
-                            {
-                                text: "深度学习入门",
-                                link: encodeURI('/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: '计算机组成原理',
-                        items: [
-                            {
-                                text: "深入理解计算机操作系统",
-                                link: encodeURI('/framework/system_book01/chapter_01_20250601_0101')
-                            },
-                        ],
-                    },
-                    {
-                        text: 'Aiot',
-                        items: [
-                            {
-                                text: "emqx",
-                                link: encodeURI('/framework/iot/emqx/demo01_2015_10_10_01')
-                            },
-                        ],
-                    }
-                ]
+                items: tan_jia_gouArray,
             },
             // //  ============   top 的 选项 10   end  ============================================
-
             // //  ============ 谈架构   top 的 选项 11  start  ============================================
             {
                 text: '谈游戏',
@@ -428,72 +218,20 @@ module.exports = {
                 ]
             },
             // //  ============   top 的 选项 11   end  ============================================
-
             // //  ============ 谈前端   top 的 选项 12  start  ============================================
             {
                 text: '谈前端',
                 // 子选项
-                items: [
-                    {
-                        text: '前端学习',
-                        items: [
-                            {
-                                text: "学习路线",
-                                link: encodeURI('/front_end/roadmap/demo01_2025_10_02_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: '搭建骨架',
-                        items: [
-                            {
-                                text: "html初级之入路",
-                                link: encodeURI('/front_end/html/demo01_2025_10_01_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: '外部装饰',
-                        items: [
-                            {
-                                text: "css初级之入路",
-                                link: encodeURI('/front_end/css_basic/demo01_2025_10_01_01')
-                            },
-                        ],
-                    }
-                ]
+                items: tan_qian_duanArray,
             },
             // //  ============   top 谈前端的 选项 12   end  ============================================
             // //  ============ 谈数据库   top 的 选项 13  start  ============================================
             {
                 text: '数据库',
                 // 子选项
-                items: [
-                    {
-                        text: '缓存数据库',
-                        items: [
-                            {
-                                text: "redis",
-                                link: encodeURI('/db/redis/demo01_2025_10_09_01')
-                            },
-                        ],
-                    },
-                    {
-                        text: 'postgre数据库',
-                        items: [
-                            {
-                                text: "postgre初级",
-                                link: encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01')
-                            }, {
-                                text: "postgre初级实战",
-                                link: encodeURI('/db/postgre_base_db/demo01_2025_10_10_01')
-                            },
-                        ],
-                    }
-                ]
+                items: dbArray,
             }
             // //  ============  谈数据库 top 谈数据库 选项 13   end  ============================================
-
         ],
 
         //========================================top导航栏 数组 ]  end============================================
@@ -615,175 +353,10 @@ module.exports = {
             ],
 
             // 表示：点击导航栏后，侧边栏显示的标题有：git选
-            '/git/': [
-                {
-                    title: 'git',
-                    collapsable: false,
-                    children: ['/git/git'],
-
-                },
-                {
-                    title: '本地仓库提交到git',// 注意：给文章起个别名。别名下面是文章搜标题。
-                    collapsable: false,
-                    children: ['/git/git推送到远程的仓库'],
-
-                },
-                {
-                    title: '必知必会的git操作',// 注意：给文章起个别名。别名下面是文章搜标题。
-                    collapsable: false,
-                    children: [
-                        '/git/01怎么删除远程标签',
-                        '/git/02怎么打tag推送到远程',
-                        '/git/03快熟创建git仓库与本地Idea关联',
-                        '/git/04修改远程分支名称',
-                        '/git/05合并开发分支',
-                        '/git/06怎么删除远程分支',
-                        '/git/07删除本地分支',
-                        '/git/08本地切换远程分支',
-                        '/git/09idea中强制迁出和智能迁出',
-                        '/git/10tag太多怎么过滤',
-                        '/git/11怎么将本地仓库上传github',
-                        '/git/12gitee怎么同步github仓库',
-                        '/git/13idea中使用git回退单个文件的版本',
-                        '/git/14重置某个提交的文件',
-                        '/git/15在master分支一键合并开发分支代码',
-                        '/git/16远程与本地【冲突】',
-                        '/git/17git怎么切换到指定标签',
-                        '/git/github常见问题',
-                        '/git/git',
-                        '/git/git推送到远程的仓库',
-                        '/git/将本地项目上传至gitee',
-                        '/git/本地仓库修改远程仓库的url',
-                        '/git/demo01_2025_04_01_01',
-                        '/git/demo02_2025_04_01_02',
-                        '/git/demo03_2025_04_01_03',
-                    ],
-
-                },
-
-
-            ],
+            '/git/': gitSidebarArray,
             // 表示：运维选  =============================
             // 注意 不能再搞 /运维/xxx/的 侧边栏了。
-            '/运维/': [
-                {
-                    title: 'windows运维',
-                    collapsable: false,
-                    children: [
-                        '/运维/windows/cmd',
-                        "/运维/windows/cmd01",
-                        "/运维/windows/cmd02"
-                    ],
-
-                },
-                {
-                    title: 'docker运维',
-                    collapsable: false,
-                    children: [
-                        '/运维/windows/docker/01docker实验一构建自己的镜像',
-                        '/运维/windows/docker/docker-compose命令常用',
-                        '/运维/windows/docker/怎么将镜像打包为zip',
-                        '/运维/windows/docker/02contos安装docker',
-                        '/运维/windows/docker/03centos安装docker_compose',
-                        '/运维/windows/docker/04docker_compose安装mysql',
-                        '/运维/windows/docker/05idea连接远程docker构建镜像',
-                        '/运维/windows/docker/demo01_2025_01_26',
-                        '/运维/windows/docker/demo02_2025_01_26',
-                        '/运维/windows/docker/demo03_2025_10_06_01',
-
-                    ],
-
-                },
-                {
-                    title: 'centos运维ci_cd',
-                    collapsable: false,
-                    children: [
-                        '/运维/centos/demo01_2025_02_26',
-                        '/运维/centos/demo02_2025_02_27',
-                        '/运维/centos/demo03_2025_02_27',
-                        '/运维/centos/demo04_2025_02_28',
-                        '/运维/centos/demo05_2025_02_28',
-                        '/运维/centos/demo06_2025_02_28',
-                        '/运维/centos/demo07_2025_02_28',
-                        '/运维/centos/demo08_2025_02_28',
-                        '/运维/centos/demo09_2025_02_28',
-                        '/运维/centos/demo10_2025_02_28',
-                        '/运维/centos/demo11_2025_02_28',
-                        '/运维/centos/demo12_2025_02_28',
-                        '/运维/centos/demo13_2025_02_28',
-                        '/运维/centos/demo14_2025_02_28',
-                        '/运维/centos/demo15_2025_02_28',
-                        '/运维/centos/demo16_2025_03_01',
-                        '/运维/centos/demo17_2025_03_01',
-                        '/运维/centos/demo18_2025_03_01',
-                        '/运维/centos/demo18_2025_03_01',
-                        '/运维/centos/demo19_2025_03_30',
-                    ],
-                },
-                {
-                    title: 'python运维ci_cd',
-                    collapsable: false,
-                    children: [
-                        '/运维/centos/demo20_2025_04_01',
-                        '/运维/centos/demo21_2025_04_01',
-                        '/运维/centos/demo22_2025_04_01',
-                    ],
-                },
-                {
-                    title: 'centos常用命令',
-                    collapsable: false,
-                    children: [
-                        '/运维/centos/01防火墙命令',
-                        '/运维/centos/02linux找文件夹',
-                        '/运维/centos_cmd/demo01_2025_03_03',
-                        '/运维/centos_cmd/demo01_2025_03_30',
-                        '/运维/centos_cmd/demo02_2025_03_30',
-                        '/运维/centos_cmd/demo02_2025_03_31',
-                        '/运维/centos_cmd/demo03_2025_03_31',
-                        '/运维/centos_cmd/demo04_2025_04_01',
-                    ],
-                },
-                {
-                    title: 'ubuntu运维',
-                    collapsable: false,
-                    children: [
-                        '/运维/ubuntu/demo01_2025_02_21',
-                        '/运维/ubuntu/demo02_2025_02_22',
-                        '/运维/ubuntu/demo03_2025_03_01',
-                        '/运维/ubuntu/demo04_2025_03_02',
-                        '/运维/ubuntu/demo05_2025_03_03',
-                        '/运维/ubuntu/demo06_2025_03_04',
-                        '/运维/ubuntu/demo07_2025_10_09',
-                        '/运维/ubuntu/demo08_2025_10_10',
-                    ],
-                },
-                {
-                    title: 'shell实战',
-                    collapsable: false,
-                    children: [
-                        '/运维/shell/demo01_2025_03_19_01',
-                    ],
-
-                },
-                {
-                    title: 'linux基础概念',
-                    collapsable: false,
-                    children: [
-                        '/运维/linux_base/demo01_2025_03_22_01',
-                    ],
-
-                },
-                {
-                    title: '系统架构',
-                    collapsable: false,
-                    children: [
-                        '/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统'
-                    ],
-
-                }
-
-            ],
-
+            '/运维/': operationsSidebarArray,
             //  网络基础知识     侧边栏 start  ===============
             '/network/': [
                 {
@@ -834,43 +407,8 @@ module.exports = {
             ],
             //  网络基础知识     侧边栏 end  ===============
             // dao层区的侧边目录========表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
-            '/java/Mybatis/': [
-                {
-                    title: 'mybatis整合springboot',
-                    collapsable: false,
-                    children: ['/java/Mybatis/mybatis'],
-
-                },
-                {
-                    title: 'crud',
-                    collapsable: false,
-                    children: [
-                        '/java/Mybatis/select01',
-                        '/java/Mybatis/select02',
-                        '/java/Mybatis/sesion3电视剧crud'
-                    ],
-
-                },
-                {
-                    title: 'mybatis的FQA',
-                    collapsable: false,
-                    children: [
-                        '/java/Mybatis/demo01_20250519_01',
-                    ],
-
-                }
-
-
-            ],
-            '/java/mybatis_plus/': [
-                {
-                    title: 'mybatis-pius使用多数据源',
-                    collapsable: true,
-                    children: ['/java/mybatis_plus/03多数据库源的编写'],
-
-                },
-
-            ],
+            '/java/Mybatis/': javaMybatisSidebarArray,
+            '/java/mybatis_plus/': javaMybatisPlusSidebarArray,
             // java基础学习阶段
             // 表示：点击导航栏后，侧边栏显示的标题有：java
             '/java/javaSEBase/': [
@@ -1039,28 +577,7 @@ module.exports = {
             ],
 
             // ===================== 侧边栏 配置  点击设 gradle  start ===========
-            '/java/gradle/': [
-                {
-                    title: 'gradle入门',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/gradle/01安装gradle'),
-                        encodeURI('/java/gradle/02Gradle项目目录结构'),
-                        encodeURI('/java/gradle/03Gradle创建第一个项目'),
-
-                    ]
-
-                },
-                {
-                    title: 'gradle FAQ',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/gradle/demo01_2025_03_06'),
-                    ]
-
-                },
-
-            ],
+            '/java/gradle/': javaGradleSidebarArray,
             // ===================== 侧边栏 配置  点击设 gradle  end ===========
 
             // ===================== lyp    点击设 javascript的  基础概念 ===========
@@ -1142,57 +659,7 @@ module.exports = {
             // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置  start ===========
             // 2024年-5-14
             // 第一阶段 基础
-            '/lyp/rust语言': [
-                {
-                    title: '第一阶段基础篇',
-                    collapsable: false,
-                    children: [
-                        // 第一阶段基础篇
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/01rust是什么'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/02rust的安装'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/03rust工具概念'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/04helloworld'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/05Hello_Cargo'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/06rust命令总结'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/07rust编写猜数字游戏'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/08生成一个随机数'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/09比较猜测的数字和秘密数字'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/10通用编程概念'),
-                        encodeURI('/lyp/rust语言/第一阶段基础篇/demo01_2025_03_01_01'),
-                    ]
-                },
-                {
-                    title: 'rust第二阶段问答篇',
-                    collapsable: false,
-                    children: [
-                        // rust的项目集合readme的翻译
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250104_demo01'),
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250106_demo02'),
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250110_demo03'),
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250124_demo04'),
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250125_demo05'),
-                        encodeURI('/lyp/rust语言/第二阶段问答篇/rust_20250206_demo06'),
-                    ]
-                },
-                {
-                    title: 'rust demo',
-                    collapsable: false,
-                    children: [
-                        // rust的项目集合readme的翻译
-                        encodeURI('/lyp/rust语言/rust_demo_set/ocrs_readme'),
-                    ]
-                }, {
-                    title: 'rust框架入门',
-                    collapsable: false,
-                    children: [
-                        // rust的项目集合readme的翻译
-                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_01'),
-                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_02'),
-                        encodeURI('/lyp/rust语言/rust_demo/demo01_2025_04_04_03'),
-                    ]
-                },
-
-            ],
+            '/lyp/rust语言': lypRustSidebarArray,
             // ===================== lyp模块点击设rust语言 ,rust语言的侧边栏目录    设置 end ===========
 
             // ===================== lyp模块点击设  vue     设置  start ===========
@@ -1363,162 +830,37 @@ module.exports = {
                 },
 
             ],
-
-
+            '/lyp/大数据/scala语言基础': lypBigDataScalaBaseSidebarArray,
             '/lyp/大数据/kafka': [
                 {
                     title: 'kafka集',
                     collapsable: false,
                     children: [encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试'),
                     ]
-
                 },
-
             ],
-
             '/lyp/大数据/zookeeper': [
                 {
                     title: 'zookeeper集',
                     collapsable: false,
                     children: [encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署'),
                     ]
-
                 },
-
             ],
-
+            '/lyp/大数据/flume/base01': lypBigDataFlumeBase01SidebarArray,
             //***************************   top上 有按钮  大数据  end *****************************************
 
-
             // 数据库的侧边栏  start  =========
-            '/lyp/db/': [
-                {
-                    title: 'mysql数据库总结',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据'),
-                        encodeURI('/lyp/db/mysql/mysql数据库总结/demo01_2025_05_30_01'),
-                    ]
-
-                },
-
-            ],
+            '/lyp/db/': lypDbSidebarArray,
             // 数据库的侧边栏  end  =========
 
             //  ====================     在top 上没有提供点击按钮   直接地址访问  =============================
 
-            '/lyp/刷脸项目/': [
-                {
-                    title: '刷脸项目',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/01mybatis插件安装'),
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/02安装小程序开发工具'),
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/03安装HBuilderX软件'),
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/04安装VirtualBox虚拟机'),
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/05VirtualBox创虚拟机实例'),
-                        encodeURI('/lyp/刷脸项目/01阶段-磨刀不费砍柴工/06安装Centos系统'),
-
-
-                    ]
-
-                },
-                //   2阶段
-                {
-                    title: '刷脸项目第二阶段',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/01创建springboot项目'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/02配置mybatis'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/03创建自定义异常类_2-3'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/04分装web返回的对象2-4'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/05利用Swagger搭建REST_API2-5'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/06配置后端验证功能2-6'),
-                        encodeURI('/lyp/刷脸项目/02阶段-从零构建后端项目基础篇/07抵御即跨站脚本XSS攻击2-7'),
-                    ]
-
-                },
-                //   3阶段
-                {
-                    title: '刷脸项目第三阶段',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/01本章介绍'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/02Shiro和JWT技术3-1'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/03创建JwtUtil工具类3-2'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/04把令牌封装成认证对象3-3'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/05创建存储令牌的媒介类3-4'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/06精简返回给客户端的异常内容3-5'),
-                        encodeURI('/lyp/刷脸项目/03阶段-从零构建后端项目进阶篇/07要点回顾'),
-                    ]
-
-                },
-
-                //   4阶段
-                {
-                    title: '刷脸项目第四阶段',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/01申请微信开发者账号4-1'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/02创建小程序项目4-2'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/03初始uni-app4-3'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/04创建登陆页面4-4'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/05创建注册页面4-5'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/06注册新用户的业务要点说明4-6'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/07获取临时授权和微信基本信息4-7'),
-                        encodeURI('/lyp/刷脸项目/04阶段-利用UNI-APP创建移动端项目/08章节总结4-8'),
-                    ]
-
-                },
-                // 5 阶段 05阶段-实现注册与登陆
-                {
-                    title: '刷脸项目第五阶段',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/01实现注册超级管理员功能[持久层]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/02实现注册超级管理员功能[业务层]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/03掌握RABC权限模型'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/04实现注册超级管理员功能[Web层]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/05定义全局路径和封装Aiax[移动端]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/06完成注册超级管理员功能[移动端]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/07实现用户登陆功能[持久层&业务层]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/08实现用户登陆功能[Web层]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/09实现用户登陆功能[移动端]'),
-                        encodeURI('/lyp/刷脸项目/05阶段-实现注册与登陆/10观察后端项目运行细节'),
-                    ]
-
-
-                },
-                // 6 阶段 06阶段-人脸考勤签到基础篇
-                {
-                    title: '刷脸项目第六阶段',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/01章节介绍'),
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/02创建小程序Tab导航'),
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/03开通腾讯云对象存储服务'),
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/04设计首页的英雄区和栏目导航'),
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/05设计人脸签到页面'),
-                        encodeURI('/lyp/刷脸项目/06阶段-人脸考勤签到基础篇/06实现签到自拍功能'),
-                    ]
-
-                },
-
-            ],
+            '/lyp/刷脸项目/': faceObjectSidebarArray,
 
             //  ==================== 不显示: desc:linux常用命令    在top 上没有提供点击按钮   直接地址访问  =============================
 
-            '/lyp/linux/': [
-                {
-                    title: 'linux常用命令',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/lyp/linux/01常用命令linux'),
-                    ]
-
-                },
-
-            ],
+            '/lyp/linux/': lypLinuxSidebarArray,
 
             //  =====================================   发票的的项目   start ==========================================
             '/lyp/发票项目2024-3-1/': [
@@ -1553,40 +895,7 @@ module.exports = {
 
             //  ps  ================================  start  ==========
 
-            '/美工/ps/': [
-                // 第一阶段
-                {
-                    title: '第一阶段ps基础',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/美工/ps/01ps基础/01巧记ps快捷键'),
-                        encodeURI('/美工/ps/01ps基础/demo03_2025_02_27'),
-                        encodeURI('/美工/ps/01ps基础/demo03_2025_03_01'),
-                    ]
-
-                },
-                {
-                    title: '第二阶段ps实战',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/美工/ps/01ps基础/demo01_2025_02_22'),
-                        encodeURI('/美工/ps/01ps基础/demo02_2025_02_25'),
-                        encodeURI('/美工/ps/01ps基础/demo03_2025_02_26'),
-                        encodeURI('/美工/ps/01ps基础/demo05_2025_10_01_01'),
-
-                    ]
-
-                },
-                {
-                    title: '第三阶段颜色认知',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_01'),
-                        encodeURI('/美工/ps/01ps基础/demo04_2025_04_02'),
-                    ]
-
-                },
-            ],
+            '/美工/ps/': mei_gongPsSidebarArray,
             //  ps  ================================  end  ==========
 
             //  word  ================================  start  ==========
@@ -1748,33 +1057,7 @@ module.exports = {
             //  谈前端  ================================  end  ==========
 
             //  谈数据库   ================================  start  ==========
-            '/db/': [
-
-                {
-                    title: 'redis实战与运维',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/db/redis/demo01_2025_10_09_01'),
-                    ]
-                },
-                {
-                    title: 'postgreSQL入门书籍',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/db/postgre_sql_book/demo01_2025_10_10_01'),
-                        encodeURI('/db/postgre_sql_book/demo01_2025_10_10_02'),
-                    ]
-                },
-                {
-                    title: 'postgreSQL实战',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_01'),
-                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_02'),
-                        encodeURI('/db/postgre_base_db/demo01_2025_10_10_03'),
-                    ]
-                }
-            ],
+            '/db/': dbSidebarArray,
             //  谈数据库  ================================  end  ==========
 
             // ======  外层的括号  ==========
