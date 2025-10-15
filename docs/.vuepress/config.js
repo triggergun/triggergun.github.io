@@ -1,4 +1,7 @@
-﻿// docs/.vuepress/config.js
+﻿// import blog from './contents/nav/blog.js'
+const blogArray = require('./contents/nav/blog.js');
+const operationsArray = require('./contents/nav/operations.js');
+// docs/.vuepress/config.js
 module.exports = {
 
 
@@ -95,69 +98,24 @@ module.exports = {
 
         //========================================top导航栏开始============================================
         nav: [
-
             // 选项一
             {text: '首页', link: '/'},
-
-            // ========================  选项二
+            // ========================  选项二  start
             {
                 text: '图南博客',
                 // 子选项
-                items: [
-                    {text: 'Blog-first', link: 'https://ground-gun.gitee.io/'},
-                    {text: 'Blog-second', link: 'https://wutunan.vercel.app/'},
-                    {text: 'Gitee', link: 'https://gitee.com/ground-gun'},
-                    {text: 'Github', link: 'https://github.com/triggergun'},
-                    {text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts'},
-                    {text: '英语', link: 'https://eglish.wutunan.top'},
-                    {text: '日出日落开放平台', link: 'https://www.tc03vd.top/sunrise-sunset/zh/'},
-                ]
+                items: blogArray
             },
-
+            // ========================  选项二  end
             //========================   选项三   start ==============
             {text: 'git', link: '/git/git'},
             //========================   选项三   end ==============
-
             //========================选项4    link   top   start =================
             {
                 text: '运维',
-                items: [
-                    {text: '命令', link: '/运维/windows/cmd'},
-                    {text: '网络', link: '/network/network01'},
-                    {
-                        text: 'https原理实战',
-                        items: [
-                            {text: "02)密码学", link: '/network/https/深入浅出https原理/02密码学'},
-                        ]
-                    },
-                    {
-                        // top的红色 标题
-                        text: '你真的安全吗？',
-                        items: [
-                            // windows安全 top栏的选项
-                            {text: "windows安全", link: '/network/security/windows/win10绕过密码'},
-                        ]
-                    },
-                    {
-                        // top的红色 标题
-                        text: 'shell运维',
-                        items: [
-                            {text: "shell实战", link: '/运维/shell/demo01_2025_03_19_01'},
-                        ]
-                    },
-                    {
-                        // linux的基础
-                        text: 'linux基础理论',
-                        items: [
-                            {text: "linux基础概念", link: '/运维/linux_base/demo01_2025_03_22_01'},
-                        ]
-                    }
-                ]
-
+                items: operationsArray,
             },
             //========================选项4    link   top   end =================
-
-
             //============================= top  选项5    start ==============
             {
                 text: 'java',
@@ -172,7 +130,6 @@ module.exports = {
                             {text: 'gradle', link: encodeURI('/java/gradle/01安装gradle')},
                         ]
                     },
-
                     //------------- dao层区
                     {
                         text: 'dao层框架',
@@ -207,9 +164,7 @@ module.exports = {
 
                 ]
             },
-
-            //============================= top  选项5    end ==============
-
+            //============================= top  选项5  java  end ==============
             //=========================================== top 选项6  start  ==================
             {
                 text: 'lyp',
