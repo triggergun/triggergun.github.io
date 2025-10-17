@@ -105,6 +105,7 @@ module.exports = [
         collapsable: false,
         children: [
             '/运维/linux_base/demo01_2025_03_22_01',
+            '/运维/linux_base/demo02_2025_10_11_01',
         ],
 
     },
