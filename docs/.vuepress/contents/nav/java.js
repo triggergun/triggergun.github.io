@@ -5,8 +5,9 @@ module.exports = [
         text: 'java技术栈',
         items: [
             {text: 'java基础', link: '/java/javaSEBase/java'},
-
             {text: 'gradle', link: encodeURI('/java/gradle/01安装gradle')},
+            // maven
+            {text: 'maven', link: encodeURI('/java/maven/maven01_2025_10_19_01')},
         ]
     },
     //------------- dao层区

@@ -19,6 +19,8 @@ const gitSidebarArray = require('./contents/sidebar/git.js');
 const mei_gongPsSidebarArray = require('./contents/sidebar/mei_gongPs.js');
 const javaMybatisPlusSidebarArray = require('./contents/sidebar/javaMybatisPlus.js');
 const javaGradleSidebarArray = require('./contents/sidebar/javaGradle.js');
+// maven
+const javaMavenSidebarArray = require('./contents/sidebar/javaMaven.js');
 const dbSidebarArray = require('./contents/sidebar/db.js');
 const lypRustSidebarArray = require('./contents/sidebar/lypRust.js');
 const lypLinuxSidebarArray = require('./contents/sidebar/lypLinux.js');
@@ -579,6 +581,11 @@ module.exports = {
             // ===================== 侧边栏 配置  点击设 gradle  start ===========
             '/java/gradle/': javaGradleSidebarArray,
             // ===================== 侧边栏 配置  点击设 gradle  end ===========
+
+            // ===================== 侧边栏 配置  点击设 maven  start ===========
+            '/java/maven/': javaMavenSidebarArray,
+            // ===================== 侧边栏 配置  点击设 maven  end ===========
+
 
             // ===================== lyp    点击设 javascript的  基础概念 ===========
             '/lyp/javascript/': [
