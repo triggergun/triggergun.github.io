@@ -697,6 +697,9 @@ module.exports = {
                     children: [
                         // 第一阶段基础篇
                         encodeURI('/lyp/前端/base/demo01_20250527_01'),
+                        encodeURI('/lyp/前端/base/demo02_faq_20251020_01'),
+                        encodeURI('/lyp/前端/base/demo02_faq_20251020_02'),
+                        encodeURI('/lyp/前端/base/demo02_faq_20251020_03'),
                     ]
                 },
                 {
