@@ -16,7 +16,12 @@ const operationsSidebarArray = require('./contents/sidebar/operations.js');
 const faceObjectSidebarArray = require('./contents/sidebar/faceObject.js');
 const lypDbSidebarArray = require('./contents/sidebar/lypDb.js');
 const gitSidebarArray = require('./contents/sidebar/git.js');
+
+// 美工 start
 const mei_gongPsSidebarArray = require('./contents/sidebar/mei_gongPs.js');
+const mei_gongWordSidebarArray = require('./contents/sidebar/mei_gongWord.js');
+const mei_gongPrSidebarArray = require('./contents/sidebar/mei_gongPr.js');
+// 美工 end
 const javaMybatisPlusSidebarArray = require('./contents/sidebar/javaMybatisPlus.js');
 const javaGradleSidebarArray = require('./contents/sidebar/javaGradle.js');
 // maven
@@ -909,18 +914,11 @@ module.exports = {
             //  ps  ================================  end  ==========
 
             //  word  ================================  start  ==========
-
-            '/美工/word/': [
-                // 实用技巧
-                {
-                    title: 'word使用技巧',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/美工/word/practical/demo01_2025_10_10_01'),
-                    ]
-                }
-            ],
+            '/美工/word/': mei_gongWordSidebarArray,
             //  word  ================================  end  ==========
+            //  美工 start 侧边栏
+            '/美工/word/': mei_gongPrSidebarArray,
+            //  美工 end 侧边栏
 
 
             //  安卓的侧边栏的配置  ================================  start  ==========

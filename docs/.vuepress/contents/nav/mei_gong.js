@@ -1,7 +1,7 @@
 //  top 的 选项 8
 module.exports = [
     {
-        text: 'ps',
+        text: 'Adobe Photoshop',
         items: [
             {text: "pa基础", link: encodeURI('/美工/ps/01ps基础/01巧记ps快捷键')},
         ],
@@ -10,6 +10,12 @@ module.exports = [
         text: 'office',
         items: [
             {text: "word实用", link: encodeURI('/美工/word/practical/demo01_2025_10_10_01')},
+        ],
+    },
+    {
+        text: 'Adobe Premiere Pro',
+        items: [
+            {text: "pr实用", link: encodeURI('/美工/pr/practical/demo01_2025_10_10_01')},
         ],
     }
 ];
