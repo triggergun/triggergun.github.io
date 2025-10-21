@@ -26,5 +26,14 @@ module.exports = [
                 link: encodeURI('/front_end/css_basic/demo01_2025_10_01_01')
             },
         ],
+    },
+    {
+        text: 'nuxt官方文档',
+        items: [
+            {
+                text: "nuxt官方文档",
+                link: encodeURI('/front_end/nuxt_basic/demo01_2025_10_22_01')
+            },
+        ],
     }
 ];

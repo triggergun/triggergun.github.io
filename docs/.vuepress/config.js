@@ -909,15 +909,13 @@ module.exports = {
             //  =====================================   发票的的项目   end ==========================================
 
             //  ps  ================================  start  ==========
-
             '/美工/ps/': mei_gongPsSidebarArray,
             //  ps  ================================  end  ==========
-
             //  word  ================================  start  ==========
             '/美工/word/': mei_gongWordSidebarArray,
             //  word  ================================  end  ==========
             //  美工 start 侧边栏
-            '/美工/word/': mei_gongPrSidebarArray,
+            '/美工/pr/': mei_gongPrSidebarArray,
             //  美工 end 侧边栏
 
 
@@ -1061,6 +1059,13 @@ module.exports = {
                         encodeURI('/front_end/css_basic/demo03_2025_10_15_01'),
                     ]
                 },
+                {
+                    title: 'nuxt官方文档',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/nuxt_basic/demo01_2025_10_22_01'),
+                    ]
+                }
             ],
             //  谈前端  ================================  end  ==========
 
