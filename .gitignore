@@ -1,7 +1,6 @@
 
 # 忽略这个目录下的文件与目录
 hadoop基本概念目录/
-
 # 依赖都不上传
 node_modules/
 .idea/
@@ -9,5 +8,5 @@ node_modules/
 .temp/internal
 .temp/app-enhancers
 # 不上传里面的变更
-docs/.vuepress/dist/
+docs/.vuepress/dist
 package-lock.json

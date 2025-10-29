@@ -1047,6 +1047,9 @@ module.exports = {
                     children: [
                         encodeURI('/front_end/html/demo01_2025_10_01_01'),
                         encodeURI('/front_end/html/demo01_2025_10_01_02'),
+                        encodeURI('/front_end/html/demo01_2025_10_01_03'),
+                        encodeURI('/front_end/html/demo02_2025_10_28_01'),
+                        encodeURI('/front_end/html/demo02_2025_10_28_02'),
                     ]
                 },
                 {
