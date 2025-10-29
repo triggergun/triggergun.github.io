@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>java实例json格式化-fastjson | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta http_equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    <meta name="google-adsense-account" content="ca-pub-6542685716937885">
+    
+    <link rel="preload" href="/assets/css/0.styles.3520924c.css" as="style"><link rel="preload" href="/assets/js/app.edb4ebc4.js" as="script"><link rel="preload" href="/assets/js/2.ef58a872.js" as="script"><link rel="preload" href="/assets/js/1.80c5dc09.js" as="script"><link rel="preload" href="/assets/js/196.514ac97c.js" as="script"><link rel="prefetch" href="/assets/js/10.0bed4786.js"><link rel="prefetch" href="/assets/js/100.abf6cf70.js"><link rel="prefetch" href="/assets/js/101.ebfd178d.js"><link rel="prefetch" href="/assets/js/102.92478d4d.js"><link rel="prefetch" href="/assets/js/103.17710ee6.js"><link rel="prefetch" href="/assets/js/104.8cfe9ac2.js"><link rel="prefetch" href="/assets/js/105.139c480c.js"><link rel="prefetch" href="/assets/js/106.c95d0560.js"><link rel="prefetch" href="/assets/js/107.543d79e1.js"><link rel="prefetch" href="/assets/js/108.7173871f.js"><link rel="prefetch" href="/assets/js/109.1a89328d.js"><link rel="prefetch" href="/assets/js/11.fd1ac258.js"><link rel="prefetch" href="/assets/js/110.76960cbd.js"><link rel="prefetch" href="/assets/js/111.1e12ea31.js"><link rel="prefetch" href="/assets/js/112.5dac2ef3.js"><link rel="prefetch" href="/assets/js/113.51d64c40.js"><link rel="prefetch" href="/assets/js/114.7b4d1c98.js"><link rel="prefetch" href="/assets/js/115.765c5144.js"><link rel="prefetch" href="/assets/js/116.bff755a7.js"><link rel="prefetch" href="/assets/js/117.d4125245.js"><link rel="prefetch" href="/assets/js/118.e3063806.js"><link rel="prefetch" href="/assets/js/119.8ab0aab6.js"><link rel="prefetch" href="/assets/js/12.b1013953.js"><link rel="prefetch" href="/assets/js/120.8d02516d.js"><link rel="prefetch" href="/assets/js/121.299c8968.js"><link rel="prefetch" href="/assets/js/122.e36405a3.js"><link rel="prefetch" href="/assets/js/123.f90e0b6c.js"><link rel="prefetch" href="/assets/js/124.ec920130.js"><link rel="prefetch" href="/assets/js/125.8449e1c1.js"><link rel="prefetch" href="/assets/js/126.ad44cbe4.js"><link rel="prefetch" href="/assets/js/127.2f1bc7d2.js"><link rel="prefetch" href="/assets/js/128.4e9a8115.js"><link rel="prefetch" href="/assets/js/129.8b684bbe.js"><link rel="prefetch" href="/assets/js/13.a5034fc2.js"><link rel="prefetch" href="/assets/js/130.cee83eb6.js"><link rel="prefetch" href="/assets/js/131.06609c37.js"><link rel="prefetch" href="/assets/js/132.3523c479.js"><link rel="prefetch" href="/assets/js/133.03e0b2b3.js"><link rel="prefetch" href="/assets/js/134.4c834c86.js"><link rel="prefetch" href="/assets/js/135.53507f85.js"><link rel="prefetch" href="/assets/js/136.69bcc562.js"><link rel="prefetch" href="/assets/js/137.87b70dc7.js"><link rel="prefetch" href="/assets/js/138.e2eb07b5.js"><link rel="prefetch" href="/assets/js/139.f4c7c827.js"><link rel="prefetch" href="/assets/js/14.294fc268.js"><link rel="prefetch" href="/assets/js/140.101368ca.js"><link rel="prefetch" href="/assets/js/141.b95aa5a9.js"><link rel="prefetch" href="/assets/js/142.2386a57f.js"><link rel="prefetch" href="/assets/js/143.eada3564.js"><link rel="prefetch" href="/assets/js/144.3e595ff8.js"><link rel="prefetch" href="/assets/js/145.5f1d0882.js"><link rel="prefetch" href="/assets/js/146.b12b4309.js"><link rel="prefetch" href="/assets/js/147.ccf695c8.js"><link rel="prefetch" href="/assets/js/148.3717f270.js"><link rel="prefetch" href="/assets/js/149.e09ca382.js"><link rel="prefetch" href="/assets/js/15.42673fdb.js"><link rel="prefetch" href="/assets/js/150.d5b88ac0.js"><link rel="prefetch" href="/assets/js/151.e19628c8.js"><link rel="prefetch" href="/assets/js/152.32ff0cea.js"><link rel="prefetch" href="/assets/js/153.9fea7788.js"><link rel="prefetch" href="/assets/js/154.457052cd.js"><link rel="prefetch" href="/assets/js/155.ed302351.js"><link rel="prefetch" href="/assets/js/156.e7452d7b.js"><link rel="prefetch" href="/assets/js/157.41bf793d.js"><link rel="prefetch" href="/assets/js/158.ac4a33ec.js"><link rel="prefetch" href="/assets/js/159.994d1860.js"><link rel="prefetch" href="/assets/js/16.f558f516.js"><link rel="prefetch" href="/assets/js/160.7dda7b35.js"><link rel="prefetch" href="/assets/js/161.5ba3d009.js"><link rel="prefetch" href="/assets/js/162.9d54a8e7.js"><link rel="prefetch" href="/assets/js/163.2aede244.js"><link rel="prefetch" href="/assets/js/164.2bae7099.js"><link rel="prefetch" href="/assets/js/165.094dfdc2.js"><link rel="prefetch" href="/assets/js/166.99a51b14.js"><link rel="prefetch" href="/assets/js/167.d1b35886.js"><link rel="prefetch" href="/assets/js/168.dd004cc8.js"><link rel="prefetch" href="/assets/js/169.c15612fa.js"><link rel="prefetch" href="/assets/js/17.1c281e73.js"><link rel="prefetch" href="/assets/js/170.68178804.js"><link rel="prefetch" href="/assets/js/171.f432c685.js"><link rel="prefetch" href="/assets/js/172.c92312fb.js"><link rel="prefetch" href="/assets/js/173.329dd1d3.js"><link rel="prefetch" href="/assets/js/174.e5c38209.js"><link rel="prefetch" href="/assets/js/175.f97fcffa.js"><link rel="prefetch" href="/assets/js/176.9732f2d6.js"><link rel="prefetch" href="/assets/js/177.de94ad02.js"><link rel="prefetch" href="/assets/js/178.47bd1c2c.js"><link rel="prefetch" href="/assets/js/179.c929b429.js"><link rel="prefetch" href="/assets/js/18.d468dfd2.js"><link rel="prefetch" href="/assets/js/180.df9600f4.js"><link rel="prefetch" href="/assets/js/181.6f426970.js"><link rel="prefetch" href="/assets/js/182.1889705e.js"><link rel="prefetch" href="/assets/js/183.7c1adc72.js"><link rel="prefetch" href="/assets/js/184.0d93a6d7.js"><link rel="prefetch" href="/assets/js/185.048eec87.js"><link rel="prefetch" href="/assets/js/186.33c55bfa.js"><link rel="prefetch" href="/assets/js/187.e670d269.js"><link rel="prefetch" href="/assets/js/188.e1f5a076.js"><link rel="prefetch" href="/assets/js/189.042277c4.js"><link rel="prefetch" href="/assets/js/19.b9178972.js"><link rel="prefetch" href="/assets/js/190.2f6a0eab.js"><link rel="prefetch" href="/assets/js/191.e792bd99.js"><link rel="prefetch" href="/assets/js/192.7bd7fe1a.js"><link rel="prefetch" href="/assets/js/193.667d6b10.js"><link rel="prefetch" href="/assets/js/194.978b280a.js"><link rel="prefetch" href="/assets/js/195.3f211ed7.js"><link rel="prefetch" href="/assets/js/197.eee14dcb.js"><link rel="prefetch" href="/assets/js/198.00887e74.js"><link rel="prefetch" href="/assets/js/199.b69dd854.js"><link rel="prefetch" href="/assets/js/20.15f50353.js"><link rel="prefetch" href="/assets/js/200.b1453faa.js"><link rel="prefetch" href="/assets/js/201.85c34924.js"><link rel="prefetch" href="/assets/js/202.4c138569.js"><link rel="prefetch" href="/assets/js/203.217e0737.js"><link rel="prefetch" href="/assets/js/204.1e487411.js"><link rel="prefetch" href="/assets/js/205.9e34e173.js"><link rel="prefetch" href="/assets/js/206.53162f40.js"><link rel="prefetch" href="/assets/js/207.abf6d531.js"><link rel="prefetch" href="/assets/js/208.8604dade.js"><link rel="prefetch" href="/assets/js/209.21477e46.js"><link rel="prefetch" href="/assets/js/21.3a1fd4f0.js"><link rel="prefetch" href="/assets/js/210.f8123fdf.js"><link rel="prefetch" href="/assets/js/211.eee14127.js"><link rel="prefetch" href="/assets/js/212.57e10ea5.js"><link rel="prefetch" href="/assets/js/213.483411d5.js"><link rel="prefetch" href="/assets/js/214.94632fbc.js"><link rel="prefetch" href="/assets/js/215.0aac236d.js"><link rel="prefetch" href="/assets/js/216.3891e0c3.js"><link rel="prefetch" href="/assets/js/217.e82513f8.js"><link rel="prefetch" href="/assets/js/218.d4905338.js"><link rel="prefetch" href="/assets/js/219.4b994260.js"><link rel="prefetch" href="/assets/js/22.e72222d6.js"><link rel="prefetch" href="/assets/js/220.a6ea5980.js"><link rel="prefetch" href="/assets/js/221.01e4adb9.js"><link rel="prefetch" href="/assets/js/222.5d5e4ed7.js"><link rel="prefetch" href="/assets/js/223.a7a6824b.js"><link rel="prefetch" href="/assets/js/224.bd2dd165.js"><link rel="prefetch" href="/assets/js/225.893fe103.js"><link rel="prefetch" href="/assets/js/226.5229ae83.js"><link rel="prefetch" href="/assets/js/227.61696a95.js"><link rel="prefetch" href="/assets/js/228.ae5e71bf.js"><link rel="prefetch" href="/assets/js/229.a6fbff83.js"><link rel="prefetch" href="/assets/js/23.1899d1ba.js"><link rel="prefetch" href="/assets/js/230.7d8cfeef.js"><link rel="prefetch" href="/assets/js/231.54e10e84.js"><link rel="prefetch" href="/assets/js/232.8c7f595e.js"><link rel="prefetch" href="/assets/js/233.98b566b7.js"><link rel="prefetch" href="/assets/js/234.d96026e3.js"><link rel="prefetch" href="/assets/js/235.c6734e64.js"><link rel="prefetch" href="/assets/js/236.7dc78180.js"><link rel="prefetch" href="/assets/js/237.546c8535.js"><link rel="prefetch" href="/assets/js/238.86fa8154.js"><link rel="prefetch" href="/assets/js/239.ed717427.js"><link rel="prefetch" href="/assets/js/24.663c5082.js"><link rel="prefetch" href="/assets/js/240.c9f3c8c5.js"><link rel="prefetch" href="/assets/js/241.e4195adf.js"><link rel="prefetch" href="/assets/js/242.ee9aed0d.js"><link rel="prefetch" href="/assets/js/243.f04979d9.js"><link rel="prefetch" href="/assets/js/244.6b935f6a.js"><link rel="prefetch" href="/assets/js/245.38108f0a.js"><link rel="prefetch" href="/assets/js/246.35dfdd93.js"><link rel="prefetch" href="/assets/js/247.fda9b64f.js"><link rel="prefetch" href="/assets/js/248.16d34431.js"><link rel="prefetch" href="/assets/js/249.faa61be4.js"><link rel="prefetch" href="/assets/js/25.8437a41f.js"><link rel="prefetch" href="/assets/js/250.e476c0cf.js"><link rel="prefetch" href="/assets/js/251.45da1ea5.js"><link rel="prefetch" href="/assets/js/252.72799e08.js"><link rel="prefetch" href="/assets/js/253.1929c507.js"><link rel="prefetch" href="/assets/js/254.35001e09.js"><link rel="prefetch" href="/assets/js/255.c5bd8222.js"><link rel="prefetch" href="/assets/js/256.b490ed2c.js"><link rel="prefetch" href="/assets/js/257.080cfd75.js"><link rel="prefetch" href="/assets/js/258.54cd8945.js"><link rel="prefetch" href="/assets/js/259.11847b65.js"><link rel="prefetch" href="/assets/js/26.67d461e3.js"><link rel="prefetch" href="/assets/js/260.b7e9ed04.js"><link rel="prefetch" href="/assets/js/261.1561840e.js"><link rel="prefetch" href="/assets/js/262.516077ac.js"><link rel="prefetch" href="/assets/js/263.4ed8dfcc.js"><link rel="prefetch" href="/assets/js/264.ccdaf22c.js"><link rel="prefetch" href="/assets/js/265.ab17f8dc.js"><link rel="prefetch" href="/assets/js/266.45630e90.js"><link rel="prefetch" href="/assets/js/267.1fff1d2d.js"><link rel="prefetch" href="/assets/js/268.fb4229b9.js"><link rel="prefetch" href="/assets/js/269.64414e3f.js"><link rel="prefetch" href="/assets/js/27.4244fa3e.js"><link rel="prefetch" href="/assets/js/270.7a179a60.js"><link rel="prefetch" href="/assets/js/271.80acef82.js"><link rel="prefetch" href="/assets/js/272.ca0af3c8.js"><link rel="prefetch" href="/assets/js/273.89e1fce8.js"><link rel="prefetch" href="/assets/js/274.99b7c508.js"><link rel="prefetch" href="/assets/js/275.cc1d01a4.js"><link rel="prefetch" href="/assets/js/276.f5158a15.js"><link rel="prefetch" href="/assets/js/277.142575be.js"><link rel="prefetch" href="/assets/js/278.5be5510f.js"><link rel="prefetch" href="/assets/js/279.4dae6e12.js"><link rel="prefetch" href="/assets/js/28.6fa52ff1.js"><link rel="prefetch" href="/assets/js/280.ee90547a.js"><link rel="prefetch" href="/assets/js/281.f6772100.js"><link rel="prefetch" href="/assets/js/282.99284ea9.js"><link rel="prefetch" href="/assets/js/283.f7443d01.js"><link rel="prefetch" href="/assets/js/284.4a13e331.js"><link rel="prefetch" href="/assets/js/285.e210cd88.js"><link rel="prefetch" href="/assets/js/286.a35c7c5a.js"><link rel="prefetch" href="/assets/js/287.63ac3e91.js"><link rel="prefetch" href="/assets/js/288.f8a36000.js"><link rel="prefetch" href="/assets/js/289.a50e0155.js"><link rel="prefetch" href="/assets/js/29.277445c5.js"><link rel="prefetch" href="/assets/js/290.a2a046c9.js"><link rel="prefetch" href="/assets/js/291.ca39317d.js"><link rel="prefetch" href="/assets/js/292.587bcbfd.js"><link rel="prefetch" href="/assets/js/293.7d0929e7.js"><link rel="prefetch" href="/assets/js/294.d1432c09.js"><link rel="prefetch" href="/assets/js/295.879f6c52.js"><link rel="prefetch" href="/assets/js/296.d8ec6a71.js"><link rel="prefetch" href="/assets/js/297.4794deac.js"><link rel="prefetch" href="/assets/js/298.762ed7b0.js"><link rel="prefetch" href="/assets/js/299.0c13e3bb.js"><link rel="prefetch" href="/assets/js/3.75834be2.js"><link rel="prefetch" href="/assets/js/30.b300405a.js"><link rel="prefetch" href="/assets/js/300.d550be4e.js"><link rel="prefetch" href="/assets/js/301.e1b9c5d3.js"><link rel="prefetch" href="/assets/js/302.ae369810.js"><link rel="prefetch" href="/assets/js/303.00d0eb22.js"><link rel="prefetch" href="/assets/js/304.b970cdf5.js"><link rel="prefetch" href="/assets/js/305.af09914b.js"><link rel="prefetch" href="/assets/js/306.0a558bc6.js"><link rel="prefetch" href="/assets/js/307.07d78310.js"><link rel="prefetch" href="/assets/js/308.d0c9cb80.js"><link rel="prefetch" href="/assets/js/309.be6dede9.js"><link rel="prefetch" href="/assets/js/31.d4637836.js"><link rel="prefetch" href="/assets/js/310.7211db7c.js"><link rel="prefetch" href="/assets/js/311.2fa56afb.js"><link rel="prefetch" href="/assets/js/312.8458b6a7.js"><link rel="prefetch" href="/assets/js/313.185ca934.js"><link rel="prefetch" href="/assets/js/314.bc66cef5.js"><link rel="prefetch" href="/assets/js/315.a15f4fe5.js"><link rel="prefetch" href="/assets/js/316.921d1c7f.js"><link rel="prefetch" href="/assets/js/317.eff6fdfc.js"><link rel="prefetch" href="/assets/js/318.de59d055.js"><link rel="prefetch" href="/assets/js/319.fc744b8b.js"><link rel="prefetch" href="/assets/js/32.d60e1b20.js"><link rel="prefetch" href="/assets/js/320.25f58ab1.js"><link rel="prefetch" href="/assets/js/321.d0ec9f2a.js"><link rel="prefetch" href="/assets/js/322.4dae4294.js"><link rel="prefetch" href="/assets/js/323.f7dbe49a.js"><link rel="prefetch" href="/assets/js/324.9bb5a9c4.js"><link rel="prefetch" href="/assets/js/325.5cb61dee.js"><link rel="prefetch" href="/assets/js/326.089ea5b4.js"><link rel="prefetch" href="/assets/js/327.8dd65bc3.js"><link rel="prefetch" href="/assets/js/328.49b124ef.js"><link rel="prefetch" href="/assets/js/329.71797122.js"><link rel="prefetch" href="/assets/js/33.0c822814.js"><link rel="prefetch" href="/assets/js/330.d0fad78b.js"><link rel="prefetch" href="/assets/js/331.e2c18e30.js"><link rel="prefetch" href="/assets/js/332.5f978763.js"><link rel="prefetch" href="/assets/js/333.b4810070.js"><link rel="prefetch" href="/assets/js/334.f20732d9.js"><link rel="prefetch" href="/assets/js/335.12119570.js"><link rel="prefetch" href="/assets/js/336.6501f6d4.js"><link rel="prefetch" href="/assets/js/337.2e3f14fa.js"><link rel="prefetch" href="/assets/js/338.017ee5d1.js"><link rel="prefetch" href="/assets/js/339.38422ece.js"><link rel="prefetch" href="/assets/js/34.0ecf0e6b.js"><link rel="prefetch" href="/assets/js/340.23992a28.js"><link rel="prefetch" href="/assets/js/341.66405407.js"><link rel="prefetch" href="/assets/js/342.b3861017.js"><link rel="prefetch" href="/assets/js/343.46c91db5.js"><link rel="prefetch" href="/assets/js/344.7c02051b.js"><link rel="prefetch" href="/assets/js/345.bdfcdcbf.js"><link rel="prefetch" href="/assets/js/346.cb4b01fc.js"><link rel="prefetch" href="/assets/js/347.b84e85e0.js"><link rel="prefetch" href="/assets/js/348.80370148.js"><link rel="prefetch" href="/assets/js/349.1b964803.js"><link rel="prefetch" href="/assets/js/35.4216b3a3.js"><link rel="prefetch" href="/assets/js/350.55e0a67f.js"><link rel="prefetch" href="/assets/js/351.fb587aea.js"><link rel="prefetch" href="/assets/js/352.a17401e8.js"><link rel="prefetch" href="/assets/js/353.b4f554b4.js"><link rel="prefetch" href="/assets/js/354.fc884d4a.js"><link rel="prefetch" href="/assets/js/355.cf248c1d.js"><link rel="prefetch" href="/assets/js/356.8d9a91a6.js"><link rel="prefetch" href="/assets/js/357.a5bc58d3.js"><link rel="prefetch" href="/assets/js/358.a59ee9ba.js"><link rel="prefetch" href="/assets/js/359.8bd087cb.js"><link rel="prefetch" href="/assets/js/36.5e12f438.js"><link rel="prefetch" href="/assets/js/360.eeb64aca.js"><link rel="prefetch" href="/assets/js/361.7e2c43c0.js"><link rel="prefetch" href="/assets/js/362.181e35d4.js"><link rel="prefetch" href="/assets/js/363.1005ad31.js"><link rel="prefetch" href="/assets/js/364.024ec067.js"><link rel="prefetch" href="/assets/js/365.f43f1387.js"><link rel="prefetch" href="/assets/js/366.a1cd2624.js"><link rel="prefetch" href="/assets/js/367.1305a57e.js"><link rel="prefetch" href="/assets/js/368.d1676315.js"><link rel="prefetch" href="/assets/js/369.93e00c40.js"><link rel="prefetch" href="/assets/js/37.d3d17ae6.js"><link rel="prefetch" href="/assets/js/370.4355045a.js"><link rel="prefetch" href="/assets/js/371.331acf36.js"><link rel="prefetch" href="/assets/js/372.61e727ab.js"><link rel="prefetch" href="/assets/js/373.18f26ad1.js"><link rel="prefetch" href="/assets/js/374.27b1d455.js"><link rel="prefetch" href="/assets/js/375.ad372c93.js"><link rel="prefetch" href="/assets/js/376.948b48dd.js"><link rel="prefetch" href="/assets/js/377.d5733460.js"><link rel="prefetch" href="/assets/js/378.8d474aa0.js"><link rel="prefetch" href="/assets/js/379.52fd3245.js"><link rel="prefetch" href="/assets/js/38.501f8ac8.js"><link rel="prefetch" href="/assets/js/380.1b31eec5.js"><link rel="prefetch" href="/assets/js/381.8519f6d3.js"><link rel="prefetch" href="/assets/js/382.159ccc80.js"><link rel="prefetch" href="/assets/js/383.886d8f22.js"><link rel="prefetch" href="/assets/js/384.5e6777d5.js"><link rel="prefetch" href="/assets/js/385.1e4be9cb.js"><link rel="prefetch" href="/assets/js/386.c9081fb0.js"><link rel="prefetch" href="/assets/js/387.c98901bb.js"><link rel="prefetch" href="/assets/js/388.a0d567b5.js"><link rel="prefetch" href="/assets/js/389.c04f1b45.js"><link rel="prefetch" href="/assets/js/39.529e7c02.js"><link rel="prefetch" href="/assets/js/390.01d06829.js"><link rel="prefetch" href="/assets/js/391.258fc909.js"><link rel="prefetch" href="/assets/js/392.0114c82e.js"><link rel="prefetch" href="/assets/js/393.f793fadd.js"><link rel="prefetch" href="/assets/js/394.e3f3c219.js"><link rel="prefetch" href="/assets/js/395.d3b0a32c.js"><link rel="prefetch" href="/assets/js/396.d5d7faf0.js"><link rel="prefetch" href="/assets/js/397.2dd10491.js"><link rel="prefetch" href="/assets/js/398.70b424fc.js"><link rel="prefetch" href="/assets/js/399.b1977776.js"><link rel="prefetch" href="/assets/js/4.85326b22.js"><link rel="prefetch" href="/assets/js/40.8ac1bb83.js"><link rel="prefetch" href="/assets/js/400.305536ad.js"><link rel="prefetch" href="/assets/js/401.ab9cd898.js"><link rel="prefetch" href="/assets/js/402.d8640b86.js"><link rel="prefetch" href="/assets/js/403.5f4a00fc.js"><link rel="prefetch" href="/assets/js/404.8788bd86.js"><link rel="prefetch" href="/assets/js/405.361de6f9.js"><link rel="prefetch" href="/assets/js/406.5181cfb8.js"><link rel="prefetch" href="/assets/js/407.2d0c0225.js"><link rel="prefetch" href="/assets/js/408.684eaf6a.js"><link rel="prefetch" href="/assets/js/409.32ac039f.js"><link rel="prefetch" href="/assets/js/41.e85e64b5.js"><link rel="prefetch" href="/assets/js/410.80db7af0.js"><link rel="prefetch" href="/assets/js/411.6589165c.js"><link rel="prefetch" href="/assets/js/412.642aca1c.js"><link rel="prefetch" href="/assets/js/413.96a67a47.js"><link rel="prefetch" href="/assets/js/414.82af5515.js"><link rel="prefetch" href="/assets/js/415.57b566ad.js"><link rel="prefetch" href="/assets/js/416.876c8aad.js"><link rel="prefetch" href="/assets/js/417.d0e945c2.js"><link rel="prefetch" href="/assets/js/418.389a4eb8.js"><link rel="prefetch" href="/assets/js/419.35e8201e.js"><link rel="prefetch" href="/assets/js/42.5728c218.js"><link rel="prefetch" href="/assets/js/420.7fd8b198.js"><link rel="prefetch" href="/assets/js/421.9e9a9885.js"><link rel="prefetch" href="/assets/js/422.067cf0d0.js"><link rel="prefetch" href="/assets/js/423.abc11a97.js"><link rel="prefetch" href="/assets/js/424.a95006f9.js"><link rel="prefetch" href="/assets/js/425.494ed71c.js"><link rel="prefetch" href="/assets/js/426.576adab7.js"><link rel="prefetch" href="/assets/js/427.f20ed791.js"><link rel="prefetch" href="/assets/js/428.78ceefe3.js"><link rel="prefetch" href="/assets/js/429.af1bb449.js"><link rel="prefetch" href="/assets/js/43.fea6b100.js"><link rel="prefetch" href="/assets/js/44.8f4c904b.js"><link rel="prefetch" href="/assets/js/45.aa63bfbd.js"><link rel="prefetch" href="/assets/js/46.687af5e1.js"><link rel="prefetch" href="/assets/js/47.50360c11.js"><link rel="prefetch" href="/assets/js/48.c6ddd0b5.js"><link rel="prefetch" href="/assets/js/49.858570d4.js"><link rel="prefetch" href="/assets/js/5.58b3e80a.js"><link rel="prefetch" href="/assets/js/50.c910d9ab.js"><link rel="prefetch" href="/assets/js/51.007adf34.js"><link rel="prefetch" href="/assets/js/52.b0100511.js"><link rel="prefetch" href="/assets/js/53.063a34c8.js"><link rel="prefetch" href="/assets/js/54.fabf79cd.js"><link rel="prefetch" href="/assets/js/55.fc763115.js"><link rel="prefetch" href="/assets/js/56.0f9e7eab.js"><link rel="prefetch" href="/assets/js/57.3d5f6223.js"><link rel="prefetch" href="/assets/js/58.131f74d3.js"><link rel="prefetch" href="/assets/js/59.798801b3.js"><link rel="prefetch" href="/assets/js/6.99860d2e.js"><link rel="prefetch" href="/assets/js/60.68a26bed.js"><link rel="prefetch" href="/assets/js/61.bdd08c70.js"><link rel="prefetch" href="/assets/js/62.881cf170.js"><link rel="prefetch" href="/assets/js/63.42ca9681.js"><link rel="prefetch" href="/assets/js/64.deae94ba.js"><link rel="prefetch" href="/assets/js/65.c730e354.js"><link rel="prefetch" href="/assets/js/66.14c26c1b.js"><link rel="prefetch" href="/assets/js/67.014a1a0a.js"><link rel="prefetch" href="/assets/js/68.d320f64c.js"><link rel="prefetch" href="/assets/js/69.b514d318.js"><link rel="prefetch" href="/assets/js/7.0d60defa.js"><link rel="prefetch" href="/assets/js/70.1586dbe3.js"><link rel="prefetch" href="/assets/js/71.bd58a568.js"><link rel="prefetch" href="/assets/js/72.99b08a8e.js"><link rel="prefetch" href="/assets/js/73.06167008.js"><link rel="prefetch" href="/assets/js/74.3d0ed56c.js"><link rel="prefetch" href="/assets/js/75.2e403665.js"><link rel="prefetch" href="/assets/js/76.fc3695e4.js"><link rel="prefetch" href="/assets/js/77.7b9ca9e8.js"><link rel="prefetch" href="/assets/js/78.d88cce00.js"><link rel="prefetch" href="/assets/js/79.9c7f06c5.js"><link rel="prefetch" href="/assets/js/80.14b27584.js"><link rel="prefetch" href="/assets/js/81.2cafba67.js"><link rel="prefetch" href="/assets/js/82.dacc1168.js"><link rel="prefetch" href="/assets/js/83.26a445ac.js"><link rel="prefetch" href="/assets/js/84.5a634c6d.js"><link rel="prefetch" href="/assets/js/85.84ba5834.js"><link rel="prefetch" href="/assets/js/86.fc61ba8b.js"><link rel="prefetch" href="/assets/js/87.f095d346.js"><link rel="prefetch" href="/assets/js/88.4d590a85.js"><link rel="prefetch" href="/assets/js/89.c1038322.js"><link rel="prefetch" href="/assets/js/90.28d37165.js"><link rel="prefetch" href="/assets/js/91.8bbdab5b.js"><link rel="prefetch" href="/assets/js/92.73fb4e80.js"><link rel="prefetch" href="/assets/js/93.c3747bab.js"><link rel="prefetch" href="/assets/js/94.88418115.js"><link rel="prefetch" href="/assets/js/95.94dc40ab.js"><link rel="prefetch" href="/assets/js/96.d06d0c29.js"><link rel="prefetch" href="/assets/js/97.92e71157.js"><link rel="prefetch" href="/assets/js/98.042b185e.js"><link rel="prefetch" href="/assets/js/99.fd55e4fc.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.67be97f5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3520924c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈架构" class="dropdown-title"><span class="title">谈架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈架构" class="mobile-dropdown-title"><span class="title">谈架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈游戏" class="dropdown-title"><span class="title">谈游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈游戏" class="mobile-dropdown-title"><span class="title">谈游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈前端" class="dropdown-title"><span class="title">谈前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈前端" class="mobile-dropdown-title"><span class="title">谈前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈架构" class="dropdown-title"><span class="title">谈架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈架构" class="mobile-dropdown-title"><span class="title">谈架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈游戏" class="dropdown-title"><span class="title">谈游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈游戏" class="mobile-dropdown-title"><span class="title">谈游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈前端" class="dropdown-title"><span class="title">谈前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈前端" class="mobile-dropdown-title"><span class="title">谈前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>java常用工具库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/java工具/xpath解析doc.html" class="sidebar-link">xpath解析xml文档</a></li><li><a href="/java/java工具/01发布一个jar到中央仓库.html" class="sidebar-link">发布jar到中央仓库</a></li><li><a href="/java/java工具/02阿里云短信服务.html" class="sidebar-link">发送短信</a></li><li><a href="/java/java工具/03阿里云短信.html" class="sidebar-link">阿里云短信服务</a></li><li><a href="/java/java工具/04阿里云oss.html" class="sidebar-link">阿里云oss</a></li><li><a href="/java/java工具/05IDEA常用工具.html" class="sidebar-link">java开发IDEA常用工具</a></li><li><a href="/java/java工具/06mybatis代码生成器.html" class="sidebar-link">mybatis代码生成器</a></li><li><a href="/java/java工具/07java实例json格式化.html" class="active sidebar-link">java实例json格式化-fastjson</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求一" class="sidebar-link">需求一</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求二" class="sidebar-link">需求二</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求三-创建一个用户" class="sidebar-link">需求三：创建一个用户</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求四-创建一个组" class="sidebar-link">需求四：创建一个组</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求五-对象转json" class="sidebar-link">需求五：对象转json</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求六-json串转对象" class="sidebar-link">需求六：json串转对象</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求七-数组转json串" class="sidebar-link">需求七：数组转json串</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#需求八-json串转数组" class="sidebar-link">需求八：json串转数组</a></li><li class="sidebar-sub-header"><a href="/java/java工具/07java实例json格式化.html#_01-常见问题" class="sidebar-link">01)常见问题</a></li></ul></li><li><a href="/java/java工具/08java项目打包exe文件.html" class="sidebar-link">java项目打包exe文件</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java实例json格式化-fastjson"><a href="#java实例json格式化-fastjson" class="header-anchor">#</a> java实例json格式化-fastjson</h1> <p>使用这个包。进行json字符串与java实体对象的相互的转化。</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>        <span class="token comment">&lt;!--   json转换     --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.alibaba<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>fastjson<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.2.58<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="需求一"><a href="#需求一" class="header-anchor">#</a> 需求一</h2> <p>将如下的这个json格式的字符串转化为一个java实体对象。</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Tenants&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;Code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;999999&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DbOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MySQL&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ConnectionString&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Server=172.168.50.107;Persist Security Info=true;Uid=c3iot;Pwd=Das@c3iot_group;Database=c3_999999_xf;Port=3306;Charset=utf8mb4;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>这个对象使用map集合存储。key为Code，value为这个对象。</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code>    <span class="token punctuation">{</span>
+      <span class="token property">&quot;Code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;999999&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DbOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;Type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MySQL&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ConnectionString&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Server=172.168.50.107;Persist Security Info=true;Uid=c3iot;Pwd=Das@c3iot_group;Database=c3_999999_xf;Port=3306;Charset=utf8mb4;&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="需求二"><a href="#需求二" class="header-anchor">#</a> 需求二</h2> <p><strong>描述：</strong></p> <p>将json的字符串格式化。有格式的字符串。</p> <h2 id="需求三-创建一个用户"><a href="#需求三-创建一个用户" class="header-anchor">#</a> 需求三：创建一个用户</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code>    <span class="token comment">/**
+     * 创建默认对象
+     */</span>
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/fastjson01&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test01</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;====&gt;user:{}&quot;</span><span class="token punctuation">,</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="需求四-创建一个组"><a href="#需求四-创建一个组" class="header-anchor">#</a> 需求四：创建一个组</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code>    <span class="token comment">/**
+     * 创建默认对象
+     */</span>
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/fastjson02&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test02</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">UserGroup</span> userGroup <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserGroup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;====&gt;userGroup:{}&quot;</span><span class="token punctuation">,</span>userGroup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="需求五-对象转json"><a href="#需求五-对象转json" class="header-anchor">#</a> 需求五：对象转json</h2> <ul><li>打印：创建多个用户放到一个组。打印组对象信息。</li> <li>将对象转化为json字符串并且控制台打印显示。</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code>    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/fastjson03&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">test03</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 构建用户geust</span>
+        <span class="token class-name">User</span> guestUser <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        guestUser<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;guest&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        guestUser<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">28</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 构建用户root</span>
+        <span class="token class-name">User</span> rootUser <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        rootUser<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        guestUser<span class="token punctuation">.</span><span class="token function">setAge</span><span class="token punctuation">(</span><span class="token number">35</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 构建用户组对象</span>
+        <span class="token class-name">UserGroup</span> group <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserGroup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        group<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;admin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        group<span class="token punctuation">.</span><span class="token function">getUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>guestUser<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        group<span class="token punctuation">.</span><span class="token function">getUsers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>rootUser<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;group:&quot;</span> <span class="token operator">+</span> group<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 用户组对象转JSON串</span>
+        <span class="token class-name">String</span> jsonString <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>group<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;jsonString:&quot;</span> <span class="token operator">+</span> jsonString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><ul><li>执行效果</li></ul> <p><img src="/assets/img/image-20240516162019135.f35fefca.png" alt="image-20240516162019135"></p> <h2 id="需求六-json串转对象"><a href="#需求六-json串转对象" class="header-anchor">#</a> 需求六：json串转对象</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code>        <span class="token comment">// JSON串转用户组对象</span>
+        <span class="token class-name">UserGroup</span> group2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parseObject</span><span class="token punctuation">(</span>jsonString<span class="token punctuation">,</span> <span class="token class-name">UserGroup</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;JSON串转用户组对象:&quot;</span> <span class="token operator">+</span> group2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="需求七-数组转json串"><a href="#需求七-数组转json串" class="header-anchor">#</a> 需求七：数组转json串</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code>        <span class="token comment">// 构建用户对象数组</span>
+        <span class="token class-name">User</span><span class="token punctuation">[</span><span class="token punctuation">]</span> users <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        users<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> guestUser<span class="token punctuation">;</span>
+        users<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> rootUser<span class="token punctuation">;</span>
+        <span class="token comment">// 用户对象数组转JSON串</span>
+        <span class="token class-name">String</span> jsonString2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">toJSONString</span><span class="token punctuation">(</span>users<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;数组转json串:&quot;</span> <span class="token operator">+</span> jsonString2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="需求八-json串转数组"><a href="#需求八-json串转数组" class="header-anchor">#</a> 需求八：json串转数组</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code>        <span class="token comment">// JSON串转用户对象列表</span>
+        <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">User</span><span class="token punctuation">&gt;</span></span> users2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parseArray</span><span class="token punctuation">(</span>jsonString2<span class="token punctuation">,</span> <span class="token class-name">User</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;json串转对象:&quot;</span> <span class="token operator">+</span> users2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/assets/img/image-20240516174538098.8d843fff.png" alt="image-20240516174538098"></p> <h2 id="_01-常见问题"><a href="#_01-常见问题" class="header-anchor">#</a> 01)常见问题</h2> <h3 id="问题描述"><a href="#问题描述" class="header-anchor">#</a> 问题描述</h3> <p>读取的json字符串里面有注释。无法解析正常的java对象。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>com.fasterxml.jackson.core.JsonParseException: Unexpected character <span class="token punctuation">(</span><span class="token string">'/'</span> <span class="token punctuation">(</span>code <span class="token number">47</span><span class="token punctuation">))</span>: maybe a <span class="token punctuation">(</span>non-standard<span class="token punctuation">)</span> comment? <span class="token punctuation">(</span>not recognized as one since Feature <span class="token string">'ALLOW_COMMENTS'</span> not enabled <span class="token keyword">for</span> parser<span class="token punctuation">)</span>
+ at <span class="token punctuation">[</span>Source: <span class="token punctuation">(</span>String<span class="token punctuation">)</span><span class="token string">&quot;{
+   //配置住户数组
+  &quot;</span>Tenants<span class="token string">&quot;: [
+    {
+      &quot;</span>Code<span class="token string">&quot;: &quot;</span><span class="token number">999999</span><span class="token string">&quot;,
+      &quot;</span>DbOptions<span class="token string">&quot;: {
+        &quot;</span>Type<span class="token string">&quot;: &quot;</span>MySQL<span class="token string">&quot;,
+        &quot;</span>ConnectionString<span class="token string">&quot;: &quot;</span>Server<span class="token operator">=</span><span class="token number">172.168</span>.50.107<span class="token punctuation">;</span>Persist Security <span class="token assign-left variable">Info</span><span class="token operator">=</span>true<span class="token punctuation">;</span><span class="token assign-left variable">Uid</span><span class="token operator">=</span>c3iot<span class="token punctuation">;</span><span class="token assign-left variable">Pwd</span><span class="token operator">=</span>Das@c3iot_group<span class="token punctuation">;</span><span class="token assign-left variable">Database</span><span class="token operator">=</span>c3_999999_fk<span class="token punctuation">;</span><span class="token assign-left variable">Port</span><span class="token operator">=</span><span class="token number">3306</span><span class="token punctuation">;</span><span class="token assign-left variable">Charset</span><span class="token operator">=</span>utf8mb4<span class="token punctuation">;</span><span class="token string">&quot;
+      }
+    }
+  ]
+}&quot;</span><span class="token punctuation">;</span> line: <span class="token number">2</span>, column: <span class="token number">5</span><span class="token punctuation">]</span>
+	at com.fasterxml.jackson.core.JsonParser._constructError<span class="token punctuation">(</span>JsonParser.java:1851<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError<span class="token punctuation">(</span>ParserMinimalBase.java:707<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar<span class="token punctuation">(</span>ParserMinimalBase.java:632<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComment<span class="token punctuation">(</span>ReaderBasedJsonParser.java:2466<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd2<span class="token punctuation">(</span>ReaderBasedJsonParser.java:2441<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipWSOrEnd<span class="token punctuation">(</span>ReaderBasedJsonParser.java:2412<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextFieldName<span class="token punctuation">(</span>ReaderBasedJsonParser.java:909<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.deserializeObject<span class="token punctuation">(</span>JsonNodeDeserializer.java:249<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize<span class="token punctuation">(</span>JsonNodeDeserializer.java:68<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize<span class="token punctuation">(</span>JsonNodeDeserializer.java:15<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose<span class="token punctuation">(</span>ObjectMapper.java:4576<span class="token punctuation">)</span>
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree<span class="token punctuation">(</span>ObjectMapper.java:2972<span class="token punctuation">)</span>
+	at cn.csdas.biz.om.nacos.NacosHandler.parseAndPrint<span class="token punctuation">(</span>NacosHandler.java:266<span class="token punctuation">)</span>
+	at cn.csdas.biz.om.nacos.NacosHandler.alterNacosConfig<span class="token punctuation">(</span>NacosHandler.java:92<span class="token punctuation">)</span>
+	at cn.csdas.biz.om.tenant.controller.TenantManagerController.alterNacosConfig1<span class="token punctuation">(</span>TenantManagerController.java:46<span class="token punctuation">)</span>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0<span class="token punctuation">(</span>Native Method<span class="token punctuation">)</span>
+	at sun.reflect.NativeMethodAccessorImpl.invoke<span class="token punctuation">(</span>NativeMethodAccessorImpl.java:62<span class="token punctuation">)</span>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke<span class="token punctuation">(</span>DelegatingMethodAccessorImpl.java:43<span class="token punctuation">)</span>
+	at java.lang.reflect.Method.invoke<span class="token punctuation">(</span>Method.java:498<span class="token punctuation">)</span>
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke<span class="token punctuation">(</span>InvocableHandlerMethod.java:190<span class="token punctuation">)</span>
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest<span class="token punctuation">(</span>InvocableHandlerMethod.java:138<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle<span class="token punctuation">(</span>ServletInvocableHandlerMethod.java:105<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod<span class="token punctuation">(</span>RequestMappingHandlerAdapter.java:878<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal<span class="token punctuation">(</span>RequestMappingHandlerAdapter.java:792<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle<span class="token punctuation">(</span>AbstractHandlerMethodAdapter.java:87<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch<span class="token punctuation">(</span>DispatcherServlet.java:1040<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.DispatcherServlet.doService<span class="token punctuation">(</span>DispatcherServlet.java:943<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.FrameworkServlet.processRequest<span class="token punctuation">(</span>FrameworkServlet.java:1006<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.FrameworkServlet.doPost<span class="token punctuation">(</span>FrameworkServlet.java:909<span class="token punctuation">)</span>
+	at javax.servlet.http.HttpServlet.service<span class="token punctuation">(</span>HttpServlet.java:652<span class="token punctuation">)</span>
+	at org.springframework.web.servlet.FrameworkServlet.service<span class="token punctuation">(</span>FrameworkServlet.java:883<span class="token punctuation">)</span>
+	at javax.servlet.http.HttpServlet.service<span class="token punctuation">(</span>HttpServlet.java:733<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:231<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter<span class="token punctuation">(</span>WsFilter.java:53<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:193<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal<span class="token punctuation">(</span>RequestContextFilter.java:100<span class="token punctuation">)</span>
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter<span class="token punctuation">(</span>OncePerRequestFilter.java:119<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:193<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal<span class="token punctuation">(</span>FormContentFilter.java:93<span class="token punctuation">)</span>
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter<span class="token punctuation">(</span>OncePerRequestFilter.java:119<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:193<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal<span class="token punctuation">(</span>WebMvcMetricsFilter.java:93<span class="token punctuation">)</span>
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter<span class="token punctuation">(</span>OncePerRequestFilter.java:119<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:193<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal<span class="token punctuation">(</span>CharacterEncodingFilter.java:201<span class="token punctuation">)</span>
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter<span class="token punctuation">(</span>OncePerRequestFilter.java:119<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:193<span class="token punctuation">)</span>
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter<span class="token punctuation">(</span>ApplicationFilterChain.java:166<span class="token punctuation">)</span>
+	at org.apache.catalina.core.StandardWrapperValve.invoke<span class="token punctuation">(</span>StandardWrapperValve.java:202<span class="token punctuation">)</span>
+	at org.apache.catalina.core.StandardContextValve.invoke<span class="token punctuation">(</span>StandardContextValve.java:97<span class="token punctuation">)</span>
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke<span class="token punctuation">(</span>AuthenticatorBase.java:541<span class="token punctuation">)</span>
+	at org.apache.catalina.core.StandardHostValve.invoke<span class="token punctuation">(</span>StandardHostValve.java:143<span class="token punctuation">)</span>
+	at org.apache.catalina.valves.ErrorReportValve.invoke<span class="token punctuation">(</span>ErrorReportValve.java:92<span class="token punctuation">)</span>
+	at org.apache.catalina.core.StandardEngineValve.invoke<span class="token punctuation">(</span>StandardEngineValve.java:78<span class="token punctuation">)</span>
+	at org.apache.catalina.connector.CoyoteAdapter.service<span class="token punctuation">(</span>CoyoteAdapter.java:343<span class="token punctuation">)</span>
+	at org.apache.coyote.http11.Http11Processor.service<span class="token punctuation">(</span>Http11Processor.java:374<span class="token punctuation">)</span>
+	at org.apache.coyote.AbstractProcessorLight.process<span class="token punctuation">(</span>AbstractProcessorLight.java:65<span class="token punctuation">)</span>
+	at org.apache.coyote.AbstractProtocol<span class="token variable">$ConnectionHandler</span>.process<span class="token punctuation">(</span>AbstractProtocol.java:868<span class="token punctuation">)</span>
+	at org.apache.tomcat.util.net.NioEndpoint<span class="token variable">$SocketProcessor</span>.doRun<span class="token punctuation">(</span>NioEndpoint.java:1590<span class="token punctuation">)</span>
+	at org.apache.tomcat.util.net.SocketProcessorBase.run<span class="token punctuation">(</span>SocketProcessorBase.java:49<span class="token punctuation">)</span>
+	at java.util.concurrent.ThreadPoolExecutor.runWorker<span class="token punctuation">(</span>ThreadPoolExecutor.java:1142<span class="token punctuation">)</span>
+	at java.util.concurrent.ThreadPoolExecutor<span class="token variable">$Worker</span>.run<span class="token punctuation">(</span>ThreadPoolExecutor.java:617<span class="token punctuation">)</span>
+	at org.apache.tomcat.util.threads.TaskThread<span class="token variable">$WrappingRunnable</span>.run<span class="token punctuation">(</span>TaskThread.java:61<span class="token punctuation">)</span>
+	at java.lang.Thread.run<span class="token punctuation">(</span>Thread.java:745<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/29/2025, 2:34:15 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/java/java工具/06mybatis代码生成器.html" class="prev">
+        mybatis代码生成器
+      </a></span> <span class="next"><a href="/java/java工具/08java项目打包exe文件.html">
+        java项目打包exe文件
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.edb4ebc4.js" defer></script><script src="/assets/js/2.ef58a872.js" defer></script><script src="/assets/js/1.80c5dc09.js" defer></script><script src="/assets/js/196.514ac97c.js" defer></script>
+  </body>
+</html>
