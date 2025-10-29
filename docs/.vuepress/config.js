@@ -1064,6 +1064,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'demo',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/demo/2025_10_29_01'),
+                    ]
+                },
+                {
                     title: 'nuxt官方文档',
                     collapsable: false,
                     children: [
