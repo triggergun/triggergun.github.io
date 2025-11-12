@@ -590,8 +590,37 @@ module.exports = {
             // ===================== 侧边栏 配置  点击设 maven  start ===========
             '/java/maven/': javaMavenSidebarArray,
             // ===================== 侧边栏 配置  点击设 maven  end ===========
+            '/java/interview/': [
+                {
+                    title: 'java面试题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/java/javaDemo01_2025_11_11_01'),
+
+                    ]
+
+                },
+                {
+                    title: 'springboot面试题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/springboot/springbootDemo01_2025_11_11_01'),
+
+                    ]
+
+                },
+                {
+                    title: 'db面试题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_01'),
+
+                    ]
+
+                },
 
 
+            ],
             // ===================== lyp    点击设 javascript的  基础概念 ===========
             '/lyp/javascript/': [
                 {
