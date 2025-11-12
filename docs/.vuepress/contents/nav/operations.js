@@ -29,5 +29,12 @@ module.exports = [
         items: [
             {text: "linux基础概念", link: '/运维/linux_base/demo01_2025_03_22_01'},
         ]
+    },
+    {
+        // nginx运维
+        text: 'nginx运维',
+        items: [
+            {text: "nginx常用命令", link: '/运维/nginx_base/demo01_2025_11_12_01'},
+        ]
     }
 ];

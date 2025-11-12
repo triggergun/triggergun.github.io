@@ -110,6 +110,13 @@ module.exports = [
 
     },
     {
+        title: 'nginx运维总结',
+        collapsable: false,
+        children: [
+            '/运维/nginx_base/demo01_2025_11_12_01',],
+
+    },
+    {
         title: '系统架构',
         collapsable: false,
         children: [
