@@ -618,7 +618,15 @@ module.exports = {
                     ]
 
                 },
+                {
+                    title: '日志处理',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/log/logDemo01_2025_11_13_01'),
 
+                    ]
+
+                },
 
             ],
             // ===================== lyp    点击设 javascript的  基础概念 ===========
