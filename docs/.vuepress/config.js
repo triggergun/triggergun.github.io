@@ -392,6 +392,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/network/security/windows/win10绕过密码'),
+                        encodeURI('/network/security/windows/demo01_2025_11_18_01'),
                     ]
                 },
                 // 第一阶段  tcp
