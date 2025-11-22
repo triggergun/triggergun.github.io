@@ -125,6 +125,13 @@ module.exports = [
             '/运维/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统'
         ],
 
-    }
+    },
+    {
+        title: '运维问题排错',
+        collapsable: false,
+        children: [
+            '/运维/problem/demo01_2025_11_11_01'
+        ],
 
+    }
 ];

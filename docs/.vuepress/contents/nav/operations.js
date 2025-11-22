@@ -36,5 +36,12 @@ module.exports = [
         items: [
             {text: "nginx常用命令", link: '/运维/nginx_base/demo01_2025_11_12_01'},
         ]
+    },
+    {
+        // 运维问题集
+        text: '运维问题集',
+        items: [
+            {text: "运维问题排错", link: '/运维/problem/demo01_2025_11_11_01'},
+        ]
     }
 ];
