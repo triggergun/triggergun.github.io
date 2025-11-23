@@ -419,7 +419,14 @@ module.exports = {
                         encodeURI('/network/nmap/demo01_2025_11_11_01'),
                     ]
                 },
-
+                //
+                {
+                    title: '密码破解实战',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/network/password/demo01_2025_11_11_01'),
+                    ]
+                },
             ],
             //  网络基础知识     侧边栏 end  ===============
             // dao层区的侧边目录========表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java

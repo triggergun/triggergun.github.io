@@ -15,6 +15,7 @@ module.exports = [
             // windows安全 top栏的选项
             {text: "windows安全", link: '/network/security/windows/win10绕过密码'},
             {text: "nmap扫描实战", link: '/network/nmap/demo01_2025_11_11_01'},
+            {text: "密码破解实战", link: '/network/password/demo01_2025_11_11_01'},
         ]
     },
     {
