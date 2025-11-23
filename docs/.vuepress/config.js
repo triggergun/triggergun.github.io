@@ -411,6 +411,14 @@ module.exports = {
                         encodeURI('/network/jwt/01什么是jwt.md'),
                     ]
                 },
+                // nmap实战
+                {
+                    title: 'nmap实战',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/network/nmap/demo01_2025_11_11_01'),
+                    ]
+                },
 
             ],
             //  网络基础知识     侧边栏 end  ===============
