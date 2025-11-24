@@ -654,6 +654,8 @@ module.exports = {
                         encodeURI('/lyp/javascript/01什么是事件'),
                         encodeURI('/lyp/javascript/demo01_20250430_01'),
                         encodeURI('/lyp/javascript/demo01_20250430_02'),
+                        encodeURI('/lyp/javascript/demo02_2025_11_10_01'),
+                        encodeURI('/lyp/javascript/demo02_2025_11_11_01'),
 
                     ]
 
