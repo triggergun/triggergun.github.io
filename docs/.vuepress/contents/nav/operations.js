@@ -16,6 +16,7 @@ module.exports = [
             {text: "windows安全", link: '/network/security/windows/win10绕过密码'},
             {text: "nmap扫描实战", link: '/network/nmap/demo01_2025_11_11_01'},
             {text: "密码破解实战", link: '/network/password/demo01_2025_11_11_01'},
+            {text: "Metasploit(MSF)实战", link: '/network/msf/demo01_2025_11_11_01'},
         ]
     },
     {

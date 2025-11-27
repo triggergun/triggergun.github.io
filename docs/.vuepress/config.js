@@ -419,12 +419,19 @@ module.exports = {
                         encodeURI('/network/nmap/demo01_2025_11_11_01'),
                     ]
                 },
-                //
+                //密码破解实战
                 {
                     title: '密码破解实战',
                     collapsable: false,
                     children: [
                         encodeURI('/network/password/demo01_2025_11_11_01'),
+                    ]
+                },
+                {
+                    title: 'Metasploit(MSF)实战',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/network/msf/demo01_2025_11_11_01'),
                     ]
                 },
             ],
