@@ -92,6 +92,7 @@ module.exports = [
             '/运维/ubuntu/demo08_2025_10_10',
             '/运维/ubuntu/demo09_2025_11_11',
             '/运维/ubuntu/demo10_2025_11_12',
+            '/运维/ubuntu/demo11_2025_11_13',
         ],
     },
     {
