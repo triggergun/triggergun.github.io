@@ -32,6 +32,7 @@ const lypLinuxSidebarArray = require('./contents/sidebar/lypLinux.js');
 const javaMybatisSidebarArray = require('./contents/sidebar/javaMybatis.js');
 const lypBigDataScalaBaseSidebarArray = require('./contents/sidebar/lypBigDataScalaBase.js');
 const lypBigDataFlumeBase01SidebarArray = require('./contents/sidebar/lypBigDataFlumeBase01.js');
+const lypCSidebarArray = require('./contents/sidebar/lypC.js');
 // docs/.vuepress/config.js
 module.exports = {
 
@@ -637,7 +638,10 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/java/interview/db/dbDemo01_2025_11_11_01'),
-
+                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_02'),
+                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_03'),
+                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_04'),
+                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_05'),
                     ]
 
                 },
@@ -691,27 +695,7 @@ module.exports = {
 
             // ===================== lyp  模块  点击设 c语言 ,c语言侧边栏 目录    设置 ===========
             // 2024年-1-13
-            '/lyp/c语言': [
-                {
-                    title: 'c语言基础',
-                    collapsable: false,
-                    children: [
-                        //  c 语言的 侧边栏 目录
-                        encodeURI('/lyp/c语言/安装devc++'),
-                        encodeURI('/lyp/c语言/01我的第一个程序/01我的第一个c程序'),
-                    ]
-                },
-                {
-                    title: 'c数据结构与算法',
-                    collapsable: false,
-                    children: [
-                        //  c 语言的 侧边栏 目录
-                        encodeURI('/lyp/c语言/数据结构与算法/01c语言数据结构与算法'),
-
-                    ]
-                },
-
-            ],
+            '/lyp/c语言':lypCSidebarArray,
 
 
             // ===================== lyp  模块  点击设 C++ ,c语言侧边栏 目录    设置 ===========
