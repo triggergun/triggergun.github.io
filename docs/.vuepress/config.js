@@ -579,13 +579,21 @@ module.exports = {
             ],
 
             // ===================== 点击设 spring源码分析 ===========
-            '/java/spring源码分析/': [
+            '/java/spring_code/': [
                 {
                     title: 'spring源码分析',
                     collapsable: false,
                     children: [
-                        encodeURI('/java/spring源码分析/01Spring源码下载'),
-                        encodeURI('/java/spring源码分析/02srping源码编译'),
+                        encodeURI('/java/spring_code/01Spring源码下载'),
+                        encodeURI('/java/spring_code/02srping源码编译'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_01'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_02'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_03'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_04'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_05'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_06'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_07'),
+                        encodeURI('/java/spring_code/demo01_2025_11_11_08'),
 
                     ]
 

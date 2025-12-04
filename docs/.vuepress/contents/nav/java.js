@@ -22,7 +22,7 @@ module.exports = [
     {
         text: '源码分析区',
         items: [
-            {text: "spring源码分析", link: encodeURI('/java/spring源码分析/01Spring源码下载')},
+            {text: "spring源码分析", link: encodeURI('/java/spring_code/01Spring源码下载')},
             {
                 text: "spring-boot源码分析",
                 link: encodeURI('/java/springboot_source_code/20250105_demo01')
