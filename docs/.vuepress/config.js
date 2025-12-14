@@ -661,6 +661,14 @@ module.exports = {
 
                     ]
 
+                }, {
+                    title: '数据库设计',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/db_design/demo01_2025_12_14_01'),
+
+                    ]
+
                 },
 
             ],
