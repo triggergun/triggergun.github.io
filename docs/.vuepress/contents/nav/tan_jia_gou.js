@@ -34,6 +34,10 @@ module.exports = [
                 text: "深入理解计算机操作系统",
                 link: encodeURI('/framework/system_book01/chapter_01_20250601_0101')
             },
+            {
+                text: "操作系统概念",
+                link: encodeURI('/framework/system_book02/init_2025_12_15_01')
+            },
         ],
     },
     {

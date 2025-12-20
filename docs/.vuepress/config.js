@@ -284,44 +284,51 @@ module.exports = {
                 {
                     title: '软件资源',
                     collapsable: false,
-                    children: ['/软件资源/软件资源',
-                        '/软件资源/English_syntax',
-                        '/软件资源/02英语的时态',
-                        '/软件资源/03英语的发音规则',
-                        '/软件资源/04词根词缀合集',
-                        '/软件资源/数学/多项式',
-                        '/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法'],
+                    children: [
+                        encodeURI('/软件资源/软件资源'),
+                        encodeURI('/软件资源/English_syntax'),
+                        encodeURI('/软件资源/02英语的时态'),
+                        encodeURI('/软件资源/03英语的发音规则'),
+                        encodeURI('/软件资源/04词根词缀合集'),
+                        encodeURI('/软件资源/数学/多项式'),
+                        encodeURI('/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法')
+                    ],
 
-                }
-                ,
-
+                },
                 // 英语 单词集
                 {
                     title: '看单词讲故事',
                     collapsable: false,
                     children: [
-                        '/软件资源/04词根词缀合集',
-                        '/软件资源/英语词根词缀集合/ang-',
+                        encodeURI('/软件资源/04词根词缀合集'),
+                        encodeURI('/软件资源/英语词根词缀集合/ang-'),
                     ],
 
-                }
-                ,
+                },
+                {
+                    title: '自省操作系统',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/软件资源/introspection_system/demo01_2025_12_20_01')
+                    ],
 
+                },
                 {
                     title: 'docsify',
                     collapsable: false,
-                    children: ['/软件资源/01docsify'],
+                    children: [
+                        encodeURI('/软件资源/01docsify')
+                    ],
 
-                }
-                ,
+                },
                 {
                     title: 'vuepress语法',
                     collapsable: false,
                     children: [
-                        '/软件资源/vuepress怎么玩/SetTitle',
-                        '/软件资源/vuepress怎么玩/Writing_rules',
-                        '/软件资源/vuepress怎么玩/02top导航栏的设置',
-                        '/软件资源/vuepress怎么玩/03vuepress的流水线部署'],
+                        encodeURI('/软件资源/vuepress怎么玩/SetTitle'),
+                        encodeURI('/软件资源/vuepress怎么玩/Writing_rules'),
+                        encodeURI('/软件资源/vuepress怎么玩/02top导航栏的设置'),
+                        encodeURI('/软件资源/vuepress怎么玩/03vuepress的流水线部署')],
                 },
 
                 // 教你怎么在我的博客上进行编写加添内容
@@ -371,9 +378,9 @@ module.exports = {
                     title: 'ip地址说起',
                     collapsable: false,
                     children: [
-                        '/network/network01',
-                        '/network/network02',
-                        '/network/network03'
+                        encodeURI('/network/network01'),
+                        encodeURI('/network/network02'),
+                        encodeURI('/network/network03')
                     ],
 
                 },
@@ -381,9 +388,9 @@ module.exports = {
                     title: '华为HCIA',
                     collapsable: false,
                     children: [
-                        '/network/华为/HCIA认证/01华为认证体系介绍',
-                        '/network/华为/HCIA认证/02eNSP的安装',
-                        '/network/华为/HCIA认证/03配置ssh协议'
+                        encodeURI('/network/华为/HCIA认证/01华为认证体系介绍'),
+                        encodeURI('/network/华为/HCIA认证/02eNSP的安装'),
+                        encodeURI('/network/华为/HCIA认证/03配置ssh协议')
                     ],
 
                 },
@@ -446,40 +453,46 @@ module.exports = {
                 {
                     title: 'java基础案例',
                     collapsable: false,
-                    children: ['/java/javaSEBase/java'],
+                    children: [
+                        encodeURI('/java/javaSEBase/java')],
 
                 },
                 {
                     title: 'java值传递',
                     collapsable: false,
-                    children: ['/java/javaSEBase/day02'],
+                    children: [
+                        encodeURI('/java/javaSEBase/day02')
+                    ],
 
                 },
                 {
                     title: 'java面向对象',
                     collapsable: false,
-                    children: ['/java/javaSEBase/day03'],
+                    children: [
+                        encodeURI('/java/javaSEBase/day03')
+                    ],
 
                 },
                 {
                     title: 'IO流',
                     collapsable: false,
                     children: [
-                        '/java/javaSEBase/day01-java带有包名进行编译class',
-                        '/java/javaSEBase/day14-IO',
-                        '/java/javaSEBase/day15-IO01流',
-                        '/java/javaSEBase/day15-IO02转换流',
-                        '/java/javaSEBase/day15-IO03对象操作流',
-                        '/java/javaSEBase/day15-IO04Properties集合'],
+                        encodeURI('/java/javaSEBase/day01-java带有包名进行编译class'),
+                        encodeURI('/java/javaSEBase/day14-IO'),
+                        encodeURI('/java/javaSEBase/day15-IO01流'),
+                        encodeURI('/java/javaSEBase/day15-IO02转换流'),
+                        encodeURI('/java/javaSEBase/day15-IO03对象操作流'),
+                        encodeURI('/java/javaSEBase/day15-IO04Properties集合')
+                    ],
 
                 },
                 {
                     title: 'java泛型',
                     collapsable: false,
                     children: [
-                        '/java/javaSEBase/day18_2025_04_25_01',
-                        '/java/javaSEBase/day18_2025_04_25_02',
-                        '/java/javaSEBase/day18_2025_04_25_03',
+                        encodeURI('/java/javaSEBase/day18_2025_04_25_01'),
+                        encodeURI('/java/javaSEBase/day18_2025_04_25_02'),
+                        encodeURI('/java/javaSEBase/day18_2025_04_25_03'),
                     ],
 
                 },
@@ -487,7 +500,7 @@ module.exports = {
                     title: 'java日期',
                     collapsable: false,
                     children: [
-                        '/java/javaSEBase/day18_2025_04_26_01',
+                        encodeURI('/java/javaSEBase/day18_2025_04_26_01'),
                     ],
 
                 },
@@ -502,7 +515,8 @@ module.exports = {
                 {
                     title: 'java线程基础与案例',
                     collapsable: false,
-                    children: ['/java/javaSEBase/day16-线程案例01',
+                    children: [
+                        encodeURI('/java/javaSEBase/day16-线程案例01'),
                     ],
 
                 },
@@ -530,7 +544,8 @@ module.exports = {
                 {
                     title: 'design',
                     collapsable: false,
-                    children: ['/java/designModel/AssemblerDesignPattern',
+                    children: [
+                        encodeURI('/java/designModel/AssemblerDesignPattern'),
                         encodeURI('/java/designModel/02动态代理模式')]
 
                 },
@@ -624,10 +639,20 @@ module.exports = {
             // ===================== 侧边栏 配置  点击设 maven  end ===========
             '/java/interview/': [
                 {
-                    title: 'java面试题',
+                    title: 'java基础面试题',
                     collapsable: false,
                     children: [
                         encodeURI('/java/interview/java/javaDemo01_2025_11_11_01'),
+
+                    ]
+
+                },
+                {
+                    title: 'java注解面试题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_01'),
+                        encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_02'),
 
                     ]
 
@@ -666,6 +691,15 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/java/interview/db_design/demo01_2025_12_14_01'),
+
+                    ]
+
+                },
+                {
+                    title: '自省发散思考',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/introspection/demo01_2025_12_20_01'),
 
                     ]
 
@@ -711,7 +745,7 @@ module.exports = {
 
             // ===================== lyp  模块  点击设 c语言 ,c语言侧边栏 目录    设置 ===========
             // 2024年-1-13
-            '/lyp/c语言':lypCSidebarArray,
+            '/lyp/c语言': lypCSidebarArray,
 
 
             // ===================== lyp  模块  点击设 C++ ,c语言侧边栏 目录    设置 ===========
@@ -1058,6 +1092,17 @@ module.exports = {
                         encodeURI('/framework/system_book01/chapter_01_20251010_01'),
                         encodeURI('/framework/system_book01/chapter_01_20250601_0101'),
                         encodeURI('/framework/system_book01/chapter_01_20250601_0102'),
+                    ]
+                },
+            ],
+            '/framework/system_book02/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '操作系统概念',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/system_book02/init_2025_12_15_01'),
                     ]
                 },
             ],

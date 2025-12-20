@@ -25,6 +25,7 @@ module.exports = [
             '/运维/windows/docker/demo01_2025_01_26',
             '/运维/windows/docker/demo02_2025_01_26',
             '/运维/windows/docker/demo03_2025_10_06_01',
+            '/运维/windows/docker/demo03_2025_10_06_02',
 
         ],
 
