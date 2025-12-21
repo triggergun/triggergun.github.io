@@ -658,6 +658,15 @@ module.exports = {
 
                 },
                 {
+                    title: 'springAop面试题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/java/interview/spring_aop/SpringAopDemo01_2025_11_12_01'),
+
+                    ]
+
+                },
+                {
                     title: 'springboot面试题',
                     collapsable: false,
                     children: [
