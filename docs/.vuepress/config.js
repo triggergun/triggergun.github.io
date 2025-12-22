@@ -26,6 +26,14 @@ const javaMybatisPlusSidebarArray = require('./contents/sidebar/javaMybatisPlus.
 const javaGradleSidebarArray = require('./contents/sidebar/javaGradle.js');
 // maven
 const javaMavenSidebarArray = require('./contents/sidebar/javaMaven.js');
+// java面试
+const javaInterviewSidebarArray = require('./contents/sidebar/javaInterview.js');
+// java设计模式
+const javaDesignModelSidebarArray = require('./contents/sidebar/javaDesignModel.js');
+// javaSE基础
+const javaSEBaseSidebarArray = require('./contents/sidebar/javaSEBase.js');
+// 设计思想
+const designPhilosophySidebarArray = require('./contents/sidebar/designPhilosophy.js');
 const dbSidebarArray = require('./contents/sidebar/db.js');
 const lypRustSidebarArray = require('./contents/sidebar/lypRust.js');
 const lypLinuxSidebarArray = require('./contents/sidebar/lypLinux.js');
@@ -33,6 +41,12 @@ const javaMybatisSidebarArray = require('./contents/sidebar/javaMybatis.js');
 const lypBigDataScalaBaseSidebarArray = require('./contents/sidebar/lypBigDataScalaBase.js');
 const lypBigDataFlumeBase01SidebarArray = require('./contents/sidebar/lypBigDataFlumeBase01.js');
 const lypCSidebarArray = require('./contents/sidebar/lypC.js');
+
+// 网络基础
+const networkSidebarArray = require('./contents/sidebar/network.js');
+
+// 软件资源
+const resourceSidebarArray = require('./contents/sidebar/resource.js');
 // docs/.vuepress/config.js
 module.exports = {
 
@@ -151,7 +165,6 @@ module.exports = {
             //============================= top  选项5    start ==============
             {
                 text: 'java',
-                // 子选项
                 items: javaArray,
             },
             //============================= top  选项5  java  end ==============
@@ -280,92 +293,7 @@ module.exports = {
             ],
             // 物理的侧边栏设置    end   ===============
             // ==================================   首页      软件资源    ====================
-            '/软件资源/': [
-                {
-                    title: '软件资源',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/软件资源'),
-                        encodeURI('/软件资源/English_syntax'),
-                        encodeURI('/软件资源/02英语的时态'),
-                        encodeURI('/软件资源/03英语的发音规则'),
-                        encodeURI('/软件资源/04词根词缀合集'),
-                        encodeURI('/软件资源/数学/多项式'),
-                        encodeURI('/软件资源/数学/Typora数学语法/全面整理Typora的Latex数学公式语法')
-                    ],
-
-                },
-                // 英语 单词集
-                {
-                    title: '看单词讲故事',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/04词根词缀合集'),
-                        encodeURI('/软件资源/英语词根词缀集合/ang-'),
-                    ],
-
-                },
-                {
-                    title: '自省操作系统',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/introspection_system/demo01_2025_12_20_01')
-                    ],
-
-                },
-                {
-                    title: 'docsify',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/01docsify')
-                    ],
-
-                },
-                {
-                    title: 'vuepress语法',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/vuepress怎么玩/SetTitle'),
-                        encodeURI('/软件资源/vuepress怎么玩/Writing_rules'),
-                        encodeURI('/软件资源/vuepress怎么玩/02top导航栏的设置'),
-                        encodeURI('/软件资源/vuepress怎么玩/03vuepress的流水线部署')],
-                },
-
-                // 教你怎么在我的博客上进行编写加添内容
-                {
-                    title: '参与博客编写规则',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/博客编写/01github拉取博客仓库'),
-                        encodeURI('/软件资源/博客编写/02拉取下来的代码怎么运行')],
-
-                },
-                // 学车
-                {
-                    title: '学车',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/软件资源/study_car/科目一技巧总结'),
-                        encodeURI('/软件资源/study_car/练习科目二day01'),
-                        encodeURI('/软件资源/study_car/练习科目二day02'),
-                        encodeURI('/软件资源/study_car/练习科目二day03'),
-                        encodeURI('/软件资源/study_car/练习科目二day04'),
-                        encodeURI('/软件资源/study_car/科目三上路'),
-                        encodeURI('/软件资源/study_car/科目二考试要点')
-                    ],
-
-                },
-
-                // 黑客资料集
-                {
-                    title: '黑客学',
-                    collapsable: false,
-                    children: [encodeURI('/软件资源/黑客资料/黑客目录'),],
-
-                },
-
-
-            ],
+            '/软件资源/':resourceSidebarArray,
 
             // 表示：点击导航栏后，侧边栏显示的标题有：git选
             '/git/': gitSidebarArray,
@@ -373,156 +301,14 @@ module.exports = {
             // 注意 不能再搞 /运维/xxx/的 侧边栏了。
             '/运维/': operationsSidebarArray,
             //  网络基础知识     侧边栏 start  ===============
-            '/network/': [
-                {
-                    title: 'ip地址说起',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/network01'),
-                        encodeURI('/network/network02'),
-                        encodeURI('/network/network03')
-                    ],
-
-                },
-                {
-                    title: '华为HCIA',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/华为/HCIA认证/01华为认证体系介绍'),
-                        encodeURI('/network/华为/HCIA认证/02eNSP的安装'),
-                        encodeURI('/network/华为/HCIA认证/03配置ssh协议')
-                    ],
-
-                },
-                // 第一阶段  安全
-                {
-                    title: 'windows安全',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/security/windows/win10绕过密码'),
-                        encodeURI('/network/security/windows/demo01_2025_11_18_01'),
-                    ]
-                },
-                // 第一阶段  tcp
-                {
-                    title: 'tcp',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/tcp/01tcp.md'),
-                    ]
-                },
-                // 第一阶段  jwt
-                {
-                    title: 'jwt',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/jwt/01什么是jwt.md'),
-                    ]
-                },
-                // nmap实战
-                {
-                    title: 'nmap实战',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/nmap/demo01_2025_11_11_01'),
-                    ]
-                },
-                //密码破解实战
-                {
-                    title: '密码破解实战',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/password/demo01_2025_11_11_01'),
-                    ]
-                },
-                {
-                    title: 'Metasploit(MSF)实战',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/network/msf/demo01_2025_11_11_01'),
-                    ]
-                },
-            ],
+            '/network/': networkSidebarArray,
             //  网络基础知识     侧边栏 end  ===============
             // dao层区的侧边目录========表示：点击mybatis标题的导航栏后，侧边栏显示的标题有：java
             '/java/Mybatis/': javaMybatisSidebarArray,
             '/java/mybatis_plus/': javaMybatisPlusSidebarArray,
             // java基础学习阶段
             // 表示：点击导航栏后，侧边栏显示的标题有：java
-            '/java/javaSEBase/': [
-                {
-                    title: 'java基础案例',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/java')],
-
-                },
-                {
-                    title: 'java值传递',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day02')
-                    ],
-
-                },
-                {
-                    title: 'java面向对象',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day03')
-                    ],
-
-                },
-                {
-                    title: 'IO流',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day01-java带有包名进行编译class'),
-                        encodeURI('/java/javaSEBase/day14-IO'),
-                        encodeURI('/java/javaSEBase/day15-IO01流'),
-                        encodeURI('/java/javaSEBase/day15-IO02转换流'),
-                        encodeURI('/java/javaSEBase/day15-IO03对象操作流'),
-                        encodeURI('/java/javaSEBase/day15-IO04Properties集合')
-                    ],
-
-                },
-                {
-                    title: 'java泛型',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day18_2025_04_25_01'),
-                        encodeURI('/java/javaSEBase/day18_2025_04_25_02'),
-                        encodeURI('/java/javaSEBase/day18_2025_04_25_03'),
-                    ],
-
-                },
-                {
-                    title: 'java日期',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day18_2025_04_26_01'),
-                    ],
-
-                },
-                {
-                    title: 'java沉思',
-                    collapsable: false,
-                    children: [
-                        '/java/javaSEBase/java01',
-                    ]
-
-                },
-                {
-                    title: 'java线程基础与案例',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/javaSEBase/day16-线程案例01'),
-                    ],
-
-                },
-
-
-            ],
+            '/java/javaSEBase/': javaSEBaseSidebarArray,
             //---------------------------表示springcloudgateway侧边栏目录
             '/java/springcloudgateway/': [
 
@@ -539,18 +325,7 @@ module.exports = {
 
             // ===================== 点击设计模式 ===========
             //encodeURI('/electron/设置透明窗口时的兼容性问题')
-            '/java/designModel/': [
-
-                {
-                    title: 'design',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/designModel/AssemblerDesignPattern'),
-                        encodeURI('/java/designModel/02动态代理模式')]
-
-                },
-
-            ],
+            '/java/designModel/': javaDesignModelSidebarArray,
             // ===================== 点击设 java 工具 ===========
             '/java/java工具/': [
                 {
@@ -637,84 +412,10 @@ module.exports = {
             // ===================== 侧边栏 配置  点击设 maven  start ===========
             '/java/maven/': javaMavenSidebarArray,
             // ===================== 侧边栏 配置  点击设 maven  end ===========
-            '/java/interview/': [
-                {
-                    title: 'java基础面试题',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/java/javaDemo01_2025_11_11_01'),
-
-                    ]
-
-                },
-                {
-                    title: 'java注解面试题',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_01'),
-                        encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_02'),
-
-                    ]
-
-                },
-                {
-                    title: 'springAop面试题',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/spring_aop/SpringAopDemo01_2025_11_12_01'),
-
-                    ]
-
-                },
-                {
-                    title: 'springboot面试题',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/springboot/springbootDemo01_2025_11_11_01'),
-
-                    ]
-
-                },
-                {
-                    title: 'db面试题',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_01'),
-                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_02'),
-                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_03'),
-                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_04'),
-                        encodeURI('/java/interview/db/dbDemo01_2025_11_11_05'),
-                    ]
-
-                },
-                {
-                    title: '日志处理',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/log/logDemo01_2025_11_13_01'),
-
-                    ]
-
-                }, {
-                    title: '数据库设计',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/db_design/demo01_2025_12_14_01'),
-
-                    ]
-
-                },
-                {
-                    title: '自省发散思考',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/interview/introspection/demo01_2025_12_20_01'),
-
-                    ]
-
-                },
-
-            ],
+            // java面试
+            '/java/interview/': javaInterviewSidebarArray,
+            // 设计思想
+            '/java/designPhilosophy/': designPhilosophySidebarArray,
             // ===================== lyp    点击设 javascript的  基础概念 ===========
             '/lyp/javascript/': [
                 {

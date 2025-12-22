@@ -1,0 +1,78 @@
+module.exports = [
+    {
+        title: 'java基础面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java/javaDemo01_2025_11_11_01'),
+
+        ]
+
+    },
+    {
+        title: 'java注解面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_01'),
+            encodeURI('/java/interview/java_annotation/javaDemo01_2025_11_11_02'),
+
+        ]
+
+    },
+    {
+        title: 'springAop面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/spring_aop/SpringAopDemo01_2025_11_12_01'),
+
+        ]
+
+    },
+    {
+        title: 'springboot面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/springboot/springbootDemo01_2025_11_11_01'),
+
+        ]
+
+    },
+    {
+        title: 'db面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/db/dbDemo01_2025_11_11_01'),
+            encodeURI('/java/interview/db/dbDemo01_2025_11_11_02'),
+            encodeURI('/java/interview/db/dbDemo01_2025_11_11_03'),
+            encodeURI('/java/interview/db/dbDemo01_2025_11_11_04'),
+            encodeURI('/java/interview/db/dbDemo01_2025_11_11_05'),
+        ]
+
+    },
+    {
+        title: '日志处理',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/log/logDemo01_2025_11_13_01'),
+
+        ]
+
+    }, {
+        title: '数据库设计',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/db_design/demo01_2025_12_14_01'),
+
+        ]
+
+    },
+    {
+        title: '自省发散思考',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/introspection/demo01_2025_12_20_01'),
+
+        ]
+
+    },
+
+];

@@ -48,5 +48,11 @@ module.exports = [
 
         ]
     },
+    {
+        text: '设计思想',
+        items: [
+            {text: "编程设计思想", link: '/java/designPhilosophy/function/demo01_2025_12_22_01'},
+        ]
+    },
 
 ];
