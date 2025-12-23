@@ -9,6 +9,29 @@ module.exports = [
 
     },
     {
+        title: 'java的List集合',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_01'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_02'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_03'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_04'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_05'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_06'),
+
+        ]
+
+    },
+    {
+        title: 'java的hashMap集合',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java_hashMap/demo01_2025_12_23_01'),
+
+        ]
+
+    },
+    {
         title: 'java注解面试题',
         collapsable: false,
         children: [
