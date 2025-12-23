@@ -19,6 +19,15 @@ module.exports = [
         ],
     },
     {
+        text: '加密算法与密码学',
+        items: [
+            {
+                text: "微信小程序的登录流程架构",
+                link: encodeURI('/framework/cryptography/demo01_2025_12_23_01')
+            },
+        ],
+    },
+    {
         text: '人工智能',
         items: [
             {

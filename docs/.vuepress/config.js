@@ -831,7 +831,19 @@ module.exports = {
                 },
             ],
             // 物联网 iot end
-
+            // 密码学  start
+            '/framework/cryptography/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '微信小程序登入流程',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/cryptography/demo01_2025_12_23_01'),
+                    ]
+                },
+            ],
+            // 密码学  end
 
             //  谈架构  ================================  end  ==========
 
