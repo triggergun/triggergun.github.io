@@ -6,7 +6,7 @@ tagline: 公众号：图南资料分享
 
 
 actionText: 查看资源 →
-actionLink: /软件资源/软件资源
+actionLink: /resource/软件资源
 
 features:
 - title: 人生苦短

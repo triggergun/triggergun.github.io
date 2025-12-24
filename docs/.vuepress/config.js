@@ -199,7 +199,7 @@ module.exports = {
                         items: [
                             {
                                 text: "中等数学思想",
-                                link: encodeURI('/基础科学/数学基础/02中等数学思想/球体体积公式推过程')
+                                link: encodeURI('/basicScience/basicMath/02中等数学思想/球体体积公式推过程')
                             },
                         ],
                     },
@@ -208,7 +208,7 @@ module.exports = {
                         items: [
                             {
                                 text: "中等电学思想",
-                                link: encodeURI('/基础科学/physical_base/middle_school_stage/demo01_2025_03_01')
+                                link: encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_01')
                             },
                         ],
                     }
@@ -270,36 +270,36 @@ module.exports = {
         // ===================================================文章的侧边栏    start  ====================================
         sidebar: {
             // 表示：基础科学的研究  maht =============================
-            '/基础科学/数学基础/': [
+            '/basicScience/basicMath/': [
                 {
                     title: '微积分启蒙',
                     collapsable: false,
                     children: [
-                        encodeURI('/基础科学/数学基础/02中等数学思想/球体体积公式推过程'),
-                        encodeURI('/基础科学/数学基础/02中等数学思想/微积分的启蒙'),
-                        encodeURI('/基础科学/数学基础/02中等数学思想/02什么是微积分'),
+                        encodeURI('/basicScience/basicMath/02中等数学思想/球体体积公式推过程'),
+                        encodeURI('/basicScience/basicMath/02中等数学思想/微积分的启蒙'),
+                        encodeURI('/basicScience/basicMath/02中等数学思想/02什么是微积分'),
                     ],
                 },
             ],
             // 物理的侧边栏设置    start   ===============
-            '/基础科学/physical_base/': [
+            '/basicScience/physical_base/': [
                 {
                     title: '电学基础',
                     collapsable: false,
                     children: [
-                        encodeURI('/基础科学/physical_base/middle_school_stage/demo01_2025_03_01'),
+                        encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_01'),
                     ],
                 },
             ],
             // 物理的侧边栏设置    end   ===============
             // ==================================   首页      软件资源    ====================
-            '/软件资源/':resourceSidebarArray,
+            '/resource/':resourceSidebarArray,
 
             // 表示：点击导航栏后，侧边栏显示的标题有：git选
             '/git/': gitSidebarArray,
             // 表示：运维选  =============================
             // 注意 不能再搞 /运维/xxx/的 侧边栏了。
-            '/运维/': operationsSidebarArray,
+            '/operation/': operationsSidebarArray,
             //  网络基础知识     侧边栏 start  ===============
             '/network/': networkSidebarArray,
             //  网络基础知识     侧边栏 end  ===============
@@ -715,13 +715,13 @@ module.exports = {
             //  =====================================   发票的的项目   end ==========================================
 
             //  ps  ================================  start  ==========
-            '/美工/ps/': mei_gongPsSidebarArray,
+            '/graphic_designer/ps/': mei_gongPsSidebarArray,
             //  ps  ================================  end  ==========
             //  word  ================================  start  ==========
-            '/美工/word/': mei_gongWordSidebarArray,
+            '/graphic_designer/word/': mei_gongWordSidebarArray,
             //  word  ================================  end  ==========
             //  美工 start 侧边栏
-            '/美工/pr/': mei_gongPrSidebarArray,
+            '/graphic_designer/pr/': mei_gongPrSidebarArray,
             //  美工 end 侧边栏
 
 

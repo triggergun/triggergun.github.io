@@ -7,4 +7,5 @@ module.exports = [
     {text: '知乎', link: 'https://www.zhihu.com/people/hong-lang-80-78/posts'},
     {text: '英语', link: 'https://eglish.wutunan.top'},
     {text: '日出日落开放平台', link: 'https://www.tc03vd.top/sunrise-sunset/zh/'},
+    {text: '图南门户地址', link: 'https://www.tc03vd.top/'},
 ];
