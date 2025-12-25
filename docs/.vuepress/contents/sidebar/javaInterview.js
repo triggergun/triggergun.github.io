@@ -18,6 +18,8 @@ module.exports = [
             encodeURI('/java/interview/java_list/demo01_2025_12_23_04'),
             encodeURI('/java/interview/java_list/demo01_2025_12_23_05'),
             encodeURI('/java/interview/java_list/demo01_2025_12_23_06'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_07'),
+            encodeURI('/java/interview/java_list/demo01_2025_12_23_08'),
 
         ]
 
