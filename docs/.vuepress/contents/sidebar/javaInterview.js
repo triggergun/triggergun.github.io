@@ -9,6 +9,14 @@ module.exports = [
 
     },
     {
+        title: 'java的线程',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java_thread/demo01_2025_12_26_01'),
+
+        ]
+    },
+    {
         title: 'java的List集合',
         collapsable: false,
         children: [
