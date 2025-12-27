@@ -17,6 +17,14 @@ module.exports = [
         ]
     },
     {
+        title: 'java的ThreadLocal',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/java_thread_local/demo01_2025_12_26_01'),
+
+        ]
+    },
+    {
         title: 'java的List集合',
         collapsable: false,
         children: [
