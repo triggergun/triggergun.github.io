@@ -4,7 +4,7 @@ module.exports = [
     {
         text: 'javascript之路',
         items: [
-            {text: "基础概念", link: encodeURI('/lyp/javascript/01什么是事件')},
+            {text: "基础概念", link: encodeURI('/lyp/javascript/demo01_20250331_01')},
 
         ],
     },
