@@ -32,6 +32,9 @@ const javaInterviewSidebarArray = require('./contents/sidebar/javaInterview.js')
 const javaDesignModelSidebarArray = require('./contents/sidebar/javaDesignModel.js');
 // javaSE基础
 const javaSEBaseSidebarArray = require('./contents/sidebar/javaSEBase.js');
+const javaSpringCloudGatewaySidebarArray = require('./contents/sidebar/javaSpringCloudGateway.js');
+// java工具
+const javaToolSidebarArray = require('./contents/sidebar/javaTool.js');
 // 设计思想
 const designPhilosophySidebarArray = require('./contents/sidebar/designPhilosophy.js');
 const dbSidebarArray = require('./contents/sidebar/db.js');
@@ -310,42 +313,12 @@ module.exports = {
             // 表示：点击导航栏后，侧边栏显示的标题有：java
             '/java/javaSEBase/': javaSEBaseSidebarArray,
             //---------------------------表示springcloudgateway侧边栏目录
-            '/java/springcloudgateway/': [
-
-
-                {
-                    title: 'springCloud-Gateway',
-                    collapsable: false,
-                    children: ['/java/springcloudgateway/01gateway']
-
-                },
-
-
-            ],
-
+            '/java/springcloudgateway/': javaSpringCloudGatewaySidebarArray,
             // ===================== 点击设计模式 ===========
             //encodeURI('/electron/设置透明窗口时的兼容性问题')
             '/java/designModel/': javaDesignModelSidebarArray,
             // ===================== 点击设 java 工具 ===========
-            '/java/java工具/': [
-                {
-                    title: 'java常用工具库',
-                    collapsable: false,
-                    children: [
-                        encodeURI('/java/java工具/xpath解析doc'),
-                        encodeURI('/java/java工具/01发布一个jar到中央仓库'),
-                        encodeURI('/java/java工具/02阿里云短信服务'),
-                        encodeURI('/java/java工具/03阿里云短信'),
-                        encodeURI('/java/java工具/04阿里云oss'),
-                        encodeURI('/java/java工具/05IDEA常用工具'),
-                        encodeURI('/java/java工具/06mybatis代码生成器'),
-                        encodeURI('/java/java工具/07java实例json格式化'),
-                        encodeURI('/java/java工具/08java项目打包exe文件'),
-                    ]
-
-                },
-
-            ],
+            '/java/javaTool/': javaToolSidebarArray,
 
             // =====================在 top栏上 点击==》 java基础服务 ===========
             '/java/java基础服务/': [
@@ -422,11 +395,12 @@ module.exports = {
                     title: 'javascript基础概念',
                     collapsable: false,
                     children: [
-                        encodeURI('/lyp/javascript/01什么是事件'),
+                        encodeURI('/lyp/javascript/demo01_20250331_01'),
                         encodeURI('/lyp/javascript/demo01_20250430_01'),
                         encodeURI('/lyp/javascript/demo01_20250430_02'),
                         encodeURI('/lyp/javascript/demo02_2025_11_10_01'),
                         encodeURI('/lyp/javascript/demo02_2025_11_11_01'),
+                        encodeURI('/lyp/javascript/demo03_2025_12_11_02'),
 
                     ]
 
