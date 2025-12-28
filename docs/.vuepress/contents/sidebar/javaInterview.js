@@ -71,6 +71,14 @@ module.exports = [
 
     },
     {
+        title: 'spring注解方面',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/spring_annotation/demo01_2025_12_12_01'),
+        ]
+
+    },
+    {
         title: 'springboot面试题',
         collapsable: false,
         children: [

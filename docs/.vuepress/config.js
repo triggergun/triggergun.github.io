@@ -11,6 +11,7 @@ const dbArray = require('./contents/nav/db.js');
 const tan_jia_gouArray = require('./contents/nav/tan_jia_gou.js');
 const tan_qian_duanArray = require('./contents/nav/tan_qian_duan.js');
 const rfcArray = require('./contents/nav/rfc.js');
+const embeddedArray = require('./contents/nav/embedded.js');
 
 // 侧边栏
 const operationsSidebarArray = require('./contents/sidebar/operations.js');
@@ -268,8 +269,13 @@ module.exports = {
                 text: 'rfc',
                 // 子选项
                 items: rfcArray,
-            }
+            },
             //  ============  谈rfc top 谈数据库 选项 14   end  ============================================
+            {
+                text: '嵌入式与芯片',
+                // 子选项
+                items: embeddedArray,
+            }
         ],
 
         //========================================top导航栏 数组 ]  end============================================
