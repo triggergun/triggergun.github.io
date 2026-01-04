@@ -49,6 +49,8 @@ module.exports = [
         children: [
             '/git/demo01_gitee_2025121201',
             '/git/demo01_gitee_2025121202',
+            '/git/demo01_gitee_2025121203',
+            '/git/demo01_gitee_2025121204',
         ],
 
     },
