@@ -19,9 +19,9 @@ module.exports = [
     {
         text: 'c之路',
         items: [
-            {text: "c语言必知必会", link: encodeURI('/lyp/c语言/安装devc++')},
-            {text: "宏(macro)", link: encodeURI('/lyp/c语言/macro/demo01_2025_12_01_01')},
-            {text: "预处理指令", link: encodeURI('/lyp/c语言/preprocessing/demo01_2025_12_01_01')},
+            {text: "c语言必知必会", link: encodeURI('/lyp/c/安装devc++')},
+            {text: "宏(macro)", link: encodeURI('/lyp/c/macro/demo01_2025_12_01_01')},
+            {text: "预处理指令", link: encodeURI('/lyp/c/preprocessing/demo01_2025_12_01_01')},
 
         ],
     },
