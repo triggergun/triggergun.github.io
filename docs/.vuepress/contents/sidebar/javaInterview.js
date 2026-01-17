@@ -117,6 +117,15 @@ module.exports = [
 
     },
     {
+        title: '算法与数据结构面试参考',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/algorithm/demo01_2025_12_12_01'),
+
+        ]
+
+    },
+    {
         title: '自省发散思考',
         collapsable: false,
         children: [
