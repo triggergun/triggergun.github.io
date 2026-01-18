@@ -41,7 +41,7 @@ module.exports = [
         title: 'jwt',
         collapsable: false,
         children: [
-            encodeURI('/network/jwt/01什么是jwt.md'),
+            encodeURI('/network/jwt/demo01_2025_12_12_01.md'),
         ]
     },
     // nmap实战
