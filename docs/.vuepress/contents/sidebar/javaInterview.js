@@ -121,6 +121,7 @@ module.exports = [
         collapsable: false,
         children: [
             encodeURI('/java/interview/algorithm/demo01_2025_12_12_01'),
+            encodeURI('/java/interview/algorithm/demo01_2025_12_12_02'),
 
         ]
 
