@@ -46,5 +46,12 @@ module.exports = [
         items: [
             {text: "运维问题排错", link: '/operation/problem/demo01_2025_11_11_01'},
         ]
+    },
+    {
+        // 网络面试试题
+        text: '网络面试题',
+        items: [
+            {text: "网络物理设备面试题", link: '/network/interview/demo01_2025_11_11_01'},
+        ]
     }
 ];

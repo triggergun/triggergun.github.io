@@ -899,6 +899,32 @@ module.exports = {
                     children: [
                         encodeURI('/front_end/nuxt_basic/demo01_2025_10_22_01'),
                     ]
+                },
+                {
+                    title: 'react官方文档',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/react_basic/demo01_2025_10_22_01'),
+                    ]
+                },
+                {
+                    title: '通往React之路',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_01'),
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_02'),
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_03'),
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_04'),
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_05'),
+                        encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_06'),
+                    ]
+                },
+                {
+                    title: '前端相关的问题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/front_end/front_end_issue /demo01_2025_10_22_01'),
+                    ]
                 }
             ],
             //  谈前端  ================================  end  ==========

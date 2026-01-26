@@ -35,5 +35,18 @@ module.exports = [
                 link: encodeURI('/front_end/nuxt_basic/demo01_2025_10_22_01')
             },
         ],
+    },
+    {
+        text: 'react派',
+        items: [
+            {
+                text: "react2025年基础入门",
+                link: encodeURI('/front_end/react_base_book_01/demo01_2025_12_12_01')
+            },
+            {
+                text: "react官方文档",
+                link: encodeURI('/front_end/react_basic/demo01_2025_12_12_01')
+            },
+        ],
     }
 ];

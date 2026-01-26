@@ -67,4 +67,11 @@ module.exports = [
             encodeURI('/network/msf/demo01_2025_11_11_01'),
         ]
     },
+    {
+        title: '网络方面的面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/network/interview/demo01_2025_11_11_01'),
+        ]
+    },
 ];
