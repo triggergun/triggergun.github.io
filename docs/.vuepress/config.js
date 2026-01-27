@@ -904,7 +904,7 @@ module.exports = {
                     title: 'react官方文档',
                     collapsable: false,
                     children: [
-                        encodeURI('/front_end/react_basic/demo01_2025_10_22_01'),
+                        encodeURI('/front_end/react_basic/demo01_2025_12_12_01'),
                     ]
                 },
                 {
@@ -923,7 +923,7 @@ module.exports = {
                     title: '前端相关的问题',
                     collapsable: false,
                     children: [
-                        encodeURI('/front_end/front_end_issue /demo01_2025_10_22_01'),
+                        encodeURI('/front_end/front_end_issue/demo01_2025_10_22_01'),
                     ]
                 }
             ],
