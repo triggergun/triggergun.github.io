@@ -4,6 +4,7 @@ module.exports = [
         collapsable: false,
         children: [
             encodeURI('/resource/软件资源'),
+            encodeURI('/resource/demo01_2026_02_11_01'),
             encodeURI('/resource/English_syntax'),
             encodeURI('/resource/02英语的时态'),
             encodeURI('/resource/03英语的发音规则'),
