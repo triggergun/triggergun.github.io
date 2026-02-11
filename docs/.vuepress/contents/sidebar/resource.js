@@ -14,6 +14,14 @@ module.exports = [
         ],
 
     },
+    // 人生
+    {
+        title: '看尽人生百态',
+        collapsable: false,
+        children: [encodeURI('/resource/demo01_2026_02_11_01'),
+        ],
+
+    },
     // 英语 单词集
     {
         title: '看单词讲故事',
