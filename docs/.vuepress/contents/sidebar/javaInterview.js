@@ -112,6 +112,7 @@ module.exports = [
         collapsable: false,
         children: [
             encodeURI('/java/interview/db_design/demo01_2025_12_14_01'),
+            encodeURI('/java/interview/db_design/demo01_2025_12_14_02'),
 
         ]
 
