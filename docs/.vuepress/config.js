@@ -30,6 +30,7 @@ const javaGradleSidebarArray = require('./contents/sidebar/javaGradle.js');
 const javaMavenSidebarArray = require('./contents/sidebar/javaMaven.js');
 // java面试
 const javaInterviewSidebarArray = require('./contents/sidebar/javaInterview.js');
+const javaSystemDesignSidebarArray = require('./contents/sidebar/javaSystemDesign.js');
 // java设计模式
 const javaDesignModelSidebarArray = require('./contents/sidebar/javaDesignModel.js');
 // javaSE基础
@@ -407,6 +408,8 @@ module.exports = {
             // ===================== 侧边栏 配置  点击设 maven  end ===========
             // java面试
             '/java/interview/': javaInterviewSidebarArray,
+            // java的系统设计哲学
+            '/java/system_design/': javaSystemDesignSidebarArray,
             // 设计思想
             '/java/designPhilosophy/': designPhilosophySidebarArray,
             // ===================== lyp    点击设 javascript的  基础概念 ===========
