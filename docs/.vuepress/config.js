@@ -12,6 +12,7 @@ const tan_jia_gouArray = require('./contents/nav/tan_jia_gou.js');
 const tan_qian_duanArray = require('./contents/nav/tan_qian_duan.js');
 const rfcArray = require('./contents/nav/rfc.js');
 const embeddedArray = require('./contents/nav/embedded.js');
+const aiArray = require('./contents/nav/ai.js');
 
 // 侧边栏
 const operationsSidebarArray = require('./contents/sidebar/operations.js');
@@ -200,6 +201,11 @@ module.exports = {
                 items: mei_gongArray,
             },
             //  ============   top 的 选项 8   end ============================================
+            {
+                text: 'ai&智能',
+                // 子选项
+                items: aiArray,
+            },
             //   ============   top 的 选项 9   ============================================
             {
                 text: '科学',
@@ -951,6 +957,19 @@ module.exports = {
                 }
             ],
             //  esp8266 end
+
+            //  openClaw start
+            '/ai/openClaw/': [
+                {
+                    title: 'openClaw',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/ai/openClaw/demo01_2026_03_07_01'),
+                    ]
+                }
+            ],
+            //  openClaw end
+
             // ======  外层的括号  ==========
         },
         // ======  外层的括号  ==========
