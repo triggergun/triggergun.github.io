@@ -601,14 +601,23 @@ module.exports = {
 
             //================= top上 有按钮  大数据的  start ===========================
 
-            '/lyp/大数据/hadoop基本概念': [
+            '/lyp/bigdata/hadoop': [
+                {
+                    title: 'hadoop历史',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_history/demo01_2026_03_06_01'),
+
+                    ]
+
+                },
                 {
                     title: '阶段一',
                     collapsable: false,
                     children: [
-                        encodeURI('/lyp/大数据/hadoop基本概念/阶段一/01MapReduce是什么'),
-                        encodeURI('/lyp/大数据/hadoop基本概念/阶段一/02WorldCount案例'),
-                        encodeURI('/lyp/大数据/hadoop基本概念/阶段一/hadoop集群搭建'),
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_base01/01MapReduce是什么'),
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_base01/02WorldCount案例'),
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_base01/hadoop集群搭建'),
 
                     ]
 
@@ -617,13 +626,14 @@ module.exports = {
                     title: 'hadoop官方',
                     collapsable: false,
                     children: [
-                        encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/01hadoop首页'),
-                        encodeURI('/lyp/大数据/hadoop基本概念/hadoop官网资料/02最新消息'),
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_resource/01hadoop首页'),
+                        encodeURI('/lyp/bigdata/hadoop/hadoop_resource/02最新消息'),
                     ]
 
                 },
 
             ],
+
             //================= top上 有按钮  大数据的  end ===========================
 
 
@@ -641,37 +651,37 @@ module.exports = {
             //================= top上 有按钮  go  end ===========================
 
 
-            '/lyp/大数据/02spark': [
+            '/lyp/bigdata/02spark': [
                 {
                     title: 'spark集',
                     collapsable: false,
                     children: [
-                        encodeURI('/lyp/大数据/02spark/01Spark集群安装与部署'),
-                        encodeURI('/lyp/大数据/02spark/02SparkHA集群部署'),
-                        encodeURI('/lyp/大数据/02spark/03体验第一个Spark程序'),
+                        encodeURI('/lyp/bigdata/02spark/01Spark集群安装与部署'),
+                        encodeURI('/lyp/bigdata/02spark/02SparkHA集群部署'),
+                        encodeURI('/lyp/bigdata/02spark/03体验第一个Spark程序'),
                     ]
 
                 },
 
             ],
-            '/lyp/大数据/scala语言基础': lypBigDataScalaBaseSidebarArray,
-            '/lyp/大数据/kafka': [
+            '/lyp/bigdata/scala语言基础': lypBigDataScalaBaseSidebarArray,
+            '/lyp/bigdata/kafka': [
                 {
                     title: 'kafka集',
                     collapsable: false,
-                    children: [encodeURI('/lyp/大数据/kafka/01Kafka集群部署与测试'),
+                    children: [encodeURI('/lyp/bigdata/kafka/01Kafka集群部署与测试'),
                     ]
                 },
             ],
-            '/lyp/大数据/zookeeper': [
+            '/lyp/bigdata/zookeeper': [
                 {
                     title: 'zookeeper集',
                     collapsable: false,
-                    children: [encodeURI('/lyp/大数据/zookeeper/01Zookeeper分布式集群部署'),
+                    children: [encodeURI('/lyp/bigdata/zookeeper/01Zookeeper分布式集群部署'),
                     ]
                 },
             ],
-            '/lyp/大数据/flume/base01': lypBigDataFlumeBase01SidebarArray,
+            '/lyp/bigdata/flume/base01': lypBigDataFlumeBase01SidebarArray,
             //***************************   top上 有按钮  大数据  end *****************************************
 
             // 数据库的侧边栏  start  =========
