@@ -7,7 +7,9 @@ module.exports = [
         children: [
             '/operation/windows/cmd',
             "/operation/windows/cmd01",
-            "/operation/windows/cmd02"
+            "/operation/windows/cmd02",
+            "/operation/windows/cmd03",
+            "/operation/windows/cmd04",
         ],
 
     },
