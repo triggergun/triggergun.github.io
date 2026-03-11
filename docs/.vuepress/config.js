@@ -829,6 +829,18 @@ module.exports = {
                     ]
                 },
             ],
+
+            '/framework/system_philosophy/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '操作系统沉思的问题',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/system_philosophy/demo01_2026_03_01_01'),
+                    ]
+                },
+            ],
             // 书籍阅读观后感 end
 
             // 物联网 iot start

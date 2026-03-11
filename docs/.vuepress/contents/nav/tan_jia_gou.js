@@ -47,6 +47,10 @@ module.exports = [
                 text: "操作系统概念",
                 link: encodeURI('/framework/system_book02/init_2025_12_15_01')
             },
+            {
+                text: "操作系统哲学",
+                link: encodeURI('/framework/system_philosophy/demo01_2026_03_01_01')
+            },
         ],
     },
     {
