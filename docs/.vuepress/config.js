@@ -849,6 +849,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/framework/system_learn01/learn01_2026_03_12_01'),
+                        encodeURI('/framework/system_learn01/learn01_2026_03_12_02'),
                     ]
                 },
             ],
