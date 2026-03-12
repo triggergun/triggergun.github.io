@@ -51,6 +51,10 @@ module.exports = [
                 text: "操作系统哲学",
                 link: encodeURI('/framework/system_philosophy/demo01_2026_03_01_01')
             },
+            {
+                text: "操作系统101实验",
+                link: encodeURI('/framework/system_learn01/learn01_2026_03_12_01')
+            },
         ],
     },
     {

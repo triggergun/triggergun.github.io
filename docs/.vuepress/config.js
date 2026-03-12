@@ -841,6 +841,17 @@ module.exports = {
                     ]
                 },
             ],
+            '/framework/system_learn01/': [
+                // /framework/cloud/ 是父亲目录。
+                // cloud 下面都是文件。
+                {
+                    title: '操作系统101实验',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/framework/system_learn01/learn01_2026_03_12_01'),
+                    ]
+                },
+            ],
 
             // 书籍阅读观后感 end
 
