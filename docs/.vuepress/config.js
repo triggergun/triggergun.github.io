@@ -1003,6 +1003,16 @@ module.exports = {
                     ]
                 }
             ],
+            '/ai/openclaw_problem/': [
+                {
+                    title: 'openClaw',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/ai/openclaw_problem/demo01_2026_03_19_01'),
+                    ]
+                }
+            ],
+
             //  openClaw end
 
             // ======  外层的括号  ==========
