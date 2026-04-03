@@ -1009,6 +1009,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/ai/openclaw_problem/demo01_2026_03_19_01'),
+                        encodeURI('/ai/openclaw_problem/demo01_2026_04_03_01'),
                     ]
                 }
             ],
