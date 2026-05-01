@@ -46,7 +46,7 @@ module.exports = [
         items: [
             {text: "java面试", link: '/java/interview/java/javaDemo01_2025_11_11_01'},
             {text: "系统设计哲学题", link: '/java/system_design/api/demo01_2026_02_16_01'},
-
+            {text: "系统登入哲学题", link: '/java/system_design/login/demo01_2026_04_01_01'},
         ]
     },
     {
