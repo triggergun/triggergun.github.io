@@ -44,5 +44,12 @@ module.exports = [
 
         ],
     },
+    {
+        text: 'flink',
+        items: [
+            {text: "flink", link: encodeURI('/lyp/bigdata/flink/base01/demo01_20260513_01')},
+
+        ],
+    },
 
 ];

@@ -689,6 +689,14 @@ module.exports = {
                     ]
                 },
             ],
+            '/lyp/bigdata/flink/base01/': [
+                {
+                    title: 'flink基础面试题',
+                    collapsable: false,
+                    children: [encodeURI('/lyp/bigdata/flink/base01/demo01_20260513_01'),
+                    ]
+                },
+            ],
             '/lyp/bigdata/flume/base01': lypBigDataFlumeBase01SidebarArray,
             //***************************   top上 有按钮  大数据  end *****************************************
 
