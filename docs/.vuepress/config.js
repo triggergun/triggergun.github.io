@@ -693,7 +693,9 @@ module.exports = {
                 {
                     title: 'flink基础面试题',
                     collapsable: false,
-                    children: [encodeURI('/lyp/bigdata/flink/base01/demo01_20260513_01'),
+                    children: [
+                        encodeURI('/lyp/bigdata/flink/base01/demo01_20260513_01'),
+                        encodeURI('/lyp/bigdata/flink/base01/demo01_20260513_02'),
                     ]
                 },
             ],
