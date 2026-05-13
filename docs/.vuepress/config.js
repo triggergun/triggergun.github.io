@@ -672,6 +672,14 @@ module.exports = {
                     children: [encodeURI('/lyp/bigdata/kafka/01Kafka集群部署与测试'),
                     ]
                 },
+                {
+                    title: 'kafka应用场景',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/lyp/bigdata/kafka/demo02_20260513_01'),
+                        encodeURI('/lyp/bigdata/kafka/demo02_20260513_02'),
+                    ]
+                },
             ],
             '/lyp/bigdata/zookeeper': [
                 {

@@ -33,6 +33,7 @@ module.exports = [
         text: 'kafka',
         items: [
             {text: "kafka集群", link: encodeURI('/lyp/bigdata/kafka/01Kafka集群部署与测试')},
+            {text: "kafka应用场景", link: encodeURI('/lyp/bigdata/kafka/demo02_20260513_01')},
 
         ],
     },
