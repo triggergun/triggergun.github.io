@@ -71,6 +71,15 @@ module.exports = [
 
     },
     {
+        title: 'java JVM 高级面试篇',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/javaJvm/javaJvm_20260516_01'),
+
+        ]
+
+    },
+    {
         title: 'springAop面试题',
         collapsable: false,
         children: [
