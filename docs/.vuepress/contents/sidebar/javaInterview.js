@@ -180,5 +180,14 @@ module.exports = [
         ]
 
     },
+    {
+        title: 'kafka解决方案面试题',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/kafka/kafka_20260516_01'),
+
+        ]
+
+    },
 
 ];
