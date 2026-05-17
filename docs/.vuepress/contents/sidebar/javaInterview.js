@@ -185,6 +185,7 @@ module.exports = [
         collapsable: false,
         children: [
             encodeURI('/java/interview/kafka/kafka_20260516_01'),
+            encodeURI('/java/interview/kafka/kafka_20260517_01'),
 
         ]
 
