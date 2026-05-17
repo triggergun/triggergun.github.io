@@ -15,6 +15,14 @@ module.exports = [
             encodeURI('/java/system_design/login/demo01_2026_04_01_01'),
         ]
 
+    },
+    {
+        title: '系统架构解决方案',
+        collapsable: false,
+        children: [
+            encodeURI('/java/system_design/architecture/architecture_20260517_01'),
+        ]
+
     }
 
 ];
