@@ -644,6 +644,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/lyp/go/demo01_2025_03_22_01'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_02'),
                     ]
                 },
 
