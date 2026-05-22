@@ -645,6 +645,11 @@ module.exports = {
                     children: [
                         encodeURI('/lyp/go/demo01_2025_03_22_01'),
                         encodeURI('/lyp/go/demo01_2025_03_22_02'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_03'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_04'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_05'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_06'),
+                        encodeURI('/lyp/go/demo01_2025_03_22_07'),
                     ]
                 },
 
