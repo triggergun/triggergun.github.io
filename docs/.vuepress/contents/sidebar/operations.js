@@ -121,7 +121,9 @@ module.exports = [
         title: 'nginx运维总结',
         collapsable: false,
         children: [
-            '/operation/nginx_base/demo01_2025_11_12_01',],
+            '/operation/nginx_base/demo01_2025_11_12_01',
+            '/operation/nginx_base/demo01_2025_11_12_02',
+        ],
 
     },
     {
