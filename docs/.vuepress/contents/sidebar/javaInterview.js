@@ -101,6 +101,7 @@ module.exports = [
         collapsable: false,
         children: [
             encodeURI('/java/interview/springboot/springbootDemo01_2025_11_11_01'),
+            encodeURI('/java/interview/springboot/springbootDemo02_2025_11_11_02'),
 
         ]
 
