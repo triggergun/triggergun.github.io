@@ -437,7 +437,12 @@ module.exports = {
                 {
                     title: '前端FAQ',
                     collapsable: false,
-                    children: [encodeURI('/lyp/javascript/faq_demo01_2025_04_04_01')]
+                    children: [
+                        encodeURI('/lyp/javascript/faq_demo01_2025_04_04_01'),
+                        encodeURI('/lyp/javascript/faq_demo01_2025_04_04_02'),
+                        encodeURI('/lyp/javascript/faq_demo01_2025_04_04_03'),
+                        encodeURI('/lyp/javascript/faq_demo01_2025_04_04_04'),
+                    ]
 
                 },
 
