@@ -194,5 +194,18 @@ module.exports = [
         ]
 
     },
+    {
+        title: 'webflux',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/webflux/webflux_20260101_01'),
+            encodeURI('/java/interview/webflux/webflux_20260101_02'),
+            encodeURI('/java/interview/webflux/webflux_20260101_03'),
+            encodeURI('/java/interview/webflux/webflux_20260101_04'),
+            encodeURI('/java/interview/webflux/webflux_20260101_05'),
+
+        ]
+
+    },
 
 ];
