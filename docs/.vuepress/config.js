@@ -228,6 +228,15 @@ module.exports = {
                                 link: encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_01')
                             },
                         ],
+                    },
+                    {
+                        text: '神经网络',
+                        items: [
+                            {
+                                text: "神经网络",
+                                link: encodeURI('/basicScience/neural_network/demo01_2025_03_01')
+                            },
+                        ],
                     }
                 ]
             },
@@ -322,6 +331,17 @@ module.exports = {
                 },
             ],
             // 物理的侧边栏设置    end   ===============
+            //     start   ===============
+            '/basicScience/neural_network/': [
+                {
+                    title: '神经网络编程',
+                    collapsable: false,
+                    children: [
+                        encodeURI('/basicScience/neural_network/demo01_2025_03_01'),
+                    ],
+                },
+            ],
+            //     end   ===============
             // ==================================   首页      软件资源    ====================
             '/resource/':resourceSidebarArray,
 
