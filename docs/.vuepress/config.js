@@ -233,7 +233,7 @@ module.exports = {
                         text: '神经网络',
                         items: [
                             {
-                                text: "神经网络",
+                                text: "神经网络编程",
                                 link: encodeURI('/basicScience/neural_network/demo01_2025_03_01')
                             },
                         ],
@@ -338,6 +338,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/basicScience/neural_network/demo01_2025_03_01'),
+                        encodeURI('/basicScience/neural_network/demo01_2025_03_02'),
                     ],
                 },
             ],
