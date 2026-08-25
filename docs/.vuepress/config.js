@@ -317,6 +317,7 @@ module.exports = {
                         encodeURI('/basicScience/basicMath/02中等数学思想/球体体积公式推过程'),
                         encodeURI('/basicScience/basicMath/02中等数学思想/微积分的启蒙'),
                         encodeURI('/basicScience/basicMath/02中等数学思想/02什么是微积分'),
+                        encodeURI('/basicScience/basicMath/02中等数学思想/demo01_2026_08_25_01.md'),
                     ],
                 },
             ],
