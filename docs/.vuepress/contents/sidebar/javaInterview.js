@@ -119,6 +119,14 @@ module.exports = [
 
     },
     {
+        title: 'redis面试题【初级】',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/redis/redisDemo01_2025_11_11_01'),
+        ]
+
+    },
+    {
         title: 'redis缓存面试题【初级】',
         collapsable: false,
         children: [
