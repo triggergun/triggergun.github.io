@@ -328,6 +328,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_01'),
+                        encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_02'),
                     ],
                 },
             ],
