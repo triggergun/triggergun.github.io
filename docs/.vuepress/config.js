@@ -227,6 +227,10 @@ module.exports = {
                                 text: "中等电学思想",
                                 link: encodeURI('/basicScience/physical_base/middle_school_stage/demo01_2025_03_01')
                             },
+                            {
+                                text: "中等电学思想",
+                                link: encodeURI('/basicScience/physical_base/middle_school_stage/demo02_2025_03_02')
+                            },
                         ],
                     },
                     {
