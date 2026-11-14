@@ -215,5 +215,14 @@ module.exports = [
         ]
 
     },
+    {
+        title: 'byd面试java开发',
+        collapsable: false,
+        children: [
+            encodeURI('/java/interview/byd/demo14_2026_10_01'),
+
+        ]
+
+    },
 
 ];
