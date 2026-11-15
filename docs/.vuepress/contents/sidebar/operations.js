@@ -54,7 +54,6 @@ module.exports = [
             '/operation/centos/demo16_2025_03_01',
             '/operation/centos/demo17_2025_03_01',
             '/operation/centos/demo18_2025_03_01',
-            '/operation/centos/demo18_2025_03_01',
             '/operation/centos/demo19_2025_03_30',
         ],
     },
