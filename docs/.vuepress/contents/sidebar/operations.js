@@ -68,6 +68,13 @@ module.exports = [
         ],
     },
     {
+        title: '本地个人运维ci_cd',
+        collapsable: false,
+        children: [
+            '/operation/centos/demo23_2026_10_01',
+        ],
+    },
+    {
         title: 'centos常用命令',
         collapsable: false,
         children: [
