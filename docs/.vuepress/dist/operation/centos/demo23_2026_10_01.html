@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>适合个人的ci/cd解决方案 | 匆匆趣玩</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6542685716937885" crossorigin="anonymous"></script>
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="分享各类资源、教程、黑科技软件、工具等等">
+    <meta http_equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="baidu-site-verification" content="codeva-7KiW1mSNFG">
+    <meta name="google-adsense-account" content="ca-pub-6542685716937885">
+    
+    <link rel="preload" href="/assets/css/0.styles.3520924c.css" as="style"><link rel="preload" href="/assets/js/app.7d8e2212.js" as="script"><link rel="preload" href="/assets/js/2.4a265c40.js" as="script"><link rel="preload" href="/assets/js/1.74e54e03.js" as="script"><link rel="preload" href="/assets/js/235.50f59116.js" as="script"><link rel="prefetch" href="/assets/js/10.8f64e3be.js"><link rel="prefetch" href="/assets/js/100.2de10d9e.js"><link rel="prefetch" href="/assets/js/101.5a85032d.js"><link rel="prefetch" href="/assets/js/102.a3945c0a.js"><link rel="prefetch" href="/assets/js/103.b045fb84.js"><link rel="prefetch" href="/assets/js/104.37403997.js"><link rel="prefetch" href="/assets/js/105.0e22e651.js"><link rel="prefetch" href="/assets/js/106.5f8cc5e4.js"><link rel="prefetch" href="/assets/js/107.9c4c1b92.js"><link rel="prefetch" href="/assets/js/108.ef72fef7.js"><link rel="prefetch" href="/assets/js/109.0a559de7.js"><link rel="prefetch" href="/assets/js/11.228d3a4c.js"><link rel="prefetch" href="/assets/js/110.824d44f3.js"><link rel="prefetch" href="/assets/js/111.fea1dc55.js"><link rel="prefetch" href="/assets/js/112.548607ab.js"><link rel="prefetch" href="/assets/js/113.cb483145.js"><link rel="prefetch" href="/assets/js/114.90407659.js"><link rel="prefetch" href="/assets/js/115.d2930463.js"><link rel="prefetch" href="/assets/js/116.6f59a2b3.js"><link rel="prefetch" href="/assets/js/117.1df0983f.js"><link rel="prefetch" href="/assets/js/118.2ea537c6.js"><link rel="prefetch" href="/assets/js/119.84c17ddf.js"><link rel="prefetch" href="/assets/js/12.edaff592.js"><link rel="prefetch" href="/assets/js/120.36fa22a5.js"><link rel="prefetch" href="/assets/js/121.1059a6ef.js"><link rel="prefetch" href="/assets/js/122.90ae3b0f.js"><link rel="prefetch" href="/assets/js/123.6b19b71f.js"><link rel="prefetch" href="/assets/js/124.798d0317.js"><link rel="prefetch" href="/assets/js/125.9afe4b4f.js"><link rel="prefetch" href="/assets/js/126.93d10286.js"><link rel="prefetch" href="/assets/js/127.783fe083.js"><link rel="prefetch" href="/assets/js/128.625a5c69.js"><link rel="prefetch" href="/assets/js/129.84171307.js"><link rel="prefetch" href="/assets/js/13.6bc24119.js"><link rel="prefetch" href="/assets/js/130.7678b3b1.js"><link rel="prefetch" href="/assets/js/131.86f70ff1.js"><link rel="prefetch" href="/assets/js/132.a5e928a1.js"><link rel="prefetch" href="/assets/js/133.f6ad80d9.js"><link rel="prefetch" href="/assets/js/134.b16ceb40.js"><link rel="prefetch" href="/assets/js/135.db9e6b7a.js"><link rel="prefetch" href="/assets/js/136.a3a2aefc.js"><link rel="prefetch" href="/assets/js/137.6a8a6038.js"><link rel="prefetch" href="/assets/js/138.015405eb.js"><link rel="prefetch" href="/assets/js/139.e277320f.js"><link rel="prefetch" href="/assets/js/14.f4f56f9a.js"><link rel="prefetch" href="/assets/js/140.2d8b0523.js"><link rel="prefetch" href="/assets/js/141.ab4cb9b0.js"><link rel="prefetch" href="/assets/js/142.56d2b98d.js"><link rel="prefetch" href="/assets/js/143.a321348f.js"><link rel="prefetch" href="/assets/js/144.a120e8dc.js"><link rel="prefetch" href="/assets/js/145.bd3cbfa9.js"><link rel="prefetch" href="/assets/js/146.e0ef7a69.js"><link rel="prefetch" href="/assets/js/147.174e5404.js"><link rel="prefetch" href="/assets/js/148.8785388b.js"><link rel="prefetch" href="/assets/js/149.039b8c71.js"><link rel="prefetch" href="/assets/js/15.94808b3b.js"><link rel="prefetch" href="/assets/js/150.94cb098e.js"><link rel="prefetch" href="/assets/js/151.778fa914.js"><link rel="prefetch" href="/assets/js/152.27967a53.js"><link rel="prefetch" href="/assets/js/153.10154a29.js"><link rel="prefetch" href="/assets/js/154.b0106a05.js"><link rel="prefetch" href="/assets/js/155.b6ca9e3a.js"><link rel="prefetch" href="/assets/js/156.f1577332.js"><link rel="prefetch" href="/assets/js/157.6c846470.js"><link rel="prefetch" href="/assets/js/158.4128d8e8.js"><link rel="prefetch" href="/assets/js/159.a7f51853.js"><link rel="prefetch" href="/assets/js/16.58940dde.js"><link rel="prefetch" href="/assets/js/160.372c55c9.js"><link rel="prefetch" href="/assets/js/161.cdc894a8.js"><link rel="prefetch" href="/assets/js/162.72bfd305.js"><link rel="prefetch" href="/assets/js/163.aca94c04.js"><link rel="prefetch" href="/assets/js/164.6d02bad4.js"><link rel="prefetch" href="/assets/js/165.b0fac23d.js"><link rel="prefetch" href="/assets/js/166.e081b946.js"><link rel="prefetch" href="/assets/js/167.76b25144.js"><link rel="prefetch" href="/assets/js/168.41d2e8b2.js"><link rel="prefetch" href="/assets/js/169.e6303429.js"><link rel="prefetch" href="/assets/js/17.599396c3.js"><link rel="prefetch" href="/assets/js/170.ef95da37.js"><link rel="prefetch" href="/assets/js/171.feb3e4a7.js"><link rel="prefetch" href="/assets/js/172.fb7a8107.js"><link rel="prefetch" href="/assets/js/173.db22098e.js"><link rel="prefetch" href="/assets/js/174.e18825e2.js"><link rel="prefetch" href="/assets/js/175.11e0ad05.js"><link rel="prefetch" href="/assets/js/176.c18185ad.js"><link rel="prefetch" href="/assets/js/177.ad876faf.js"><link rel="prefetch" href="/assets/js/178.9bb44d08.js"><link rel="prefetch" href="/assets/js/179.2cc6041f.js"><link rel="prefetch" href="/assets/js/18.e553d462.js"><link rel="prefetch" href="/assets/js/180.f772b353.js"><link rel="prefetch" href="/assets/js/181.9811ad65.js"><link rel="prefetch" href="/assets/js/182.97506bf2.js"><link rel="prefetch" href="/assets/js/183.5b3fd3d7.js"><link rel="prefetch" href="/assets/js/184.0f282f69.js"><link rel="prefetch" href="/assets/js/185.01f99172.js"><link rel="prefetch" href="/assets/js/186.b4aa293a.js"><link rel="prefetch" href="/assets/js/187.fc2bbde5.js"><link rel="prefetch" href="/assets/js/188.d5e0385c.js"><link rel="prefetch" href="/assets/js/189.f78d021f.js"><link rel="prefetch" href="/assets/js/19.574ce16e.js"><link rel="prefetch" href="/assets/js/190.b3967d30.js"><link rel="prefetch" href="/assets/js/191.7a0feefe.js"><link rel="prefetch" href="/assets/js/192.760bf6c6.js"><link rel="prefetch" href="/assets/js/193.c3a9127e.js"><link rel="prefetch" href="/assets/js/194.c03149b1.js"><link rel="prefetch" href="/assets/js/195.81674f65.js"><link rel="prefetch" href="/assets/js/196.174dd45f.js"><link rel="prefetch" href="/assets/js/197.5e1a8e7e.js"><link rel="prefetch" href="/assets/js/198.7a23ba56.js"><link rel="prefetch" href="/assets/js/199.9a0f15a6.js"><link rel="prefetch" href="/assets/js/20.682c2855.js"><link rel="prefetch" href="/assets/js/200.06cb6c10.js"><link rel="prefetch" href="/assets/js/201.21248ff6.js"><link rel="prefetch" href="/assets/js/202.35742a6f.js"><link rel="prefetch" href="/assets/js/203.20c5051d.js"><link rel="prefetch" href="/assets/js/204.b8a4ab66.js"><link rel="prefetch" href="/assets/js/205.a2e8ab1d.js"><link rel="prefetch" href="/assets/js/206.5c3a52fb.js"><link rel="prefetch" href="/assets/js/207.dbe0d60a.js"><link rel="prefetch" href="/assets/js/208.a0d9a931.js"><link rel="prefetch" href="/assets/js/209.f63d551d.js"><link rel="prefetch" href="/assets/js/21.9533a854.js"><link rel="prefetch" href="/assets/js/210.6f86d08c.js"><link rel="prefetch" href="/assets/js/211.0a4167e6.js"><link rel="prefetch" href="/assets/js/212.e2cf95ce.js"><link rel="prefetch" href="/assets/js/213.4bf73050.js"><link rel="prefetch" href="/assets/js/214.3442739e.js"><link rel="prefetch" href="/assets/js/215.a650ce68.js"><link rel="prefetch" href="/assets/js/216.d208d39f.js"><link rel="prefetch" href="/assets/js/217.769c16bf.js"><link rel="prefetch" href="/assets/js/218.bc7a00ac.js"><link rel="prefetch" href="/assets/js/219.917e6774.js"><link rel="prefetch" href="/assets/js/22.4b7967f3.js"><link rel="prefetch" href="/assets/js/220.3e688e17.js"><link rel="prefetch" href="/assets/js/221.6863ca8f.js"><link rel="prefetch" href="/assets/js/222.1333afae.js"><link rel="prefetch" href="/assets/js/223.b31e9202.js"><link rel="prefetch" href="/assets/js/224.c34d649c.js"><link rel="prefetch" href="/assets/js/225.1d6a5d8b.js"><link rel="prefetch" href="/assets/js/226.31445b77.js"><link rel="prefetch" href="/assets/js/227.66981661.js"><link rel="prefetch" href="/assets/js/228.3a5a326a.js"><link rel="prefetch" href="/assets/js/229.e23b8abb.js"><link rel="prefetch" href="/assets/js/23.2e6b229d.js"><link rel="prefetch" href="/assets/js/230.cf9afb16.js"><link rel="prefetch" href="/assets/js/231.906f3733.js"><link rel="prefetch" href="/assets/js/232.e64f9d58.js"><link rel="prefetch" href="/assets/js/233.490f4434.js"><link rel="prefetch" href="/assets/js/234.bfcc1389.js"><link rel="prefetch" href="/assets/js/236.fac34bbc.js"><link rel="prefetch" href="/assets/js/237.f89f2e6b.js"><link rel="prefetch" href="/assets/js/238.62b7008a.js"><link rel="prefetch" href="/assets/js/239.1e82c79f.js"><link rel="prefetch" href="/assets/js/24.a7d9c515.js"><link rel="prefetch" href="/assets/js/240.e57a10a4.js"><link rel="prefetch" href="/assets/js/241.f004ffd4.js"><link rel="prefetch" href="/assets/js/242.a3e31bc7.js"><link rel="prefetch" href="/assets/js/243.dc2c20c2.js"><link rel="prefetch" href="/assets/js/244.4ab9fb85.js"><link rel="prefetch" href="/assets/js/245.79736861.js"><link rel="prefetch" href="/assets/js/246.b4a4aa67.js"><link rel="prefetch" href="/assets/js/247.dac9ecb2.js"><link rel="prefetch" href="/assets/js/248.85ae14ed.js"><link rel="prefetch" href="/assets/js/249.e589b5c1.js"><link rel="prefetch" href="/assets/js/25.c464b077.js"><link rel="prefetch" href="/assets/js/250.16d86f30.js"><link rel="prefetch" href="/assets/js/251.40a9d63d.js"><link rel="prefetch" href="/assets/js/252.b997ab85.js"><link rel="prefetch" href="/assets/js/253.91d36e60.js"><link rel="prefetch" href="/assets/js/254.1ad55bde.js"><link rel="prefetch" href="/assets/js/255.d15edb8e.js"><link rel="prefetch" href="/assets/js/256.605795cb.js"><link rel="prefetch" href="/assets/js/257.5089348c.js"><link rel="prefetch" href="/assets/js/258.3deee90e.js"><link rel="prefetch" href="/assets/js/259.32c055a9.js"><link rel="prefetch" href="/assets/js/26.4a0f0e17.js"><link rel="prefetch" href="/assets/js/260.6dec204e.js"><link rel="prefetch" href="/assets/js/261.b04fb4eb.js"><link rel="prefetch" href="/assets/js/262.010dab2d.js"><link rel="prefetch" href="/assets/js/263.aaf06422.js"><link rel="prefetch" href="/assets/js/264.5b3b53f1.js"><link rel="prefetch" href="/assets/js/265.c841132e.js"><link rel="prefetch" href="/assets/js/266.323b13a8.js"><link rel="prefetch" href="/assets/js/267.654653dc.js"><link rel="prefetch" href="/assets/js/268.7e56c146.js"><link rel="prefetch" href="/assets/js/269.28f4b876.js"><link rel="prefetch" href="/assets/js/27.892b1ef5.js"><link rel="prefetch" href="/assets/js/270.b97ac563.js"><link rel="prefetch" href="/assets/js/271.271809c2.js"><link rel="prefetch" href="/assets/js/272.74cf569d.js"><link rel="prefetch" href="/assets/js/273.7d17fbe3.js"><link rel="prefetch" href="/assets/js/274.df354f99.js"><link rel="prefetch" href="/assets/js/275.7c99fdcd.js"><link rel="prefetch" href="/assets/js/276.412d9e13.js"><link rel="prefetch" href="/assets/js/277.79e264e3.js"><link rel="prefetch" href="/assets/js/278.47e7544b.js"><link rel="prefetch" href="/assets/js/279.e18b65e9.js"><link rel="prefetch" href="/assets/js/28.9b47f2b7.js"><link rel="prefetch" href="/assets/js/280.cd149bab.js"><link rel="prefetch" href="/assets/js/281.f30da8f7.js"><link rel="prefetch" href="/assets/js/282.ca931ec1.js"><link rel="prefetch" href="/assets/js/283.0e78fd98.js"><link rel="prefetch" href="/assets/js/284.e0b78fed.js"><link rel="prefetch" href="/assets/js/285.1c3ef1a8.js"><link rel="prefetch" href="/assets/js/286.411bd82f.js"><link rel="prefetch" href="/assets/js/287.88a71272.js"><link rel="prefetch" href="/assets/js/288.cb20a933.js"><link rel="prefetch" href="/assets/js/289.82d5cac0.js"><link rel="prefetch" href="/assets/js/29.9378ec13.js"><link rel="prefetch" href="/assets/js/290.08403781.js"><link rel="prefetch" href="/assets/js/291.357f8fcb.js"><link rel="prefetch" href="/assets/js/292.8cc8b131.js"><link rel="prefetch" href="/assets/js/293.f9b0da50.js"><link rel="prefetch" href="/assets/js/294.ea7ee232.js"><link rel="prefetch" href="/assets/js/295.e62a5c93.js"><link rel="prefetch" href="/assets/js/296.1f4fe712.js"><link rel="prefetch" href="/assets/js/297.8cc5e5cc.js"><link rel="prefetch" href="/assets/js/298.2112daf9.js"><link rel="prefetch" href="/assets/js/299.a9f1ab27.js"><link rel="prefetch" href="/assets/js/3.c04ddd76.js"><link rel="prefetch" href="/assets/js/30.b1e468ec.js"><link rel="prefetch" href="/assets/js/300.8b865521.js"><link rel="prefetch" href="/assets/js/301.c0ca51e7.js"><link rel="prefetch" href="/assets/js/302.ce7298c2.js"><link rel="prefetch" href="/assets/js/303.1193e962.js"><link rel="prefetch" href="/assets/js/304.a47979c6.js"><link rel="prefetch" href="/assets/js/305.7c504a94.js"><link rel="prefetch" href="/assets/js/306.a698ecbb.js"><link rel="prefetch" href="/assets/js/307.a37fc0c4.js"><link rel="prefetch" href="/assets/js/308.0abd0e00.js"><link rel="prefetch" href="/assets/js/309.f945407f.js"><link rel="prefetch" href="/assets/js/31.d889f427.js"><link rel="prefetch" href="/assets/js/310.dde4eb20.js"><link rel="prefetch" href="/assets/js/311.76bd14a6.js"><link rel="prefetch" href="/assets/js/312.bc5dc6b1.js"><link rel="prefetch" href="/assets/js/313.dd584c1c.js"><link rel="prefetch" href="/assets/js/314.873f4308.js"><link rel="prefetch" href="/assets/js/315.9960088e.js"><link rel="prefetch" href="/assets/js/316.77ca836f.js"><link rel="prefetch" href="/assets/js/317.750dd149.js"><link rel="prefetch" href="/assets/js/318.403383ae.js"><link rel="prefetch" href="/assets/js/319.04b06be7.js"><link rel="prefetch" href="/assets/js/32.d431fa66.js"><link rel="prefetch" href="/assets/js/320.b8c9f95c.js"><link rel="prefetch" href="/assets/js/321.207fc40a.js"><link rel="prefetch" href="/assets/js/322.b7a1c6ae.js"><link rel="prefetch" href="/assets/js/323.48ab6bef.js"><link rel="prefetch" href="/assets/js/324.b3e6d728.js"><link rel="prefetch" href="/assets/js/325.6931ed80.js"><link rel="prefetch" href="/assets/js/326.3d1886f3.js"><link rel="prefetch" href="/assets/js/327.5041f8e3.js"><link rel="prefetch" href="/assets/js/328.8a14fd2d.js"><link rel="prefetch" href="/assets/js/329.60b36803.js"><link rel="prefetch" href="/assets/js/33.ba7e9f26.js"><link rel="prefetch" href="/assets/js/330.84c46098.js"><link rel="prefetch" href="/assets/js/331.e2959ba5.js"><link rel="prefetch" href="/assets/js/332.c04ddf35.js"><link rel="prefetch" href="/assets/js/333.e2d1592a.js"><link rel="prefetch" href="/assets/js/334.a52eaf23.js"><link rel="prefetch" href="/assets/js/335.7302c06b.js"><link rel="prefetch" href="/assets/js/336.778ff92c.js"><link rel="prefetch" href="/assets/js/337.21c6b4fe.js"><link rel="prefetch" href="/assets/js/338.72b559d3.js"><link rel="prefetch" href="/assets/js/339.7f050da7.js"><link rel="prefetch" href="/assets/js/34.a17ecb44.js"><link rel="prefetch" href="/assets/js/340.5b7eff94.js"><link rel="prefetch" href="/assets/js/341.e8eaf4d6.js"><link rel="prefetch" href="/assets/js/342.8e8367d6.js"><link rel="prefetch" href="/assets/js/343.cdb52eb2.js"><link rel="prefetch" href="/assets/js/344.1ec14776.js"><link rel="prefetch" href="/assets/js/345.1932d85d.js"><link rel="prefetch" href="/assets/js/346.061a5921.js"><link rel="prefetch" href="/assets/js/347.bd8599d5.js"><link rel="prefetch" href="/assets/js/348.1203ed9f.js"><link rel="prefetch" href="/assets/js/349.727a7086.js"><link rel="prefetch" href="/assets/js/35.48a1efe1.js"><link rel="prefetch" href="/assets/js/350.0e0cb226.js"><link rel="prefetch" href="/assets/js/351.c6adddc8.js"><link rel="prefetch" href="/assets/js/352.c21798cc.js"><link rel="prefetch" href="/assets/js/353.284b2c63.js"><link rel="prefetch" href="/assets/js/354.936f0f12.js"><link rel="prefetch" href="/assets/js/355.7bd14c81.js"><link rel="prefetch" href="/assets/js/356.77089a0d.js"><link rel="prefetch" href="/assets/js/357.6c8530f4.js"><link rel="prefetch" href="/assets/js/358.3e8853e7.js"><link rel="prefetch" href="/assets/js/359.f3c82918.js"><link rel="prefetch" href="/assets/js/36.94dee28b.js"><link rel="prefetch" href="/assets/js/360.07ef2ec7.js"><link rel="prefetch" href="/assets/js/361.f7d0f8be.js"><link rel="prefetch" href="/assets/js/362.55cdc1ee.js"><link rel="prefetch" href="/assets/js/363.bcd39199.js"><link rel="prefetch" href="/assets/js/364.d3eaade3.js"><link rel="prefetch" href="/assets/js/365.6a8d5fd2.js"><link rel="prefetch" href="/assets/js/366.5a9e941b.js"><link rel="prefetch" href="/assets/js/367.1b5ce0d2.js"><link rel="prefetch" href="/assets/js/368.93930058.js"><link rel="prefetch" href="/assets/js/369.7c97652b.js"><link rel="prefetch" href="/assets/js/37.65c0633b.js"><link rel="prefetch" href="/assets/js/370.ba33b91d.js"><link rel="prefetch" href="/assets/js/371.3916a99a.js"><link rel="prefetch" href="/assets/js/372.dae4abe6.js"><link rel="prefetch" href="/assets/js/373.68587695.js"><link rel="prefetch" href="/assets/js/374.89ab9fcc.js"><link rel="prefetch" href="/assets/js/375.eb4ed7a8.js"><link rel="prefetch" href="/assets/js/376.3954abe5.js"><link rel="prefetch" href="/assets/js/377.4a996d6c.js"><link rel="prefetch" href="/assets/js/378.c103040e.js"><link rel="prefetch" href="/assets/js/379.599a3bf6.js"><link rel="prefetch" href="/assets/js/38.454d06ac.js"><link rel="prefetch" href="/assets/js/380.ce543ec7.js"><link rel="prefetch" href="/assets/js/381.a75e4ca0.js"><link rel="prefetch" href="/assets/js/382.9f27ba19.js"><link rel="prefetch" href="/assets/js/383.b0f72c3b.js"><link rel="prefetch" href="/assets/js/384.12519f39.js"><link rel="prefetch" href="/assets/js/385.4c2ca284.js"><link rel="prefetch" href="/assets/js/386.63822952.js"><link rel="prefetch" href="/assets/js/387.59b625c1.js"><link rel="prefetch" href="/assets/js/388.3d4785a7.js"><link rel="prefetch" href="/assets/js/389.7018c1ab.js"><link rel="prefetch" href="/assets/js/39.553481ec.js"><link rel="prefetch" href="/assets/js/390.e9c75164.js"><link rel="prefetch" href="/assets/js/391.02dc25f2.js"><link rel="prefetch" href="/assets/js/392.5ff508a1.js"><link rel="prefetch" href="/assets/js/393.240ad7c5.js"><link rel="prefetch" href="/assets/js/394.358baefe.js"><link rel="prefetch" href="/assets/js/395.38af044d.js"><link rel="prefetch" href="/assets/js/396.b11063f3.js"><link rel="prefetch" href="/assets/js/397.4f5f5dda.js"><link rel="prefetch" href="/assets/js/398.5e14e6ad.js"><link rel="prefetch" href="/assets/js/399.788aa0f1.js"><link rel="prefetch" href="/assets/js/4.c75f63db.js"><link rel="prefetch" href="/assets/js/40.6e76efcd.js"><link rel="prefetch" href="/assets/js/400.47c7ee00.js"><link rel="prefetch" href="/assets/js/401.e7645fd8.js"><link rel="prefetch" href="/assets/js/402.433032c9.js"><link rel="prefetch" href="/assets/js/403.95e726bb.js"><link rel="prefetch" href="/assets/js/404.abc6525b.js"><link rel="prefetch" href="/assets/js/405.ebb97ed7.js"><link rel="prefetch" href="/assets/js/406.20626298.js"><link rel="prefetch" href="/assets/js/407.366f30f6.js"><link rel="prefetch" href="/assets/js/408.6bc65667.js"><link rel="prefetch" href="/assets/js/409.753d74d5.js"><link rel="prefetch" href="/assets/js/41.79811d05.js"><link rel="prefetch" href="/assets/js/410.6e27f22d.js"><link rel="prefetch" href="/assets/js/411.f85b38b6.js"><link rel="prefetch" href="/assets/js/412.90c938ab.js"><link rel="prefetch" href="/assets/js/413.7cc37f89.js"><link rel="prefetch" href="/assets/js/414.c380839c.js"><link rel="prefetch" href="/assets/js/415.e8f8ded0.js"><link rel="prefetch" href="/assets/js/416.9eede3c0.js"><link rel="prefetch" href="/assets/js/417.8a9d1593.js"><link rel="prefetch" href="/assets/js/418.79c73b6c.js"><link rel="prefetch" href="/assets/js/419.ba6694a0.js"><link rel="prefetch" href="/assets/js/42.9bdfe091.js"><link rel="prefetch" href="/assets/js/420.fcec5680.js"><link rel="prefetch" href="/assets/js/421.473a4a51.js"><link rel="prefetch" href="/assets/js/422.5513897e.js"><link rel="prefetch" href="/assets/js/423.19d28206.js"><link rel="prefetch" href="/assets/js/424.08bf0d21.js"><link rel="prefetch" href="/assets/js/425.bf1c415c.js"><link rel="prefetch" href="/assets/js/426.ac265008.js"><link rel="prefetch" href="/assets/js/427.10e08e5a.js"><link rel="prefetch" href="/assets/js/428.10c3bb0b.js"><link rel="prefetch" href="/assets/js/429.b3a950c5.js"><link rel="prefetch" href="/assets/js/43.f37b11dc.js"><link rel="prefetch" href="/assets/js/430.fa86f789.js"><link rel="prefetch" href="/assets/js/431.76db21db.js"><link rel="prefetch" href="/assets/js/432.5cbbcefd.js"><link rel="prefetch" href="/assets/js/433.5507b97c.js"><link rel="prefetch" href="/assets/js/434.64ab1b31.js"><link rel="prefetch" href="/assets/js/435.f7dfd85a.js"><link rel="prefetch" href="/assets/js/436.6825bea1.js"><link rel="prefetch" href="/assets/js/437.89022443.js"><link rel="prefetch" href="/assets/js/438.90eaea4b.js"><link rel="prefetch" href="/assets/js/439.49603f0d.js"><link rel="prefetch" href="/assets/js/44.16deb6c0.js"><link rel="prefetch" href="/assets/js/440.653a1c28.js"><link rel="prefetch" href="/assets/js/441.de88356f.js"><link rel="prefetch" href="/assets/js/442.71794609.js"><link rel="prefetch" href="/assets/js/443.ef5a7778.js"><link rel="prefetch" href="/assets/js/444.72f17201.js"><link rel="prefetch" href="/assets/js/445.f08c9b7f.js"><link rel="prefetch" href="/assets/js/446.ef5e5d2d.js"><link rel="prefetch" href="/assets/js/447.72091794.js"><link rel="prefetch" href="/assets/js/448.7f9865a2.js"><link rel="prefetch" href="/assets/js/449.0b35ea4f.js"><link rel="prefetch" href="/assets/js/45.0675495e.js"><link rel="prefetch" href="/assets/js/450.a579b0b3.js"><link rel="prefetch" href="/assets/js/451.40fd7ece.js"><link rel="prefetch" href="/assets/js/452.5712ca97.js"><link rel="prefetch" href="/assets/js/453.2ca060cd.js"><link rel="prefetch" href="/assets/js/454.a89d24a6.js"><link rel="prefetch" href="/assets/js/455.5a9d9c82.js"><link rel="prefetch" href="/assets/js/456.607ffa18.js"><link rel="prefetch" href="/assets/js/457.c3acea21.js"><link rel="prefetch" href="/assets/js/458.781b36fa.js"><link rel="prefetch" href="/assets/js/459.af2bfa33.js"><link rel="prefetch" href="/assets/js/46.865a332d.js"><link rel="prefetch" href="/assets/js/460.30d5e1e2.js"><link rel="prefetch" href="/assets/js/461.5686a570.js"><link rel="prefetch" href="/assets/js/462.fac7eeb5.js"><link rel="prefetch" href="/assets/js/463.ff3139d2.js"><link rel="prefetch" href="/assets/js/464.567465ba.js"><link rel="prefetch" href="/assets/js/465.5918d436.js"><link rel="prefetch" href="/assets/js/466.774afbc9.js"><link rel="prefetch" href="/assets/js/467.02b01f86.js"><link rel="prefetch" href="/assets/js/468.2792849f.js"><link rel="prefetch" href="/assets/js/469.fd790819.js"><link rel="prefetch" href="/assets/js/47.d0be1dde.js"><link rel="prefetch" href="/assets/js/470.657b07db.js"><link rel="prefetch" href="/assets/js/471.01e2e353.js"><link rel="prefetch" href="/assets/js/472.e88a581d.js"><link rel="prefetch" href="/assets/js/473.0da6a8eb.js"><link rel="prefetch" href="/assets/js/474.73832e9d.js"><link rel="prefetch" href="/assets/js/475.aea26469.js"><link rel="prefetch" href="/assets/js/476.dc9ed555.js"><link rel="prefetch" href="/assets/js/477.0002df85.js"><link rel="prefetch" href="/assets/js/478.1f2b88f6.js"><link rel="prefetch" href="/assets/js/479.ea88f4aa.js"><link rel="prefetch" href="/assets/js/48.8fd40fa6.js"><link rel="prefetch" href="/assets/js/480.bc73b0d2.js"><link rel="prefetch" href="/assets/js/481.00063e56.js"><link rel="prefetch" href="/assets/js/482.c8a8b000.js"><link rel="prefetch" href="/assets/js/483.1f8af92a.js"><link rel="prefetch" href="/assets/js/484.93635eb4.js"><link rel="prefetch" href="/assets/js/485.18acade3.js"><link rel="prefetch" href="/assets/js/486.ab2743fe.js"><link rel="prefetch" href="/assets/js/487.96208579.js"><link rel="prefetch" href="/assets/js/488.643f3b35.js"><link rel="prefetch" href="/assets/js/489.f96a6f13.js"><link rel="prefetch" href="/assets/js/49.564502ca.js"><link rel="prefetch" href="/assets/js/490.50a17561.js"><link rel="prefetch" href="/assets/js/491.31389ae1.js"><link rel="prefetch" href="/assets/js/492.2055e9a6.js"><link rel="prefetch" href="/assets/js/493.fb7c0871.js"><link rel="prefetch" href="/assets/js/494.a3f1821b.js"><link rel="prefetch" href="/assets/js/495.10ecb7c4.js"><link rel="prefetch" href="/assets/js/496.92dda1c0.js"><link rel="prefetch" href="/assets/js/497.3ecfb98f.js"><link rel="prefetch" href="/assets/js/498.44946f12.js"><link rel="prefetch" href="/assets/js/499.7548234c.js"><link rel="prefetch" href="/assets/js/5.ed97a9d5.js"><link rel="prefetch" href="/assets/js/50.d1908e99.js"><link rel="prefetch" href="/assets/js/500.8c01572f.js"><link rel="prefetch" href="/assets/js/501.2dd48a0e.js"><link rel="prefetch" href="/assets/js/502.6ef8a9ce.js"><link rel="prefetch" href="/assets/js/503.169f11b4.js"><link rel="prefetch" href="/assets/js/504.88b3ca0b.js"><link rel="prefetch" href="/assets/js/505.e1a867d0.js"><link rel="prefetch" href="/assets/js/506.8f095906.js"><link rel="prefetch" href="/assets/js/507.e3ee50da.js"><link rel="prefetch" href="/assets/js/508.4196827a.js"><link rel="prefetch" href="/assets/js/509.0a10292b.js"><link rel="prefetch" href="/assets/js/51.3a7ac5f4.js"><link rel="prefetch" href="/assets/js/510.e77d84be.js"><link rel="prefetch" href="/assets/js/511.65d5d83e.js"><link rel="prefetch" href="/assets/js/512.bfad99de.js"><link rel="prefetch" href="/assets/js/513.acfa9383.js"><link rel="prefetch" href="/assets/js/514.4f90e0d8.js"><link rel="prefetch" href="/assets/js/515.ec272545.js"><link rel="prefetch" href="/assets/js/516.79402294.js"><link rel="prefetch" href="/assets/js/517.5ebef644.js"><link rel="prefetch" href="/assets/js/518.eff97bd3.js"><link rel="prefetch" href="/assets/js/519.d421ce6d.js"><link rel="prefetch" href="/assets/js/52.2557e261.js"><link rel="prefetch" href="/assets/js/520.0f80403a.js"><link rel="prefetch" href="/assets/js/521.0bc56cd4.js"><link rel="prefetch" href="/assets/js/522.b24f4995.js"><link rel="prefetch" href="/assets/js/523.130065e8.js"><link rel="prefetch" href="/assets/js/524.21302559.js"><link rel="prefetch" href="/assets/js/525.98904420.js"><link rel="prefetch" href="/assets/js/526.7fb763e9.js"><link rel="prefetch" href="/assets/js/527.047bc28b.js"><link rel="prefetch" href="/assets/js/528.6b4a8eba.js"><link rel="prefetch" href="/assets/js/529.10baf628.js"><link rel="prefetch" href="/assets/js/53.0e98eb9e.js"><link rel="prefetch" href="/assets/js/530.4ffc7fbf.js"><link rel="prefetch" href="/assets/js/531.16000afa.js"><link rel="prefetch" href="/assets/js/532.bafcccde.js"><link rel="prefetch" href="/assets/js/533.85fa952a.js"><link rel="prefetch" href="/assets/js/534.dc27bc7b.js"><link rel="prefetch" href="/assets/js/535.04088b6e.js"><link rel="prefetch" href="/assets/js/536.4989b816.js"><link rel="prefetch" href="/assets/js/537.9756459b.js"><link rel="prefetch" href="/assets/js/538.b98c57a9.js"><link rel="prefetch" href="/assets/js/539.4b5ab5e3.js"><link rel="prefetch" href="/assets/js/54.2b638d95.js"><link rel="prefetch" href="/assets/js/540.992fa90a.js"><link rel="prefetch" href="/assets/js/541.035ab598.js"><link rel="prefetch" href="/assets/js/542.38f43c57.js"><link rel="prefetch" href="/assets/js/543.e9166953.js"><link rel="prefetch" href="/assets/js/544.833f11a6.js"><link rel="prefetch" href="/assets/js/545.5ab5df35.js"><link rel="prefetch" href="/assets/js/546.0418e63f.js"><link rel="prefetch" href="/assets/js/547.dcea2355.js"><link rel="prefetch" href="/assets/js/548.e3b5914c.js"><link rel="prefetch" href="/assets/js/549.5dd5e0eb.js"><link rel="prefetch" href="/assets/js/55.155989d1.js"><link rel="prefetch" href="/assets/js/550.eecb5727.js"><link rel="prefetch" href="/assets/js/551.9a8d4a23.js"><link rel="prefetch" href="/assets/js/552.1a8ecfa0.js"><link rel="prefetch" href="/assets/js/553.5877a9f7.js"><link rel="prefetch" href="/assets/js/554.e6481339.js"><link rel="prefetch" href="/assets/js/555.7dc10b8c.js"><link rel="prefetch" href="/assets/js/556.1c058a8d.js"><link rel="prefetch" href="/assets/js/557.c8b400c8.js"><link rel="prefetch" href="/assets/js/558.68c99b1e.js"><link rel="prefetch" href="/assets/js/559.b07e64df.js"><link rel="prefetch" href="/assets/js/56.cb0e96b6.js"><link rel="prefetch" href="/assets/js/560.84f5aae1.js"><link rel="prefetch" href="/assets/js/561.96e5743c.js"><link rel="prefetch" href="/assets/js/562.91489948.js"><link rel="prefetch" href="/assets/js/563.9226baab.js"><link rel="prefetch" href="/assets/js/564.ebe95a95.js"><link rel="prefetch" href="/assets/js/565.cf899b98.js"><link rel="prefetch" href="/assets/js/566.0b226019.js"><link rel="prefetch" href="/assets/js/567.6895b9b7.js"><link rel="prefetch" href="/assets/js/568.52b9ec44.js"><link rel="prefetch" href="/assets/js/569.af3e54d4.js"><link rel="prefetch" href="/assets/js/57.85addfd7.js"><link rel="prefetch" href="/assets/js/570.2c67e4a7.js"><link rel="prefetch" href="/assets/js/571.c1232aa1.js"><link rel="prefetch" href="/assets/js/572.b89ae2c9.js"><link rel="prefetch" href="/assets/js/58.74f9265c.js"><link rel="prefetch" href="/assets/js/59.53e8bb84.js"><link rel="prefetch" href="/assets/js/6.355c6589.js"><link rel="prefetch" href="/assets/js/60.ddd9b7b7.js"><link rel="prefetch" href="/assets/js/61.1acee54e.js"><link rel="prefetch" href="/assets/js/62.4d99ec50.js"><link rel="prefetch" href="/assets/js/63.7ed68d3a.js"><link rel="prefetch" href="/assets/js/64.5701155f.js"><link rel="prefetch" href="/assets/js/65.45352401.js"><link rel="prefetch" href="/assets/js/66.4cfa996c.js"><link rel="prefetch" href="/assets/js/67.b499403a.js"><link rel="prefetch" href="/assets/js/68.e3984582.js"><link rel="prefetch" href="/assets/js/69.f327d715.js"><link rel="prefetch" href="/assets/js/7.ad5ba044.js"><link rel="prefetch" href="/assets/js/70.002b3455.js"><link rel="prefetch" href="/assets/js/71.cbae1284.js"><link rel="prefetch" href="/assets/js/72.06756535.js"><link rel="prefetch" href="/assets/js/73.fa6efb78.js"><link rel="prefetch" href="/assets/js/74.24480a91.js"><link rel="prefetch" href="/assets/js/75.54d77e5a.js"><link rel="prefetch" href="/assets/js/76.71c66de0.js"><link rel="prefetch" href="/assets/js/77.e9c1c6b4.js"><link rel="prefetch" href="/assets/js/78.95cd62ab.js"><link rel="prefetch" href="/assets/js/79.81351160.js"><link rel="prefetch" href="/assets/js/80.f20abedf.js"><link rel="prefetch" href="/assets/js/81.097b004e.js"><link rel="prefetch" href="/assets/js/82.c54a5f36.js"><link rel="prefetch" href="/assets/js/83.ca260dc4.js"><link rel="prefetch" href="/assets/js/84.d64fa2c7.js"><link rel="prefetch" href="/assets/js/85.c7e5c7d6.js"><link rel="prefetch" href="/assets/js/86.d85fe750.js"><link rel="prefetch" href="/assets/js/87.85f0ec24.js"><link rel="prefetch" href="/assets/js/88.efe292f7.js"><link rel="prefetch" href="/assets/js/89.bd2bd6a5.js"><link rel="prefetch" href="/assets/js/90.fdb43e6b.js"><link rel="prefetch" href="/assets/js/91.67021da9.js"><link rel="prefetch" href="/assets/js/92.27940821.js"><link rel="prefetch" href="/assets/js/93.6bb04dbd.js"><link rel="prefetch" href="/assets/js/94.9be63128.js"><link rel="prefetch" href="/assets/js/95.d877c68b.js"><link rel="prefetch" href="/assets/js/96.6a93bee9.js"><link rel="prefetch" href="/assets/js/97.dfbcae8e.js"><link rel="prefetch" href="/assets/js/98.b2c2386b.js"><link rel="prefetch" href="/assets/js/99.e1e527a9.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.0651dd76.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3520924c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://blog-1320192491.cos.ap-nanjing.myqcloud.com/logo.png" alt="匆匆趣玩" class="logo"> <span class="site-name can-hide">匆匆趣玩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图南门户地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/operation/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li><li class="dropdown-subitem"><a href="/network/nmap/demo01_2025_11_11_01.html" class="nav-link">
+  nmap扫描实战
+</a></li><li class="dropdown-subitem"><a href="/network/password/demo01_2025_11_11_01.html" class="nav-link">
+  密码破解实战
+</a></li><li class="dropdown-subitem"><a href="/network/msf/demo01_2025_11_11_01.html" class="nav-link">
+  Metasploit(MSF)实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nginx运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/nginx_base/demo01_2025_11_12_01.html" class="nav-link">
+  nginx常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          运维问题集
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/problem/demo01_2025_11_11_01.html" class="nav-link">
+  运维问题排错
+</a></li></ul></li><li class="dropdown-item"><h4>
+          网络面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/interview/demo01_2025_11_11_01.html" class="nav-link">
+  网络物理设备面试题
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring_code/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/javaTool/demo01_2025_12_12_01.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li><li class="dropdown-item"><h4>
+          面试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/interview/java/javaDemo01_2025_11_11_01.html" class="nav-link">
+  java面试
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/api/demo01_2026_02_16_01.html" class="nav-link">
+  系统设计哲学题
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/login/demo01_2026_04_01_01.html" class="nav-link">
+  系统登入哲学题
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/architecture/architecture_20260517_01.html" class="nav-link">
+  系统架构解决方案
+</a></li></ul></li><li class="dropdown-item"><h4>
+          设计思想
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/designPhilosophy/function/demo01_2025_12_22_01.html" class="nav-link">
+  编程设计思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/demo01_20250331_01.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c万物之母
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c/安装devc++.html" class="nav-link">
+  c语言必知必会
+</a></li><li class="dropdown-subitem"><a href="/lyp/c/macro/demo01_2025_12_01_01.html" class="nav-link">
+  宏(macro)
+</a></li><li class="dropdown-subitem"><a href="/lyp/c/preprocessing/demo01_2025_12_01_01.html" class="nav-link">
+  预处理指令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/hadoop/hadoop_history/demo01_2026_03_06_01.html" class="nav-link">
+  hadoop帝国的瓦解
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/hadoop/hadoop_base01/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/kafka/demo02_20260513_01.html" class="nav-link">
+  kafka应用场景
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li><li class="dropdown-item"><h4>
+          flink
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/flink/base01/demo01_20260513_01.html" class="nav-link">
+  flink
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="ai&amp;智能" class="dropdown-title"><span class="title">ai&amp;智能</span> <span class="arrow down"></span></button> <button type="button" aria-label="ai&amp;智能" class="mobile-dropdown-title"><span class="title">ai&amp;智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          openClaw
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ai/openClaw/demo01_2026_03_07_01.html" class="nav-link">
+  openClaw前世与今生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          openClaw相关问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ai/openclaw_problem/demo01_2026_03_19_01.html" class="nav-link">
+  openClaw相关问题
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="科学" class="dropdown-title"><span class="title">科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="科学" class="mobile-dropdown-title"><span class="title">科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/basicMath/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          神经网络
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/neural_network/demo01_2025_03_01.html" class="nav-link">
+  神经网络编程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构" class="mobile-dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          加密算法与密码学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cryptography/demo01_2025_12_23_01.html" class="nav-link">
+  微信小程序的登录流程架构
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li><li class="dropdown-subitem"><a href="/framework/system_book02/init_2025_12_15_01.html" class="nav-link">
+  操作系统概念
+</a></li><li class="dropdown-subitem"><a href="/framework/system_philosophy/demo01_2026_03_01_01.html" class="nav-link">
+  操作系统哲学
+</a></li><li class="dropdown-subitem"><a href="/framework/system_learn01/learn01_2026_03_12_01.html" class="nav-link">
+  操作系统101实验
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="游戏" class="dropdown-title"><span class="title">游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="游戏" class="mobile-dropdown-title"><span class="title">游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li><li class="dropdown-item"><h4>
+          react派
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/react_base_book_01/demo01_2025_12_12_01.html" class="nav-link">
+  react2025年基础入门
+</a></li><li class="dropdown-subitem"><a href="/front_end/react_basic/demo01_2025_12_12_01.html" class="nav-link">
+  react官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="db" class="dropdown-title"><span class="title">db</span> <span class="arrow down"></span></button> <button type="button" aria-label="db" class="mobile-dropdown-title"><span class="title">db</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="rfc" class="dropdown-title"><span class="title">rfc</span> <span class="arrow down"></span></button> <button type="button" aria-label="rfc" class="mobile-dropdown-title"><span class="title">rfc</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/rfc_doc/demo01_2025_12_12_01.html" class="nav-link">
+  rfc概述
+</a></li><li class="dropdown-item"><h4>
+          http/1.1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/centos/.html" class="nav-link">
+  http/1.1
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="嵌入式与芯片" class="dropdown-title"><span class="title">嵌入式与芯片</span> <span class="arrow down"></span></button> <button type="button" aria-label="嵌入式与芯片" class="mobile-dropdown-title"><span class="title">嵌入式与芯片</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          乐鑫开发板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/embedded/esp8266/demo01_2025_12_12_01.html" class="nav-link">
+  esp8266
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="图南博客" class="dropdown-title"><span class="title">图南博客</span> <span class="arrow down"></span></button> <button type="button" aria-label="图南博客" class="mobile-dropdown-title"><span class="title">图南博客</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://ground-gun.gitee.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-first
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://wutunan.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog-second
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/ground-gun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/triggergun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/hong-lang-80-78/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://eglish.wutunan.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  英语
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/sunrise-sunset/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  日出日落开放平台
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.tc03vd.top/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图南门户地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="/git/git.html" class="nav-link">
+  git
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/operation/windows/cmd.html" class="nav-link">
+  命令
+</a></li><li class="dropdown-item"><!----> <a href="/network/network01.html" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><h4>
+          https原理实战
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/https/深入浅出https原理/02密码学.html" class="nav-link">
+  02)密码学
+</a></li></ul></li><li class="dropdown-item"><h4>
+          你真的安全吗？
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/security/windows/win10绕过密码.html" class="nav-link">
+  windows安全
+</a></li><li class="dropdown-subitem"><a href="/network/nmap/demo01_2025_11_11_01.html" class="nav-link">
+  nmap扫描实战
+</a></li><li class="dropdown-subitem"><a href="/network/password/demo01_2025_11_11_01.html" class="nav-link">
+  密码破解实战
+</a></li><li class="dropdown-subitem"><a href="/network/msf/demo01_2025_11_11_01.html" class="nav-link">
+  Metasploit(MSF)实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          shell运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/shell/demo01_2025_03_19_01.html" class="nav-link">
+  shell实战
+</a></li></ul></li><li class="dropdown-item"><h4>
+          linux基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/linux_base/demo01_2025_03_22_01.html" class="nav-link">
+  linux基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nginx运维
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/nginx_base/demo01_2025_11_12_01.html" class="nav-link">
+  nginx常用命令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          运维问题集
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/problem/demo01_2025_11_11_01.html" class="nav-link">
+  运维问题排错
+</a></li></ul></li><li class="dropdown-item"><h4>
+          网络面试题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/network/interview/demo01_2025_11_11_01.html" class="nav-link">
+  网络物理设备面试题
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java" class="dropdown-title"><span class="title">java</span> <span class="arrow down"></span></button> <button type="button" aria-label="java" class="mobile-dropdown-title"><span class="title">java</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          java技术栈
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/javaSEBase/java.html" class="nav-link">
+  java基础
+</a></li><li class="dropdown-subitem"><a href="/java/gradle/01安装gradle.html" class="nav-link">
+  gradle
+</a></li><li class="dropdown-subitem"><a href="/java/maven/maven01_2025_10_19_01.html" class="nav-link">
+  maven
+</a></li></ul></li><li class="dropdown-item"><h4>
+          dao层框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/Mybatis/mybatis.html" class="nav-link">
+  mybatis
+</a></li><li class="dropdown-subitem"><a href="/java/mybatis_plus/03多数据库源的编写.html" class="nav-link">
+  mybatis-plus
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码分析区
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/spring_code/01Spring源码下载.html" class="nav-link">
+  spring源码分析
+</a></li><li class="dropdown-subitem"><a href="/java/springboot_source_code/20250105_demo01.html" class="nav-link">
+  spring-boot源码分析
+</a></li></ul></li><li class="dropdown-item"><h4>
+          springCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/springcloudgateway/01gateway.html" class="nav-link">
+  gateway
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/java/designModel/AssemblerDesignPattern.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/java/javaTool/demo01_2025_12_12_01.html" class="nav-link">
+  java工具
+</a></li><li class="dropdown-item"><!----> <a href="/java/java基础服务/nexus/01nexus3的docker安装.html" class="nav-link">
+  java基础服务
+</a></li><li class="dropdown-item"><h4>
+          面试
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/interview/java/javaDemo01_2025_11_11_01.html" class="nav-link">
+  java面试
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/api/demo01_2026_02_16_01.html" class="nav-link">
+  系统设计哲学题
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/login/demo01_2026_04_01_01.html" class="nav-link">
+  系统登入哲学题
+</a></li><li class="dropdown-subitem"><a href="/java/system_design/architecture/architecture_20260517_01.html" class="nav-link">
+  系统架构解决方案
+</a></li></ul></li><li class="dropdown-item"><h4>
+          设计思想
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java/designPhilosophy/function/demo01_2025_12_22_01.html" class="nav-link">
+  编程设计思想
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="lyp" class="dropdown-title"><span class="title">lyp</span> <span class="arrow down"></span></button> <button type="button" aria-label="lyp" class="mobile-dropdown-title"><span class="title">lyp</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          javascript之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/javascript/demo01_20250331_01.html" class="nav-link">
+  基础概念
+</a></li></ul></li><li class="dropdown-item"><h4>
+          微信小程序之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/小程序/微信小程序/01什么是小程序.html" class="nav-link">
+  微信小程序
+</a></li></ul></li><li class="dropdown-item"><h4>
+          c万物之母
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/c/安装devc++.html" class="nav-link">
+  c语言必知必会
+</a></li><li class="dropdown-subitem"><a href="/lyp/c/macro/demo01_2025_12_01_01.html" class="nav-link">
+  宏(macro)
+</a></li><li class="dropdown-subitem"><a href="/lyp/c/preprocessing/demo01_2025_12_01_01.html" class="nav-link">
+  预处理指令
+</a></li></ul></li><li class="dropdown-item"><h4>
+          C++之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/C++语言/01我的第一个C++程序/01如何创建工程.html" class="nav-link">
+  C++
+</a></li></ul></li><li class="dropdown-item"><h4>
+          db之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/db/mysql/mysql数据库总结/01添加唯一索引程序在添加数据.html" class="nav-link">
+  mysql实验总结
+</a></li></ul></li><li class="dropdown-item"><h4>
+          rust之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/rust语言/第一阶段基础篇/01rust是什么.html" class="nav-link">
+  第一阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          python之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/python/第一阶段基础/01python的安装.html" class="nav-link">
+  第一阶段基础
+</a></li><li class="dropdown-subitem"><a href="/lyp/python/jupyter/demo01_2025_03_19_01.html" class="nav-link">
+  第二阶段基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          android之路
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/android/kotlin/demo01_2025_02_21.html" class="nav-link">
+  kotlin&amp;android
+</a></li></ul></li><li class="dropdown-item"><h4>
+          初见Go，星河初转。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/go/demo01_2025_03_22_01.html" class="nav-link">
+  web华山论剑
+</a></li></ul></li><li class="dropdown-item"><h4>
+          再探前端，万籁生云。
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/前端/vue/demo01-20250430-01.html" class="nav-link">
+  vue转乾坤
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/layout/demo01_2025_04_23_01.html" class="nav-link">
+  风云涌动
+</a></li><li class="dropdown-subitem"><a href="/lyp/前端/base/demo01_20250527_01.html" class="nav-link">
+  前端基础
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          hadoop基础理论
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/hadoop/hadoop_history/demo01_2026_03_06_01.html" class="nav-link">
+  hadoop帝国的瓦解
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/hadoop/hadoop_base01/01MapReduce是什么.html" class="nav-link">
+  MapReduce理论
+</a></li></ul></li><li class="dropdown-item"><h4>
+          spark
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/02spark/01Spark集群安装与部署.html" class="nav-link">
+  spark集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/scala语言基础/01scala简介.html" class="nav-link">
+  scala语言基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          zookeepre
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/zookeeper/01Zookeeper分布式集群部署.html" class="nav-link">
+  zookeepre集群
+</a></li></ul></li><li class="dropdown-item"><h4>
+          kafka
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/kafka/01Kafka集群部署与测试.html" class="nav-link">
+  kafka集群
+</a></li><li class="dropdown-subitem"><a href="/lyp/bigdata/kafka/demo02_20260513_01.html" class="nav-link">
+  kafka应用场景
+</a></li></ul></li><li class="dropdown-item"><h4>
+          大话flume
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/flume/base01/版本管理.html" class="nav-link">
+  flume
+</a></li></ul></li><li class="dropdown-item"><h4>
+          flink
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/lyp/bigdata/flink/base01/demo01_20260513_01.html" class="nav-link">
+  flink
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="美工" class="dropdown-title"><span class="title">美工</span> <span class="arrow down"></span></button> <button type="button" aria-label="美工" class="mobile-dropdown-title"><span class="title">美工</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Adobe Photoshop
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/ps/01ps基础/01巧记ps快捷键.html" class="nav-link">
+  pa基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          office
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/word/practical/demo01_2025_10_10_01.html" class="nav-link">
+  word实用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Adobe Premiere Pro
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/graphic_designer/pr/practical/demo01_2025_10_10_01.html" class="nav-link">
+  pr实用
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="ai&amp;智能" class="dropdown-title"><span class="title">ai&amp;智能</span> <span class="arrow down"></span></button> <button type="button" aria-label="ai&amp;智能" class="mobile-dropdown-title"><span class="title">ai&amp;智能</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          openClaw
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ai/openClaw/demo01_2026_03_07_01.html" class="nav-link">
+  openClaw前世与今生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          openClaw相关问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ai/openclaw_problem/demo01_2026_03_19_01.html" class="nav-link">
+  openClaw相关问题
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="科学" class="dropdown-title"><span class="title">科学</span> <span class="arrow down"></span></button> <button type="button" aria-label="科学" class="mobile-dropdown-title"><span class="title">科学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          数学之美
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/basicMath/02中等数学思想/球体体积公式推过程.html" class="nav-link">
+  中等数学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          物理电学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/physical_base/middle_school_stage/demo01_2025_03_01.html" class="nav-link">
+  中等电学思想
+</a></li></ul></li><li class="dropdown-item"><h4>
+          神经网络
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/basicScience/neural_network/demo01_2025_03_01.html" class="nav-link">
+  神经网络编程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="架构" class="dropdown-title"><span class="title">架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="架构" class="mobile-dropdown-title"><span class="title">架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          云计算
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cloud/demo01_2025_03_19_01.html" class="nav-link">
+  云原生
+</a></li></ul></li><li class="dropdown-item"><h4>
+          web架构
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/web/demo01_2025_04_01_01.html" class="nav-link">
+  web认证流程
+</a></li></ul></li><li class="dropdown-item"><h4>
+          加密算法与密码学
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/cryptography/demo01_2025_12_23_01.html" class="nav-link">
+  微信小程序的登录流程架构
+</a></li></ul></li><li class="dropdown-item"><h4>
+          人工智能
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/Introduction_to_Deep_Learning_4/chapter_01_20250601_01.html" class="nav-link">
+  深度学习入门
+</a></li></ul></li><li class="dropdown-item"><h4>
+          计算机组成原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/system_book01/chapter_01_20250601_0101.html" class="nav-link">
+  深入理解计算机操作系统
+</a></li><li class="dropdown-subitem"><a href="/framework/system_book02/init_2025_12_15_01.html" class="nav-link">
+  操作系统概念
+</a></li><li class="dropdown-subitem"><a href="/framework/system_philosophy/demo01_2026_03_01_01.html" class="nav-link">
+  操作系统哲学
+</a></li><li class="dropdown-subitem"><a href="/framework/system_learn01/learn01_2026_03_12_01.html" class="nav-link">
+  操作系统101实验
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Aiot
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/framework/iot/emqx/demo01_2015_10_10_01.html" class="nav-link">
+  emqx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="游戏" class="dropdown-title"><span class="title">游戏</span> <span class="arrow down"></span></button> <button type="button" aria-label="游戏" class="mobile-dropdown-title"><span class="title">游戏</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          第一步
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/game/unity_book01/demo01_2025_08_23_01.html" class="nav-link">
+  启蒙之书
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端学习
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/roadmap/demo01_2025_10_02_01.html" class="nav-link">
+  学习路线
+</a></li></ul></li><li class="dropdown-item"><h4>
+          搭建骨架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/html/demo01_2025_10_01_01.html" class="nav-link">
+  html初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          外部装饰
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/css_basic/demo01_2025_10_01_01.html" class="nav-link">
+  css初级之入路
+</a></li></ul></li><li class="dropdown-item"><h4>
+          nuxt官方文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/nuxt_basic/demo01_2025_10_22_01.html" class="nav-link">
+  nuxt官方文档
+</a></li></ul></li><li class="dropdown-item"><h4>
+          react派
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/front_end/react_base_book_01/demo01_2025_12_12_01.html" class="nav-link">
+  react2025年基础入门
+</a></li><li class="dropdown-subitem"><a href="/front_end/react_basic/demo01_2025_12_12_01.html" class="nav-link">
+  react官方文档
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="db" class="dropdown-title"><span class="title">db</span> <span class="arrow down"></span></button> <button type="button" aria-label="db" class="mobile-dropdown-title"><span class="title">db</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          缓存数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/redis/demo01_2025_10_09_01.html" class="nav-link">
+  redis
+</a></li></ul></li><li class="dropdown-item"><h4>
+          postgre数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/db/postgre_sql_book/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级
+</a></li><li class="dropdown-subitem"><a href="/db/postgre_base_db/demo01_2025_10_10_01.html" class="nav-link">
+  postgre初级实战
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="rfc" class="dropdown-title"><span class="title">rfc</span> <span class="arrow down"></span></button> <button type="button" aria-label="rfc" class="mobile-dropdown-title"><span class="title">rfc</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/rfc_doc/demo01_2025_12_12_01.html" class="nav-link">
+  rfc概述
+</a></li><li class="dropdown-item"><h4>
+          http/1.1
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/operation/centos/.html" class="nav-link">
+  http/1.1
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="嵌入式与芯片" class="dropdown-title"><span class="title">嵌入式与芯片</span> <span class="arrow down"></span></button> <button type="button" aria-label="嵌入式与芯片" class="mobile-dropdown-title"><span class="title">嵌入式与芯片</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          乐鑫开发板
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/embedded/esp8266/demo01_2025_12_12_01.html" class="nav-link">
+  esp8266
+</a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>windows运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/windows/cmd.html" class="sidebar-link">强制关闭端口号</a></li><li><a href="/operation/windows/cmd01.html" class="sidebar-link">查看路由表</a></li><li><a href="/operation/windows/cmd02.html" class="sidebar-link">查看ARP表</a></li><li><a href="/operation/windows/cmd03.html" class="sidebar-link">windows的wget命令安装</a></li><li><a href="/operation/windows/cmd04.html" class="sidebar-link">VMware Workstation 未能启动 VMware Authorization Service</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/windows/docker/01docker实验一构建自己的镜像.html" class="sidebar-link">构建自己的镜像</a></li><li><a href="/operation/windows/docker/docker-compose命令常用.html" class="sidebar-link">怎么用docker-compose.yml启动容器？</a></li><li><a href="/operation/windows/docker/怎么将镜像打包为zip.html" class="sidebar-link">docker这么将镜像打包到本地？</a></li><li><a href="/operation/windows/docker/02contos安装docker.html" class="sidebar-link">02)centOS安装docker</a></li><li><a href="/operation/windows/docker/03centos安装docker_compose.html" class="sidebar-link">03)centos安装dockerCompose</a></li><li><a href="/operation/windows/docker/04docker_compose安装mysql.html" class="sidebar-link">04)dockerCompose安装mysql</a></li><li><a href="/operation/windows/docker/05idea连接远程docker构建镜像.html" class="sidebar-link">05)idea连接远程docker构建镜像</a></li><li><a href="/operation/windows/docker/demo01_2025_01_26.html" class="sidebar-link">docker的Macvlan网络模式</a></li><li><a href="/operation/windows/docker/demo02_2025_01_26.html" class="sidebar-link">docker拉取不到镜像问题</a></li><li><a href="/operation/windows/docker/demo03_2025_10_06_01.html" class="sidebar-link">论docker网桥模式</a></li><li><a href="/operation/windows/docker/demo03_2025_10_06_02.html" class="sidebar-link">docker的清理方案</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>centos运维ci_cd</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/centos/demo01_2025_02_26.html" class="sidebar-link">yum源修改</a></li><li><a href="/operation/centos/demo02_2025_02_27.html" class="sidebar-link">centos7安装docker</a></li><li><a href="/operation/centos/demo03_2025_02_27.html" class="sidebar-link">安装并初始化Gitlab</a></li><li><a href="/operation/centos/demo04_2025_02_28.html" class="sidebar-link">安装初始化Jenkins</a></li><li><a href="/operation/centos/demo05_2025_02_28.html" class="sidebar-link">网卡有多个ip地址问题</a></li><li><a href="/operation/centos/demo06_2025_02_28.html" class="sidebar-link">centos关机命令</a></li><li><a href="/operation/centos/demo07_2025_02_28.html" class="sidebar-link">Jenkins自动拉取构建代码</a></li><li><a href="/operation/centos/demo08_2025_02_28.html" class="sidebar-link">花生壳内网穿透</a></li><li><a href="/operation/centos/demo09_2025_02_28.html" class="sidebar-link">安装openJDK8+</a></li><li><a href="/operation/centos/demo10_2025_02_28.html" class="sidebar-link">centos安装lsof</a></li><li><a href="/operation/centos/demo11_2025_02_28.html" class="sidebar-link">centos安装netstat</a></li><li><a href="/operation/centos/demo12_2025_02_28.html" class="sidebar-link">jenkins自动构建docker镜像</a></li><li><a href="/operation/centos/demo13_2025_02_28.html" class="sidebar-link">安装harbor</a></li><li><a href="/operation/centos/demo14_2025_02_28.html" class="sidebar-link">向Harbor上传自定义镜像</a></li><li><a href="/operation/centos/demo15_2025_02_28.html" class="sidebar-link">harbor服务器进行构建镜像</a></li><li><a href="/operation/centos/demo16_2025_03_01.html" class="sidebar-link">Jenkins实现CI持续集成总结</a></li><li><a href="/operation/centos/demo17_2025_03_01.html" class="sidebar-link">Jenkins参数化构建过程</a></li><li><a href="/operation/centos/demo18_2025_03_01.html" class="sidebar-link">Jenkins的Pipeline流水线作业</a></li><li><a href="/operation/centos/demo18_2025_03_01.html" class="sidebar-link">Jenkins的Pipeline流水线作业</a></li><li><a href="/operation/centos/demo19_2025_03_30.html" class="sidebar-link">Gitlab托管Jenkinsfile</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>python运维ci_cd</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/centos/demo20_2025_04_01.html" class="sidebar-link">python项目构建流水线</a></li><li><a href="/operation/centos/demo21_2025_04_01.html" class="sidebar-link">python项目流水线脚本</a></li><li><a href="/operation/centos/demo22_2025_04_01.html" class="sidebar-link">python项目配置远程服务器</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>本地个人运维ci_cd</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/centos/demo23_2026_10_01.html" aria-current="page" class="active sidebar-link">适合个人的ci/cd解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#环境介绍" class="sidebar-link">环境介绍</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#期望实现拓扑图" class="sidebar-link">期望实现拓扑图</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#macvlan的工作原理" class="sidebar-link">macvlan的工作原理</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#bridge的工作原理" class="sidebar-link">bridge的工作原理</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#macvlan和bridge拓扑的核心差异" class="sidebar-link">macvlan和bridge拓扑的核心差异</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#查docker各网络定义的网关-网络层面的配置" class="sidebar-link">查Docker各网络定义的网关（网络层面的配置）</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#查看jenkins的路由表" class="sidebar-link">查看jenkins的路由表</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#查看jekins容器的网络模式有哪些" class="sidebar-link">查看jekins容器的网络模式有哪些？</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#jekins无法访问外网问题解决" class="sidebar-link">jekins无法访问外网问题解决</a></li><li class="sidebar-sub-header"><a href="/operation/centos/demo23_2026_10_01.html#最终jekins配置" class="sidebar-link">最终jekins配置</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>centos常用命令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/centos/01防火墙命令.html" class="sidebar-link">01防火墙命令</a></li><li><a href="/operation/centos/02linux找文件夹.html" class="sidebar-link">linux找文件夹</a></li><li><a href="/operation/centos_cmd/demo01_2025_03_03.html" class="sidebar-link">hostnamectl命令</a></li><li><a href="/operation/centos_cmd/demo01_2025_03_30.html" class="sidebar-link">端口谁在用？</a></li><li><a href="/operation/centos_cmd/demo02_2025_03_30.html" class="sidebar-link">kill命令杀死进程</a></li><li><a href="/operation/centos_cmd/demo02_2025_03_31.html" class="sidebar-link">关闭nohup命令启动的进程</a></li><li><a href="/operation/centos_cmd/demo03_2025_03_31.html" class="sidebar-link">journalctl命令</a></li><li><a href="/operation/centos_cmd/demo04_2025_04_01.html" class="sidebar-link">开机自启命令</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>ubuntu运维</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/ubuntu/demo01_2025_02_21.html" class="sidebar-link">ubuntu镜像下载</a></li><li><a href="/operation/ubuntu/demo02_2025_02_22.html" class="sidebar-link">ubuntu的安装</a></li><li><a href="/operation/ubuntu/demo03_2025_03_01.html" class="sidebar-link">ubuntu安装curl命令</a></li><li><a href="/operation/ubuntu/demo04_2025_03_02.html" class="sidebar-link">ubuntu安装rust</a></li><li><a href="/operation/ubuntu/demo05_2025_03_03.html" class="sidebar-link">ubuntu的ELF文件格式</a></li><li><a href="/operation/ubuntu/demo06_2025_03_04.html" class="sidebar-link">rust的linux程序编译</a></li><li><a href="/operation/ubuntu/demo07_2025_10_09.html" class="sidebar-link">ubuntu怎么创建用户</a></li><li><a href="/operation/ubuntu/demo08_2025_10_10.html" class="sidebar-link">ubuntu切换用户su命令</a></li><li><a href="/operation/ubuntu/demo09_2025_11_11.html" class="sidebar-link">ubuntu检查是否安装某软件</a></li><li><a href="/operation/ubuntu/demo10_2025_11_12.html" class="sidebar-link">物理机安装ubuntu系统</a></li><li><a href="/operation/ubuntu/demo11_2025_11_13.html" class="sidebar-link">ubuntu刷新网络配置文件</a></li><li><a href="/operation/ubuntu/demo11_2025_11_14.html" class="sidebar-link">ubuntu怎么启动ssh服务</a></li><li><a href="/operation/ubuntu/demo12_2025_11_15.html" class="sidebar-link">ubuntu打包某一个目录</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>shell实战</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/shell/demo01_2025_03_19_01.html" class="sidebar-link">shell运维01</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>linux基础概念</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/linux_base/demo01_2025_03_22_01.html" class="sidebar-link">linux的用户与组</a></li><li><a href="/operation/linux_base/demo02_2025_10_11_01.html" class="sidebar-link">centOS与Ubuntu区别</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>nginx运维总结</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/nginx_base/demo01_2025_11_12_01.html" class="sidebar-link">nginx配置文件配置</a></li><li><a href="/operation/nginx_base/demo01_2025_11_12_02.html" class="sidebar-link">ubuntu的apt安装nginx默认路径是？</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>系统架构</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/架构笔记/01如何利用Docker快速构建基于Prometheus的MySQL监控系统.html" class="sidebar-link">01如何利用Docker快速构建基于Prometheus的MySQL监控系统</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>运维问题排错</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/operation/problem/demo01_2025_11_11_01.html" class="sidebar-link">docker容器无法解析域名</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="适合个人的ci-cd解决方案"><a href="#适合个人的ci-cd解决方案" class="header-anchor">#</a> 适合个人的ci/cd解决方案</h1> <h2 id="环境介绍"><a href="#环境介绍" class="header-anchor">#</a> 环境介绍</h2> <p>windows11系统（宿主机）</p> <p>wmware虚拟机软件。</p> <p>centos7系统(虚拟机)。在系统上部署gitlab、jekins软件。docker容器部署。</p> <p>服务器：</p> <p>内存：8g够用，16g有余。</p> <p>硬盘：40G。</p> <p>4h</p> <p><strong>总结：</strong></p> <table><thead><tr><th>描述</th> <th>简介</th> <th>ip</th></tr></thead> <tbody><tr><td>centos7系统(虚拟机)</td> <td>在系统上部署gitlab、jekins软件</td> <td>192.168.5.201</td></tr> <tr><td>windows11系统(宿主机)</td> <td>有当前局域网决定当前的网络段。虚拟机使用net模式接入当前局域网。</td> <td></td></tr> <tr><td>net网络模式</td> <td>虚拟机与宿主机链接，虚拟机可以访问外网。</td> <td></td></tr> <tr><td>gitlab</td> <td>存放本地代码</td> <td>192.168.5.240</td></tr> <tr><td>jekins</td> <td>触发流水线</td> <td>192.168.5.241:8080</td></tr> <tr><td>macvlan模式</td> <td><code>macvlan</code> 是 Docker 的一种网络驱动，它的核心思想是：<strong>让容器在二层网络（数据链路层）上“看起来像”一台独立的物理设备</strong>，拥有自己的 MAC 地址和 IP，直接接入宿主机的物理网络，而不是像 <code>bridge</code> 模式那样躲在宿主机后面做 NAT。</td> <td></td></tr> <tr><td>bridge模式</td> <td><strong>Docker 建一个虚拟网桥 <code>docker0</code>，容器接在上面拿私有 IP，出网时经宿主机 NAT 伪装成宿主机 IP，入网时靠端口映射从宿主机转发进来</strong>。它不要求底层网络环境有任何特殊能力，是兼容性最好、排查套路最成熟的网络模式。</td> <td></td></tr></tbody></table> <div class="custom-block tip"><p class="custom-block-title">当前存在的问题</p> <p>jekins无法访问外网。因为是容器化部署。怎么解决？当前部署的是macvlan模式  。</p></div> <h2 id="期望实现拓扑图"><a href="#期望实现拓扑图" class="header-anchor">#</a> 期望实现拓扑图</h2> <p>用户通过jekins将自己windows11上的工程触发流水线打包发送到目标云服务器上进行部署。</p> <p><img src="/assets/img/image-20261115151714397.92a899fd.png" alt="image-20261115151714397"></p> <h2 id="macvlan的工作原理"><a href="#macvlan的工作原理" class="header-anchor">#</a> macvlan的工作原理</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>        物理交换机 / 虚拟交换机（二层网络）
+                    │
+        ┌───────────┴────────────┐
+        │       ens33            │  ← 宿主机真实网卡（parent）
+        │  MAC: 00:11:22:33:44:55│
+        │  IP:  192.168.5.100    │
+        └───────────┬────────────┘
+                    │
+        ┌───────────┴────────────┐
+        │   macvlan 子接口       │  ← Docker 基于 parent 创建的虚拟接口
+        │   继承 parent 的二层   │     不是独立网卡，是 parent 的&quot;分身&quot;
+        └───┬───────────────┬────┘
+            │               │
+      ┌─────┴─────┐   ┌─────┴─────┐
+      │  容器A    │   │  容器B    │
+      │ MAC: AA   │   │ MAC: BB   │  ← 每个容器有独立 MAC
+      │ IP: .5.241│   │ IP: .5.242│  ← 与宿主机同网段的独立 IP
+      └───────────┘   └───────────┘
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p><strong>关键点</strong>：</p> <ul><li><code>ens33</code> 是宿主机真实网卡，创建 macvlan 网络时通过 <code>--parent=ens33</code> 指定。</li> <li>Docker 基于 <code>ens33</code> 创建 macvlan 子接口，容器通过这个子接口直接收发二层帧。</li> <li><strong>每个容器有独立的 MAC 地址和独立 IP</strong>，在二层网络上看起来就是两台独立设备。</li> <li>容器的 IP 与宿主机<strong>同一网段</strong>（如都是 <code>192.168.5.x</code>），网关也相同（如 <code>192.168.5.1</code>）。</li></ul> <p>数据包怎么流转？</p> <p><strong>场景一：容器访问外网（出网）</strong></p> <p>以容器 A（<code>192.168.5.241</code>）访问腾讯云为例：</p> <ol><li>容器 A 发出包，源 IP <code>192.168.5.241</code>，源 MAC <code>AA</code>，目标 MAC 是网关 <code>192.168.5.1</code> 的 MAC。</li> <li>帧从 macvlan 子接口发出，<strong>直接经 <code>ens33</code> 进入二层网络</strong>（虚拟交换机 / 物理交换机）。</li> <li>交换机根据目标 MAC 把帧转发给网关 <code>192.168.5.1</code>。</li> <li>网关做三层路由，把包转发到外网。</li> <li><strong>宿主机内核全程不参与</strong>——不经过 <code>docker0</code>，不走 <code>ip_forward</code>，不做 <code>MASQUERADE</code>。容器 IP 在出网时<strong>保持不变</strong>，目标服务器看到的就是 <code>192.168.5.241</code>。</li></ol> <p><strong>场景二：局域网设备访问容器（入网）</strong></p> <p>局域网内另一台设备（如 <code>192.168.5.50</code>）直接访问 <code>192.168.5.241:8080</code>：</p> <ol><li>设备发出 ARP 请求&quot;谁是 192.168.5.241&quot;，容器 A 用自己的 MAC <code>AA</code> 应答。</li> <li>设备直接把帧发给 MAC <code>AA</code>，经交换机到达 <code>ens33</code>，再由 macvlan 子接口交给容器 A。</li> <li><strong>不需要端口映射</strong>，容器 IP 直接可达。</li></ol> <h2 id="bridge的工作原理"><a href="#bridge的工作原理" class="header-anchor">#</a> bridge的工作原理</h2> <p>Docker 启动时会创建一个名为 <code>docker0</code> 的<strong>虚拟网桥</strong>（本质上是一个软件交换机），宿主机和所有使用 bridge 网络的容器都接在这台&quot;虚拟交换机&quot;上。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>       外部网络（虚拟机 NAT 网络 / 物理网络）
+                │
+        ┌───────┴────────┐
+        │    ens33       │  ← 虚拟机网卡（宿主机真实网卡）
+        │ 192.168.100.10 │
+        └───────┬────────┘
+                │  NAT（iptables MASQUERADE）
+        ┌───────┴────────┐
+        │    docker0     │  ← Docker 虚拟网桥（软件交换机）
+        │  172.17.0.1    │     宿主机的网关地址
+        └───┬───────┬────┘
+            │       │
+      ┌─────┴──┐ ┌──┴─────┐
+      │ 容器A  │ │ 容器B  │
+      │.17.0.2 │ │.17.0.3 │
+      └────────┘ └────────┘
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p><strong>容器出网路径</strong>（以 Jenkins SSH 到腾讯云为例）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Jenkins 容器 (172.17.0.5)
+    │  目标：腾讯云 IP:22，源 IP：172.17.0.5
+    ↓
+docker0 网桥 (172.17.0.1)  ← 容器默认网关
+    ↓
+宿主机内核路由 + iptables
+    │  ① ip_forward=1      → 允许转发
+    │  ② FORWARD 链 ACCEPT → 允许通过
+    │  ③ MASQUERADE         → 源 IP 改写为 192.168.100.10
+    ↓
+ens33 (192.168.100.10)  ← 源 IP 已被 NAT 成宿主机 IP
+    ↓
+虚拟机 NAT 网络 → 外网 → 腾讯云服务器
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>关键点</strong>：腾讯云服务器看到的源 IP 是<strong>宿主机的 IP</strong>，而不是容器 IP。回包也回到宿主机，再由宿主机根据 NAT 连接跟踪表转发回容器。整个过程中，容器对目标服务器是&quot;隐身&quot;的，这就是为什么需要 <code>ip_forward</code>、<code>FORWARD</code> 链、<code>MASQUERADE</code> 这三件套正常工作——它们正是你之前排查 bridge 网络问题时反复提到的检查项</p> <h2 id="macvlan和bridge拓扑的核心差异"><a href="#macvlan和bridge拓扑的核心差异" class="header-anchor">#</a> macvlan和bridge拓扑的核心差异</h2> <table><thead><tr><th style="text-align:left;">对比项</th> <th style="text-align:left;">bridge</th> <th style="text-align:left;">macvlan</th></tr></thead> <tbody><tr><td style="text-align:left;">拓扑位置</td> <td style="text-align:left;">容器接在 <code>docker0</code> 虚拟网桥后面</td> <td style="text-align:left;">容器直接接在 <code>ens33</code> 所在的二层网络</td></tr> <tr><td style="text-align:left;">容器 IP</td> <td style="text-align:left;">私有 <code>172.17.0.x</code></td> <td style="text-align:left;">与宿主机同网段 <code>192.168.5.x</code></td></tr> <tr><td style="text-align:left;">容器 MAC</td> <td style="text-align:left;">虚拟 MAC，对外不可见</td> <td style="text-align:left;">独立 MAC，二层可见</td></tr> <tr><td style="text-align:left;">出网路径</td> <td style="text-align:left;">容器 → docker0 → 宿主机 NAT → ens33</td> <td style="text-align:left;">容器 → macvlan 子接口 → ens33（无 NAT）</td></tr> <tr><td style="text-align:left;">宿主机内核参与</td> <td style="text-align:left;"><strong>深度参与</strong>（路由、iptables、NAT）</td> <td style="text-align:left;"><strong>几乎不参与</strong>（只做二层转发）</td></tr> <tr><td style="text-align:left;">外部访问容器</td> <td style="text-align:left;">必须端口映射</td> <td style="text-align:left;">直接访问容器 IP</td></tr> <tr><td style="text-align:left;">网关来源</td> <td style="text-align:left;">Docker 创建的 <code>docker0</code>（<code>172.17.0.1</code>）</td> <td style="text-align:left;">二层网络中真实存在的网关（<code>192.168.5.1</code>）</td></tr></tbody></table> <p><strong>一句话对比</strong>：bridge 是&quot;容器躲在宿主机后面，宿主机做代理&quot;；macvlan 是&quot;容器和宿主机平起平坐，都是二层网络里的独立设备&quot;。</p> <h2 id="查docker各网络定义的网关-网络层面的配置"><a href="#查docker各网络定义的网关-网络层面的配置" class="header-anchor">#</a> 查Docker各网络定义的网关（网络层面的配置）</h2> <p>第一步：列出所有 Docker 网络。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> network <span class="token function">ls</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>NETWORK ID     NAME       DRIVER    SCOPE
+62da3553c9a7   bridge     bridge    <span class="token builtin class-name">local</span>
+31f99926fd75   <span class="token function">host</span>       <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+965b7e255a87   macvlan5   macvlan   <span class="token builtin class-name">local</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>第二步：查看某个网络的详细配置，重点看 &quot;Gateway&quot; 字段。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> network inspect macvlan5
+<span class="token function">docker</span> network inspect bridge
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>如：docker network inspect bridge</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token property">&quot;Name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bridge&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;62da3553c9a71284dc658964633b20c3dc18c134a2b0b8c5aa1fe9c9d188cd25&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Created&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2026-11-15T07:18:53.124952308+08:00&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Scope&quot;</span><span class="token operator">:</span> <span class="token string">&quot;local&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Driver&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bridge&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;EnableIPv6&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;IPAM&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Driver&quot;</span><span class="token operator">:</span> <span class="token string">&quot;default&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Options&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Config&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;Subnet&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.0/16&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.1&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Internal&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Attachable&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Ingress&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ConfigFrom&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Network&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ConfigOnly&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Containers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;6f4daa421264144ff9b8c4b7431aef0eeda082eed18d994a4421bd40d7f9f50d&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;Name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jenkins&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c5fb67068569a6b6c5e317e7b43adf9a354451a253b1461c276704931201956c&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02:42:ac:11:00:02&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;IPv4Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.2/16&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;IPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Options&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;com.docker.network.bridge.default_bridge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;com.docker.network.bridge.enable_icc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;com.docker.network.bridge.enable_ip_masquerade&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;com.docker.network.bridge.host_binding_ipv4&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.0.0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;com.docker.network.bridge.name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;docker0&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;com.docker.network.driver.mtu&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1500&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;Labels&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h2 id="查看jenkins的路由表"><a href="#查看jenkins的路由表" class="header-anchor">#</a> 查看jenkins的路由表</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">--rm</span> <span class="token parameter variable">--network</span><span class="token operator">=</span>container:jenkins busybox <span class="token function">ip</span> route
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输出：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@cicd ~]# docker run --rm --network=container:jenkins busybox ip route
+default via 172.17.0.1 dev eth1 
+172.17.0.0/16 dev eth1 scope link  src 172.17.0.2 
+192.168.5.0/24 dev eth0 scope link  src 192.168.5.241 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>第 1 行：<code>default via 172.17.0.1 dev eth1</code></strong></p> <ul><li>这是<strong>唯一的默认路由</strong>，没有第二条 <code>default</code>。</li> <li>所有不属于下面两个直连子网的目标地址（外网、腾讯云、公网 DNS 等），都走这条。</li> <li>网关是 <code>172.17.0.1</code>（<code>docker0</code> 网桥地址），出口网卡是 <code>eth1</code>（bridge 网络的网卡）。</li> <li><strong>关键：macvlan 的 <code>default via 192.168.5.1</code> 不在了</strong>。Docker 在多网络下只给一个网络配默认网关，这里选中了 bridge。</li></ul> <p><strong>第 2 行：<code>172.17.0.0/16 dev eth1 scope link src 172.17.0.2</code></strong></p> <ul><li>直连路由：目标在 <code>172.17.0.0/16</code> 网段内时，直接从 <code>eth1</code> 发出，不经过网关。</li> <li><code>src 172.17.0.2</code> 是容器在 bridge 网络里的 IP，作为源地址。</li> <li>用于访问同宿主机上的其他 bridge 容器。</li></ul> <p><strong>第 3 行：<code>192.168.5.0/24 dev eth0 scope link src 192.168.5.241</code></strong></p> <ul><li>直连路由：目标在 <code>192.168.5.0/24</code> 网段内时，直接从 <code>eth0</code>（macvlan 网卡）发出。</li> <li><code>src 192.168.5.241</code> 是容器在 macvlan 网络里的 IP。</li> <li><strong>注意：这一行只是&quot;如果目标在这个网段内，就走 macvlan&quot;，但它没有配套的默认路由</strong>。所以访问 <code>192.168.5.x</code> 以外的地址时，不会走 macvlan。</li></ul> <table><thead><tr><th style="text-align:left;">目标地址</th> <th style="text-align:left;">走哪条路由</th> <th style="text-align:left;">出口网卡</th> <th style="text-align:left;">源 IP</th> <th style="text-align:left;">是否 NAT</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>172.17.0.x</code></td> <td style="text-align:left;">第 2 行直连</td> <td style="text-align:left;"><code>eth1</code>（bridge）</td> <td style="text-align:left;"><code>172.17.0.2</code></td> <td style="text-align:left;">否</td></tr> <tr><td style="text-align:left;"><code>192.168.5.x</code></td> <td style="text-align:left;">第 3 行直连</td> <td style="text-align:left;"><code>eth0</code>（macvlan）</td> <td style="text-align:left;"><code>192.168.5.241</code></td> <td style="text-align:left;">否</td></tr> <tr><td style="text-align:left;"><strong>其他所有地址</strong>（腾讯云、外网）</td> <td style="text-align:left;"><strong>第 1 行默认路由</strong></td> <td style="text-align:left;"><strong><code>eth1</code>（bridge）</strong></td> <td style="text-align:left;"><code>172.17.0.2</code> → 经 NAT 变为宿主机 IP</td> <td style="text-align:left;"><strong>是</strong></td></tr></tbody></table> <p><strong>出网（SSH 到腾讯云、拉 Maven 依赖、访问公网）走的是 <code>172.17.0.1</code> → bridge → 宿主机 NAT</strong>。这正是我们想要的状态。</p> <h2 id="查看jekins容器的网络模式有哪些"><a href="#查看jekins容器的网络模式有哪些" class="header-anchor">#</a> 查看jekins容器的网络模式有哪些？</h2> <p>使用命令inspect：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker inspect jenkins --format='{{json .NetworkSettings}}'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输出的是json字符串，下面的使用工具格式化后的展示效果：</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Bridge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SandboxID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;a8bb30bd3cc717aa8f5b9052fbaa22162290ead4598f78173171491902c8094b&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SandboxKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/var/run/docker/netns/a8bb30bd3cc7&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Ports&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;50000/tcp&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;8080/tcp&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;HairpinMode&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;LinkLocalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;LinkLocalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SecondaryIPAddresses&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SecondaryIPv6Addresses&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c5fb67068569a6b6c5e317e7b43adf9a354451a253b1461c276704931201956c&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;GlobalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;GlobalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPPrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPv6Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02:42:ac:11:00:02&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Networks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;bridge&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;IPAMConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Links&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Aliases&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02:42:ac:11:00:02&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;NetworkID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;62da3553c9a71284dc658964633b20c3dc18c134a2b0b8c5aa1fe9c9d188cd25&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;c5fb67068569a6b6c5e317e7b43adf9a354451a253b1461c276704931201956c&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;172.17.0.2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPPrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPv6Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DriverOpts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DNSNames&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;macvlan5&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;IPAMConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;IPv4Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.241&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Links&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Aliases&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02:42:c0:a8:05:f1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;NetworkID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;965b7e255a87994e316cb4d59018ba6b382962302f7a040a9bfd8edbadb2ea1c&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;29c7acb748799c0aeaf4c18faded97e72005575674c9e0a377c8a651a72304f5&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.241&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPPrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPv6Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DriverOpts&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DNSNames&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;jenkins&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;6f4daa421264&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div><p>可以看到jekins的容器使用了二种网络模式：bridge、macvlan5。</p> <p>使用命令inspect查看gitlab容器：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> inspect gitlab  <span class="token parameter variable">--format</span><span class="token operator">=</span><span class="token string">'{{json .NetworkSettings}}'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>输出的是json字符串，下面的使用工具格式化后的展示效果：</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;Bridge&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SandboxID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fad9c118c2e8299b4b7ed8f1da8e00a31ef144cfeb1886b354567ba845a89b2e&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SandboxKey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/var/run/docker/netns/fad9c118c2e8&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Ports&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;HairpinMode&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;LinkLocalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;LinkLocalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SecondaryIPAddresses&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;SecondaryIPv6Addresses&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;GlobalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;GlobalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPPrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;IPv6Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;Networks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;macvlan5&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;IPAMConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;IPv4Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.240&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Links&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Aliases&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;MacAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;02:42:c0:a8:05:f0&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;NetworkID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;965b7e255a87994e316cb4d59018ba6b382962302f7a040a9bfd8edbadb2ea1c&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;EndpointID&quot;</span><span class="token operator">:</span> <span class="token string">&quot;99d0da8b7000ed2608b1382691c2c0fe9915f4fdeefc163ad8ba7fddeb368444&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPAddress&quot;</span><span class="token operator">:</span> <span class="token string">&quot;192.168.5.240&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPPrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;IPv6Gateway&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6Address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;GlobalIPv6PrefixLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DriverOpts&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;DNSNames&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;gitlab&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;4b193b973713&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;gitlab.example.com&quot;</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="jekins无法访问外网问题解决"><a href="#jekins无法访问外网问题解决" class="header-anchor">#</a> jekins无法访问外网问题解决</h2> <p>解决：<strong>双网络接口</strong>Jenkins 同时接入 bridge 和 macvlan</p> <p>优点：无需额外容器，利用 Docker 原生功能  。</p> <p>缺点：需要处理容器内的多默认路由冲突。</p> <p><strong>第一步：为容器连接一个 bridge 网络</strong></p> <p>Docker 默认的 <code>bridge</code> 网络就可以用。执行以下命令，为现有的 Jenkins 容器额外接入 <code>bridge</code> 网络：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> network connect bridge jenkins
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>执行后，容器内部会多出一块网卡（通常是 <code>eth1</code>），并可能获得一个 <code>172.17.0.x</code> 的地址。</p> <p><strong>验证配置是否生效</strong></p> <p>配置完成后，<strong>用之前的方法，启动一个临时 BusyBox 容器共享 Jenkins 的网络进行验证</strong>，这是最准确的方式：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> run <span class="token parameter variable">--rm</span> <span class="token parameter variable">--network</span><span class="token operator">=</span>container:jenkins busybox <span class="token function">sh</span> <span class="token parameter variable">-c</span> <span class="token string">'
+echo &quot;===== 路由表 =====&quot;;
+ip route;
+echo &quot;===== 外网连通性 (ping 223.5.5.5) =====&quot;;
+ping -c 3 223.5.5.5;
+echo &quot;===== 目标 TCP 22 测试 =====&quot;;
+nc -zv -w 3 &lt;腾讯云真实IP&gt; 22;
+'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>判读标准</strong>：</p> <ul><li><code>ip route</code> 的输出中，<code>default via</code> 应该指向 <code>bridge</code> 网络的网关（通常是 <code>172.17.0.1</code>），<strong>而不是</strong> <code>192.168.5.1</code>。</li> <li><code>ping 223.5.5.5</code> 应该能收到回包。</li> <li><code>nc -zv &lt;腾讯云IP&gt; 22</code> 应该显示连接成功。</li></ul> <p>一旦验证通过，回到 Jenkins 的 Publish over SSH 面板重新测试，应该就能正常建立连接了。</p> <h2 id="最终jekins配置"><a href="#最终jekins配置" class="header-anchor">#</a> 最终jekins配置</h2> <p><img src="/assets/img/image-20261115155351845.d591ba61.png" alt="image-20261115155351845"></p> <p>最终脚本，参考修改。</p> <div class="language-groovy line-numbers-mode"><pre class="language-groovy"><code>pipeline <span class="token punctuation">{</span>
+    agent any
+
+    stages <span class="token punctuation">{</span>
+        <span class="token function">stage</span><span class="token punctuation">(</span><span class="token string">'pull code'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                checkout <span class="token function">scmGit</span><span class="token punctuation">(</span>branches<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>name<span class="token punctuation">:</span> <span class="token string">'$tag'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> extensions<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">sparseCheckout</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span>path<span class="token punctuation">:</span> <span class="token string">'/build-admin/'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> userRemoteConfigs<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>url<span class="token punctuation">:</span> <span class="token string">'http://192.168.5.240/front_end_project_group/selfendadmin'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">stage</span><span class="token punctuation">(</span><span class="token string">'upload file'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                <span class="token function">sshPublisher</span><span class="token punctuation">(</span>publishers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">sshPublisherDesc</span><span class="token punctuation">(</span>configName<span class="token punctuation">:</span> <span class="token string">'腾讯云服务器1'</span><span class="token punctuation">,</span> transfers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">sshTransfer</span><span class="token punctuation">(</span>cleanRemote<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> excludes<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> execCommand<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> execTimeout<span class="token punctuation">:</span> <span class="token number">120000</span><span class="token punctuation">,</span> flatten<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> makeEmptyDirs<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> noDefaultExcludes<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> patternSeparator<span class="token punctuation">:</span> <span class="token string">'[, ]+'</span><span class="token punctuation">,</span> remoteDirectory<span class="token punctuation">:</span> <span class="token string">'/ruoyi-end/'</span><span class="token punctuation">,</span> remoteDirectorySDF<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> removePrefix<span class="token punctuation">:</span> <span class="token string">'build-admin'</span><span class="token punctuation">,</span> sourceFiles<span class="token punctuation">:</span> <span class="token string">'build-admin/*'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> usePromotionTimestamp<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> useWorkspaceInPromotion<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> verbose<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">stage</span><span class="token punctuation">(</span><span class="token string">'build image'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                <span class="token function">sshPublisher</span><span class="token punctuation">(</span>publishers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">sshPublisherDesc</span><span class="token punctuation">(</span>configName<span class="token punctuation">:</span> <span class="token string">'腾讯云服务器1'</span><span class="token punctuation">,</span> transfers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">sshTransfer</span><span class="token punctuation">(</span>cleanRemote<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> excludes<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> execCommand<span class="token punctuation">:</span> <span class="token interpolation-string"><span class="token string">&quot;cd /usr/local/ruoyi-end &amp;&amp; docker build -t ruoyi-springboot3:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$</span><span class="token expression">tag</span></span><span class="token string"> .&quot;</span></span><span class="token punctuation">,</span> execTimeout<span class="token punctuation">:</span> <span class="token number">120000</span><span class="token punctuation">,</span> flatten<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> makeEmptyDirs<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> noDefaultExcludes<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> patternSeparator<span class="token punctuation">:</span> <span class="token string">'[, ]+'</span><span class="token punctuation">,</span> remoteDirectory<span class="token punctuation">:</span> <span class="token string">'/ruoyi-end/'</span><span class="token punctuation">,</span> remoteDirectorySDF<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> removePrefix<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> sourceFiles<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> usePty<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> usePromotionTimestamp<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> useWorkspaceInPromotion<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> verbose<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/15/2026, 7:59:25 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/operation/centos/demo22_2025_04_01.html" class="prev">
+        python项目配置远程服务器
+      </a></span> <span class="next"><a href="/operation/centos/01防火墙命令.html">
+        01防火墙命令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.7d8e2212.js" defer></script><script src="/assets/js/2.4a265c40.js" defer></script><script src="/assets/js/1.74e54e03.js" defer></script><script src="/assets/js/235.50f59116.js" defer></script>
+  </body>
+</html>
